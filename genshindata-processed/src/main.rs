@@ -1,4 +1,4 @@
-use genshindata_rs::{textmap::AllTextMaps, language::Language};
+use genshindata_rs::{language::Language, textmap::AllTextMaps};
 
 use crate::{artifact::artifact_set::ArtifactSetProcessor, models::traits::Processable};
 
@@ -12,4 +12,5 @@ fn main() {
     println!("{:?}", result.data);
     let en_translations = result.translations.get_pack(Language::EN);
     println!("{:?}", en_translations);
+    let a = br#"test"#.to_vec();
 }

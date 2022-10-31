@@ -13,7 +13,8 @@ use strum::IntoEnumIterator;
 
 use crate::models::{
     artifact::{ArtifactSet, ArtifactSetTkeys},
-    translatable::{TranslatableData, Translations}, traits::{Processable, Translatable},
+    traits::{Processable, Translatable},
+    translatable::{TranslatableData, Translations},
 };
 
 #[derive(Debug)]

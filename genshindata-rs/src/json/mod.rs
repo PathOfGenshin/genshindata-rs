@@ -1,20 +1,14 @@
-use std::{
-    fs::File,
-    io::{self, BufReader},
-    path::Path,
-};
+use std::{fs, io, path::Path};
 
 #[derive(Debug)]
 pub enum JsonError {
     FileOpen(io::ErrorKind),
-    Deserialization(serde_json::Error),
+    Deserialization,
 }
 
 pub fn load_json<T: serde::de::DeserializeOwned, P: AsRef<Path>>(path: P) -> Result<T, JsonError> {
-    let file = File::open(path).map_err(|file_err| JsonError::FileOpen(file_err.kind()))?;
-    let reader = BufReader::new(file);
-
-    let deserialized = serde_json::from_reader(reader).map_err(JsonError::Deserialization)?;
-
+    let mut file_bytes = fs::read(path).map_err(|read_err| JsonError::FileOpen(read_err.kind()))?;
+    let deserialized =
+        simd_json::serde::from_slice(&mut file_bytes).map_err(|_| JsonError::Deserialization)?;
     Ok(deserialized)
 }
