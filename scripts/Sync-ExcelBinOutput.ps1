@@ -2,10 +2,10 @@
 # GenshinData's ExcelBinOutput folder JSON files.
 # Quicktype tool for reference: https://github.com/quicktype
 $logicalCoreCount = (Get-CimInstance Win32_ComputerSystem).NumberOfLogicalProcessors
-Get-ChildItem -Path .\GenshinData\ExcelBinOutput\ -Filter *.json |
+Get-ChildItem -Path ".\GenshinData\ExcelBinOutput\" -Filter *.json |
 ForEach-Object -Parallel {
     $fileName = [System.IO.Path]::GetFileNameWithoutExtension($_)
-    $outFile = ".\src\excelbinoutput\$fileName.rs"
+    $outFile = ".\genshindata-rs\src\excelbinoutput\$fileName.rs"
     Write-Host "Running quicktype on $($_.FullName)" -ForegroundColor green
     quicktype $_.FullName `
         -t $fileName `

@@ -1,0 +1,13 @@
+[package]
+name = "genshindata-processed"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "*"
+strum = { version = "0.24", features = ["derive"] }
+genshindata-rs = { path = "../genshindata-rs" }
