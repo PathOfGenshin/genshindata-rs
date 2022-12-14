@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FishBaitExcelConfigData = Vec<FishBaitExcelConfigDatum>;
@@ -11,31 +13,32 @@ pub struct FishBaitExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NIEKDGJFEPA")]
-    pub niekdgjfepa: Vec<Niekdgjfepa>,
+    #[serde(rename = "INILFKMGHBB")]
+    pub inilfkmghbb: Vec<Inilfkmghbb>,
 
-    #[serde(rename = "BNNKCGELEHJ")]
-    pub bnnkcgelehj: i64,
+    #[serde(rename = "IKBNPLPAFGL")]
+    pub ikbnplpafgl: i64,
 
-    #[serde(rename = "OPBKGOJOPPG")]
-    pub opbkgojoppg: Vec<i64>,
+    #[serde(rename = "FLKBCHDBOAC")]
+    pub flkbchdboac: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Niekdgjfepa {
-    #[serde(rename = "CCCOBDNGDLN")]
-    pub cccobdngdln: Option<i64>,
+pub struct Inilfkmghbb {
+    #[serde(rename = "OPPIANHGABA")]
+    pub oppianhgaba: Option<i64>,
 
     #[serde(rename = "weight")]
     pub weight: Option<f64>,
 
-    #[serde(rename = "OLODHCMMKJD")]
-    pub olodhcmmkjd: Option<f64>,
+    #[serde(rename = "DADKGALECKK")]
+    pub dadkgaleckk: Option<f64>,
 }
 
 pub fn load() -> Result<FishBaitExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FishBaitExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MichiaeStageExcelConfigData = Vec<MichiaeStageExcelConfigDatum>;
@@ -17,19 +19,20 @@ pub struct MichiaeStageExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "EKCKKNLCNPF")]
-    pub ekckknlcnpf: i64,
+    #[serde(rename = "KOCJAIJJJEB")]
+    pub kocjaijjjeb: i64,
 
-    #[serde(rename = "CMACINIJMME")]
-    pub cmacinijmme: i64,
+    #[serde(rename = "GFOBGPJMLOG")]
+    pub gfobgpjmlog: i64,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
 }
 
 pub fn load() -> Result<MichiaeStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MichiaeStageExcelConfigData.json",
     ]

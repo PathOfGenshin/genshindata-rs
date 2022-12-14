@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BlitzRushExcelConfigData = Vec<BlitzRushExcelConfigDatum>;
@@ -20,25 +22,26 @@ pub struct BlitzRushExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "LBOKGFIMAMN")]
-    pub lbokgfimamn: i64,
+    #[serde(rename = "MLFHJINKKFM")]
+    pub mlfhjinkkfm: i64,
 
-    #[serde(rename = "BAPGILGMKDM")]
-    pub bapgilgmkdm: i64,
+    #[serde(rename = "KBFFMIJCNOC")]
+    pub kbffmijcnoc: i64,
 
-    #[serde(rename = "MDGAHPBOKPK")]
-    pub mdgahpbokpk: i64,
+    #[serde(rename = "PNIMHNPCFCI")]
+    pub pnimhnpcfci: i64,
 
-    #[serde(rename = "EBEDCJAHHFD")]
-    pub ebedcjahhfd: Vec<i64>,
+    #[serde(rename = "PKIPGKMPMMC")]
+    pub pkipgkmpmmc: Vec<i64>,
 
     #[serde(rename = "rewardPreview")]
     pub reward_preview: i64,
 }
 
 pub fn load() -> Result<BlitzRushExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BlitzRushExcelConfigData.json",
     ]

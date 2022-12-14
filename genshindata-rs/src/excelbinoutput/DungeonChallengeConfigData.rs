@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DungeonChallengeConfigData = Vec<DungeonChallengeConfigDatum>;
@@ -29,8 +31,8 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "challengeType")]
     pub challenge_type: ChallengeType,
 
-    #[serde(rename = "APEHEBKDDKC")]
-    pub apehebkddkc: Vec<String>,
+    #[serde(rename = "FBABALEKNCO")]
+    pub fbabaleknco: Vec<String>,
 
     #[serde(rename = "noSuccessHint")]
     pub no_success_hint: Option<bool>,
@@ -53,14 +55,14 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "subChallengeBannerRule")]
     pub sub_challenge_banner_rule: Option<String>,
 
-    #[serde(rename = "AGPEPEDENCE")]
-    pub agpepedence: Option<bool>,
+    #[serde(rename = "DPNOHCCDMCB")]
+    pub dpnohccdmcb: Option<bool>,
 
     #[serde(rename = "recordType")]
     pub record_type: Option<String>,
 
-    #[serde(rename = "HOGLJJHPPCC")]
-    pub hogljjhppcc: Option<bool>,
+    #[serde(rename = "ADILCBFCGND")]
+    pub adilcbfcgnd: Option<bool>,
 
     #[serde(rename = "isSuccessWhenNotSettled")]
     pub is_success_when_not_settled: Option<bool>,
@@ -71,20 +73,20 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "isForwardTiming")]
     pub is_forward_timing: Option<bool>,
 
-    #[serde(rename = "NEBCEIKJCMI")]
-    pub nebceikjcmi: Option<bool>,
+    #[serde(rename = "GGLDLMJEPHB")]
+    pub ggldlmjephb: Option<bool>,
 
-    #[serde(rename = "PNCLDNBHKDJ")]
-    pub pncldnbhkdj: Option<String>,
+    #[serde(rename = "ALGKJMLCMIE")]
+    pub algkjmlcmie: Option<String>,
 
-    #[serde(rename = "DNFAFNMMMDP")]
-    pub dnfafnmmmdp: Option<String>,
+    #[serde(rename = "GJMFEJABPGD")]
+    pub gjmfejabpgd: Option<String>,
 
-    #[serde(rename = "ENONHOGJDDN")]
-    pub enonhogjddn: Option<String>,
+    #[serde(rename = "EKNGADHOPOA")]
+    pub ekngadhopoa: Option<String>,
 
-    #[serde(rename = "NJBJIKAIENN")]
-    pub njbjikaienn: Option<String>,
+    #[serde(rename = "MEHILNPPHBG")]
+    pub mehilnpphbg: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -125,6 +127,9 @@ pub enum ChallengeType {
     #[serde(rename = "CHALLENGE_KILL_MONSTER_IN_TIME")]
     ChallengeKillMonsterInTime,
 
+    #[serde(rename = "CHALLENGE_LUA_IN_TIME")]
+    ChallengeLuaInTime,
+
     #[serde(rename = "CHALLENGE_MONSTER_DAMAGE_COUNT")]
     ChallengeMonsterDamageCount,
 
@@ -133,6 +138,9 @@ pub enum ChallengeType {
 
     #[serde(rename = "CHALLENGE_SURVIVE")]
     ChallengeSurvive,
+
+    #[serde(rename = "CHALLENGE_SURVIVE_IN_TIME")]
+    ChallengeSurviveInTime,
 
     #[serde(rename = "CHALLENGE_SWIRL_ELEMENT_REACTION_COUNT")]
     ChallengeSwirlElementReactionCount,
@@ -175,8 +183,9 @@ pub enum SubChallengeFadeOutRule {
 }
 
 pub fn load() -> Result<DungeonChallengeConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DungeonChallengeConfigData.json",
     ]

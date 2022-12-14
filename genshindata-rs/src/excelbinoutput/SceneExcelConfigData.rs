@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SceneExcelConfigData = Vec<SceneExcelConfigDatum>;
@@ -29,41 +31,44 @@ pub struct SceneExcelConfigDatum {
     #[serde(rename = "comment")]
     pub comment: Comment,
 
-    #[serde(rename = "HLKDAIPGHGO")]
-    pub hlkdaipghgo: Vec<i64>,
+    #[serde(rename = "BHIFNEHFNJF")]
+    pub bhifnehfnjf: Vec<i64>,
 
-    #[serde(rename = "LJNMKKCMLOL")]
-    pub ljnmkkcmlol: Option<bool>,
+    #[serde(rename = "GABFKINBCLE")]
+    pub gabfkinbcle: Option<bool>,
 
     #[serde(rename = "maxSpecifiedAvatarNum")]
     pub max_specified_avatar_num: Option<i64>,
 
-    #[serde(rename = "FEICPPHODGE")]
-    pub feicpphodge: Option<String>,
+    #[serde(rename = "EOFFCLFCHGJ")]
+    pub eoffclfchgj: Option<String>,
 
-    #[serde(rename = "LIIICMJEHLG")]
-    pub liiicmjehlg: Option<bool>,
+    #[serde(rename = "CFPKJMDHPIA")]
+    pub cfpkjmdhpia: Option<bool>,
 
-    #[serde(rename = "LLBGGMJAGIE")]
-    pub llbggmjagie: Option<i64>,
+    #[serde(rename = "KPHDNLKMONM")]
+    pub kphdnlkmonm: Option<i64>,
 
-    #[serde(rename = "ILGKOJFHOKJ")]
-    pub ilgkojfhokj: Option<bool>,
+    #[serde(rename = "LIJCHLBDCDH")]
+    pub lijchlbdcdh: Option<bool>,
 
-    #[serde(rename = "KKPHDMLHKOL")]
-    pub kkphdmlhkol: Option<bool>,
+    #[serde(rename = "AOCOFPCNDOB")]
+    pub aocofpcndob: Option<bool>,
 
-    #[serde(rename = "BDDELKPADBA")]
-    pub bddelkpadba: Option<f64>,
+    #[serde(rename = "ANJMEELNHMK")]
+    pub anjmeelnhmk: Option<f64>,
 
-    #[serde(rename = "KHNIPCAPJFJ")]
-    pub khnipcapjfj: Option<String>,
+    #[serde(rename = "IOJNINIHBMF")]
+    pub iojninihbmf: Option<String>,
 
     #[serde(rename = "entityAppearSorted")]
     pub entity_appear_sorted: Option<i64>,
 
-    #[serde(rename = "DCLGPLMLLIP")]
-    pub dclgplmllip: Option<Dclgplmllip>,
+    #[serde(rename = "KDFBPBGFKKG")]
+    pub kdfbpbgfkkg: Option<Kdfbpbgfkkg>,
+
+    #[serde(rename = "IGJKKIFLAHK")]
+    pub igjkkiflahk: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -76,7 +81,7 @@ pub enum Comment {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dclgplmllip {
+pub enum Kdfbpbgfkkg {
     #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
     SceneSubTypePersistentDungeon,
 }
@@ -100,8 +105,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<SceneExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SceneExcelConfigData.json",
     ]

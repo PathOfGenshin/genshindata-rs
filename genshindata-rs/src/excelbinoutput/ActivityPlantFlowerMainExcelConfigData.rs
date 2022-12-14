@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityPlantFlowerMainExcelConfigData = Vec<ActivityPlantFlowerMainExcelConfigDatum>;
@@ -11,37 +13,38 @@ pub struct ActivityPlantFlowerMainExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "EIMKHLPNPDL")]
-    pub eimkhlpnpdl: Vec<i64>,
+    #[serde(rename = "GFKNIEKBJIC")]
+    pub gfkniekbjic: Vec<i64>,
 
-    #[serde(rename = "KAALDFCPNFC")]
-    pub kaaldfcpnfc: Vec<i64>,
+    #[serde(rename = "LFCPMHDOGGC")]
+    pub lfcpmhdoggc: Vec<i64>,
 
-    #[serde(rename = "HMKIEBGCBKF")]
-    pub hmkiebgcbkf: i64,
+    #[serde(rename = "AEBPBILOGEA")]
+    pub aebpbilogea: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "FHNDCDCFEEL")]
-    pub fhndcdcfeel: i64,
+    #[serde(rename = "HEHKNGOIGNO")]
+    pub hehkngoigno: i64,
 
-    #[serde(rename = "OEGMFOHBAHC")]
-    pub oegmfohbahc: Vec<i64>,
+    #[serde(rename = "JMBFBGNFBIM")]
+    pub jmbfbgnfbim: Vec<i64>,
 
     #[serde(rename = "openQuestId")]
     pub open_quest_id: i64,
 
-    #[serde(rename = "JKLCHLLIONM")]
-    pub jklchllionm: i64,
+    #[serde(rename = "PENPMKHCEHG")]
+    pub penpmkhcehg: i64,
 
     #[serde(rename = "dailyConfigIdList")]
     pub daily_config_id_list: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityPlantFlowerMainExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityPlantFlowerMainExcelConfigData.json",
     ]

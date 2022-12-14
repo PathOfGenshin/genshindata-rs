@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LanV2ProjectionLevelExcelConfigData = Vec<LanV2ProjectionLevelExcelConfigDatum>;
@@ -20,91 +22,92 @@ pub struct LanV2ProjectionLevelExcelConfigDatum {
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
 
-    #[serde(rename = "PAALKBCMGLJ")]
-    pub paalkbcmglj: String,
+    #[serde(rename = "FMBGAJJMBGH")]
+    pub fmbgajjmbgh: String,
 
-    #[serde(rename = "GIBKKIAKMHL")]
-    pub gibkkiakmhl: String,
+    #[serde(rename = "JFCNPGKKHPA")]
+    pub jfcnpgkkhpa: String,
 
-    #[serde(rename = "PCJEJMIPDLO")]
-    pub pcjejmipdlo: Option<f64>,
+    #[serde(rename = "COABBHAMBBC")]
+    pub coabbhambbc: Option<f64>,
 
-    #[serde(rename = "GAOCAPACLOF")]
-    pub gaocapaclof: f64,
+    #[serde(rename = "LEJIHFLKPIA")]
+    pub lejihflkpia: f64,
 
-    #[serde(rename = "KNEKHHLAJDD")]
-    pub knekhhlajdd: f64,
+    #[serde(rename = "ACJFIDCFLPO")]
+    pub acjfidcflpo: f64,
 
-    #[serde(rename = "NNFDMFHMGPG")]
-    pub nnfdmfhmgpg: i64,
+    #[serde(rename = "LHMBDFHIPHF")]
+    pub lhmbdfhiphf: i64,
 
-    #[serde(rename = "CNIPEIBOFKE")]
-    pub cnipeibofke: Vec<f64>,
+    #[serde(rename = "GBHOHNEEFHE")]
+    pub gbhohneefhe: Vec<f64>,
 
-    #[serde(rename = "DFOGKDJHOPG")]
-    pub dfogkdjhopg: Vec<f64>,
+    #[serde(rename = "ODKPBEDOPIO")]
+    pub odkpbedopio: Vec<f64>,
 
-    #[serde(rename = "APHAGELGEOP")]
-    pub aphagelgeop: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "PMEGBKHKENH")]
+    pub pmegbkhkenh: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "NNDDICMNDOO")]
-    pub nnddicmndoo: Vec<f64>,
+    #[serde(rename = "AIHOOFDICOG")]
+    pub aihoofdicog: Vec<f64>,
 
-    #[serde(rename = "PNKDOFIJOLK")]
-    pub pnkdofijolk: Vec<f64>,
+    #[serde(rename = "AAIIGIEGHBD")]
+    pub aaiigieghbd: Vec<f64>,
 
-    #[serde(rename = "AAHBGJLIEFO")]
-    pub aahbgjliefo: Vec<Vec<i64>>,
+    #[serde(rename = "CMCCIEJDFEF")]
+    pub cmcciejdfef: Vec<Vec<i64>>,
 
-    #[serde(rename = "BHJALMDHIKL")]
-    pub bhjalmdhikl: Vec<Bhjalmdhikl>,
+    #[serde(rename = "MJOHGJEIFDP")]
+    pub mjohgjeifdp: Vec<Mjohgjeifdp>,
 
-    #[serde(rename = "FIMCKCLJJNE")]
-    pub fimckcljjne: Option<i64>,
+    #[serde(rename = "NNHMEDICAKL")]
+    pub nnhmedicakl: Option<i64>,
 
-    #[serde(rename = "OFLJGHHFIDM")]
-    pub ofljghhfidm: Option<String>,
+    #[serde(rename = "MNDJEBAPDGH")]
+    pub mndjebapdgh: Option<String>,
 
-    #[serde(rename = "PLDAJJGKMOJ")]
-    pub pldajjgkmoj: Option<f64>,
+    #[serde(rename = "JLLLDELFKJB")]
+    pub jllldelfkjb: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bhjalmdhikl {
+pub struct Mjohgjeifdp {
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
 
-    #[serde(rename = "FAELKCOMDCG")]
-    pub faelkcomdcg: String,
+    #[serde(rename = "KALGDBBIFOI")]
+    pub kalgdbbifoi: String,
 
-    #[serde(rename = "MBDJDANJLAP")]
-    pub mbdjdanjlap: Vec<f64>,
+    #[serde(rename = "LHJMMAEEKEP")]
+    pub lhjmmaeekep: Vec<f64>,
 
-    #[serde(rename = "HBHPOEDJBHH")]
-    pub hbhpoedjbhh: Vec<f64>,
+    #[serde(rename = "NAMJBDOGJDM")]
+    pub namjbdogjdm: Vec<f64>,
 
-    #[serde(rename = "OBKMFNHGDBD")]
-    pub obkmfnhgdbd: Vec<f64>,
+    #[serde(rename = "JJGBJMNIIMN")]
+    pub jjgbjmniimn: Vec<f64>,
 
-    #[serde(rename = "EILAPMHENNF")]
-    pub eilapmhennf: Vec<f64>,
+    #[serde(rename = "EDDNGHLNJAH")]
+    pub eddnghlnjah: Vec<f64>,
 
-    #[serde(rename = "EKFHKKBKEIM")]
-    pub ekfhkkbkeim: Vec<f64>,
+    #[serde(rename = "CNNICAHBEGP")]
+    pub cnnicahbegp: Vec<f64>,
 
-    #[serde(rename = "CKOAPPANFMI")]
-    pub ckoappanfmi: Option<i64>,
+    #[serde(rename = "OPFPFEKAFPB")]
+    pub opfpfekafpb: Option<i64>,
 
-    #[serde(rename = "BBOHKNFOLAK")]
-    pub bbohknfolak: Option<String>,
+    #[serde(rename = "CFIDIBAPDLJ")]
+    pub cfidibapdlj: Option<String>,
 
-    #[serde(rename = "BGMMANAPOCI")]
-    pub bgmmanapoci: Option<f64>,
+    #[serde(rename = "MHAODFJECNL")]
+    pub mhaodfjecnl: Option<f64>,
 }
 
 pub fn load() -> Result<LanV2ProjectionLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LanV2ProjectionLevelExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityArenaChallengeExcelConfigData = Vec<ActivityArenaChallengeExcelConfigDatum>;
@@ -32,33 +34,21 @@ pub struct ActivityArenaChallengeExcelConfigDatum {
     #[serde(rename = "challengeTarget2TextMapHash")]
     pub challenge_target2_text_map_hash: i64,
 
-    #[serde(rename = "ANMENJHIDEL")]
-    pub anmenjhidel: Anmenjhidel,
+    #[serde(rename = "JDCNECGAAKA")]
+    pub jdcnecgaaka: Jdcnecgaaka,
 
-    #[serde(rename = "DKHOIJFCOME")]
-    pub dkhoijfcome: Dkhoijfcome,
+    #[serde(rename = "IMPDBLIIIOK")]
+    pub impdbliiiok: Impdbliiiok,
 
-    #[serde(rename = "PAJLHOPNJFN")]
-    pub pajlhopnjfn: Pajlhopnjfn,
+    #[serde(rename = "NCAEPNFJOBI")]
+    pub ncaepnfjobi: Ncaepnfjobi,
 
-    #[serde(rename = "EOGCNBNPAHO")]
-    pub eogcnbnpaho: Option<bool>,
+    #[serde(rename = "PGHKELNDNOC")]
+    pub pghkelndnoc: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Anmenjhidel {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "2010036;180")]
-    The2010036180,
-
-    #[serde(rename = "2010069;150")]
-    The2010069150,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Dkhoijfcome {
+pub enum Impdbliiiok {
     #[serde(rename = "")]
     Empty,
 
@@ -85,7 +75,19 @@ pub enum Dkhoijfcome {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pajlhopnjfn {
+pub enum Jdcnecgaaka {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "2010036;180")]
+    The2010036180,
+
+    #[serde(rename = "2010069;150")]
+    The2010069150,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ncaepnfjobi {
     #[serde(rename = "")]
     Empty,
 
@@ -109,8 +111,9 @@ pub enum Pajlhopnjfn {
 }
 
 pub fn load() -> Result<ActivityArenaChallengeExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityArenaChallengeExcelConfigData.json",
     ]

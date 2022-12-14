@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGachaBaseExcelConfigData = Vec<ActivityGachaBaseExcelConfigDatum>;
@@ -14,52 +16,53 @@ pub struct ActivityGachaBaseExcelConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "KBFOBKOPEAC")]
-    pub kbfobkopeac: i64,
+    #[serde(rename = "NGHCEMFDBJJ")]
+    pub nghcemfdbjj: i64,
 
-    #[serde(rename = "DIAIKJPHHAM")]
-    pub diaikjphham: i64,
+    #[serde(rename = "NNNGLCCBJOE")]
+    pub nnnglccbjoe: i64,
 
-    #[serde(rename = "POMENCNEJPK")]
-    pub pomencnejpk: i64,
+    #[serde(rename = "GEJJHKEGHPI")]
+    pub gejjhkeghpi: i64,
 
-    #[serde(rename = "GLDMPIOLLNG")]
-    pub gldmpiollng: i64,
+    #[serde(rename = "LJEHAEGHCIG")]
+    pub ljehaeghcig: i64,
 
-    #[serde(rename = "OCIGCGIJBEN")]
-    pub ocigcgijben: i64,
+    #[serde(rename = "MBLDIBOPHAO")]
+    pub mbldibophao: i64,
 
-    #[serde(rename = "HLKCHPOCPGI")]
-    pub hlkchpocpgi: i64,
+    #[serde(rename = "BFHIGDIHIFL")]
+    pub bfhigdihifl: i64,
 
-    #[serde(rename = "OGBAHDLFCOD")]
-    pub ogbahdlfcod: i64,
+    #[serde(rename = "IJFOAFFBNAG")]
+    pub ijfoaffbnag: i64,
 
-    #[serde(rename = "ABEMAKPKNHG")]
-    pub abemakpknhg: i64,
+    #[serde(rename = "FFFCCMJNIAH")]
+    pub fffccmjniah: i64,
 
-    #[serde(rename = "LAIDJIDPIHE")]
-    pub laidjidpihe: i64,
+    #[serde(rename = "KIAMFEHECIF")]
+    pub kiamfehecif: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "LFLIICPCIKO")]
-    pub lfliicpciko: Vec<i64>,
+    #[serde(rename = "JNFJNEFPIBA")]
+    pub jnfjnefpiba: Vec<i64>,
 
     #[serde(rename = "reminderId")]
     pub reminder_id: i64,
 
-    #[serde(rename = "FJLAEPOKOJA")]
-    pub fjlaepokoja: i64,
+    #[serde(rename = "HALJCNFKMDD")]
+    pub haljcnfkmdd: i64,
 
-    #[serde(rename = "DLCJPJLDNLK")]
-    pub dlcjpjldnlk: i64,
+    #[serde(rename = "JLEFGJCGICI")]
+    pub jlefgjcgici: i64,
 }
 
 pub fn load() -> Result<ActivityGachaBaseExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGachaBaseExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GravenInnocenceCampLevelExcelConfigData = Vec<GravenInnocenceCampLevelExcelConfigDatum>;
@@ -11,19 +13,20 @@ pub struct GravenInnocenceCampLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "PGGOKANNJLJ")]
-    pub pggokannjlj: i64,
+    #[serde(rename = "JICEOLNKCME")]
+    pub jiceolnkcme: i64,
 
-    #[serde(rename = "LHEGIFNCNDA")]
-    pub lhegifncnda: i64,
+    #[serde(rename = "MHOGHOMNKDO")]
+    pub mhoghomnkdo: i64,
 
-    #[serde(rename = "LCMILPPPBCD")]
-    pub lcmilpppbcd: i64,
+    #[serde(rename = "GPDMDFIILBI")]
+    pub gpdmdfiilbi: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceCampLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GravenInnocenceCampLevelExcelConfigData.json",
     ]

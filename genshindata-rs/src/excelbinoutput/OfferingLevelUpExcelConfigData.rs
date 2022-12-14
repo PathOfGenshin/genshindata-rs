@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type OfferingLevelUpExcelConfigData = Vec<OfferingLevelUpExcelConfigDatum>;
@@ -20,8 +22,8 @@ pub struct OfferingLevelUpExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,
 
-    #[serde(rename = "NBGDLGGGIDN")]
-    pub nbgdlgggidn: Vec<Nbgdlgggidn>,
+    #[serde(rename = "HNOGGPCKOIP")]
+    pub hnoggpckoip: Vec<Hnoggpckoip>,
 
     #[serde(rename = "cutSceneId")]
     pub cut_scene_id: Option<i64>,
@@ -29,8 +31,8 @@ pub struct OfferingLevelUpExcelConfigDatum {
     #[serde(rename = "consumeItemConfig")]
     pub consume_item_config: Option<bool>,
 
-    #[serde(rename = "BGKGEMDBAIA")]
-    pub bgkgemdbaia: Option<bool>,
+    #[serde(rename = "MKHIELJBILN")]
+    pub mkhieljbiln: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -43,7 +45,7 @@ pub struct ActionVec {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nbgdlgggidn {
+pub struct Hnoggpckoip {
     #[serde(rename = "param")]
     pub param: String,
 
@@ -67,8 +69,9 @@ pub enum ActionType {
 }
 
 pub fn load() -> Result<OfferingLevelUpExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "OfferingLevelUpExcelConfigData.json",
     ]

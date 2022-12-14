@@ -2,40 +2,43 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MusicRiddleConfigData = Vec<MusicRiddleConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicRiddleConfigDatum {
-    #[serde(rename = "LNCMLPKLEDG")]
-    pub lncmlpkledg: i64,
+    #[serde(rename = "OKFIKNKMCKN")]
+    pub okfiknkmckn: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MCCIJIPGJLD")]
-    pub mccijipgjld: i64,
+    #[serde(rename = "DFOIBKOPOLB")]
+    pub dfoibkopolb: i64,
 
-    #[serde(rename = "NLJDBCFJOBJ")]
-    pub nljdbcfjobj: Vec<i64>,
+    #[serde(rename = "HMOIGOCPCJJ")]
+    pub hmoigocpcjj: Vec<i64>,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "JILJDJKFJFL")]
-    pub jiljdjkfjfl: Option<i64>,
+    #[serde(rename = "FDNKLDJDPPJ")]
+    pub fdnkldjdppj: Option<i64>,
 
-    #[serde(rename = "HALGLNBAGIJ")]
-    pub halglnbagij: Option<i64>,
+    #[serde(rename = "JAPMILFLHCC")]
+    pub japmilflhcc: Option<i64>,
 
-    #[serde(rename = "GADIOHMEDHC")]
-    pub gadiohmedhc: Option<bool>,
+    #[serde(rename = "OAPLOAOBAAD")]
+    pub oaploaobaad: Option<bool>,
 }
 
 pub fn load() -> Result<MusicRiddleConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicRiddleConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SalvageOverAllExcelConfigData = Vec<SalvageOverAllExcelConfigDatum>;
@@ -14,8 +16,8 @@ pub struct SalvageOverAllExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "BDBJLBCLGPC")]
-    pub bdbjlbclgpc: i64,
+    #[serde(rename = "MPIGAHNGOCK")]
+    pub mpigahngock: i64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
@@ -35,28 +37,29 @@ pub struct SalvageOverAllExcelConfigDatum {
     #[serde(rename = "regionRadius")]
     pub region_radius: i64,
 
-    #[serde(rename = "JPMPCJDLMON")]
-    pub jpmpcjdlmon: i64,
+    #[serde(rename = "ECMANOGHNKH")]
+    pub ecmanoghnkh: i64,
 
     #[serde(rename = "reminderId")]
     pub reminder_id: i64,
 
-    #[serde(rename = "HLCAEHIHLFM")]
-    pub hlcaehihlfm: i64,
+    #[serde(rename = "ABOOPLOHFLF")]
+    pub abooplohflf: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "JBPBFNCDBHK")]
-    pub jbpbfncdbhk: i64,
+    #[serde(rename = "CHNFNHDBPFI")]
+    pub chnfnhdbpfi: i64,
 
-    #[serde(rename = "FEJKLIANLPM")]
-    pub fejklianlpm: i64,
+    #[serde(rename = "IEDLDNLFEPJ")]
+    pub iedldnlfepj: i64,
 }
 
 pub fn load() -> Result<SalvageOverAllExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SalvageOverAllExcelConfigData.json",
     ]

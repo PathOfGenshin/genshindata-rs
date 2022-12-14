@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MpPlayMatchExcelConfigData = Vec<MpPlayMatchExcelConfigDatum>;
@@ -47,16 +49,17 @@ pub struct MpPlayMatchExcelConfigDatum {
     #[serde(rename = "bgImage")]
     pub bg_image: String,
 
-    #[serde(rename = "CJOEIPPLEMM")]
-    pub cjoeipplemm: Option<bool>,
+    #[serde(rename = "EPLDIBFEDOC")]
+    pub epldibfedoc: Option<bool>,
 
-    #[serde(rename = "MFIPOMCNJMN")]
-    pub mfipomcnjmn: Option<i64>,
+    #[serde(rename = "MFFGPLCLJFL")]
+    pub mffgplcljfl: Option<i64>,
 }
 
 pub fn load() -> Result<MpPlayMatchExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MpPlayMatchExcelConfigData.json",
     ]

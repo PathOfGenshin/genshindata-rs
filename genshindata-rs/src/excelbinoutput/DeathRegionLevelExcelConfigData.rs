@@ -2,14 +2,28 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-extern crate serde_derive;
-use std::collections::HashMap;
+use std::env;
 
-pub type DeathRegionLevelExcelConfigData = Vec<HashMap<String, f64>>;
+extern crate serde_derive;
+
+pub type DeathRegionLevelExcelConfigData = Vec<DeathRegionLevelExcelConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct DeathRegionLevelExcelConfigDatum {
+    #[serde(rename = "KIFIDCDOEOA")]
+    pub kifidcdoeoa: Option<f64>,
+
+    #[serde(rename = "HINKCMOGHMA")]
+    pub hinkcmoghma: Option<i64>,
+
+    #[serde(rename = "IKINILBIMCL")]
+    pub ikinilbimcl: Option<f64>,
+}
 
 pub fn load() -> Result<DeathRegionLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DeathRegionLevelExcelConfigData.json",
     ]

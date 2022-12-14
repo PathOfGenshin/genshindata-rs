@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type QuestAcceptionMarkExcelConfigData = Vec<QuestAcceptionMarkExcelConfigDatum>;
@@ -11,34 +13,35 @@ pub struct QuestAcceptionMarkExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "PLNPGNLLBEM")]
-    pub plnpgnllbem: i64,
+    #[serde(rename = "PKOJGDJDDCE")]
+    pub pkojgdjddce: i64,
 
     #[serde(rename = "npcId")]
     pub npc_id: Option<i64>,
 
-    #[serde(rename = "IBGDMFJKGIB")]
-    pub ibgdmfjkgib: Option<bool>,
+    #[serde(rename = "OICDHDMLEPC")]
+    pub oicdhdmlepc: Option<bool>,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "GAEFMOOGGAD")]
-    pub gaefmooggad: Vec<f64>,
+    #[serde(rename = "LJBLPOEHBDE")]
+    pub ljblpoehbde: Vec<f64>,
 
-    #[serde(rename = "PPEDGAAJNEC")]
-    pub ppedgaajnec: Option<bool>,
+    #[serde(rename = "HBIFEDMLDNN")]
+    pub hbifedmldnn: Option<bool>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "PJBBGJJNGID")]
-    pub pjbbgjjngid: i64,
+    #[serde(rename = "KOJNODHIOCA")]
+    pub kojnodhioca: i64,
 }
 
 pub fn load() -> Result<QuestAcceptionMarkExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "QuestAcceptionMarkExcelConfigData.json",
     ]

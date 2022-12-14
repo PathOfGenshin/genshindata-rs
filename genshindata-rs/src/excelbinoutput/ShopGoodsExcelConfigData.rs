@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ShopGoodsExcelConfigData = Vec<ShopGoodsExcelConfigDatum>;
@@ -26,6 +28,9 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "costItems")]
     pub cost_items: Vec<CostItem>,
 
+    #[serde(rename = "platformTypeList")]
+    pub platform_type_list: Vec<PlatformTypeList>,
+
     #[serde(rename = "beginTime")]
     pub begin_time: String,
 
@@ -47,8 +52,8 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "sortLevel")]
     pub sort_level: i64,
 
-    #[serde(rename = "platformTypeList")]
-    pub platform_type_list: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "FDAHBCAJOBE")]
+    pub fdahbcajobe: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "buyLimit")]
     pub buy_limit: Option<i64>,
@@ -68,8 +73,8 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "refreshParam")]
     pub refresh_param: Option<i64>,
 
-    #[serde(rename = "GGLEGBAMGHO")]
-    pub gglegbamgho: Option<bool>,
+    #[serde(rename = "KFENLLGOLDB")]
+    pub kfenllgoldb: Option<bool>,
 
     #[serde(rename = "subTabId")]
     pub sub_tab_id: Option<i64>,
@@ -112,12 +117,30 @@ pub struct CostItem {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct PlatformTypeList {
+    #[serde(rename = "EJNOOPLGGMK")]
+    pub ejnooplggmk: Option<Precondition>,
+
+    #[serde(rename = "NGMJHIAOCKE")]
+    pub ngmjhiaocke: Option<i64>,
+
+    #[serde(rename = "HFJHEMCAAPH")]
+    pub hfjhemcaaph: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub enum Precondition {
     #[serde(rename = "SHOP_PRECONDITION_DONE_TEASURE_SEELIE_REGION")]
     ShopPreconditionDoneTeasureSeelieRegion,
 
+    #[serde(rename = "SHOP_PRECONDITION_GCG_LEVEL")]
+    ShopPreconditionGcgLevel,
+
     #[serde(rename = "SHOP_PRECONDITION_HOME_LEVEL")]
     ShopPreconditionHomeLevel,
+
+    #[serde(rename = "SHOP_PRECONDITION_QUEST_FINISH")]
+    ShopPreconditionQuestFinish,
 
     #[serde(rename = "SHOP_PRECONDITION_QUEST_FINISH_ANY")]
     ShopPreconditionQuestFinishAny,
@@ -148,8 +171,9 @@ pub enum RefreshType {
 }
 
 pub fn load() -> Result<ShopGoodsExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ShopGoodsExcelConfigData.json",
     ]

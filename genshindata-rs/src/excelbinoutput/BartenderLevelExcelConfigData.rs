@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BartenderLevelExcelConfigData = Vec<BartenderLevelExcelConfigDatum>;
@@ -14,28 +16,29 @@ pub struct BartenderLevelExcelConfigDatum {
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
 
-    #[serde(rename = "HAFOEGJLOAK")]
-    pub hafoegjloak: i64,
+    #[serde(rename = "EGKHABGENGP")]
+    pub egkhabgengp: i64,
 
-    #[serde(rename = "LKMOEICAHLC")]
-    pub lkmoeicahlc: i64,
+    #[serde(rename = "NOFENHDOGPP")]
+    pub nofenhdogpp: i64,
 
-    #[serde(rename = "MKCFNENAGLG")]
-    pub mkcfnenaglg: Vec<i64>,
+    #[serde(rename = "COPDOLNHDDA")]
+    pub copdolnhdda: Vec<i64>,
 
-    #[serde(rename = "KMNPKENGINH")]
-    pub kmnpkenginh: i64,
+    #[serde(rename = "INCNMHJGONK")]
+    pub incnmhjgonk: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "FGLFOAPKJPK")]
-    pub fglfoapkjpk: i64,
+    #[serde(rename = "PKLCNEIOIEK")]
+    pub pklcneioiek: i64,
 }
 
 pub fn load() -> Result<BartenderLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BartenderLevelExcelConfigData.json",
     ]

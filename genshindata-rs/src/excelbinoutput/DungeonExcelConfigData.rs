@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -22,7 +24,7 @@ pub struct DungeonExcelConfigDatum {
     pub desc_text_map_hash: i64,
 
     #[serde(rename = "type")]
-    pub dungeon_excel_config_datum_type: Type,
+    pub dungeon_excel_config_datum_type: String,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
@@ -48,20 +50,20 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "dayEnterCount")]
     pub day_enter_count: Option<i64>,
 
-    #[serde(rename = "JNHMFILLDCE")]
-    pub jnhmfilldce: Vec<Jnhmfilldce>,
+    #[serde(rename = "FCCFDEMHGEO")]
+    pub fccfdemhgeo: Vec<Fccfdemhgeo>,
 
     #[serde(rename = "passRewardPreviewID")]
     pub pass_reward_preview_id: Option<i64>,
 
     #[serde(rename = "settleCountdownTime")]
-    pub settle_countdown_time: i64,
+    pub settle_countdown_time: Option<i64>,
 
     #[serde(rename = "failSettleCountdownTime")]
     pub fail_settle_countdown_time: Option<i64>,
 
     #[serde(rename = "quitSettleCountdownTime")]
-    pub quit_settle_countdown_time: i64,
+    pub quit_settle_countdown_time: Option<i64>,
 
     #[serde(rename = "settleShows")]
     pub settle_shows: Vec<SettleShow>,
@@ -75,8 +77,8 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "recommendElementTypes")]
     pub recommend_element_types: Vec<RecommendElementType>,
 
-    #[serde(rename = "FEOFOGNECFH")]
-    pub feofognecfh: Vec<String>,
+    #[serde(rename = "NILCBBCGJLC")]
+    pub nilcbbcgjlc: Vec<String>,
 
     #[serde(rename = "levelConfigMap")]
     pub level_config_map: HashMap<String, i64>,
@@ -84,11 +86,11 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "enterCostItems")]
     pub enter_cost_items: Vec<i64>,
 
-    #[serde(rename = "MKCJLIGKICK")]
-    pub mkcjligkick: i64,
+    #[serde(rename = "HCMALEDDJAH")]
+    pub hcmaleddjah: i64,
 
     #[serde(rename = "cityID")]
-    pub city_id: Option<i64>,
+    pub city_id: i64,
 
     #[serde(rename = "entryPicPath")]
     pub entry_pic_path: String,
@@ -96,11 +98,11 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "stateType")]
     pub state_type: StateType,
 
-    #[serde(rename = "HKGDKECPNEA")]
-    pub hkgdkecpnea: Hkgdkecpnea,
+    #[serde(rename = "FEDJEJFCHHO")]
+    pub fedjejfchho: Fedjejfchho,
 
-    #[serde(rename = "PFOLCFNOIGF")]
-    pub pfolcfnoigf: Pfolcfnoigf,
+    #[serde(rename = "BIMCHJDGJHH")]
+    pub bimchjdgjhh: Bimchjdgjhh,
 
     #[serde(rename = "avatarLimitType")]
     pub avatar_limit_type: Option<i64>,
@@ -114,11 +116,11 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "serialId")]
     pub serial_id: Option<i64>,
 
-    #[serde(rename = "CEJNGDKNBFP")]
-    pub cejngdknbfp: Option<bool>,
+    #[serde(rename = "LHANHABLMGM")]
+    pub lhanhablmgm: Option<bool>,
 
-    #[serde(rename = "JMLFEDHFPNL")]
-    pub jmlfedhfpnl: Option<bool>,
+    #[serde(rename = "LCNACOLGDDC")]
+    pub lcnacolgddc: Option<bool>,
 
     #[serde(rename = "firstPassRewardPreviewID")]
     pub first_pass_reward_preview_id: Option<i64>,
@@ -138,6 +140,9 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "reviveIntervalTime")]
     pub revive_interval_time: Option<i64>,
 
+    #[serde(rename = "KILJGGKIOAE")]
+    pub kiljggkioae: Option<bool>,
+
     #[serde(rename = "statueCostID")]
     pub statue_cost_id: Option<i64>,
 
@@ -147,109 +152,25 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "statueDrop")]
     pub statue_drop: Option<i64>,
 
-    #[serde(rename = "IHKGGJBNLIG")]
-    pub ihkggjbnlig: Option<bool>,
-
-    #[serde(rename = "CADCHBEJFLN")]
-    pub cadchbejfln: Option<bool>,
+    #[serde(rename = "IEMGOIMAOCM")]
+    pub iemgoimaocm: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jnhmfilldce {
+pub struct Fccfdemhgeo {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Type {
-    #[serde(rename = "DUNGEON_ACTIVITY")]
-    DungeonActivity,
+pub enum Bimchjdgjhh {
+    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
+    ArtUiAtlasElementIconsUiIconClimateLaSignora,
 
-    #[serde(rename = "DUNGEON_BLITZ_RUSH")]
-    DungeonBlitzRush,
-
-    #[serde(rename = "DUNGEON_BOSS")]
-    DungeonBoss,
-
-    #[serde(rename = "DUNGEON_CHANNELLER_SLAB_LOOP")]
-    DungeonChannellerSlabLoop,
-
-    #[serde(rename = "DUNGEON_CHANNELLER_SLAB_ONE_OFF")]
-    DungeonChannellerSlabOneOff,
-
-    #[serde(rename = "DUNGEON_CHESS")]
-    DungeonChess,
-
-    #[serde(rename = "DUNGEON_CRYSTAL_LINK")]
-    DungeonCrystalLink,
-
-    #[serde(rename = "DUNGEON_DAILY_FIGHT")]
-    DungeonDailyFight,
-
-    #[serde(rename = "DUNGEON_DISCARDED")]
-    DungeonDiscarded,
-
-    #[serde(rename = "DUNGEON_DREAMLAND")]
-    DungeonDreamland,
-
-    #[serde(rename = "DUNGEON_EFFIGY")]
-    DungeonEffigy,
-
-    #[serde(rename = "DUNGEON_ELEMENT_CHALLENGE")]
-    DungeonElementChallenge,
-
-    #[serde(rename = "DUNGEON_FIGHT")]
-    DungeonFight,
-
-    #[serde(rename = "DUNGEON_FLEUR_FAIR")]
-    DungeonFleurFair,
-
-    #[serde(rename = "DUNGEON_HACHI")]
-    DungeonHachi,
-
-    #[serde(rename = "DUNGEON_INSTABLE_SPRAY")]
-    DungeonInstableSpray,
-
-    #[serde(rename = "DUNGEON_IRODORI_CHESS")]
-    DungeonIrodoriChess,
-
-    #[serde(rename = "DUNGEON_MINI_ELDRITCH")]
-    DungeonMiniEldritch,
-
-    #[serde(rename = "DUNGEON_MUQADAS_POTION")]
-    DungeonMuqadasPotion,
-
-    #[serde(rename = "DUNGEON_PLOT")]
-    DungeonPlot,
-
-    #[serde(rename = "DUNGEON_POTION")]
-    DungeonPotion,
-
-    #[serde(rename = "DUNGEON_ROGUE_DIARY")]
-    DungeonRogueDiary,
-
-    #[serde(rename = "DUNGEON_ROGUELIKE")]
-    DungeonRoguelike,
-
-    #[serde(rename = "DUNGEON_SUMMER_V2")]
-    DungeonSummerV2,
-
-    #[serde(rename = "DUNGEON_SUMO_COMBAT")]
-    DungeonSumoCombat,
-
-    #[serde(rename = "DUNGEON_THEATRE_MECHANICUS")]
-    DungeonTheatreMechanicus,
-
-    #[serde(rename = "DUNGEON_TOWER")]
-    DungeonTower,
-
-    #[serde(rename = "DUNGEON_UGC")]
-    DungeonUgc,
-
-    #[serde(rename = "DUNGEON_WIND_FIELD")]
-    DungeonWindField,
+    #[serde(rename = "")]
+    Empty,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hkgdkecpnea {
+pub enum Fedjejfchho {
     #[serde(rename = "ART/UI/Atlas/ClimatePic/UI_Img_Climate_LaSignora")]
     ArtUiAtlasClimatePicUiImgClimateLaSignora,
 
@@ -264,15 +185,6 @@ pub enum InvolveType {
 
     #[serde(rename = "INVOLVE_SINGLE_MULTIPLE")]
     InvolveSingleMultiple,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Pfolcfnoigf {
-    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
-    ArtUiAtlasElementIconsUiIconClimateLaSignora,
-
-    #[serde(rename = "")]
-    Empty,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -366,8 +278,9 @@ pub enum SubType {
 }
 
 pub fn load() -> Result<DungeonExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DungeonExcelConfigData.json",
     ]

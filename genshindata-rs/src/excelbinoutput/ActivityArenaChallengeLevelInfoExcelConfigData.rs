@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityArenaChallengeLevelInfoExcelConfigData = Vec<ActivityArenaChallengeLevelInfoExcelConfigDatum>;
@@ -29,20 +31,20 @@ pub struct ActivityArenaChallengeLevelInfoExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "NGNPIMJPNCD")]
-    pub ngnpimjpncd: String,
+    #[serde(rename = "LCAIHLNENBE")]
+    pub lcaihlnenbe: String,
 
-    #[serde(rename = "PBDPAAAMIPO")]
-    pub pbdpaaamipo: i64,
+    #[serde(rename = "AGFPHLDFNJA")]
+    pub agfphldfnja: i64,
 
-    #[serde(rename = "CDPCCEDAHGH")]
-    pub cdpccedahgh: String,
+    #[serde(rename = "LFPCAOEKMKJ")]
+    pub lfpcaoekmkj: String,
 
-    #[serde(rename = "EIPEBFPDKLB")]
-    pub eipebfpdklb: i64,
+    #[serde(rename = "LONKFHFGGMP")]
+    pub lonkfhfggmp: i64,
 
-    #[serde(rename = "NKMCJAEGBAB")]
-    pub nkmcjaegbab: String,
+    #[serde(rename = "POKAHPLIAGM")]
+    pub pokahpliagm: String,
 
     #[serde(rename = "levelDetailDescTextMapHash")]
     pub level_detail_desc_text_map_hash: i64,
@@ -52,8 +54,9 @@ pub struct ActivityArenaChallengeLevelInfoExcelConfigDatum {
 }
 
 pub fn load() -> Result<ActivityArenaChallengeLevelInfoExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityArenaChallengeLevelInfoExcelConfigData.json",
     ]

@@ -2,44 +2,46 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeWorldPlantExcelConfigData = Vec<HomeWorldPlantExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldPlantExcelConfigDatum {
-    #[serde(rename = "NOLEBNOLICE")]
-    pub nolebnolice: i64,
+    #[serde(rename = "FKODAMIEEIM")]
+    pub fkodamieeim: i64,
 
-    #[serde(rename = "JDCAFOMGFKO")]
-    pub jdcafomgfko: Vec<i64>,
+    #[serde(rename = "DCMGFMHLIMH")]
+    pub dcmgfmhlimh: Vec<i64>,
 
-    #[serde(rename = "CMDJNNPNOBM")]
-    pub cmdjnnpnobm: Option<i64>,
+    #[serde(rename = "IODMEBBDFNI")]
+    pub iodmebbdfni: Option<i64>,
 
-    #[serde(rename = "CFALOPGHBNP")]
-    pub cfalopghbnp: Option<i64>,
+    #[serde(rename = "OGPPCAFDNII")]
+    pub ogppcafdnii: Option<i64>,
 
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,
 
-    #[serde(rename = "PCBGKJGGGJC")]
-    pub pcbgkjgggjc: Vec<Pcbgkjgggjc>,
+    #[serde(rename = "BGPLDPBBDNO")]
+    pub bgpldpbbdno: Vec<Bgpldpbbdno>,
 
-    #[serde(rename = "IDPDBNMBEJA")]
-    pub idpdbnmbeja: i64,
+    #[serde(rename = "ACDKNKLPJEB")]
+    pub acdknklpjeb: i64,
 
     #[serde(rename = "time")]
     pub time: i64,
 
-    #[serde(rename = "NHHFMNAMMEB")]
-    pub nhhfmnammeb: i64,
+    #[serde(rename = "EGDGOGKBABI")]
+    pub egdgogkbabi: i64,
 
-    #[serde(rename = "DBKEIEDJJGP")]
-    pub dbkeiedjjgp: i64,
+    #[serde(rename = "KCNKPOJOPEH")]
+    pub kcnkpojopeh: i64,
 
-    #[serde(rename = "BPAPEFCOLPH")]
-    pub bpapefcolph: i64,
+    #[serde(rename = "PKBGOFIEJPG")]
+    pub pkbgofiejpg: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
@@ -47,17 +49,17 @@ pub struct HomeWorldPlantExcelConfigDatum {
     #[serde(rename = "inteeIconName")]
     pub intee_icon_name: InteeIconName,
 
-    #[serde(rename = "GFIPOJOGCKD")]
-    pub gfipojogckd: i64,
+    #[serde(rename = "KKLMDMKDIDI")]
+    pub kklmdmkdidi: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Pcbgkjgggjc {
-    #[serde(rename = "CMDJNNPNOBM")]
-    pub cmdjnnpnobm: Option<i64>,
+pub struct Bgpldpbbdno {
+    #[serde(rename = "IODMEBBDFNI")]
+    pub iodmebbdfni: Option<i64>,
 
-    #[serde(rename = "CFALOPGHBNP")]
-    pub cfalopghbnp: Option<i64>,
+    #[serde(rename = "OGPPCAFDNII")]
+    pub ogppcafdnii: Option<i64>,
 
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,
@@ -76,8 +78,9 @@ pub enum InteeIconName {
 }
 
 pub fn load() -> Result<HomeWorldPlantExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeWorldPlantExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SummerTimeV2DungeonStageExcelConfigData = Vec<SummerTimeV2DungeonStageExcelConfigDatum>;
@@ -17,8 +19,8 @@ pub struct SummerTimeV2DungeonStageExcelConfigDatum {
     #[serde(rename = "prevDungeonId")]
     pub prev_dungeon_id: i64,
 
-    #[serde(rename = "DPPCHIBBEPN")]
-    pub dppchibbepn: i64,
+    #[serde(rename = "KBLILOALEGL")]
+    pub kbliloalegl: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
@@ -29,52 +31,53 @@ pub struct SummerTimeV2DungeonStageExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "LKDGHJOBNAD")]
-    pub lkdghjobnad: i64,
+    #[serde(rename = "IOCNIGLFPPJ")]
+    pub iocniglfppj: i64,
 
-    #[serde(rename = "CACJEKMINCM")]
-    pub cacjekmincm: i64,
+    #[serde(rename = "HGMMHEPOFFD")]
+    pub hgmmhepoffd: i64,
 
-    #[serde(rename = "HMMIBLBGDAN")]
-    pub hmmiblbgdan: i64,
+    #[serde(rename = "PODKEBDBGFJ")]
+    pub podkebdbgfj: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "LBOKGFIMAMN")]
-    pub lbokgfimamn: i64,
+    #[serde(rename = "MLFHJINKKFM")]
+    pub mlfhjinkkfm: i64,
 
-    #[serde(rename = "HNNKICHABNI")]
-    pub hnnkichabni: i64,
+    #[serde(rename = "EIPPJKJCIIH")]
+    pub eippjkjciih: i64,
 
-    #[serde(rename = "PLKMNLIPABK")]
-    pub plkmnlipabk: Option<i64>,
+    #[serde(rename = "IHGMCAKBNPP")]
+    pub ihgmcakbnpp: Option<i64>,
 
-    #[serde(rename = "PLKDJJKAHPO")]
-    pub plkdjjkahpo: Option<i64>,
+    #[serde(rename = "GLDENPFDELL")]
+    pub gldenpfdell: Option<i64>,
 
-    #[serde(rename = "OMNOPJGNMJE")]
-    pub omnopjgnmje: Vec<i64>,
+    #[serde(rename = "MOKJAPEAGPO")]
+    pub mokjapeagpo: Vec<i64>,
 
-    #[serde(rename = "POGFJFMMOMN")]
-    pub pogfjfmmomn: Vec<i64>,
+    #[serde(rename = "OCACBBKFKPB")]
+    pub ocacbbkfkpb: Vec<i64>,
 
-    #[serde(rename = "COCJPDDBKCN")]
-    pub cocjpddbkcn: i64,
+    #[serde(rename = "PFPMHFAJEOF")]
+    pub pfpmhfajeof: i64,
 
-    #[serde(rename = "AJGMMBKAKHA")]
-    pub ajgmmbkakha: i64,
+    #[serde(rename = "HNNBKDAMNLL")]
+    pub hnnbkdamnll: i64,
 
-    #[serde(rename = "GNNJLIEOHJB")]
-    pub gnnjlieohjb: i64,
+    #[serde(rename = "BFAKHOCOODI")]
+    pub bfakhocoodi: i64,
 
-    #[serde(rename = "HNLHIHHNFDG")]
-    pub hnlhihhnfdg: i64,
+    #[serde(rename = "FMLFCMNOHDO")]
+    pub fmlfcmnohdo: i64,
 }
 
 pub fn load() -> Result<SummerTimeV2DungeonStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SummerTimeV2DungeonStageExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PlaceNameConfigData = Vec<PlaceNameConfigDatum>;
@@ -11,32 +13,32 @@ pub struct PlaceNameConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "IPLGFOJOCEE")]
-    pub iplgfojocee: Option<Iplgfojocee>,
+    #[serde(rename = "EOGPHNIECEI")]
+    pub eogphniecei: Option<Eogphniecei>,
 
-    #[serde(rename = "ENGJBEACIGD")]
-    pub engjbeacigd: String,
+    #[serde(rename = "NILDPFBNDHM")]
+    pub nildpfbndhm: String,
 
     #[serde(rename = "conditionType")]
     pub condition_type: ConditionType,
 
-    #[serde(rename = "GLHENDJAKFH")]
-    pub glhendjakfh: String,
+    #[serde(rename = "ANEPCHGOPNK")]
+    pub anepchgopnk: String,
 
-    #[serde(rename = "NGBCEMLKLJC")]
-    pub ngbcemlkljc: String,
+    #[serde(rename = "ILBMMPNAFEK")]
+    pub ilbmmpnafek: String,
 
     #[serde(rename = "actionType")]
     pub action_type: ActionType,
 
-    #[serde(rename = "MPGMKJJPGPE")]
-    pub mpgmkjjpgpe: i64,
+    #[serde(rename = "HGLBHEECNFB")]
+    pub hglbheecnfb: i64,
 
     #[serde(rename = "type")]
     pub place_name_config_datum_type: Option<String>,
 
-    #[serde(rename = "DLHPMOIOLFB")]
-    pub dlhpmoiolfb: Option<i64>,
+    #[serde(rename = "NKKBHMALPFG")]
+    pub nkkbhmalpfg: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -64,7 +66,7 @@ pub enum ConditionType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Iplgfojocee {
+pub enum Eogphniecei {
     #[serde(rename = "Abyssalisle")]
     Abyssalisle,
 
@@ -76,8 +78,9 @@ pub enum Iplgfojocee {
 }
 
 pub fn load() -> Result<PlaceNameConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PlaceNameConfigData.json",
     ]

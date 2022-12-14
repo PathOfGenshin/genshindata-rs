@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DungeonLevelEntityConfigData = Vec<DungeonLevelEntityConfigDatum>;
@@ -23,13 +25,14 @@ pub struct DungeonLevelEntityConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LLNDCPOAMNP")]
-    pub llndcpoamnp: i64,
+    #[serde(rename = "PCGMJGFJHJI")]
+    pub pcgmjgfjhji: i64,
 }
 
 pub fn load() -> Result<DungeonLevelEntityConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DungeonLevelEntityConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type TreasureSeelieRegionExcelConfigData = Vec<TreasureSeelieRegionExcelConfigDatum>;
@@ -20,19 +22,20 @@ pub struct TreasureSeelieRegionExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "HNMCJJJHLKL")]
-    pub hnmcjjjhlkl: i64,
+    #[serde(rename = "EDNGLANAEMJ")]
+    pub ednglanaemj: i64,
 
-    #[serde(rename = "IMFOJOOIAAM")]
-    pub imfojooiaam: Vec<i64>,
+    #[serde(rename = "KMPJKBEAFKD")]
+    pub kmpjkbeafkd: Vec<i64>,
 
-    #[serde(rename = "GBJLPOMBEGG")]
-    pub gbjlpombegg: i64,
+    #[serde(rename = "ANFMMOIKMAF")]
+    pub anfmmoikmaf: i64,
 }
 
 pub fn load() -> Result<TreasureSeelieRegionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "TreasureSeelieRegionExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GravenInnocenceRaceLevelExcelConfigData = Vec<GravenInnocenceRaceLevelExcelConfigDatum>;
@@ -17,14 +19,14 @@ pub struct GravenInnocenceRaceLevelExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "PGGOKANNJLJ")]
-    pub pggokannjlj: i64,
+    #[serde(rename = "JICEOLNKCME")]
+    pub jiceolnkcme: i64,
 
-    #[serde(rename = "AMFKMMJDDLG")]
-    pub amfkmmjddlg: Vec<i64>,
+    #[serde(rename = "HPPECOPECAK")]
+    pub hppecopecak: Vec<i64>,
 
-    #[serde(rename = "JJLGHIANHCL")]
-    pub jjlghianhcl: Vec<i64>,
+    #[serde(rename = "EOGHHDGEHPK")]
+    pub eoghhdgehpk: Vec<i64>,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -32,19 +34,20 @@ pub struct GravenInnocenceRaceLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "MBHGALFFOJN")]
-    pub mbhgalffojn: i64,
+    #[serde(rename = "BNKJEJFKLEK")]
+    pub bnkjejfklek: i64,
 
-    #[serde(rename = "JFPFDLGPAIG")]
-    pub jfpfdlgpaig: f64,
+    #[serde(rename = "LAPBBGEDIJM")]
+    pub lapbbgedijm: f64,
 
-    #[serde(rename = "JJNEDDLGJHH")]
-    pub jjneddlgjhh: f64,
+    #[serde(rename = "PJJMFLFKCEE")]
+    pub pjjmflfkcee: f64,
 }
 
 pub fn load() -> Result<GravenInnocenceRaceLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GravenInnocenceRaceLevelExcelConfigData.json",
     ]

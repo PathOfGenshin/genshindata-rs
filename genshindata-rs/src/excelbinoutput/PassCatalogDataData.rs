@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PassCatalogDataData = Vec<PassCatalogDataDatum>;
@@ -11,48 +13,60 @@ pub struct PassCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FFMABNDFCAH")]
-    pub ffmabndfcah: i64,
+    #[serde(rename = "JHMGLDHKKMI")]
+    pub jhmgldhkkmi: i64,
 
-    #[serde(rename = "FDHILJODJCM")]
-    pub fdhiljodjcm: i64,
+    #[serde(rename = "MBGKPCKJCBH")]
+    pub mbgkpckjcbh: i64,
 
-    #[serde(rename = "GJIEHFHGJPE")]
-    pub gjiehfhgjpe: String,
+    #[serde(rename = "OGLLMCOBLJO")]
+    pub ogllmcobljo: String,
 
-    #[serde(rename = "JDPGGCCINLP")]
-    pub jdpggccinlp: Jdpggccinlp,
+    #[serde(rename = "GBECKABMACL")]
+    pub gbeckabmacl: Gbeckabmacl,
 
-    #[serde(rename = "OFDHEBELPOD")]
-    pub ofdhebelpod: String,
+    #[serde(rename = "NNMJMBLGJAE")]
+    pub nnmjmblgjae: String,
 
-    #[serde(rename = "BMMFLGPKCJD")]
-    pub bmmflgpkcjd: Vec<Bmmflgpkcjd>,
+    #[serde(rename = "GDHLCPHFJBD")]
+    pub gdhlcphfjbd: Vec<Gdhlcphfjbd>,
 
-    #[serde(rename = "JNHEPMIIOLL")]
-    pub jnhepmiioll: Option<bool>,
+    #[serde(rename = "AFLKNBDECFB")]
+    pub aflknbdecfb: Option<bool>,
 
-    #[serde(rename = "ECMPKMEEOOP")]
-    pub ecmpkmeeoop: Option<i64>,
+    #[serde(rename = "IAGBCKEAALD")]
+    pub iagbckeaald: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bmmflgpkcjd {
+pub struct Gdhlcphfjbd {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
-    #[serde(rename = "JMGDMFDABJC")]
-    pub jmgdmfdabjc: Jmgdmfdabjc,
+    #[serde(rename = "CMMHNAEMCGO")]
+    pub cmmhnaemcgo: Cmmhnaemcgo,
 
-    #[serde(rename = "ECMPKMEEOOP")]
-    pub ecmpkmeeoop: Option<i64>,
+    #[serde(rename = "IAGBCKEAALD")]
+    pub iagbckeaald: Option<i64>,
 
     #[serde(rename = "weight")]
     pub weight: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jmgdmfdabjc {
+pub enum Gbeckabmacl {
+    #[serde(rename = "BIGWORLD")]
+    Bigworld,
+
+    #[serde(rename = "POLYGON")]
+    Polygon,
+
+    #[serde(rename = "SUBAREA")]
+    Subarea,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Cmmhnaemcgo {
     #[serde(rename = "DeshretPoint_jinruzhiyin01")]
     DeshretPointJinruzhiyin01,
 
@@ -138,21 +152,10 @@ pub enum Jmgdmfdabjc {
     Empty,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Jdpggccinlp {
-    #[serde(rename = "BIGWORLD")]
-    Bigworld,
-
-    #[serde(rename = "POLYGON")]
-    Polygon,
-
-    #[serde(rename = "SUBAREA")]
-    Subarea,
-}
-
 pub fn load() -> Result<PassCatalogDataData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PassCatalogDataData.json",
     ]

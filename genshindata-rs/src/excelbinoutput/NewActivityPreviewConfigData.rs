@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type NewActivityPreviewConfigData = Vec<NewActivityPreviewConfigDatum>;
@@ -14,50 +16,50 @@ pub struct NewActivityPreviewConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KGEAFDLGPFI")]
-    pub kgeafdlgpfi: i64,
+    #[serde(rename = "OMCPAKNJGAO")]
+    pub omcpaknjgao: i64,
 
-    #[serde(rename = "CKOHFOOOKOG")]
-    pub ckohfoookog: i64,
+    #[serde(rename = "HMOILPBNGHB")]
+    pub hmoilpbnghb: i64,
 
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: Option<i64>,
 
-    #[serde(rename = "JHOCOHDPDAH")]
-    pub jhocohdpdah: Option<i64>,
+    #[serde(rename = "OBEKBIMDHCH")]
+    pub obekbimdhch: Option<i64>,
 
-    #[serde(rename = "KDMDNCBDIAJ")]
-    pub kdmdncbdiaj: Vec<i64>,
+    #[serde(rename = "KCONEEMOCHA")]
+    pub kconeemocha: Vec<i64>,
 
-    #[serde(rename = "MFOLAPMNJAG")]
-    pub mfolapmnjag: Vec<i64>,
+    #[serde(rename = "DLKEEPGNMDA")]
+    pub dlkeepgnmda: Vec<i64>,
 
-    #[serde(rename = "DOPFPLFNJEG")]
-    pub dopfplfnjeg: Option<i64>,
+    #[serde(rename = "CFOCHCKNFFI")]
+    pub cfochcknffi: Option<i64>,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "PFKNIJFPLID")]
-    pub pfknijfplid: Vec<i64>,
+    #[serde(rename = "ECNPNFFMDKG")]
+    pub ecnpnffmdkg: Vec<i64>,
 
-    #[serde(rename = "DCKMPDHIEGG")]
-    pub dckmpdhiegg: Vec<i64>,
+    #[serde(rename = "NOAGIDLHAGK")]
+    pub noagidlhagk: Vec<i64>,
 
-    #[serde(rename = "JAFBHAEICEL")]
-    pub jafbhaeicel: Vec<i64>,
+    #[serde(rename = "FLKFJPJOHMC")]
+    pub flkfjpjohmc: Vec<i64>,
 
-    #[serde(rename = "JKPBCLOEGGO")]
-    pub jkpbcloeggo: Vec<Jkpbcloeggo>,
+    #[serde(rename = "EMLAGHILEJJ")]
+    pub emlaghilejj: Vec<Emlaghilejj>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jkpbcloeggo {
+pub struct Emlaghilejj {
     #[serde(rename = "desc")]
     pub desc: Desc,
 
-    #[serde(rename = "JGGGPIOFAJD")]
-    pub jgggpiofajd: Option<i64>,
+    #[serde(rename = "HAOCPNBIADK")]
+    pub haocpnbiadk: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -70,8 +72,9 @@ pub enum Desc {
 }
 
 pub fn load() -> Result<NewActivityPreviewConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "NewActivityPreviewConfigData.json",
     ]

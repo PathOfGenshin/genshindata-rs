@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CombatEndCleanExcelConfigData = Vec<CombatEndCleanExcelConfigDatum>;
@@ -11,27 +13,18 @@ pub struct CombatEndCleanExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KGCBFNBIPHB")]
-    pub kgcbfnbiphb: String,
+    #[serde(rename = "LNAEMHBMFLE")]
+    pub lnaemhbmfle: String,
 
-    #[serde(rename = "BHHFPNOFCBA")]
-    pub bhhfpnofcba: Vec<Bhhfpnofcba>,
+    #[serde(rename = "NACHEDFCKLM")]
+    pub nachedfcklm: Vec<Nachedfcklm>,
 
-    #[serde(rename = "EPOMPLNEHFC")]
-    pub epomplnehfc: Vec<Epomplnehfc>,
+    #[serde(rename = "EEKEFPMEGHH")]
+    pub eekefpmeghh: Vec<Eekefpmeghh>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bhhfpnofcba {
-    #[serde(rename = "Corruption")]
-    Corruption,
-
-    #[serde(rename = "None")]
-    None,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Epomplnehfc {
+pub enum Eekefpmeghh {
     #[serde(rename = "")]
     Empty,
 
@@ -39,9 +32,19 @@ pub enum Epomplnehfc {
     LevelEntityClearLocalGadgets,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Nachedfcklm {
+    #[serde(rename = "Corruption")]
+    Corruption,
+
+    #[serde(rename = "None")]
+    None,
+}
+
 pub fn load() -> Result<CombatEndCleanExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CombatEndCleanExcelConfigData.json",
     ]

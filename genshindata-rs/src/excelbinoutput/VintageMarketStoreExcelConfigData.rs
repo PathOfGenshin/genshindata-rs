@@ -2,55 +2,55 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type VintageMarketStoreExcelConfigData = Vec<VintageMarketStoreExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct VintageMarketStoreExcelConfigDatum {
-    #[serde(rename = "MEPDABCIKFD")]
-    pub mepdabcikfd: i64,
+    #[serde(rename = "JJBMLJGHNOG")]
+    pub jjbmljghnog: i64,
 
-    #[serde(rename = "MAHDCLCKDJI")]
-    pub mahdclckdji: i64,
+    #[serde(rename = "FLOLOJOGGCN")]
+    pub flolojoggcn: i64,
 
-    #[serde(rename = "NPEKDLNHCPG")]
-    pub npekdlnhcpg: i64,
+    #[serde(rename = "JMEOADGENAK")]
+    pub jmeoadgenak: i64,
 
-    #[serde(rename = "IPJCFCNJKKI")]
-    pub ipjcfcnjkki: Vec<i64>,
+    #[serde(rename = "BNGINDBCCEB")]
+    pub bngindbcceb: Vec<i64>,
 
-    #[serde(rename = "AJLAEJBALCK")]
-    pub ajlaejbalck: Vec<Ajlaejbalck>,
+    #[serde(rename = "OFACDMAOFEH")]
+    pub ofacdmaofeh: Vec<Ofacdmaofeh>,
 
-    #[serde(rename = "FNPECGOHLDP")]
-    pub fnpecgohldp: i64,
+    #[serde(rename = "LBJOIKGBCLD")]
+    pub lbjoikgbcld: i64,
 
-    #[serde(rename = "NMNJDBJDCIB")]
-    pub nmnjdbjdcib: Vec<i64>,
+    #[serde(rename = "BHILPBNEPCN")]
+    pub bhilpbnepcn: Vec<i64>,
 
     #[serde(rename = "npcId")]
     pub npc_id: i64,
 
-    #[serde(rename = "PBMGLKBOKEB")]
-    pub pbmglkbokeb: i64,
-
-    #[serde(rename = "DNDHGOIPAEE")]
-    pub dndhgoipaee: i64,
+    #[serde(rename = "BNOMCBPKFFG")]
+    pub bnomcbpkffg: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ajlaejbalck {
+pub struct Ofacdmaofeh {
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
 
-    #[serde(rename = "LFOLKMHENDI")]
-    pub lfolkmhendi: i64,
+    #[serde(rename = "FGFNFFFFEKN")]
+    pub fgfnffffekn: i64,
 }
 
 pub fn load() -> Result<VintageMarketStoreExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "VintageMarketStoreExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ExpeditionDataExcelConfigData = Vec<ExpeditionDataExcelConfigDatum>;
@@ -44,8 +46,8 @@ pub struct OpenConditionVec {
     #[serde(rename = "type")]
     pub open_condition_vec_type: Option<Type>,
 
-    #[serde(rename = "IAGPEFPMLBO")]
-    pub iagpefpmlbo: Option<i64>,
+    #[serde(rename = "CKIBAPNEEAE")]
+    pub ckibapneeae: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -70,8 +72,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<ExpeditionDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ExpeditionDataExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GivingExcelConfigData = Vec<GivingExcelConfigDatum>;
@@ -41,8 +43,8 @@ pub struct GivingExcelConfigDatum {
     #[serde(rename = "isRemoveItem")]
     pub is_remove_item: Option<bool>,
 
-    #[serde(rename = "FLMJOMFKBAJ")]
-    pub flmjomfkbaj: Flmjomfkbaj,
+    #[serde(rename = "MJDFKPCIHHN")]
+    pub mjdfkpcihhn: Mjdfkpcihhn,
 
     #[serde(rename = "isRepeatable")]
     pub is_repeatable: Option<bool>,
@@ -50,14 +52,14 @@ pub struct GivingExcelConfigDatum {
     #[serde(rename = "givingGroupCount")]
     pub giving_group_count: Option<i64>,
 
-    #[serde(rename = "LMBPEKLAEPL")]
-    pub lmbpeklaepl: Option<bool>,
+    #[serde(rename = "JDADHLMDFOG")]
+    pub jdadhlmdfog: Option<bool>,
 
-    #[serde(rename = "OOCIADDGLLM")]
-    pub oociaddgllm: Option<bool>,
+    #[serde(rename = "DHLHLDBGFNP")]
+    pub dhlhldbgfnp: Option<bool>,
 
-    #[serde(rename = "MBNKIBNHMAM")]
-    pub mbnkibnhmam: Option<bool>,
+    #[serde(rename = "OJLDJGPGCEF")]
+    pub ojldjgpgcef: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -67,15 +69,6 @@ pub struct ExactItem {
 
     #[serde(rename = "count")]
     pub count: Option<i64>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Flmjomfkbaj {
-    #[serde(rename = "GIVING_TYPE_GADGET")]
-    GivingTypeGadget,
-
-    #[serde(rename = "GIVING_TYPE_QUEST")]
-    GivingTypeQuest,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -97,6 +90,15 @@ pub enum Icon {
 
     #[serde(rename = "UI_Icon_Item_Temp")]
     UiIconItemTemp,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mjdfkpcihhn {
+    #[serde(rename = "GIVING_TYPE_GADGET")]
+    GivingTypeGadget,
+
+    #[serde(rename = "GIVING_TYPE_QUEST")]
+    GivingTypeQuest,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -124,8 +126,9 @@ pub enum Tab {
 }
 
 pub fn load() -> Result<GivingExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GivingExcelConfigData.json",
     ]

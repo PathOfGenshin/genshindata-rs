@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AsterMissionExcelConfigData = Vec<AsterMissionExcelConfigDatum>;
@@ -23,16 +25,14 @@ pub struct AsterMissionExcelConfigDatum {
     #[serde(rename = "tracePoint")]
     pub trace_point: String,
 
-    #[serde(rename = "perfabPathHashSuffix")]
-    pub perfab_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "perfabPathHashPre")]
-    pub perfab_path_hash_pre: Option<i64>,
+    #[serde(rename = "perfabPathHash")]
+    pub perfab_path_hash: Option<i64>,
 }
 
 pub fn load() -> Result<AsterMissionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AsterMissionExcelConfigData.json",
     ]

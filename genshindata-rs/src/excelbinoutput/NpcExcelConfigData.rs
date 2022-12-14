@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type NpcExcelConfigData = Vec<NpcExcelConfigDatum>;
@@ -29,11 +31,11 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "templateEmotionPath")]
     pub template_emotion_path: TemplateEmotionPath,
 
-    #[serde(rename = "MEGNJOPONPJ")]
-    pub megnjoponpj: Vec<i64>,
+    #[serde(rename = "MGDAJILLGMO")]
+    pub mgdajillgmo: Vec<i64>,
 
-    #[serde(rename = "PAAANBHPCNL")]
-    pub paaanbhpcnl: i64,
+    #[serde(rename = "LIPNEOMGAAD")]
+    pub lipneomgaad: i64,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -41,11 +43,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "prefabPathHashSuffix")]
-    pub prefab_path_hash_suffix: i64,
-
-    #[serde(rename = "prefabPathHashPre")]
-    pub prefab_path_hash_pre: i64,
+    #[serde(rename = "DAHDIAPDAPB")]
+    pub dahdiapdapb: i64,
 
     #[serde(rename = "campID")]
     pub camp_id: i64,
@@ -59,20 +58,14 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "hasAudio")]
     pub has_audio: Option<bool>,
 
-    #[serde(rename = "jsonPathHashSuffix")]
-    pub json_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "jsonPathHashPre")]
-    pub json_path_hash_pre: Option<i64>,
+    #[serde(rename = "ACPPMKKGABK")]
+    pub acppmkkgabk: Option<i64>,
 
     #[serde(rename = "isDaily")]
     pub is_daily: Option<bool>,
 
-    #[serde(rename = "gachaCardNameHashSuffix")]
-    pub gacha_card_name_hash_suffix: Option<i64>,
-
-    #[serde(rename = "coopPicNameHashSuffix")]
-    pub coop_pic_name_hash_suffix: Option<i64>,
+    #[serde(rename = "gachaImageNameHash")]
+    pub gacha_image_name_hash: Option<i64>,
 
     #[serde(rename = "invisiable")]
     pub invisiable: Option<bool>,
@@ -86,29 +79,29 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "firstMetId")]
     pub first_met_id: Option<i64>,
 
-    #[serde(rename = "KDOFFPNPJFD")]
-    pub kdoffpnpjfd: Option<bool>,
+    #[serde(rename = "FFPDCNJOFOA")]
+    pub ffpdcnjofoa: Option<bool>,
 
     #[serde(rename = "billboardType")]
     pub billboard_type: Option<BillboardType>,
 
-    #[serde(rename = "animatorConfigPathHashSuffix")]
-    pub animator_config_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "NJIEKKLKLLD")]
-    pub njiekklklld: Option<i64>,
+    #[serde(rename = "prefabPathHash")]
+    pub prefab_path_hash: Option<i64>,
 
     #[serde(rename = "luaDataIndex")]
     pub lua_data_index: Option<i64>,
 
-    #[serde(rename = "animatorConfigPathHashPre")]
-    pub animator_config_path_hash_pre: Option<bool>,
+    #[serde(rename = "DKDNFLOAIFL")]
+    pub dkdnfloaifl: Option<i64>,
 
-    #[serde(rename = "BEHJMAEBDNO")]
-    pub behjmaebdno: Option<bool>,
+    #[serde(rename = "animatorConfigPathHash")]
+    pub animator_config_path_hash: Option<bool>,
 
-    #[serde(rename = "FJMJMIGMJCL")]
-    pub fjmjmigmjcl: Option<Fjmjmigmjcl>,
+    #[serde(rename = "jsonPathHash")]
+    pub json_path_hash: Option<bool>,
+
+    #[serde(rename = "NJDGNJLPDLI")]
+    pub njdgnjlpdli: Option<Njdgnjlpdli>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -188,8 +181,14 @@ pub enum BillboardIcon {
     #[serde(rename = "UI_NPCTopIcon_Fishes")]
     UiNpcTopIconFishes,
 
+    #[serde(rename = "UI_NPCTopIcon_FungusFighter")]
+    UiNpcTopIconFungusFighter,
+
     #[serde(rename = "UI_NPCTopIcon_FurnitureShop")]
     UiNpcTopIconFurnitureShop,
+
+    #[serde(rename = "UI_NPCTopIcon_GcgZhanDou_04")]
+    UiNpcTopIconGcgZhanDou04,
 
     #[serde(rename = "UI_NPCTopIcon_GeneralCargo")]
     UiNpcTopIconGeneralCargo,
@@ -286,12 +285,6 @@ pub enum BodyType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fjmjmigmjcl {
-    #[serde(rename = "NPC_SPECIAL_ARANARA")]
-    NpcSpecialAranara,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
 pub enum JsonName {
     #[serde(rename = "CanMove01")]
     CanMove01,
@@ -307,6 +300,9 @@ pub enum JsonName {
 
     #[serde(rename = "ConfigNpc_Common_AnimatorMove")]
     ConfigNpcCommonAnimatorMove,
+
+    #[serde(rename = "ConfigNpc_Common_AnimatorMove_Avatar_Loli")]
+    ConfigNpcCommonAnimatorMoveAvatarLoli,
 
     #[serde(rename = "ConfigNpc_Common_AnimatorMove_Child")]
     ConfigNpcCommonAnimatorMoveChild,
@@ -422,6 +418,12 @@ pub enum JsonName {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum LuaDataPath {
+    #[serde(rename = "Actor/Npc/AQ3025SneakAI2")]
+    ActorNpcAq3025SneakAi2,
+
+    #[serde(rename = "Actor/Npc/AQ3025SneakAI3")]
+    ActorNpcAq3025SneakAi3,
+
     #[serde(rename = "Actor/Npc/FindCat")]
     ActorNpcFindCat,
 
@@ -559,6 +561,12 @@ pub enum LuaDataPath {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub enum Njdgnjlpdli {
+    #[serde(rename = "NPC_SPECIAL_ARANARA")]
+    NpcSpecialAranara,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub enum ScriptDataPath {
     #[serde(rename = "Data/ScriptData/PropObject/SneakAI")]
     DataScriptDataPropObjectSneakAi,
@@ -658,8 +666,9 @@ pub enum TemplateEmotionPath {
 }
 
 pub fn load() -> Result<NpcExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "NpcExcelConfigData.json",
     ]

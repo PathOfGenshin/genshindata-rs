@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LunaRiteQuestExcelConfigData = Vec<LunaRiteQuestExcelConfigDatum>;
@@ -20,8 +22,8 @@ pub struct LunaRiteQuestExcelConfigDatum {
     #[serde(rename = "chapterIcon")]
     pub chapter_icon: String,
 
-    #[serde(rename = "HAEKMEKBCEN")]
-    pub haekmekbcen: i64,
+    #[serde(rename = "AIPKIHDAPOJ")]
+    pub aipkihdapoj: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -32,16 +34,17 @@ pub struct LunaRiteQuestExcelConfigDatum {
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
 
-    #[serde(rename = "LJMLJIODGNJ")]
-    pub ljmljiodgnj: Option<i64>,
+    #[serde(rename = "HJAKADLKJKO")]
+    pub hjakadlkjko: Option<i64>,
 
-    #[serde(rename = "KDMDJJNBJLB")]
-    pub kdmdjjnbjlb: Option<String>,
+    #[serde(rename = "AKGCFJAILBN")]
+    pub akgcfjailbn: Option<String>,
 }
 
 pub fn load() -> Result<LunaRiteQuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LunaRiteQuestExcelConfigData.json",
     ]

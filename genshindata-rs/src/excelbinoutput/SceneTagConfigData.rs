@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SceneTagConfigData = Vec<SceneTagConfigDatum>;
@@ -17,8 +19,8 @@ pub struct SceneTagConfigDatum {
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "GAFKBGEFGNE")]
-    pub gafkbgefgne: Option<bool>,
+    #[serde(rename = "HOHKILIPMIH")]
+    pub hohkilipmih: Option<bool>,
 
     #[serde(rename = "cond")]
     pub cond: Vec<Cond>,
@@ -26,8 +28,8 @@ pub struct SceneTagConfigDatum {
     #[serde(rename = "isDefaultValid")]
     pub is_default_valid: Option<bool>,
 
-    #[serde(rename = "MDFOKFJALDH")]
-    pub mdfokfjaldh: Option<bool>,
+    #[serde(rename = "BDOGILDAFKB")]
+    pub bdogildafkb: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -43,8 +45,9 @@ pub struct Cond {
 }
 
 pub fn load() -> Result<SceneTagConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SceneTagConfigData.json",
     ]

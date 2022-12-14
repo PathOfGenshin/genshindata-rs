@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PhotographCheckAnimatorDataData = Vec<PhotographCheckAnimatorDataDatum>;
@@ -11,18 +13,18 @@ pub struct PhotographCheckAnimatorDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MLCPJEJAIOM")]
-    pub mlcpjejaiom: i64,
+    #[serde(rename = "DPGKONKALJF")]
+    pub dpgkonkaljf: i64,
 
-    #[serde(rename = "GGDNGOJLCFE")]
-    pub ggdngojlcfe: Vec<String>,
+    #[serde(rename = "DBJGDDINILC")]
+    pub dbjgddinilc: Vec<String>,
 
-    #[serde(rename = "IAKAIFCCNJE")]
-    pub iakaifccnje: Vec<Iakaifccnje>,
+    #[serde(rename = "NBKOAGEDHAH")]
+    pub nbkoagedhah: Vec<Nbkoagedhah>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Iakaifccnje {
+pub enum Nbkoagedhah {
     #[serde(rename = "AVATAR_JUMP")]
     AvatarJump,
 
@@ -61,8 +63,9 @@ pub enum Iakaifccnje {
 }
 
 pub fn load() -> Result<PhotographCheckAnimatorDataData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PhotographCheckAnimatorDataData.json",
     ]

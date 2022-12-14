@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HuntingRegionExcelConfigData = Vec<HuntingRegionExcelConfigDatum>;
@@ -32,13 +34,14 @@ pub struct HuntingRegionExcelConfigDatum {
     #[serde(rename = "regionInfoTextMapHash")]
     pub region_info_text_map_hash: i64,
 
-    #[serde(rename = "AIHBPFCJKAG")]
-    pub aihbpfcjkag: Vec<i64>,
+    #[serde(rename = "NJKEKGMAKDJ")]
+    pub njkekgmakdj: Vec<i64>,
 }
 
 pub fn load() -> Result<HuntingRegionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HuntingRegionExcelConfigData.json",
     ]

@@ -2,34 +2,37 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type TowerRewardExcelConfigData = Vec<TowerRewardExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TowerRewardExcelConfigDatum {
-    #[serde(rename = "IEPBHNILIDB")]
-    pub iepbhnilidb: i64,
+    #[serde(rename = "IPGAJMFELEC")]
+    pub ipgajmfelec: i64,
 
-    #[serde(rename = "DGKHCGBPFDM")]
-    pub dgkhcgbpfdm: i64,
+    #[serde(rename = "IBLEPIOKENB")]
+    pub iblepiokenb: i64,
 
-    #[serde(rename = "BCOFGJBABGD")]
-    pub bcofgjbabgd: i64,
+    #[serde(rename = "HJPHFBGPFIA")]
+    pub hjphfbgpfia: i64,
 
-    #[serde(rename = "CAEOHANFNAP")]
-    pub caeohanfnap: i64,
+    #[serde(rename = "EIHIHGLFECC")]
+    pub eihihglfecc: i64,
 
-    #[serde(rename = "DGJDIBJKGMI")]
-    pub dgjdibjkgmi: i64,
+    #[serde(rename = "AHOINMOIFKF")]
+    pub ahoinmoifkf: i64,
 
-    #[serde(rename = "MHDLDDFOIJD")]
-    pub mhdlddfoijd: Vec<i64>,
+    #[serde(rename = "MHGCHJIMGJJ")]
+    pub mhgchjimgjj: Vec<i64>,
 }
 
 pub fn load() -> Result<TowerRewardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "TowerRewardExcelConfigData.json",
     ]

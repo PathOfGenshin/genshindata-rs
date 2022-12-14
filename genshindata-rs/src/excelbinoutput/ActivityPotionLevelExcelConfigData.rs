@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityPotionLevelExcelConfigData = Vec<ActivityPotionLevelExcelConfigDatum>;
@@ -20,25 +22,26 @@ pub struct ActivityPotionLevelExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KHJCFACAFNF")]
-    pub khjcfacafnf: i64,
+    #[serde(rename = "CEEKJGHPABN")]
+    pub ceekjghpabn: i64,
 
-    #[serde(rename = "JCINIIGJFLI")]
-    pub jciniigjfli: Vec<i64>,
+    #[serde(rename = "DFAJHDJOFJE")]
+    pub dfajhdjofje: Vec<i64>,
 
-    #[serde(rename = "ONJDEANPDHL")]
-    pub onjdeanpdhl: Vec<i64>,
+    #[serde(rename = "JFOGHAKCNEF")]
+    pub jfoghakcnef: Vec<i64>,
 
-    #[serde(rename = "IDKJKPPHCHN")]
-    pub idkjkpphchn: Vec<i64>,
+    #[serde(rename = "AAMLGBFKPFF")]
+    pub aamlgbfkpff: Vec<i64>,
 
-    #[serde(rename = "LAPLGNNGBFO")]
-    pub laplgnngbfo: Vec<i64>,
+    #[serde(rename = "NGOAGJEIFMI")]
+    pub ngoagjeifmi: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityPotionLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityPotionLevelExcelConfigData.json",
     ]

@@ -2,17 +2,19 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FettersExcelConfigData = Vec<FettersExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FettersExcelConfigDatum {
-    #[serde(rename = "MEHNNNCLHLI")]
-    pub mehnnnclhli: i64,
+    #[serde(rename = "EANPEKNJMGE")]
+    pub eanpeknjmge: i64,
 
-    #[serde(rename = "OALKEOBGAHC")]
-    pub oalkeobgahc: Vec<i64>,
+    #[serde(rename = "FDOKPFHCKFN")]
+    pub fdokpfhckfn: Vec<i64>,
 
     #[serde(rename = "finishConds")]
     pub finish_conds: Vec<i64>,
@@ -41,8 +43,8 @@ pub struct FettersExcelConfigDatum {
     #[serde(rename = "openConds")]
     pub open_conds: Vec<OpenCond>,
 
-    #[serde(rename = "KIENFJBHKEP")]
-    pub kienfjbhkep: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "NJAMEFECDPJ")]
+    pub njamefecdpj: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "isHiden")]
     pub is_hiden: Option<bool>,
@@ -71,9 +73,6 @@ pub enum CondType {
     #[serde(rename = "FETTER_COND_FINISH_QUEST")]
     FetterCondFinishQuest,
 
-    #[serde(rename = "FETTER_COND_NOT_OPEN")]
-    FetterCondNotOpen,
-
     #[serde(rename = "FETTER_COND_PLAYER_BIRTHDAY")]
     FetterCondPlayerBirthday,
 
@@ -82,8 +81,9 @@ pub enum CondType {
 }
 
 pub fn load() -> Result<FettersExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FettersExcelConfigData.json",
     ]

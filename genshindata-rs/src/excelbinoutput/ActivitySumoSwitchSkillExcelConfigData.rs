@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySumoSwitchSkillExcelConfigData = Vec<ActivitySumoSwitchSkillExcelConfigDatum>;
@@ -11,8 +13,8 @@ pub struct ActivitySumoSwitchSkillExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "GPDAEIMDCBF")]
-    pub gpdaeimdcbf: String,
+    #[serde(rename = "BAJIHJHAKCG")]
+    pub bajihjhakcg: String,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -23,16 +25,14 @@ pub struct ActivitySumoSwitchSkillExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 
-    #[serde(rename = "NBLOCEJHFCN")]
-    pub nblocejhfcn: i64,
-
-    #[serde(rename = "HPIKALMBHLL")]
-    pub hpikalmbhll: i64,
+    #[serde(rename = "IJFLOIFAJHH")]
+    pub ijfloifajhh: i64,
 }
 
 pub fn load() -> Result<ActivitySumoSwitchSkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySumoSwitchSkillExcelConfigData.json",
     ]

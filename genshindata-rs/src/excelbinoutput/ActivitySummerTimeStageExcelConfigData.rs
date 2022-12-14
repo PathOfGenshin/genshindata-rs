@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySummerTimeStageExcelConfigData = Vec<ActivitySummerTimeStageExcelConfigDatum>;
@@ -23,31 +25,32 @@ pub struct ActivitySummerTimeStageExcelConfigDatum {
     #[serde(rename = "mainQuest")]
     pub main_quest: i64,
 
-    #[serde(rename = "HJHGKGJGBIG")]
-    pub hjhgkgjgbig: Option<i64>,
+    #[serde(rename = "LDDAKGJLFLG")]
+    pub lddakgjlflg: Option<i64>,
 
-    #[serde(rename = "OHALKBDDELB")]
-    pub ohalkbddelb: Option<i64>,
+    #[serde(rename = "BJHKIEAILMP")]
+    pub bjhkieailmp: Option<i64>,
 
-    #[serde(rename = "DGGMIFJMJBP")]
-    pub dggmifjmjbp: i64,
+    #[serde(rename = "DMHGKGCGIJG")]
+    pub dmhgkgcgijg: i64,
 
-    #[serde(rename = "HMMIBLBGDAN")]
-    pub hmmiblbgdan: i64,
+    #[serde(rename = "PODKEBDBGFJ")]
+    pub podkebdbgfj: i64,
 
-    #[serde(rename = "LKLOOPJJNNI")]
-    pub lkloopjjnni: i64,
+    #[serde(rename = "EGMBMKKGJCL")]
+    pub egmbmkkgjcl: i64,
 
-    #[serde(rename = "DKGNJHDIODG")]
-    pub dkgnjhdiodg: i64,
+    #[serde(rename = "FLHOHPPKFDO")]
+    pub flhohppkfdo: i64,
 
     #[serde(rename = "preQuest")]
     pub pre_quest: Option<i64>,
 }
 
 pub fn load() -> Result<ActivitySummerTimeStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySummerTimeStageExcelConfigData.json",
     ]

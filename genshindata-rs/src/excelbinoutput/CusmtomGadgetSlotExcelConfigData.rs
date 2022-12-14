@@ -2,34 +2,37 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CusmtomGadgetSlotExcelConfigData = Vec<CusmtomGadgetSlotExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CusmtomGadgetSlotExcelConfigDatum {
-    #[serde(rename = "AHAHNFALNFN")]
-    pub ahahnfalnfn: i64,
+    #[serde(rename = "POMEJABCDBC")]
+    pub pomejabcdbc: i64,
 
-    #[serde(rename = "LAPGIHCIGHI")]
-    pub lapgihcighi: Vec<i64>,
+    #[serde(rename = "ENKPMGGPBEN")]
+    pub enkpmggpben: Vec<i64>,
 
-    #[serde(rename = "LGAGHGIGGJG")]
-    pub lgaghgiggjg: Option<bool>,
+    #[serde(rename = "IPCGHOPCGEI")]
+    pub ipcghopcgei: Option<bool>,
 
-    #[serde(rename = "HDPPKHCKFMM")]
-    pub hdppkhckfmm: Vec<i64>,
+    #[serde(rename = "GADMOLLAIJB")]
+    pub gadmollaijb: Vec<i64>,
 
-    #[serde(rename = "NCAJMPOIPDB")]
-    pub ncajmpoipdb: Vec<i64>,
+    #[serde(rename = "JIBKILIJFJD")]
+    pub jibkilijfjd: Vec<i64>,
 
-    #[serde(rename = "IGLFOHCHEMP")]
-    pub iglfohchemp: Option<i64>,
+    #[serde(rename = "OCCHOKMGLCF")]
+    pub occhokmglcf: Option<i64>,
 }
 
 pub fn load() -> Result<CusmtomGadgetSlotExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CusmtomGadgetSlotExcelConfigData.json",
     ]

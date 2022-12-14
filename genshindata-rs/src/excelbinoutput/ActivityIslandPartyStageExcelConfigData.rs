@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityIslandPartyStageExcelConfigData = Vec<ActivityIslandPartyStageExcelConfigDatum>;
@@ -11,14 +13,14 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JFMIMMBHHNK")]
-    pub jfmimmbhhnk: String,
+    #[serde(rename = "FPIMNAJGDLL")]
+    pub fpimnajgdll: String,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "MFIPOMCNJMN")]
-    pub mfipomcnjmn: i64,
+    #[serde(rename = "MFFGPLCLJFL")]
+    pub mffgplcljfl: i64,
 
     #[serde(rename = "matchId")]
     pub match_id: i64,
@@ -26,8 +28,8 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "draftId")]
     pub draft_id: i64,
 
-    #[serde(rename = "HAFOEGJLOAK")]
-    pub hafoegjloak: i64,
+    #[serde(rename = "EGKHABGENGP")]
+    pub egkhabgengp: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -35,25 +37,26 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "CLCOAOMOANE")]
-    pub clcoaomoane: i64,
+    #[serde(rename = "LNOHGHNENHB")]
+    pub lnohghnenhb: i64,
 
-    #[serde(rename = "KNKEFFFJKMD")]
-    pub knkefffjkmd: i64,
+    #[serde(rename = "LBPHAECGJDM")]
+    pub lbphaecgjdm: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "KJJAPBBALHH")]
-    pub kjjapbbalhh: Vec<i64>,
+    #[serde(rename = "GLCJNANKNJD")]
+    pub glcjnanknjd: Vec<i64>,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }
 
 pub fn load() -> Result<ActivityIslandPartyStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityIslandPartyStageExcelConfigData.json",
     ]

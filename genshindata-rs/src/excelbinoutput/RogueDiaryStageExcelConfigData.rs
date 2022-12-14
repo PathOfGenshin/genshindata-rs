@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueDiaryStageExcelConfigData = Vec<RogueDiaryStageExcelConfigDatum>;
@@ -14,32 +16,32 @@ pub struct RogueDiaryStageExcelConfigDatum {
     #[serde(rename = "condId")]
     pub cond_id: i64,
 
-    #[serde(rename = "NHAEJNNPBMH")]
-    pub nhaejnnpbmh: Vec<i64>,
+    #[serde(rename = "PBBBIOPKCAI")]
+    pub pbbbiopkcai: Vec<i64>,
 
-    #[serde(rename = "BLNKILNDHML")]
-    pub blnkilndhml: Vec<i64>,
+    #[serde(rename = "MCIMHJLHIFJ")]
+    pub mcimhjlhifj: Vec<i64>,
 
-    #[serde(rename = "FOBNMOOCNFK")]
-    pub fobnmoocnfk: Vec<i64>,
+    #[serde(rename = "FFEJNELDLBI")]
+    pub ffejneldlbi: Vec<i64>,
 
-    #[serde(rename = "CFNNMONBCEJ")]
-    pub cfnnmonbcej: i64,
+    #[serde(rename = "PNPBLPOKOJJ")]
+    pub pnpblpokojj: i64,
 
-    #[serde(rename = "JMLMNBOHOOG")]
-    pub jmlmnbohoog: i64,
+    #[serde(rename = "HENKLCIGBGP")]
+    pub henklcigbgp: i64,
 
-    #[serde(rename = "OFOHLHDCCPP")]
-    pub ofohlhdccpp: String,
+    #[serde(rename = "KEABOJCBIHN")]
+    pub keabojcbihn: String,
 
-    #[serde(rename = "ANJJMPAMEKL")]
-    pub anjjmpamekl: Option<i64>,
+    #[serde(rename = "IABBNCDFIGJ")]
+    pub iabbncdfigj: Option<i64>,
 
-    #[serde(rename = "BNHKIIIIFMG")]
-    pub bnhkiiiifmg: Vec<i64>,
+    #[serde(rename = "HCNBJHGCIHC")]
+    pub hcnbjhgcihc: Vec<i64>,
 
-    #[serde(rename = "ACNCOCPBLNF")]
-    pub acncocpblnf: Vec<i64>,
+    #[serde(rename = "CAPBAJIHODB")]
+    pub capbajihodb: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
@@ -47,19 +49,20 @@ pub struct RogueDiaryStageExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "DLGDLAIMIGL")]
-    pub dlgdlaimigl: i64,
+    #[serde(rename = "AOAMGBJANDP")]
+    pub aoamgbjandp: i64,
 
-    #[serde(rename = "JPIKHPHDFAO")]
-    pub jpikhphdfao: i64,
+    #[serde(rename = "FOMCEGDAJHE")]
+    pub fomcegdajhe: i64,
 
-    #[serde(rename = "PCJBMLLPAMK")]
-    pub pcjbmllpamk: Option<i64>,
+    #[serde(rename = "PDJFFAOBBOE")]
+    pub pdjffaobboe: Option<i64>,
 }
 
 pub fn load() -> Result<RogueDiaryStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueDiaryStageExcelConfigData.json",
     ]

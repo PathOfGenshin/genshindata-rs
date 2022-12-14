@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type QuestExcelConfigData = Vec<QuestExcelConfigDatum>;
@@ -29,17 +31,62 @@ pub struct QuestExcelConfigDatum {
     #[serde(rename = "showType")]
     pub show_type: Option<FailParentShow>,
 
+    #[serde(rename = "acceptCond")]
+    pub accept_cond: Vec<AcceptCond>,
+
+    #[serde(rename = "finishCond")]
+    pub finish_cond: Vec<Cond>,
+
+    #[serde(rename = "failCond")]
+    pub fail_cond: Vec<Cond>,
+
     #[serde(rename = "guide")]
     pub guide: Guide,
 
+    #[serde(rename = "finishExec")]
+    pub finish_exec: Vec<Exec>,
+
+    #[serde(rename = "failExec")]
+    pub fail_exec: Vec<Exec>,
+
+    #[serde(rename = "beginExec")]
+    pub begin_exec: Vec<Exec>,
+
+    #[serde(rename = "exclusiveNpcList")]
+    pub exclusive_npc_list: Vec<i64>,
+
+    #[serde(rename = "sharedNpcList")]
+    pub shared_npc_list: Vec<i64>,
+
+    #[serde(rename = "trialAvatarList")]
+    pub trial_avatar_list: Vec<i64>,
+
+    #[serde(rename = "exclusivePlaceList")]
+    pub exclusive_place_list: Vec<i64>,
+
     #[serde(rename = "finishCondComb")]
-    pub finish_cond_comb: FinishCondComb,
+    pub finish_cond_comb: Option<CondComb>,
+
+    #[serde(rename = "finishParent")]
+    pub finish_parent: Option<bool>,
 
     #[serde(rename = "showGuide")]
     pub show_guide: Option<ShowGuide>,
 
+    #[serde(rename = "isRewind")]
+    pub is_rewind: Option<bool>,
+
+    #[serde(rename = "acceptCondComb")]
+    pub accept_cond_comb: Option<CondComb>,
+
+    #[serde(rename = "failCondComb")]
+    pub fail_cond_comb: Option<CondComb>,
+
     #[serde(rename = "banType")]
     pub ban_type: Option<BanType>,
+
+    #[serde(rename = "exclusiveNpcPriority")]
+    pub exclusive_npc_priority: Option<i64>,
 
     #[serde(rename = "isMpBlock")]
     pub is_mp_block: Option<bool>,
@@ -47,12 +94,44 @@ pub struct QuestExcelConfigDatum {
     #[serde(rename = "subIdSet")]
     pub sub_id_set: Option<i64>,
 
+    #[serde(rename = "failParent")]
+    pub fail_parent: Option<bool>,
+
     #[serde(rename = "failParentShow")]
     pub fail_parent_show: Option<FailParentShow>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct FinishCondComb {
+pub struct AcceptCond {
+    #[serde(rename = "_type")]
+    pub accept_cond_type: Option<AcceptCondType>,
+
+    #[serde(rename = "_param")]
+    pub param: Vec<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Exec {
+    #[serde(rename = "_param")]
+    pub param: Vec<String>,
+
+    #[serde(rename = "_type")]
+    pub exec_type: Option<BeginExecType>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Cond {
+    #[serde(rename = "_param")]
+    pub param: Vec<i64>,
+
+    #[serde(rename = "_param_str")]
+    pub param_str: String,
+
+    #[serde(rename = "_type")]
+    pub cond_type: Option<FailCondType>,
+
+    #[serde(rename = "_count")]
+    pub count: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -77,6 +156,126 @@ pub struct Guide {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub enum AcceptCondType {
+    #[serde(rename = "QUEST_COND_ACTIVITY_COND")]
+    QuestCondActivityCond,
+
+    #[serde(rename = "QUEST_COND_ACTIVITY_END")]
+    QuestCondActivityEnd,
+
+    #[serde(rename = "QUEST_COND_CITY_REPUTATION_REQUEST")]
+    QuestCondCityReputationRequest,
+
+    #[serde(rename = "QUEST_COND_COMPLETE_TALK")]
+    QuestCondCompleteTalk,
+
+    #[serde(rename = "QUEST_COND_CUR_CLIMATE")]
+    QuestCondCurClimate,
+
+    #[serde(rename = "QUEST_COND_DAILY_TASK_START")]
+    QuestCondDailyTaskStart,
+
+    #[serde(rename = "QUEST_COND_DAILY_TASK_VAR_EQ")]
+    QuestCondDailyTaskVarEq,
+
+    #[serde(rename = "QUEST_COND_DAILY_TASK_VAR_GT")]
+    QuestCondDailyTaskVarGt,
+
+    #[serde(rename = "QUEST_COND_DAILY_TASK_VAR_LT")]
+    QuestCondDailyTaskVarLt,
+
+    #[serde(rename = "QUEST_COND_HISTORY_GOT_ANY_ITEM")]
+    QuestCondHistoryGotAnyItem,
+
+    #[serde(rename = "QUEST_COND_IS_DAYTIME")]
+    QuestCondIsDaytime,
+
+    #[serde(rename = "QUEST_COND_ITEM_GIVING_FINISHED")]
+    QuestCondItemGivingFinished,
+
+    #[serde(rename = "QUEST_COND_ITEM_NUM_LESS_THAN")]
+    QuestCondItemNumLessThan,
+
+    #[serde(rename = "QUEST_COND_LUA_NOTIFY")]
+    QuestCondLuaNotify,
+
+    #[serde(rename = "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT")]
+    QuestCondMainCoopEnterSavePoint,
+
+    #[serde(rename = "QUEST_COND_MAIN_COOP_START")]
+    QuestCondMainCoopStart,
+
+    #[serde(rename = "QUEST_COND_OPEN_STATE_EQUAL")]
+    QuestCondOpenStateEqual,
+
+    #[serde(rename = "QUEST_COND_PACK_HAVE_ITEM")]
+    QuestCondPackHaveItem,
+
+    #[serde(rename = "QUEST_COND_PERSONAL_LINE_UNLOCK")]
+    QuestCondPersonalLineUnlock,
+
+    #[serde(rename = "QUEST_COND_PLAYER_ENTER_REGION")]
+    QuestCondPlayerEnterRegion,
+
+    #[serde(rename = "QUEST_COND_PLAYER_LEVEL_EQUAL_GREATER")]
+    QuestCondPlayerLevelEqualGreater,
+
+    #[serde(rename = "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL")]
+    QuestCondQuestGlobalVarEqual,
+
+    #[serde(rename = "QUEST_COND_QUEST_GLOBAL_VAR_GREATER")]
+    QuestCondQuestGlobalVarGreater,
+
+    #[serde(rename = "QUEST_COND_QUEST_GLOBAL_VAR_LESS")]
+    QuestCondQuestGlobalVarLess,
+
+    #[serde(rename = "QUEST_COND_QUEST_VAR_EQUAL")]
+    QuestCondQuestVarEqual,
+
+    #[serde(rename = "QUEST_COND_QUEST_VAR_GREATER")]
+    QuestCondQuestVarGreater,
+
+    #[serde(rename = "QUEST_COND_QUEST_VAR_LESS")]
+    QuestCondQuestVarLess,
+
+    #[serde(rename = "QUEST_COND_SCENE_LEVEL_TAG_EQ")]
+    QuestCondSceneLevelTagEq,
+
+    #[serde(rename = "QUEST_COND_STATE_EQUAL")]
+    QuestCondStateEqual,
+
+    #[serde(rename = "QUEST_COND_STATE_NOT_EQUAL")]
+    QuestCondStateNotEqual,
+
+    #[serde(rename = "QUEST_COND_TIME_VAR_PASS_DAY")]
+    QuestCondTimeVarPassDay,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum CondComb {
+    #[serde(rename = "LOGIC_A_AND_B_AND_ETCOR")]
+    LogicAAndBAndEtcor,
+
+    #[serde(rename = "LOGIC_A_AND_B_OR_ETCAND")]
+    LogicAAndBOrEtcand,
+
+    #[serde(rename = "LOGIC_A_AND_ETCOR")]
+    LogicAAndEtcor,
+
+    #[serde(rename = "LOGIC_A_OR_B_OR_ETCAND")]
+    LogicAOrBOrEtcand,
+
+    #[serde(rename = "LOGIC_A_OR_ETCAND")]
+    LogicAOrEtcand,
+
+    #[serde(rename = "LOGIC_AND")]
+    LogicAnd,
+
+    #[serde(rename = "LOGIC_OR")]
+    LogicOr,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub enum BanType {
     #[serde(rename = "BAN_GROUP_COMMON")]
     BanGroupCommon,
@@ -89,6 +288,360 @@ pub enum BanType {
 
     #[serde(rename = "BAN_GROUP_TRANSPORT_ONLY")]
     BanGroupTransportOnly,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum BeginExecType {
+    #[serde(rename = "QUEST_EXEC_ACTIVE_ACTIVITY_COND_STATE")]
+    QuestExecActiveActivityCondState,
+
+    #[serde(rename = "QUEST_EXEC_ACTIVE_ITEM_GIVING")]
+    QuestExecActiveItemGiving,
+
+    #[serde(rename = "QUEST_EXEC_ADD_CUR_AVATAR_ENERGY")]
+    QuestExecAddCurAvatarEnergy,
+
+    #[serde(rename = "QUEST_EXEC_ADD_QUEST_PROGRESS")]
+    QuestExecAddQuestProgress,
+
+    #[serde(rename = "QUEST_EXEC_ADD_SCENE_TAG")]
+    QuestExecAddSceneTag,
+
+    #[serde(rename = "QUEST_EXEC_CHANGE_AVATAR_ELEMET")]
+    QuestExecChangeAvatarElemet,
+
+    #[serde(rename = "QUEST_EXEC_CHANGE_MAP_AREA_STATE")]
+    QuestExecChangeMapAreaState,
+
+    #[serde(rename = "QUEST_EXEC_CHANGE_SCENE_LEVEL_TAG")]
+    QuestExecChangeSceneLevelTag,
+
+    #[serde(rename = "QUEST_EXEC_CHANGE_SKILL_DEPOT")]
+    QuestExecChangeSkillDepot,
+
+    #[serde(rename = "QUEST_EXEC_CLEAR_TIME_VAR")]
+    QuestExecClearTimeVar,
+
+    #[serde(rename = "QUEST_EXEC_DEACTIVE_ITEM_GIVING")]
+    QuestExecDeactiveItemGiving,
+
+    #[serde(rename = "QUEST_EXEC_DEC_QUEST_VAR")]
+    QuestExecDecQuestVar,
+
+    #[serde(rename = "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM")]
+    QuestExecDelAllSpecificPackItem,
+
+    #[serde(rename = "QUEST_EXEC_DEL_PACK_ITEM")]
+    QuestExecDelPackItem,
+
+    #[serde(rename = "QUEST_EXEC_DEL_PACK_ITEM_BATCH")]
+    QuestExecDelPackItemBatch,
+
+    #[serde(rename = "QUEST_EXEC_DEL_SCENE_TAG")]
+    QuestExecDelSceneTag,
+
+    #[serde(rename = "QUEST_EXEC_GRANT_TRIAL_AVATAR")]
+    QuestExecGrantTrialAvatar,
+
+    #[serde(rename = "QUEST_EXEC_GRANT_TRIAL_AVATAR_AND_LOCK_TEAM")]
+    QuestExecGrantTrialAvatarAndLockTeam,
+
+    #[serde(rename = "QUEST_EXEC_GRANT_TRIAL_AVATAR_BATCH_AND_LOCK_TEAM")]
+    QuestExecGrantTrialAvatarBatchAndLockTeam,
+
+    #[serde(rename = "QUEST_EXEC_INACTIVE_ACTIVITY_COND_STATE")]
+    QuestExecInactiveActivityCondState,
+
+    #[serde(rename = "QUEST_EXEC_INC_DAILY_TASK_VAR")]
+    QuestExecIncDailyTaskVar,
+
+    #[serde(rename = "QUEST_EXEC_INC_QUEST_GLOBAL_VAR")]
+    QuestExecIncQuestGlobalVar,
+
+    #[serde(rename = "QUEST_EXEC_INC_QUEST_VAR")]
+    QuestExecIncQuestVar,
+
+    #[serde(rename = "QUEST_EXEC_INIT_TIME_VAR")]
+    QuestExecInitTimeVar,
+
+    #[serde(rename = "QUEST_EXEC_LOCK_AVATAR_TEAM")]
+    QuestExecLockAvatarTeam,
+
+    #[serde(rename = "QUEST_EXEC_LOCK_PLAYER_WORLD_SCENE")]
+    QuestExecLockPlayerWorldScene,
+
+    #[serde(rename = "QUEST_EXEC_LOCK_POINT")]
+    QuestExecLockPoint,
+
+    #[serde(rename = "QUEST_EXEC_MODIFY_CLIMATE_AREA")]
+    QuestExecModifyClimateArea,
+
+    #[serde(rename = "QUEST_EXEC_MODIFY_WEATHER_AREA")]
+    QuestExecModifyWeatherArea,
+
+    #[serde(rename = "QUEST_EXEC_NOTIFY_DAILY_TASK")]
+    QuestExecNotifyDailyTask,
+
+    #[serde(rename = "QUEST_EXEC_NOTIFY_GROUP_LUA")]
+    QuestExecNotifyGroupLua,
+
+    #[serde(rename = "QUEST_EXEC_RANDOM_QUEST_VAR")]
+    QuestExecRandomQuestVar,
+
+    #[serde(rename = "QUEST_EXEC_REFRESH_GROUP_MONSTER")]
+    QuestExecRefreshGroupMonster,
+
+    #[serde(rename = "QUEST_EXEC_REFRESH_GROUP_SUITE")]
+    QuestExecRefreshGroupSuite,
+
+    #[serde(rename = "QUEST_EXEC_REFRESH_GROUP_SUITE_RANDOM")]
+    QuestExecRefreshGroupSuiteRandom,
+
+    #[serde(rename = "QUEST_EXEC_REGISTER_DYNAMIC_GROUP")]
+    QuestExecRegisterDynamicGroup,
+
+    #[serde(rename = "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY")]
+    QuestExecRegisterDynamicGroupOnly,
+
+    #[serde(rename = "QUEST_EXEC_RELOAD_SCENE_TAG")]
+    QuestExecReloadSceneTag,
+
+    #[serde(rename = "QUEST_EXEC_REMOVE_TRIAL_AVATAR")]
+    QuestExecRemoveTrialAvatar,
+
+    #[serde(rename = "QUEST_EXEC_ROLLBACK_PARENT_QUEST")]
+    QuestExecRollbackParentQuest,
+
+    #[serde(rename = "QUEST_EXEC_ROLLBACK_QUEST")]
+    QuestExecRollbackQuest,
+
+    #[serde(rename = "QUEST_EXEC_SET_DAILY_TASK_VAR")]
+    QuestExecSetDailyTaskVar,
+
+    #[serde(rename = "QUEST_EXEC_SET_GAME_TIME")]
+    QuestExecSetGameTime,
+
+    #[serde(rename = "QUEST_EXEC_SET_IS_FLYABLE")]
+    QuestExecSetIsFlyable,
+
+    #[serde(rename = "QUEST_EXEC_SET_IS_GAME_TIME_LOCKED")]
+    QuestExecSetIsGameTimeLocked,
+
+    #[serde(rename = "QUEST_EXEC_SET_IS_WEATHER_LOCKED")]
+    QuestExecSetIsWeatherLocked,
+
+    #[serde(rename = "QUEST_EXEC_SET_OPEN_STATE")]
+    QuestExecSetOpenState,
+
+    #[serde(rename = "QUEST_EXEC_SET_QUEST_GLOBAL_VAR")]
+    QuestExecSetQuestGlobalVar,
+
+    #[serde(rename = "QUEST_EXEC_SET_QUEST_VAR")]
+    QuestExecSetQuestVar,
+
+    #[serde(rename = "QUEST_EXEC_SET_WEATHER_GADGET")]
+    QuestExecSetWeatherGadget,
+
+    #[serde(rename = "QUEST_EXEC_START_BARGAIN")]
+    QuestExecStartBargain,
+
+    #[serde(rename = "QUEST_EXEC_STOP_BARGAIN")]
+    QuestExecStopBargain,
+
+    #[serde(rename = "QUEST_EXEC_UNLOCK_AREA")]
+    QuestExecUnlockArea,
+
+    #[serde(rename = "QUEST_EXEC_UNLOCK_AVATAR_TEAM")]
+    QuestExecUnlockAvatarTeam,
+
+    #[serde(rename = "QUEST_EXEC_UNLOCK_PLAYER_WORLD_SCENE")]
+    QuestExecUnlockPlayerWorldScene,
+
+    #[serde(rename = "QUEST_EXEC_UNLOCK_POINT")]
+    QuestExecUnlockPoint,
+
+    #[serde(rename = "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP")]
+    QuestExecUnregisterDynamicGroup,
+
+    #[serde(rename = "QUEST_EXEC_UPDATE_PARENT_QUEST_REWARD_INDEX")]
+    QuestExecUpdateParentQuestRewardIndex,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum FailCondType {
+    #[serde(rename = "QUEST_CONTENT_ACTIVITY_TRIGGER_FAILED")]
+    QuestContentActivityTriggerFailed,
+
+    #[serde(rename = "QUEST_CONTENT_ACTIVITY_TRIGGER_UPDATE")]
+    QuestContentActivityTriggerUpdate,
+
+    #[serde(rename = "QUEST_CONTENT_ADD_QUEST_PROGRESS")]
+    QuestContentAddQuestProgress,
+
+    #[serde(rename = "QUEST_CONTENT_ANY_MANUAL_TRANSPORT")]
+    QuestContentAnyManualTransport,
+
+    #[serde(rename = "QUEST_CONTENT_BARGAIN_FAIL")]
+    QuestContentBargainFail,
+
+    #[serde(rename = "QUEST_CONTENT_BARGAIN_SUCC")]
+    QuestContentBargainSucc,
+
+    #[serde(rename = "QUEST_CONTENT_CAPTURE_USE_MATERIAL_LIST")]
+    QuestContentCaptureUseMaterialList,
+
+    #[serde(rename = "QUEST_CONTENT_CITY_LEVEL_UP")]
+    QuestContentCityLevelUp,
+
+    #[serde(rename = "QUEST_CONTENT_CLEAR_GROUP_MONSTER")]
+    QuestContentClearGroupMonster,
+
+    #[serde(rename = "QUEST_CONTENT_COMPLETE_ANY_TALK")]
+    QuestContentCompleteAnyTalk,
+
+    #[serde(rename = "QUEST_CONTENT_COMPLETE_TALK")]
+    QuestContentCompleteTalk,
+
+    #[serde(rename = "QUEST_CONTENT_DESTROY_GADGET")]
+    QuestContentDestroyGadget,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_DUNGEON")]
+    QuestContentEnterDungeon,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_MY_HOME_WORLD")]
+    QuestContentEnterMyHomeWorld,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_MY_WORLD")]
+    QuestContentEnterMyWorld,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_MY_WORLD_SCENE")]
+    QuestContentEnterMyWorldScene,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_ROGUE_DUNGEON")]
+    QuestContentEnterRogueDungeon,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_ROOM")]
+    QuestContentEnterRoom,
+
+    #[serde(rename = "QUEST_CONTENT_ENTER_VEHICLE")]
+    QuestContentEnterVehicle,
+
+    #[serde(rename = "QUEST_CONTENT_FAIL_DUNGEON")]
+    QuestContentFailDungeon,
+
+    #[serde(rename = "QUEST_CONTENT_FINISH_DUNGEON")]
+    QuestContentFinishDungeon,
+
+    #[serde(rename = "QUEST_CONTENT_FINISH_ITEM_GIVING")]
+    QuestContentFinishItemGiving,
+
+    #[serde(rename = "QUEST_CONTENT_FINISH_PLOT")]
+    QuestContentFinishPlot,
+
+    #[serde(rename = "QUEST_CONTENT_FISHING_SUCC")]
+    QuestContentFishingSucc,
+
+    #[serde(rename = "QUEST_CONTENT_GADGET_STATE_CHANGE")]
+    QuestContentGadgetStateChange,
+
+    #[serde(rename = "QUEST_CONTENT_GAME_TIME_TICK")]
+    QuestContentGameTimeTick,
+
+    #[serde(rename = "QUEST_CONTENT_INTERACT_GADGET")]
+    QuestContentInteractGadget,
+
+    #[serde(rename = "QUEST_CONTENT_IRODORI_FINISH_FLOWER_COMBINATION")]
+    QuestContentIrodoriFinishFlowerCombination,
+
+    #[serde(rename = "QUEST_CONTENT_IRODORI_POETRY_FINISH_FILL_POETRY")]
+    QuestContentIrodoriPoetryFinishFillPoetry,
+
+    #[serde(rename = "QUEST_CONTENT_IRODORI_POETRY_REACH_MIN_PROGRESS")]
+    QuestContentIrodoriPoetryReachMinProgress,
+
+    #[serde(rename = "QUEST_CONTENT_ITEM_LESS_THAN")]
+    QuestContentItemLessThan,
+
+    #[serde(rename = "QUEST_CONTENT_ITEM_LESS_THAN_BARGAIN")]
+    QuestContentItemLessThanBargain,
+
+    #[serde(rename = "QUEST_CONTENT_LEAVE_SCENE")]
+    QuestContentLeaveScene,
+
+    #[serde(rename = "QUEST_CONTENT_LEAVE_SCENE_RANGE")]
+    QuestContentLeaveSceneRange,
+
+    #[serde(rename = "QUEST_CONTENT_LUA_NOTIFY")]
+    QuestContentLuaNotify,
+
+    #[serde(rename = "QUEST_CONTENT_MAIN_COOP_ENTER_ANY_SAVE_POINT")]
+    QuestContentMainCoopEnterAnySavePoint,
+
+    #[serde(rename = "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT")]
+    QuestContentMainCoopEnterSavePoint,
+
+    #[serde(rename = "QUEST_CONTENT_MONSTER_DIE")]
+    QuestContentMonsterDie,
+
+    #[serde(rename = "QUEST_CONTENT_NOT_FINISH_PLOT")]
+    QuestContentNotFinishPlot,
+
+    #[serde(rename = "QUEST_CONTENT_NOT_UNLOCKED_RECIPE")]
+    QuestContentNotUnlockedRecipe,
+
+    #[serde(rename = "QUEST_CONTENT_OBTAIN_ITEM")]
+    QuestContentObtainItem,
+
+    #[serde(rename = "QUEST_CONTENT_OBTAIN_MATERIAL_WITH_SUBTYPE")]
+    QuestContentObtainMaterialWithSubtype,
+
+    #[serde(rename = "QUEST_CONTENT_OBTAIN_VARIOUS_ITEM")]
+    QuestContentObtainVariousItem,
+
+    #[serde(rename = "QUEST_CONTENT_PLAYER_LEVEL_UP")]
+    QuestContentPlayerLevelUp,
+
+    #[serde(rename = "QUEST_CONTENT_QUEST_STATE_EQUAL")]
+    QuestContentQuestStateEqual,
+
+    #[serde(rename = "QUEST_CONTENT_QUEST_VAR_EQUAL")]
+    QuestContentQuestVarEqual,
+
+    #[serde(rename = "QUEST_CONTENT_QUEST_VAR_GREATER")]
+    QuestContentQuestVarGreater,
+
+    #[serde(rename = "QUEST_CONTENT_QUEST_VAR_LESS")]
+    QuestContentQuestVarLess,
+
+    #[serde(rename = "QUEST_CONTENT_SCENE_LEVEL_TAG_EQ")]
+    QuestContentSceneLevelTagEq,
+
+    #[serde(rename = "QUEST_CONTENT_SKILL")]
+    QuestContentSkill,
+
+    #[serde(rename = "QUEST_CONTENT_TEAM_DEAD")]
+    QuestContentTeamDead,
+
+    #[serde(rename = "QUEST_CONTENT_TIME_VAR_GT_EQ")]
+    QuestContentTimeVarGtEq,
+
+    #[serde(rename = "QUEST_CONTENT_TIME_VAR_PASS_DAY")]
+    QuestContentTimeVarPassDay,
+
+    #[serde(rename = "QUEST_CONTENT_TRIGGER_FIRE")]
+    QuestContentTriggerFire,
+
+    #[serde(rename = "QUEST_CONTENT_UNLOCK_TRANS_POINT")]
+    QuestContentUnlockTransPoint,
+
+    #[serde(rename = "QUEST_CONTENT_UNLOCKED_RECIPE")]
+    QuestContentUnlockedRecipe,
+
+    #[serde(rename = "QUEST_CONTENT_USE_ITEM")]
+    QuestContentUseItem,
+
+    #[serde(rename = "QUEST_CONTENT_USE_WIDGET")]
+    QuestContentUseWidget,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -155,8 +708,9 @@ pub enum ShowGuide {
 }
 
 pub fn load() -> Result<QuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "QuestExcelConfigData.json",
     ]

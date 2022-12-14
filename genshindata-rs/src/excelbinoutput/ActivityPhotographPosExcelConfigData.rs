@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityPhotographPosExcelConfigData = Vec<ActivityPhotographPosExcelConfigDatum>;
@@ -11,41 +13,41 @@ pub struct ActivityPhotographPosExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LDEDEHCFNOE")]
-    pub ldedehcfnoe: i64,
+    #[serde(rename = "IJMPOKMLHNF")]
+    pub ijmpokmlhnf: i64,
 
-    #[serde(rename = "JJNGBOEIBPL")]
-    pub jjngboeibpl: i64,
+    #[serde(rename = "IHOBPPIOEIL")]
+    pub ihobppioeil: i64,
 
-    #[serde(rename = "NDGMEABLLDD")]
-    pub ndgmeablldd: i64,
+    #[serde(rename = "CCFOPDEIIIE")]
+    pub ccfopdeiiie: i64,
 
-    #[serde(rename = "IIPHAFDCMBH")]
-    pub iiphafdcmbh: i64,
+    #[serde(rename = "FIFOOFJOOIP")]
+    pub fifoofjooip: i64,
 
-    #[serde(rename = "IMIMFHBBILB")]
-    pub imimfhbbilb: i64,
+    #[serde(rename = "LGFBKBPLMCN")]
+    pub lgfbkbplmcn: i64,
 
-    #[serde(rename = "FHPPIPOEHCP")]
-    pub fhppipoehcp: i64,
+    #[serde(rename = "PLHCEEHBBFM")]
+    pub plhceehbbfm: i64,
 
-    #[serde(rename = "KLHHNJKMDDF")]
-    pub klhhnjkmddf: String,
+    #[serde(rename = "JLCGNMKEHPP")]
+    pub jlcgnmkehpp: String,
 
-    #[serde(rename = "AMADEAJOCKF")]
-    pub amadeajockf: String,
+    #[serde(rename = "CAKIPMCPOEA")]
+    pub cakipmcpoea: String,
 
-    #[serde(rename = "HMFFAIMDEOO")]
-    pub hmffaimdeoo: i64,
+    #[serde(rename = "OOGIMLJKEDC")]
+    pub oogimljkedc: i64,
 
-    #[serde(rename = "AFBFFBMJBHI")]
-    pub afbffbmjbhi: i64,
+    #[serde(rename = "AGLMPHJDFMF")]
+    pub aglmphjdfmf: i64,
 
-    #[serde(rename = "JKHOEGMCACD")]
-    pub jkhoegmcacd: Vec<i64>,
+    #[serde(rename = "FJMEOOJGKLG")]
+    pub fjmeoojgklg: Vec<i64>,
 
-    #[serde(rename = "GIELKPOFBFB")]
-    pub gielkpofbfb: Vec<i64>,
+    #[serde(rename = "NNKJCCIJBAL")]
+    pub nnkjccijbal: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -56,13 +58,32 @@ pub struct ActivityPhotographPosExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "KBBHJNNAGDI")]
-    pub kbbhjnnagdi: i64,
+    #[serde(rename = "HLOODCPKDCK")]
+    pub hloodcpkdck: i64,
+
+    #[serde(rename = "OHMELCKGJKE")]
+    pub ohmelckgjke: i64,
+
+    #[serde(rename = "HEPCHBCANAG")]
+    pub hepchbcanag: i64,
+
+    #[serde(rename = "PPIPHJPCFIH")]
+    pub ppiphjpcfih: i64,
+
+    #[serde(rename = "LAEDLIOFLOF")]
+    pub laedlioflof: Vec<String>,
+
+    #[serde(rename = "FKINPIGODJE")]
+    pub fkinpigodje: Vec<String>,
+
+    #[serde(rename = "sceneID")]
+    pub scene_id: i64,
 }
 
 pub fn load() -> Result<ActivityPhotographPosExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityPhotographPosExcelConfigData.json",
     ]

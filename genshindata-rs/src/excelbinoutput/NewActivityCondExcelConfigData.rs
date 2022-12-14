@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type NewActivityCondExcelConfigData = Vec<NewActivityCondExcelConfigDatum>;
@@ -37,8 +39,9 @@ pub enum CondComb {
 }
 
 pub fn load() -> Result<NewActivityCondExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "NewActivityCondExcelConfigData.json",
     ]

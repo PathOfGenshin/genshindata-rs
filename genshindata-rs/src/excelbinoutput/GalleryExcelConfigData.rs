@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GalleryExcelConfigData = Vec<GalleryExcelConfigDatum>;
@@ -23,8 +25,8 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: Vec<i64>,
 
-    #[serde(rename = "KMMDOFHDJJL")]
-    pub kmmdofhdjjl: Option<i64>,
+    #[serde(rename = "BGCOMAJMJKL")]
+    pub bgcomajmjkl: Option<i64>,
 
     #[serde(rename = "abilityGroup")]
     pub ability_group: AbilityGroup,
@@ -68,11 +70,11 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "selectableAbilityGroups")]
     pub selectable_ability_groups: Vec<String>,
 
-    #[serde(rename = "APEHEBKDDKC")]
-    pub apehebkddkc: Vec<String>,
+    #[serde(rename = "FBABALEKNCO")]
+    pub fbabaleknco: Vec<String>,
 
-    #[serde(rename = "OFHFHFKBJOP")]
-    pub ofhfhfkbjop: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "IGPBEOCHOOF")]
+    pub igpbeochoof: Vec<String>,
 
     #[serde(rename = "isEnableSinglePrepare")]
     pub is_enable_single_prepare: Option<bool>,
@@ -95,17 +97,20 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "centerRadius")]
     pub center_radius: Option<i64>,
 
-    #[serde(rename = "HCLGKAGJICH")]
-    pub hclgkagjich: Option<bool>,
+    #[serde(rename = "FFGNDIMHAON")]
+    pub ffgndimhaon: Option<bool>,
 
-    #[serde(rename = "NNNHFEFJNCL")]
-    pub nnnhfefjncl: Option<i64>,
+    #[serde(rename = "BNIGFCFHAFC")]
+    pub bnigfcfhafc: Option<i64>,
+
+    #[serde(rename = "GIGDOLAFIJC")]
+    pub gigdolafijc: Option<bool>,
+
+    #[serde(rename = "BCHIPLFKDMM")]
+    pub bchiplfkdmm: Option<i64>,
 
     #[serde(rename = "isEnableMpPrepare")]
     pub is_enable_mp_prepare: Option<bool>,
-
-    #[serde(rename = "CMMMHGAFPML")]
-    pub cmmmhgafpml: Option<i64>,
 
     #[serde(rename = "mpPrepareTime")]
     pub mp_prepare_time: Option<bool>,
@@ -169,8 +174,9 @@ pub enum Pic {
 }
 
 pub fn load() -> Result<GalleryExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GalleryExcelConfigData.json",
     ]

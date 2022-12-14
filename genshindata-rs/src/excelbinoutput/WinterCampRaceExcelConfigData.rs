@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WinterCampRaceExcelConfigData = Vec<WinterCampRaceExcelConfigDatum>;
@@ -17,31 +19,32 @@ pub struct WinterCampRaceExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "PGGOKANNJLJ")]
-    pub pggokannjlj: i64,
+    #[serde(rename = "JICEOLNKCME")]
+    pub jiceolnkcme: i64,
 
-    #[serde(rename = "OBPCFJMMNNA")]
-    pub obpcfjmmnna: Vec<i64>,
+    #[serde(rename = "KEALFKBKPPG")]
+    pub kealfkbkppg: Vec<i64>,
 
-    #[serde(rename = "JJLGHIANHCL")]
-    pub jjlghianhcl: Vec<i64>,
+    #[serde(rename = "EOGHHDGEHPK")]
+    pub eoghhdgehpk: Vec<i64>,
 
-    #[serde(rename = "JFPFDLGPAIG")]
-    pub jfpfdlgpaig: i64,
+    #[serde(rename = "LAPBBGEDIJM")]
+    pub lapbbgedijm: i64,
 
-    #[serde(rename = "JJNEDDLGJHH")]
-    pub jjneddlgjhh: i64,
+    #[serde(rename = "PJJMFLFKCEE")]
+    pub pjjmflfkcee: i64,
 
-    #[serde(rename = "FJIJAJAGHGI")]
-    pub fjijajaghgi: i64,
+    #[serde(rename = "LCDMCLFKCDG")]
+    pub lcdmclfkcdg: i64,
 
-    #[serde(rename = "FCNBJIIAFKP")]
-    pub fcnbjiiafkp: Vec<i64>,
+    #[serde(rename = "FOLMAJDIJLJ")]
+    pub folmajdijlj: Vec<i64>,
 }
 
 pub fn load() -> Result<WinterCampRaceExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WinterCampRaceExcelConfigData.json",
     ]

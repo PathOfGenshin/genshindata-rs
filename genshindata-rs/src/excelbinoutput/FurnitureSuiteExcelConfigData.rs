@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FurnitureSuiteExcelConfigData = Vec<FurnitureSuiteExcelConfigDatum>;
@@ -17,14 +19,14 @@ pub struct FurnitureSuiteExcelConfigDatum {
     #[serde(rename = "suiteNameTextMapHash")]
     pub suite_name_text_map_hash: i64,
 
-    #[serde(rename = "DANHEFLIADG")]
-    pub danhefliadg: i64,
+    #[serde(rename = "PODDJOLCAJG")]
+    pub poddjolcajg: i64,
 
     #[serde(rename = "favoriteNpcExcelIdVec")]
     pub favorite_npc_excel_id_vec: Vec<i64>,
 
-    #[serde(rename = "GBDAPLKHCHE")]
-    pub gbdaplkhche: String,
+    #[serde(rename = "OMAHAONCJII")]
+    pub omahaoncjii: String,
 
     #[serde(rename = "furnType")]
     pub furn_type: Vec<i64>,
@@ -35,8 +37,8 @@ pub struct FurnitureSuiteExcelConfigDatum {
     #[serde(rename = "mapIcon")]
     pub map_icon: MapIcon,
 
-    #[serde(rename = "ELHKGHAMBMG")]
-    pub elhkghambmg: Option<f64>,
+    #[serde(rename = "HAJPJNFMGHI")]
+    pub hajpjnfmghi: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -49,8 +51,9 @@ pub enum MapIcon {
 }
 
 pub fn load() -> Result<FurnitureSuiteExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FurnitureSuiteExcelConfigData.json",
     ]

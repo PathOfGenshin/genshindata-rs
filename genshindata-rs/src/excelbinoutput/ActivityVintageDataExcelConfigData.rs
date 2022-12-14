@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageDataExcelConfigData = Vec<ActivityVintageDataExcelConfigDatum>;
@@ -17,28 +19,29 @@ pub struct ActivityVintageDataExcelConfigDatum {
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "IBPOIBMJOAD")]
-    pub ibpoibmjoad: i64,
+    #[serde(rename = "MODNINIPECD")]
+    pub modninipecd: i64,
 
-    #[serde(rename = "OMFHLCBNPHH")]
-    pub omfhlcbnphh: i64,
+    #[serde(rename = "BMEIEAAOJPD")]
+    pub bmeieaaojpd: i64,
 
-    #[serde(rename = "IMBEBKIKDNG")]
-    pub imbebkikdng: Vec<i64>,
+    #[serde(rename = "OPEODECJEJK")]
+    pub opeodecjejk: Vec<i64>,
 
-    #[serde(rename = "KPPEHMMAKKE")]
-    pub kppehmmakke: i64,
+    #[serde(rename = "PMGHAPGJNML")]
+    pub pmghapgjnml: i64,
 
-    #[serde(rename = "FMLBOIGKMIN")]
-    pub fmlboigkmin: i64,
+    #[serde(rename = "OPLNPKDDMNK")]
+    pub oplnpkddmnk: i64,
 
-    #[serde(rename = "DJEHCMOOEHE")]
-    pub djehcmooehe: i64,
+    #[serde(rename = "BPGNDEPGJJN")]
+    pub bpgndepgjjn: i64,
 }
 
 pub fn load() -> Result<ActivityVintageDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageDataExcelConfigData.json",
     ]

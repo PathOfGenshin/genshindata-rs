@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityMistTrialWatcherListDataExcelConfigData = Vec<ActivityMistTrialWatcherListDataExcelConfigDatum>;
@@ -26,11 +28,11 @@ pub struct ActivityMistTrialWatcherListDataExcelConfigDatum {
     #[serde(rename = "progressFormatTextMapHash")]
     pub progress_format_text_map_hash: i64,
 
-    #[serde(rename = "LJMEPBNDEIJ")]
-    pub ljmepbndeij: i64,
+    #[serde(rename = "FCFBLCCFPPM")]
+    pub fcfblccfppm: i64,
 
-    #[serde(rename = "ODDGENPKLPN")]
-    pub oddgenpklpn: Option<bool>,
+    #[serde(rename = "PDOPNECGJEE")]
+    pub pdopnecgjee: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -46,8 +48,9 @@ pub enum DungeonShowContentType {
 }
 
 pub fn load() -> Result<ActivityMistTrialWatcherListDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityMistTrialWatcherListDataExcelConfigData.json",
     ]

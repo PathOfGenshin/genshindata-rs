@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type QteExcelConfigData = Vec<QteExcelConfigDatum>;
@@ -11,40 +13,41 @@ pub struct QteExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DKKOLADOEIN")]
-    pub dkkoladoein: i64,
+    #[serde(rename = "NECMPMPPDBO")]
+    pub necmpmppdbo: i64,
 
-    #[serde(rename = "MCPBOFIHJIP")]
-    pub mcpbofihjip: String,
+    #[serde(rename = "KNAMEBJGFOJ")]
+    pub knamebjgfoj: String,
 
-    #[serde(rename = "NIHNINEDLJA")]
-    pub nihninedlja: Vec<Dappdjjkkne>,
+    #[serde(rename = "BCGABFGEDMI")]
+    pub bcgabfgedmi: Vec<Bcgabfgedmi>,
 
-    #[serde(rename = "ONMPEEKOCCF")]
-    pub onmpeekoccf: Vec<Onmpeekoccf>,
+    #[serde(rename = "NMMJNLKIGIM")]
+    pub nmmjnlkigim: Vec<Nmmjnlkigim>,
 
-    #[serde(rename = "DAPPDJJKKNE")]
-    pub dappdjjkkne: Vec<Dappdjjkkne>,
+    #[serde(rename = "OBDACALOFIF")]
+    pub obdacalofif: Vec<Bcgabfgedmi>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Dappdjjkkne {
+pub struct Bcgabfgedmi {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Onmpeekoccf {
+pub struct Nmmjnlkigim {
     #[serde(rename = "type")]
-    pub onmpeekoccf_type: Option<String>,
+    pub nmmjnlkigim_type: Option<String>,
 
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 }
 
 pub fn load() -> Result<QteExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "QTEExcelConfigData.json",
     ]

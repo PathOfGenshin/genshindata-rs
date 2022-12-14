@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type VintageMarketConstValueExcelConfigData = Vec<VintageMarketConstValueExcelConfigDatum>;
@@ -11,52 +13,53 @@ pub struct VintageMarketConstValueExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LNCNGCFPDBB")]
-    pub lncngcfpdbb: i64,
+    #[serde(rename = "ODBFNDJILIG")]
+    pub odbfndjilig: i64,
 
-    #[serde(rename = "MPDLFFKLOPE")]
-    pub mpdlffklope: i64,
+    #[serde(rename = "CLMGPGAGPKF")]
+    pub clmgpgagpkf: i64,
 
-    #[serde(rename = "BDFGHIGONKL")]
-    pub bdfghigonkl: i64,
+    #[serde(rename = "JFJHAJHKPEC")]
+    pub jfjhajhkpec: i64,
 
-    #[serde(rename = "PLPJPOCGAKE")]
-    pub plpjpocgake: i64,
+    #[serde(rename = "DHMMEGPEMFB")]
+    pub dhmmegpemfb: i64,
 
-    #[serde(rename = "HOIIILIDOCJ")]
-    pub hoiiilidocj: i64,
+    #[serde(rename = "FALOLBIPMEJ")]
+    pub falolbipmej: i64,
 
-    #[serde(rename = "HGDBLPNJKNB")]
-    pub hgdblpnjknb: i64,
+    #[serde(rename = "BMCIIGMPEDK")]
+    pub bmciigmpedk: i64,
 
-    #[serde(rename = "DMFMMLOBMBN")]
-    pub dmfmmlobmbn: f64,
+    #[serde(rename = "FJCCPENBOBG")]
+    pub fjccpenbobg: f64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "FACIPNFADDL")]
-    pub facipnfaddl: i64,
+    #[serde(rename = "LEPCKAFCOAE")]
+    pub lepckafcoae: i64,
 
-    #[serde(rename = "CKKGFCKCCDH")]
-    pub ckkgfckccdh: i64,
+    #[serde(rename = "NCCCPLHBGHG")]
+    pub ncccplhbghg: i64,
 
-    #[serde(rename = "DFJINOGJKCJ")]
-    pub dfjinogjkcj: Vec<i64>,
+    #[serde(rename = "CFEKNIOIHJM")]
+    pub cfeknioihjm: Vec<i64>,
 
-    #[serde(rename = "OALELCDLGDN")]
-    pub oalelcdlgdn: i64,
+    #[serde(rename = "EBAGNNEEFKJ")]
+    pub ebagnneefkj: i64,
 
-    #[serde(rename = "BGMJEJGFMDH")]
-    pub bgmjejgfmdh: i64,
+    #[serde(rename = "JCCGLBLJPKF")]
+    pub jccglbljpkf: i64,
 
-    #[serde(rename = "FEJAKCCAHJO")]
-    pub fejakccahjo: i64,
+    #[serde(rename = "GONHGIBNNPO")]
+    pub gonhgibnnpo: i64,
 }
 
 pub fn load() -> Result<VintageMarketConstValueExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "VintageMarketConstValueExcelConfigData.json",
     ]

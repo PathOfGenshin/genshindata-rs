@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MichiaeOverallExcelConfigData = Vec<MichiaeOverallExcelConfigDatum>;
@@ -17,43 +19,44 @@ pub struct MichiaeOverallExcelConfigDatum {
     #[serde(rename = "offeringId")]
     pub offering_id: i64,
 
-    #[serde(rename = "CDKECIMACCK")]
-    pub cdkecimacck: i64,
+    #[serde(rename = "NBAMLGMOODB")]
+    pub nbamlgmoodb: i64,
 
-    #[serde(rename = "JEHGBBOGLIA")]
-    pub jehgbboglia: i64,
+    #[serde(rename = "PBLAMDNBHOD")]
+    pub pblamdnbhod: i64,
 
-    #[serde(rename = "EBEPENMFNKG")]
-    pub ebepenmfnkg: Vec<i64>,
+    #[serde(rename = "GDKBEGNMJKG")]
+    pub gdkbegnmjkg: Vec<i64>,
 
-    #[serde(rename = "CGBPBOPMNLM")]
-    pub cgbpbopmnlm: i64,
+    #[serde(rename = "EGJPHFIOFHB")]
+    pub egjphfiofhb: i64,
 
-    #[serde(rename = "GNKOJJBABFE")]
-    pub gnkojjbabfe: f64,
+    #[serde(rename = "AGGPLDBNCNC")]
+    pub aggpldbncnc: f64,
 
-    #[serde(rename = "OMPLMPNPEMK")]
-    pub omplmpnpemk: f64,
+    #[serde(rename = "JCLBKKMLFCO")]
+    pub jclbkkmlfco: f64,
 
-    #[serde(rename = "GNEMGJAAHCF")]
-    pub gnemgjaahcf: i64,
+    #[serde(rename = "OCNIMEBBAPM")]
+    pub ocnimebbapm: i64,
 
-    #[serde(rename = "NELCPCDAIBI")]
-    pub nelcpcdaibi: f64,
+    #[serde(rename = "NBPIAFGEFJB")]
+    pub nbpiafgefjb: f64,
 
-    #[serde(rename = "KCKJIGDMJGK")]
-    pub kckjigdmjgk: i64,
+    #[serde(rename = "DMDAFBMBBFI")]
+    pub dmdafbmbbfi: i64,
 
-    #[serde(rename = "LEDJNJPMBIL")]
-    pub ledjnjpmbil: i64,
+    #[serde(rename = "IDONJAFDPHM")]
+    pub idonjafdphm: i64,
 
-    #[serde(rename = "BOAFLLHCOJI")]
-    pub boafllhcoji: i64,
+    #[serde(rename = "JDFFFDPOOPN")]
+    pub jdfffdpoopn: i64,
 }
 
 pub fn load() -> Result<MichiaeOverallExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MichiaeOverallExcelConfigData.json",
     ]

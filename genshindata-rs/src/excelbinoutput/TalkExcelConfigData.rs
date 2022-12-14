@@ -2,109 +2,111 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type TalkExcelConfigData = Vec<TalkExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TalkExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_beginWay")]
+    #[serde(rename = "beginWay")]
     pub begin_way: Option<BeginWay>,
 
-    #[serde(rename = "_activeMode")]
+    #[serde(rename = "activeMode")]
     pub active_mode: Option<ActiveMode>,
 
-    #[serde(rename = "_beginCond")]
+    #[serde(rename = "beginCond")]
     pub begin_cond: Vec<BeginCond>,
 
-    #[serde(rename = "_priority")]
+    #[serde(rename = "priority")]
     pub priority: Option<i64>,
 
-    #[serde(rename = "_nextTalks")]
+    #[serde(rename = "nextTalks")]
     pub next_talks: Vec<i64>,
 
-    #[serde(rename = "_initDialog")]
+    #[serde(rename = "initDialog")]
     pub init_dialog: Option<i64>,
 
-    #[serde(rename = "_nextRandomTalks")]
+    #[serde(rename = "nextRandomTalks")]
     pub next_random_talks: Vec<i64>,
 
-    #[serde(rename = "_npcId")]
+    #[serde(rename = "npcId")]
     pub npc_id: Vec<i64>,
 
-    #[serde(rename = "_participantId")]
+    #[serde(rename = "participantId")]
     pub participant_id: Vec<i64>,
 
-    #[serde(rename = "_performCfg")]
+    #[serde(rename = "performCfg")]
     pub perform_cfg: String,
 
-    #[serde(rename = "_extraLoadMarkId")]
+    #[serde(rename = "extraLoadMarkId")]
     pub extra_load_mark_id: Vec<i64>,
 
-    #[serde(rename = "_prePerformCfg")]
+    #[serde(rename = "prePerformCfg")]
     pub pre_perform_cfg: PrePerformCfg,
 
-    #[serde(rename = "_talkMarkHideList")]
+    #[serde(rename = "talkMarkHideList")]
     pub talk_mark_hide_list: Vec<i64>,
 
-    #[serde(rename = "_crowdLOD0List")]
+    #[serde(rename = "crowdLOD0List")]
     pub crowd_lod0_list: Vec<i64>,
 
-    #[serde(rename = "_finishExec")]
+    #[serde(rename = "finishExec")]
     pub finish_exec: Vec<BeginCond>,
 
-    #[serde(rename = "_beginCondComb")]
+    #[serde(rename = "beginCondComb")]
     pub begin_cond_comb: Option<BeginCondComb>,
 
-    #[serde(rename = "_questId")]
+    #[serde(rename = "questId")]
     pub quest_id: Option<i64>,
 
-    #[serde(rename = "_heroTalk")]
+    #[serde(rename = "heroTalk")]
     pub hero_talk: Option<HeroTalk>,
 
-    #[serde(rename = "_talkMarkType")]
+    #[serde(rename = "talkMarkType")]
     pub talk_mark_type: Option<TalkMarkType>,
 
-    #[serde(rename = "_dontBlockDaily")]
+    #[serde(rename = "dontBlockDaily")]
     pub dont_block_daily: Option<bool>,
 
-    #[serde(rename = "_lowPriority")]
+    #[serde(rename = "lowPriority")]
     pub low_priority: Option<bool>,
 
-    #[serde(rename = "_lockGameTime")]
+    #[serde(rename = "lockGameTime")]
     pub lock_game_time: Option<bool>,
 
-    #[serde(rename = "_showRandomTalkCount")]
+    #[serde(rename = "showRandomTalkCount")]
     pub show_random_talk_count: Option<i64>,
 
-    #[serde(rename = "_stayFreeStyle")]
+    #[serde(rename = "stayFreeStyle")]
     pub stay_free_style: Option<bool>,
 
-    #[serde(rename = "_loadType")]
+    #[serde(rename = "loadType")]
     pub load_type: Option<LoadType>,
 
-    #[serde(rename = "_checkActionAfter")]
+    #[serde(rename = "checkActionAfter")]
     pub check_action_after: Option<bool>,
 
-    #[serde(rename = "_enableCameraDisplacement")]
+    #[serde(rename = "enableCameraDisplacement")]
     pub enable_camera_displacement: Option<bool>,
 
-    #[serde(rename = "_questIdleTalk")]
+    #[serde(rename = "questIdleTalk")]
     pub quest_idle_talk: Option<bool>,
 
-    #[serde(rename = "_decoratorID")]
+    #[serde(rename = "decoratorID")]
     pub decorator_id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct BeginCond {
-    #[serde(rename = "_param")]
+    #[serde(rename = "param")]
     pub param: Vec<String>,
 
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub begin_cond_type: Option<Type>,
 }
 
@@ -124,6 +126,9 @@ pub enum ActiveMode {
 pub enum Type {
     #[serde(rename = "QUEST_COND_ACTIVITY_CLIENT_COND")]
     QuestCondActivityClientCond,
+
+    #[serde(rename = "QUEST_COND_ACTIVITY_NEW_FUNGUS_CAPTURE")]
+    QuestCondActivityNewFungusCapture,
 
     #[serde(rename = "QUEST_COND_ACTIVITY_OPEN")]
     QuestCondActivityOpen,
@@ -178,6 +183,30 @@ pub enum Type {
 
     #[serde(rename = "QUEST_COND_GADGET_TALK_STATE_EQUAL")]
     QuestCondGadgetTalkStateEqual,
+
+    #[serde(rename = "QUEST_COND_GCG_CHALLENGE_NEW_BOSS")]
+    QuestCondGcgChallengeNewBoss,
+
+    #[serde(rename = "QUEST_COND_GCG_INVITE_TYPE")]
+    QuestCondGcgInviteType,
+
+    #[serde(rename = "QUEST_COND_GCG_LEVEL_REWARD_CAN_TAKE")]
+    QuestCondGcgLevelRewardCanTake,
+
+    #[serde(rename = "QUEST_COND_GCG_LEVEL_UNLOCKED")]
+    QuestCondGcgLevelUnlocked,
+
+    #[serde(rename = "QUEST_COND_GCG_NPC_TYPE")]
+    QuestCondGcgNpcType,
+
+    #[serde(rename = "QUEST_COND_GCG_SHOP_NEW_GOODS")]
+    QuestCondGcgShopNewGoods,
+
+    #[serde(rename = "QUEST_COND_GCG_WORLD_CHALLENGE_RESULT")]
+    QuestCondGcgWorldChallengeResult,
+
+    #[serde(rename = "QUEST_COND_HIT_KEYWORD_EASTER_EGG")]
+    QuestCondHitKeywordEasterEgg,
 
     #[serde(rename = "QUEST_COND_HOMEWORLD_NPC_EVENT")]
     QuestCondHomeworldNpcEvent,
@@ -286,6 +315,9 @@ pub enum Type {
 
     #[serde(rename = "QUEST_COND_STATE_NOT_EQUAL")]
     QuestCondStateNotEqual,
+
+    #[serde(rename = "QUEST_COND_TMPVALUE_HIT_NICKNAME")]
+    QuestCondTmpvalueHitNickname,
 
     #[serde(rename = "TALK_EXEC_DEC_QUEST_GLOBAL_VAR")]
     TalkExecDecQuestGlobalVar,
@@ -460,8 +492,9 @@ pub enum TalkMarkType {
 }
 
 pub fn load() -> Result<TalkExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "TalkExcelConfigData.json",
     ]

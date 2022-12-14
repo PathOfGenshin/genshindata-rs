@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LoadingTipsExcelConfigData = Vec<LoadingTipsExcelConfigDatum>;
@@ -32,17 +34,17 @@ pub struct LoadingTipsExcelConfigDatum {
     #[serde(rename = "preMainQuestIds")]
     pub pre_main_quest_ids: String,
 
-    #[serde(rename = "OEGMFOHBAHC")]
-    pub oegmfohbahc: Vec<i64>,
+    #[serde(rename = "JMBFBGNFBIM")]
+    pub jmbfbgnfbim: Vec<i64>,
 
-    #[serde(rename = "NFNEGJEAKBL")]
-    pub nfnegjeakbl: Vec<i64>,
+    #[serde(rename = "KPDLIJKPBND")]
+    pub kpdlijkpbnd: Vec<i64>,
 
-    #[serde(rename = "GFGPIGCAPFB")]
-    pub gfgpigcapfb: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DBKMDCBOIIG")]
+    pub dbkmdcboiig: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "weight")]
-    pub weight: Option<i64>,
+    pub weight: i64,
 
     #[serde(rename = "minLevel")]
     pub min_level: Option<i64>,
@@ -67,8 +69,9 @@ pub enum LimitOpenState {
 }
 
 pub fn load() -> Result<LoadingTipsExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LoadingTipsExcelConfigData.json",
     ]

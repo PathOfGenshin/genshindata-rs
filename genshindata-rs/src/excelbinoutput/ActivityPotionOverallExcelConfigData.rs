@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityPotionOverallExcelConfigData = Vec<ActivityPotionOverallExcelConfigDatum>;
@@ -11,19 +13,20 @@ pub struct ActivityPotionOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "ODBENMKBIBJ")]
-    pub odbenmkbibj: f64,
+    #[serde(rename = "CAFPGGBFEEA")]
+    pub cafpggbfeea: f64,
 
-    #[serde(rename = "MKHPHMHKIDB")]
-    pub mkhphmhkidb: f64,
+    #[serde(rename = "NPKPFCNMFKL")]
+    pub npkpfcnmfkl: f64,
 
-    #[serde(rename = "CEDNCANGMJP")]
-    pub cedncangmjp: f64,
+    #[serde(rename = "GLPGIOICDHG")]
+    pub glpgioicdhg: f64,
 }
 
 pub fn load() -> Result<ActivityPotionOverallExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityPotionOverallExcelConfigData.json",
     ]

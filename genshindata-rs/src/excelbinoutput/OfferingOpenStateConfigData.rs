@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type OfferingOpenStateConfigData = Vec<OfferingOpenStateConfigDatum>;
@@ -17,22 +19,23 @@ pub struct OfferingOpenStateConfigDatum {
     #[serde(rename = "itemLimit")]
     pub item_limit: String,
 
-    #[serde(rename = "GLHGMGDLHEI")]
-    pub glhgmgdlhei: String,
+    #[serde(rename = "DCGEHPMIAPM")]
+    pub dcgehpmiapm: String,
 
-    #[serde(rename = "PCKMJCOKEOD")]
-    pub pckmjcokeod: Option<bool>,
+    #[serde(rename = "BLIJGBNOGPI")]
+    pub blijgbnogpi: Option<bool>,
 
-    #[serde(rename = "GDFHKAGNAEB")]
-    pub gdfhkagnaeb: Option<bool>,
+    #[serde(rename = "IIBHLFEAFID")]
+    pub iibhlfeafid: Option<bool>,
 
     #[serde(rename = "activityId")]
     pub activity_id: Option<i64>,
 }
 
 pub fn load() -> Result<OfferingOpenStateConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "OfferingOpenStateConfigData.json",
     ]

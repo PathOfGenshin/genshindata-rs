@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityHachiStageExcelConfigData = Vec<ActivityHachiStageExcelConfigDatum>;
@@ -17,67 +19,68 @@ pub struct ActivityHachiStageExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
 
-    #[serde(rename = "DGGMIFJMJBP")]
-    pub dggmifjmjbp: i64,
+    #[serde(rename = "DMHGKGCGIJG")]
+    pub dmhgkgcgijg: i64,
 
-    #[serde(rename = "HMMIBLBGDAN")]
-    pub hmmiblbgdan: i64,
+    #[serde(rename = "PODKEBDBGFJ")]
+    pub podkebdbgfj: i64,
 
-    #[serde(rename = "LDGIHBMIBLA")]
-    pub ldgihbmibla: i64,
+    #[serde(rename = "PCDPHGGOIHE")]
+    pub pcdphggoihe: i64,
 
-    #[serde(rename = "LPHCAOOMLAM")]
-    pub lphcaoomlam: i64,
+    #[serde(rename = "OKEEFLOAMMO")]
+    pub okeefloammo: i64,
 
-    #[serde(rename = "EBPOEAEADCF")]
-    pub ebpoeaeadcf: i64,
+    #[serde(rename = "OOCHPDOFPHA")]
+    pub oochpdofpha: i64,
 
-    #[serde(rename = "NBMFBEIAHLI")]
-    pub nbmfbeiahli: i64,
+    #[serde(rename = "EDJMFIDPFEN")]
+    pub edjmfidpfen: i64,
 
-    #[serde(rename = "OOPMIEEFOEJ")]
-    pub oopmieefoej: String,
+    #[serde(rename = "GCPOBLDOJEE")]
+    pub gcpobldojee: String,
 
-    #[serde(rename = "PAEJCMHIEFO")]
-    pub paejcmhiefo: String,
+    #[serde(rename = "KKMECCNILOK")]
+    pub kkmeccnilok: String,
 
-    #[serde(rename = "DDLAEIMBNCK")]
-    pub ddlaeimbnck: i64,
+    #[serde(rename = "MMEBJMDLEFE")]
+    pub mmebjmdlefe: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "BIPPDPDDPNA")]
-    pub bippdpddpna: Vec<f64>,
+    #[serde(rename = "PMAKJDOMJIL")]
+    pub pmakjdomjil: Vec<f64>,
 
-    #[serde(rename = "HOMLCKOHNDN")]
-    pub homlckohndn: Vec<f64>,
+    #[serde(rename = "HCFHJMAAJBB")]
+    pub hcfhjmaajbb: Vec<f64>,
 
-    #[serde(rename = "ABOEJKIDFLG")]
-    pub aboejkidflg: Vec<f64>,
+    #[serde(rename = "LMBLIJBJKLH")]
+    pub lmblijbjklh: Vec<f64>,
 
-    #[serde(rename = "KFDAIBEJHNN")]
-    pub kfdaibejhnn: Vec<i64>,
+    #[serde(rename = "NKEJNLLIJDO")]
+    pub nkejnllijdo: Vec<i64>,
 
-    #[serde(rename = "BDDKGECHJHO")]
-    pub bddkgechjho: Vec<i64>,
+    #[serde(rename = "IFFFEHGEKLI")]
+    pub ifffehgekli: Vec<i64>,
 
-    #[serde(rename = "ADIOLDLMEIF")]
-    pub adioldlmeif: i64,
+    #[serde(rename = "EJHFEIJHGAJ")]
+    pub ejhfeijhgaj: i64,
 
-    #[serde(rename = "JGPNJLLGMMO")]
-    pub jgpnjllgmmo: i64,
+    #[serde(rename = "DMNALAEDJIC")]
+    pub dmnalaedjic: i64,
 
-    #[serde(rename = "KGMMBFKGLAL")]
-    pub kgmmbfkglal: i64,
+    #[serde(rename = "FCMECIKPNAH")]
+    pub fcmecikpnah: i64,
 
-    #[serde(rename = "IHLMALENLHO")]
-    pub ihlmalenlho: i64,
+    #[serde(rename = "GECEODKGDKF")]
+    pub geceodkgdkf: i64,
 }
 
 pub fn load() -> Result<ActivityHachiStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityHachiStageExcelConfigData.json",
     ]

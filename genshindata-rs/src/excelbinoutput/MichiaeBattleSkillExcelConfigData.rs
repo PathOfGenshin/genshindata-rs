@@ -2,23 +2,25 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MichiaeBattleSkillExcelConfigData = Vec<MichiaeBattleSkillExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MichiaeBattleSkillExcelConfigDatum {
-    #[serde(rename = "LPCEOEMLDBG")]
-    pub lpceoemldbg: i64,
+    #[serde(rename = "FFEPABHJKDG")]
+    pub ffepabhjkdg: i64,
 
-    #[serde(rename = "NIBHCGIHAOF")]
-    pub nibhcgihaof: i64,
+    #[serde(rename = "HCBFKDMDJML")]
+    pub hcbfkdmdjml: i64,
 
-    #[serde(rename = "JHLHNFNBMAK")]
-    pub jhlhnfnbmak: i64,
+    #[serde(rename = "DKOLHEPIKIP")]
+    pub dkolhepikip: i64,
 
-    #[serde(rename = "PCIKFMDHEEG")]
-    pub pcikfmdheeg: Vec<String>,
+    #[serde(rename = "ECKMPLJMNPH")]
+    pub eckmpljmnph: Vec<String>,
 
     #[serde(rename = "iconPath")]
     pub icon_path: String,
@@ -29,13 +31,14 @@ pub struct MichiaeBattleSkillExcelConfigDatum {
     #[serde(rename = "materialNum")]
     pub material_num: i64,
 
-    #[serde(rename = "PJFIDBGGKJL")]
-    pub pjfidbggkjl: String,
+    #[serde(rename = "MGAMLDFJCLB")]
+    pub mgamldfjclb: String,
 }
 
 pub fn load() -> Result<MichiaeBattleSkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MichiaeBattleSkillExcelConfigData.json",
     ]

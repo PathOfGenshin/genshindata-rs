@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FishSkillExcelConfigData = Vec<FishSkillExcelConfigDatum>;
@@ -14,26 +16,26 @@ pub struct FishSkillExcelConfigDatum {
     #[serde(rename = "skillCategory")]
     pub skill_category: SkillCategory,
 
-    #[serde(rename = "DCGGDMIPIAG")]
-    pub dcggdmipiag: Dcggdmipiag,
+    #[serde(rename = "IGNFAMBBNAM")]
+    pub ignfambbnam: Ignfambbnam,
 
     #[serde(rename = "param")]
     pub param: Vec<f64>,
 
-    #[serde(rename = "INIEAHDPPAJ")]
-    pub inieahdppaj: Option<f64>,
+    #[serde(rename = "LLIPBAIEACC")]
+    pub llipbaieacc: Option<f64>,
 
-    #[serde(rename = "AJHFGLNAHFE")]
-    pub ajhfglnahfe: Vec<f64>,
+    #[serde(rename = "PKOLMDNJHNE")]
+    pub pkolmdnjhne: Vec<f64>,
 
-    #[serde(rename = "BMKABBDJOPN")]
-    pub bmkabbdjopn: Vec<f64>,
+    #[serde(rename = "PCHIAAFPPIA")]
+    pub pchiaafppia: Vec<f64>,
 
-    #[serde(rename = "HNKHPIEJGDD")]
-    pub hnkhpiejgdd: Vec<i64>,
+    #[serde(rename = "EPECOMOPMAN")]
+    pub epecomopman: Vec<i64>,
 
-    #[serde(rename = "PFPHEDFFBOI")]
-    pub pfphedffboi: Vec<f64>,
+    #[serde(rename = "MBDDOKDBOJL")]
+    pub mbddokdbojl: Vec<f64>,
 
     #[serde(rename = "duration")]
     pub duration: f64,
@@ -41,12 +43,12 @@ pub struct FishSkillExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "GGJKMPNMDGE")]
-    pub ggjkmpnmdge: Option<i64>,
+    #[serde(rename = "EIFJBBNKLAA")]
+    pub eifjbbnklaa: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dcggdmipiag {
+pub enum Ignfambbnam {
     #[serde(rename = "FISH_SKILL_HP")]
     FishSkillHp,
 
@@ -64,8 +66,9 @@ pub enum SkillCategory {
 }
 
 pub fn load() -> Result<FishSkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FishSkillExcelConfigData.json",
     ]

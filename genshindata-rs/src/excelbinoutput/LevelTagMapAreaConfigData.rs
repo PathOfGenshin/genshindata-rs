@@ -2,25 +2,17 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
+use std::collections::HashMap;
 
-pub type LevelTagMapAreaConfigData = Vec<LevelTagMapAreaConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct LevelTagMapAreaConfigDatum {
-    #[serde(rename = "HPJOPNJEKEN")]
-    pub hpjopnjeken: i64,
-
-    #[serde(rename = "AKJHAEJHIMG")]
-    pub akjhaejhimg: i64,
-
-    #[serde(rename = "index")]
-    pub index: Option<i64>,
-}
+pub type LevelTagMapAreaConfigData = Vec<HashMap<String, i64>>;
 
 pub fn load() -> Result<LevelTagMapAreaConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LevelTagMapAreaConfigData.json",
     ]

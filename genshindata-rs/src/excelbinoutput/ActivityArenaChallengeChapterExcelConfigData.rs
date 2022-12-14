@@ -2,14 +2,37 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-extern crate serde_derive;
-use std::collections::HashMap;
+use std::env;
 
-pub type ActivityArenaChallengeChapterExcelConfigData = Vec<HashMap<String, i64>>;
+extern crate serde_derive;
+
+pub type ActivityArenaChallengeChapterExcelConfigData = Vec<ActivityArenaChallengeChapterExcelConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ActivityArenaChallengeChapterExcelConfigDatum {
+    #[serde(rename = "chapterId")]
+    pub chapter_id: i64,
+
+    #[serde(rename = "FHOBOPHJEMA")]
+    pub fhobophjema: i64,
+
+    #[serde(rename = "PGACDNLEPCP")]
+    pub pgacdnlepcp: i64,
+
+    #[serde(rename = "EAJFLAFNPCI")]
+    pub eajflafnpci: i64,
+
+    #[serde(rename = "LANHPCDNMIM")]
+    pub lanhpcdnmim: i64,
+
+    #[serde(rename = "JNOFOGDJIBA")]
+    pub jnofogdjiba: i64,
+}
 
 pub fn load() -> Result<ActivityArenaChallengeChapterExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityArenaChallengeChapterExcelConfigData.json",
     ]

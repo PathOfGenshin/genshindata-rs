@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LanV2OverAllDataExcelConfigData = Vec<LanV2OverAllDataExcelConfigDatum>;
@@ -14,37 +16,38 @@ pub struct LanV2OverAllDataExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "LCBPNDKKOFP")]
-    pub lcbpndkkofp: i64,
+    #[serde(rename = "ILCBKFJKCLB")]
+    pub ilcbkfjkclb: i64,
 
-    #[serde(rename = "ANPGNMBNALB")]
-    pub anpgnmbnalb: i64,
+    #[serde(rename = "EPMGDIFJIBJ")]
+    pub epmgdifjibj: i64,
 
-    #[serde(rename = "CNBEJOBLGED")]
-    pub cnbejoblged: Vec<i64>,
+    #[serde(rename = "JOPJOPGMCHM")]
+    pub jopjopgmchm: Vec<i64>,
 
-    #[serde(rename = "CHEHADHFAIP")]
-    pub chehadhfaip: Vec<i64>,
+    #[serde(rename = "DGAOFMKKFLB")]
+    pub dgaofmkkflb: Vec<i64>,
 
-    #[serde(rename = "PLPEFGBIIIC")]
-    pub plpefgbiiic: i64,
+    #[serde(rename = "AILIOOINPMD")]
+    pub ailiooinpmd: i64,
 
-    #[serde(rename = "BFNAAHFBDKL")]
-    pub bfnaahfbdkl: Vec<i64>,
+    #[serde(rename = "CKNKEDFBDJN")]
+    pub cknkedfbdjn: Vec<i64>,
 
-    #[serde(rename = "CAFADOECBDD")]
-    pub cafadoecbdd: i64,
+    #[serde(rename = "LNJMJGAJJPO")]
+    pub lnjmjgajjpo: i64,
 
-    #[serde(rename = "MPGNAOJLDFF")]
-    pub mpgnaojldff: Vec<i64>,
+    #[serde(rename = "LBJPNFIABJP")]
+    pub lbjpnfiabjp: Vec<i64>,
 
-    #[serde(rename = "GCKACBBGNEL")]
-    pub gckacbbgnel: i64,
+    #[serde(rename = "CFBBNDKKLIL")]
+    pub cfbbndkklil: i64,
 }
 
 pub fn load() -> Result<LanV2OverAllDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LanV2OverAllDataExcelConfigData.json",
     ]

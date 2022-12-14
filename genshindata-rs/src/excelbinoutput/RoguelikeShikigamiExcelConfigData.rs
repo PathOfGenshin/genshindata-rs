@@ -2,14 +2,16 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoguelikeShikigamiExcelConfigData = Vec<RoguelikeShikigamiExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RoguelikeShikigamiExcelConfigDatum {
-    #[serde(rename = "JMBECIIBMHM")]
-    pub jmbeciibmhm: i64,
+    #[serde(rename = "EDPDKGFIHLI")]
+    pub edpdkgfihli: i64,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
@@ -17,20 +19,20 @@ pub struct RoguelikeShikigamiExcelConfigDatum {
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Vec<UnlockCond>,
 
-    #[serde(rename = "MALPEPNKCAK")]
-    pub malpepnkcak: i64,
+    #[serde(rename = "GBLKEHAHHNI")]
+    pub gblkehahhni: i64,
 
-    #[serde(rename = "JHCGHBKMEIH")]
-    pub jhcghbkmeih: i64,
+    #[serde(rename = "PKCDGKLIPFO")]
+    pub pkcdgklipfo: i64,
 
     #[serde(rename = "level")]
     pub level: Option<i64>,
 
-    #[serde(rename = "MGOPHLHHDMD")]
-    pub mgophlhhdmd: Option<i64>,
+    #[serde(rename = "BHCJELIKNPB")]
+    pub bhcjeliknpb: Option<i64>,
 
-    #[serde(rename = "PBLJJBPPLDH")]
-    pub pbljjbppldh: Option<i64>,
+    #[serde(rename = "ACMPCOCAANI")]
+    pub acmpcocaani: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -52,8 +54,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<RoguelikeShikigamiExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoguelikeShikigamiExcelConfigData.json",
     ]

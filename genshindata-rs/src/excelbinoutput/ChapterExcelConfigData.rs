@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ChapterExcelConfigData = Vec<ChapterExcelConfigDatum>;
@@ -29,11 +31,8 @@ pub struct ChapterExcelConfigDatum {
     #[serde(rename = "chapterIcon")]
     pub chapter_icon: String,
 
-    #[serde(rename = "chapterImageHashSuffix")]
-    pub chapter_image_hash_suffix: Option<i64>,
-
-    #[serde(rename = "chapterImageHashPre")]
-    pub chapter_image_hash_pre: Option<i64>,
+    #[serde(rename = "chapterImageHash")]
+    pub chapter_image_hash: Option<i64>,
 
     #[serde(rename = "chapterImageTitleTextMapHash")]
     pub chapter_image_title_text_map_hash: i64,
@@ -73,8 +72,9 @@ pub enum ChapterSerialNumberIcon {
 }
 
 pub fn load() -> Result<ChapterExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ChapterExcelConfigData.json",
     ]

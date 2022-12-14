@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriPoetryExcelConfigData = Vec<IrodoriPoetryExcelConfigDatum>;
@@ -14,61 +16,62 @@ pub struct IrodoriPoetryExcelConfigDatum {
     #[serde(rename = "condID")]
     pub cond_id: i64,
 
-    #[serde(rename = "LHICMKKPEOO")]
-    pub lhicmkkpeoo: i64,
+    #[serde(rename = "MGMCHDFDICN")]
+    pub mgmchdfdicn: i64,
 
-    #[serde(rename = "HAFOEGJLOAK")]
-    pub hafoegjloak: i64,
+    #[serde(rename = "EGKHABGENGP")]
+    pub egkhabgengp: i64,
 
     #[serde(rename = "entityType")]
     pub entity_type: String,
 
-    #[serde(rename = "CMECOBJCEEG")]
-    pub cmecobjceeg: Vec<Cmecobjceeg>,
+    #[serde(rename = "ALLDLHMNLLM")]
+    pub alldlhmnllm: Vec<Alldlhmnllm>,
 
-    #[serde(rename = "MPJOBAMPMPP")]
-    pub mpjobampmpp: i64,
+    #[serde(rename = "LDBPEBKBLDO")]
+    pub ldbpebkbldo: i64,
 
-    #[serde(rename = "BAPMODDGGIP")]
-    pub bapmoddggip: i64,
+    #[serde(rename = "JJKPDHBIFBM")]
+    pub jjkpdhbifbm: i64,
 
-    #[serde(rename = "CCDMHAGGCCK")]
-    pub ccdmhaggcck: i64,
+    #[serde(rename = "MIJPLHLICLA")]
+    pub mijplhlicla: i64,
 
-    #[serde(rename = "EGBHFDJBCAB")]
-    pub egbhfdjbcab: Vec<i64>,
+    #[serde(rename = "DNAEBEBMFMI")]
+    pub dnaebebmfmi: Vec<i64>,
 
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,
 
-    #[serde(rename = "PLMJBCDJHHA")]
-    pub plmjbcdjhha: i64,
+    #[serde(rename = "HPGOOGHNEEM")]
+    pub hpgooghneem: i64,
 
-    #[serde(rename = "JILNEOHCOHP")]
-    pub jilneohcohp: i64,
+    #[serde(rename = "FHLKABMHNPK")]
+    pub fhlkabmhnpk: i64,
 
-    #[serde(rename = "JMOEDAINFKE")]
-    pub jmoedainfke: i64,
+    #[serde(rename = "DGJKPDPIEHB")]
+    pub dgjkpdpiehb: i64,
 
-    #[serde(rename = "LGDJFFDJGCL")]
-    pub lgdjffdjgcl: i64,
+    #[serde(rename = "FEEELNDKLCK")]
+    pub feeelndklck: i64,
 
-    #[serde(rename = "KHEDKNOOMDC")]
-    pub khedknoomdc: Vec<i64>,
+    #[serde(rename = "OBLPCHLPFMI")]
+    pub oblpchlpfmi: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cmecobjceeg {
-    #[serde(rename = "AEKMNCGECNO")]
-    pub aekmncgecno: Vec<i64>,
+pub struct Alldlhmnllm {
+    #[serde(rename = "IAIEPLPCMPC")]
+    pub iaieplpcmpc: Vec<i64>,
 
-    #[serde(rename = "EPEDECCNOLI")]
-    pub epedeccnoli: Option<i64>,
+    #[serde(rename = "BOKHDOICOHI")]
+    pub bokhdoicohi: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriPoetryExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriPoetryExcelConfigData.json",
     ]

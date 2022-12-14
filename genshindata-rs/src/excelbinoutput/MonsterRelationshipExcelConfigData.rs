@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MonsterRelationshipExcelConfigData = Vec<MonsterRelationshipExcelConfigDatum>;
@@ -17,11 +19,11 @@ pub struct MonsterRelationshipExcelConfigDatum {
     #[serde(rename = "monsterRarity")]
     pub monster_rarity: MonsterRarity,
 
-    #[serde(rename = "BLGCIFIJPPI")]
-    pub blgcifijppi: String,
+    #[serde(rename = "OMBAEBMHENC")]
+    pub ombaebmhenc: String,
 
-    #[serde(rename = "JDPJINJEANM")]
-    pub jdpjinjeanm: Option<bool>,
+    #[serde(rename = "HJHFNFJOEGE")]
+    pub hjhfnfjoege: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -43,8 +45,9 @@ pub enum MonsterRarity {
 }
 
 pub fn load() -> Result<MonsterRelationshipExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MonsterRelationshipExcelConfigData.json",
     ]

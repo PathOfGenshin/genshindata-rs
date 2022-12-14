@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -15,11 +17,11 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KGEAFDLGPFI")]
-    pub kgeafdlgpfi: i64,
+    #[serde(rename = "OMCPAKNJGAO")]
+    pub omcpaknjgao: i64,
 
-    #[serde(rename = "CKOHFOOOKOG")]
-    pub ckohfoookog: i64,
+    #[serde(rename = "HMOILPBNGHB")]
+    pub hmoilpbnghb: i64,
 
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
@@ -27,37 +29,38 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "MEDLKFNLFPM")]
-    pub medlkfnlfpm: i64,
+    #[serde(rename = "KMNGGOEPFAH")]
+    pub kmnggoepfah: i64,
 
-    #[serde(rename = "NKPPJKPJBCF")]
-    pub nkppjkpjbcf: f64,
+    #[serde(rename = "KEFCGFDKJGO")]
+    pub kefcgfdkjgo: f64,
 
-    #[serde(rename = "MFPENBLLMMJ")]
-    pub mfpenbllmmj: f64,
+    #[serde(rename = "HJDFKEEMIEH")]
+    pub hjdfkeemieh: f64,
 
-    #[serde(rename = "OJHJJOIJPGA")]
-    pub ojhjjoijpga: i64,
+    #[serde(rename = "DGDIBPCOGEM")]
+    pub dgdibpcogem: i64,
 
-    #[serde(rename = "JOCPGPMKOIE")]
-    pub jocpgpmkoie: i64,
+    #[serde(rename = "GODDHFAAKBN")]
+    pub goddhfaakbn: i64,
 
-    #[serde(rename = "GHBCECBAIHL")]
-    pub ghbcecbaihl: i64,
+    #[serde(rename = "HCFNHNIOKEN")]
+    pub hcfnhnioken: i64,
 
-    #[serde(rename = "DHNBKBFLIHJ")]
-    pub dhnbkbflihj: i64,
+    #[serde(rename = "EGLHGHKBJPD")]
+    pub eglhghkbjpd: i64,
 
-    #[serde(rename = "PNENAOPAPOM")]
-    pub pnenaopapom: HashMap<String, i64>,
+    #[serde(rename = "FHFLLPCEJAF")]
+    pub fhfllpcejaf: HashMap<String, i64>,
 
-    #[serde(rename = "OEGMFOHBAHC")]
-    pub oegmfohbahc: Vec<i64>,
+    #[serde(rename = "JMBFBGNFBIM")]
+    pub jmbfbgnfbim: Vec<i64>,
 }
 
 pub fn load() -> Result<MichiaePreviewExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MichiaePreviewExcelConfigData.json",
     ]

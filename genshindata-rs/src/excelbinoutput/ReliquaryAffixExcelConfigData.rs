@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ReliquaryAffixExcelConfigData = Vec<ReliquaryAffixExcelConfigDatum>;
@@ -22,11 +24,18 @@ pub struct ReliquaryAffixExcelConfigDatum {
 
     #[serde(rename = "propValue")]
     pub prop_value: f64,
+
+    #[serde(rename = "weight")]
+    pub weight: i64,
+
+    #[serde(rename = "upgradeWeight")]
+    pub upgrade_weight: i64,
 }
 
 pub fn load() -> Result<ReliquaryAffixExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ReliquaryAffixExcelConfigData.json",
     ]

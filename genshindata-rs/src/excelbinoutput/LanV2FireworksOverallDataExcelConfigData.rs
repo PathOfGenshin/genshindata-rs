@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LanV2FireworksOverallDataExcelConfigData = Vec<LanV2FireworksOverallDataExcelConfigDatum>;
@@ -11,34 +13,35 @@ pub struct LanV2FireworksOverallDataExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "KKMKCANLBCP")]
-    pub kkmkcanlbcp: i64,
+    #[serde(rename = "CAGDIKMNGLH")]
+    pub cagdikmnglh: i64,
 
-    #[serde(rename = "CENJBEBBKLK")]
-    pub cenjbebbklk: Vec<Cenjbebbklk>,
+    #[serde(rename = "KNCFPBNKNEJ")]
+    pub kncfpbnknej: Vec<Kncfpbnknej>,
 
-    #[serde(rename = "DMCEHEHGKJJ")]
-    pub dmcehehgkjj: f64,
+    #[serde(rename = "FLDLBFEABHG")]
+    pub fldlbfeabhg: f64,
 
-    #[serde(rename = "ANDAKPEKFMG")]
-    pub andakpekfmg: f64,
+    #[serde(rename = "JMKNAPCGCGD")]
+    pub jmknapcgcgd: f64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cenjbebbklk {
-    #[serde(rename = "BGAEDLFPKHM")]
-    pub bgaedlfpkhm: Vec<i64>,
+pub struct Kncfpbnknej {
+    #[serde(rename = "LDNOKGFIMMJ")]
+    pub ldnokgfimmj: Vec<i64>,
 
-    #[serde(rename = "IAPAGNFKHOE")]
-    pub iapagnfkhoe: Option<i64>,
+    #[serde(rename = "KDMCDIFJGLH")]
+    pub kdmcdifjglh: Option<i64>,
 }
 
 pub fn load() -> Result<LanV2FireworksOverallDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LanV2FireworksOverallDataExcelConfigData.json",
     ]

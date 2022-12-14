@@ -2,28 +2,31 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type InstableSprayDifficultyExcelConfigData = Vec<InstableSprayDifficultyExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InstableSprayDifficultyExcelConfigDatum {
-    #[serde(rename = "LKNFKIGLALE")]
-    pub lknfkiglale: i64,
+    #[serde(rename = "OAHMACMOCEL")]
+    pub oahmacmocel: i64,
 
-    #[serde(rename = "MDFNAHJMPHI")]
-    pub mdfnahjmphi: i64,
+    #[serde(rename = "OLDBOEPEJBE")]
+    pub oldboepejbe: i64,
 
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
 
-    #[serde(rename = "LIELAIPEDMJ")]
-    pub lielaipedmj: i64,
+    #[serde(rename = "PNGMEAJFNKF")]
+    pub pngmeajfnkf: i64,
 }
 
 pub fn load() -> Result<InstableSprayDifficultyExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "InstableSprayDifficultyExcelConfigData.json",
     ]

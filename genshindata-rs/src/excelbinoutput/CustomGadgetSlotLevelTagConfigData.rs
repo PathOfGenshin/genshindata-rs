@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomGadgetSlotLevelTagConfigData = Vec<CustomGadgetSlotLevelTagConfigDatum>;
@@ -11,30 +13,30 @@ pub struct CustomGadgetSlotLevelTagConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "MAEPKPDBDLP")]
-    pub maepkpdbdlp: String,
+    #[serde(rename = "APAJHCPLIDH")]
+    pub apajhcplidh: String,
 
-    #[serde(rename = "HOPKJJEIAGH")]
-    pub hopkjjeiagh: Vec<Hopkjjeiagh>,
+    #[serde(rename = "FABJHLKHPKP")]
+    pub fabjhlkhpkp: Vec<Fabjhlkhpkp>,
 
-    #[serde(rename = "IHAAKMMPFNM")]
-    pub ihaakmmpfnm: i64,
+    #[serde(rename = "JOEAGBLELBH")]
+    pub joeagblelbh: i64,
 
-    #[serde(rename = "MDAJLNBOPMB")]
-    pub mdajlnbopmb: i64,
+    #[serde(rename = "BDHGFFMKPGA")]
+    pub bdhgffmkpga: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hopkjjeiagh {
-    #[serde(rename = "NBIIFLDGLGM")]
-    pub nbiifldglgm: Nbiifldglgm,
+pub struct Fabjhlkhpkp {
+    #[serde(rename = "GNIFLIDPGKF")]
+    pub gniflidpgkf: Gniflidpgkf,
 
-    #[serde(rename = "PHEDCEGDALJ")]
-    pub phedcegdalj: Vec<i64>,
+    #[serde(rename = "MGAHBNIODNB")]
+    pub mgahbniodnb: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Nbiifldglgm {
+pub enum Gniflidpgkf {
     #[serde(rename = "")]
     Empty,
 
@@ -46,8 +48,9 @@ pub enum Nbiifldglgm {
 }
 
 pub fn load() -> Result<CustomGadgetSlotLevelTagConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomGadgetSlotLevelTagConfigData.json",
     ]

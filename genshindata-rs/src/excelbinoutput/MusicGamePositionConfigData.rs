@@ -2,37 +2,40 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MusicGamePositionConfigData = Vec<MusicGamePositionConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicGamePositionConfigDatum {
-    #[serde(rename = "OIACGMOBJNN")]
-    pub oiacgmobjnn: i64,
+    #[serde(rename = "DEILMDFMGMM")]
+    pub deilmdfmgmm: i64,
 
-    #[serde(rename = "GDCOCCJDPDI")]
-    pub gdcoccjdpdi: Vec<f64>,
+    #[serde(rename = "KMFMKNGJPJB")]
+    pub kmfmkngjpjb: Vec<f64>,
 
-    #[serde(rename = "LMNJLDKBOEO")]
-    pub lmnjldkboeo: Option<f64>,
+    #[serde(rename = "CKFNAMNAEHH")]
+    pub ckfnamnaehh: Option<f64>,
 
-    #[serde(rename = "MECLDFABFMF")]
-    pub mecldfabfmf: Option<i64>,
+    #[serde(rename = "MNGHPNFKFLB")]
+    pub mnghpnfkflb: Option<i64>,
 
-    #[serde(rename = "CMPIGIDKDNJ")]
-    pub cmpigidkdnj: Option<i64>,
+    #[serde(rename = "ELBFEDOOPOD")]
+    pub elbfedoopod: Option<i64>,
 
-    #[serde(rename = "LOPAGCEFEAG")]
-    pub lopagcefeag: Option<i64>,
+    #[serde(rename = "BHPPGABOAGC")]
+    pub bhppgaboagc: Option<i64>,
 
-    #[serde(rename = "NLJCBMIJAKM")]
-    pub nljcbmijakm: String,
+    #[serde(rename = "JMLFAMGCOPO")]
+    pub jmlfamgcopo: String,
 }
 
 pub fn load() -> Result<MusicGamePositionConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicGamePositionConfigData.json",
     ]

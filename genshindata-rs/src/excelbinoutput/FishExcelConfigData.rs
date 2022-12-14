@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FishExcelConfigData = Vec<FishExcelConfigDatum>;
@@ -20,55 +22,56 @@ pub struct FishExcelConfigDatum {
     #[serde(rename = "hp")]
     pub hp: i64,
 
-    #[serde(rename = "KFEILLAHGOK")]
-    pub kfeillahgok: Vec<i64>,
+    #[serde(rename = "KBNNALLAPEJ")]
+    pub kbnnallapej: Vec<i64>,
 
-    #[serde(rename = "FPBIBDDKFBH")]
-    pub fpbibddkfbh: i64,
+    #[serde(rename = "ENKILEDODKH")]
+    pub enkiledodkh: i64,
 
-    #[serde(rename = "JNMEKDKFANI")]
-    pub jnmekdkfani: i64,
+    #[serde(rename = "NIBOJPCBNMF")]
+    pub nibojpcbnmf: i64,
 
-    #[serde(rename = "BMKABBDJOPN")]
-    pub bmkabbdjopn: Vec<f64>,
+    #[serde(rename = "PCHIAAFPPIA")]
+    pub pchiaafppia: Vec<f64>,
 
-    #[serde(rename = "HNKHPIEJGDD")]
-    pub hnkhpiejgdd: Vec<i64>,
+    #[serde(rename = "EPECOMOPMAN")]
+    pub epecomopman: Vec<i64>,
 
-    #[serde(rename = "PFPHEDFFBOI")]
-    pub pfphedffboi: Vec<f64>,
+    #[serde(rename = "MBDDOKDBOJL")]
+    pub mbddokdbojl: Vec<f64>,
 
-    #[serde(rename = "DEMIKMGPKEE")]
-    pub demikmgpkee: Vec<f64>,
+    #[serde(rename = "GFDLONHPAGJ")]
+    pub gfdlonhpagj: Vec<f64>,
 
-    #[serde(rename = "IGOPPOMOKKC")]
-    pub igoppomokkc: f64,
+    #[serde(rename = "KILCAOLHKKG")]
+    pub kilcaolhkkg: f64,
 
-    #[serde(rename = "CMONLAAJHBC")]
-    pub cmonlaajhbc: f64,
+    #[serde(rename = "KABFIHGJELN")]
+    pub kabfihgjeln: f64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "FLJGHNBDNLF")]
-    pub fljghnbdnlf: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "AAJEBDMKCFH")]
+    pub aajebdmkcfh: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "IFOMLHLEACL")]
-    pub ifomlhleacl: i64,
+    #[serde(rename = "OPLJDAADNMO")]
+    pub opljdaadnmo: i64,
 
-    #[serde(rename = "HOOFABOAKPM")]
-    pub hoofaboakpm: i64,
+    #[serde(rename = "BOBALNMHMCP")]
+    pub bobalnmhmcp: i64,
 
-    #[serde(rename = "MACJIICKBBN")]
-    pub macjiickbbn: Option<i64>,
+    #[serde(rename = "AOKLKBAJMAD")]
+    pub aoklkbajmad: Option<i64>,
 
-    #[serde(rename = "AENFJNAKFFF")]
-    pub aenfjnakfff: Option<i64>,
+    #[serde(rename = "BPCBIAGGLEJ")]
+    pub bpcbiagglej: Option<i64>,
 }
 
 pub fn load() -> Result<FishExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FishExcelConfigData.json",
     ]

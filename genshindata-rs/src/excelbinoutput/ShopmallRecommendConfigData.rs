@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ShopmallRecommendConfigData = Vec<ShopmallRecommendConfigDatum>;
@@ -41,16 +43,17 @@ pub struct GoodsIdVec {
     #[serde(rename = "type")]
     pub goods_id_vec_type: Option<String>,
 
-    #[serde(rename = "IKMMBOEHOAD")]
-    pub ikmmboehoad: String,
+    #[serde(rename = "LGBPOIPOHPA")]
+    pub lgbpoipohpa: String,
 
-    #[serde(rename = "JOLLBNLIJPA")]
-    pub jollbnlijpa: String,
+    #[serde(rename = "ONJLOHALONO")]
+    pub onjlohalono: String,
 }
 
 pub fn load() -> Result<ShopmallRecommendConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ShopmallRecommendConfigData.json",
     ]

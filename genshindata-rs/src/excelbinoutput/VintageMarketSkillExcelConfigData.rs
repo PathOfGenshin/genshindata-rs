@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type VintageMarketSkillExcelConfigData = Vec<VintageMarketSkillExcelConfigDatum>;
@@ -14,20 +16,17 @@ pub struct VintageMarketSkillExcelConfigDatum {
     #[serde(rename = "effectList")]
     pub effect_list: Vec<EffectList>,
 
-    #[serde(rename = "NIBHCGIHAOF")]
-    pub nibhcgihaof: i64,
+    #[serde(rename = "HCBFKDMDJML")]
+    pub hcbfkdmdjml: i64,
 
-    #[serde(rename = "JHLHNFNBMAK")]
-    pub jhlhnfnbmak: i64,
+    #[serde(rename = "DKOLHEPIKIP")]
+    pub dkolhepikip: i64,
 
-    #[serde(rename = "NBLOCEJHFCN")]
-    pub nblocejhfcn: i64,
+    #[serde(rename = "IJFLOIFAJHH")]
+    pub ijfloifajhh: i64,
 
-    #[serde(rename = "HPIKALMBHLL")]
-    pub hpikalmbhll: i64,
-
-    #[serde(rename = "NOKJFMCJJAJ")]
-    pub nokjfmcjjaj: i64,
+    #[serde(rename = "HFBICCHMJLE")]
+    pub hfbicchmjle: i64,
 
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,
@@ -67,8 +66,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<VintageMarketSkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "VintageMarketSkillExcelConfigData.json",
     ]

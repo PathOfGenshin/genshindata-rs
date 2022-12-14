@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -21,8 +23,8 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "jsonPath")]
     pub json_path: String,
 
-    #[serde(rename = "GJJEGJIHABK")]
-    pub gjjegjihabk: i64,
+    #[serde(rename = "PFJNOLPCBLI")]
+    pub pfjnolpcbli: i64,
 
     #[serde(rename = "successLatePoint")]
     pub success_late_point: i64,
@@ -33,17 +35,17 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scoreOneKey")]
     pub score_one_key: i64,
 
-    #[serde(rename = "AJHHAFCKKCI")]
-    pub ajhhafckkci: i64,
+    #[serde(rename = "AGPEGPGIHDL")]
+    pub agpegpgihdl: i64,
 
-    #[serde(rename = "LPHNJCHNMFH")]
-    pub lphnjchnmfh: i64,
+    #[serde(rename = "LDPIEDGDCCJ")]
+    pub ldpiedgdccj: i64,
 
-    #[serde(rename = "AFPIAFGIBID")]
-    pub afpiafgibid: f64,
+    #[serde(rename = "PADMIAEEMOA")]
+    pub padmiaeemoa: f64,
 
-    #[serde(rename = "ECFCJEEENPL")]
-    pub ecfcjeeenpl: HashMap<String, f64>,
+    #[serde(rename = "JHAJDBEANNB")]
+    pub jhajdbeannb: HashMap<String, f64>,
 
     #[serde(rename = "comboConfig")]
     pub combo_config: Vec<i64>,
@@ -51,32 +53,33 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scaleRange")]
     pub scale_range: i64,
 
-    #[serde(rename = "CNNGOBKHIMN")]
-    pub cnngobkhimn: String,
+    #[serde(rename = "GPGELMLCCKC")]
+    pub gpgelmlcckc: String,
 
-    #[serde(rename = "FJLLKMNCFEH")]
-    pub fjllkmncfeh: String,
+    #[serde(rename = "LFJMFLFENOJ")]
+    pub lfjmflfenoj: String,
 
-    #[serde(rename = "AMNHELPNKNO")]
-    pub amnhelpnkno: i64,
+    #[serde(rename = "EHFGOLFGGHH")]
+    pub ehfgolfgghh: i64,
 
-    #[serde(rename = "BNDBECNBEOK")]
-    pub bndbecnbeok: Vec<Bndbecnbeok>,
+    #[serde(rename = "BHLLCBDBEFL")]
+    pub bhllcbdbefl: Vec<Bhllcbdbefl>,
 
     #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
 
-    #[serde(rename = "CHPLIFGKJDB")]
-    pub chplifgkjdb: Vec<Bndbecnbeok>,
+    #[serde(rename = "NJIEPKDENOG")]
+    pub njiepkdenog: Vec<Bhllcbdbefl>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bndbecnbeok {
+pub struct Bhllcbdbefl {
 }
 
 pub fn load() -> Result<MusicGameBasicConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicGameBasicConfigData.json",
     ]

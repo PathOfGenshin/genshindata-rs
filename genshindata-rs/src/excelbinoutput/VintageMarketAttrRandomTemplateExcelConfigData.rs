@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type VintageMarketAttrRandomTemplateExcelConfigData = Vec<VintageMarketAttrRandomTemplateExcelConfigDatum>;
@@ -11,16 +13,17 @@ pub struct VintageMarketAttrRandomTemplateExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GKJPKBKBKCC")]
-    pub gkjpkbkbkcc: i64,
+    #[serde(rename = "MGFNDJNOANP")]
+    pub mgfndjnoanp: i64,
 
-    #[serde(rename = "BNGGAHCHFGA")]
-    pub bnggahchfga: Vec<i64>,
+    #[serde(rename = "GIPHHNNJHII")]
+    pub giphhnnjhii: Vec<i64>,
 }
 
 pub fn load() -> Result<VintageMarketAttrRandomTemplateExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "VintageMarketAttrRandomTemplateExcelConfigData.json",
     ]

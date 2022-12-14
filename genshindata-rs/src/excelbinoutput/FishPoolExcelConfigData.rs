@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -9,56 +11,56 @@ pub type FishPoolExcelConfigData = Vec<FishPoolExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FishPoolExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_stockList")]
+    #[serde(rename = "stockList")]
     pub stock_list: Vec<i64>,
 
-    #[serde(rename = "_stockGuarantee")]
+    #[serde(rename = "stockGuarantee")]
     pub stock_guarantee: HashMap<String, i64>,
 
-    #[serde(rename = "_stockLimitList")]
+    #[serde(rename = "stockLimitList")]
     pub stock_limit_list: Vec<StockLimitList>,
 
-    #[serde(rename = "_maxNum")]
+    #[serde(rename = "maxNum")]
     pub max_num: i64,
 
-    #[serde(rename = "_poolNameTextMapHash")]
+    #[serde(rename = "poolNameTextMapHash")]
     pub pool_name_text_map_hash: i64,
 
-    #[serde(rename = "_poolDescTextMapHash")]
+    #[serde(rename = "poolDescTextMapHash")]
     pub pool_desc_text_map_hash: i64,
 
-    #[serde(rename = "_abilityGroup")]
+    #[serde(rename = "abilityGroup")]
     pub ability_group: AbilityGroup,
 
-    #[serde(rename = "_teamAbilityGroup")]
+    #[serde(rename = "teamAbilityGroup")]
     pub team_ability_group: TeamAbilityGroup,
 
-    #[serde(rename = "_dropIdList")]
+    #[serde(rename = "dropIdList")]
     pub drop_id_list: Vec<i64>,
 
-    #[serde(rename = "_excludeFish")]
+    #[serde(rename = "excludeFish")]
     pub exclude_fish: Vec<i64>,
 
-    #[serde(rename = "_dailyLimitNum")]
+    #[serde(rename = "dailyLimitNum")]
     pub daily_limit_num: Option<i64>,
 
-    #[serde(rename = "_cityId")]
+    #[serde(rename = "cityId")]
     pub city_id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct StockLimitList {
-    #[serde(rename = "PJLPNHLNIPE")]
-    pub pjlpnhlnipe: Option<Pjlpnhlnipe>,
+    #[serde(rename = "CBPBFBIAOIF")]
+    pub cbpbfbiaoif: Option<Cbpbfbiaoif>,
 
-    #[serde(rename = "GBPALEDIHCF")]
-    pub gbpaledihcf: Option<i64>,
+    #[serde(rename = "JAMKCHHMAFO")]
+    pub jamkchhmafo: Option<i64>,
 
-    #[serde(rename = "KJMMGOFLMKG")]
-    pub kjmmgoflmkg: Option<i64>,
+    #[serde(rename = "DGJHCIHOLPI")]
+    pub dgjhciholpi: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -68,7 +70,7 @@ pub enum AbilityGroup {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pjlpnhlnipe {
+pub enum Cbpbfbiaoif {
     #[serde(rename = "FISH_STOCK_TYPE_ANY")]
     FishStockTypeAny,
 
@@ -86,8 +88,9 @@ pub enum TeamAbilityGroup {
 }
 
 pub fn load() -> Result<FishPoolExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FishPoolExcelConfigData.json",
     ]

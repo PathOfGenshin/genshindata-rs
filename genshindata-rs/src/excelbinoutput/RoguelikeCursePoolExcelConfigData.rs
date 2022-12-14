@@ -2,14 +2,16 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoguelikeCursePoolExcelConfigData = Vec<RoguelikeCursePoolExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RoguelikeCursePoolExcelConfigDatum {
-    #[serde(rename = "JMBECIIBMHM")]
-    pub jmbeciibmhm: i64,
+    #[serde(rename = "EDPDKGFIHLI")]
+    pub edpdkgfihli: i64,
 
     #[serde(rename = "poolId")]
     pub pool_id: i64,
@@ -19,8 +21,9 @@ pub struct RoguelikeCursePoolExcelConfigDatum {
 }
 
 pub fn load() -> Result<RoguelikeCursePoolExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoguelikeCursePoolExcelConfigData.json",
     ]

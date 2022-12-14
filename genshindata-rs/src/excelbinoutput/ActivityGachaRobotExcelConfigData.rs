@@ -2,29 +2,31 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGachaRobotExcelConfigData = Vec<ActivityGachaRobotExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityGachaRobotExcelConfigDatum {
-    #[serde(rename = "EBEMEGEMODN")]
-    pub ebemegemodn: i64,
+    #[serde(rename = "OFGIANMJCDF")]
+    pub ofgianmjcdf: i64,
 
-    #[serde(rename = "HJHENADIDEN")]
-    pub hjhenadiden: Vec<i64>,
+    #[serde(rename = "HHCHOHECIHE")]
+    pub hhchohecihe: Vec<i64>,
 
-    #[serde(rename = "PECNGNBKFGJ")]
-    pub pecngnbkfgj: Vec<i64>,
+    #[serde(rename = "GICMOHHHDHO")]
+    pub gicmohhhdho: Vec<i64>,
 
-    #[serde(rename = "LCGFBNBDOCN")]
-    pub lcgfbnbdocn: Vec<i64>,
+    #[serde(rename = "ANLOKADAAIP")]
+    pub anlokadaaip: Vec<i64>,
 
     #[serde(rename = "type")]
     pub activity_gacha_robot_excel_config_datum_type: Type,
 
-    #[serde(rename = "FLGJGBFFBDF")]
-    pub flgjgbffbdf: i64,
+    #[serde(rename = "KOBDCELHDBG")]
+    pub kobdcelhdbg: i64,
 
     #[serde(rename = "materialId")]
     pub material_id: i64,
@@ -32,17 +34,17 @@ pub struct ActivityGachaRobotExcelConfigDatum {
     #[serde(rename = "modelPath")]
     pub model_path: String,
 
-    #[serde(rename = "JOKIENNOKMF")]
-    pub jokiennokmf: i64,
+    #[serde(rename = "HFMLGNDPMHF")]
+    pub hfmlgndpmhf: i64,
 
-    #[serde(rename = "CBCJJEAEJLF")]
-    pub cbcjjeaejlf: i64,
+    #[serde(rename = "PEMCLFDHPDJ")]
+    pub pemclfdhpdj: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KKHECJHINOA")]
-    pub kkhecjhinoa: String,
+    #[serde(rename = "FGLJDEPEAOJ")]
+    pub fgljdepeaoj: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -55,8 +57,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<ActivityGachaRobotExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGachaRobotExcelConfigData.json",
     ]

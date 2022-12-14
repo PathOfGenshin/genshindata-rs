@@ -2,47 +2,46 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriFlowerThemeExcelConfigData = Vec<IrodoriFlowerThemeExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriFlowerThemeExcelConfigDatum {
-    #[serde(rename = "DEABKCHGODA")]
-    pub deabkchgoda: i64,
+    #[serde(rename = "PPODKGEPIOH")]
+    pub ppodkgepioh: i64,
 
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "HAFOEGJLOAK")]
-    pub hafoegjloak: i64,
+    #[serde(rename = "EGKHABGENGP")]
+    pub egkhabgengp: i64,
 
-    #[serde(rename = "JILNEOHCOHP")]
-    pub jilneohcohp: i64,
+    #[serde(rename = "FHLKABMHNPK")]
+    pub fhlkabmhnpk: i64,
 
-    #[serde(rename = "JMOEDAINFKE")]
-    pub jmoedainfke: i64,
+    #[serde(rename = "DGJKPDPIEHB")]
+    pub dgjkpdpiehb: i64,
 
-    #[serde(rename = "OLFLKDAEKJH")]
-    pub olflkdaekjh: i64,
+    #[serde(rename = "DHIGNNEADNJ")]
+    pub dhignneadnj: i64,
 
-    #[serde(rename = "JEFOCCNIOBO")]
-    pub jefoccniobo: i64,
+    #[serde(rename = "ALMGIKILFKE")]
+    pub almgikilfke: i64,
 
-    #[serde(rename = "JJAJOAPHBGE")]
-    pub jjajoaphbge: i64,
+    #[serde(rename = "HEDMEIALKNN")]
+    pub hedmeialknn: f64,
 
-    #[serde(rename = "LKBHFCIPKJJ")]
-    pub lkbhfcipkjj: f64,
+    #[serde(rename = "MPIJBOBJAKG")]
+    pub mpijbobjakg: Vec<i64>,
 
-    #[serde(rename = "JKKBPINOPKJ")]
-    pub jkkbpinopkj: Vec<i64>,
+    #[serde(rename = "NIIHNDPNCKJ")]
+    pub niihndpnckj: i64,
 
-    #[serde(rename = "PKIIGMLFEKJ")]
-    pub pkiigmlfekj: i64,
-
-    #[serde(rename = "JPJGEHMDOFI")]
-    pub jpjgehmdofi: i64,
+    #[serde(rename = "GCDMHNJGIBD")]
+    pub gcdmhnjgibd: i64,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
@@ -52,8 +51,9 @@ pub struct IrodoriFlowerThemeExcelConfigDatum {
 }
 
 pub fn load() -> Result<IrodoriFlowerThemeExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriFlowerThemeExcelConfigData.json",
     ]

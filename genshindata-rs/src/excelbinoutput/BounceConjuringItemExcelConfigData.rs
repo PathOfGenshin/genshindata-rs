@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BounceConjuringItemExcelConfigData = Vec<BounceConjuringItemExcelConfigDatum>;
@@ -17,16 +19,14 @@ pub struct BounceConjuringItemExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "bgIconHashSuffix")]
-    pub bg_icon_hash_suffix: i64,
-
-    #[serde(rename = "bgIconHashPre")]
-    pub bg_icon_hash_pre: i64,
+    #[serde(rename = "HAANBOBJNIK")]
+    pub haanbobjnik: i64,
 }
 
 pub fn load() -> Result<BounceConjuringItemExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BounceConjuringItemExcelConfigData.json",
     ]

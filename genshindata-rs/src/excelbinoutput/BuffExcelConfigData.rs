@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BuffExcelConfigData = Vec<BuffExcelConfigDatum>;
@@ -35,8 +37,8 @@ pub struct BuffExcelConfigDatum {
     #[serde(rename = "modifierName")]
     pub modifier_name: String,
 
-    #[serde(rename = "LNGAOJJDNPK")]
-    pub lngaojjdnpk: Option<bool>,
+    #[serde(rename = "PKICOOKLMBL")]
+    pub pkicooklmbl: Option<bool>,
 
     #[serde(rename = "stackType")]
     pub stack_type: Option<StackType>,
@@ -58,8 +60,9 @@ pub enum StackType {
 }
 
 pub fn load() -> Result<BuffExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BuffExcelConfigData.json",
     ]

@@ -2,64 +2,67 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type InferenceWordExcelConfigData = Vec<InferenceWordExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferenceWordExcelConfigDatum {
-    #[serde(rename = "ELABMBFNIFF")]
-    pub elabmbfniff: i64,
+    #[serde(rename = "JIMANNHOGCF")]
+    pub jimannhogcf: i64,
 
-    #[serde(rename = "DBLKEGDILKA")]
-    pub dblkegdilka: i64,
+    #[serde(rename = "GNJHEMDOCLN")]
+    pub gnjhemdocln: i64,
 
-    #[serde(rename = "MIBDGELFAGJ")]
-    pub mibdgelfagj: Option<bool>,
+    #[serde(rename = "BHDLGDFFJLD")]
+    pub bhdlgdffjld: Option<bool>,
 
-    #[serde(rename = "NEDNACNFACN")]
-    pub nednacnfacn: Option<bool>,
+    #[serde(rename = "GKLLFMMMPNL")]
+    pub gkllfmmmpnl: Option<bool>,
 
-    #[serde(rename = "EMPJPMNEIEN")]
-    pub empjpmneien: Vec<Djhjhpnpnno>,
+    #[serde(rename = "COGDPFAMGAH")]
+    pub cogdpfamgah: Vec<Cogdpfamgah>,
 
-    #[serde(rename = "CECCKJKILKP")]
-    pub cecckjkilkp: Option<bool>,
+    #[serde(rename = "MHLOEJNCOLC")]
+    pub mhloejncolc: Option<bool>,
 
-    #[serde(rename = "PCDLIMAIIDP")]
-    pub pcdlimaiidp: Option<i64>,
+    #[serde(rename = "DONDHIDFOMO")]
+    pub dondhidfomo: Option<i64>,
 
-    #[serde(rename = "DJHJHPNPNNO")]
-    pub djhjhpnpnno: Vec<Djhjhpnpnno>,
+    #[serde(rename = "EBOOJIIAABA")]
+    pub eboojiiaaba: Vec<Cogdpfamgah>,
 
-    #[serde(rename = "OPLJFLJDOPL")]
-    pub opljfljdopl: i64,
+    #[serde(rename = "BACNAFHBAIM")]
+    pub bacnafhbaim: i64,
 
-    #[serde(rename = "LLCPCAJANNN")]
-    pub llcpcajannn: Option<i64>,
+    #[serde(rename = "LIFPCFBDJLG")]
+    pub lifpcfbdjlg: Option<i64>,
 
-    #[serde(rename = "LCPLAOIPCEO")]
-    pub lcplaoipceo: Option<i64>,
+    #[serde(rename = "BJHNLPOPALB")]
+    pub bjhnlpopalb: Option<i64>,
 
-    #[serde(rename = "NIACGIJOKHM")]
-    pub niacgijokhm: Option<i64>,
+    #[serde(rename = "IAECKNABEHD")]
+    pub iaecknabehd: Option<i64>,
 
-    #[serde(rename = "DGFAADLELCM")]
-    pub dgfaadlelcm: Option<bool>,
+    #[serde(rename = "JKIMOMICCNA")]
+    pub jkimomiccna: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Djhjhpnpnno {
-    #[serde(rename = "type")]
-    pub djhjhpnpnno_type: Option<String>,
-
+pub struct Cogdpfamgah {
     #[serde(rename = "param")]
     pub param: String,
+
+    #[serde(rename = "type")]
+    pub cogdpfamgah_type: Option<String>,
 }
 
 pub fn load() -> Result<InferenceWordExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "InferenceWordExcelConfigData.json",
     ]

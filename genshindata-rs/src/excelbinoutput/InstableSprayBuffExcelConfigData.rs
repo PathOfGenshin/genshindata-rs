@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type InstableSprayBuffExcelConfigData = Vec<InstableSprayBuffExcelConfigDatum>;
@@ -11,17 +13,14 @@ pub struct InstableSprayBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GPDAEIMDCBF")]
-    pub gpdaeimdcbf: String,
+    #[serde(rename = "BAJIHJHAKCG")]
+    pub bajihjhakcg: String,
 
-    #[serde(rename = "AMMJJJIODCM")]
-    pub ammjjjiodcm: String,
+    #[serde(rename = "ENMBNLNIOED")]
+    pub enmbnlnioed: String,
 
-    #[serde(rename = "NBLOCEJHFCN")]
-    pub nblocejhfcn: i64,
-
-    #[serde(rename = "HPIKALMBHLL")]
-    pub hpikalmbhll: i64,
+    #[serde(rename = "IJFLOIFAJHH")]
+    pub ijfloifajhh: i64,
 
     #[serde(rename = "elementType")]
     pub element_type: i64,
@@ -29,16 +28,17 @@ pub struct InstableSprayBuffExcelConfigDatum {
     #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
 
-    #[serde(rename = "CPOAMLCBFAG")]
-    pub cpoamlcbfag: i64,
+    #[serde(rename = "NBBAGHJFMAP")]
+    pub nbbaghjfmap: i64,
 
-    #[serde(rename = "JGOAAIOIKNG")]
-    pub jgoaaioikng: Vec<String>,
+    #[serde(rename = "HJIPLAPKEHM")]
+    pub hjiplapkehm: Vec<String>,
 }
 
 pub fn load() -> Result<InstableSprayBuffExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "InstableSprayBuffExcelConfigData.json",
     ]

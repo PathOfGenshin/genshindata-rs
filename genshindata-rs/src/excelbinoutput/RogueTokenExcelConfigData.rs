@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueTokenExcelConfigData = Vec<RogueTokenExcelConfigDatum>;
@@ -17,21 +19,21 @@ pub struct RogueTokenExcelConfigDatum {
     #[serde(rename = "level")]
     pub level: i64,
 
-    #[serde(rename = "PNONIJHOHOA")]
-    pub pnonijhohoa: Vec<i64>,
+    #[serde(rename = "GNAHIEEDDKG")]
+    pub gnahieeddkg: Vec<i64>,
 
-    #[serde(rename = "DIBNIILMPHD")]
-    pub dibniilmphd: Vec<i64>,
+    #[serde(rename = "EGMCDMGHAIA")]
+    pub egmcdmghaia: Vec<i64>,
 
-    #[serde(rename = "CFBLKKMKIMH")]
-    pub cfblkkmkimh: Vec<i64>,
+    #[serde(rename = "HFECNOEIOEL")]
+    pub hfecnoeioel: Vec<i64>,
 
-    #[serde(rename = "FHDNMLEJGIB")]
-    pub fhdnmlejgib: Option<Fhdnmlejgib>,
+    #[serde(rename = "JIPOLNFCBIH")]
+    pub jipolnfcbih: Option<Jipolnfcbih>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fhdnmlejgib {
+pub enum Jipolnfcbih {
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_BOSS")]
     RogueMonsterDifficultyBoss,
 
@@ -43,8 +45,9 @@ pub enum Fhdnmlejgib {
 }
 
 pub fn load() -> Result<RogueTokenExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueTokenExcelConfigData.json",
     ]

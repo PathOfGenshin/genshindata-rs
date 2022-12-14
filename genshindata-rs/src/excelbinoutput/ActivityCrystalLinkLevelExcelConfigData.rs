@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -21,17 +23,17 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "BNHKIIIIFMG")]
-    pub bnhkiiiifmg: Vec<i64>,
+    #[serde(rename = "HCNBJHGCIHC")]
+    pub hcnbjhgcihc: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "INLDGDKEOLM")]
-    pub inldgdkeolm: Vec<i64>,
+    #[serde(rename = "NNJGLAGCPCG")]
+    pub nnjglagcpcg: Vec<i64>,
 
-    #[serde(rename = "MFNALEPECFJ")]
-    pub mfnalepecfj: Vec<i64>,
+    #[serde(rename = "NKBIBNEHMKI")]
+    pub nkbibnehmki: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
@@ -39,25 +41,26 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "MEHDCJLEHAC")]
-    pub mehdcjlehac: Vec<HashMap<String, Vec<String>>>,
+    #[serde(rename = "LMKCPIKEBBI")]
+    pub lmkcpikebbi: Vec<HashMap<String, Vec<String>>>,
 
-    #[serde(rename = "ALANAMPDJEE")]
-    pub alanampdjee: Vec<HashMap<String, Vec<i64>>>,
+    #[serde(rename = "PEHELHFCPEM")]
+    pub pehelhfcpem: Vec<HashMap<String, Vec<i64>>>,
 
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
 
-    #[serde(rename = "KAEHEOCCFKP")]
-    pub kaeheoccfkp: i64,
+    #[serde(rename = "GHJFGBKMLPN")]
+    pub ghjfgbkmlpn: i64,
 
-    #[serde(rename = "POKGEGPGFCM")]
-    pub pokgegpgfcm: i64,
+    #[serde(rename = "DEPAMHLBAEL")]
+    pub depamhlbael: i64,
 }
 
 pub fn load() -> Result<ActivityCrystalLinkLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityCrystalLinkLevelExcelConfigData.json",
     ]

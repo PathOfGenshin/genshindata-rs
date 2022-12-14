@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriMasterLevelExcelConfigData = Vec<IrodoriMasterLevelExcelConfigDatum>;
@@ -17,25 +19,26 @@ pub struct IrodoriMasterLevelExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "MPEIIPLLCNO")]
-    pub mpeiipllcno: i64,
+    #[serde(rename = "AFGBBEAKHJL")]
+    pub afgbbeakhjl: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "AFIKCBKCBPO")]
-    pub afikcbkcbpo: String,
+    #[serde(rename = "AJKLAJNFNBA")]
+    pub ajklajnfnba: String,
 
-    #[serde(rename = "BNHKIIIIFMG")]
-    pub bnhkiiiifmg: Vec<i64>,
+    #[serde(rename = "HCNBJHGCIHC")]
+    pub hcnbjhgcihc: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 }
 
 pub fn load() -> Result<IrodoriMasterLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriMasterLevelExcelConfigData.json",
     ]

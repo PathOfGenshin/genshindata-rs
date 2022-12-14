@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CoopCgExcelConfigData = Vec<CoopCgExcelConfigDatum>;
@@ -23,17 +25,11 @@ pub struct CoopCgExcelConfigDatum {
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Vec<UnlockCond>,
 
-    #[serde(rename = "showImageHashSuffix")]
-    pub show_image_hash_suffix: i64,
+    #[serde(rename = "showImageHash")]
+    pub show_image_hash: i64,
 
-    #[serde(rename = "showImageHashPre")]
-    pub show_image_hash_pre: i64,
-
-    #[serde(rename = "showImageSmallHashSuffix")]
-    pub show_image_small_hash_suffix: i64,
-
-    #[serde(rename = "showImageSmallHashPre")]
-    pub show_image_small_hash_pre: i64,
+    #[serde(rename = "showImageSmallHash")]
+    pub show_image_small_hash: i64,
 
     #[serde(rename = "cgNameTextMapHash")]
     pub cg_name_text_map_hash: i64,
@@ -70,8 +66,9 @@ pub enum CondType {
 }
 
 pub fn load() -> Result<CoopCgExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CoopCGExcelConfigData.json",
     ]

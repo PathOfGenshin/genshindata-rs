@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HideAndSeekSkillExcelConfigData = Vec<HideAndSeekSkillExcelConfigDatum>;
@@ -29,15 +31,15 @@ pub struct HideAndSeekSkillExcelConfigDatum {
     #[serde(rename = "categoryDescTextMapHash")]
     pub category_desc_text_map_hash: i64,
 
-    #[serde(rename = "HDCCEKCNNAH")]
-    pub hdccekcnnah: i64,
-
-    #[serde(rename = "APDEPHNBJBK")]
-    pub apdephnbjbk: i64,
+    #[serde(rename = "ENGHDMEKDBN")]
+    pub enghdmekdbn: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum SkillCategory {
+    #[serde(rename = "HIDE_AND_SEEK_SKILL_CATEGORY_GHOST")]
+    HideAndSeekSkillCategoryGhost,
+
     #[serde(rename = "HIDE_AND_SEEK_SKILL_CATEGORY_HUNTER")]
     HideAndSeekSkillCategoryHunter,
 
@@ -58,8 +60,9 @@ pub enum SkillSubCategory {
 }
 
 pub fn load() -> Result<HideAndSeekSkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HideAndSeekSkillExcelConfigData.json",
     ]

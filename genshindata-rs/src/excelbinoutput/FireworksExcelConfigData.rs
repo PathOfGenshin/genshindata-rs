@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FireworksExcelConfigData = Vec<FireworksExcelConfigDatum>;
@@ -11,45 +13,45 @@ pub struct FireworksExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "MFCAENJKICP")]
-    pub mfcaenjkicp: Vec<Mfcaenjkicp>,
+    #[serde(rename = "PNDPMJJMHKE")]
+    pub pndpmjjmhke: Vec<Pndpmjjmhke>,
 
-    #[serde(rename = "EDOLACPCHJG")]
-    pub edolacpchjg: Edolacpchjg,
+    #[serde(rename = "PHOADJJMHCB")]
+    pub phoadjjmhcb: Phoadjjmhcb,
 
-    #[serde(rename = "BCCACAJHPPF")]
-    pub bccacajhppf: Bccacajhppf,
+    #[serde(rename = "HGJDPBPMJCH")]
+    pub hgjdpbpmjch: Hgjdpbpmjch,
 
-    #[serde(rename = "AKEJMLEELLC")]
-    pub akejmleellc: String,
+    #[serde(rename = "GJHFPMAHNEK")]
+    pub gjhfpmahnek: String,
 
-    #[serde(rename = "HHFBDJPPMOP")]
-    pub hhfbdjppmop: i64,
+    #[serde(rename = "MDCGLKFGKIO")]
+    pub mdcglkfgkio: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Mfcaenjkicp {
+pub struct Pndpmjjmhke {
     #[serde(rename = "type")]
-    pub mfcaenjkicp_type: Type,
+    pub pndpmjjmhke_type: Type,
 
-    #[serde(rename = "AFLHGCMHDMK")]
-    pub aflhgcmhdmk: i64,
+    #[serde(rename = "KKICHDPAPPF")]
+    pub kkichdpappf: i64,
 
-    #[serde(rename = "CLIOCIMNIAL")]
-    pub cliocimnial: Option<bool>,
+    #[serde(rename = "ONHLLPDNECJ")]
+    pub onhllpdnecj: Option<bool>,
 
-    #[serde(rename = "AHENCBKOPAO")]
-    pub ahencbkopao: Vec<i64>,
+    #[serde(rename = "BNCEDOAGFBE")]
+    pub bncedoagfbe: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bccacajhppf {
+pub enum Hgjdpbpmjch {
     #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
     EffSceneObjFireworksBullet,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Edolacpchjg {
+pub enum Phoadjjmhcb {
     #[serde(rename = "PatternShapeFireworks")]
     PatternShapeFireworks,
 
@@ -76,8 +78,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<FireworksExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FireworksExcelConfigData.json",
     ]

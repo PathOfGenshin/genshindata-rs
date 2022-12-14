@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HideAndSeekMatchExcelConfigData = Vec<HideAndSeekMatchExcelConfigDatum>;
@@ -14,26 +16,20 @@ pub struct HideAndSeekMatchExcelConfigDatum {
     #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
 
-    #[serde(rename = "NFAHBEDPCMD")]
-    pub nfahbedpcmd: i64,
+    #[serde(rename = "mapSmallIconPathHash")]
+    pub map_small_icon_path_hash: i64,
 
-    #[serde(rename = "BOFDHDNNKCF")]
-    pub bofdhdnnkcf: i64,
+    #[serde(rename = "mapIconPathHash")]
+    pub map_icon_path_hash: i64,
 
     #[serde(rename = "dscTextMapHash")]
     pub dsc_text_map_hash: i64,
 
-    #[serde(rename = "mapIconPathHashSuffix")]
-    pub map_icon_path_hash_suffix: i64,
+    #[serde(rename = "OEOMHLLDDEC")]
+    pub oeomhllddec: Vec<i64>,
 
-    #[serde(rename = "mapSmallIconPathHashPre")]
-    pub map_small_icon_path_hash_pre: i64,
-
-    #[serde(rename = "mapIconPathHashPre")]
-    pub map_icon_path_hash_pre: i64,
-
-    #[serde(rename = "mapSmallIconPathHashSuffix")]
-    pub map_small_icon_path_hash_suffix: i64,
+    #[serde(rename = "MANBJHKMJEG")]
+    pub manbjhkmjeg: i64,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
@@ -76,8 +72,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<HideAndSeekMatchExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HideAndSeekMatchExcelConfigData.json",
     ]

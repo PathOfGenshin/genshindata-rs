@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LunaRiteBattleExcelConfigData = Vec<LunaRiteBattleExcelConfigDatum>;
@@ -11,36 +13,36 @@ pub struct LunaRiteBattleExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "JDPGGCCINLP")]
-    pub jdpggccinlp: Jdpggccinlp,
+    #[serde(rename = "GBECKABMACL")]
+    pub gbeckabmacl: Gbeckabmacl,
 
-    #[serde(rename = "IBHNNLLDCKG")]
-    pub ibhnnlldckg: Option<i64>,
+    #[serde(rename = "IPAEOPBGAEA")]
+    pub ipaeopbgaea: Option<i64>,
 
-    #[serde(rename = "NKMBOEBPONE")]
-    pub nkmboebpone: i64,
+    #[serde(rename = "MCFFLGAJCDD")]
+    pub mcfflgajcdd: i64,
 
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "MMIGMKDOAOL")]
-    pub mmigmkdoaol: String,
+    #[serde(rename = "HICDDKNDDAE")]
+    pub hicddknddae: String,
 
-    #[serde(rename = "PLHNOFMNEHM")]
-    pub plhnofmnehm: String,
+    #[serde(rename = "BNOOGNDAOLI")]
+    pub bnoogndaoli: String,
 
-    #[serde(rename = "BPONEFHCAFP")]
-    pub bponefhcafp: String,
+    #[serde(rename = "EFOMALADEDB")]
+    pub efomaladedb: String,
 
-    #[serde(rename = "KMHINBKOEKF")]
-    pub kmhinbkoekf: i64,
+    #[serde(rename = "NCJEOKBBEKB")]
+    pub ncjeokbbekb: i64,
 
-    #[serde(rename = "OLPHBBHIMPM")]
-    pub olphbbhimpm: i64,
+    #[serde(rename = "JMGKKMAAOIA")]
+    pub jmgkkmaaoia: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jdpggccinlp {
+pub enum Gbeckabmacl {
     #[serde(rename = "LUNA_RITE_REGION_TYPE_DRAGONSPINE")]
     LunaRiteRegionTypeDragonspine,
 
@@ -52,8 +54,9 @@ pub enum Jdpggccinlp {
 }
 
 pub fn load() -> Result<LunaRiteBattleExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LunaRiteBattleExcelConfigData.json",
     ]

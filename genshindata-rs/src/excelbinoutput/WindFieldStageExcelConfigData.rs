@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WindFieldStageExcelConfigData = Vec<WindFieldStageExcelConfigDatum>;
@@ -26,19 +28,17 @@ pub struct WindFieldStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KKPNJFJBLNM")]
-    pub kkpnjfjblnm: i64,
-
-    #[serde(rename = "EFHNOEKDDEO")]
-    pub efhnoekddeo: i64,
+    #[serde(rename = "LEAMCHPNJKH")]
+    pub leamchpnjkh: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 }
 
 pub fn load() -> Result<WindFieldStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WindFieldStageExcelConfigData.json",
     ]

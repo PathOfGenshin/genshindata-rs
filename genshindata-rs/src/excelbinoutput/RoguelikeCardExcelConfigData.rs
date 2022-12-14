@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoguelikeCardExcelConfigData = Vec<RoguelikeCardExcelConfigDatum>;
@@ -17,57 +19,57 @@ pub struct RoguelikeCardExcelConfigDatum {
     #[serde(rename = "type")]
     pub roguelike_card_excel_config_datum_type: Type,
 
-    #[serde(rename = "FALACHEECPE")]
-    pub falacheecpe: Vec<i64>,
+    #[serde(rename = "EOHCDKMPDNN")]
+    pub eohcdkmpdnn: Vec<i64>,
 
-    #[serde(rename = "JDELHOAAIJH")]
-    pub jdelhoaaijh: Vec<String>,
+    #[serde(rename = "CKNAMPIDGOD")]
+    pub cknampidgod: Vec<String>,
 
-    #[serde(rename = "LIKIBHAPBML")]
-    pub likibhapbml: Likibhapbml,
+    #[serde(rename = "MOCCNJPNFCP")]
+    pub moccnjpnfcp: Moccnjpnfcp,
 
-    #[serde(rename = "FFMGPDNCIEI")]
-    pub ffmgpdnciei: i64,
+    #[serde(rename = "FIJJOLEOOMN")]
+    pub fijjoleoomn: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JBLCGBFOOLF")]
-    pub jblcgbfoolf: i64,
+    #[serde(rename = "KGJPFMIOECN")]
+    pub kgjpfmioecn: i64,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<f64>,
 
-    #[serde(rename = "GBKHEBJBIGC")]
-    pub gbkhebjbigc: Vec<bool>,
+    #[serde(rename = "IPHDOCKEMDE")]
+    pub iphdockemde: Vec<bool>,
 
-    #[serde(rename = "CEPPLGFOAHB")]
-    pub cepplgfoahb: Vec<f64>,
+    #[serde(rename = "MEOJNEKJIIL")]
+    pub meojnekjiil: Vec<f64>,
 
-    #[serde(rename = "JAOLFFLPFEJ")]
-    pub jaolfflpfej: Option<Jaolfflpfej>,
+    #[serde(rename = "MHBKMJMMBGJ")]
+    pub mhbkmjmmbgj: Option<Mhbkmjmmbgj>,
 
-    #[serde(rename = "HKHMNJCCKPB")]
-    pub hkhmnjcckpb: Option<bool>,
+    #[serde(rename = "MEJPPEIAEAA")]
+    pub mejppeiaeaa: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Likibhapbml {
+pub struct Moccnjpnfcp {
     #[serde(rename = "effectType")]
     pub effect_type: String,
 
-    #[serde(rename = "IOGACGMFBKC")]
-    pub iogacgmfbkc: String,
+    #[serde(rename = "PIOMJPCNDKA")]
+    pub piomjpcndka: String,
 
-    #[serde(rename = "GFPCNPAKAFH")]
-    pub gfpcnpakafh: String,
+    #[serde(rename = "AHIDGHIMNBK")]
+    pub ahidghimnbk: String,
 
-    #[serde(rename = "DJLMHFODHDL")]
-    pub djlmhfodhdl: Option<i64>,
+    #[serde(rename = "MCNFEOJIGKK")]
+    pub mcnfeojigkk: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jaolfflpfej {
+pub enum Mhbkmjmmbgj {
     #[serde(rename = "ROGUELIKE_CARD_LABEL_EQUIPMENT")]
     RoguelikeCardLabelEquipment,
 
@@ -91,8 +93,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<RoguelikeCardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoguelikeCardExcelConfigData.json",
     ]

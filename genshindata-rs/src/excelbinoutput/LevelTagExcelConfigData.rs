@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LevelTagExcelConfigData = Vec<LevelTagExcelConfigDatum>;
@@ -11,31 +13,32 @@ pub struct LevelTagExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "CCKBLEPEKCH")]
-    pub cckblepekch: String,
+    #[serde(rename = "OHOKKAHDNAO")]
+    pub ohokkahdnao: String,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "COBNIBENKIC")]
-    pub cobnibenkic: Vec<i64>,
+    #[serde(rename = "EOPGGJNBDCF")]
+    pub eopggjnbdcf: Vec<i64>,
 
-    #[serde(rename = "HHBHPBLABMF")]
-    pub hhbhpblabmf: Vec<i64>,
+    #[serde(rename = "HGLCCGANCPH")]
+    pub hglccgancph: Vec<i64>,
 
-    #[serde(rename = "AMHDPIFKPMC")]
-    pub amhdpifkpmc: Option<bool>,
+    #[serde(rename = "NLHJOMJANDM")]
+    pub nlhjomjandm: Option<bool>,
 
-    #[serde(rename = "NFOCCDHDNPF")]
-    pub nfoccdhdnpf: Option<f64>,
+    #[serde(rename = "IJHBMHKIPKP")]
+    pub ijhbmhkipkp: Option<f64>,
 
-    #[serde(rename = "PGGMOAMLHAP")]
-    pub pggmoamlhap: Vec<i64>,
+    #[serde(rename = "CJEPMFFGKAC")]
+    pub cjepmffgkac: Vec<i64>,
 }
 
 pub fn load() -> Result<LevelTagExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LevelTagExcelConfigData.json",
     ]

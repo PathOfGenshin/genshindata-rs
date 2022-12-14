@@ -2,37 +2,40 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FireworksFactorExcelConfigData = Vec<FireworksFactorExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FireworksFactorExcelConfigDatum {
-    #[serde(rename = "IMGGODAFPAE")]
-    pub imggodafpae: String,
+    #[serde(rename = "OMBOHFCFAOD")]
+    pub ombohfcfaod: String,
 
-    #[serde(rename = "PCANKJOPFIE")]
-    pub pcankjopfie: i64,
+    #[serde(rename = "BACFDIKOFHA")]
+    pub bacfdikofha: i64,
 
-    #[serde(rename = "MMILBCNCHJI")]
-    pub mmilbcnchji: String,
+    #[serde(rename = "GCLGLLGPPJB")]
+    pub gclgllgppjb: String,
 
-    #[serde(rename = "JKBKMKPGJBB")]
-    pub jkbkmkpgjbb: i64,
+    #[serde(rename = "PPODKJHGJAK")]
+    pub ppodkjhgjak: i64,
 
-    #[serde(rename = "NLAJBKLHNPO")]
-    pub nlajbklhnpo: i64,
+    #[serde(rename = "APABNNMCCNG")]
+    pub apabnnmccng: i64,
 
-    #[serde(rename = "JIFAHOIFLFK")]
-    pub jifahoiflfk: i64,
+    #[serde(rename = "FJIOMCOEAEB")]
+    pub fjiomcoeaeb: i64,
 
-    #[serde(rename = "FKNMKCFPIFI")]
-    pub fknmkcfpifi: f64,
+    #[serde(rename = "BIOMMMJCOFG")]
+    pub biommmjcofg: f64,
 }
 
 pub fn load() -> Result<FireworksFactorExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FireworksFactorExcelConfigData.json",
     ]

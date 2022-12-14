@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeworldModuleExcelConfigData = Vec<HomeworldModuleExcelConfigDatum>;
@@ -11,8 +13,11 @@ pub struct HomeworldModuleExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "EJAPABPJFBA")]
-    pub ejapabpjfba: i64,
+    #[serde(rename = "isFree")]
+    pub is_free: Option<bool>,
+
+    #[serde(rename = "GHCAGJGHMAO")]
+    pub ghcagjghmao: i64,
 
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: i64,
@@ -40,14 +45,12 @@ pub struct HomeworldModuleExcelConfigDatum {
 
     #[serde(rename = "bigImageAddr")]
     pub big_image_addr: String,
-
-    #[serde(rename = "isFree")]
-    pub is_free: Option<bool>,
 }
 
 pub fn load() -> Result<HomeworldModuleExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeworldModuleExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ProductIdConfigData = Vec<ProductIdConfigDatum>;
@@ -20,15 +22,15 @@ pub struct ProductIdConfigDatum {
     #[serde(rename = "entitlementId")]
     pub entitlement_id: String,
 
-    #[serde(rename = "JNJONAJEAOF")]
-    pub jnjonajeaof: String,
+    #[serde(rename = "NMOGKCAEJNG")]
+    pub nmogkcaejng: String,
 
-    #[serde(rename = "HMIJHOPHDOH")]
-    pub hmijhophdoh: Vec<Hmijhophdoh>,
+    #[serde(rename = "EHPPIPEGIMN")]
+    pub ehppipegimn: Vec<Ehppipegimn>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hmijhophdoh {
+pub enum Ehppipegimn {
     #[serde(rename = "CLOUD_ANDROID")]
     CloudAndroid,
 
@@ -43,8 +45,9 @@ pub enum Hmijhophdoh {
 }
 
 pub fn load() -> Result<ProductIdConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ProductIdConfigData.json",
     ]

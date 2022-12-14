@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GravenInnocencePhotoStageExcelConfigData = Vec<GravenInnocencePhotoStageExcelConfigDatum>;
@@ -17,40 +19,41 @@ pub struct GravenInnocencePhotoStageExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "GOOCKADAGNA")]
-    pub goockadagna: i64,
+    #[serde(rename = "MFJJCBIDBPO")]
+    pub mfjjcbidbpo: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "NNGHEBKGPFJ")]
-    pub nnghebkgpfj: i64,
+    #[serde(rename = "ENFJFPEOANG")]
+    pub enfjfpeoang: i64,
 
     #[serde(rename = "infoDescTextMapHash")]
     pub info_desc_text_map_hash: i64,
 
-    #[serde(rename = "BECCDBGAKBJ")]
-    pub beccdbgakbj: Vec<i64>,
+    #[serde(rename = "AOAIFIHODDB")]
+    pub aoaifihoddb: Vec<i64>,
 
-    #[serde(rename = "NOEBNKCPJHF")]
-    pub noebnkcpjhf: i64,
+    #[serde(rename = "MEDCNNLKGCA")]
+    pub medcnnlkgca: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "LCHNPNFCLBK")]
-    pub lchnpnfclbk: i64,
+    #[serde(rename = "DJFACHJFGKN")]
+    pub djfachjfgkn: i64,
 
-    #[serde(rename = "EBEDCJAHHFD")]
-    pub ebedcjahhfd: Vec<i64>,
+    #[serde(rename = "PKIPGKMPMMC")]
+    pub pkipgkmpmmc: Vec<i64>,
 
-    #[serde(rename = "NIGGOJIEPJB")]
-    pub niggojiepjb: Option<i64>,
+    #[serde(rename = "AHOHGIGCFHG")]
+    pub ahohgigcfhg: Option<i64>,
 }
 
 pub fn load() -> Result<GravenInnocencePhotoStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GravenInnocencePhotoStageExcelConfigData.json",
     ]

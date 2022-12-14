@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AvatarCodexExcelConfigData = Vec<AvatarCodexExcelConfigDatum>;
@@ -20,13 +22,14 @@ pub struct AvatarCodexExcelConfigDatum {
     #[serde(rename = "beginTime")]
     pub begin_time: String,
 
-    #[serde(rename = "IMPOGOCCALB")]
-    pub impogoccalb: Option<bool>,
+    #[serde(rename = "HEDMBJMFEJP")]
+    pub hedmbjmfejp: Option<bool>,
 }
 
 pub fn load() -> Result<AvatarCodexExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AvatarCodexExcelConfigData.json",
     ]

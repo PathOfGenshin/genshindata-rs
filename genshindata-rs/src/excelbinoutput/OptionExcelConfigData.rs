@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type OptionExcelConfigData = Vec<OptionExcelConfigDatum>;
@@ -20,8 +22,8 @@ pub struct OptionExcelConfigDatum {
     #[serde(rename = "gusetInteeButtonShow")]
     pub guset_intee_button_show: Option<bool>,
 
-    #[serde(rename = "CBPOAHNPDGM")]
-    pub cbpoahnpdgm: Option<f64>,
+    #[serde(rename = "CBLFOAFFLNI")]
+    pub cblfoafflni: Option<f64>,
 
     #[serde(rename = "cancelOnlineMatch")]
     pub cancel_online_match: Option<bool>,
@@ -79,8 +81,9 @@ pub enum InteeIconName {
 }
 
 pub fn load() -> Result<OptionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "OptionExcelConfigData.json",
     ]

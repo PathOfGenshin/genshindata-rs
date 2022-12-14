@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySumoStageExcelConfigData = Vec<ActivitySumoStageExcelConfigDatum>;
@@ -11,8 +13,8 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "BOMLNJNENPD")]
-    pub bomlnjnenpd: i64,
+    #[serde(rename = "CDOHPBCDGKO")]
+    pub cdohpbcdgko: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -23,20 +25,20 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "OCNMJKJNEAL")]
-    pub ocnmjkjneal: Vec<i64>,
+    #[serde(rename = "DEFGJGHMFJM")]
+    pub defgjghmfjm: Vec<i64>,
 
-    #[serde(rename = "IBPHNADLIKJ")]
-    pub ibphnadlikj: Vec<i64>,
+    #[serde(rename = "ABPGBGBOGOH")]
+    pub abpgbgbogoh: Vec<i64>,
 
-    #[serde(rename = "JLFCNBGMHJB")]
-    pub jlfcnbgmhjb: Vec<i64>,
+    #[serde(rename = "JEJJCNECJIN")]
+    pub jejjcnecjin: Vec<i64>,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "JMNODFCJGAC")]
-    pub jmnodfcjgac: Vec<i64>,
+    #[serde(rename = "PKCPMPGMIJJ")]
+    pub pkcpmpgmijj: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -44,34 +46,35 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "BPOCFHAPLFB")]
-    pub bpocfhaplfb: Vec<i64>,
+    #[serde(rename = "BJMLJPIKLEG")]
+    pub bjmljpikleg: Vec<i64>,
 
-    #[serde(rename = "HBFMKDDMHBC")]
-    pub hbfmkddmhbc: Vec<Hbfmkddmhbc>,
+    #[serde(rename = "GFPENHPBHFI")]
+    pub gfpenhpbhfi: Vec<Gfpenhpbhfi>,
 
-    #[serde(rename = "JNDEHIPPMJJ")]
-    pub jndehippmjj: Vec<i64>,
+    #[serde(rename = "JNHIHJDBGMJ")]
+    pub jnhihjdbgmj: Vec<i64>,
 
-    #[serde(rename = "IHDKIEDNPFK")]
-    pub ihdkiednpfk: Vec<i64>,
+    #[serde(rename = "KOACINJBKDL")]
+    pub koacinjbkdl: Vec<i64>,
 
-    #[serde(rename = "BBFGIFIIFJJ")]
-    pub bbfgifiifjj: Option<String>,
+    #[serde(rename = "KOJIAHLFGIA")]
+    pub kojiahlfgia: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hbfmkddmhbc {
-    #[serde(rename = "BDCKBGFEHFA")]
-    pub bdckbgfehfa: String,
+pub struct Gfpenhpbhfi {
+    #[serde(rename = "EADJJPMHHHE")]
+    pub eadjjpmhhhe: String,
 
-    #[serde(rename = "BHKMMBBKGID")]
-    pub bhkmmbbkgid: String,
+    #[serde(rename = "EIHBMJACNOG")]
+    pub eihbmjacnog: String,
 }
 
 pub fn load() -> Result<ActivitySumoStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySumoStageExcelConfigData.json",
     ]

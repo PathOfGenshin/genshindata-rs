@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LuminanceStoneChallengeStageExcelConfigData = Vec<LuminanceStoneChallengeStageExcelConfigDatum>;
@@ -14,37 +16,38 @@ pub struct LuminanceStoneChallengeStageExcelConfigDatum {
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
 
-    #[serde(rename = "BFNMFEFGECM")]
-    pub bfnmfefgecm: i64,
+    #[serde(rename = "PANHLIEPKDG")]
+    pub panhliepkdg: i64,
 
-    #[serde(rename = "DAFFNDPLMBM")]
-    pub daffndplmbm: i64,
+    #[serde(rename = "DIILCFOFHOK")]
+    pub diilcfofhok: i64,
 
-    #[serde(rename = "FPFONIENDMA")]
-    pub fpfoniendma: i64,
+    #[serde(rename = "AFJCNMICNEE")]
+    pub afjcnmicnee: i64,
 
-    #[serde(rename = "MLMMHHCNBKA")]
-    pub mlmmhhcnbka: i64,
+    #[serde(rename = "IDHFFELCOCB")]
+    pub idhffelcocb: i64,
 
-    #[serde(rename = "CPHIMJDCCCI")]
-    pub cphimjdccci: Vec<i64>,
+    #[serde(rename = "CJDALAANEKA")]
+    pub cjdalaaneka: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "LFLIICPCIKO")]
-    pub lfliicpciko: Vec<i64>,
+    #[serde(rename = "JNFJNEFPIBA")]
+    pub jnfjnefpiba: Vec<i64>,
 
-    #[serde(rename = "IJEEEGCFEHP")]
-    pub ijeeegcfehp: i64,
+    #[serde(rename = "MNEJODPKJPO")]
+    pub mnejodpkjpo: i64,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }
 
 pub fn load() -> Result<LuminanceStoneChallengeStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LuminanceStoneChallengeStageExcelConfigData.json",
     ]

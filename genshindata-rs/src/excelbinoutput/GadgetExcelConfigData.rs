@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GadgetExcelConfigData = Vec<GadgetExcelConfigDatum>;
@@ -32,11 +34,8 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "prefabPathHashSuffix")]
-    pub prefab_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "prefabPathHashPre")]
-    pub prefab_path_hash_pre: Option<i64>,
+    #[serde(rename = "DAHDIAPDAPB")]
+    pub dahdiapdapb: Option<i64>,
 
     #[serde(rename = "campID")]
     pub camp_id: Option<i64>,
@@ -62,41 +61,29 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "isEquip")]
     pub is_equip: Option<bool>,
 
-    #[serde(rename = "itemPrefabPathHashSuffix")]
-    pub item_prefab_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "itemPrefabPathHashPre")]
-    pub item_prefab_path_hash_pre: Option<i64>,
+    #[serde(rename = "GGGJDMHGFOO")]
+    pub gggjdmhgfoo: Option<i64>,
 
     #[serde(rename = "landSoundID")]
     pub land_sound_id: Option<i64>,
 
-    #[serde(rename = "clientScriptHashSuffix")]
-    pub client_script_hash_suffix: Option<i64>,
-
-    #[serde(rename = "clientScriptHashPre")]
-    pub client_script_hash_pre: Option<i64>,
+    #[serde(rename = "clientScriptHash")]
+    pub client_script_hash: Option<i64>,
 
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
 
-    #[serde(rename = "OENFMDLBKKD")]
-    pub oenfmdlbkkd: Option<bool>,
+    #[serde(rename = "CGLDOIKJIPD")]
+    pub cgldoikjipd: Option<bool>,
 
-    #[serde(rename = "BHFAONDJLEA")]
-    pub bhfaondjlea: Option<i64>,
+    #[serde(rename = "itemPrefabPathHash")]
+    pub item_prefab_path_hash: Option<i64>,
 
-    #[serde(rename = "prefabPathRemoteHashSuffix")]
-    pub prefab_path_remote_hash_suffix: Option<i64>,
+    #[serde(rename = "prefabPathRemoteHash")]
+    pub prefab_path_remote_hash: Option<i64>,
 
-    #[serde(rename = "prefabPathRemoteHashPre")]
-    pub prefab_path_remote_hash_pre: Option<i64>,
-
-    #[serde(rename = "controllerPathHashSuffix")]
-    pub controller_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "controllerPathHashPre")]
-    pub controller_path_hash_pre: Option<i64>,
+    #[serde(rename = "controllerPathHash")]
+    pub controller_path_hash: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -121,6 +108,9 @@ pub enum Type {
 
     #[serde(rename = "Chest")]
     Chest,
+
+    #[serde(rename = "CoinCollectLevelGadget")]
+    CoinCollectLevelGadget,
 
     #[serde(rename = "CustomGadget")]
     CustomGadget,
@@ -266,6 +256,9 @@ pub enum InteeIconName {
     #[serde(rename = "UI_Icon_Intee_Fishing")]
     UiIconInteeFishing,
 
+    #[serde(rename = "UI_Icon_Intee_FungusFighter")]
+    UiIconInteeFungusFighter,
+
     #[serde(rename = "UI_Icon_Intee_Investigation")]
     UiIconInteeInvestigation,
 
@@ -304,6 +297,9 @@ pub enum InteeIconName {
 
     #[serde(rename = "UI_Icon_Quest_Once")]
     UiIconQuestOnce,
+
+    #[serde(rename = "UI_NPCTopIcon_Activity_BrickBreaker")]
+    UiNpcTopIconActivityBrickBreaker,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -364,8 +360,9 @@ pub enum VisionLevel {
 }
 
 pub fn load() -> Result<GadgetExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GadgetExcelConfigData.json",
     ]

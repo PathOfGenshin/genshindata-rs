@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ExhibitionScoreExcelConfigData = Vec<ExhibitionScoreExcelConfigDatum>;
@@ -11,8 +13,8 @@ pub struct ExhibitionScoreExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MCPNIHGDENH")]
-    pub mcpnihgdenh: i64,
+    #[serde(rename = "JCBMNNCPECH")]
+    pub jcbmnncpech: i64,
 
     #[serde(rename = "scoreType")]
     pub score_type: ScoreType,
@@ -23,8 +25,8 @@ pub struct ExhibitionScoreExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JFFLAKFACML")]
-    pub jfflakfacml: Option<bool>,
+    #[serde(rename = "LALPFJJFABO")]
+    pub lalpfjjfabo: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -37,8 +39,9 @@ pub enum ScoreType {
 }
 
 pub fn load() -> Result<ExhibitionScoreExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ExhibitionScoreExcelConfigData.json",
     ]

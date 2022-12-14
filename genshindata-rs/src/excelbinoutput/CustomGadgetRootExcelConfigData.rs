@@ -2,33 +2,35 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomGadgetRootExcelConfigData = Vec<CustomGadgetRootExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomGadgetRootExcelConfigDatum {
-    #[serde(rename = "NLMJCEJOGKK")]
-    pub nlmjcejogkk: i64,
+    #[serde(rename = "AJOMPEGPLKO")]
+    pub ajompegplko: i64,
 
-    #[serde(rename = "MAEPKPDBDLP")]
-    pub maepkpdbdlp: String,
+    #[serde(rename = "APAJHCPLIDH")]
+    pub apajhcplidh: String,
 
-    #[serde(rename = "KBJGAEKFCGL")]
-    pub kbjgaekfcgl: Kbjgaekfcgl,
+    #[serde(rename = "BEPGGKMONJA")]
+    pub bepggkmonja: Bepggkmonja,
 
-    #[serde(rename = "HBIIHDMPAAH")]
-    pub hbiihdmpaah: String,
+    #[serde(rename = "CJDAGEOFIJD")]
+    pub cjdageofijd: String,
 
-    #[serde(rename = "NEAGDHPBCGF")]
-    pub neagdhpbcgf: Vec<i64>,
+    #[serde(rename = "OFCDLOBEHGK")]
+    pub ofcdlobehgk: Vec<i64>,
 
-    #[serde(rename = "HJMNLHNKBLJ")]
-    pub hjmnlhnkblj: Vec<i64>,
+    #[serde(rename = "JGGLDIJFFAJ")]
+    pub jggldijffaj: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kbjgaekfcgl {
+pub enum Bepggkmonja {
     #[serde(rename = "UI_HOMEWORLD_CHANGE_MOUNTAIN_BUTTON")]
     UiHomeworldChangeMountainButton,
 
@@ -49,8 +51,9 @@ pub enum Kbjgaekfcgl {
 }
 
 pub fn load() -> Result<CustomGadgetRootExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomGadgetRootExcelConfigData.json",
     ]

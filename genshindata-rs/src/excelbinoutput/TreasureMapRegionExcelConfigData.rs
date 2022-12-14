@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type TreasureMapRegionExcelConfigData = Vec<TreasureMapRegionExcelConfigDatum>;
@@ -50,14 +52,14 @@ pub struct TreasureMapRegionExcelConfigDatum {
     #[serde(rename = "mpTokenThreshold")]
     pub mp_token_threshold: i64,
 
-    #[serde(rename = "JFGPLAAPDPO")]
-    pub jfgplaapdpo: Vec<f64>,
+    #[serde(rename = "OEPCLEPLIPP")]
+    pub oepcleplipp: Vec<f64>,
 
-    #[serde(rename = "LJEDHBOODND")]
-    pub ljedhboodnd: i64,
+    #[serde(rename = "EKPGMEPADPL")]
+    pub ekpgmepadpl: i64,
 
-    #[serde(rename = "GNHCLEGFGBB")]
-    pub gnhclegfgbb: Option<i64>,
+    #[serde(rename = "EJOGBFBEHAE")]
+    pub ejogbfbehae: Option<i64>,
 
     #[serde(rename = "mpGroupId")]
     pub mp_group_id: Option<i64>,
@@ -65,13 +67,14 @@ pub struct TreasureMapRegionExcelConfigDatum {
     #[serde(rename = "mpTypeId")]
     pub mp_type_id: Option<i64>,
 
-    #[serde(rename = "OCFNEMPINGJ")]
-    pub ocfnempingj: Option<i64>,
+    #[serde(rename = "ODPLKBIEEBE")]
+    pub odplkbieebe: Option<i64>,
 }
 
 pub fn load() -> Result<TreasureMapRegionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "TreasureMapRegionExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MoonfinTrialLevelExcelConfigData = Vec<MoonfinTrialLevelExcelConfigDatum>;
@@ -14,14 +16,14 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "LFHBNHPDLHD")]
-    pub lfhbnhpdlhd: Vec<i64>,
+    #[serde(rename = "MNCMLAMFHHJ")]
+    pub mncmlamfhhj: Vec<i64>,
 
     #[serde(rename = "mainQuest")]
     pub main_quest: Option<i64>,
 
-    #[serde(rename = "ICOADJELPBO")]
-    pub icoadjelpbo: Vec<f64>,
+    #[serde(rename = "JBKKLHNDHEP")]
+    pub jbkklhndhep: Vec<f64>,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -32,11 +34,11 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "AHNJPLCJGMP")]
-    pub ahnjplcjgmp: Option<String>,
+    #[serde(rename = "EFEOOJFNKLN")]
+    pub efeoojfnkln: Option<String>,
 
-    #[serde(rename = "FBAEGDBCHBN")]
-    pub fbaegdbchbn: Option<i64>,
+    #[serde(rename = "LDNAFOJBJLK")]
+    pub ldnafojbjlk: Option<i64>,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: Option<i64>,
@@ -44,19 +46,20 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "challengeId")]
     pub challenge_id: Option<i64>,
 
-    #[serde(rename = "HJNNGKNEFNA")]
-    pub hjnngknefna: Option<i64>,
+    #[serde(rename = "KCHAGIJLMEH")]
+    pub kchagijlmeh: Option<i64>,
 
-    #[serde(rename = "GFONAHPKIDO")]
-    pub gfonahpkido: Option<i64>,
+    #[serde(rename = "BDJJOHAKCEL")]
+    pub bdjjohakcel: Option<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: Option<i64>,
 }
 
 pub fn load() -> Result<MoonfinTrialLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MoonfinTrialLevelExcelConfigData.json",
     ]

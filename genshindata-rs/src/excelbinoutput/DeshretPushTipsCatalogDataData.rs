@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DeshretPushTipsCatalogDataData = Vec<DeshretPushTipsCatalogDataDatum>;
@@ -11,8 +13,8 @@ pub struct DeshretPushTipsCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NNNOMLDNHLC")]
-    pub nnnomldnhlc: i64,
+    #[serde(rename = "JLNFANDMABO")]
+    pub jlnfandmabo: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -20,16 +22,17 @@ pub struct DeshretPushTipsCatalogDataDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "PEIMJCHMCKE")]
-    pub peimjchmcke: i64,
+    #[serde(rename = "PFGNLCCNHBN")]
+    pub pfgnlccnhbn: i64,
 
-    #[serde(rename = "KLCIJPHKFAO")]
-    pub klcijphkfao: i64,
+    #[serde(rename = "NCCCEELPICM")]
+    pub nccceelpicm: i64,
 }
 
 pub fn load() -> Result<DeshretPushTipsCatalogDataData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DeshretPushTipsCatalogDataData.json",
     ]

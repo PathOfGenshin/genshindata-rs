@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CatalogExcelConfigData = Vec<CatalogExcelConfigDatum>;
@@ -14,28 +16,29 @@ pub struct CatalogExcelConfigDatum {
     #[serde(rename = "type")]
     pub catalog_excel_config_datum_type: String,
 
-    #[serde(rename = "NEAGDHPBCGF")]
-    pub neagdhpbcgf: Vec<Vec<i64>>,
+    #[serde(rename = "OFCDLOBEHGK")]
+    pub ofcdlobehgk: Vec<Vec<i64>>,
 
-    #[serde(rename = "JPBIPKDNPEO")]
-    pub jpbipkdnpeo: Vec<Jpbipkdnpeo>,
+    #[serde(rename = "MLGLNLPMCCD")]
+    pub mlglnlpmccd: Vec<Mlglnlpmccd>,
 
-    #[serde(rename = "GBLHPLPAKGE")]
-    pub gblhplpakge: Vec<i64>,
+    #[serde(rename = "DIFAPPALAIL")]
+    pub difappalail: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jpbipkdnpeo {
-    #[serde(rename = "DHBMIENBFMD")]
-    pub dhbmienbfmd: Option<i64>,
+pub struct Mlglnlpmccd {
+    #[serde(rename = "HKOJACADDNH")]
+    pub hkojacaddnh: Option<i64>,
 
-    #[serde(rename = "LKOAEFLJCEC")]
-    pub lkoaefljcec: Option<i64>,
+    #[serde(rename = "JMHPGKOPEBM")]
+    pub jmhpgkopebm: Option<i64>,
 }
 
 pub fn load() -> Result<CatalogExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CatalogExcelConfigData.json",
     ]

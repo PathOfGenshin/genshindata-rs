@@ -2,42 +2,44 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RandomQuestEntranceExcelConfigData = Vec<RandomQuestEntranceExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RandomQuestEntranceExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_weight")]
+    #[serde(rename = "weight")]
     pub weight: i64,
 
-    #[serde(rename = "_templateId")]
+    #[serde(rename = "templateId")]
     pub template_id: i64,
 
-    #[serde(rename = "_filterList")]
+    #[serde(rename = "filterList")]
     pub filter_list: Vec<FilterList>,
 
-    #[serde(rename = "_filterLogicType")]
+    #[serde(rename = "filterLogicType")]
     pub filter_logic_type: Option<FilterLogicType>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FilterList {
-    #[serde(rename = "MHGONGNLHPE")]
-    pub mhgongnlhpe: Mhgongnlhpe,
+    #[serde(rename = "EENMNNJDAIE")]
+    pub eenmnnjdaie: Eenmnnjdaie,
 
-    #[serde(rename = "OACACKFOIAK")]
-    pub oacackfoiak: Vec<i64>,
+    #[serde(rename = "CCLEAEMJIMB")]
+    pub ccleaemjimb: Vec<i64>,
 
-    #[serde(rename = "KCDLJFGFINF")]
-    pub kcdljfgfinf: Option<Kcdljfgfinf>,
+    #[serde(rename = "AJHKJIBPFLD")]
+    pub ajhkjibpfld: Option<Ajhkjibpfld>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kcdljfgfinf {
+pub enum Ajhkjibpfld {
     #[serde(rename = "RQ_FILTER_NPC")]
     RqFilterNpc,
 
@@ -49,7 +51,7 @@ pub enum Kcdljfgfinf {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mhgongnlhpe {
+pub enum Eenmnnjdaie {
     #[serde(rename = "")]
     Empty,
 
@@ -76,8 +78,9 @@ pub enum FilterLogicType {
 }
 
 pub fn load() -> Result<RandomQuestEntranceExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RandomQuestEntranceExcelConfigData.json",
     ]

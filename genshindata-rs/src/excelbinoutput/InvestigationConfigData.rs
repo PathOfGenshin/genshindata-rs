@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type InvestigationConfigData = Vec<InvestigationConfigDatum>;
@@ -21,21 +23,37 @@ pub struct InvestigationConfigDatum {
     pub unlock_open_state_type: Option<String>,
 
     #[serde(rename = "rewardId")]
-    pub reward_id: i64,
+    pub reward_id: Option<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
     #[serde(rename = "investigationType")]
-    pub investigation_type: Option<String>,
+    pub investigation_type: Option<InvestigationType>,
 
     #[serde(rename = "unlockLevel")]
     pub unlock_level: Option<i64>,
+
+    #[serde(rename = "KKHEJJCEDCA")]
+    pub kkhejjcedca: Option<bool>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum InvestigationType {
+    #[serde(rename = "INVESTIGATION_EDCATION")]
+    InvestigationEdcation,
+
+    #[serde(rename = "INVESTIGATION_GCG")]
+    InvestigationGcg,
+
+    #[serde(rename = "INVESTIGATION_HOMEWORLD")]
+    InvestigationHomeworld,
 }
 
 pub fn load() -> Result<InvestigationConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "InvestigationConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LuminanceStoneChallengeOverallExcelConfigData = Vec<LuminanceStoneChallengeOverallExcelConfigDatum>;
@@ -14,25 +16,26 @@ pub struct LuminanceStoneChallengeOverallExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "OCFEKJMLKPE")]
-    pub ocfekjmlkpe: i64,
+    #[serde(rename = "KOPDLIEFHCM")]
+    pub kopdliefhcm: i64,
 
-    #[serde(rename = "PHNPHHGFAGF")]
-    pub phnphhgfagf: i64,
+    #[serde(rename = "NAOKDOKNBMH")]
+    pub naokdoknbmh: i64,
 
-    #[serde(rename = "HHMKDOMILAL")]
-    pub hhmkdomilal: Vec<i64>,
+    #[serde(rename = "FJCGEFNKMJP")]
+    pub fjcgefnkmjp: Vec<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "HOBLCBBCMKE")]
-    pub hoblcbbcmke: i64,
+    #[serde(rename = "DMFBOHLKFHM")]
+    pub dmfbohlkfhm: i64,
 }
 
 pub fn load() -> Result<LuminanceStoneChallengeOverallExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LuminanceStoneChallengeOverallExcelConfigData.json",
     ]

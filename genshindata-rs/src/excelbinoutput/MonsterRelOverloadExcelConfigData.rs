@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MonsterRelOverloadExcelConfigData = Vec<MonsterRelOverloadExcelConfigDatum>;
@@ -11,50 +13,44 @@ pub struct MonsterRelOverloadExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BHJFOEBAOAJ")]
-    pub bhjfoebaoaj: Bhjfoebaoaj,
+    #[serde(rename = "HAPPJDPDMCP")]
+    pub happjdpdmcp: Happjdpdmcp,
 
-    #[serde(rename = "BFFGBGKFKPH")]
-    pub bffgbgkfkph: Bffgbgkfkph,
+    #[serde(rename = "BCFFALFNMNE")]
+    pub bcffalfnmne: Bcffalfnmne,
 
-    #[serde(rename = "LOPAABGELAM")]
-    pub lopaabgelam: Vec<Lopaabgelam>,
+    #[serde(rename = "BPNMHIJGEFJ")]
+    pub bpnmhijgefj: Vec<Bpnmhijgefj>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Lopaabgelam {
+pub struct Bpnmhijgefj {
     #[serde(rename = "paramList")]
     pub param_list: Vec<i64>,
 
-    #[serde(rename = "DCGJDEABNHO")]
-    pub dcgjdeabnho: Dcgjdeabnho,
+    #[serde(rename = "KKKFFHGMABN")]
+    pub kkkffhgmabn: Kkkffhgmabn,
 
     #[serde(rename = "monsterRarity")]
     pub monster_rarity: MonsterRarity,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bffgbgkfkph {
+pub enum Bcffalfnmne {
     #[serde(rename = "_MONSTER_FUNGUSSTATE_")]
     MonsterFungusstate,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bhjfoebaoaj {
-    #[serde(rename = "MONSTER_POLY_DROP_GV")]
-    MonsterPolyDropGv,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Dcgjdeabnho {
-    #[serde(rename = "异化蕈兽")]
-    Dcgjdeabnho,
-
+pub enum Kkkffhgmabn {
     #[serde(rename = "蕈兽")]
     Empty,
 
     #[serde(rename = "大异化蕈兽")]
     Fluffy,
+
+    #[serde(rename = "异化蕈兽")]
+    Kkkffhgmabn,
 
     #[serde(rename = "大蕈兽")]
     Purple,
@@ -69,9 +65,16 @@ pub enum MonsterRarity {
     MonsterRaritySmallMonster,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Happjdpdmcp {
+    #[serde(rename = "MONSTER_POLY_DROP_GV")]
+    MonsterPolyDropGv,
+}
+
 pub fn load() -> Result<MonsterRelOverloadExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MonsterRelOverloadExcelConfigData.json",
     ]

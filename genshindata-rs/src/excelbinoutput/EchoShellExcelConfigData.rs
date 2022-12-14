@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type EchoShellExcelConfigData = Vec<EchoShellExcelConfigDatum>;
@@ -14,57 +16,57 @@ pub struct EchoShellExcelConfigDatum {
     #[serde(rename = "storyId")]
     pub story_id: Option<i64>,
 
-    #[serde(rename = "DEJDLICGIGG")]
-    pub dejdlicgigg: i64,
+    #[serde(rename = "ICFAAGEFDJI")]
+    pub icfaagefdji: i64,
 
-    #[serde(rename = "LEPIJMBPBDB")]
-    pub lepijmbpbdb: i64,
+    #[serde(rename = "GFIHIPJKJBA")]
+    pub gfihipjkjba: i64,
 
-    #[serde(rename = "HBNBKFMEPIB")]
-    pub hbnbkfmepib: Vec<i64>,
+    #[serde(rename = "MKHKIGHLANG")]
+    pub mkhkighlang: Vec<i64>,
 
-    #[serde(rename = "BJNFKKCFPAF")]
-    pub bjnfkkcfpaf: Vec<i64>,
+    #[serde(rename = "LMMLLMMEOPN")]
+    pub lmmllmmeopn: Vec<i64>,
 
-    #[serde(rename = "EIFHAOJPFDC")]
-    pub eifhaojpfdc: String,
+    #[serde(rename = "KBNHJOHHKDO")]
+    pub kbnhjohhkdo: String,
 
-    #[serde(rename = "ICOADJELPBO")]
-    pub icoadjelpbo: Vec<f64>,
+    #[serde(rename = "JBKKLHNDHEP")]
+    pub jbkklhndhep: Vec<f64>,
 
-    #[serde(rename = "OOELPGADFBE")]
-    pub ooelpgadfbe: i64,
+    #[serde(rename = "JIGDPBPKPHF")]
+    pub jigdpbpkphf: i64,
 
-    #[serde(rename = "CDHMNGDMBPD")]
-    pub cdhmngdmbpd: i64,
+    #[serde(rename = "GHEDCPGOGHA")]
+    pub ghedcpgogha: i64,
 
-    #[serde(rename = "HLCLCJPNEBD")]
-    pub hlclcjpnebd: Vec<i64>,
+    #[serde(rename = "EFJODFLPHJP")]
+    pub efjodflphjp: Vec<i64>,
 
-    #[serde(rename = "MGDEFJBABLJ")]
-    pub mgdefjbablj: i64,
+    #[serde(rename = "EJLKCLNIEDA")]
+    pub ejlkclnieda: i64,
 
-    #[serde(rename = "ENGGPHBOHNK")]
-    pub enggphbohnk: i64,
+    #[serde(rename = "FDCCMOIODMO")]
+    pub fdccmoiodmo: i64,
 
-    #[serde(rename = "JFPNJFFHEEE")]
-    pub jfpnjffheee: Vec<i64>,
+    #[serde(rename = "BCOGMJJGHEH")]
+    pub bcogmjjgheh: Vec<i64>,
 
-    #[serde(rename = "LKBGAJPDLBK")]
-    pub lkbgajpdlbk: Option<Lkbgajpdlbk>,
+    #[serde(rename = "OEBEONLOCFJ")]
+    pub oebeonlocfj: Option<Oebeonlocfj>,
 
-    #[serde(rename = "CNJOJIDCIAM")]
-    pub cnjojidciam: Option<i64>,
+    #[serde(rename = "DAOLFCOFKAD")]
+    pub daolfcofkad: Option<i64>,
 
-    #[serde(rename = "LDJMDHKODHA")]
-    pub ldjmdhkodha: Option<i64>,
+    #[serde(rename = "MIDEPEPBHBF")]
+    pub midepepbhbf: Option<i64>,
 
-    #[serde(rename = "CMPIGIDKDNJ")]
-    pub cmpigidkdnj: Option<i64>,
+    #[serde(rename = "ELBFEDOOPOD")]
+    pub elbfedoopod: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Lkbgajpdlbk {
+pub enum Oebeonlocfj {
     #[serde(rename = "ECHO_SHELL_TYPE_NORMAL_IMAGE")]
     EchoShellTypeNormalImage,
 
@@ -79,8 +81,9 @@ pub enum Lkbgajpdlbk {
 }
 
 pub fn load() -> Result<EchoShellExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "EchoShellExcelConfigData.json",
     ]

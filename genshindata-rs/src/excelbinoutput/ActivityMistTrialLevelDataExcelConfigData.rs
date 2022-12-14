@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityMistTrialLevelDataExcelConfigData = Vec<ActivityMistTrialLevelDataExcelConfigDatum>;
@@ -26,8 +28,8 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "monsterPreviewIdList")]
     pub monster_preview_id_list: Vec<i64>,
 
-    #[serde(rename = "PIIFGJOGCGI")]
-    pub piifgjogcgi: Vec<i64>,
+    #[serde(rename = "ACCEILFOLCO")]
+    pub acceilfolco: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -38,11 +40,8 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "statisticsIdList")]
     pub statistics_id_list: Vec<i64>,
 
-    #[serde(rename = "bgIconHashSuffix")]
-    pub bg_icon_hash_suffix: i64,
-
-    #[serde(rename = "bgIconHashPre")]
-    pub bg_icon_hash_pre: i64,
+    #[serde(rename = "HAANBOBJNIK")]
+    pub haanbobjnik: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
@@ -53,21 +52,24 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "failTips")]
     pub fail_tips: Vec<String>,
 
-    #[serde(rename = "ACHCCLDFJED")]
-    pub achccldfjed: Vec<i64>,
+    #[serde(rename = "NHDEEKOJELM")]
+    pub nhdeekojelm: Vec<i64>,
 
-    #[serde(rename = "MLNBPEMLEGO")]
-    pub mlnbpemlego: Mlnbpemlego,
+    #[serde(rename = "DMNOGJKFFAG")]
+    pub dmnogjkffag: Dmnogjkffag,
 
-    #[serde(rename = "PCBHKDFDKEA")]
-    pub pcbhkdfdkea: Vec<i64>,
+    #[serde(rename = "IBJLAKGMNMN")]
+    pub ibjlakgmnmn: Vec<i64>,
 
-    #[serde(rename = "HMHDECLCMEG")]
-    pub hmhdeclcmeg: Vec<i64>,
+    #[serde(rename = "OAENBOPDLCJ")]
+    pub oaenbopdlcj: Vec<i64>,
+
+    #[serde(rename = "bgIconHash")]
+    pub bg_icon_hash: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mlnbpemlego {
+pub enum Dmnogjkffag {
     #[serde(rename = "")]
     Empty,
 
@@ -76,8 +78,9 @@ pub enum Mlnbpemlego {
 }
 
 pub fn load() -> Result<ActivityMistTrialLevelDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityMistTrialLevelDataExcelConfigData.json",
     ]

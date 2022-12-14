@@ -2,85 +2,87 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RandomQuestExcelConfigData = Vec<RandomQuestExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RandomQuestExcelConfigDatum {
-    #[serde(rename = "_subId")]
+    #[serde(rename = "subId")]
     pub sub_id: i64,
 
-    #[serde(rename = "_mainId")]
+    #[serde(rename = "mainId")]
     pub main_id: i64,
 
-    #[serde(rename = "_order")]
+    #[serde(rename = "order")]
     pub order: i64,
 
-    #[serde(rename = "_titleTextMapHash")]
+    #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "_descTextMapHash")]
+    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "_acceptCond")]
+    #[serde(rename = "acceptCond")]
     pub accept_cond: Vec<AcceptCond>,
 
-    #[serde(rename = "_finishCond")]
+    #[serde(rename = "finishCond")]
     pub finish_cond: Vec<Cond>,
 
-    #[serde(rename = "_failCond")]
+    #[serde(rename = "failCond")]
     pub fail_cond: Vec<Cond>,
 
-    #[serde(rename = "_guide")]
+    #[serde(rename = "guide")]
     pub guide: Guide,
 
-    #[serde(rename = "_guideHint")]
+    #[serde(rename = "guideHint")]
     pub guide_hint: GuideHint,
 
-    #[serde(rename = "_failParent")]
+    #[serde(rename = "failParent")]
     pub fail_parent: Option<bool>,
 
-    #[serde(rename = "_failParentShow")]
+    #[serde(rename = "failParentShow")]
     pub fail_parent_show: Option<FailParentShow>,
 
-    #[serde(rename = "_awardItems")]
+    #[serde(rename = "awardItems")]
     pub award_items: Vec<GuideHint>,
 
-    #[serde(rename = "_beginExec")]
+    #[serde(rename = "beginExec")]
     pub begin_exec: Vec<AcceptCond>,
 
-    #[serde(rename = "_finishExec")]
+    #[serde(rename = "finishExec")]
     pub finish_exec: Vec<AcceptCond>,
 
-    #[serde(rename = "_failExec")]
+    #[serde(rename = "failExec")]
     pub fail_exec: Vec<AcceptCond>,
 
-    #[serde(rename = "_isRewind")]
+    #[serde(rename = "isRewind")]
     pub is_rewind: Option<bool>,
 
-    #[serde(rename = "_showType")]
+    #[serde(rename = "showType")]
     pub show_type: Option<FailParentShow>,
 
-    #[serde(rename = "_finishCondComb")]
+    #[serde(rename = "finishCondComb")]
     pub finish_cond_comb: Option<FinishCondComb>,
 
-    #[serde(rename = "_finishParent")]
+    #[serde(rename = "finishParent")]
     pub finish_parent: Option<bool>,
 
-    #[serde(rename = "_exclusiveNpcPriority")]
+    #[serde(rename = "exclusiveNpcPriority")]
     pub exclusive_npc_priority: Option<i64>,
 
-    #[serde(rename = "_acceptCondComb")]
+    #[serde(rename = "acceptCondComb")]
     pub accept_cond_comb: Option<AcceptCondComb>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AcceptCond {
-    #[serde(rename = "_param")]
+    #[serde(rename = "param")]
     pub param: Vec<String>,
 
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub accept_cond_type: Option<AcceptCondType>,
 }
 
@@ -90,23 +92,23 @@ pub struct GuideHint {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Cond {
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub cond_type: Option<FailCondType>,
 
-    #[serde(rename = "_param")]
+    #[serde(rename = "param")]
     pub param: Vec<String>,
 
-    #[serde(rename = "_param_str")]
+    #[serde(rename = "param_str")]
     pub param_str: ParamStr,
 
-    #[serde(rename = "_count")]
+    #[serde(rename = "count")]
     pub count: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Guide {
     #[serde(rename = "type")]
-    pub guide_type: Option<Type>,
+    pub guide_type: Option<GuideType>,
 
     #[serde(rename = "param")]
     pub param: Vec<String>,
@@ -206,7 +208,7 @@ pub enum GuideStyle {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Type {
+pub enum GuideType {
     #[serde(rename = "QUEST_GUIDE_LOCATION")]
     QuestGuideLocation,
 
@@ -215,8 +217,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<RandomQuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RandomQuestExcelConfigData.json",
     ]

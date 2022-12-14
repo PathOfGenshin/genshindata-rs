@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GroupLinksBundleExcelConfigData = Vec<GroupLinksBundleExcelConfigDatum>;
@@ -14,11 +16,11 @@ pub struct GroupLinksBundleExcelConfigDatum {
     #[serde(rename = "groupList")]
     pub group_list: Vec<i64>,
 
-    #[serde(rename = "HAMHNKJDMCN")]
-    pub hamhnkjdmcn: i64,
+    #[serde(rename = "IMFBJINHCDI")]
+    pub imfbjinhcdi: i64,
 
-    #[serde(rename = "ODIACABGAOA")]
-    pub odiacabgaoa: Option<i64>,
+    #[serde(rename = "EHMCNIDONMG")]
+    pub ehmcnidonmg: Option<i64>,
 
     #[serde(rename = "rewardType")]
     pub reward_type: Option<RewardType>,
@@ -35,35 +37,35 @@ pub struct GroupLinksBundleExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "GKLDBFFOICP")]
-    pub gkldbffoicp: i64,
+    #[serde(rename = "GPLDOLGDACP")]
+    pub gpldolgdacp: i64,
 
-    #[serde(rename = "AHOKHBHPJLH")]
-    pub ahokhbhpjlh: Option<i64>,
+    #[serde(rename = "BKDHKMOKMFO")]
+    pub bkdhkmokmfo: Option<i64>,
 
-    #[serde(rename = "PMHMPBKIMBA")]
-    pub pmhmpbkimba: Option<bool>,
+    #[serde(rename = "BFLHKOJKPKE")]
+    pub bflhkojkpke: Option<bool>,
 
-    #[serde(rename = "KEMEBGGHEBN")]
-    pub kemebgghebn: Option<bool>,
+    #[serde(rename = "GAFKMPJCJND")]
+    pub gafkmpjcjnd: Option<bool>,
 
-    #[serde(rename = "FMFIGPHPGKG")]
-    pub fmfigphpgkg: Option<i64>,
+    #[serde(rename = "CDAOPDKCMNB")]
+    pub cdaopdkcmnb: Option<i64>,
 
     #[serde(rename = "playType")]
     pub play_type: Option<String>,
 
-    #[serde(rename = "CGGOGHLHLFP")]
-    pub cggoghlhlfp: Option<bool>,
+    #[serde(rename = "AKLMFDINDLG")]
+    pub aklmfdindlg: Option<bool>,
 
-    #[serde(rename = "EOJCBDDIGBK")]
-    pub eojcbddigbk: Option<i64>,
+    #[serde(rename = "OFGLJLJBFFB")]
+    pub ofgljljbffb: Option<i64>,
 
-    #[serde(rename = "CLOKEPIOPMB")]
-    pub clokepiopmb: Option<bool>,
+    #[serde(rename = "IOAOGHGDDKD")]
+    pub ioaoghgddkd: Option<bool>,
 
-    #[serde(rename = "GMKNOCPHGLM")]
-    pub gmknocphglm: Option<bool>,
+    #[serde(rename = "DHIJAMKBFGA")]
+    pub dhijamkbfga: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -73,8 +75,9 @@ pub enum RewardType {
 }
 
 pub fn load() -> Result<GroupLinksBundleExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GroupLinksBundleExcelConfigData.json",
     ]

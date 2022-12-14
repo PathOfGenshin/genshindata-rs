@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AbilityOverrideExcelConfigData = Vec<AbilityOverrideExcelConfigDatum>;
@@ -14,28 +16,29 @@ pub struct AbilityOverrideExcelConfigDatum {
     #[serde(rename = "abilityName")]
     pub ability_name: String,
 
-    #[serde(rename = "IFELHGJEHLN")]
-    pub ifelhgjehln: Vec<Ifelhgjehln>,
+    #[serde(rename = "KABMNNPGELO")]
+    pub kabmnnpgelo: Vec<Kabmnnpgelo>,
 
-    #[serde(rename = "GDLBIICDJNL")]
-    pub gdlbiicdjnl: Vec<String>,
+    #[serde(rename = "ABLGHODOJCE")]
+    pub ablghodojce: Vec<String>,
 
-    #[serde(rename = "KDNGJCCNLHI")]
-    pub kdngjccnlhi: Vec<f64>,
+    #[serde(rename = "CFKOLCBJKDF")]
+    pub cfkolcbjkdf: Vec<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ifelhgjehln {
-    #[serde(rename = "GBONHKGALDG")]
-    pub gbonhkgaldg: String,
+pub struct Kabmnnpgelo {
+    #[serde(rename = "MGANAADFOPI")]
+    pub mganaadfopi: String,
 
-    #[serde(rename = "HMMCPIAGCMG")]
-    pub hmmcpiagcmg: Option<f64>,
+    #[serde(rename = "BDNOPKOAFML")]
+    pub bdnopkoafml: Option<f64>,
 }
 
 pub fn load() -> Result<AbilityOverrideExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AbilityOverrideExcelConfigData.json",
     ]

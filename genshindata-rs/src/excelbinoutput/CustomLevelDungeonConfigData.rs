@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomLevelDungeonConfigData = Vec<CustomLevelDungeonConfigDatum>;
@@ -17,37 +19,32 @@ pub struct CustomLevelDungeonConfigDatum {
     #[serde(rename = "jsonPath")]
     pub json_path: String,
 
-    #[serde(rename = "BIDIIACHMFL")]
-    pub bidiiachmfl: String,
+    #[serde(rename = "DCHNAFHFMLE")]
+    pub dchnafhfmle: String,
 
-    #[serde(rename = "CMFDFKNKHLL")]
-    pub cmfdfknkhll: i64,
+    #[serde(rename = "KKHGBNADIMI")]
+    pub kkhgbnadimi: i64,
 
-    #[serde(rename = "GEMJMGIENIE")]
-    pub gemjmgienie: i64,
+    #[serde(rename = "DGEIBBKOEEP")]
+    pub dgeibbkoeep: i64,
 
-    #[serde(rename = "OBHIEGIMPHP")]
-    pub obhiegimphp: i64,
+    #[serde(rename = "DHOHJMKDLIE")]
+    pub dhohjmkdlie: i64,
 
-    #[serde(rename = "FAHHBFIIIPM")]
-    pub fahhbfiiipm: i64,
+    #[serde(rename = "KLBEICGIMKN")]
+    pub klbeicgimkn: i64,
 
-    #[serde(rename = "JNHDFJPBDKB")]
-    pub jnhdfjpbdkb: i64,
+    #[serde(rename = "DBOECDBMGON")]
+    pub dboecdbmgon: String,
 
-    #[serde(rename = "HFPIHGPHHKM")]
-    pub hfpihgphhkm: i64,
-
-    #[serde(rename = "MAHNJHBNHOD")]
-    pub mahnjhbnhod: String,
-
-    #[serde(rename = "KLIINBHPGAK")]
-    pub kliinbhpgak: Vec<i64>,
+    #[serde(rename = "COJJDOEJHBA")]
+    pub cojjdoejhba: Vec<i64>,
 }
 
 pub fn load() -> Result<CustomLevelDungeonConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomLevelDungeonConfigData.json",
     ]

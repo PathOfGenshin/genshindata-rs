@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityCrystalLinkCondBuffExcelConfigData = Vec<ActivityCrystalLinkCondBuffExcelConfigDatum>;
@@ -11,31 +13,29 @@ pub struct ActivityCrystalLinkCondBuffExcelConfigDatum {
     #[serde(rename = "buffId")]
     pub buff_id: i64,
 
-    #[serde(rename = "GPDAEIMDCBF")]
-    pub gpdaeimdcbf: String,
+    #[serde(rename = "BAJIHJHAKCG")]
+    pub bajihjhakcg: String,
 
     #[serde(rename = "abilityName")]
     pub ability_name: String,
 
-    #[serde(rename = "GPJHNOBPDJI")]
-    pub gpjhnobpdji: i64,
+    #[serde(rename = "KFFAOOFGOFJ")]
+    pub kffaoofgofj: i64,
 
-    #[serde(rename = "JICNBGIOOHI")]
-    pub jicnbgioohi: i64,
+    #[serde(rename = "JHMABOBCAAP")]
+    pub jhmabobcaap: i64,
 
-    #[serde(rename = "NBLOCEJHFCN")]
-    pub nblocejhfcn: i64,
+    #[serde(rename = "IJFLOIFAJHH")]
+    pub ijfloifajhh: i64,
 
-    #[serde(rename = "HPIKALMBHLL")]
-    pub hpikalmbhll: i64,
-
-    #[serde(rename = "FFDCLDPEEML")]
-    pub ffdcldpeeml: Vec<String>,
+    #[serde(rename = "IKBNJBMNEED")]
+    pub ikbnjbmneed: Vec<String>,
 }
 
 pub fn load() -> Result<ActivityCrystalLinkCondBuffExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityCrystalLinkCondBuffExcelConfigData.json",
     ]

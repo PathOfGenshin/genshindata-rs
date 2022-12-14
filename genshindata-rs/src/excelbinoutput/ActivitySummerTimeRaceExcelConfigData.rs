@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySummerTimeRaceExcelConfigData = Vec<ActivitySummerTimeRaceExcelConfigDatum>;
@@ -11,37 +13,38 @@ pub struct ActivitySummerTimeRaceExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "CCHLDBFPLPI")]
-    pub cchldbfplpi: Vec<i64>,
+    #[serde(rename = "IHGLEBJPIBC")]
+    pub ihglebjpibc: Vec<i64>,
 
-    #[serde(rename = "GFDAFDHGOMD")]
-    pub gfdafdhgomd: Vec<f64>,
+    #[serde(rename = "MOGCPAAMOBG")]
+    pub mogcpaamobg: Vec<f64>,
 
-    #[serde(rename = "KBPMHJAAGJN")]
-    pub kbpmhjaagjn: Vec<i64>,
+    #[serde(rename = "BPMOIEPEJKE")]
+    pub bpmoiepejke: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
 
-    #[serde(rename = "JFPFDLGPAIG")]
-    pub jfpfdlgpaig: i64,
+    #[serde(rename = "LAPBBGEDIJM")]
+    pub lapbbgedijm: i64,
 
-    #[serde(rename = "JJNEDDLGJHH")]
-    pub jjneddlgjhh: i64,
+    #[serde(rename = "PJJMFLFKCEE")]
+    pub pjjmflfkcee: i64,
 
-    #[serde(rename = "EMGNOLIELHB")]
-    pub emgnolielhb: i64,
+    #[serde(rename = "FENHCBCMCDE")]
+    pub fenhcbcmcde: i64,
 
-    #[serde(rename = "PLHBIGKGGKE")]
-    pub plhbigkggke: i64,
+    #[serde(rename = "MDJFKBCPMBO")]
+    pub mdjfkbcpmbo: i64,
 
-    #[serde(rename = "OEAHEADIHGC")]
-    pub oeaheadihgc: i64,
+    #[serde(rename = "DJKMHDMFPKL")]
+    pub djkmhdmfpkl: i64,
 }
 
 pub fn load() -> Result<ActivitySummerTimeRaceExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySummerTimeRaceExcelConfigData.json",
     ]

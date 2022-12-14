@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type OpActivityBonusExcelConfigData = Vec<OpActivityBonusExcelConfigDatum>;
@@ -29,11 +31,11 @@ pub struct OpActivityBonusExcelConfigDatum {
     #[serde(rename = "trackPara")]
     pub track_para: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "CEJHCJGCNJF")]
-    pub cejhcjgcnjf: i64,
+    #[serde(rename = "DMAOAJIPKKP")]
+    pub dmaoajipkkp: i64,
 
-    #[serde(rename = "FDCKJNNDHDM")]
-    pub fdckjnndhdm: Option<i64>,
+    #[serde(rename = "FICOINHJLLD")]
+    pub ficoinhjlld: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -46,8 +48,9 @@ pub enum SourceType {
 }
 
 pub fn load() -> Result<OpActivityBonusExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "OpActivityBonusExcelConfigData.json",
     ]

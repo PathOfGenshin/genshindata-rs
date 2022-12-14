@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MonsterExcelConfigData = Vec<MonsterExcelConfigDatum>;
@@ -14,20 +16,14 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "type")]
     pub monster_excel_config_datum_type: MonsterExcelConfigDatumType,
 
-    #[serde(rename = "scriptDataPathHashSuffix")]
-    pub script_data_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "scriptDataPathHashPre")]
-    pub script_data_path_hash_pre: Option<i64>,
+    #[serde(rename = "scriptDataPathHash")]
+    pub script_data_path_hash: Option<i64>,
 
     #[serde(rename = "serverScript")]
     pub server_script: ServerScript,
 
-    #[serde(rename = "combatConfigHashSuffix")]
-    pub combat_config_hash_suffix: i64,
-
-    #[serde(rename = "combatConfigHashPre")]
-    pub combat_config_hash_pre: i64,
+    #[serde(rename = "FBNHGKAFFPH")]
+    pub fbnhgkaffph: i64,
 
     #[serde(rename = "affix")]
     pub affix: Vec<i64>,
@@ -104,17 +100,11 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "physicalSubHurt")]
     pub physical_sub_hurt: Option<f64>,
 
-    #[serde(rename = "prefabPathRagdollHashSuffix")]
-    pub prefab_path_ragdoll_hash_suffix: i64,
+    #[serde(rename = "GJCPCNGOAGI")]
+    pub gjcpcngoagi: Option<i64>,
 
-    #[serde(rename = "prefabPathRagdollHashPre")]
-    pub prefab_path_ragdoll_hash_pre: i64,
-
-    #[serde(rename = "animatorConfigPathHashSuffix")]
-    pub animator_config_path_hash_suffix: Option<i64>,
-
-    #[serde(rename = "NJIEKKLKLLD")]
-    pub njiekklklld: Option<i64>,
+    #[serde(rename = "prefabPathHash")]
+    pub prefab_path_hash: Option<i64>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -122,29 +112,17 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "prefabPathHashSuffix")]
-    pub prefab_path_hash_suffix: i64,
+    #[serde(rename = "DAHDIAPDAPB")]
+    pub dahdiapdapb: i64,
 
-    #[serde(rename = "prefabPathHashPre")]
-    pub prefab_path_hash_pre: i64,
+    #[serde(rename = "prefabPathRemoteHash")]
+    pub prefab_path_remote_hash: i64,
 
-    #[serde(rename = "prefabPathRemoteHashSuffix")]
-    pub prefab_path_remote_hash_suffix: i64,
+    #[serde(rename = "controllerPathHash")]
+    pub controller_path_hash: i64,
 
-    #[serde(rename = "prefabPathRemoteHashPre")]
-    pub prefab_path_remote_hash_pre: i64,
-
-    #[serde(rename = "controllerPathHashSuffix")]
-    pub controller_path_hash_suffix: i64,
-
-    #[serde(rename = "controllerPathHashPre")]
-    pub controller_path_hash_pre: i64,
-
-    #[serde(rename = "controllerPathRemoteHashSuffix")]
-    pub controller_path_remote_hash_suffix: i64,
-
-    #[serde(rename = "controllerPathRemoteHashPre")]
-    pub controller_path_remote_hash_pre: i64,
+    #[serde(rename = "controllerPathRemoteHash")]
+    pub controller_path_remote_hash: i64,
 
     #[serde(rename = "campID")]
     pub camp_id: i64,
@@ -166,6 +144,9 @@ pub struct MonsterExcelConfigDatum {
 
     #[serde(rename = "visionLevel")]
     pub vision_level: Option<VisionLevel>,
+
+    #[serde(rename = "combatConfigHash")]
+    pub combat_config_hash: Option<bool>,
 
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
@@ -349,8 +330,9 @@ pub enum VisionLevel {
 }
 
 pub fn load() -> Result<MonsterExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MonsterExcelConfigData.json",
     ]

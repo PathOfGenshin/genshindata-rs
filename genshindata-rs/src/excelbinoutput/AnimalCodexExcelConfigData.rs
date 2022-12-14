@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AnimalCodexExcelConfigData = Vec<AnimalCodexExcelConfigDatum>;
@@ -20,8 +22,8 @@ pub struct AnimalCodexExcelConfigDatum {
     #[serde(rename = "SortOrder")]
     pub sort_order: i64,
 
-    #[serde(rename = "EDJJMOJHAFE")]
-    pub edjjmojhafe: Option<Edjjmojhafe>,
+    #[serde(rename = "ILKEIIJGDJB")]
+    pub ilkeiijgdjb: Option<Ilkeiijgdjb>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -52,7 +54,7 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Edjjmojhafe {
+pub enum Ilkeiijgdjb {
     #[serde(rename = "CODEX_COUNT_TYPE_CAPTURE")]
     CodexCountTypeCapture,
 
@@ -100,8 +102,9 @@ pub enum SubType {
 }
 
 pub fn load() -> Result<AnimalCodexExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AnimalCodexExcelConfigData.json",
     ]

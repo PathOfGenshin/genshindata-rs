@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageHuntingExcelConfigData = Vec<ActivityVintageHuntingExcelConfigDatum>;
@@ -11,14 +13,14 @@ pub struct ActivityVintageHuntingExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CNGBDMFLGGF")]
-    pub cngbdmflggf: i64,
+    #[serde(rename = "IIOGPJDCBDA")]
+    pub iiogpjdcbda: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "IDDONJAJHNM")]
-    pub iddonjajhnm: i64,
+    #[serde(rename = "BOMEAEBCLAB")]
+    pub bomeaebclab: i64,
 
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
@@ -29,40 +31,41 @@ pub struct ActivityVintageHuntingExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "MPEIIPLLCNO")]
-    pub mpeiipllcno: i64,
+    #[serde(rename = "AFGBBEAKHJL")]
+    pub afgbbeakhjl: i64,
 
-    #[serde(rename = "ACHCCLDFJED")]
-    pub achccldfjed: Vec<i64>,
+    #[serde(rename = "NHDEEKOJELM")]
+    pub nhdeekojelm: Vec<i64>,
 
-    #[serde(rename = "BAKHECCKLDF")]
-    pub bakhecckldf: Vec<i64>,
+    #[serde(rename = "MOLKOKCIGKJ")]
+    pub molkokcigkj: Vec<i64>,
 
-    #[serde(rename = "AOEBEJKFEBA")]
-    pub aoebejkfeba: Vec<i64>,
+    #[serde(rename = "LDFLPBNDCFH")]
+    pub ldflpbndcfh: Vec<i64>,
 
     #[serde(rename = "tutorialId")]
     pub tutorial_id: i64,
 
-    #[serde(rename = "DFCHALDIOFN")]
-    pub dfchaldiofn: i64,
+    #[serde(rename = "MHOBFKHEHHO")]
+    pub mhobfkhehho: i64,
 
-    #[serde(rename = "NGCPNLOBHDP")]
-    pub ngcpnlobhdp: i64,
+    #[serde(rename = "JHIDPOPMLOJ")]
+    pub jhidpopmloj: i64,
 
-    #[serde(rename = "PBMHBFKDPDP")]
-    pub pbmhbfkdpdp: Vec<i64>,
+    #[serde(rename = "LEFOKOPKBFD")]
+    pub lefokopkbfd: Vec<i64>,
 
-    #[serde(rename = "FKNBALOFCKE")]
-    pub fknbalofcke: i64,
+    #[serde(rename = "EJIHHECOCOH")]
+    pub ejihhecocoh: i64,
 
-    #[serde(rename = "HHKCLJNGIEL")]
-    pub hhkcljngiel: i64,
+    #[serde(rename = "LCGPBGOADJJ")]
+    pub lcgpbgoadjj: i64,
 }
 
 pub fn load() -> Result<ActivityVintageHuntingExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageHuntingExcelConfigData.json",
     ]

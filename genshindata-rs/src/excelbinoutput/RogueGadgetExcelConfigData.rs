@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueGadgetExcelConfigData = Vec<RogueGadgetExcelConfigDatum>;
@@ -11,28 +13,29 @@ pub struct RogueGadgetExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MKFOLLJINPJ")]
-    pub mkfolljinpj: String,
+    #[serde(rename = "OCLLFPNBMBL")]
+    pub ocllfpnbmbl: String,
 
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "OFPABOGHPIG")]
-    pub ofpaboghpig: Vec<Ofpaboghpig>,
+    #[serde(rename = "FMNDGPHJOAO")]
+    pub fmndgphjoao: Vec<Fmndgphjoao>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ofpaboghpig {
-    #[serde(rename = "BHBCEHKMHJO")]
-    pub bhbcehkmhjo: Option<String>,
+pub struct Fmndgphjoao {
+    #[serde(rename = "BMNGDMEMEGF")]
+    pub bmngdmemegf: Option<String>,
 
-    #[serde(rename = "NBNICLENPGL")]
-    pub nbniclenpgl: Option<i64>,
+    #[serde(rename = "OIKEKDPFBPI")]
+    pub oikekdpfbpi: Option<i64>,
 }
 
 pub fn load() -> Result<RogueGadgetExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueGadgetExcelConfigData.json",
     ]

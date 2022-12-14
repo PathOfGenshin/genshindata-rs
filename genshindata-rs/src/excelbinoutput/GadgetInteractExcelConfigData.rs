@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GadgetInteractExcelConfigData = Vec<GadgetInteractExcelConfigDatum>;
@@ -17,8 +19,8 @@ pub struct GadgetInteractExcelConfigDatum {
     #[serde(rename = "param1")]
     pub param1: Option<i64>,
 
-    #[serde(rename = "LCGFBNBDOCN")]
-    pub lcgfbnbdocn: Vec<Lcgfbnbdocn>,
+    #[serde(rename = "ANLOKADAAIP")]
+    pub anlokadaaip: Vec<Anlokadaaip>,
 
     #[serde(rename = "costItems")]
     pub cost_items: Vec<CostItem>,
@@ -40,6 +42,15 @@ pub struct GadgetInteractExcelConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct Anlokadaaip {
+    #[serde(rename = "actionType")]
+    pub action_type: Option<ActionType>,
+
+    #[serde(rename = "param")]
+    pub param: Vec<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct CondList {
     #[serde(rename = "param")]
     pub param: Vec<String>,
@@ -55,15 +66,6 @@ pub struct CostItem {
 
     #[serde(rename = "count")]
     pub count: Option<i64>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Lcgfbnbdocn {
-    #[serde(rename = "actionType")]
-    pub action_type: Option<ActionType>,
-
-    #[serde(rename = "param")]
-    pub param: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -94,8 +96,9 @@ pub enum CondType {
 }
 
 pub fn load() -> Result<GadgetInteractExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GadgetInteractExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WidgetGeneralExcelConfigData = Vec<WidgetGeneralExcelConfigDatum>;
@@ -14,14 +16,17 @@ pub struct WidgetGeneralExcelConfigDatum {
     #[serde(rename = "canUseInOtherWorld")]
     pub can_use_in_other_world: Option<bool>,
 
-    #[serde(rename = "BLEDFGMHJHM")]
-    pub bledfgmhjhm: Vec<i64>,
+    #[serde(rename = "CGKJEOKFNDP")]
+    pub cgkjeokfndp: Vec<i64>,
 
     #[serde(rename = "forbiddenDungeonList")]
     pub forbidden_dungeon_list: Vec<i64>,
 
-    #[serde(rename = "CKDHFEEMJKG")]
-    pub ckdhfeemjkg: Vec<i64>,
+    #[serde(rename = "IFCCEJKDOAP")]
+    pub ifccejkdoap: Vec<i64>,
+
+    #[serde(rename = "NDIOEMHPBOL")]
+    pub ndioemhpbol: Option<bool>,
 
     #[serde(rename = "canUseInDungeon")]
     pub can_use_in_dungeon: Option<bool>,
@@ -47,16 +52,17 @@ pub struct WidgetGeneralExcelConfigDatum {
     #[serde(rename = "canUseWhenCurrentAvatarDead")]
     pub can_use_when_current_avatar_dead: Option<bool>,
 
-    #[serde(rename = "BJJAHOACPGA")]
-    pub bjjahoacpga: Option<String>,
+    #[serde(rename = "BAEHADBGMJD")]
+    pub baehadbgmjd: Option<String>,
 
-    #[serde(rename = "NLCALGGDIII")]
-    pub nlcalggdiii: Option<bool>,
+    #[serde(rename = "CCIFHFMFCBL")]
+    pub ccifhfmfcbl: Option<bool>,
 }
 
 pub fn load() -> Result<WidgetGeneralExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WidgetGeneralExcelConfigData.json",
     ]

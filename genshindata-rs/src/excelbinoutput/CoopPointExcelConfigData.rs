@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CoopPointExcelConfigData = Vec<CoopPointExcelConfigDatum>;
@@ -32,17 +34,11 @@ pub struct CoopPointExcelConfigDatum {
     #[serde(rename = "pointPosId")]
     pub point_pos_id: i64,
 
-    #[serde(rename = "photoMaleHashSuffix")]
-    pub photo_male_hash_suffix: Option<i64>,
+    #[serde(rename = "photoMaleHash")]
+    pub photo_male_hash: Option<i64>,
 
-    #[serde(rename = "photoMaleHashPre")]
-    pub photo_male_hash_pre: Option<i64>,
-
-    #[serde(rename = "photoFemaleHashSuffix")]
-    pub photo_female_hash_suffix: Option<i64>,
-
-    #[serde(rename = "photoFemaleHashPre")]
-    pub photo_female_hash_pre: Option<i64>,
+    #[serde(rename = "photoFemaleHash")]
+    pub photo_female_hash: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -58,8 +54,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<CoopPointExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CoopPointExcelConfigData.json",
     ]

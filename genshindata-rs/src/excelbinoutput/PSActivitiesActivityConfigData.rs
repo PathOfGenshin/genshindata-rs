@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PsActivitiesActivityConfigData = Vec<PsActivitiesActivityConfigDatum>;
@@ -32,13 +34,14 @@ pub struct PsActivitiesActivityConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "FIBLOAJMPJG")]
-    pub fibloajmpjg: String,
+    #[serde(rename = "KFFAMLJMIML")]
+    pub kffamljmiml: String,
 }
 
 pub fn load() -> Result<PsActivitiesActivityConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PSActivitiesActivityConfigData.json",
     ]

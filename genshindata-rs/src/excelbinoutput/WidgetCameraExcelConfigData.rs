@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WidgetCameraExcelConfigData = Vec<WidgetCameraExcelConfigDatum>;
@@ -11,25 +13,26 @@ pub struct WidgetCameraExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GHJHBKJGOJN")]
-    pub ghjhbkjgojn: f64,
+    #[serde(rename = "NFIHOPNFONO")]
+    pub nfihopnfono: f64,
 
-    #[serde(rename = "KAKDIKKLMIG")]
-    pub kakdikklmig: String,
+    #[serde(rename = "GIIEEOOFECK")]
+    pub giieeoofeck: String,
 
-    #[serde(rename = "GKLDBFFOICP")]
-    pub gkldbffoicp: i64,
+    #[serde(rename = "GPLDOLGDACP")]
+    pub gpldolgdacp: i64,
 
-    #[serde(rename = "BPDNBBNIGCC")]
-    pub bpdnbbnigcc: i64,
+    #[serde(rename = "HFBDHHADACP")]
+    pub hfbdhhadacp: i64,
 
-    #[serde(rename = "OIJNJOFEPKL")]
-    pub oijnjofepkl: i64,
+    #[serde(rename = "LPDNHAPLBLO")]
+    pub lpdnhaplblo: i64,
 }
 
 pub fn load() -> Result<WidgetCameraExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WidgetCameraExcelConfigData.json",
     ]

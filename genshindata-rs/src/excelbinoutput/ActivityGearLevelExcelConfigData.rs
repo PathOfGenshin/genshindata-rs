@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGearLevelExcelConfigData = Vec<ActivityGearLevelExcelConfigDatum>;
@@ -11,11 +13,11 @@ pub struct ActivityGearLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JKAJCMFKMGA")]
-    pub jkajcmfkmga: Vec<i64>,
+    #[serde(rename = "HBLGJDCKILO")]
+    pub hblgjdckilo: Vec<i64>,
 
-    #[serde(rename = "BEGKAFFEDAI")]
-    pub begkaffedai: i64,
+    #[serde(rename = "CAOIJLGKBAH")]
+    pub caoijlgkbah: i64,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -23,16 +25,17 @@ pub struct ActivityGearLevelExcelConfigDatum {
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,
 
-    #[serde(rename = "BOEOGCCNPKF")]
-    pub boeogccnpkf: i64,
+    #[serde(rename = "ACKBJPHMFBK")]
+    pub ackbjphmfbk: i64,
 
-    #[serde(rename = "JLAFHFPPNIL")]
-    pub jlafhfppnil: i64,
+    #[serde(rename = "JHJANNGBIID")]
+    pub jhjanngbiid: i64,
 }
 
 pub fn load() -> Result<ActivityGearLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGearLevelExcelConfigData.json",
     ]

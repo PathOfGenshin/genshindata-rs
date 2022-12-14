@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BartenderOrderExcelConfigData = Vec<BartenderOrderExcelConfigDatum>;
@@ -11,11 +13,11 @@ pub struct BartenderOrderExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JIALCLKNJBI")]
-    pub jialclknjbi: i64,
+    #[serde(rename = "GMDHLMIPBKI")]
+    pub gmdhlmipbki: i64,
 
-    #[serde(rename = "MCLAHLELLLD")]
-    pub mclahlellld: Vec<i64>,
+    #[serde(rename = "CJACKJPFBBK")]
+    pub cjackjpfbbk: Vec<i64>,
 
     #[serde(rename = "iconName")]
     pub icon_name: String,
@@ -23,8 +25,8 @@ pub struct BartenderOrderExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "BACPJBHFCHJ")]
-    pub bacpjbhfchj: Option<Bacpjbhfchj>,
+    #[serde(rename = "LDIFMEADAOF")]
+    pub ldifmeadaof: Option<Ldifmeadaof>,
 
     #[serde(rename = "time")]
     pub time: Option<i64>,
@@ -34,7 +36,7 @@ pub struct BartenderOrderExcelConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bacpjbhfchj {
+pub enum Ldifmeadaof {
     #[serde(rename = "BARTENDER_CUP_BIG")]
     BartenderCupBig,
 
@@ -46,8 +48,9 @@ pub enum Bacpjbhfchj {
 }
 
 pub fn load() -> Result<BartenderOrderExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BartenderOrderExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageMarketStageExcelConfigData = Vec<ActivityVintageMarketStageExcelConfigDatum>;
@@ -11,37 +13,38 @@ pub struct ActivityVintageMarketStageExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
 
-    #[serde(rename = "LCPLPHEEAAL")]
-    pub lcplpheeaal: i64,
+    #[serde(rename = "IEENLKHBKEP")]
+    pub ieenlkhbkep: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "DOPFPLFNJEG")]
-    pub dopfplfnjeg: i64,
+    #[serde(rename = "CFOCHCKNFFI")]
+    pub cfochcknffi: i64,
 
-    #[serde(rename = "MGPELOMDGHE")]
-    pub mgpelomdghe: i64,
+    #[serde(rename = "CBPGAEHKGHD")]
+    pub cbpgaehkghd: i64,
 
-    #[serde(rename = "NDMBFNHCNGG")]
-    pub ndmbfnhcngg: i64,
+    #[serde(rename = "AKLCNLDLPCK")]
+    pub aklcnldlpck: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "DJKCKMEMANA")]
-    pub djkckmemana: i64,
+    #[serde(rename = "CHAIPBNBNHH")]
+    pub chaipbnbnhh: i64,
 
-    #[serde(rename = "BAPBEPLJNLO")]
-    pub bapbepljnlo: i64,
+    #[serde(rename = "BGLKMDANKLI")]
+    pub bglkmdankli: i64,
 
-    #[serde(rename = "GMDIFFDDHDC")]
-    pub gmdiffddhdc: Option<i64>,
+    #[serde(rename = "GHJGGFLLFDG")]
+    pub ghjggfllfdg: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityVintageMarketStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageMarketStageExcelConfigData.json",
     ]

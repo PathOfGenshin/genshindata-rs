@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityChessCardExcelConfigData = Vec<ActivityChessCardExcelConfigDatum>;
@@ -11,41 +13,41 @@ pub struct ActivityChessCardExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "DAECDJDCBII")]
-    pub daecdjdcbii: i64,
+    #[serde(rename = "GJDAMFBNKOP")]
+    pub gjdamfbnkop: i64,
 
-    #[serde(rename = "ANJBHLJDPPG")]
-    pub anjbhljdppg: Option<Anjbhljdppg>,
+    #[serde(rename = "ACMMEMBEMOI")]
+    pub acmmembemoi: Option<Acmmembemoi>,
 
-    #[serde(rename = "EDLPMDFHOAA")]
-    pub edlpmdfhoaa: i64,
+    #[serde(rename = "EDDKOPENING")]
+    pub eddkopening: i64,
 
-    #[serde(rename = "FFMGPDNCIEI")]
-    pub ffmgpdnciei: i64,
+    #[serde(rename = "FIJJOLEOOMN")]
+    pub fijjoleoomn: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JBLCGBFOOLF")]
-    pub jblcgbfoolf: i64,
+    #[serde(rename = "KGJPFMIOECN")]
+    pub kgjpfmioecn: i64,
 
-    #[serde(rename = "CJCCAAODEDG")]
-    pub cjccaaodedg: i64,
+    #[serde(rename = "NBCNCKLPEFF")]
+    pub nbcncklpeff: i64,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<Vec<f64>>,
 
-    #[serde(rename = "GBKHEBJBIGC")]
-    pub gbkhebjbigc: Vec<bool>,
+    #[serde(rename = "IPHDOCKEMDE")]
+    pub iphdockemde: Vec<bool>,
 
-    #[serde(rename = "JOLMKPBJOHI")]
-    pub jolmkpbjohi: Option<Jolmkpbjohi>,
+    #[serde(rename = "KLANCDAEKGF")]
+    pub klancdaekgf: Option<Klancdaekgf>,
 
-    #[serde(rename = "NIDIFGEJLJE")]
-    pub nidifgejlje: Option<Nidifgejlje>,
+    #[serde(rename = "JOKNHAHGPOK")]
+    pub joknhahgpok: Option<Joknhahgpok>,
 
-    #[serde(rename = "GNEPGOIPDOL")]
-    pub gnepgoipdol: Option<f64>,
+    #[serde(rename = "PFCFNJJAKNH")]
+    pub pfcfnjjaknh: Option<f64>,
 
     #[serde(rename = "costPoints")]
     pub cost_points: Option<i64>,
@@ -53,63 +55,63 @@ pub struct ActivityChessCardExcelConfigDatum {
     #[serde(rename = "cardType")]
     pub card_type: Option<CardType>,
 
-    #[serde(rename = "FIPNOCDEPBE")]
-    pub fipnocdepbe: i64,
+    #[serde(rename = "DKIPAOJNFID")]
+    pub dkipaojnfid: i64,
 
-    #[serde(rename = "NNGPDLOEKFA")]
-    pub nngpdloekfa: Nngpdloekfa,
+    #[serde(rename = "CFHNHPLBLHE")]
+    pub cfhnhplblhe: Cfhnhplblhe,
 
-    #[serde(rename = "KJGDBGFALGE")]
-    pub kjgdbgfalge: i64,
+    #[serde(rename = "FHFMPLDCCJA")]
+    pub fhfmpldccja: i64,
 
-    #[serde(rename = "BNHKCGDKCLI")]
-    pub bnhkcgdkcli: Option<bool>,
+    #[serde(rename = "OFKMMPLNELE")]
+    pub ofkmmplnele: Option<bool>,
 
-    #[serde(rename = "AMIDGFEIFBC")]
-    pub amidgfeifbc: Option<bool>,
+    #[serde(rename = "CFIILNHFJJL")]
+    pub cfiilnhfjjl: Option<bool>,
 
-    #[serde(rename = "CIBKHMLNEAE")]
-    pub cibkhmlneae: Vec<Nngpdloekfa>,
+    #[serde(rename = "DDGIENOPMBA")]
+    pub ddgienopmba: Vec<Cfhnhplblhe>,
 
-    #[serde(rename = "FELCBFFDMLL")]
-    pub felcbffdmll: Option<bool>,
+    #[serde(rename = "DAKMHPIINJJ")]
+    pub dakmhpiinjj: Option<bool>,
 
-    #[serde(rename = "HCBOLHJFIJB")]
-    pub hcbolhjfijb: Option<Hcbolhjfijb>,
+    #[serde(rename = "MDKOGCPIILE")]
+    pub mdkogcpiile: Option<Mdkogcpiile>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nngpdloekfa {
+pub struct Cfhnhplblhe {
+    #[serde(rename = "targetType")]
+    pub target_type: Option<TargetType>,
+
     #[serde(rename = "targetParamList")]
     pub target_param_list: Vec<i64>,
-
-    #[serde(rename = "effectStrParam")]
-    pub effect_str_param: String,
 
     #[serde(rename = "effectType")]
     pub effect_type: Option<String>,
 
+    #[serde(rename = "effectStrParam")]
+    pub effect_str_param: String,
+
     #[serde(rename = "effectParam1")]
     pub effect_param1: Option<i64>,
+
+    #[serde(rename = "OJIKCKOMFCG")]
+    pub ojikckomfcg: Option<i64>,
 
     #[serde(rename = "effectParam2")]
     pub effect_param2: Option<i64>,
 
-    #[serde(rename = "IFEKMBPMENA")]
-    pub ifekmbpmena: Option<i64>,
-
-    #[serde(rename = "IBHBODPJKOD")]
-    pub ibhbodpjkod: Option<i64>,
-
-    #[serde(rename = "targetType")]
-    pub target_type: Option<TargetType>,
-
     #[serde(rename = "effectParam3")]
     pub effect_param3: Option<i64>,
+
+    #[serde(rename = "HMNDCKBNEBO")]
+    pub hmndckbnebo: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Anjbhljdppg {
+pub enum Acmmembemoi {
     #[serde(rename = "CARD_TAG_ELECTRIC")]
     CardTagElectric,
 
@@ -157,16 +159,16 @@ pub enum TargetType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hcbolhjfijb {
-    #[serde(rename = "CARD_QUALITY_GOOD")]
-    CardQualityGood,
+pub enum Joknhahgpok {
+    #[serde(rename = "CARD_NUMERICAL_BASE")]
+    CardNumericalBase,
 
-    #[serde(rename = "CARD_QUALITY_PERCECT")]
-    CardQualityPercect,
+    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
+    CardNumericalPercentage,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jolmkpbjohi {
+pub enum Klancdaekgf {
     #[serde(rename = "CARD_NUMERICAL_ATTACK")]
     CardNumericalAttack,
 
@@ -181,17 +183,18 @@ pub enum Jolmkpbjohi {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Nidifgejlje {
-    #[serde(rename = "CARD_NUMERICAL_BASE")]
-    CardNumericalBase,
+pub enum Mdkogcpiile {
+    #[serde(rename = "CARD_QUALITY_GOOD")]
+    CardQualityGood,
 
-    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
-    CardNumericalPercentage,
+    #[serde(rename = "CARD_QUALITY_PERCECT")]
+    CardQualityPercect,
 }
 
 pub fn load() -> Result<ActivityChessCardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityChessCardExcelConfigData.json",
     ]

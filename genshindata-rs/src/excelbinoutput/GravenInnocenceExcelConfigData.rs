@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GravenInnocenceExcelConfigData = Vec<GravenInnocenceExcelConfigDatum>;
@@ -11,46 +13,47 @@ pub struct GravenInnocenceExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "NFOFHNLECIM")]
-    pub nfofhnlecim: i64,
+    #[serde(rename = "PCLHBCBFEKC")]
+    pub pclhbcbfekc: i64,
 
-    #[serde(rename = "FHHIIOIJCPO")]
-    pub fhhiioijcpo: i64,
+    #[serde(rename = "AFKJAJCNGGP")]
+    pub afkjajcnggp: i64,
 
-    #[serde(rename = "JAEADILAIAD")]
-    pub jaeadilaiad: i64,
+    #[serde(rename = "KCDILALLFMO")]
+    pub kcdilallfmo: i64,
 
-    #[serde(rename = "DJLCHBCHMCH")]
-    pub djlchbchmch: i64,
+    #[serde(rename = "LHHCJLKNPBH")]
+    pub lhhcjlknpbh: i64,
 
-    #[serde(rename = "DBPIAPFMLKJ")]
-    pub dbpiapfmlkj: i64,
+    #[serde(rename = "GFMEDEKPNIC")]
+    pub gfmedekpnic: i64,
 
-    #[serde(rename = "FCFOKKLIGIE")]
-    pub fcfokkligie: i64,
+    #[serde(rename = "HIMCCIJFCIP")]
+    pub himccijfcip: i64,
 
-    #[serde(rename = "FAGEENJPBDF")]
-    pub fageenjpbdf: i64,
+    #[serde(rename = "HJDHGLIFFNC")]
+    pub hjdhgliffnc: i64,
 
-    #[serde(rename = "AMKOPGAPCBL")]
-    pub amkopgapcbl: i64,
+    #[serde(rename = "NOBOBIIACLA")]
+    pub nobobiiacla: i64,
 
-    #[serde(rename = "FNLKBJDBLLM")]
-    pub fnlkbjdbllm: i64,
+    #[serde(rename = "MAMANEOBNHG")]
+    pub mamaneobnhg: i64,
 
-    #[serde(rename = "OBAENGOAGGA")]
-    pub obaengoagga: Vec<i64>,
+    #[serde(rename = "PFLGFOHIELH")]
+    pub pflgfohielh: Vec<i64>,
 
-    #[serde(rename = "DKKCEGEOLKK")]
-    pub dkkcegeolkk: i64,
+    #[serde(rename = "DBPNJALBIDP")]
+    pub dbpnjalbidp: i64,
 
-    #[serde(rename = "AHHOCIACMCA")]
-    pub ahhociacmca: i64,
+    #[serde(rename = "MEMKJNJFAPG")]
+    pub memkjnjfapg: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GravenInnocenceExcelConfigData.json",
     ]

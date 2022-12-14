@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type EchoShellSummerTimeDungeonExcelConfigData = Vec<EchoShellSummerTimeDungeonExcelConfigDatum>;
@@ -11,16 +13,17 @@ pub struct EchoShellSummerTimeDungeonExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "MNNNDEIFCMC")]
-    pub mnnndeifcmc: i64,
+    #[serde(rename = "BKLGLJOMBFB")]
+    pub bklgljombfb: i64,
 
-    #[serde(rename = "CDJPJEBJHMP")]
-    pub cdjpjebjhmp: Option<i64>,
+    #[serde(rename = "GHDGEAEAIEO")]
+    pub ghdgeaeaieo: Option<i64>,
 }
 
 pub fn load() -> Result<EchoShellSummerTimeDungeonExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "EchoShellSummerTimeDungeonExcelConfigData.json",
     ]

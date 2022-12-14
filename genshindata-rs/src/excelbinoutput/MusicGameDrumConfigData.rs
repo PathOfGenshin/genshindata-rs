@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MusicGameDrumConfigData = Vec<MusicGameDrumConfigDatum>;
@@ -11,100 +13,101 @@ pub struct MusicGameDrumConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KANNCGBKMNO")]
-    pub kanncgbkmno: Vec<f64>,
+    #[serde(rename = "HDGJFCAJLCC")]
+    pub hdgjfcajlcc: Vec<f64>,
 
-    #[serde(rename = "DIPEOEIAEKF")]
-    pub dipeoeiaekf: Vec<f64>,
+    #[serde(rename = "BMACJJDHJFE")]
+    pub bmacjjdhjfe: Vec<f64>,
 
-    #[serde(rename = "IBHDMGCBCJO")]
-    pub ibhdmgcbcjo: Vec<f64>,
+    #[serde(rename = "PJHLOKKPGFN")]
+    pub pjhlokkpgfn: Vec<f64>,
 
-    #[serde(rename = "DENIPPFACIB")]
-    pub denippfacib: Vec<f64>,
+    #[serde(rename = "JENGIJGKHAP")]
+    pub jengijgkhap: Vec<f64>,
 
-    #[serde(rename = "AMDMHPPOOHJ")]
-    pub amdmhppoohj: Vec<f64>,
+    #[serde(rename = "KCFHCHMNDMF")]
+    pub kcfhchmndmf: Vec<f64>,
 
-    #[serde(rename = "OGFCHPBDCCL")]
-    pub ogfchpbdccl: i64,
+    #[serde(rename = "NHKDEJKLKMC")]
+    pub nhkdejklkmc: i64,
 
-    #[serde(rename = "EBJNDMJBBDA")]
-    pub ebjndmjbbda: i64,
+    #[serde(rename = "KLMGJAPHHOH")]
+    pub klmgjaphhoh: i64,
 
-    #[serde(rename = "LNHAGFELLIE")]
-    pub lnhagfellie: i64,
+    #[serde(rename = "OLMGPJDIBHF")]
+    pub olmgpjdibhf: i64,
 
-    #[serde(rename = "PKEKAGMNLKJ")]
-    pub pkekagmnlkj: i64,
+    #[serde(rename = "JAABCAHMFLB")]
+    pub jaabcahmflb: i64,
 
-    #[serde(rename = "HMPBIFGLLMG")]
-    pub hmpbifgllmg: i64,
+    #[serde(rename = "LACJDAILGIF")]
+    pub lacjdailgif: i64,
 
-    #[serde(rename = "MGDKKBANPHG")]
-    pub mgdkkbanphg: i64,
+    #[serde(rename = "OIAJBIIBIFG")]
+    pub oiajbiibifg: i64,
 
-    #[serde(rename = "CKKMLBOABGN")]
-    pub ckkmlboabgn: i64,
+    #[serde(rename = "OIHODLDPNGK")]
+    pub oihodldpngk: i64,
 
-    #[serde(rename = "KOCEHAGFHJK")]
-    pub kocehagfhjk: Vec<f64>,
+    #[serde(rename = "EBIIODBKLCM")]
+    pub ebiiodbklcm: Vec<f64>,
 
-    #[serde(rename = "EIGCNIIMOCC")]
-    pub eigcniimocc: f64,
+    #[serde(rename = "OOBPEAMMEGH")]
+    pub oobpeammegh: f64,
 
-    #[serde(rename = "OJHJEAFKIJA")]
-    pub ojhjeafkija: Vec<f64>,
+    #[serde(rename = "MOBPGMMJLOC")]
+    pub mobpgmmjloc: Vec<f64>,
 
-    #[serde(rename = "AAFGMBAEOCO")]
-    pub aafgmbaeoco: i64,
+    #[serde(rename = "PNIPDGOJDFA")]
+    pub pnipdgojdfa: i64,
 
-    #[serde(rename = "HOFBADHOFAC")]
-    pub hofbadhofac: f64,
+    #[serde(rename = "JDBNGGJMMEK")]
+    pub jdbnggjmmek: f64,
 
-    #[serde(rename = "FFHGKABKFKK")]
-    pub ffhgkabkfkk: f64,
+    #[serde(rename = "OAECDMFEJNM")]
+    pub oaecdmfejnm: f64,
 
-    #[serde(rename = "NLEPAJJFFKN")]
-    pub nlepajjffkn: i64,
+    #[serde(rename = "KGHACJGIEGF")]
+    pub kghacjgiegf: i64,
 
-    #[serde(rename = "KNCOGGKIJDF")]
-    pub kncoggkijdf: Vec<f64>,
+    #[serde(rename = "HKOLEIHJNDA")]
+    pub hkoleihjnda: Vec<f64>,
 
-    #[serde(rename = "OEBHNEHHDIF")]
-    pub oebhnehhdif: Vec<f64>,
+    #[serde(rename = "JKLMHJHOHGG")]
+    pub jklmhjhohgg: Vec<f64>,
 
-    #[serde(rename = "AKHHGBJMHAN")]
-    pub akhhgbjmhan: Vec<f64>,
+    #[serde(rename = "OPJKKNMKOMA")]
+    pub opjkknmkoma: Vec<f64>,
 
-    #[serde(rename = "KALHFLEIAID")]
-    pub kalhfleiaid: Vec<f64>,
+    #[serde(rename = "MFCNEIOCKKC")]
+    pub mfcneiockkc: Vec<f64>,
 
-    #[serde(rename = "EOAGJAKOILC")]
-    pub eoagjakoilc: i64,
+    #[serde(rename = "KKDKIJPEAMN")]
+    pub kkdkijpeamn: i64,
 
-    #[serde(rename = "JHEFOGAPBGO")]
-    pub jhefogapbgo: Vec<i64>,
+    #[serde(rename = "BNJNIGLJHON")]
+    pub bnjnigljhon: Vec<i64>,
 
-    #[serde(rename = "HHGPNKCIFDL")]
-    pub hhgpnkcifdl: Vec<i64>,
+    #[serde(rename = "HCMBMOLHCKM")]
+    pub hcmbmolhckm: Vec<i64>,
 
-    #[serde(rename = "DNLFBONOHJN")]
-    pub dnlfbonohjn: Vec<i64>,
+    #[serde(rename = "LFEJKFONNFN")]
+    pub lfejkfonnfn: Vec<i64>,
 
-    #[serde(rename = "IKNOKHPDDIN")]
-    pub iknokhpddin: Vec<f64>,
+    #[serde(rename = "OEMOAHGJLMC")]
+    pub oemoahgjlmc: Vec<f64>,
 
-    #[serde(rename = "KACPOGAOFPD")]
-    pub kacpogaofpd: Vec<f64>,
+    #[serde(rename = "HONHEGOIKGB")]
+    pub honhegoikgb: Vec<f64>,
 
-    #[serde(rename = "PAHAAENJIPK")]
-    pub pahaaenjipk: Vec<i64>,
+    #[serde(rename = "GGLAFIBINGP")]
+    pub gglafibingp: Vec<i64>,
 }
 
 pub fn load() -> Result<MusicGameDrumConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicGameDrumConfigData.json",
     ]

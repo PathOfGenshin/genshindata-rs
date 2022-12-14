@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type OraionokamiDataExcelConfigData = Vec<OraionokamiDataExcelConfigDatum>;
@@ -11,40 +13,41 @@ pub struct OraionokamiDataExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "DEIBHMFKIDA")]
-    pub deibhmfkida: i64,
+    #[serde(rename = "NNMAEBBBKCD")]
+    pub nnmaebbbkcd: i64,
 
-    #[serde(rename = "JAAIDHEBGHK")]
-    pub jaaidhebghk: i64,
+    #[serde(rename = "NNEGFDOFJPI")]
+    pub nnegfdofjpi: i64,
 
     #[serde(rename = "serverBuffId")]
     pub server_buff_id: i64,
 
-    #[serde(rename = "DOCNOCEPMBA")]
-    pub docnocepmba: Vec<i64>,
+    #[serde(rename = "JGKFKNMPEOD")]
+    pub jgkfknmpeod: Vec<i64>,
 
-    #[serde(rename = "MCGCCPPLPLA")]
-    pub mcgccpplpla: i64,
+    #[serde(rename = "GBHHEIMIENB")]
+    pub gbhheimienb: i64,
 
-    #[serde(rename = "JANGAHGOCIC")]
-    pub jangahgocic: i64,
+    #[serde(rename = "EGIABOILDHC")]
+    pub egiaboildhc: i64,
 
-    #[serde(rename = "BGECDGPMJEP")]
-    pub bgecdgpmjep: i64,
+    #[serde(rename = "NIGIAEOAIEN")]
+    pub nigiaeoaien: i64,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "NHECBMECJLD")]
-    pub nhecbmecjld: i64,
+    #[serde(rename = "IDHEEMANMBA")]
+    pub idheemanmba: i64,
 
     #[serde(rename = "iconPath")]
     pub icon_path: String,
 }
 
 pub fn load() -> Result<OraionokamiDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "OraionokamiDataExcelConfigData.json",
     ]

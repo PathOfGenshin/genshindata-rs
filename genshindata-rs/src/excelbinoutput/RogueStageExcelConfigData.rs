@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueStageExcelConfigData = Vec<RogueStageExcelConfigDatum>;
@@ -14,14 +16,14 @@ pub struct RogueStageExcelConfigDatum {
     #[serde(rename = "firstPassRewardId")]
     pub first_pass_reward_id: Option<i64>,
 
-    #[serde(rename = "FLGEKDMAEEH")]
-    pub flgekdmaeeh: Option<i64>,
+    #[serde(rename = "DNEMMPCMGEJ")]
+    pub dnemmpcmgej: Option<i64>,
 
-    #[serde(rename = "LNBJIHLPPNO")]
-    pub lnbjihlppno: i64,
+    #[serde(rename = "AABLCDBCGOI")]
+    pub aablcdbcgoi: i64,
 
-    #[serde(rename = "NAOFLGKDCOE")]
-    pub naoflgkdcoe: Option<i64>,
+    #[serde(rename = "OKMHPPOKMOE")]
+    pub okmhppokmoe: Option<i64>,
 
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
@@ -32,34 +34,35 @@ pub struct RogueStageExcelConfigDatum {
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
 
-    #[serde(rename = "DAFFNDPLMBM")]
-    pub daffndplmbm: i64,
+    #[serde(rename = "DIILCFOFHOK")]
+    pub diilcfofhok: i64,
 
-    #[serde(rename = "NBGGGIMKCPL")]
-    pub nbgggimkcpl: Vec<i64>,
+    #[serde(rename = "BKHCPIJKBOI")]
+    pub bkhcpijkboi: Vec<i64>,
 
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: Vec<Vec<i64>>,
 
-    #[serde(rename = "MIDFCFFFLBI")]
-    pub midfcffflbi: Vec<Vec<i64>>,
+    #[serde(rename = "CPMALMBBNJE")]
+    pub cpmalmbbnje: Vec<Vec<i64>>,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
 
-    #[serde(rename = "NLJMNIMLAPM")]
-    pub nljmnimlapm: i64,
+    #[serde(rename = "IMHMJLNOHFB")]
+    pub imhmjlnohfb: i64,
 
-    #[serde(rename = "GBLNDLJGDGA")]
-    pub gblndljgdga: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "KCOKKAEOPEN")]
+    pub kcokkaeopen: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "LEKLMIBCKAD")]
-    pub leklmibckad: Option<bool>,
+    #[serde(rename = "BABBGGIFJJL")]
+    pub babbggifjjl: Option<bool>,
 }
 
 pub fn load() -> Result<RogueStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueStageExcelConfigData.json",
     ]

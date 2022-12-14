@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BartenderFormulaExcelConfigData = Vec<BartenderFormulaExcelConfigDatum>;
@@ -11,14 +13,14 @@ pub struct BartenderFormulaExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LDGFABEMCDK")]
-    pub ldgfabemcdk: Vec<Ialdnmdkabo>,
+    #[serde(rename = "BBOCLPPAIGN")]
+    pub bboclppaign: Vec<Bboclppaign>,
 
-    #[serde(rename = "IALDNMDKABO")]
-    pub ialdnmdkabo: Vec<Ialdnmdkabo>,
+    #[serde(rename = "CFPCMNLAEJO")]
+    pub cfpcmnlaejo: Vec<Bboclppaign>,
 
-    #[serde(rename = "FIPEBBKFEIJ")]
-    pub fipebbkfeij: Vec<i64>,
+    #[serde(rename = "DPGLDGDOJMM")]
+    pub dpgldgdojmm: Vec<i64>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -26,21 +28,21 @@ pub struct BartenderFormulaExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "MEHNNNCLHLI")]
-    pub mehnnnclhli: Option<i64>,
+    #[serde(rename = "EANPEKNJMGE")]
+    pub eanpeknjmge: Option<i64>,
 
-    #[serde(rename = "MBPKCLOODNN")]
-    pub mbpkcloodnn: Option<i64>,
+    #[serde(rename = "CNIKOIAJOPB")]
+    pub cnikoiajopb: Option<i64>,
 
-    #[serde(rename = "IKJBFINLMDD")]
-    pub ikjbfinlmdd: i64,
+    #[serde(rename = "CAJLDMKFGAO")]
+    pub cajldmkfgao: i64,
 
-    #[serde(rename = "NPEPHCHEMCC")]
-    pub npephchemcc: Option<Npephchemcc>,
+    #[serde(rename = "KGIKIOPOGBN")]
+    pub kgikiopogbn: Option<Kgikiopogbn>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ialdnmdkabo {
+pub struct Bboclppaign {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
@@ -49,7 +51,7 @@ pub struct Ialdnmdkabo {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Npephchemcc {
+pub enum Kgikiopogbn {
     #[serde(rename = "HEAVY")]
     Heavy,
 
@@ -58,8 +60,9 @@ pub enum Npephchemcc {
 }
 
 pub fn load() -> Result<BartenderFormulaExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BartenderFormulaExcelConfigData.json",
     ]

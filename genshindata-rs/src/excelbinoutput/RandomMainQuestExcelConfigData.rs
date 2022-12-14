@@ -2,34 +2,36 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RandomMainQuestExcelConfigData = Vec<RandomMainQuestExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RandomMainQuestExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub random_main_quest_excel_config_datum_type: Type,
 
-    #[serde(rename = "_titleTextMapHash")]
+    #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "_descTextMapHash")]
+    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "_luaPath")]
+    #[serde(rename = "luaPath")]
     pub lua_path: String,
 
-    #[serde(rename = "_activeMode")]
+    #[serde(rename = "activeMode")]
     pub active_mode: Option<String>,
 
-    #[serde(rename = "_suggestTrackMainQuestList")]
+    #[serde(rename = "suggestTrackMainQuestList")]
     pub suggest_track_main_quest_list: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "_rewardIdList")]
+    #[serde(rename = "rewardIdList")]
     pub reward_id_list: String,
 }
 
@@ -40,8 +42,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<RandomMainQuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RandomMainQuestExcelConfigData.json",
     ]

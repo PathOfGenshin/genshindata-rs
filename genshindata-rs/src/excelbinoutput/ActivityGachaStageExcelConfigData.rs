@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGachaStageExcelConfigData = Vec<ActivityGachaStageExcelConfigDatum>;
@@ -11,11 +13,11 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
 
-    #[serde(rename = "HLOAELINJKE")]
-    pub hloaelinjke: i64,
+    #[serde(rename = "OMPIMECHFMM")]
+    pub ompimechfmm: i64,
 
-    #[serde(rename = "CPDLLKMLCHN")]
-    pub cpdllkmlchn: Option<bool>,
+    #[serde(rename = "KLGIBGIJCIF")]
+    pub klgibgijcif: Option<bool>,
 
     #[serde(rename = "type")]
     pub activity_gacha_stage_excel_config_datum_type: String,
@@ -23,14 +25,14 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "PFKKPFOLGJN")]
-    pub pfkkpfolgjn: Vec<i64>,
+    #[serde(rename = "PLBEHABAGNG")]
+    pub plbehabagng: Vec<i64>,
 
-    #[serde(rename = "JBEICIDFOEP")]
-    pub jbeicidfoep: Vec<i64>,
+    #[serde(rename = "IPCFEPJCGEP")]
+    pub ipcfepjcgep: Vec<i64>,
 
-    #[serde(rename = "LPDIHPENLFG")]
-    pub lpdihpenlfg: Vec<i64>,
+    #[serde(rename = "AFJFKFKGOHF")]
+    pub afjfkfkgohf: Vec<i64>,
 
     #[serde(rename = "condID")]
     pub cond_id: Option<i64>,
@@ -38,16 +40,17 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
 
-    #[serde(rename = "DOPFPLFNJEG")]
-    pub dopfplfnjeg: Option<i64>,
+    #[serde(rename = "CFOCHCKNFFI")]
+    pub cfochcknffi: Option<i64>,
 
-    #[serde(rename = "PCMJIABGLGO")]
-    pub pcmjiabglgo: Option<bool>,
+    #[serde(rename = "MJMBHGEFHOD")]
+    pub mjmbhgefhod: Option<bool>,
 }
 
 pub fn load() -> Result<ActivityGachaStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGachaStageExcelConfigData.json",
     ]

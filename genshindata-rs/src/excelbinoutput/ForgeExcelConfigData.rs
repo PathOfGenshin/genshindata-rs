@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ForgeExcelConfigData = Vec<ForgeExcelConfigDatum>;
@@ -26,8 +28,8 @@ pub struct ForgeExcelConfigDatum {
     #[serde(rename = "showItemId")]
     pub show_item_id: i64,
 
-    #[serde(rename = "HAHBBIAFIBE")]
-    pub hahbbiafibe: Option<i64>,
+    #[serde(rename = "JCEPJOHDFHM")]
+    pub jcepjohdfhm: Option<i64>,
 
     #[serde(rename = "resultItemId")]
     pub result_item_id: Option<i64>,
@@ -77,8 +79,9 @@ pub struct RandomItem {
 }
 
 pub fn load() -> Result<ForgeExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ForgeExcelConfigData.json",
     ]

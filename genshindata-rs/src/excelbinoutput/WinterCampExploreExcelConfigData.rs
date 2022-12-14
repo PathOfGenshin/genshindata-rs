@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WinterCampExploreExcelConfigData = Vec<WinterCampExploreExcelConfigDatum>;
@@ -20,25 +22,26 @@ pub struct WinterCampExploreExcelConfigDatum {
     #[serde(rename = "groupID")]
     pub group_id: i64,
 
-    #[serde(rename = "PGGOKANNJLJ")]
-    pub pggokannjlj: i64,
+    #[serde(rename = "JICEOLNKCME")]
+    pub jiceolnkcme: i64,
 
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "FLGLMAIBLNH")]
-    pub flglmaiblnh: Vec<Flglmaiblnh>,
+    #[serde(rename = "LAIAOGNBPCD")]
+    pub laiaognbpcd: Vec<Laiaognbpcd>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Flglmaiblnh {
+pub struct Laiaognbpcd {
     #[serde(rename = "dropId")]
     pub drop_id: Vec<i64>,
 }
 
 pub fn load() -> Result<WinterCampExploreExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WinterCampExploreExcelConfigData.json",
     ]

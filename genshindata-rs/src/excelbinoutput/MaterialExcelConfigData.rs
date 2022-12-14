@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MaterialExcelConfigData = Vec<MaterialExcelConfigDatum>;
@@ -341,6 +343,18 @@ pub enum UseOp {
     #[serde(rename = "ITEM_USE_GAIN_FLYCLOAK")]
     ItemUseGainFlycloak,
 
+    #[serde(rename = "ITEM_USE_GAIN_GCG_CARD")]
+    ItemUseGainGcgCard,
+
+    #[serde(rename = "ITEM_USE_GAIN_GCG_CARD_BACK")]
+    ItemUseGainGcgCardBack,
+
+    #[serde(rename = "ITEM_USE_GAIN_GCG_CARD_FACE")]
+    ItemUseGainGcgCardFace,
+
+    #[serde(rename = "ITEM_USE_GAIN_GCG_CARD_FIELD")]
+    ItemUseGainGcgCardField,
+
     #[serde(rename = "ITEM_USE_GAIN_NAME_CARD")]
     ItemUseGainNameCard,
 
@@ -352,6 +366,9 @@ pub enum UseOp {
 
     #[serde(rename = "ITEM_USE_OPEN_RANDOM_CHEST")]
     ItemUseOpenRandomChest,
+
+    #[serde(rename = "ITEM_USE_OPEN_RENAME_DIALOG")]
+    ItemUseOpenRenameDialog,
 
     #[serde(rename = "ITEM_USE_RELIVE_AVATAR")]
     ItemUseReliveAvatar,
@@ -467,6 +484,21 @@ pub enum MaterialType {
     #[serde(rename = "MATERIAL_FURNITURE_SUITE_FORMULA")]
     MaterialFurnitureSuiteFormula,
 
+    #[serde(rename = "MATERIAL_GCG_CARD")]
+    MaterialGcgCard,
+
+    #[serde(rename = "MATERIAL_GCG_CARD_BACK")]
+    MaterialGcgCardBack,
+
+    #[serde(rename = "MATERIAL_GCG_CARD_FACE")]
+    MaterialGcgCardFace,
+
+    #[serde(rename = "MATERIAL_GCG_EXCHANGE_ITEM")]
+    MaterialGcgExchangeItem,
+
+    #[serde(rename = "MATERIAL_GCG_FIELD")]
+    MaterialGcgField,
+
     #[serde(rename = "MATERIAL_HOME_SEED")]
     MaterialHomeSeed,
 
@@ -481,6 +513,9 @@ pub enum MaterialType {
 
     #[serde(rename = "MATERIAL_RELIQUARY_MATERIAL")]
     MaterialReliquaryMaterial,
+
+    #[serde(rename = "MATERIAL_RENAME_ITEM")]
+    MaterialRenameItem,
 
     #[serde(rename = "MATERIAL_SEA_LAMP")]
     MaterialSeaLamp,
@@ -523,8 +558,9 @@ pub enum UseTarget {
 }
 
 pub fn load() -> Result<MaterialExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MaterialExcelConfigData.json",
     ]

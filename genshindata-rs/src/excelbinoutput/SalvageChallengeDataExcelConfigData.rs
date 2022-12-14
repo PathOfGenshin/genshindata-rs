@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SalvageChallengeDataExcelConfigData = Vec<SalvageChallengeDataExcelConfigDatum>;
@@ -14,28 +16,29 @@ pub struct SalvageChallengeDataExcelConfigDatum {
     #[serde(rename = "playType")]
     pub play_type: String,
 
-    #[serde(rename = "LDEDEHCFNOE")]
-    pub ldedehcfnoe: i64,
+    #[serde(rename = "IJMPOKMLHNF")]
+    pub ijmpokmlhnf: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: Option<i64>,
 
-    #[serde(rename = "IMFOHHHPNKJ")]
-    pub imfohhhpnkj: Vec<i64>,
+    #[serde(rename = "ANKIHGMPAAG")]
+    pub ankihgmpaag: Vec<i64>,
 
-    #[serde(rename = "LAPGKLLKEIO")]
-    pub lapgkllkeio: Vec<i64>,
+    #[serde(rename = "MKPPCFANIKK")]
+    pub mkppcfanikk: Vec<i64>,
 
-    #[serde(rename = "HCADLIAKFGO")]
-    pub hcadliakfgo: Option<i64>,
+    #[serde(rename = "KHCPAAJMHIJ")]
+    pub khcpaajmhij: Option<i64>,
 
-    #[serde(rename = "AOEBEJKFEBA")]
-    pub aoebejkfeba: Vec<i64>,
+    #[serde(rename = "LDFLPBNDCFH")]
+    pub ldflpbndcfh: Vec<i64>,
 }
 
 pub fn load() -> Result<SalvageChallengeDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SalvageChallengeDataExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MusicRiddlePlayConfigData = Vec<MusicRiddlePlayConfigDatum>;
@@ -14,22 +16,23 @@ pub struct MusicRiddlePlayConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "HLGGMIPGGHF")]
-    pub hlggmipgghf: String,
+    #[serde(rename = "OOPLEHOKEPN")]
+    pub ooplehokepn: String,
 
-    #[serde(rename = "BIPLLOAMLFM")]
-    pub biplloamlfm: f64,
+    #[serde(rename = "CDCNNOIOEDG")]
+    pub cdcnnoioedg: f64,
 
-    #[serde(rename = "HNAHEAKIAIB")]
-    pub hnaheakiaib: Vec<i64>,
+    #[serde(rename = "JADIGHMKCNC")]
+    pub jadighmkcnc: Vec<i64>,
 
-    #[serde(rename = "DKOBICCAIAL")]
-    pub dkobiccaial: i64,
+    #[serde(rename = "DGCBBFHOGAF")]
+    pub dgcbbfhogaf: i64,
 }
 
 pub fn load() -> Result<MusicRiddlePlayConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicRiddlePlayConfigData.json",
     ]

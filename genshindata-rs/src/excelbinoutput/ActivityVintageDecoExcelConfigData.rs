@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageDecoExcelConfigData = Vec<ActivityVintageDecoExcelConfigDatum>;
@@ -11,31 +13,32 @@ pub struct ActivityVintageDecoExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "PMFGIHKALJF")]
-    pub pmfgihkaljf: Vec<i64>,
+    #[serde(rename = "AHDABCIEIDM")]
+    pub ahdabcieidm: Vec<i64>,
 
-    #[serde(rename = "AOEBEJKFEBA")]
-    pub aoebejkfeba: Vec<i64>,
+    #[serde(rename = "LDFLPBNDCFH")]
+    pub ldflpbndcfh: Vec<i64>,
 
-    #[serde(rename = "HIONNHIGOCD")]
-    pub hionnhigocd: Vec<i64>,
+    #[serde(rename = "NALDDLHIPBJ")]
+    pub nalddlhipbj: Vec<i64>,
 
-    #[serde(rename = "NLJCBMIJAKM")]
-    pub nljcbmijakm: String,
+    #[serde(rename = "JMLFAMGCOPO")]
+    pub jmlfamgcopo: String,
 
-    #[serde(rename = "DFFEMKKBJCC")]
-    pub dffemkkbjcc: i64,
+    #[serde(rename = "MNMGOLBEKKK")]
+    pub mnmgolbekkk: i64,
 
-    #[serde(rename = "KOHLLLDPFJK")]
-    pub kohllldpfjk: i64,
+    #[serde(rename = "LDMJELNBHBL")]
+    pub ldmjelnbhbl: i64,
 
-    #[serde(rename = "DOPFPLFNJEG")]
-    pub dopfplfnjeg: i64,
+    #[serde(rename = "CFOCHCKNFFI")]
+    pub cfochcknffi: i64,
 }
 
 pub fn load() -> Result<ActivityVintageDecoExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageDecoExcelConfigData.json",
     ]

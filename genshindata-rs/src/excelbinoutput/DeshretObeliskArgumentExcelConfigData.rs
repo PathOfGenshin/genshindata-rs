@@ -2,47 +2,49 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DeshretObeliskArgumentExcelConfigData = Vec<DeshretObeliskArgumentExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct DeshretObeliskArgumentExcelConfigDatum {
-    #[serde(rename = "MPPIJDJGHKL")]
-    pub mppijdjghkl: i64,
+    #[serde(rename = "GNNPJBAIOFP")]
+    pub gnnpjbaiofp: i64,
 
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "KMKHMPANHNM")]
-    pub kmkhmpanhnm: Vec<i64>,
+    #[serde(rename = "BIIKJAANKNJ")]
+    pub biikjaanknj: Vec<i64>,
 
     #[serde(rename = "effectName")]
     pub effect_name: EffectName,
 
-    #[serde(rename = "LCPGABKHKLF")]
-    pub lcpgabkhklf: Vec<f64>,
+    #[serde(rename = "OJFCCMLLPLE")]
+    pub ojfccmllple: Vec<f64>,
 
-    #[serde(rename = "HMPCBLBOGCO")]
-    pub hmpcblbogco: f64,
+    #[serde(rename = "PPLIJFNJPBJ")]
+    pub pplijfnjpbj: f64,
 
-    #[serde(rename = "KPAMLCINPIF")]
-    pub kpamlcinpif: f64,
+    #[serde(rename = "PEIPBNJDMBM")]
+    pub peipbnjdmbm: f64,
 
-    #[serde(rename = "MMKOGFKBHCP")]
-    pub mmkogfkbhcp: Vec<f64>,
+    #[serde(rename = "DPONOIMBEDL")]
+    pub dponoimbedl: Vec<f64>,
 
-    #[serde(rename = "MGOANGLGJFP")]
-    pub mgoanglgjfp: Vec<f64>,
+    #[serde(rename = "KGJHBKOBNDG")]
+    pub kgjhbkobndg: Vec<f64>,
 
-    #[serde(rename = "HMKFPNCJDGH")]
-    pub hmkfpncjdgh: f64,
+    #[serde(rename = "NEEAKGPHJDA")]
+    pub neeakgphjda: f64,
 
-    #[serde(rename = "KFOHMAHFGHB")]
-    pub kfohmahfghb: f64,
+    #[serde(rename = "LFDACCALEJB")]
+    pub lfdaccalejb: f64,
 
-    #[serde(rename = "NNLKFOKJCME")]
-    pub nnlkfokjcme: f64,
+    #[serde(rename = "BFKMNEJGGHM")]
+    pub bfkmnejgghm: f64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -52,8 +54,9 @@ pub enum EffectName {
 }
 
 pub fn load() -> Result<DeshretObeliskArgumentExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DeshretObeliskArgumentExcelConfigData.json",
     ]

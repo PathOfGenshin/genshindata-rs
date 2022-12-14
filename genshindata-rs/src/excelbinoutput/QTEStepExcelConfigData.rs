@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type QteStepExcelConfigData = Vec<QteStepExcelConfigDatum>;
@@ -11,16 +13,17 @@ pub struct QteStepExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CNKMLBHGEEC")]
-    pub cnkmlbhgeec: String,
+    #[serde(rename = "KCMGMGKOFAH")]
+    pub kcmgmgkofah: String,
 
-    #[serde(rename = "FPPKFBFGKHL")]
-    pub fppkfbfgkhl: Option<i64>,
+    #[serde(rename = "OMADNMNJELA")]
+    pub omadnmnjela: Option<i64>,
 }
 
 pub fn load() -> Result<QteStepExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "QTEStepExcelConfigData.json",
     ]

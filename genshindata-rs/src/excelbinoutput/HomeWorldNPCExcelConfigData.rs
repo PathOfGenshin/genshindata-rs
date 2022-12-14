@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeWorldNpcExcelConfigData = Vec<HomeWorldNpcExcelConfigDatum>;
@@ -14,45 +16,36 @@ pub struct HomeWorldNpcExcelConfigDatum {
     #[serde(rename = "avatarID")]
     pub avatar_id: Option<i64>,
 
-    #[serde(rename = "MECLDFABFMF")]
-    pub mecldfabfmf: i64,
+    #[serde(rename = "MNGHPNFKFLB")]
+    pub mnghpnfkflb: i64,
 
-    #[serde(rename = "AAIIGOGAJOL")]
-    pub aaiigogajol: Vec<i64>,
+    #[serde(rename = "LBIEANDEEJH")]
+    pub lbieandeejh: Vec<i64>,
 
-    #[serde(rename = "AAIAIEHDDHM")]
-    pub aaiaiehddhm: Aaiaiehddhm,
+    #[serde(rename = "KKEEHKBAHMD")]
+    pub kkeehkbahmd: Kkeehkbahmd,
 
-    #[serde(rename = "LOIHCKNLOKB")]
-    pub loihcknlokb: Loihcknlokb,
+    #[serde(rename = "KAMIJOFDANL")]
+    pub kamijofdanl: Kamijofdanl,
 
-    #[serde(rename = "GMPOLDOJIPF")]
-    pub gmpoldojipf: Aaiaiehddhm,
+    #[serde(rename = "NFEGNIECKEK")]
+    pub nfegnieckek: Kkeehkbahmd,
 
-    #[serde(rename = "DBGNKJKLOLL")]
-    pub dbgnkjkloll: i64,
+    #[serde(rename = "HIEKFBEKFEF")]
+    pub hiekfbekfef: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "PBMEJEABAKN")]
-    pub pbmejeabakn: Option<bool>,
+    #[serde(rename = "CNCDAEFJLCD")]
+    pub cncdaefjlcd: Option<bool>,
 
-    #[serde(rename = "EPLACNGABCG")]
-    pub eplacngabcg: Option<String>,
+    #[serde(rename = "AIPELKHLJFI")]
+    pub aipelkhljfi: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Aaiaiehddhm {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
-    UiAvatarIconSidePaimon,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Loihcknlokb {
+pub enum Kamijofdanl {
     #[serde(rename = "")]
     Empty,
 
@@ -60,9 +53,19 @@ pub enum Loihcknlokb {
     UiAvatarIconPaimon,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Kkeehkbahmd {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
+    UiAvatarIconSidePaimon,
+}
+
 pub fn load() -> Result<HomeWorldNpcExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeWorldNPCExcelConfigData.json",
     ]

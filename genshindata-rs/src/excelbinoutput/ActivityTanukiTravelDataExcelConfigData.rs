@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityTanukiTravelDataExcelConfigData = Vec<ActivityTanukiTravelDataExcelConfigDatum>;
@@ -17,28 +19,29 @@ pub struct ActivityTanukiTravelDataExcelConfigDatum {
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
 
-    #[serde(rename = "BHKPDHECMPK")]
-    pub bhkpdhecmpk: Vec<i64>,
+    #[serde(rename = "EKCFDALCIOL")]
+    pub ekcfdalciol: Vec<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "BFMAFNJPPHD")]
-    pub bfmafnjpphd: i64,
+    #[serde(rename = "LGGALEBAFNA")]
+    pub lggalebafna: i64,
 
-    #[serde(rename = "CBPBJALLBGN")]
-    pub cbpbjallbgn: i64,
+    #[serde(rename = "FPPEIJMGHJK")]
+    pub fppeijmghjk: i64,
 
-    #[serde(rename = "IOBPNLHKFAP")]
-    pub iobpnlhkfap: Vec<i64>,
+    #[serde(rename = "DNDACNNFCDA")]
+    pub dndacnnfcda: Vec<i64>,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 }
 
 pub fn load() -> Result<ActivityTanukiTravelDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityTanukiTravelDataExcelConfigData.json",
     ]

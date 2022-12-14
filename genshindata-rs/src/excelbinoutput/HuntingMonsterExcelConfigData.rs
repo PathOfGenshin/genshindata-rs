@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HuntingMonsterExcelConfigData = Vec<HuntingMonsterExcelConfigDatum>;
@@ -35,8 +37,8 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "searchPointNum")]
     pub search_point_num: Option<i64>,
 
-    #[serde(rename = "AEOMNGMNGNG")]
-    pub aeomngmngng: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "GBHFKLAGBIF")]
+    pub gbhfklagbif: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "clueTextIdList")]
     pub clue_text_id_list: Vec<i64>,
@@ -47,17 +49,17 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "traitTextTextMapHash")]
     pub trait_text_text_map_hash: i64,
 
-    #[serde(rename = "KAKDBOFKAHG")]
-    pub kakdbofkahg: i64,
+    #[serde(rename = "KLHLMJKMMNE")]
+    pub klhlmjkmmne: i64,
 
-    #[serde(rename = "BELCDCBEDBH")]
-    pub belcdcbedbh: i64,
+    #[serde(rename = "NPPLEMMDLOA")]
+    pub npplemmdloa: i64,
 
-    #[serde(rename = "IGCFCDPLEPB")]
-    pub igcfcdplepb: i64,
+    #[serde(rename = "OLAJOPIKOOE")]
+    pub olajopikooe: i64,
 
-    #[serde(rename = "ACAHJBOAGKD")]
-    pub acahjboagkd: i64,
+    #[serde(rename = "HLDDPFOIHIC")]
+    pub hlddpfoihic: i64,
 
     #[serde(rename = "refreshCond")]
     pub refresh_cond: Vec<i64>,
@@ -65,11 +67,11 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "createPosType")]
     pub create_pos_type: Option<String>,
 
-    #[serde(rename = "PENEGJKOMID")]
-    pub penegjkomid: Option<bool>,
+    #[serde(rename = "DHICKEOOMJK")]
+    pub dhickeoomjk: Option<bool>,
 
-    #[serde(rename = "LHPOIIJBBGI")]
-    pub lhpoiijbbgi: Option<i64>,
+    #[serde(rename = "KNJPJHLADKA")]
+    pub knjpjhladka: Option<i64>,
 
     #[serde(rename = "difficulty")]
     pub difficulty: Option<Difficulty>,
@@ -88,8 +90,9 @@ pub enum Difficulty {
 }
 
 pub fn load() -> Result<HuntingMonsterExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HuntingMonsterExcelConfigData.json",
     ]

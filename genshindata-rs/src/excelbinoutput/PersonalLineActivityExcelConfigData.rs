@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PersonalLineActivityExcelConfigData = Vec<PersonalLineActivityExcelConfigDatum>;
@@ -20,13 +22,14 @@ pub struct PersonalLineActivityExcelConfigDatum {
     #[serde(rename = "perfabPath")]
     pub perfab_path: String,
 
-    #[serde(rename = "OJOGGBMJOMI")]
-    pub ojoggbmjomi: Option<String>,
+    #[serde(rename = "BFDCOBOPCFH")]
+    pub bfdcobopcfh: Option<String>,
 }
 
 pub fn load() -> Result<PersonalLineActivityExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PersonalLineActivityExcelConfigData.json",
     ]

@@ -2,40 +2,43 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WindFieldShowChallengeExcelConfigData = Vec<WindFieldShowChallengeExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WindFieldShowChallengeExcelConfigDatum {
-    #[serde(rename = "BMBPGLCFGKD")]
-    pub bmbpglcfgkd: i64,
+    #[serde(rename = "MKJDDPDMCIH")]
+    pub mkjddpdmcih: i64,
 
-    #[serde(rename = "LFOLKMHENDI")]
-    pub lfolkmhendi: Option<i64>,
+    #[serde(rename = "FGFNFFFFEKN")]
+    pub fgfnffffekn: Option<i64>,
 
     #[serde(rename = "showType")]
     pub show_type: String,
 
-    #[serde(rename = "DNIEBODAFAA")]
-    pub dniebodafaa: Vec<i64>,
+    #[serde(rename = "FHNDNBMOKHH")]
+    pub fhndnbmokhh: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "HEKDEKNHFGI")]
-    pub hekdeknhfgi: i64,
+    #[serde(rename = "BAOBJKLBMMC")]
+    pub baobjklbmmc: i64,
 
-    #[serde(rename = "EFDFKHOHKLD")]
-    pub efdfkhohkld: i64,
+    #[serde(rename = "AMBKOPIBDMC")]
+    pub ambkopibdmc: i64,
 
-    #[serde(rename = "LKBHFCIPKJJ")]
-    pub lkbhfcipkjj: Option<i64>,
+    #[serde(rename = "HEDMEIALKNN")]
+    pub hedmeialknn: Option<i64>,
 }
 
 pub fn load() -> Result<WindFieldShowChallengeExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WindFieldShowChallengeExcelConfigData.json",
     ]

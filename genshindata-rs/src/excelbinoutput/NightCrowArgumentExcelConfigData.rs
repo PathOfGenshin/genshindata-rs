@@ -2,45 +2,53 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type NightCrowArgumentExcelConfigData = Vec<NightCrowArgumentExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NightCrowArgumentExcelConfigDatum {
-    #[serde(rename = "MPPIJDJGHKL")]
-    pub mppijdjghkl: i64,
+    #[serde(rename = "GNNPJBAIOFP")]
+    pub gnnpjbaiofp: i64,
 
-    #[serde(rename = "MIMGLOJIIKC")]
-    pub mimglojiikc: Vec<i64>,
+    #[serde(rename = "IMOICJLBBOB")]
+    pub imoicjlbbob: Vec<i64>,
 
-    #[serde(rename = "DIDKFCBLLHB")]
-    pub didkfcbllhb: Didkfcbllhb,
+    #[serde(rename = "JFJGJFBMPMP")]
+    pub jfjgjfbmpmp: Jfjgjfbmpmp,
 
-    #[serde(rename = "OHNFCLJNPOF")]
-    pub ohnfcljnpof: String,
+    #[serde(rename = "CCKHJKMMEJC")]
+    pub cckhjkmmejc: String,
 
-    #[serde(rename = "BIFNFDOHLLB")]
-    pub bifnfdohllb: String,
+    #[serde(rename = "FGFBKOIBPCL")]
+    pub fgfbkoibpcl: String,
 
-    #[serde(rename = "EOFIGGACJAM")]
-    pub eofiggacjam: String,
+    #[serde(rename = "OENECFNHOHE")]
+    pub oenecfnhohe: String,
 
-    #[serde(rename = "EDFEONLPHKA")]
-    pub edfeonlphka: String,
+    #[serde(rename = "BCCHBDOGNGL")]
+    pub bcchbdogngl: String,
 
-    #[serde(rename = "BPOKOEPCDNN")]
-    pub bpokoepcdnn: Bpokoepcdnn,
+    #[serde(rename = "LBEFOHIHHAK")]
+    pub lbefohihhak: Lbefohihhak,
 
-    #[serde(rename = "OHENDBMOPLL")]
-    pub ohendbmopll: Ohendbmopll,
+    #[serde(rename = "OEIHGGIOKGE")]
+    pub oeihggiokge: Oeihggiokge,
 
-    #[serde(rename = "PFMOPCAANNI")]
-    pub pfmopcaanni: String,
+    #[serde(rename = "HNCBBMLBJPL")]
+    pub hncbbmlbjpl: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bpokoepcdnn {
+pub enum Jfjgjfbmpmp {
+    #[serde(rename = "0,1.5,0")]
+    The0150,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Lbefohihhak {
     #[serde(rename = "")]
     Empty,
 
@@ -52,13 +60,7 @@ pub enum Bpokoepcdnn {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Didkfcbllhb {
-    #[serde(rename = "0,1.5,0")]
-    The0150,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ohendbmopll {
+pub enum Oeihggiokge {
     #[serde(rename = "")]
     Empty,
 
@@ -70,8 +72,9 @@ pub enum Ohendbmopll {
 }
 
 pub fn load() -> Result<NightCrowArgumentExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "NightCrowArgumentExcelConfigData.json",
     ]

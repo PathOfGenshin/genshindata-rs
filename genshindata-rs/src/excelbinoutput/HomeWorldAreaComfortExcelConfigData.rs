@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeWorldAreaComfortExcelConfigData = Vec<HomeWorldAreaComfortExcelConfigDatum>;
@@ -26,32 +28,50 @@ pub struct HomeWorldAreaComfortExcelConfigDatum {
     #[serde(rename = "maxComfort")]
     pub max_comfort: i64,
 
-    #[serde(rename = "PLPHFCALPGE")]
-    pub plphfcalpge: String,
+    #[serde(rename = "JOBPKMLPDCA")]
+    pub jobpkmlpdca: String,
 
-    #[serde(rename = "AMJBFLOINDL")]
-    pub amjbfloindl: Amjbfloindl,
+    #[serde(rename = "EALANKCKFIB")]
+    pub ealankckfib: Ealankckfib,
 
-    #[serde(rename = "NABBOEKLIFC")]
-    pub nabboeklifc: i64,
+    #[serde(rename = "OHDGEBIDCKB")]
+    pub ohdgebidckb: i64,
 
-    #[serde(rename = "ANKKMCMGEEG")]
-    pub ankkmcmgeeg: i64,
+    #[serde(rename = "NALFEJCIOJP")]
+    pub nalfejciojp: i64,
 
-    #[serde(rename = "HAHOFNBLPNA")]
-    pub hahofnblpna: i64,
+    #[serde(rename = "PGAHCDHPLJG")]
+    pub pgahcdhpljg: i64,
 
-    #[serde(rename = "AGNDDMFIICF")]
-    pub agnddmfiicf: Vec<f64>,
+    #[serde(rename = "JELKMAFPOAO")]
+    pub jelkmafpoao: Vec<f64>,
 
-    #[serde(rename = "CCNKJBLPDGN")]
-    pub ccnkjblpdgn: Vec<f64>,
+    #[serde(rename = "JOAAKAKLDBL")]
+    pub joaakakldbl: Vec<f64>,
+
+    #[serde(rename = "AOKGBLEBEHN")]
+    pub aokgblebehn: String,
+
+    #[serde(rename = "JLOGLBDJKPD")]
+    pub jloglbdjkpd: i64,
+
+    #[serde(rename = "BECBOJIACCC")]
+    pub becbojiaccc: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Amjbfloindl {
+pub enum AreaType {
+    #[serde(rename = "ExteriorArea")]
+    ExteriorArea,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ealankckfib {
     #[serde(rename = "")]
     Empty,
+
+    #[serde(rename = "11.325,3.819,13.572")]
+    The11325381913572,
 
     #[serde(rename = "-11.52,5.3,2.35")]
     The115253235,
@@ -63,15 +83,10 @@ pub enum Amjbfloindl {
     The65734714,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub enum AreaType {
-    #[serde(rename = "ExteriorArea")]
-    ExteriorArea,
-}
-
 pub fn load() -> Result<HomeWorldAreaComfortExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeWorldAreaComfortExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SubSpriteTagExcelConfigData = Vec<SubSpriteTagExcelConfigDatum>;
@@ -11,22 +13,23 @@ pub struct SubSpriteTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FKBEDCPDKIG")]
-    pub fkbedcpdkig: String,
+    #[serde(rename = "PLDDKCOBEAP")]
+    pub plddkcobeap: String,
 
-    #[serde(rename = "DPICJNGODGH")]
-    pub dpicjngodgh: f64,
+    #[serde(rename = "GPAJLFGKMDG")]
+    pub gpajlfgkmdg: f64,
 
-    #[serde(rename = "AMMJAINBEGN")]
-    pub ammjainbegn: Option<f64>,
+    #[serde(rename = "FLHKCABAOLO")]
+    pub flhkcabaolo: Option<f64>,
 
-    #[serde(rename = "PCMFIGFOECB")]
-    pub pcmfigfoecb: Option<f64>,
+    #[serde(rename = "OEBEGBDACPF")]
+    pub oebegbdacpf: Option<f64>,
 }
 
 pub fn load() -> Result<SubSpriteTagExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SubSpriteTagExcelConfigData.json",
     ]

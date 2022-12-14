@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityMistTrialLevelFactorExcelConfigData = Vec<ActivityMistTrialLevelFactorExcelConfigDatum>;
@@ -14,19 +16,20 @@ pub struct ActivityMistTrialLevelFactorExcelConfigDatum {
     #[serde(rename = "param")]
     pub param: Vec<String>,
 
-    #[serde(rename = "HPMEHABBEPF")]
-    pub hpmehabbepf: i64,
+    #[serde(rename = "EEGIKDADNDC")]
+    pub eegikdadndc: i64,
 
-    #[serde(rename = "MNCDPBNCHKG")]
-    pub mncdpbnchkg: i64,
+    #[serde(rename = "BNEDGDBFPCA")]
+    pub bnedgdbfpca: i64,
 
-    #[serde(rename = "COODKMOICGF")]
-    pub coodkmoicgf: i64,
+    #[serde(rename = "GIKKFKBBLLK")]
+    pub gikkfkbbllk: i64,
 }
 
 pub fn load() -> Result<ActivityMistTrialLevelFactorExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityMistTrialLevelFactorExcelConfigData.json",
     ]

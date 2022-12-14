@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BartenderAffixExcelConfigData = Vec<BartenderAffixExcelConfigDatum>;
@@ -11,19 +13,20 @@ pub struct BartenderAffixExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KKNFAOCNNPM")]
-    pub kknfaocnnpm: String,
+    #[serde(rename = "DMDGMFFIIBM")]
+    pub dmdgmffiibm: String,
 
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "NLPAAFONHLM")]
-    pub nlpaafonhlm: i64,
+    #[serde(rename = "LGLFGLLHAMB")]
+    pub lglfgllhamb: i64,
 }
 
 pub fn load() -> Result<BartenderAffixExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BartenderAffixExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeWorldLimitShopExcelConfigData = Vec<HomeWorldLimitShopExcelConfigDatum>;
@@ -32,11 +34,11 @@ pub struct HomeWorldLimitShopExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Cond {
-    #[serde(rename = "FKKPOIAEOBJ")]
-    pub fkkpoiaeobj: Vec<i64>,
+    #[serde(rename = "ODEILDHDJGC")]
+    pub odeildhdjgc: Vec<i64>,
 
-    #[serde(rename = "MHADODFJFGN")]
-    pub mhadodfjfgn: Option<Mhadodfjfgn>,
+    #[serde(rename = "JFNOBDJEFHE")]
+    pub jfnobdjefhe: Option<Jfnobdjefhe>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -49,14 +51,15 @@ pub struct CostItem {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mhadodfjfgn {
+pub enum Jfnobdjefhe {
     #[serde(rename = "HOMEWORLD_LIMIT_SHOP_COND_TYPE_QUEST_FINISH")]
     HomeworldLimitShopCondTypeQuestFinish,
 }
 
 pub fn load() -> Result<HomeWorldLimitShopExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeWorldLimitShopExcelConfigData.json",
     ]

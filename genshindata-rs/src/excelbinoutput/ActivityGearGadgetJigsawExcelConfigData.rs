@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGearGadgetJigsawExcelConfigData = Vec<ActivityGearGadgetJigsawExcelConfigDatum>;
@@ -14,19 +16,20 @@ pub struct ActivityGearGadgetJigsawExcelConfigDatum {
     #[serde(rename = "gadgetID")]
     pub gadget_id: i64,
 
-    #[serde(rename = "IBJGHNKECND")]
-    pub ibjghnkecnd: i64,
+    #[serde(rename = "BPAPFBGMIHA")]
+    pub bpapfbgmiha: i64,
 
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "FCHHLHBLIOH")]
-    pub fchhlhblioh: String,
+    #[serde(rename = "IAEFNMENABD")]
+    pub iaefnmenabd: String,
 }
 
 pub fn load() -> Result<ActivityGearGadgetJigsawExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGearGadgetJigsawExcelConfigData.json",
     ]

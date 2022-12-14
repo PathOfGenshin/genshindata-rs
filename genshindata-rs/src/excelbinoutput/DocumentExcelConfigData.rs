@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DocumentExcelConfigData = Vec<DocumentExcelConfigDatum>;
@@ -23,6 +25,12 @@ pub struct DocumentExcelConfigDatum {
     #[serde(rename = "videoPath")]
     pub video_path: VideoPath,
 
+    #[serde(rename = "PMDFHOFBMAF")]
+    pub pmdfhofbmaf: Vec<i64>,
+
+    #[serde(rename = "OPAHFFDFJIE")]
+    pub opahffdfjie: Vec<i64>,
+
     #[serde(rename = "documentType")]
     pub document_type: Option<String>,
 
@@ -40,8 +48,9 @@ pub enum VideoPath {
 }
 
 pub fn load() -> Result<DocumentExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DocumentExcelConfigData.json",
     ]

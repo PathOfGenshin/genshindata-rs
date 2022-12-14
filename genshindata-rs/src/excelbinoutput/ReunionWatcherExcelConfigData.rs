@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ReunionWatcherExcelConfigData = Vec<ReunionWatcherExcelConfigDatum>;
@@ -32,8 +34,8 @@ pub struct ReunionWatcherExcelConfigDatum {
     #[serde(rename = "progress")]
     pub progress: i64,
 
-    #[serde(rename = "HJJOCDBLLJB")]
-    pub hjjocdblljb: Option<i64>,
+    #[serde(rename = "IDBMHNIFEIB")]
+    pub idbmhnifeib: Option<i64>,
 
     #[serde(rename = "isDisuse")]
     pub is_disuse: Option<bool>,
@@ -73,8 +75,9 @@ pub enum ActivateLevelRange {
 }
 
 pub fn load() -> Result<ReunionWatcherExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ReunionWatcherExcelConfigData.json",
     ]

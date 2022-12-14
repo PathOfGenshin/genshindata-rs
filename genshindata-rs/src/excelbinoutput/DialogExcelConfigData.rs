@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DialogExcelConfigData = Vec<DialogExcelConfigDatum>;
@@ -59,10 +61,10 @@ pub struct DialogExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TalkRole {
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub talk_role_type: Option<Type>,
 
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: String,
 }
 
@@ -136,6 +138,27 @@ pub enum ActionAfter {
 
     #[serde(rename = "")]
     Empty,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_Bigworld")]
+    GcgOpenGcgLevelPageBigworld,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_Bigworld_1")]
+    GcgOpenGcgLevelPageBigworld1,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_CatBar")]
+    GcgOpenGcgLevelPageCatBar,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_CatBar_1")]
+    GcgOpenGcgLevelPageCatBar1,
+
+    #[serde(rename = "GCG/open_GcgQuestLevelPage_1")]
+    GcgOpenGcgQuestLevelPage1,
+
+    #[serde(rename = "GCG/open_GcgTestQuestChallengesPage_1")]
+    GcgOpenGcgTestQuestChallengesPage1,
+
+    #[serde(rename = "GCG/open_GcgTestQuestChallengesPage_2")]
+    GcgOpenGcgTestQuestChallengesPage2,
 
     #[serde(rename = "HomeWorld/huling_finish")]
     HomeWorldHulingFinish,
@@ -704,6 +727,9 @@ pub enum ActionAfter {
     #[serde(rename = "UI/open_forging_page")]
     UiOpenForgingPage,
 
+    #[serde(rename = "UI/open_FungusCultivate")]
+    UiOpenFungusCultivate,
+
     #[serde(rename = "UI/open_giving_page")]
     UiOpenGivingPage,
 
@@ -833,6 +859,45 @@ pub enum ActionBefore {
     #[serde(rename = "")]
     Empty,
 
+    #[serde(rename = "GCG/ClearWorldChallengeTalk")]
+    GcgClearWorldChallengeTalk,
+
+    #[serde(rename = "GCG/ClearWorldChallengeTalk_Nosteer")]
+    GcgClearWorldChallengeTalkNosteer,
+
+    #[serde(rename = "GCG/Gcg_Invitation_End")]
+    GcgGcgInvitationEnd,
+
+    #[serde(rename = "GCG/open_GcgBossChallengesPage")]
+    GcgOpenGcgBossChallengesPage,
+
+    #[serde(rename = "GCG/open_GcgCardSettingPage")]
+    GcgOpenGcgCardSettingPage,
+
+    #[serde(rename = "GCG/open_GcgLevelPage")]
+    GcgOpenGcgLevelPage,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_Invitation")]
+    GcgOpenGcgLevelPageInvitation,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_Invitation_End")]
+    GcgOpenGcgLevelPageInvitationEnd,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_Invitation_Start")]
+    GcgOpenGcgLevelPageInvitationStart,
+
+    #[serde(rename = "GCG/open_GcgPlayerLevelPage")]
+    GcgOpenGcgPlayerLevelPage,
+
+    #[serde(rename = "GCG/open_GcgShopPage")]
+    GcgOpenGcgShopPage,
+
+    #[serde(rename = "GCG/open_Ggccard_page")]
+    GcgOpenGgccardPage,
+
+    #[serde(rename = "GCG/Prince_Start")]
+    GcgPrinceStart,
+
     #[serde(rename = "HomeWorld/huling_bansleep")]
     HomeWorldHulingBansleep,
 
@@ -880,6 +945,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "SimpleTalk/LerpInNpcNoSteer_Start")]
     SimpleTalkLerpInNpcNoSteerStart,
+
+    #[serde(rename = "SimpleTalk/PaimonInTalk_Start")]
+    SimpleTalkPaimonInTalkStart,
 
     #[serde(rename = "SimpleTalk/PutHand")]
     SimpleTalkPutHand,
@@ -1010,6 +1078,15 @@ pub enum ActionBefore {
     #[serde(rename = "TEST/TestTalk4")]
     TestTestTalk4,
 
+    #[serde(rename = "UI/open_activity_brickbreaker_dungeonstart")]
+    UiOpenActivityBrickbreakerDungeonstart,
+
+    #[serde(rename = "UI/open_activity_brickbreaker_questlevelpage")]
+    UiOpenActivityBrickbreakerQuestlevelpage,
+
+    #[serde(rename = "UI/open_activity_brickbreaker_stageselectpage")]
+    UiOpenActivityBrickbreakerStageselectpage,
+
     #[serde(rename = "UI/open_homeworld_build_page")]
     UiOpenHomeworldBuildPage,
 
@@ -1021,6 +1098,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "UI/open_homeworld_switch_page")]
     UiOpenHomeworldSwitchPage,
+
+    #[serde(rename = "UI/open_teyvatcard_setting_page")]
+    UiOpenTeyvatcardSettingPage,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -1073,8 +1153,41 @@ pub enum ActionWhile {
     #[serde(rename = "DialogAction/D400881401_While")]
     DialogActionD400881401While,
 
+    #[serde(rename = "DialogAction/D400890509_While")]
+    DialogActionD400890509While,
+
+    #[serde(rename = "DialogAction/D400890512_While")]
+    DialogActionD400890512While,
+
+    #[serde(rename = "DialogAction/D400890611_While")]
+    DialogActionD400890611While,
+
+    #[serde(rename = "DialogAction/D400890715_While")]
+    DialogActionD400890715While,
+
+    #[serde(rename = "DialogAction/D400900307_While")]
+    DialogActionD400900307While,
+
+    #[serde(rename = "DialogAction/D400900310_While")]
+    DialogActionD400900310While,
+
+    #[serde(rename = "DialogAction/D400900414_While")]
+    DialogActionD400900414While,
+
+    #[serde(rename = "DialogAction/D400900512_While")]
+    DialogActionD400900512While,
+
+    #[serde(rename = "DialogAction/D727290101_While")]
+    DialogActionD727290101While,
+
     #[serde(rename = "")]
     Empty,
+
+    #[serde(rename = "GCG/Prince_Continue")]
+    GcgPrinceContinue,
+
+    #[serde(rename = "GCG/RefreshCardGroupName")]
+    GcgRefreshCardGroupName,
 
     #[serde(rename = "HomeWorld/huling_start")]
     HomeWorldHulingStart,
@@ -1595,8 +1708,14 @@ pub enum OptionIcon {
     #[serde(rename = "UI_Icon_Intee_FlightChallenge")]
     UiIconInteeFlightChallenge,
 
+    #[serde(rename = "UI_Icon_Intee_FungusFighter")]
+    UiIconInteeFungusFighter,
+
     #[serde(rename = "UI_Icon_Intee_FurnitureBuild")]
     UiIconInteeFurnitureBuild,
+
+    #[serde(rename = "UI_Icon_Intee_GcgZhanDou")]
+    UiIconInteeGcgZhanDou,
 
     #[serde(rename = "UI_Icon_Intee_GeneralCargo")]
     UiIconInteeGeneralCargo,
@@ -1661,6 +1780,9 @@ pub enum OptionIcon {
     #[serde(rename = "UI_Icon_Quest_Once")]
     UiIconQuestOnce,
 
+    #[serde(rename = "UI_NPCTopIcon_Activity_BrickBreaker")]
+    UiNpcTopIconActivityBrickBreaker,
+
     #[serde(rename = "UI_NPCTopIcon_Activity_Music")]
     UiNpcTopIconActivityMusic,
 
@@ -1694,6 +1816,12 @@ pub enum Type {
     #[serde(rename = "TALK_ROLE_BLACK_SCREEN")]
     TalkRoleBlackScreen,
 
+    #[serde(rename = "TALK_ROLE_CONSEQUENT_BLACK_SCREEN")]
+    TalkRoleConsequentBlackScreen,
+
+    #[serde(rename = "TALK_ROLE_CONSEQUENT_NEED_CLICK_BLACK_SCREEN")]
+    TalkRoleConsequentNeedClickBlackScreen,
+
     #[serde(rename = "TALK_ROLE_GADGET")]
     TalkRoleGadget,
 
@@ -1717,8 +1845,9 @@ pub enum TalkShowType {
 }
 
 pub fn load() -> Result<DialogExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DialogExcelConfigData.json",
     ]

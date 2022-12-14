@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type VehicleSkillDepotExcelConfigData = Vec<VehicleSkillDepotExcelConfigDatum>;
@@ -11,13 +13,14 @@ pub struct VehicleSkillDepotExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "CLMLAJFIBEF")]
-    pub clmlajfibef: Vec<i64>,
+    #[serde(rename = "EJIPHPNNAOI")]
+    pub ejiphpnnaoi: Vec<i64>,
 }
 
 pub fn load() -> Result<VehicleSkillDepotExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "VehicleSkillDepotExcelConfigData.json",
     ]

@@ -2,28 +2,31 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MusicInstrumentConfigData = Vec<MusicInstrumentConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicInstrumentConfigDatum {
-    #[serde(rename = "JPDAFNOEMBI")]
-    pub jpdafnoembi: i64,
+    #[serde(rename = "IBPGODMHPIG")]
+    pub ibpgodmhpig: i64,
 
-    #[serde(rename = "HBPKMGMJDAE")]
-    pub hbpkmgmjdae: i64,
+    #[serde(rename = "BBOKDLECEDA")]
+    pub bbokdleceda: i64,
 
-    #[serde(rename = "DHOMECHDJBG")]
-    pub dhomechdjbg: i64,
+    #[serde(rename = "HNOPDNHMOPH")]
+    pub hnopdnhmoph: i64,
 
-    #[serde(rename = "ECKHCFIILCO")]
-    pub eckhcfiilco: String,
+    #[serde(rename = "ADMDIOPKFNB")]
+    pub admdiopkfnb: String,
 }
 
 pub fn load() -> Result<MusicInstrumentConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MusicInstrumentConfigData.json",
     ]

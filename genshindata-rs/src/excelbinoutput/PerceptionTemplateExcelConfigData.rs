@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PerceptionTemplateExcelConfigData = Vec<PerceptionTemplateExcelConfigDatum>;
@@ -11,19 +13,20 @@ pub struct PerceptionTemplateExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "OIPGLOFOFJI")]
-    pub oipglofofji: f64,
+    #[serde(rename = "KBMFLLFAJII")]
+    pub kbmfllfajii: f64,
 
-    #[serde(rename = "JJGABEFNPLD")]
-    pub jjgabefnpld: Option<f64>,
+    #[serde(rename = "HDAMJKANPLG")]
+    pub hdamjkanplg: Option<f64>,
 
-    #[serde(rename = "KOOGADFJEAE")]
-    pub koogadfjeae: Option<f64>,
+    #[serde(rename = "EGDGHHBCDOL")]
+    pub egdghhbcdol: Option<f64>,
 }
 
 pub fn load() -> Result<PerceptionTemplateExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PerceptionTemplateExcelConfigData.json",
     ]

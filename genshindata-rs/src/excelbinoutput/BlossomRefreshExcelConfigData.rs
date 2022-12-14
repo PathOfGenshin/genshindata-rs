@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BlossomRefreshExcelConfigData = Vec<BlossomRefreshExcelConfigDatum>;
@@ -56,8 +58,8 @@ pub struct BlossomRefreshExcelConfigDatum {
     #[serde(rename = "rewardType")]
     pub reward_type: Option<String>,
 
-    #[serde(rename = "MADIKBJCJMJ")]
-    pub madikbjcjmj: Option<bool>,
+    #[serde(rename = "JFEELPLIEDI")]
+    pub jfeelpliedi: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -109,8 +111,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<BlossomRefreshExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BlossomRefreshExcelConfigData.json",
     ]

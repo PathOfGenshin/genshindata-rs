@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ChargeBarStyleExcelConfigData = Vec<ChargeBarStyleExcelConfigDatum>;
@@ -14,13 +16,14 @@ pub struct ChargeBarStyleExcelConfigDatum {
     #[serde(rename = "iconName")]
     pub icon_name: String,
 
-    #[serde(rename = "GHCOOANOHAB")]
-    pub ghcooanohab: Option<String>,
+    #[serde(rename = "OMFCKFGMHAH")]
+    pub omfckfgmhah: Option<String>,
 }
 
 pub fn load() -> Result<ChargeBarStyleExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ChargeBarStyleExcelConfigData.json",
     ]

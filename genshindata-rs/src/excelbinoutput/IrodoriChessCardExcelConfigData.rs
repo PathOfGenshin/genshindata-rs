@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriChessCardExcelConfigData = Vec<IrodoriChessCardExcelConfigDatum>;
@@ -14,20 +16,20 @@ pub struct IrodoriChessCardExcelConfigDatum {
     #[serde(rename = "costPoints")]
     pub cost_points: i64,
 
-    #[serde(rename = "NNGPDLOEKFA")]
-    pub nngpdloekfa: Nngpdloekfa,
+    #[serde(rename = "CFHNHPLBLHE")]
+    pub cfhnhplblhe: Cfhnhplblhe,
 
-    #[serde(rename = "CIBKHMLNEAE")]
-    pub cibkhmlneae: Vec<Nngpdloekfa>,
+    #[serde(rename = "DDGIENOPMBA")]
+    pub ddgienopmba: Vec<Cfhnhplblhe>,
 
     #[serde(rename = "cardType")]
     pub card_type: Option<CardType>,
 
-    #[serde(rename = "ANJBHLJDPPG")]
-    pub anjbhljdppg: String,
+    #[serde(rename = "ACMMEMBEMOI")]
+    pub acmmembemoi: String,
 
-    #[serde(rename = "FFMGPDNCIEI")]
-    pub ffmgpdnciei: i64,
+    #[serde(rename = "FIJJOLEOOMN")]
+    pub fijjoleoomn: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -35,15 +37,15 @@ pub struct IrodoriChessCardExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<f64>,
 
-    #[serde(rename = "LMDGHMAJADG")]
-    pub lmdghmajadg: Vec<Lmdghmajadg>,
+    #[serde(rename = "CHHMJNPHLJP")]
+    pub chhmjnphljp: Vec<Chhmjnphljp>,
 
-    #[serde(rename = "HCBOLHJFIJB")]
-    pub hcbolhjfijb: Option<Hcbolhjfijb>,
+    #[serde(rename = "MDKOGCPIILE")]
+    pub mdkogcpiile: Option<Mdkogcpiile>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nngpdloekfa {
+pub struct Cfhnhplblhe {
     #[serde(rename = "targetType")]
     pub target_type: Option<TargetType>,
 
@@ -61,15 +63,15 @@ pub struct Nngpdloekfa {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Lmdghmajadg {
-    #[serde(rename = "JOLMKPBJOHI")]
-    pub jolmkpbjohi: Option<Jolmkpbjohi>,
+pub struct Chhmjnphljp {
+    #[serde(rename = "KLANCDAEKGF")]
+    pub klancdaekgf: Option<Klancdaekgf>,
 
-    #[serde(rename = "NIDIFGEJLJE")]
-    pub nidifgejlje: Option<Nidifgejlje>,
+    #[serde(rename = "JOKNHAHGPOK")]
+    pub joknhahgpok: Option<Joknhahgpok>,
 
-    #[serde(rename = "GNEPGOIPDOL")]
-    pub gnepgoipdol: Option<f64>,
+    #[serde(rename = "PFCFNJJAKNH")]
+    pub pfcfnjjaknh: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -106,16 +108,16 @@ pub enum TargetType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hcbolhjfijb {
-    #[serde(rename = "IRODORI_CARD_QUALITY_GOOD")]
-    IrodoriCardQualityGood,
+pub enum Joknhahgpok {
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
+    IrodoriCardNumericalBase,
 
-    #[serde(rename = "IRODORI_CARD_QUALITY_PERCECT")]
-    IrodoriCardQualityPercect,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
+    IrodoriCardNumericalPercentage,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jolmkpbjohi {
+pub enum Klancdaekgf {
     #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK")]
     IrodoriCardNumericalAttack,
 
@@ -130,17 +132,18 @@ pub enum Jolmkpbjohi {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Nidifgejlje {
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
-    IrodoriCardNumericalBase,
+pub enum Mdkogcpiile {
+    #[serde(rename = "IRODORI_CARD_QUALITY_GOOD")]
+    IrodoriCardQualityGood,
 
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
-    IrodoriCardNumericalPercentage,
+    #[serde(rename = "IRODORI_CARD_QUALITY_PERCECT")]
+    IrodoriCardQualityPercect,
 }
 
 pub fn load() -> Result<IrodoriChessCardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriChessCardExcelConfigData.json",
     ]

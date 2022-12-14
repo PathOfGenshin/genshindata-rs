@@ -2,20 +2,22 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriChessGearExcelConfigData = Vec<IrodoriChessGearExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriChessGearExcelConfigDatum {
-    #[serde(rename = "HDIBKFFPNAL")]
-    pub hdibkffpnal: i64,
+    #[serde(rename = "DAPCKMONPPB")]
+    pub dapckmonppb: i64,
 
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "MKKFGGCINAP")]
-    pub mkkfggcinap: i64,
+    #[serde(rename = "JLMNLNPBEKP")]
+    pub jlmnlnpbekp: i64,
 
     #[serde(rename = "gearNameTextMapHash")]
     pub gear_name_text_map_hash: i64,
@@ -29,8 +31,8 @@ pub struct IrodoriChessGearExcelConfigDatum {
     #[serde(rename = "gearIconPath")]
     pub gear_icon_path: String,
 
-    #[serde(rename = "MKCIPDJLKKM")]
-    pub mkcipdjlkkm: String,
+    #[serde(rename = "JPIGAHDGKHJ")]
+    pub jpigahdgkhj: String,
 
     #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
@@ -47,13 +49,14 @@ pub struct IrodoriChessGearExcelConfigDatum {
     #[serde(rename = "isEnableRotate")]
     pub is_enable_rotate: Option<bool>,
 
-    #[serde(rename = "FEJKBEJKCOF")]
-    pub fejkbejkcof: Option<i64>,
+    #[serde(rename = "KCKGHOGJOBM")]
+    pub kckghogjobm: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriChessGearExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriChessGearExcelConfigData.json",
     ]

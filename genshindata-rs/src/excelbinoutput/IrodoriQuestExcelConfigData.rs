@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriQuestExcelConfigData = Vec<IrodoriQuestExcelConfigDatum>;
@@ -14,14 +16,14 @@ pub struct IrodoriQuestExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "OIKBKJGKJIP")]
-    pub oikbkjgkjip: Vec<i64>,
+    #[serde(rename = "DLHJHCDKBPN")]
+    pub dlhjhcdkbpn: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "HAEKMEKBCEN")]
-    pub haekmekbcen: i64,
+    #[serde(rename = "AIPKIHDAPOJ")]
+    pub aipkihdapoj: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -29,19 +31,20 @@ pub struct IrodoriQuestExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "FKNOMDJNOGC")]
-    pub fknomdjnogc: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "CAHKKMONMJC")]
+    pub cahkkmonmjc: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
 
-    #[serde(rename = "KDMDJJNBJLB")]
-    pub kdmdjjnbjlb: Option<String>,
+    #[serde(rename = "AKGCFJAILBN")]
+    pub akgcfjailbn: Option<String>,
 }
 
 pub fn load() -> Result<IrodoriQuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriQuestExcelConfigData.json",
     ]

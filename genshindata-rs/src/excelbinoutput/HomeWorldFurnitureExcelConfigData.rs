@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HomeWorldFurnitureExcelConfigData = Vec<HomeWorldFurnitureExcelConfigDatum>;
@@ -29,8 +31,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "cost")]
     pub cost: Option<i64>,
 
-    #[serde(rename = "ILELJMLDKJD")]
-    pub ileljmldkjd: Option<i64>,
+    #[serde(rename = "FKDAJOKFHII")]
+    pub fkdajokfhii: Option<i64>,
 
     #[serde(rename = "itemIcon")]
     pub item_icon: String,
@@ -38,14 +40,17 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "effectIcon")]
     pub effect_icon: EffectIcon,
 
-    #[serde(rename = "furnitureNameTextMapHash")]
-    pub furniture_name_text_map_hash: Option<f64>,
+    #[serde(rename = "IBPHMOFJCLH")]
+    pub ibphmofjclh: Option<f64>,
 
     #[serde(rename = "rankLevel")]
     pub rank_level: i64,
 
     #[serde(rename = "jsonName")]
     pub json_name: JsonName,
+
+    #[serde(rename = "BIMHLPMNPDJ")]
+    pub bimhlpmnpdj: Vec<i64>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -65,8 +70,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "rank")]
     pub rank: Option<i64>,
 
-    #[serde(rename = "FEFLOACIIHG")]
-    pub fefloaciihg: Option<Fefloaciihg>,
+    #[serde(rename = "PKKHGGDHCFG")]
+    pub pkkhggdhcfg: Option<Pkkhggdhcfg>,
 
     #[serde(rename = "isUnique")]
     pub is_unique: Option<i64>,
@@ -77,17 +82,17 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "height")]
     pub height: Option<f64>,
 
-    #[serde(rename = "HOPAHNBOFGL")]
-    pub hopahnbofgl: Option<i64>,
+    #[serde(rename = "PAHDEGEBCGL")]
+    pub pahdegebcgl: Option<i64>,
 
-    #[serde(rename = "LNPMOGCFENE")]
-    pub lnpmogcfene: Option<i64>,
+    #[serde(rename = "OCANMCBHHOG")]
+    pub ocanmcbhhog: Option<i64>,
 
-    #[serde(rename = "NEPDEOAKJMK")]
-    pub nepdeoakjmk: Option<i64>,
+    #[serde(rename = "MFGACDIOHGF")]
+    pub mfgacdiohgf: Option<i64>,
 
-    #[serde(rename = "OBHGNBCACOO")]
-    pub obhgnbcacoo: Option<i64>,
+    #[serde(rename = "PBNIGMKKMEO")]
+    pub pbnigmkkmeo: Option<i64>,
 
     #[serde(rename = "roomSceneID")]
     pub room_scene_id: Option<i64>,
@@ -95,11 +100,14 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "NAIHAJEDPOL")]
-    pub naihajedpol: Option<String>,
+    #[serde(rename = "JEIFIEHKBJM")]
+    pub jeifiehkbjm: Option<String>,
 
-    #[serde(rename = "IDMFBPPJMEN")]
-    pub idmfbppjmen: Option<bool>,
+    #[serde(rename = "EFOOPFLOABA")]
+    pub efoopfloaba: Option<i64>,
+
+    #[serde(rename = "furnitureNameTextMapHash")]
+    pub furniture_name_text_map_hash: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -112,7 +120,43 @@ pub enum EffectIcon {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fefloaciihg {
+pub enum ItemType {
+    #[serde(rename = "ITEM_FURNITURE")]
+    ItemFurniture,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum JsonName {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "HomeworldGroup_0001")]
+    HomeworldGroup0001,
+
+    #[serde(rename = "HomeworldGroup_0002")]
+    HomeworldGroup0002,
+
+    #[serde(rename = "HomeworldGroup_0003")]
+    HomeworldGroup0003,
+
+    #[serde(rename = "HomeworldGroup_0004")]
+    HomeworldGroup0004,
+
+    #[serde(rename = "HomeworldGroup_0005")]
+    HomeworldGroup0005,
+
+    #[serde(rename = "HomeworldGroup_0006")]
+    HomeworldGroup0006,
+
+    #[serde(rename = "HomeworldGroup_0007")]
+    HomeworldGroup0007,
+
+    #[serde(rename = "HomeworldGroup_0008")]
+    HomeworldGroup0008,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Pkkhggdhcfg {
     #[serde(rename = "Apartment")]
     Apartment,
 
@@ -166,42 +210,6 @@ pub enum Fefloaciihg {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum ItemType {
-    #[serde(rename = "ITEM_FURNITURE")]
-    ItemFurniture,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum JsonName {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "HomeworldGroup_0001")]
-    HomeworldGroup0001,
-
-    #[serde(rename = "HomeworldGroup_0002")]
-    HomeworldGroup0002,
-
-    #[serde(rename = "HomeworldGroup_0003")]
-    HomeworldGroup0003,
-
-    #[serde(rename = "HomeworldGroup_0004")]
-    HomeworldGroup0004,
-
-    #[serde(rename = "HomeworldGroup_0005")]
-    HomeworldGroup0005,
-
-    #[serde(rename = "HomeworldGroup_0006")]
-    HomeworldGroup0006,
-
-    #[serde(rename = "HomeworldGroup_0007")]
-    HomeworldGroup0007,
-
-    #[serde(rename = "HomeworldGroup_0008")]
-    HomeworldGroup0008,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
 pub enum SurfaceType {
     #[serde(rename = "Animal")]
     Animal,
@@ -250,8 +258,9 @@ pub enum SurfaceType {
 }
 
 pub fn load() -> Result<HomeWorldFurnitureExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HomeWorldFurnitureExcelConfigData.json",
     ]

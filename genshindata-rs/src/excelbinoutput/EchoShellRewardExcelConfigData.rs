@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type EchoShellRewardExcelConfigData = Vec<EchoShellRewardExcelConfigDatum>;
@@ -14,16 +16,17 @@ pub struct EchoShellRewardExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "EEFPALNMLLC")]
-    pub eefpalnmllc: i64,
+    #[serde(rename = "AJHEGJINPKM")]
+    pub ajhegjinpkm: i64,
 
-    #[serde(rename = "HFEPHNHPPKJ")]
-    pub hfephnhppkj: Option<bool>,
+    #[serde(rename = "NNBHAGDDMFP")]
+    pub nnbhagddmfp: Option<bool>,
 }
 
 pub fn load() -> Result<EchoShellRewardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "EchoShellRewardExcelConfigData.json",
     ]

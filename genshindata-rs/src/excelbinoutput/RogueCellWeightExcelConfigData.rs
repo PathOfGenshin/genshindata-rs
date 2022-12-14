@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueCellWeightExcelConfigData = Vec<RogueCellWeightExcelConfigDatum>;
@@ -11,19 +13,20 @@ pub struct RogueCellWeightExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CGKKLOGJGFA")]
-    pub cgkklogjgfa: i64,
+    #[serde(rename = "ACPKLAFHGGN")]
+    pub acpklafhggn: i64,
 
-    #[serde(rename = "LNFFFGFKHBG")]
-    pub lnfffgfkhbg: i64,
+    #[serde(rename = "LPHKJFAHEGD")]
+    pub lphkjfahegd: i64,
 
-    #[serde(rename = "CIJDFAEFFCN")]
-    pub cijdfaeffcn: i64,
+    #[serde(rename = "BJHBCDOLDPP")]
+    pub bjhbcdoldpp: i64,
 }
 
 pub fn load() -> Result<RogueCellWeightExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueCellWeightExcelConfigData.json",
     ]

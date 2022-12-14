@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AvatarExcelConfigData = Vec<AvatarExcelConfigDatum>;
@@ -11,11 +13,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "bodyType")]
     pub body_type: BodyType,
 
-    #[serde(rename = "scriptDataPathHashSuffix")]
-    pub script_data_path_hash_suffix: i64,
-
-    #[serde(rename = "scriptDataPathHashPre")]
-    pub script_data_path_hash_pre: i64,
+    #[serde(rename = "scriptDataPathHash")]
+    pub script_data_path_hash: i64,
 
     #[serde(rename = "iconName")]
     pub icon_name: String,
@@ -29,11 +28,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "chargeEfficiency")]
     pub charge_efficiency: f64,
 
-    #[serde(rename = "combatConfigHashSuffix")]
-    pub combat_config_hash_suffix: i64,
-
-    #[serde(rename = "combatConfigHashPre")]
-    pub combat_config_hash_pre: i64,
+    #[serde(rename = "FBNHGKAFFPH")]
+    pub fbnhgkaffph: i64,
 
     #[serde(rename = "initialWeapon")]
     pub initial_weapon: i64,
@@ -41,26 +37,17 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "weaponType")]
     pub weapon_type: WeaponType,
 
-    #[serde(rename = "manekinPathHashSuffix")]
-    pub manekin_path_hash_suffix: i64,
-
-    #[serde(rename = "manekinPathHashPre")]
-    pub manekin_path_hash_pre: i64,
+    #[serde(rename = "JMLNMPCLJPD")]
+    pub jmlnmpcljpd: i64,
 
     #[serde(rename = "imageName")]
     pub image_name: String,
 
-    #[serde(rename = "MJGNGJHBAGI")]
-    pub mjgngjhbagi: Option<i64>,
+    #[serde(rename = "gachaCardNameHash")]
+    pub gacha_card_name_hash: Option<i64>,
 
-    #[serde(rename = "gachaCardNameHashPre")]
-    pub gacha_card_name_hash_pre: Option<i64>,
-
-    #[serde(rename = "CBFOEKCENEA")]
-    pub cbfoekcenea: Option<i64>,
-
-    #[serde(rename = "PAGADEAKHAC")]
-    pub pagadeakhac: Option<i64>,
+    #[serde(rename = "manekinPathHash")]
+    pub manekin_path_hash: Option<i64>,
 
     #[serde(rename = "cutsceneShow")]
     pub cutscene_show: String,
@@ -74,11 +61,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "candSkillDepotIds")]
     pub cand_skill_depot_ids: Vec<i64>,
 
-    #[serde(rename = "manekinJsonConfigHashSuffix")]
-    pub manekin_json_config_hash_suffix: i64,
-
-    #[serde(rename = "manekinJsonConfigHashPre")]
-    pub manekin_json_config_hash_pre: i64,
+    #[serde(rename = "manekinJsonConfigHash")]
+    pub manekin_json_config_hash: i64,
 
     #[serde(rename = "manekinMotionConfig")]
     pub manekin_motion_config: i64,
@@ -122,17 +106,11 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "propGrowCurves")]
     pub prop_grow_curves: Vec<PropGrowCurve>,
 
-    #[serde(rename = "prefabPathRagdollHashSuffix")]
-    pub prefab_path_ragdoll_hash_suffix: i64,
+    #[serde(rename = "GJCPCNGOAGI")]
+    pub gjcpcngoagi: i64,
 
-    #[serde(rename = "prefabPathRagdollHashPre")]
-    pub prefab_path_ragdoll_hash_pre: i64,
-
-    #[serde(rename = "animatorConfigPathHashSuffix")]
-    pub animator_config_path_hash_suffix: i64,
-
-    #[serde(rename = "NJIEKKLKLLD")]
-    pub njiekklklld: i64,
+    #[serde(rename = "prefabPathHash")]
+    pub prefab_path_hash: i64,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -140,29 +118,17 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "prefabPathHashSuffix")]
-    pub prefab_path_hash_suffix: i64,
+    #[serde(rename = "DAHDIAPDAPB")]
+    pub dahdiapdapb: i64,
 
-    #[serde(rename = "prefabPathHashPre")]
-    pub prefab_path_hash_pre: i64,
+    #[serde(rename = "prefabPathRemoteHash")]
+    pub prefab_path_remote_hash: i64,
 
-    #[serde(rename = "prefabPathRemoteHashSuffix")]
-    pub prefab_path_remote_hash_suffix: i64,
+    #[serde(rename = "controllerPathHash")]
+    pub controller_path_hash: i64,
 
-    #[serde(rename = "prefabPathRemoteHashPre")]
-    pub prefab_path_remote_hash_pre: i64,
-
-    #[serde(rename = "controllerPathHashSuffix")]
-    pub controller_path_hash_suffix: i64,
-
-    #[serde(rename = "controllerPathHashPre")]
-    pub controller_path_hash_pre: i64,
-
-    #[serde(rename = "controllerPathRemoteHashSuffix")]
-    pub controller_path_remote_hash_suffix: i64,
-
-    #[serde(rename = "controllerPathRemoteHashPre")]
-    pub controller_path_remote_hash_pre: i64,
+    #[serde(rename = "controllerPathRemoteHash")]
+    pub controller_path_remote_hash: i64,
 
     #[serde(rename = "LODPatternName")]
     pub lod_pattern_name: String,
@@ -170,20 +136,14 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "useType")]
     pub use_type: Option<UseType>,
 
-    #[serde(rename = "CEKDEENNDNB")]
-    pub cekdeenndnb: Option<i64>,
-
-    #[serde(rename = "gachaImageNameHashPre")]
-    pub gacha_image_name_hash_pre: Option<i64>,
+    #[serde(rename = "coopPicNameHash")]
+    pub coop_pic_name_hash: Option<i64>,
 
     #[serde(rename = "isRangeAttack")]
     pub is_range_attack: Option<bool>,
 
-    #[serde(rename = "gachaImageNameHashSuffix")]
-    pub gacha_image_name_hash_suffix: Option<i64>,
-
-    #[serde(rename = "coopPicNameHashPre")]
-    pub coop_pic_name_hash_pre: Option<i64>,
+    #[serde(rename = "prefabPathRagdollHash")]
+    pub prefab_path_ragdoll_hash: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -289,8 +249,9 @@ pub enum WeaponType {
 }
 
 pub fn load() -> Result<AvatarExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AvatarExcelConfigData.json",
     ]

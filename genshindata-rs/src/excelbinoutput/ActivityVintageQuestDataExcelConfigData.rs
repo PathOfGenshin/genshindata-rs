@@ -2,37 +2,17 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
+use std::collections::HashMap;
 
-pub type ActivityVintageQuestDataExcelConfigData = Vec<ActivityVintageQuestDataExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct ActivityVintageQuestDataExcelConfigDatum {
-    #[serde(rename = "id")]
-    pub id: i64,
-
-    #[serde(rename = "questId")]
-    pub quest_id: i64,
-
-    #[serde(rename = "JKMIPDOFBCD")]
-    pub jkmipdofbcd: i64,
-
-    #[serde(rename = "chapterTitleTextMapHash")]
-    pub chapter_title_text_map_hash: i64,
-
-    #[serde(rename = "DGGMIFJMJBP")]
-    pub dggmifjmjbp: i64,
-
-    #[serde(rename = "HMMIBLBGDAN")]
-    pub hmmiblbgdan: i64,
-
-    #[serde(rename = "preQuestId")]
-    pub pre_quest_id: Option<i64>,
-}
+pub type ActivityVintageQuestDataExcelConfigData = Vec<HashMap<String, i64>>;
 
 pub fn load() -> Result<ActivityVintageQuestDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageQuestDataExcelConfigData.json",
     ]

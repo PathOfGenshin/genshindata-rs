@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ReunionMissionExcelConfigData = Vec<ReunionMissionExcelConfigDatum>;
@@ -20,25 +22,23 @@ pub struct ReunionMissionExcelConfigDatum {
     #[serde(rename = "finishRewardId")]
     pub finish_reward_id: Option<i64>,
 
-    #[serde(rename = "PIIKBPMFLON")]
-    pub piikbpmflon: Vec<i64>,
+    #[serde(rename = "EIFLBFCGGIC")]
+    pub eiflbfcggic: Vec<i64>,
 
-    #[serde(rename = "ABMCODFEHKA")]
-    pub abmcodfehka: Vec<i64>,
+    #[serde(rename = "JNBDIGDPBBD")]
+    pub jnbdigdpbbd: Vec<i64>,
 
-    #[serde(rename = "ECMDGHFCBJN")]
-    pub ecmdghfcbjn: Vec<i64>,
+    #[serde(rename = "PIIJCADFOHO")]
+    pub piijcadfoho: Vec<i64>,
 
-    #[serde(rename = "GEGPNJLFNPL")]
-    pub gegpnjlfnpl: i64,
-
-    #[serde(rename = "HDLIAKCLGHF")]
-    pub hdliakclghf: i64,
+    #[serde(rename = "EFNAPKJOLGJ")]
+    pub efnapkjolgj: i64,
 }
 
 pub fn load() -> Result<ReunionMissionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ReunionMissionExcelConfigData.json",
     ]

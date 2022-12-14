@@ -2,17 +2,19 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GadgetChainExcelConfigData = Vec<GadgetChainExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GadgetChainExcelConfigDatum {
-    #[serde(rename = "BHFAONDJLEA")]
-    pub bhfaondjlea: i64,
+    #[serde(rename = "itemPrefabPathHash")]
+    pub item_prefab_path_hash: i64,
 
-    #[serde(rename = "MKKFGGCINAP")]
-    pub mkkfggcinap: Option<i64>,
+    #[serde(rename = "JLMNLNPBEKP")]
+    pub jlmnlnpbekp: Option<i64>,
 
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
@@ -20,13 +22,14 @@ pub struct GadgetChainExcelConfigDatum {
     #[serde(rename = "buffList")]
     pub buff_list: Vec<i64>,
 
-    #[serde(rename = "LMFPBFABOMM")]
-    pub lmfpbfabomm: Option<bool>,
+    #[serde(rename = "EFGEGKNLOBL")]
+    pub efgegknlobl: Option<bool>,
 }
 
 pub fn load() -> Result<GadgetChainExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GadgetChainExcelConfigData.json",
     ]

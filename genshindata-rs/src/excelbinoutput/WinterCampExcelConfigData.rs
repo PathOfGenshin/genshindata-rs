@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WinterCampExcelConfigData = Vec<WinterCampExcelConfigDatum>;
@@ -14,52 +16,53 @@ pub struct WinterCampExcelConfigDatum {
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "GKJJBKIKFFO")]
-    pub gkjjbkikffo: Vec<i64>,
+    #[serde(rename = "JCLHDJBEOAN")]
+    pub jclhdjbeoan: Vec<i64>,
 
-    #[serde(rename = "HLOKFAPJFBL")]
-    pub hlokfapjfbl: i64,
+    #[serde(rename = "KOPHEIAEALJ")]
+    pub kopheiaealj: i64,
 
-    #[serde(rename = "HOKIPEJLOPB")]
-    pub hokipejlopb: i64,
+    #[serde(rename = "GJMBNNDBEAO")]
+    pub gjmbnndbeao: i64,
 
-    #[serde(rename = "EADDGIMALPE")]
-    pub eaddgimalpe: Vec<i64>,
+    #[serde(rename = "COOKMHIHCAF")]
+    pub cookmhihcaf: Vec<i64>,
 
-    #[serde(rename = "BGGDBPHGHOC")]
-    pub bggdbphghoc: Vec<i64>,
+    #[serde(rename = "JHDPOHHMMPI")]
+    pub jhdpohhmmpi: Vec<i64>,
 
-    #[serde(rename = "DNPOAELOGFJ")]
-    pub dnpoaelogfj: i64,
+    #[serde(rename = "HNJFMKGEJGB")]
+    pub hnjfmkgejgb: i64,
 
-    #[serde(rename = "JGNGBGGFIJJ")]
-    pub jgngbggfijj: i64,
+    #[serde(rename = "FBINEACJPKE")]
+    pub fbineacjpke: i64,
 
-    #[serde(rename = "ALAHGAHPGIL")]
-    pub alahgahpgil: Vec<i64>,
+    #[serde(rename = "KHKIPCBFEJB")]
+    pub khkipcbfejb: Vec<i64>,
 
-    #[serde(rename = "KIHNDACPELN")]
-    pub kihndacpeln: i64,
+    #[serde(rename = "BPLHLBAMCNE")]
+    pub bplhlbamcne: i64,
 
-    #[serde(rename = "KAHHPAAOCBE")]
-    pub kahhpaaocbe: Vec<i64>,
+    #[serde(rename = "OEKBCNDDBNE")]
+    pub oekbcnddbne: Vec<i64>,
 
-    #[serde(rename = "JEBMKCLJNMF")]
-    pub jebmkcljnmf: i64,
+    #[serde(rename = "DBBNBPLJMLH")]
+    pub dbbnbpljmlh: i64,
 
-    #[serde(rename = "ANEGALJDMNM")]
-    pub anegaljdmnm: i64,
+    #[serde(rename = "LEMJDMNPMFL")]
+    pub lemjdmnpmfl: i64,
 
-    #[serde(rename = "PBPKHNIGHLK")]
-    pub pbpkhnighlk: i64,
+    #[serde(rename = "EAMNLOHBMPC")]
+    pub eamnlohbmpc: i64,
 
-    #[serde(rename = "DOJJDMALAME")]
-    pub dojjdmalame: i64,
+    #[serde(rename = "KGNNFIBECLO")]
+    pub kgnnfibeclo: i64,
 }
 
 pub fn load() -> Result<WinterCampExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WinterCampExcelConfigData.json",
     ]

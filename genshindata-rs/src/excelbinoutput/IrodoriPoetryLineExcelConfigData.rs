@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriPoetryLineExcelConfigData = Vec<IrodoriPoetryLineExcelConfigDatum>;
@@ -14,13 +16,14 @@ pub struct IrodoriPoetryLineExcelConfigDatum {
     #[serde(rename = "contentTextMapHash")]
     pub content_text_map_hash: i64,
 
-    #[serde(rename = "NINCCMJPLJP")]
-    pub ninccmjpljp: Option<i64>,
+    #[serde(rename = "AIHEFPJHIJC")]
+    pub aihefpjhijc: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriPoetryLineExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriPoetryLineExcelConfigData.json",
     ]

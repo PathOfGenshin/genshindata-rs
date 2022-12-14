@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomLevelTagSortConfigData = Vec<CustomLevelTagSortConfigDatum>;
@@ -11,16 +13,17 @@ pub struct CustomLevelTagSortConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "NJLNAENIANF")]
-    pub njlnaenianf: String,
+    #[serde(rename = "JFGDBHHKBOH")]
+    pub jfgdbhhkboh: String,
 
-    #[serde(rename = "FEOOAPLOCCK")]
-    pub feooaplocck: String,
+    #[serde(rename = "KAPBFPJHFGD")]
+    pub kapbfpjhfgd: String,
 }
 
 pub fn load() -> Result<CustomLevelTagSortConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomLevelTagSortConfigData.json",
     ]

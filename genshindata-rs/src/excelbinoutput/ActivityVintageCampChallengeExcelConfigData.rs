@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageCampChallengeExcelConfigData = Vec<ActivityVintageCampChallengeExcelConfigDatum>;
@@ -11,43 +13,44 @@ pub struct ActivityVintageCampChallengeExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CNGBDMFLGGF")]
-    pub cngbdmflggf: i64,
+    #[serde(rename = "IIOGPJDCBDA")]
+    pub iiogpjdcbda: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "KLJLLCKBJGF")]
-    pub kljllckbjgf: i64,
+    #[serde(rename = "MKNIIAMCKMM")]
+    pub mkniiamckmm: i64,
 
-    #[serde(rename = "NKMBOEBPONE")]
-    pub nkmboebpone: i64,
+    #[serde(rename = "MCFFLGAJCDD")]
+    pub mcfflgajcdd: i64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "CEFGGOMEFBI")]
-    pub cefggomefbi: Vec<String>,
+    #[serde(rename = "LPODHPEHPJD")]
+    pub lpodhpehpjd: Vec<String>,
 
-    #[serde(rename = "AOEBEJKFEBA")]
-    pub aoebejkfeba: Vec<i64>,
+    #[serde(rename = "LDFLPBNDCFH")]
+    pub ldflpbndcfh: Vec<i64>,
 
-    #[serde(rename = "PLHNOFMNEHM")]
-    pub plhnofmnehm: String,
+    #[serde(rename = "BNOOGNDAOLI")]
+    pub bnoogndaoli: String,
 
-    #[serde(rename = "BPONEFHCAFP")]
-    pub bponefhcafp: Vec<i64>,
+    #[serde(rename = "EFOMALADEDB")]
+    pub efomaladedb: Vec<i64>,
 
-    #[serde(rename = "IAPJAOPEIOP")]
-    pub iapjaopeiop: i64,
+    #[serde(rename = "KDJHCDAFHII")]
+    pub kdjhcdafhii: i64,
 
-    #[serde(rename = "CPOAMLCBFAG")]
-    pub cpoamlcbfag: i64,
+    #[serde(rename = "NBBAGHJFMAP")]
+    pub nbbaghjfmap: i64,
 }
 
 pub fn load() -> Result<ActivityVintageCampChallengeExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageCampChallengeExcelConfigData.json",
     ]

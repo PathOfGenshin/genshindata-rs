@@ -2,28 +2,31 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type InferencePageExcelConfigData = Vec<InferencePageExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferencePageExcelConfigDatum {
-    #[serde(rename = "DBLKEGDILKA")]
-    pub dblkegdilka: i64,
+    #[serde(rename = "GNJHEMDOCLN")]
+    pub gnjhemdocln: i64,
 
     #[serde(rename = "parentQuestId")]
     pub parent_quest_id: i64,
 
-    #[serde(rename = "DOPBHOCIDME")]
-    pub dopbhocidme: Vec<i64>,
+    #[serde(rename = "OHFIOEFEJBI")]
+    pub ohfioefejbi: Vec<i64>,
 
-    #[serde(rename = "MINKOMACLFC")]
-    pub minkomaclfc: i64,
+    #[serde(rename = "OFLGAJMFOBA")]
+    pub oflgajmfoba: i64,
 }
 
 pub fn load() -> Result<InferencePageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "InferencePageExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ReunionGuideExcelConfigData = Vec<ReunionGuideExcelConfigDatum>;
@@ -11,40 +13,38 @@ pub struct ReunionGuideExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BCADPALJLDF")]
-    pub bcadpaljldf: i64,
+    #[serde(rename = "FLAFPDCJLGO")]
+    pub flafpdcjlgo: i64,
 
-    #[serde(rename = "CLCOAOMOANE")]
-    pub clcoaomoane: i64,
+    #[serde(rename = "LNOHGHNENHB")]
+    pub lnohghnenhb: i64,
 
-    #[serde(rename = "MKBGMGOMPNL")]
-    pub mkbgmgompnl: i64,
+    #[serde(rename = "MEOKCNFFDCK")]
+    pub meokcnffdck: i64,
 
-    #[serde(rename = "FHNMDEAIPHF")]
-    pub fhnmdeaiphf: i64,
+    #[serde(rename = "GCPIHOGGOKA")]
+    pub gcpihoggoka: String,
 
-    #[serde(rename = "OMFIPPDFFPN")]
-    pub omfippdffpn: String,
+    #[serde(rename = "CKPIACLNHBP")]
+    pub ckpiaclnhbp: Vec<Ckpiaclnhbp>,
 
-    #[serde(rename = "HCNONMEJIBF")]
-    pub hcnonmejibf: Vec<Hcnonmejibf>,
-
-    #[serde(rename = "KEKECECDMMH")]
-    pub kekececdmmh: Option<String>,
+    #[serde(rename = "MJCCLHOFMNI")]
+    pub mjcclhofmni: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hcnonmejibf {
+pub struct Ckpiaclnhbp {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 
     #[serde(rename = "type")]
-    pub hcnonmejibf_type: Option<String>,
+    pub ckpiaclnhbp_type: Option<String>,
 }
 
 pub fn load() -> Result<ReunionGuideExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ReunionGuideExcelConfigData.json",
     ]

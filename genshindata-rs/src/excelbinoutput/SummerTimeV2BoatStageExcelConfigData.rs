@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SummerTimeV2BoatStageExcelConfigData = Vec<SummerTimeV2BoatStageExcelConfigDatum>;
@@ -23,20 +25,20 @@ pub struct SummerTimeV2BoatStageExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "PGGOKANNJLJ")]
-    pub pggokannjlj: i64,
+    #[serde(rename = "JICEOLNKCME")]
+    pub jiceolnkcme: i64,
 
     #[serde(rename = "conditionType")]
     pub condition_type: Vec<ConditionType>,
 
-    #[serde(rename = "FKKPOIAEOBJ")]
-    pub fkkpoiaeobj: Vec<i64>,
+    #[serde(rename = "ODEILDHDJGC")]
+    pub odeildhdjgc: Vec<i64>,
 
-    #[serde(rename = "KDAJANAFILK")]
-    pub kdajanafilk: Vec<i64>,
+    #[serde(rename = "CFINHMKFMKB")]
+    pub cfinhmkfmkb: Vec<i64>,
 
-    #[serde(rename = "ABMOLAJNEHE")]
-    pub abmolajnehe: Vec<i64>,
+    #[serde(rename = "ABEMIFAPKLH")]
+    pub abemifapklh: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -49,8 +51,9 @@ pub enum ConditionType {
 }
 
 pub fn load() -> Result<SummerTimeV2BoatStageExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SummerTimeV2BoatStageExcelConfigData.json",
     ]

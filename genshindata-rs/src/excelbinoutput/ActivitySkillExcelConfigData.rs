@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySkillExcelConfigData = Vec<ActivitySkillExcelConfigDatum>;
@@ -26,8 +28,8 @@ pub struct ActivitySkillExcelConfigDatum {
     #[serde(rename = "energyMax")]
     pub energy_max: i64,
 
-    #[serde(rename = "HAIFGENDHCN")]
-    pub haifgendhcn: Vec<i64>,
+    #[serde(rename = "EEOPHAJKBJB")]
+    pub eeophajkbjb: Vec<i64>,
 
     #[serde(rename = "cdTime")]
     pub cd_time: f64,
@@ -53,11 +55,11 @@ pub struct ActivitySkillExcelConfigDatum {
     #[serde(rename = "interruptTextTextMapHash")]
     pub interrupt_text_text_map_hash: i64,
 
-    #[serde(rename = "AIHBEPMALOK")]
-    pub aihbepmalok: Option<i64>,
+    #[serde(rename = "JGPJNNADHEA")]
+    pub jgpjnnadhea: Option<i64>,
 
-    #[serde(rename = "KKCPCFAFOKM")]
-    pub kkcpcfafokm: Option<bool>,
+    #[serde(rename = "NGNOHCDNOKH")]
+    pub ngnohcdnokh: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -70,8 +72,9 @@ pub enum SkillTarget {
 }
 
 pub fn load() -> Result<ActivitySkillExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySkillExcelConfigData.json",
     ]

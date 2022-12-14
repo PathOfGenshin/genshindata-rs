@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityCrystalLinkDifficultyExcelConfigData = Vec<ActivityCrystalLinkDifficultyExcelConfigDatum>;
@@ -14,8 +16,8 @@ pub struct ActivityCrystalLinkDifficultyExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "DKHKDONKPOF")]
-    pub dkhkdonkpof: i64,
+    #[serde(rename = "OMHMDNEFHKP")]
+    pub omhmdnefhkp: i64,
 
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
@@ -28,8 +30,9 @@ pub struct ActivityCrystalLinkDifficultyExcelConfigDatum {
 }
 
 pub fn load() -> Result<ActivityCrystalLinkDifficultyExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityCrystalLinkDifficultyExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoguelikeCurseExcelConfigData = Vec<RoguelikeCurseExcelConfigDatum>;
@@ -14,40 +16,41 @@ pub struct RoguelikeCurseExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "JNJJOIFBAHP")]
-    pub jnjjoifbahp: i64,
+    #[serde(rename = "JPFCODFFPOL")]
+    pub jpfcodffpol: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LIKIBHAPBML")]
-    pub likibhapbml: Likibhapbml,
+    #[serde(rename = "MOCCNJPNFCP")]
+    pub moccnjpnfcp: Moccnjpnfcp,
 
-    #[serde(rename = "HKHMNJCCKPB")]
-    pub hkhmnjcckpb: Option<bool>,
+    #[serde(rename = "MEJPPEIAEAA")]
+    pub mejppeiaeaa: Option<bool>,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<f64>,
 
-    #[serde(rename = "GBKHEBJBIGC")]
-    pub gbkhebjbigc: Vec<bool>,
+    #[serde(rename = "IPHDOCKEMDE")]
+    pub iphdockemde: Vec<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Likibhapbml {
+pub struct Moccnjpnfcp {
     #[serde(rename = "effectType")]
     pub effect_type: String,
 
-    #[serde(rename = "IOGACGMFBKC")]
-    pub iogacgmfbkc: String,
+    #[serde(rename = "PIOMJPCNDKA")]
+    pub piomjpcndka: String,
 
-    #[serde(rename = "GFPCNPAKAFH")]
-    pub gfpcnpakafh: String,
+    #[serde(rename = "AHIDGHIMNBK")]
+    pub ahidghimnbk: String,
 }
 
 pub fn load() -> Result<RoguelikeCurseExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoguelikeCurseExcelConfigData.json",
     ]

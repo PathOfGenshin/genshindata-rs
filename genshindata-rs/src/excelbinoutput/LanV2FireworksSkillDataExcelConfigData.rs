@@ -2,52 +2,55 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type LanV2FireworksSkillDataExcelConfigData = Vec<LanV2FireworksSkillDataExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LanV2FireworksSkillDataExcelConfigDatum {
-    #[serde(rename = "LPCEOEMLDBG")]
-    pub lpceoemldbg: i64,
+    #[serde(rename = "FFEPABHJKDG")]
+    pub ffepabhjkdg: i64,
 
-    #[serde(rename = "DCGGDMIPIAG")]
-    pub dcggdmipiag: String,
+    #[serde(rename = "IGNFAMBBNAM")]
+    pub ignfambbnam: String,
 
-    #[serde(rename = "HPMFPCLIFKF")]
-    pub hpmfpclifkf: i64,
+    #[serde(rename = "IJGGHNNFAJB")]
+    pub ijgghnnfajb: i64,
 
-    #[serde(rename = "DDEFMMDJAKP")]
-    pub ddefmmdjakp: i64,
+    #[serde(rename = "DIEHPPNOPEF")]
+    pub diehppnopef: i64,
 
-    #[serde(rename = "PJCGIJICEAB")]
-    pub pjcgijiceab: Option<i64>,
+    #[serde(rename = "DLEONIFAJCE")]
+    pub dleonifajce: Option<i64>,
 
-    #[serde(rename = "FJNIOCMFJAE")]
-    pub fjniocmfjae: Option<i64>,
+    #[serde(rename = "BMOLJCKKANL")]
+    pub bmoljckkanl: Option<i64>,
 
-    #[serde(rename = "NNNMCDDDPEI")]
-    pub nnnmcdddpei: Option<i64>,
+    #[serde(rename = "CFFNLKBNILA")]
+    pub cffnlkbnila: Option<i64>,
 
-    #[serde(rename = "LGFLPDDACPF")]
-    pub lgflpddacpf: Vec<i64>,
+    #[serde(rename = "FNHANBCDGBJ")]
+    pub fnhanbcdgbj: Vec<i64>,
 
-    #[serde(rename = "HOPEMCLJNJN")]
-    pub hopemcljnjn: i64,
+    #[serde(rename = "PPDOPFEOBIG")]
+    pub ppdopfeobig: i64,
 
-    #[serde(rename = "JHLHNFNBMAK")]
-    pub jhlhnfnbmak: i64,
+    #[serde(rename = "DKOLHEPIKIP")]
+    pub dkolhepikip: i64,
 
-    #[serde(rename = "PCIKFMDHEEG")]
-    pub pcikfmdheeg: Vec<i64>,
+    #[serde(rename = "ECKMPLJMNPH")]
+    pub eckmpljmnph: Vec<i64>,
 
-    #[serde(rename = "NBGMKNCCLFD")]
-    pub nbgmkncclfd: Option<i64>,
+    #[serde(rename = "FIHNOBPKGGD")]
+    pub fihnobpkggd: Option<i64>,
 }
 
 pub fn load() -> Result<LanV2FireworksSkillDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "LanV2FireworksSkillDataExcelConfigData.json",
     ]

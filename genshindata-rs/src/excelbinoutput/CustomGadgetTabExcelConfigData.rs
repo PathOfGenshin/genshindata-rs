@@ -2,51 +2,41 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomGadgetTabExcelConfigData = Vec<CustomGadgetTabExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomGadgetTabExcelConfigDatum {
-    #[serde(rename = "ODBDHLCFIOI")]
-    pub odbdhlcfioi: i64,
+    #[serde(rename = "FDFAHKHDLDG")]
+    pub fdfahkhdldg: i64,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
 
-    #[serde(rename = "BAPJKDMIIKC")]
-    pub bapjkdmiikc: Vec<String>,
+    #[serde(rename = "MFAIAKIOMCL")]
+    pub mfaiakiomcl: Vec<String>,
 
-    #[serde(rename = "MALHNNBHNGL")]
-    pub malhnnbhngl: Malhnnbhngl,
+    #[serde(rename = "IGADKKCLMKN")]
+    pub igadkkclmkn: Igadkkclmkn,
 
-    #[serde(rename = "JIMKJHNFFEN")]
-    pub jimkjhnffen: Jimkjhnffen,
+    #[serde(rename = "PJKBDGJJAMI")]
+    pub pjkbdgjjami: Pjkbdgjjami,
 
-    #[serde(rename = "HADPJDHCNGK")]
-    pub hadpjdhcngk: i64,
+    #[serde(rename = "CEEDBCJGKEG")]
+    pub ceedbcjgkeg: i64,
 
-    #[serde(rename = "CDPHHBAENJC")]
-    pub cdphhbaenjc: i64,
+    #[serde(rename = "IPDJCKKFPBP")]
+    pub ipdjckkfpbp: i64,
 
-    #[serde(rename = "PJKGENLMCNB")]
-    pub pjkgenlmcnb: Option<i64>,
+    #[serde(rename = "EEFFHGBFNCG")]
+    pub eeffhgbfncg: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jimkjhnffen {
-    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
-    EffSceneObjFlowerShlefSwitch,
-
-    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
-    EffSceneObjFlowerSwitch,
-
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Malhnnbhngl {
+pub enum Igadkkclmkn {
     #[serde(rename = "Eff_SceneObj_FlowerPot_Selected")]
     EffSceneObjFlowerPotSelected,
 
@@ -60,9 +50,22 @@ pub enum Malhnnbhngl {
     Empty,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Pjkbdgjjami {
+    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
+    EffSceneObjFlowerShlefSwitch,
+
+    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
+    EffSceneObjFlowerSwitch,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
 pub fn load() -> Result<CustomGadgetTabExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomGadgetTabExcelConfigData.json",
     ]

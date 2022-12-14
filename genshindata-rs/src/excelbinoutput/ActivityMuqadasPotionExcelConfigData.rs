@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityMuqadasPotionExcelConfigData = Vec<ActivityMuqadasPotionExcelConfigDatum>;
@@ -11,76 +13,77 @@ pub struct ActivityMuqadasPotionExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "GJOEJMLOAKF")]
-    pub gjoejmloakf: i64,
+    #[serde(rename = "KIFPAEJMAIB")]
+    pub kifpaejmaib: i64,
 
     #[serde(rename = "energyLimit")]
     pub energy_limit: i64,
 
-    #[serde(rename = "DGNBPKJPAIC")]
-    pub dgnbpkjpaic: i64,
+    #[serde(rename = "IFOAKGAMOLL")]
+    pub ifoakgamoll: i64,
 
-    #[serde(rename = "MJBJOBPFMFO")]
-    pub mjbjobpfmfo: i64,
+    #[serde(rename = "CBOKIOJACBD")]
+    pub cbokiojacbd: i64,
 
-    #[serde(rename = "EHCMIFKHJIO")]
-    pub ehcmifkhjio: i64,
+    #[serde(rename = "GILBHCNNKGC")]
+    pub gilbhcnnkgc: i64,
 
-    #[serde(rename = "DEHIPDBKDKO")]
-    pub dehipdbkdko: i64,
+    #[serde(rename = "KLAFKKJKJEB")]
+    pub klafkkjkjeb: i64,
 
-    #[serde(rename = "EGDAKOJAENC")]
-    pub egdakojaenc: f64,
+    #[serde(rename = "OEOFEMHMDAK")]
+    pub oeofemhmdak: f64,
 
-    #[serde(rename = "KFJDGMMPFPH")]
-    pub kfjdgmmpfph: f64,
+    #[serde(rename = "MPAAAOGKLNH")]
+    pub mpaaaogklnh: f64,
 
-    #[serde(rename = "NMFFJFMBIEI")]
-    pub nmffjfmbiei: i64,
+    #[serde(rename = "EGNDINMOJCH")]
+    pub egndinmojch: i64,
 
-    #[serde(rename = "MBLFKEMEKHI")]
-    pub mblfkemekhi: f64,
+    #[serde(rename = "BPBIKMOHKBA")]
+    pub bpbikmohkba: f64,
 
-    #[serde(rename = "OLPMPAOLIKH")]
-    pub olpmpaolikh: String,
+    #[serde(rename = "FMOOAAFMALC")]
+    pub fmooaafmalc: String,
 
-    #[serde(rename = "NOHDKCLFODH")]
-    pub nohdkclfodh: String,
+    #[serde(rename = "PAGGNKLJKFO")]
+    pub paggnkljkfo: String,
 
-    #[serde(rename = "NIAOIFNCMJB")]
-    pub niaoifncmjb: String,
+    #[serde(rename = "LINAPKNHNBO")]
+    pub linapknhnbo: String,
 
-    #[serde(rename = "KADJBABHCAL")]
-    pub kadjbabhcal: String,
+    #[serde(rename = "CAJNNMGKDOG")]
+    pub cajnnmgkdog: String,
 
-    #[serde(rename = "JBEBIPNDJIA")]
-    pub jbebipndjia: String,
+    #[serde(rename = "FAIKCOKNBHA")]
+    pub faikcoknbha: String,
 
-    #[serde(rename = "KOBPAFJDIFO")]
-    pub kobpafjdifo: String,
+    #[serde(rename = "BPHFJLEHJEH")]
+    pub bphfjlehjeh: String,
 
-    #[serde(rename = "AFNJLPGDNFM")]
-    pub afnjlpgdnfm: String,
+    #[serde(rename = "JGBNMOLJBDJ")]
+    pub jgbnmoljbdj: String,
 
-    #[serde(rename = "JOFOKBJIHPO")]
-    pub jofokbjihpo: String,
+    #[serde(rename = "OBEGBGGABLM")]
+    pub obegbggablm: String,
 
-    #[serde(rename = "IMFDPECCIHI")]
-    pub imfdpeccihi: f64,
+    #[serde(rename = "MGCIJFJBCIM")]
+    pub mgcijfjbcim: f64,
 
-    #[serde(rename = "BJJCLFJKOHC")]
-    pub bjjclfjkohc: f64,
+    #[serde(rename = "PEAJEEEMLBA")]
+    pub peajeeemlba: f64,
 
-    #[serde(rename = "IDJNAJIGPHK")]
-    pub idjnajigphk: f64,
+    #[serde(rename = "PAPICHMFJJE")]
+    pub papichmfjje: f64,
 
-    #[serde(rename = "LEHCJEFBAFB")]
-    pub lehcjefbafb: i64,
+    #[serde(rename = "FONHBJJAIKK")]
+    pub fonhbjjaikk: i64,
 }
 
 pub fn load() -> Result<ActivityMuqadasPotionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityMuqadasPotionExcelConfigData.json",
     ]

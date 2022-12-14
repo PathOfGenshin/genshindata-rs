@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type SubQuestCatalogExcelConfigData = Vec<SubQuestCatalogExcelConfigDatum>;
@@ -11,26 +13,26 @@ pub struct SubQuestCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IKGENMHGIOE")]
-    pub ikgenmhgioe: Ikgenmhgioe,
+    #[serde(rename = "KFKAEMIEMLM")]
+    pub kfkaemiemlm: Kfkaemiemlm,
 
-    #[serde(rename = "HCNONMEJIBF")]
-    pub hcnonmejibf: Vec<Hcnonmejibf>,
+    #[serde(rename = "CKPIACLNHBP")]
+    pub ckpiaclnhbp: Vec<Ckpiaclnhbp>,
 
-    #[serde(rename = "KKCCBFMMDIP")]
-    pub kkccbfmmdip: Vec<Hcnonmejibf>,
+    #[serde(rename = "PDGKEMPCDIN")]
+    pub pdgkempcdin: Vec<Ckpiaclnhbp>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LHMNPKCPCDH")]
-    pub lhmnpkcpcdh: Option<Ikgenmhgioe>,
+    #[serde(rename = "PJADJDNALON")]
+    pub pjadjdnalon: Option<Kfkaemiemlm>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hcnonmejibf {
+pub struct Ckpiaclnhbp {
     #[serde(rename = "type")]
-    pub hcnonmejibf_type: Option<Type>,
+    pub ckpiaclnhbp_type: Option<Type>,
 
     #[serde(rename = "param")]
     pub param: Option<i64>,
@@ -43,7 +45,7 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ikgenmhgioe {
+pub enum Kfkaemiemlm {
     #[serde(rename = "LOGIC_AND")]
     LogicAnd,
 
@@ -52,8 +54,9 @@ pub enum Ikgenmhgioe {
 }
 
 pub fn load() -> Result<SubQuestCatalogExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "SubQuestCatalogExcelConfigData.json",
     ]

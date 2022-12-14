@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivitySummerTimeFloatSignalExcelConfigData = Vec<ActivitySummerTimeFloatSignalExcelConfigDatum>;
@@ -17,22 +19,23 @@ pub struct ActivitySummerTimeFloatSignalExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "CHOPKGHBDLF")]
-    pub chopkghbdlf: Option<i64>,
+    #[serde(rename = "MAFGKLABEBJ")]
+    pub mafgklabebj: Option<i64>,
 
-    #[serde(rename = "KBLDPNPOLMB")]
-    pub kbldpnpolmb: i64,
+    #[serde(rename = "ADONCKAKALH")]
+    pub adonckakalh: i64,
 
-    #[serde(rename = "HCADLIAKFGO")]
-    pub hcadliakfgo: i64,
+    #[serde(rename = "KHCPAAJMHIJ")]
+    pub khcpaajmhij: i64,
 
-    #[serde(rename = "GIBMNJLCBOB")]
-    pub gibmnjlcbob: Option<bool>,
+    #[serde(rename = "MNKMLNECHCK")]
+    pub mnkmlnechck: Option<bool>,
 }
 
 pub fn load() -> Result<ActivitySummerTimeFloatSignalExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivitySummerTimeFloatSignalExcelConfigData.json",
     ]

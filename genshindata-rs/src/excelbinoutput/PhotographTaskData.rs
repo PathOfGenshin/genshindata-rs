@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PhotographTaskData = Vec<PhotographTaskDatum>;
@@ -44,19 +46,20 @@ pub struct PhotographTaskDatum {
     #[serde(rename = "startTime")]
     pub start_time: Option<f64>,
 
-    #[serde(rename = "DDOIKDALOIB")]
-    pub ddoikdaloib: Option<Ddoikdaloib>,
+    #[serde(rename = "DFFGIFCGEPE")]
+    pub dffgifcgepe: Option<Dffgifcgepe>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ddoikdaloib {
+pub enum Dffgifcgepe {
     #[serde(rename = "PHOTOGRAPH_TASK_TYPE_INTERACTION")]
     PhotographTaskTypeInteraction,
 }
 
 pub fn load() -> Result<PhotographTaskData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PhotographTaskData.json",
     ]

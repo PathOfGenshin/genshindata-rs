@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BartenderTaskOrderExcelConfigData = Vec<BartenderTaskOrderExcelConfigDatum>;
@@ -11,28 +13,29 @@ pub struct BartenderTaskOrderExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "KGNOONGAMBK")]
-    pub kgnoongambk: Vec<i64>,
+    #[serde(rename = "KHENOBOCPNA")]
+    pub khenobocpna: Vec<i64>,
 
-    #[serde(rename = "CLHIEOCLBLH")]
-    pub clhieoclblh: i64,
+    #[serde(rename = "GLNPAOCLAKD")]
+    pub glnpaoclakd: i64,
 
-    #[serde(rename = "NHIOPIHEEEC")]
-    pub nhiopiheeec: i64,
+    #[serde(rename = "GCOKPDBEMBL")]
+    pub gcokpdbembl: i64,
 
-    #[serde(rename = "OKIABFOPABC")]
-    pub okiabfopabc: i64,
+    #[serde(rename = "JPABNAAIABL")]
+    pub jpabnaaiabl: i64,
 
-    #[serde(rename = "HKAHLGLDJFJ")]
-    pub hkahlgldjfj: Option<i64>,
+    #[serde(rename = "LGEBBACPDHB")]
+    pub lgebbacpdhb: Option<i64>,
 
-    #[serde(rename = "LHHCCOGPFPN")]
-    pub lhhccogpfpn: Option<bool>,
+    #[serde(rename = "AEIEJGFMMFG")]
+    pub aeiejgfmmfg: Option<bool>,
 }
 
 pub fn load() -> Result<BartenderTaskOrderExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BartenderTaskOrderExcelConfigData.json",
     ]

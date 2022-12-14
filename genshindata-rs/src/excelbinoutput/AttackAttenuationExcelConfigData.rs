@@ -2,31 +2,34 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type AttackAttenuationExcelConfigData = Vec<AttackAttenuationExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AttackAttenuationExcelConfigDatum {
-    #[serde(rename = "JEKKDBBFGEC")]
-    pub jekkdbbfgec: String,
+    #[serde(rename = "HDHKDEFJHID")]
+    pub hdhkdefjhid: String,
 
-    #[serde(rename = "KKIDACKDPCJ")]
-    pub kkidackdpcj: f64,
+    #[serde(rename = "DIGFFEAAIIH")]
+    pub digffeaaiih: f64,
 
-    #[serde(rename = "HFDPHNAEMEF")]
-    pub hfdphnaemef: Vec<f64>,
+    #[serde(rename = "GLLCPNMIKGH")]
+    pub gllcpnmikgh: Vec<f64>,
 
-    #[serde(rename = "BLDCNMMEOGJ")]
-    pub bldcnmmeogj: Vec<f64>,
+    #[serde(rename = "OMMFNFIOEGL")]
+    pub ommfnfioegl: Vec<f64>,
 
-    #[serde(rename = "OKKDAJNNIPB")]
-    pub okkdajnnipb: Vec<f64>,
+    #[serde(rename = "LIMNGJNJICH")]
+    pub limngjnjich: Vec<f64>,
 }
 
 pub fn load() -> Result<AttackAttenuationExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "AttackAttenuationExcelConfigData.json",
     ]

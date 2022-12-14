@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityChessLevelExcelConfigData = Vec<ActivityChessLevelExcelConfigDatum>;
@@ -14,40 +16,41 @@ pub struct ActivityChessLevelExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LEOMBPOJCDP")]
-    pub leombpojcdp: Option<i64>,
+    #[serde(rename = "DMFDMFLMCIL")]
+    pub dmfdmflmcil: Option<i64>,
 
-    #[serde(rename = "NKBNCGPPIPH")]
-    pub nkbncgppiph: i64,
+    #[serde(rename = "OPOFCLNMDEL")]
+    pub opofclnmdel: i64,
 
-    #[serde(rename = "HGKCGDOCOGF")]
-    pub hgkcgdocogf: i64,
+    #[serde(rename = "OLCOGJFLPOM")]
+    pub olcogjflpom: i64,
 
-    #[serde(rename = "FIPNOCDEPBE")]
-    pub fipnocdepbe: i64,
+    #[serde(rename = "DKIPAOJNFID")]
+    pub dkipaojnfid: i64,
 
-    #[serde(rename = "JCGINDOIJGO")]
-    pub jcgindoijgo: i64,
+    #[serde(rename = "OGAAMIHDNLA")]
+    pub ogaamihdnla: i64,
 
-    #[serde(rename = "OINKCCJEDBL")]
-    pub oinkccjedbl: Vec<i64>,
+    #[serde(rename = "LOCALJBMLEO")]
+    pub localjbmleo: Vec<i64>,
 
-    #[serde(rename = "INMEMDJAKPP")]
-    pub inmemdjakpp: i64,
+    #[serde(rename = "BPJGLIBLMEB")]
+    pub bpjgliblmeb: i64,
 
-    #[serde(rename = "MKIFMNDAIFE")]
-    pub mkifmndaife: Option<bool>,
+    #[serde(rename = "DHABLLAKKDO")]
+    pub dhabllakkdo: Option<bool>,
 
-    #[serde(rename = "PKGHHDNGPNC")]
-    pub pkghhdngpnc: bool,
+    #[serde(rename = "NENNMIHNGJD")]
+    pub nennmihngjd: bool,
 
-    #[serde(rename = "CGOCJKOCBAC")]
-    pub cgocjkocbac: Option<String>,
+    #[serde(rename = "KAJABPLDOEE")]
+    pub kajabpldoee: Option<String>,
 }
 
 pub fn load() -> Result<ActivityChessLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityChessLevelExcelConfigData.json",
     ]

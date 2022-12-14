@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueDungeonCellExcelConfigData = Vec<RogueDungeonCellExcelConfigDatum>;
@@ -14,42 +16,42 @@ pub struct RogueDungeonCellExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "IBKODJDNGMN")]
-    pub ibkodjdngmn: i64,
+    #[serde(rename = "MLKMHHENNBC")]
+    pub mlkmhhennbc: i64,
 
-    #[serde(rename = "DPKBHECFABD")]
-    pub dpkbhecfabd: Vec<f64>,
+    #[serde(rename = "PPKGIPFGLLB")]
+    pub ppkgipfgllb: Vec<f64>,
 
-    #[serde(rename = "IGJNJIFCBJO")]
-    pub igjnjifcbjo: Vec<i64>,
+    #[serde(rename = "HABKJEJFPEG")]
+    pub habkjejfpeg: Vec<i64>,
 
-    #[serde(rename = "FKLBMPJMBIL")]
-    pub fklbmpjmbil: Vec<i64>,
+    #[serde(rename = "MEEMCPGMIOD")]
+    pub meemcpgmiod: Vec<i64>,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "OMKPFNLDAFP")]
-    pub omkpfnldafp: i64,
+    #[serde(rename = "DCEFPKHOMAJ")]
+    pub dcefpkhomaj: i64,
 
-    #[serde(rename = "KOLDCFFPHGH")]
-    pub koldcffphgh: Option<f64>,
+    #[serde(rename = "BNFGJFNCAOP")]
+    pub bnfgjfncaop: Option<f64>,
 
-    #[serde(rename = "KHDGAGPELFC")]
-    pub khdgagpelfc: f64,
+    #[serde(rename = "LMDGECNICDE")]
+    pub lmdgecnicde: f64,
 
-    #[serde(rename = "IDEHDOKNNND")]
-    pub idehdoknnnd: f64,
+    #[serde(rename = "OBAOLHHEOFD")]
+    pub obaolhheofd: f64,
 
-    #[serde(rename = "FJMJMIGMJCL")]
-    pub fjmjmigmjcl: Option<Fjmjmigmjcl>,
+    #[serde(rename = "NJDGNJLPDLI")]
+    pub njdgnjlpdli: Option<Njdgnjlpdli>,
 
-    #[serde(rename = "LGHJADBALHD")]
-    pub lghjadbalhd: Option<bool>,
+    #[serde(rename = "BKHMGNBACIP")]
+    pub bkhmgnbacip: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fjmjmigmjcl {
+pub enum Njdgnjlpdli {
     #[serde(rename = "ROGUE_CELL_TYPE_BOSS")]
     RogueCellTypeBoss,
 
@@ -61,8 +63,9 @@ pub enum Fjmjmigmjcl {
 }
 
 pub fn load() -> Result<RogueDungeonCellExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueDungeonCellExcelConfigData.json",
     ]

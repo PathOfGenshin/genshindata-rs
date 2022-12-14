@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityChessPreviewExcelConfigData = Vec<ActivityChessPreviewExcelConfigDatum>;
@@ -17,11 +19,11 @@ pub struct ActivityChessPreviewExcelConfigDatum {
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "KEAPJKKJBBE")]
-    pub keapjkkjbbe: i64,
+    #[serde(rename = "MIBKLKFAHON")]
+    pub mibklkfahon: i64,
 
-    #[serde(rename = "LIPNCDBKLLB")]
-    pub lipncdbkllb: i64,
+    #[serde(rename = "MOJJAFFGMFM")]
+    pub mojjaffgmfm: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
@@ -29,31 +31,32 @@ pub struct ActivityChessPreviewExcelConfigDatum {
     #[serde(rename = "matchPlayerLimit")]
     pub match_player_limit: i64,
 
-    #[serde(rename = "NFLBBCHHHDE")]
-    pub nflbbchhhde: bool,
+    #[serde(rename = "BBEBPEAKANE")]
+    pub bbebpeakane: bool,
 
-    #[serde(rename = "LLKNHCLPCJP")]
-    pub llknhclpcjp: i64,
+    #[serde(rename = "KLINLLDOMLG")]
+    pub klinlldomlg: i64,
 
-    #[serde(rename = "GKIIBCGGBLE")]
-    pub gkiibcggble: i64,
+    #[serde(rename = "GLIHMNNPIGE")]
+    pub glihmnnpige: i64,
 
     #[serde(rename = "punishTime")]
     pub punish_time: i64,
 
-    #[serde(rename = "OLIBOLPKCEB")]
-    pub olibolpkceb: i64,
+    #[serde(rename = "KMLEPHHMKCB")]
+    pub kmlephhmkcb: i64,
 
-    #[serde(rename = "MCPNIHGDENH")]
-    pub mcpnihgdenh: i64,
+    #[serde(rename = "JCBMNNCPECH")]
+    pub jcbmnncpech: i64,
 
-    #[serde(rename = "DEDILEDMCKG")]
-    pub dediledmckg: Vec<i64>,
+    #[serde(rename = "MBBLAGDHGOI")]
+    pub mbblagdhgoi: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityChessPreviewExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityChessPreviewExcelConfigData.json",
     ]

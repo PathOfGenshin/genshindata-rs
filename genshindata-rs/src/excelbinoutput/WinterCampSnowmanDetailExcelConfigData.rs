@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WinterCampSnowmanDetailExcelConfigData = Vec<WinterCampSnowmanDetailExcelConfigDatum>;
@@ -11,25 +13,26 @@ pub struct WinterCampSnowmanDetailExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "ENGOHEGBMMM")]
-    pub engohegbmmm: i64,
+    #[serde(rename = "EPKECAHJECJ")]
+    pub epkecahjecj: i64,
 
-    #[serde(rename = "OIBAMLDNBGF")]
-    pub oibamldnbgf: i64,
+    #[serde(rename = "GFDONFJBAID")]
+    pub gfdonfjbaid: i64,
 
-    #[serde(rename = "LEJHEBAMEDL")]
-    pub lejhebamedl: i64,
+    #[serde(rename = "KNEGGLJKGKA")]
+    pub kneggljkgka: i64,
 
-    #[serde(rename = "LDFCGLCBMMK")]
-    pub ldfcglcbmmk: i64,
+    #[serde(rename = "MLFMGPJCGJL")]
+    pub mlfmgpjcgjl: i64,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
 }
 
 pub fn load() -> Result<WinterCampSnowmanDetailExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WinterCampSnowmanDetailExcelConfigData.json",
     ]

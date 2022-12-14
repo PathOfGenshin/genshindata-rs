@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoutineDetailExcelConfigData = Vec<RoutineDetailExcelConfigDatum>;
@@ -27,10 +29,10 @@ pub struct RoutineDetailExcelConfigDatum {
     pub finish_content: FinishContent,
 
     #[serde(rename = "goodsIdVec")]
-    pub goods_id_vec: Vec<Nbgdlgggidn>,
+    pub goods_id_vec: Vec<Hnoggpckoip>,
 
-    #[serde(rename = "NBGDLGGGIDN")]
-    pub nbgdlgggidn: Vec<Nbgdlgggidn>,
+    #[serde(rename = "HNOGGPCKOIP")]
+    pub hnoggpckoip: Vec<Hnoggpckoip>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -67,7 +69,7 @@ pub struct FinishContent {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nbgdlgggidn {
+pub struct Hnoggpckoip {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -86,8 +88,9 @@ pub enum RoutineType {
 }
 
 pub fn load() -> Result<RoutineDetailExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoutineDetailExcelConfigData.json",
     ]

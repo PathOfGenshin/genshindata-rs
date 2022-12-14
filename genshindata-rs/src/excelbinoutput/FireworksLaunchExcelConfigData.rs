@@ -2,31 +2,34 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type FireworksLaunchExcelConfigData = Vec<FireworksLaunchExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FireworksLaunchExcelConfigDatum {
-    #[serde(rename = "DNLPOBNFEAN")]
-    pub dnlpobnfean: String,
+    #[serde(rename = "EIINOPHOHLI")]
+    pub eiinophohli: String,
 
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
 
-    #[serde(rename = "BMIFJGNKLAK")]
-    pub bmifjgnklak: Vec<i64>,
+    #[serde(rename = "JOFMKGBPPEO")]
+    pub jofmkgbppeo: Vec<i64>,
 
-    #[serde(rename = "OPFBCDPMAGL")]
-    pub opfbcdpmagl: i64,
+    #[serde(rename = "NMCKIBBFCJE")]
+    pub nmckibbfcje: i64,
 
-    #[serde(rename = "CIHGFHICDMG")]
-    pub cihgfhicdmg: i64,
+    #[serde(rename = "LHKGAMLJGFP")]
+    pub lhkgamljgfp: i64,
 }
 
 pub fn load() -> Result<FireworksLaunchExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FireworksLaunchExcelConfigData.json",
     ]

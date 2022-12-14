@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityVintageMarketPrepareExcelConfigData = Vec<ActivityVintageMarketPrepareExcelConfigDatum>;
@@ -11,40 +13,41 @@ pub struct ActivityVintageMarketPrepareExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
 
-    #[serde(rename = "CBOPDKGFCLD")]
-    pub cbopdkgfcld: i64,
+    #[serde(rename = "BBIAIPKFAEN")]
+    pub bbiaipkfaen: i64,
 
-    #[serde(rename = "MODPLINEEJC")]
-    pub modplineejc: Option<String>,
+    #[serde(rename = "ADPALKAKBKI")]
+    pub adpalkakbki: Option<String>,
 
-    #[serde(rename = "IBOFLEFMAEJ")]
-    pub iboflefmaej: String,
+    #[serde(rename = "NOLCJBFPAEA")]
+    pub nolcjbfpaea: String,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "IFCABNCKGLN")]
-    pub ifcabnckgln: i64,
+    #[serde(rename = "CGIHMCKEIDL")]
+    pub cgihmckeidl: i64,
 
-    #[serde(rename = "CMPIGIDKDNJ")]
-    pub cmpigidkdnj: i64,
+    #[serde(rename = "ELBFEDOOPOD")]
+    pub elbfedoopod: i64,
 
-    #[serde(rename = "JCGBOOHBEEO")]
-    pub jcgboohbeeo: Option<i64>,
+    #[serde(rename = "CMOEFPEBNCI")]
+    pub cmoefpebnci: Option<i64>,
 
-    #[serde(rename = "CNABJGNDDDI")]
-    pub cnabjgndddi: Option<i64>,
+    #[serde(rename = "NOONPDEGFIK")]
+    pub noonpdegfik: Option<i64>,
 
-    #[serde(rename = "OOELPGADFBE")]
-    pub ooelpgadfbe: i64,
+    #[serde(rename = "JIGDPBPKPHF")]
+    pub jigdpbpkphf: i64,
 
-    #[serde(rename = "AOFANMFDGMK")]
-    pub aofanmfdgmk: i64,
+    #[serde(rename = "KAJGLBDKNAK")]
+    pub kajglbdknak: i64,
 }
 
 pub fn load() -> Result<ActivityVintageMarketPrepareExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityVintageMarketPrepareExcelConfigData.json",
     ]

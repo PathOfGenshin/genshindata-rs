@@ -2,31 +2,34 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MatchNewRuleExcelConfigData = Vec<MatchNewRuleExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MatchNewRuleExcelConfigDatum {
-    #[serde(rename = "AFFFCEHPLGO")]
-    pub afffcehplgo: String,
+    #[serde(rename = "KOHODMEMBBB")]
+    pub kohodmembbb: String,
 
-    #[serde(rename = "IIECHPLHBKL")]
-    pub iiechplhbkl: bool,
+    #[serde(rename = "DGJPJGENKNJ")]
+    pub dgjpjgenknj: bool,
 
     #[serde(rename = "minLevel")]
     pub min_level: i64,
 
-    #[serde(rename = "KPNOKJNDKHB")]
-    pub kpnokjndkhb: i64,
+    #[serde(rename = "JGEFDJIDFBC")]
+    pub jgefdjidfbc: i64,
 
-    #[serde(rename = "KBKNIJIGHMK")]
-    pub kbknijighmk: i64,
+    #[serde(rename = "KFHHOADAIEK")]
+    pub kfhhoadaiek: i64,
 }
 
 pub fn load() -> Result<MatchNewRuleExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MatchNewRuleExcelConfigData.json",
     ]

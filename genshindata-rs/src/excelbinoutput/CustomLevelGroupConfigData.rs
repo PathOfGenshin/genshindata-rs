@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomLevelGroupConfigData = Vec<CustomLevelGroupConfigDatum>;
@@ -14,31 +16,32 @@ pub struct CustomLevelGroupConfigDatum {
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
 
-    #[serde(rename = "MKFDPBNODIC")]
-    pub mkfdpbnodic: Vec<i64>,
+    #[serde(rename = "JNKCAMMFJCN")]
+    pub jnkcammfjcn: Vec<i64>,
 
-    #[serde(rename = "BNABDDAIICI")]
-    pub bnabddaiici: i64,
+    #[serde(rename = "NCFDFOFFNJG")]
+    pub ncfdfoffnjg: i64,
 
-    #[serde(rename = "PJOFPGGKFGE")]
-    pub pjofpggkfge: i64,
+    #[serde(rename = "ONNNALNJDPN")]
+    pub onnnalnjdpn: i64,
 
-    #[serde(rename = "MIKLLOAGLAH")]
-    pub miklloaglah: i64,
+    #[serde(rename = "JBLMJGNLLAP")]
+    pub jblmjgnllap: i64,
 
-    #[serde(rename = "HGPBBAEGCDJ")]
-    pub hgpbbaegcdj: i64,
+    #[serde(rename = "OPIPBMPLKEH")]
+    pub opipbmplkeh: i64,
 
-    #[serde(rename = "NHMAJLPODGD")]
-    pub nhmajlpodgd: i64,
+    #[serde(rename = "ACBMGJPJDEB")]
+    pub acbmgjpjdeb: i64,
 
-    #[serde(rename = "AGKJDOAPNJI")]
-    pub agkjdoapnji: i64,
+    #[serde(rename = "LAABHMLKGPK")]
+    pub laabhmlkgpk: i64,
 }
 
 pub fn load() -> Result<CustomLevelGroupConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomLevelGroupConfigData.json",
     ]

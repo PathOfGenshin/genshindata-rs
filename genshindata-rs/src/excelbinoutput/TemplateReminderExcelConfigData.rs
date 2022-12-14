@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type TemplateReminderExcelConfigData = Vec<TemplateReminderExcelConfigDatum>;
@@ -32,8 +34,8 @@ pub struct TemplateReminderExcelConfigDatum {
     #[serde(rename = "activityType")]
     pub activity_type: Option<String>,
 
-    #[serde(rename = "KFGKHKNIMGF")]
-    pub kfgkhknimgf: Option<bool>,
+    #[serde(rename = "CNDKMFANBHH")]
+    pub cndkmfanbhh: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -64,8 +66,9 @@ pub enum Style {
 }
 
 pub fn load() -> Result<TemplateReminderExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "TemplateReminderExcelConfigData.json",
     ]

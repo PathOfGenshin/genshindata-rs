@@ -1,3 +1,4 @@
+use std::env;
 use std::{collections::HashMap, path::PathBuf};
 
 use strum::IntoEnumIterator;
@@ -14,10 +15,15 @@ pub struct TextMap {
 
 impl TextMap {
     pub fn load(language: Language) -> Result<Self, JsonError> {
+        let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
         let language_file = format!("TextMap{}.json", language);
-        let path: PathBuf = ["GenshinData", "TextMap", language_file.as_str()]
-            .iter()
-            .collect();
+        let path: PathBuf = [
+            game_resources_path.as_str(),
+            "TextMap",
+            language_file.as_str(),
+        ]
+        .iter()
+        .collect();
         let data = load_json(path)?;
         println!("Loaded {} TextMap!", language);
         Ok(Self { data, language })

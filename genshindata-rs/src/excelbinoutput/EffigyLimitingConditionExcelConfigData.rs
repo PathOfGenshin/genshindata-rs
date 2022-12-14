@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type EffigyLimitingConditionExcelConfigData = Vec<EffigyLimitingConditionExcelConfigDatum>;
@@ -23,11 +25,11 @@ pub struct EffigyLimitingConditionExcelConfigDatum {
     #[serde(rename = "conditionParam1")]
     pub condition_param1: i64,
 
-    #[serde(rename = "NGBCEMLKLJC")]
-    pub ngbcemlkljc: Vec<i64>,
+    #[serde(rename = "ILBMMPNAFEK")]
+    pub ilbmmpnafek: Vec<i64>,
 
-    #[serde(rename = "HGKDJMIAEBC")]
-    pub hgkdjmiaebc: i64,
+    #[serde(rename = "JAGAPPNHFHA")]
+    pub jagappnhfha: i64,
 
     #[serde(rename = "score")]
     pub score: i64,
@@ -35,8 +37,8 @@ pub struct EffigyLimitingConditionExcelConfigDatum {
     #[serde(rename = "exclusiveId")]
     pub exclusive_id: Option<i64>,
 
-    #[serde(rename = "JFPFOFEGBOP")]
-    pub jfpfofegbop: Option<bool>,
+    #[serde(rename = "PNHGKAMJBGN")]
+    pub pnhgkamjbgn: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -52,8 +54,9 @@ pub enum ConditionType {
 }
 
 pub fn load() -> Result<EffigyLimitingConditionExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "EffigyLimitingConditionExcelConfigData.json",
     ]

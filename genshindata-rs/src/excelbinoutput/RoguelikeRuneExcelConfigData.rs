@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RoguelikeRuneExcelConfigData = Vec<RoguelikeRuneExcelConfigDatum>;
@@ -11,8 +13,8 @@ pub struct RoguelikeRuneExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MKBIFLBNLON")]
-    pub mkbiflbnlon: bool,
+    #[serde(rename = "IAJPFHLLCLD")]
+    pub iajpfhllcld: bool,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -20,20 +22,20 @@ pub struct RoguelikeRuneExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "ILCKGIOMMEM")]
-    pub ilckgiommem: String,
+    #[serde(rename = "GCCBPAHOPCC")]
+    pub gccbpahopcc: String,
 
-    #[serde(rename = "KLPCPLFJIJE")]
-    pub klpcplfjije: String,
+    #[serde(rename = "PANCKHMOBHK")]
+    pub panckhmobhk: String,
 
-    #[serde(rename = "FOCKCPOHONB")]
-    pub fockcpohonb: String,
+    #[serde(rename = "EFOJCEMCPBI")]
+    pub efojcemcpbi: String,
 
-    #[serde(rename = "BMNMCKOGIEE")]
-    pub bmnmckogiee: String,
+    #[serde(rename = "MIKNOKJPIPG")]
+    pub miknokjpipg: String,
 
-    #[serde(rename = "JDJAJMPAAPJ")]
-    pub jdjajmpaapj: i64,
+    #[serde(rename = "MIDMNNOBHPJ")]
+    pub midmnnobhpj: i64,
 
     #[serde(rename = "elementType")]
     pub element_type: i64,
@@ -43,8 +45,9 @@ pub struct RoguelikeRuneExcelConfigDatum {
 }
 
 pub fn load() -> Result<RoguelikeRuneExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RoguelikeRuneExcelConfigData.json",
     ]

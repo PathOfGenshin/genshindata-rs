@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MapAreaConfigData = Vec<MapAreaConfigDatum>;
@@ -17,25 +19,38 @@ pub struct MapAreaConfigDatum {
     #[serde(rename = "name")]
     pub name: String,
 
-    #[serde(rename = "GNKBBDPHMAG")]
-    pub gnkbbdphmag: Vec<i64>,
+    #[serde(rename = "GNHBKHBADPP")]
+    pub gnhbkhbadpp: Vec<i64>,
 
-    #[serde(rename = "GHEMDFCEDPE")]
-    pub ghemdfcedpe: Option<i64>,
+    #[serde(rename = "AAPKKFBMLKI")]
+    pub aapkkfbmlki: Option<i64>,
 
-    #[serde(rename = "OOMELOMEEIA")]
-    pub oomelomeeia: Option<Oomelomeeia>,
+    #[serde(rename = "OOCNKICNOPG")]
+    pub oocnkicnopg: Option<Oocnkicnopg>,
+
+    #[serde(rename = "type")]
+    pub map_area_config_datum_type: Option<Type>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oomelomeeia {
+pub enum Type {
+    #[serde(rename = "MAP_AREA_TYPE_EROSION")]
+    MapAreaTypeErosion,
+
+    #[serde(rename = "MAP_AREA_TYPE_LEVEL_TAG")]
+    MapAreaTypeLevelTag,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Oocnkicnopg {
     #[serde(rename = "MistOpen")]
     MistOpen,
 }
 
 pub fn load() -> Result<MapAreaConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MapAreaConfigData.json",
     ]

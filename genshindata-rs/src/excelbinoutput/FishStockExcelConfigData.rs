@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 use std::collections::HashMap;
 
@@ -9,13 +11,13 @@ pub type FishStockExcelConfigData = Vec<FishStockExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FishStockExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub fish_stock_excel_config_datum_type: Type,
 
-    #[serde(rename = "_fishWeight")]
+    #[serde(rename = "fishWeight")]
     pub fish_weight: HashMap<String, i64>,
 }
 
@@ -32,8 +34,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<FishStockExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "FishStockExcelConfigData.json",
     ]

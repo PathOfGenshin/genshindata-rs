@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type GatherExcelConfigData = Vec<GatherExcelConfigDatum>;
@@ -41,8 +43,11 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "initDisableInteract")]
     pub init_disable_interact: Option<bool>,
 
-    #[serde(rename = "FNGDLDEAAPO")]
-    pub fngdldeaapo: Option<Fngdldeaapo>,
+    #[serde(rename = "CIENIJLPNIN")]
+    pub cienijlpnin: Option<Cienijlpnin>,
+
+    #[serde(rename = "JAFPHBNDGJF")]
+    pub jafphbndgjf: Option<bool>,
 
     #[serde(rename = "pointLocation")]
     pub point_location: Option<PointLocation>,
@@ -50,8 +55,8 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "isForbidGuest")]
     pub is_forbid_guest: Option<bool>,
 
-    #[serde(rename = "NHEIDFEFCNI")]
-    pub nheidfefcni: Option<bool>,
+    #[serde(rename = "LCCCBCMJPHK")]
+    pub lcccbcmjphk: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -64,7 +69,7 @@ pub struct BlockLimit {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fngdldeaapo {
+pub enum Cienijlpnin {
     #[serde(rename = "GATHER_SAVE_TYPE_HIGH")]
     GatherSaveTypeHigh,
 
@@ -85,8 +90,9 @@ pub enum PointLocation {
 }
 
 pub fn load() -> Result<GatherExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "GatherExcelConfigData.json",
     ]

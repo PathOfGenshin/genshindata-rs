@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type BuoyantCombatLevelExcelConfigData = Vec<BuoyantCombatLevelExcelConfigDatum>;
@@ -23,28 +25,29 @@ pub struct BuoyantCombatLevelExcelConfigDatum {
     #[serde(rename = "rewardPreview")]
     pub reward_preview: i64,
 
-    #[serde(rename = "GEFICGMHOGK")]
-    pub geficgmhogk: i64,
+    #[serde(rename = "HEBCFCLDOAN")]
+    pub hebcfcldoan: i64,
 
-    #[serde(rename = "OKEGJABPGAD")]
-    pub okegjabpgad: i64,
+    #[serde(rename = "CBFCGKOENMH")]
+    pub cbfcgkoenmh: i64,
 
-    #[serde(rename = "LFHBNHPDLHD")]
-    pub lfhbnhpdlhd: Vec<i64>,
+    #[serde(rename = "MNCMLAMFHHJ")]
+    pub mncmlamfhhj: Vec<i64>,
 
-    #[serde(rename = "JDOELJDKKDJ")]
-    pub jdoeljdkkdj: Vec<i64>,
+    #[serde(rename = "DCANJPOOONG")]
+    pub dcanjpooong: Vec<i64>,
 
     #[serde(rename = "recommendLevel")]
     pub recommend_level: Vec<i64>,
 
-    #[serde(rename = "JCDDHAOJGKL")]
-    pub jcddhaojgkl: Vec<f64>,
+    #[serde(rename = "GLFMPBKELPJ")]
+    pub glfmpbkelpj: Vec<f64>,
 }
 
 pub fn load() -> Result<BuoyantCombatLevelExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "BuoyantCombatLevelExcelConfigData.json",
     ]

@@ -2,20 +2,22 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type HandbookQuestGuideExcelConfigData = Vec<HandbookQuestGuideExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HandbookQuestGuideExcelConfigDatum {
-    #[serde(rename = "PKKHGMOGBCC")]
-    pub pkkhgmogbcc: i64,
+    #[serde(rename = "DEELLMEKECK")]
+    pub deellmekeck: i64,
 
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "DFDGNBFLAND")]
-    pub dfdgnbfland: i64,
+    #[serde(rename = "HHIAIKHLEIK")]
+    pub hhiaikhleik: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
@@ -23,32 +25,41 @@ pub struct HandbookQuestGuideExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: Icon,
 
-    #[serde(rename = "JMGHMAJDBAH")]
-    pub jmghmajdbah: Vec<Jmghmajdbah>,
+    #[serde(rename = "PPNEFCPJMMB")]
+    pub ppnefcpjmmb: Vec<Ppnefcpjmmb>,
 
-    #[serde(rename = "OEGLGMFHJJK")]
-    pub oeglgmfhjjk: Option<i64>,
+    #[serde(rename = "NCACIBGPEGI")]
+    pub ncacibgpegi: Option<i64>,
 
-    #[serde(rename = "KDMDJJNBJLB")]
-    pub kdmdjjnbjlb: Option<Kdmdjjnbjlb>,
+    #[serde(rename = "AKGCFJAILBN")]
+    pub akgcfjailbn: Option<Akgcfjailbn>,
 
-    #[serde(rename = "AMPOMFLLHFE")]
-    pub ampomfllhfe: Option<bool>,
+    #[serde(rename = "NKLGJGAHNFG")]
+    pub nklgjgahnfg: Option<bool>,
 
-    #[serde(rename = "MPJOBAMPMPP")]
-    pub mpjobampmpp: Option<i64>,
+    #[serde(rename = "LDBPEBKBLDO")]
+    pub ldbpebkbldo: Option<i64>,
 
-    #[serde(rename = "JGILCDPCAJB")]
-    pub jgilcdpcajb: Option<i64>,
+    #[serde(rename = "FEEDCDKJMPP")]
+    pub feedcdkjmpp: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jmghmajdbah {
+pub struct Ppnefcpjmmb {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 
     #[serde(rename = "type")]
-    pub jmghmajdbah_type: Option<Type>,
+    pub ppnefcpjmmb_type: Option<Type>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Akgcfjailbn {
+    #[serde(rename = "LQ")]
+    Lq,
+
+    #[serde(rename = "WQ")]
+    Wq,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -84,18 +95,10 @@ pub enum Type {
     QuestGuideShowCondPrequestFinished,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Kdmdjjnbjlb {
-    #[serde(rename = "LQ")]
-    Lq,
-
-    #[serde(rename = "WQ")]
-    Wq,
-}
-
 pub fn load() -> Result<HandbookQuestGuideExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "HandbookQuestGuideExcelConfigData.json",
     ]

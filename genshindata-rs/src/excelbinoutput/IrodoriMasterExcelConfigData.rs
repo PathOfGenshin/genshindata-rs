@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type IrodoriMasterExcelConfigData = Vec<IrodoriMasterExcelConfigDatum>;
@@ -14,42 +16,42 @@ pub struct IrodoriMasterExcelConfigDatum {
     #[serde(rename = "levelID")]
     pub level_id: i64,
 
-    #[serde(rename = "AHNJPLCJGMP")]
-    pub ahnjplcjgmp: Ahnjplcjgmp,
+    #[serde(rename = "EFEOOJFNKLN")]
+    pub efeoojfnkln: Efeoojfnkln,
 
-    #[serde(rename = "HAFOEGJLOAK")]
-    pub hafoegjloak: i64,
+    #[serde(rename = "EGKHABGENGP")]
+    pub egkhabgengp: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "GGBMACHIKED")]
-    pub ggbmachiked: i64,
+    #[serde(rename = "KDNPDJMCFFC")]
+    pub kdnpdjmcffc: i64,
 
-    #[serde(rename = "MLFHNJDMDAD")]
-    pub mlfhnjdmdad: i64,
+    #[serde(rename = "IGBECLANHOE")]
+    pub igbeclanhoe: i64,
 
     #[serde(rename = "condID")]
     pub cond_id: i64,
 
-    #[serde(rename = "JGINECNPLJM")]
-    pub jginecnpljm: i64,
+    #[serde(rename = "GDOOKAENGIN")]
+    pub gdookaengin: i64,
 
-    #[serde(rename = "HCNJELPODFD")]
-    pub hcnjelpodfd: i64,
+    #[serde(rename = "AMILCACOMFN")]
+    pub amilcacomfn: i64,
 
-    #[serde(rename = "LPHCAOOMLAM")]
-    pub lphcaoomlam: i64,
+    #[serde(rename = "OKEEFLOAMMO")]
+    pub okeefloammo: i64,
 
-    #[serde(rename = "PDBHPEMOAAK")]
-    pub pdbhpemoaak: i64,
+    #[serde(rename = "IEGAFHCPJMG")]
+    pub iegafhcpjmg: i64,
 
-    #[serde(rename = "FNHGKMOMHAB")]
-    pub fnhgkmomhab: Option<i64>,
+    #[serde(rename = "GNBEOFKIKEJ")]
+    pub gnbeofkikej: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ahnjplcjgmp {
+pub enum Efeoojfnkln {
     #[serde(rename = "IRODORI_MASTER_LEVEL_HARD")]
     IrodoriMasterLevelHard,
 
@@ -61,8 +63,9 @@ pub enum Ahnjplcjgmp {
 }
 
 pub fn load() -> Result<IrodoriMasterExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "IrodoriMasterExcelConfigData.json",
     ]

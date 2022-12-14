@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MapTagDataConfigData = Vec<MapTagDataConfigDatum>;
@@ -17,11 +19,11 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "GIKOHDHDKBG")]
-    pub gikohdhdkbg: i64,
+    #[serde(rename = "OLEFDOPDFPF")]
+    pub olefdopdfpf: i64,
 
-    #[serde(rename = "MECOCMNPADF")]
-    pub mecocmnpadf: i64,
+    #[serde(rename = "BHBDNMDJOHK")]
+    pub bhbdnmdjohk: i64,
 
     #[serde(rename = "icon")]
     pub icon: Icon,
@@ -32,11 +34,11 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "sceneIdList")]
     pub scene_id_list: Vec<i64>,
 
-    #[serde(rename = "IODLIBKCLPK")]
-    pub iodlibkclpk: Option<f64>,
+    #[serde(rename = "ECFPFKKNECK")]
+    pub ecfpfkkneck: Option<f64>,
 
-    #[serde(rename = "HLALHJHGEAB")]
-    pub hlalhjhgeab: Option<f64>,
+    #[serde(rename = "AJACHCEINKM")]
+    pub ajachceinkm: Option<f64>,
 
     #[serde(rename = "unlockByDefault")]
     pub unlock_by_default: Option<bool>,
@@ -44,8 +46,8 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "cityID")]
     pub city_id: Option<i64>,
 
-    #[serde(rename = "LEJFLCPGKFE")]
-    pub lejflcpgkfe: Option<i64>,
+    #[serde(rename = "LNNAACNECCN")]
+    pub lnnaacneccn: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -61,8 +63,9 @@ pub enum Icon {
 }
 
 pub fn load() -> Result<MapTagDataConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MapTagDataConfigData.json",
     ]

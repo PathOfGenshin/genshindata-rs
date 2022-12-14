@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityGearExcelConfigData = Vec<ActivityGearExcelConfigDatum>;
@@ -14,29 +16,29 @@ pub struct ActivityGearExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "LHGPJDBAJKJ")]
-    pub lhgpjdbajkj: Vec<i64>,
+    #[serde(rename = "GOLILJCIEMP")]
+    pub goliljciemp: Vec<i64>,
 
-    #[serde(rename = "MDCJAMOBCPO")]
-    pub mdcjamobcpo: f64,
+    #[serde(rename = "BJHPOPPDADL")]
+    pub bjhpoppdadl: f64,
 
-    #[serde(rename = "OLFBEOLADEL")]
-    pub olfbeoladel: f64,
+    #[serde(rename = "KKHDCNOJHOL")]
+    pub kkhdcnojhol: f64,
 
-    #[serde(rename = "PDOHJMLDIGM")]
-    pub pdohjmldigm: String,
+    #[serde(rename = "PNDOEAIPNOA")]
+    pub pndoeaipnoa: String,
 
-    #[serde(rename = "KFCLAKFEPDE")]
-    pub kfclakfepde: String,
+    #[serde(rename = "ENCABPCJHHO")]
+    pub encabpcjhho: String,
 
-    #[serde(rename = "IEAPLOFMBDL")]
-    pub ieaplofmbdl: String,
+    #[serde(rename = "CEJKMNFMDIE")]
+    pub cejkmnfmdie: String,
 
-    #[serde(rename = "IPKALPKLINE")]
-    pub ipkalpkline: String,
+    #[serde(rename = "LCILDKAHBEH")]
+    pub lcildkahbeh: String,
 
-    #[serde(rename = "ANCLLCMHEGA")]
-    pub ancllcmhega: String,
+    #[serde(rename = "LIJHBLCDJMN")]
+    pub lijhblcdjmn: String,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
@@ -44,13 +46,14 @@ pub struct ActivityGearExcelConfigDatum {
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "CIFFIAKNFEB")]
-    pub ciffiaknfeb: f64,
+    #[serde(rename = "BCNGELPJKOB")]
+    pub bcngelpjkob: f64,
 }
 
 pub fn load() -> Result<ActivityGearExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityGearExcelConfigData.json",
     ]

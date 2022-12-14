@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type MaterialSourceDataExcelConfigData = Vec<MaterialSourceDataExcelConfigDatum>;
@@ -14,17 +16,17 @@ pub struct MaterialSourceDataExcelConfigDatum {
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
 
-    #[serde(rename = "GJMLDACGHFJ")]
-    pub gjmldacghfj: Vec<Gjmldacghfj>,
+    #[serde(rename = "JPPEAFMACGK")]
+    pub jppeafmacgk: Vec<Jppeafmacgk>,
 
-    #[serde(rename = "JCLGCACJMMK")]
-    pub jclgcacjmmk: Vec<i64>,
+    #[serde(rename = "AKAIKNIJEKJ")]
+    pub akaiknijekj: Vec<i64>,
 
-    #[serde(rename = "CDCOJJJOADI")]
-    pub cdcojjjoadi: Vec<Cdcojjjoadi>,
+    #[serde(rename = "BJDOMLFDMDB")]
+    pub bjdomlfdmdb: Vec<Bjdomlfdmdb>,
 
-    #[serde(rename = "KFPOMCBFKHM")]
-    pub kfpomcbfkhm: Vec<i64>,
+    #[serde(rename = "AEDMMKCPBOG")]
+    pub aedmmkcpbog: Vec<i64>,
 
     #[serde(rename = "jumpList")]
     pub jump_list: Vec<i64>,
@@ -34,11 +36,11 @@ pub struct MaterialSourceDataExcelConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Gjmldacghfj {
+pub struct Jppeafmacgk {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cdcojjjoadi {
+pub enum Bjdomlfdmdb {
     #[serde(rename = "JUMP_INVESTIGATION")]
     JumpInvestigation,
 
@@ -47,8 +49,9 @@ pub enum Cdcojjjoadi {
 }
 
 pub fn load() -> Result<MaterialSourceDataExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "MaterialSourceDataExcelConfigData.json",
     ]

@@ -2,25 +2,28 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomLevelComponentLimitConfigDatum {
-    #[serde(rename = "EGGAHABAKMH")]
-    pub eggahabakmh: i64,
+    #[serde(rename = "KJAJADIDMGG")]
+    pub kjajadidmgg: i64,
 
-    #[serde(rename = "MPKOBAJFKAD")]
-    pub mpkobajfkad: i64,
+    #[serde(rename = "HODHFHGBONO")]
+    pub hodhfhgbono: i64,
 
-    #[serde(rename = "BBBKPFODPKN")]
-    pub bbbkpfodpkn: i64,
+    #[serde(rename = "JJNNIGJAJEG")]
+    pub jjnnigjajeg: i64,
 }
 
 pub fn load() -> Result<CustomLevelComponentLimitConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomLevelComponentLimitConfigData.json",
     ]

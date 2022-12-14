@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type DigGroupLinkExcelConfigData = Vec<DigGroupLinkExcelConfigDatum>;
@@ -11,31 +13,32 @@ pub struct DigGroupLinkExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BAGCAMCINKO")]
-    pub bagcamcinko: i64,
+    #[serde(rename = "NMDMPKBAICG")]
+    pub nmdmpkbaicg: i64,
 
-    #[serde(rename = "JCGKDCIHMKN")]
-    pub jcgkdcihmkn: i64,
+    #[serde(rename = "LPFNODODEGM")]
+    pub lpfnododegm: i64,
 
-    #[serde(rename = "DELHAGLBDID")]
-    pub delhaglbdid: i64,
+    #[serde(rename = "FBLPOJFJJFE")]
+    pub fblpojfjjfe: i64,
 
-    #[serde(rename = "LFHBNHPDLHD")]
-    pub lfhbnhpdlhd: Vec<i64>,
+    #[serde(rename = "MNCMLAMFHHJ")]
+    pub mncmlamfhhj: Vec<i64>,
 
-    #[serde(rename = "FCJEDIJHPLB")]
-    pub fcjedijhplb: String,
+    #[serde(rename = "NAFIPGDMFGF")]
+    pub nafipgdmfgf: String,
 
-    #[serde(rename = "MBJEDCLHKJF")]
-    pub mbjedclhkjf: Option<i64>,
+    #[serde(rename = "MBCGHGDLKNN")]
+    pub mbcghgdlknn: Option<i64>,
 
-    #[serde(rename = "EHJKKNFIOBN")]
-    pub ehjkknfiobn: Option<i64>,
+    #[serde(rename = "EEMMOOHDBMC")]
+    pub eemmoohdbmc: Option<i64>,
 }
 
 pub fn load() -> Result<DigGroupLinkExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "DigGroupLinkExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ExhibitionCardExcelConfigData = Vec<ExhibitionCardExcelConfigDatum>;
@@ -23,19 +25,20 @@ pub struct ExhibitionCardExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "KKNFAOCNNPM")]
-    pub kknfaocnnpm: Option<Kknfaocnnpm>,
+    #[serde(rename = "DMDGMFFIIBM")]
+    pub dmdgmffiibm: Option<Dmdgmffiibm>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kknfaocnnpm {
+pub enum Dmdgmffiibm {
     #[serde(rename = "EXHIBITION_CARD_ORDER_GREATER_BETTER")]
     ExhibitionCardOrderGreaterBetter,
 }
 
 pub fn load() -> Result<ExhibitionCardExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ExhibitionCardExcelConfigData.json",
     ]

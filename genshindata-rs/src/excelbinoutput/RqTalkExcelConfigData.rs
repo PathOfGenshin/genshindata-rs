@@ -2,58 +2,60 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RqTalkExcelConfigData = Vec<RqTalkExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RqTalkExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_beginWay")]
+    #[serde(rename = "beginWay")]
     pub begin_way: Option<BeginWay>,
 
-    #[serde(rename = "_beginCond")]
+    #[serde(rename = "beginCond")]
     pub begin_cond: Vec<BeginCond>,
 
-    #[serde(rename = "_priority")]
+    #[serde(rename = "priority")]
     pub priority: Option<i64>,
 
-    #[serde(rename = "_nextTalks")]
+    #[serde(rename = "nextTalks")]
     pub next_talks: Vec<i64>,
 
-    #[serde(rename = "_nextRandomTalks")]
+    #[serde(rename = "nextRandomTalks")]
     pub next_random_talks: Vec<i64>,
 
-    #[serde(rename = "_initDialog")]
+    #[serde(rename = "initDialog")]
     pub init_dialog: i64,
 
-    #[serde(rename = "_npcId")]
+    #[serde(rename = "npcId")]
     pub npc_id: Vec<i64>,
 
-    #[serde(rename = "_performCfg")]
+    #[serde(rename = "performCfg")]
     pub perform_cfg: String,
 
-    #[serde(rename = "_questId")]
+    #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "_beginCondComb")]
+    #[serde(rename = "beginCondComb")]
     pub begin_cond_comb: Option<BeginCondComb>,
 
-    #[serde(rename = "_heroTalk")]
+    #[serde(rename = "heroTalk")]
     pub hero_talk: Option<HeroTalk>,
 
-    #[serde(rename = "_showRandomTalkCount")]
+    #[serde(rename = "showRandomTalkCount")]
     pub show_random_talk_count: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct BeginCond {
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub begin_cond_type: Option<Type>,
 
-    #[serde(rename = "_param")]
+    #[serde(rename = "param")]
     pub param: Vec<String>,
 }
 
@@ -100,8 +102,9 @@ pub enum HeroTalk {
 }
 
 pub fn load() -> Result<RqTalkExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RqTalkExcelConfigData.json",
     ]

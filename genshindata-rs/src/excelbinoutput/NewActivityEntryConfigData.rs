@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type NewActivityEntryConfigData = Vec<NewActivityEntryConfigDatum>;
@@ -20,11 +22,11 @@ pub struct NewActivityEntryConfigDatum {
     #[serde(rename = "tabIcon")]
     pub tab_icon: String,
 
-    #[serde(rename = "NMDKMHMBKBJ")]
-    pub nmdkmhmbkbj: Nmdkmhmbkbj,
+    #[serde(rename = "BDPNBACIJHC")]
+    pub bdpnbacijhc: Bdpnbacijhc,
 
-    #[serde(rename = "DHLIOGLOMKN")]
-    pub dhlioglomkn: Dhlioglomkn,
+    #[serde(rename = "GCJJFDFHFJK")]
+    pub gcjjfdfhfjk: Gcjjfdfhfjk,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
@@ -34,34 +36,13 @@ pub struct NewActivityEntryConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dhlioglomkn {
-    #[serde(rename = "Eff_UI_GravenInnocence_PushDialog_Unlock")]
-    EffUiGravenInnocencePushDialogUnlock,
+pub enum Bdpnbacijhc {
+    #[serde(rename = "ART/UI/Menus/Activity/BrickBreaker/BrickBreaker_PushDialog")]
+    ArtUiMenusActivityBrickBreakerBrickBreakerPushDialog,
 
-    #[serde(rename = "Eff_UI_Irodori_PushDialog_Unlock")]
-    EffUiIrodoriPushDialogUnlock,
+    #[serde(rename = "ART/UI/Menus/Activity/FungusFighter/FungusFighter_PushDialog")]
+    ArtUiMenusActivityFungusFighterFungusFighterPushDialog,
 
-    #[serde(rename = "Eff_UI_LanternRiteV2_PushDialog_Unlock")]
-    EffUiLanternRiteV2PushDialogUnlock,
-
-    #[serde(rename = "Eff_UI_MichiaeMatsuri_PushDialog_Unlock")]
-    EffUiMichiaeMatsuriPushDialogUnlock,
-
-    #[serde(rename = "Eff_UI_RogueDiary_PushDialog_Unlock")]
-    EffUiRogueDiaryPushDialogUnlock,
-
-    #[serde(rename = "Eff_UI_SummerTimeV2_PushDialog_Unlock")]
-    EffUiSummerTimeV2PushDialogUnlock,
-
-    #[serde(rename = "Eff_UI_Vintage_PushDialog_Unlock")]
-    EffUiVintagePushDialogUnlock,
-
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Nmdkmhmbkbj {
     #[serde(rename = "ART/UI/Menus/Activity/GravenInnocence/GravenInnocence_PushDialog")]
     ArtUiMenusActivityGravenInnocenceGravenInnocencePushDialog,
 
@@ -87,9 +68,43 @@ pub enum Nmdkmhmbkbj {
     Empty,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Gcjjfdfhfjk {
+    #[serde(rename = "Eff_UI_BrickBreaker_PushDialog_Unlock")]
+    EffUiBrickBreakerPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_FungusFighter_PushDialog_Unlock")]
+    EffUiFungusFighterPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_GravenInnocence_PushDialog_Unlock")]
+    EffUiGravenInnocencePushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_Irodori_PushDialog_Unlock")]
+    EffUiIrodoriPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_LanternRiteV2_PushDialog_Unlock")]
+    EffUiLanternRiteV2PushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_MichiaeMatsuri_PushDialog_Unlock")]
+    EffUiMichiaeMatsuriPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_RogueDiary_PushDialog_Unlock")]
+    EffUiRogueDiaryPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_SummerTimeV2_PushDialog_Unlock")]
+    EffUiSummerTimeV2PushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_Vintage_PushDialog_Unlock")]
+    EffUiVintagePushDialogUnlock,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
 pub fn load() -> Result<NewActivityEntryConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "NewActivityEntryConfigData.json",
     ]

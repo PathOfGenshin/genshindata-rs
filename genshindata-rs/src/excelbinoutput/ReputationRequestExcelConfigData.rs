@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ReputationRequestExcelConfigData = Vec<ReputationRequestExcelConfigDatum>;
@@ -18,7 +20,7 @@ pub struct ReputationRequestExcelConfigDatum {
     pub group_id: i64,
 
     #[serde(rename = "weight")]
-    pub weight: i64,
+    pub weight: Option<i64>,
 
     #[serde(rename = "npcId")]
     pub npc_id: i64,
@@ -37,8 +39,9 @@ pub struct ReputationRequestExcelConfigDatum {
 }
 
 pub fn load() -> Result<ReputationRequestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ReputationRequestExcelConfigData.json",
     ]

@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type PsActivitiesSubTaskConfigData = Vec<PsActivitiesSubTaskConfigDatum>;
@@ -17,15 +19,15 @@ pub struct PsActivitiesSubTaskConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "FIBLOAJMPJG")]
-    pub fibloajmpjg: Fibloajmpjg,
+    #[serde(rename = "KFFAMLJMIML")]
+    pub kffamljmiml: Kffamljmiml,
 
     #[serde(rename = "hidden")]
     pub hidden: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fibloajmpjg {
+pub enum Kffamljmiml {
     #[serde(rename = "1.5.0")]
     The150,
 
@@ -46,11 +48,15 @@ pub enum Fibloajmpjg {
 
     #[serde(rename = "3.1.0")]
     The310,
+
+    #[serde(rename = "3.2.0")]
+    The320,
 }
 
 pub fn load() -> Result<PsActivitiesSubTaskConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "PSActivitiesSubTaskConfigData.json",
     ]

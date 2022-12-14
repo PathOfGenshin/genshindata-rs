@@ -2,72 +2,71 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type CustomLevelComponentConfigData = Vec<CustomLevelComponentConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomLevelComponentConfigDatum {
-    #[serde(rename = "MPKOBAJFKAD")]
-    pub mpkobajfkad: i64,
+    #[serde(rename = "HODHFHGBONO")]
+    pub hodhfhgbono: i64,
 
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "HPKJLBKIFFN")]
-    pub hpkjlbkiffn: i64,
+    #[serde(rename = "IPIMDCPCFMD")]
+    pub ipimdcpcfmd: i64,
 
-    #[serde(rename = "GALOMNANAPD")]
-    pub galomnanapd: i64,
+    #[serde(rename = "AGHHMGDDFEP")]
+    pub aghhmgddfep: i64,
 
-    #[serde(rename = "KKOFIKGCDJH")]
-    pub kkofikgcdjh: Option<i64>,
+    #[serde(rename = "NPDFPBNKNEF")]
+    pub npdfpbnknef: Option<i64>,
 
-    #[serde(rename = "CEGDPPGKIBC")]
-    pub cegdppgkibc: Option<i64>,
+    #[serde(rename = "BDIOBLOGKOC")]
+    pub bdioblogkoc: String,
 
-    #[serde(rename = "NKBBAKKGLIG")]
-    pub nkbbakkglig: String,
+    #[serde(rename = "HGCPHIJFBKJ")]
+    pub hgcphijfbkj: i64,
 
-    #[serde(rename = "IDNNHDDHCPN")]
-    pub idnnhddhcpn: i64,
+    #[serde(rename = "KNOFOLCDJCP")]
+    pub knofolcdjcp: i64,
 
-    #[serde(rename = "OOBMAPMMDAP")]
-    pub oobmapmmdap: i64,
+    #[serde(rename = "HCFHFMGOJCC")]
+    pub hcfhfmgojcc: i64,
 
-    #[serde(rename = "FADLNCMBMBC")]
-    pub fadlncmbmbc: i64,
+    #[serde(rename = "JMAILDKCPEI")]
+    pub jmaildkcpei: Option<Jmaildkcpei>,
 
-    #[serde(rename = "OMDHKAJHHLK")]
-    pub omdhkajhhlk: Option<Omdhkajhhlk>,
+    #[serde(rename = "OPMFGCBPGDM")]
+    pub opmfgcbpgdm: Option<i64>,
 
-    #[serde(rename = "IMJOKCKCLCK")]
-    pub imjokckclck: Option<i64>,
+    #[serde(rename = "OLCMBKNGKPH")]
+    pub olcmbkngkph: Option<bool>,
 
-    #[serde(rename = "IMMPEHFFMBD")]
-    pub immpehffmbd: Option<bool>,
+    #[serde(rename = "FLKBKJEKNBP")]
+    pub flkbkjeknbp: Option<String>,
 
-    #[serde(rename = "BDCKOPABCDN")]
-    pub bdckopabcdn: Option<String>,
+    #[serde(rename = "BNFFMIJIGAP")]
+    pub bnffmijigap: i64,
 
-    #[serde(rename = "EFGPKNMCMPP")]
-    pub efgpknmcmpp: i64,
+    #[serde(rename = "GLMGIKMOFKK")]
+    pub glmgikmofkk: i64,
 
-    #[serde(rename = "LIKEOLHBHEF")]
-    pub likeolhbhef: i64,
+    #[serde(rename = "JHGLGIEBIJA")]
+    pub jhglgiebija: i64,
 
-    #[serde(rename = "HKGJECNHBHB")]
-    pub hkgjecnhbhb: i64,
+    #[serde(rename = "DDPFOKOIFAA")]
+    pub ddpfokoifaa: Option<i64>,
 
-    #[serde(rename = "IIDNDIPIMOA")]
-    pub iidndipimoa: Option<i64>,
-
-    #[serde(rename = "GPPCGFAAKBN")]
-    pub gppcgfaakbn: Option<bool>,
+    #[serde(rename = "LBELOBOILMN")]
+    pub lbeloboilmn: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Omdhkajhhlk {
+pub enum Jmaildkcpei {
     #[serde(rename = "BRICK_ROTATE_45")]
     BrickRotate45,
 
@@ -76,8 +75,9 @@ pub enum Omdhkajhhlk {
 }
 
 pub fn load() -> Result<CustomLevelComponentConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "CustomLevelComponentConfigData.json",
     ]

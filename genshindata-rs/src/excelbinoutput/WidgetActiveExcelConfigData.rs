@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type WidgetActiveExcelConfigData = Vec<WidgetActiveExcelConfigDatum>;
@@ -11,25 +13,26 @@ pub struct WidgetActiveExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "NFKEAHLDMOO")]
-    pub nfkeahldmoo: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LDDJFKFPKKG")]
+    pub lddjfkfpkkg: Vec<i64>,
 
-    #[serde(rename = "OEIPJMOBLOB")]
-    pub oeipjmoblob: String,
+    #[serde(rename = "GFDGGGMDFKM")]
+    pub gfdgggmdfkm: String,
 
-    #[serde(rename = "GLFIAPGPBCM")]
-    pub glfiapgpbcm: Vec<i64>,
+    #[serde(rename = "FEALBOMBNKG")]
+    pub fealbombnkg: Vec<i64>,
 
-    #[serde(rename = "PDGMHLFNBFD")]
-    pub pdgmhlfnbfd: Vec<i64>,
+    #[serde(rename = "JCNLMMHFEKG")]
+    pub jcnlmmhfekg: Vec<i64>,
 
-    #[serde(rename = "GKFJLONCCEO")]
-    pub gkfjloncceo: Option<bool>,
+    #[serde(rename = "DLFNEHADIBF")]
+    pub dlfnehadibf: Option<bool>,
 }
 
 pub fn load() -> Result<WidgetActiveExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "WidgetActiveExcelConfigData.json",
     ]

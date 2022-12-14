@@ -2,6 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RogueDiaryPreviewExcelConfigData = Vec<RogueDiaryPreviewExcelConfigDatum>;
@@ -11,34 +13,35 @@ pub struct RogueDiaryPreviewExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "LBOKGFIMAMN")]
-    pub lbokgfimamn: i64,
+    #[serde(rename = "MLFHJINKKFM")]
+    pub mlfhjinkkfm: i64,
 
-    #[serde(rename = "GDGCNJNBLHB")]
-    pub gdgcnjnblhb: i64,
+    #[serde(rename = "DLMNGKICOAN")]
+    pub dlmngkicoan: i64,
 
-    #[serde(rename = "OOIFPKDKJBE")]
-    pub ooifpkdkjbe: Vec<i64>,
+    #[serde(rename = "MOKBGJGCBOH")]
+    pub mokbgjgcboh: Vec<i64>,
 
-    #[serde(rename = "CPFPEPGDFGM")]
-    pub cpfpepgdfgm: Vec<i64>,
+    #[serde(rename = "OCFGNJDKINF")]
+    pub ocfgnjdkinf: Vec<i64>,
 
-    #[serde(rename = "OEGMFOHBAHC")]
-    pub oegmfohbahc: Vec<i64>,
+    #[serde(rename = "JMBFBGNFBIM")]
+    pub jmbfbgnfbim: Vec<i64>,
 
-    #[serde(rename = "EBLDEKEMJLO")]
-    pub ebldekemjlo: i64,
+    #[serde(rename = "HJECIMJEKJF")]
+    pub hjecimjekjf: i64,
 
-    #[serde(rename = "BLNOPOOOJFB")]
-    pub blnopooojfb: i64,
+    #[serde(rename = "BIACAAPNFCP")]
+    pub biacaapnfcp: i64,
 
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: i64,
 }
 
 pub fn load() -> Result<RogueDiaryPreviewExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RogueDiaryPreviewExcelConfigData.json",
     ]

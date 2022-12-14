@@ -2,31 +2,33 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type RandomQuestElemPoolExcelConfigData = Vec<RandomQuestElemPoolExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RandomQuestElemPoolExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_poolId")]
+    #[serde(rename = "poolId")]
     pub pool_id: i64,
 
-    #[serde(rename = "_weight")]
+    #[serde(rename = "weight")]
     pub weight: i64,
 
-    #[serde(rename = "_sampleList")]
+    #[serde(rename = "sampleList")]
     pub sample_list: Vec<SampleList>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SampleList {
-    #[serde(rename = "_type")]
+    #[serde(rename = "type")]
     pub sample_list_type: Type,
 
-    #[serde(rename = "_content")]
+    #[serde(rename = "content")]
     pub content: String,
 }
 
@@ -94,8 +96,9 @@ pub enum Type {
 }
 
 pub fn load() -> Result<RandomQuestElemPoolExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "RandomQuestElemPoolExcelConfigData.json",
     ]

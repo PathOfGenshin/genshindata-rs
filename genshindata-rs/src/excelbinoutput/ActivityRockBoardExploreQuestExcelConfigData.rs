@@ -2,14 +2,16 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
+use std::env;
+
 extern crate serde_derive;
 
 pub type ActivityRockBoardExploreQuestExcelConfigData = Vec<ActivityRockBoardExploreQuestExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
-    #[serde(rename = "MGNHACIGAJJ")]
-    pub mgnhacigajj: i64,
+    #[serde(rename = "DCPOIMPCNJH")]
+    pub dcpoimpcnjh: i64,
 
     #[serde(rename = "questID")]
     pub quest_id: i64,
@@ -20,16 +22,17 @@ pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
     #[serde(rename = "iconName")]
     pub icon_name: String,
 
-    #[serde(rename = "DGGMIFJMJBP")]
-    pub dggmifjmjbp: i64,
+    #[serde(rename = "DMHGKGCGIJG")]
+    pub dmhgkgcgijg: i64,
 
-    #[serde(rename = "HMMIBLBGDAN")]
-    pub hmmiblbgdan: i64,
+    #[serde(rename = "PODKEBDBGFJ")]
+    pub podkebdbgfj: i64,
 }
 
 pub fn load() -> Result<ActivityRockBoardExploreQuestExcelConfigData, crate::json::JsonError> {
+    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
-        "GenshinData",
+        game_resources_path.as_str(),
         "ExcelBinOutput",
         "ActivityRockBoardExploreQuestExcelConfigData.json",
     ]
