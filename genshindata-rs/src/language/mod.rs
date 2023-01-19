@@ -9,10 +9,12 @@ pub enum Language {
     ES,
     FR,
     ID,
+    IT,
     JP,
     KR,
     PT,
     RU,
     TH,
+    TR,
     VI,
 }
