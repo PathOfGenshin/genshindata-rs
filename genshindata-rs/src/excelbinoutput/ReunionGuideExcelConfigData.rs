@@ -13,32 +13,32 @@ pub struct ReunionGuideExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FLAFPDCJLGO")]
-    pub flafpdcjlgo: i64,
+    #[serde(rename = "JJHEJMPOEEL")]
+    pub jjhejmpoeel: i64,
 
-    #[serde(rename = "LNOHGHNENHB")]
-    pub lnohghnenhb: i64,
+    #[serde(rename = "CFLFGDGJAHG")]
+    pub cflfgdgjahg: i64,
 
-    #[serde(rename = "MEOKCNFFDCK")]
-    pub meokcnffdck: i64,
+    #[serde(rename = "BLHLECDKHCN")]
+    pub blhlecdkhcn: i64,
 
-    #[serde(rename = "GCPIHOGGOKA")]
-    pub gcpihoggoka: String,
+    #[serde(rename = "ELNJHJCGAPG")]
+    pub elnjhjcgapg: String,
 
-    #[serde(rename = "CKPIACLNHBP")]
-    pub ckpiaclnhbp: Vec<Ckpiaclnhbp>,
+    #[serde(rename = "CHKLPFMDJOD")]
+    pub chklpfmdjod: Vec<Chklpfmdjod>,
 
-    #[serde(rename = "MJCCLHOFMNI")]
-    pub mjcclhofmni: Option<String>,
+    #[serde(rename = "CGKNBIKOJAD")]
+    pub cgknbikojad: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ckpiaclnhbp {
+pub struct Chklpfmdjod {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 
     #[serde(rename = "type")]
-    pub ckpiaclnhbp_type: Option<String>,
+    pub chklpfmdjod_type: Option<String>,
 }
 
 pub fn load() -> Result<ReunionGuideExcelConfigData, crate::json::JsonError> {

@@ -22,8 +22,8 @@ pub struct TowerScheduleExcelConfigDatum {
     #[serde(rename = "closeTime")]
     pub close_time: String,
 
-    #[serde(rename = "IPGAJMFELEC")]
-    pub ipgajmfelec: i64,
+    #[serde(rename = "MFCGELFGNPG")]
+    pub mfcgelfgnpg: i64,
 
     #[serde(rename = "scheduleRewards")]
     pub schedule_rewards: Vec<ScheduleReward>,

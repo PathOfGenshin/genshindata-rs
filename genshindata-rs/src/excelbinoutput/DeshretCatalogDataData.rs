@@ -13,11 +13,11 @@ pub struct DeshretCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KBHFMLAKHKG")]
-    pub kbhfmlakhkg: i64,
+    #[serde(rename = "CHPHMBNCOHF")]
+    pub chphmbncohf: i64,
 
-    #[serde(rename = "DABMECHDOII")]
-    pub dabmechdoii: i64,
+    #[serde(rename = "OGDDGNOGHIO")]
+    pub ogddgnoghio: i64,
 }
 
 pub fn load() -> Result<DeshretCatalogDataData, crate::json::JsonError> {

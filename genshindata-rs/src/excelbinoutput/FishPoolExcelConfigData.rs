@@ -53,14 +53,14 @@ pub struct FishPoolExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct StockLimitList {
-    #[serde(rename = "CBPBFBIAOIF")]
-    pub cbpbfbiaoif: Option<Cbpbfbiaoif>,
+    #[serde(rename = "CIHEEACIANH")]
+    pub ciheeacianh: Option<Ciheeacianh>,
 
-    #[serde(rename = "JAMKCHHMAFO")]
-    pub jamkchhmafo: Option<i64>,
+    #[serde(rename = "BFIAMFPKLEA")]
+    pub bfiamfpklea: Option<i64>,
 
-    #[serde(rename = "DGJHCIHOLPI")]
-    pub dgjhciholpi: Option<i64>,
+    #[serde(rename = "HMLJLKCJEBH")]
+    pub hmljlkcjebh: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -70,7 +70,7 @@ pub enum AbilityGroup {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cbpbfbiaoif {
+pub enum Ciheeacianh {
     #[serde(rename = "FISH_STOCK_TYPE_ANY")]
     FishStockTypeAny,
 

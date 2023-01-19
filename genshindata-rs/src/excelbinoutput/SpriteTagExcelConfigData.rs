@@ -13,14 +13,14 @@ pub struct SpriteTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GDNCEIONHEF")]
-    pub gdnceionhef: String,
+    #[serde(rename = "PHPLHGLILNK")]
+    pub phplhglilnk: String,
 
-    #[serde(rename = "DHKJGCENHKK")]
-    pub dhkjgcenhkk: f64,
+    #[serde(rename = "KFCIKAPKCFN")]
+    pub kfcikapkcfn: f64,
 
-    #[serde(rename = "GPKIPJFFMJA")]
-    pub gpkipjffmja: i64,
+    #[serde(rename = "INLHCNHNIKD")]
+    pub inlhcnhnikd: i64,
 }
 
 pub fn load() -> Result<SpriteTagExcelConfigData, crate::json::JsonError> {

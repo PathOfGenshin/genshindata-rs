@@ -19,11 +19,11 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "OLEFDOPDFPF")]
-    pub olefdopdfpf: i64,
+    #[serde(rename = "AEMBECOKILJ")]
+    pub aembecokilj: i64,
 
-    #[serde(rename = "BHBDNMDJOHK")]
-    pub bhbdnmdjohk: i64,
+    #[serde(rename = "LKBLLLMCBJD")]
+    pub lkblllmcbjd: i64,
 
     #[serde(rename = "icon")]
     pub icon: Icon,
@@ -34,11 +34,11 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "sceneIdList")]
     pub scene_id_list: Vec<i64>,
 
-    #[serde(rename = "ECFPFKKNECK")]
-    pub ecfpfkkneck: Option<f64>,
+    #[serde(rename = "NMABACHHBII")]
+    pub nmabachhbii: Option<f64>,
 
-    #[serde(rename = "AJACHCEINKM")]
-    pub ajachceinkm: Option<f64>,
+    #[serde(rename = "EPJCJMMDPCA")]
+    pub epjcjmmdpca: Option<f64>,
 
     #[serde(rename = "unlockByDefault")]
     pub unlock_by_default: Option<bool>,
@@ -46,8 +46,8 @@ pub struct MapTagDataConfigDatum {
     #[serde(rename = "cityID")]
     pub city_id: Option<i64>,
 
-    #[serde(rename = "LNNAACNECCN")]
-    pub lnnaacneccn: Option<i64>,
+    #[serde(rename = "IJMHAMELMEO")]
+    pub ijmhamelmeo: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

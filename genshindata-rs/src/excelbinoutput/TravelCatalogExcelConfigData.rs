@@ -13,11 +13,11 @@ pub struct TravelCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MOEIIAFKBNH")]
-    pub moeiiafkbnh: i64,
+    #[serde(rename = "DHBCPBHMCBG")]
+    pub dhbcpbhmcbg: i64,
 
     #[serde(rename = "questId")]
-    pub quest_id: Option<i64>,
+    pub quest_id: i64,
 
     #[serde(rename = "groupId")]
     pub group_id: Option<i64>,

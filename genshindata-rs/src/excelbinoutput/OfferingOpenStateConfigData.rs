@@ -19,14 +19,14 @@ pub struct OfferingOpenStateConfigDatum {
     #[serde(rename = "itemLimit")]
     pub item_limit: String,
 
-    #[serde(rename = "DCGEHPMIAPM")]
-    pub dcgehpmiapm: String,
+    #[serde(rename = "EMBHAECKKMB")]
+    pub embhaeckkmb: String,
 
-    #[serde(rename = "BLIJGBNOGPI")]
-    pub blijgbnogpi: Option<bool>,
+    #[serde(rename = "IEEICFNHHJC")]
+    pub ieeicfnhhjc: Option<bool>,
 
-    #[serde(rename = "IIBHLFEAFID")]
-    pub iibhlfeafid: Option<bool>,
+    #[serde(rename = "ALGAAGIPMFE")]
+    pub algaagipmfe: Option<bool>,
 
     #[serde(rename = "activityId")]
     pub activity_id: Option<i64>,

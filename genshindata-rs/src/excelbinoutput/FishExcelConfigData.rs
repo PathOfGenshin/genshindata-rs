@@ -22,50 +22,50 @@ pub struct FishExcelConfigDatum {
     #[serde(rename = "hp")]
     pub hp: i64,
 
-    #[serde(rename = "KBNNALLAPEJ")]
-    pub kbnnallapej: Vec<i64>,
+    #[serde(rename = "FOAKGCHNLGD")]
+    pub foakgchnlgd: Vec<i64>,
 
-    #[serde(rename = "ENKILEDODKH")]
-    pub enkiledodkh: i64,
+    #[serde(rename = "FCOJFGDHFJG")]
+    pub fcojfgdhfjg: i64,
 
-    #[serde(rename = "NIBOJPCBNMF")]
-    pub nibojpcbnmf: i64,
+    #[serde(rename = "AMAHALAHNJD")]
+    pub amahalahnjd: i64,
 
-    #[serde(rename = "PCHIAAFPPIA")]
-    pub pchiaafppia: Vec<f64>,
+    #[serde(rename = "OAJMLKLMLPG")]
+    pub oajmlklmlpg: Vec<f64>,
 
-    #[serde(rename = "EPECOMOPMAN")]
-    pub epecomopman: Vec<i64>,
+    #[serde(rename = "OCGJNOEBECL")]
+    pub ocgjnoebecl: Vec<i64>,
 
-    #[serde(rename = "MBDDOKDBOJL")]
-    pub mbddokdbojl: Vec<f64>,
+    #[serde(rename = "KINMFOCBDHP")]
+    pub kinmfocbdhp: Vec<f64>,
 
-    #[serde(rename = "GFDLONHPAGJ")]
-    pub gfdlonhpagj: Vec<f64>,
+    #[serde(rename = "DOMGJBAENPH")]
+    pub domgjbaenph: Vec<f64>,
 
-    #[serde(rename = "KILCAOLHKKG")]
-    pub kilcaolhkkg: f64,
+    #[serde(rename = "LGHMMPJKKIN")]
+    pub lghmmpjkkin: f64,
 
-    #[serde(rename = "KABFIHGJELN")]
-    pub kabfihgjeln: f64,
+    #[serde(rename = "DAEIBIDGCMK")]
+    pub daeibidgcmk: f64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "AAJEBDMKCFH")]
-    pub aajebdmkcfh: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "PACMBOOHLNP")]
+    pub pacmboohlnp: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "OPLJDAADNMO")]
-    pub opljdaadnmo: i64,
+    #[serde(rename = "NPFFNLGANOL")]
+    pub npffnlganol: i64,
 
-    #[serde(rename = "BOBALNMHMCP")]
-    pub bobalnmhmcp: i64,
+    #[serde(rename = "AEGOHIJAHJE")]
+    pub aegohijahje: i64,
 
-    #[serde(rename = "AOKLKBAJMAD")]
-    pub aoklkbajmad: Option<i64>,
+    #[serde(rename = "EMNMMPBNGBN")]
+    pub emnmmpbngbn: Option<i64>,
 
-    #[serde(rename = "BPCBIAGGLEJ")]
-    pub bpcbiagglej: Option<i64>,
+    #[serde(rename = "BHKCEIBBGKL")]
+    pub bhkceibbgkl: Option<i64>,
 }
 
 pub fn load() -> Result<FishExcelConfigData, crate::json::JsonError> {

@@ -13,23 +13,23 @@ pub struct ActivityCrystalLinkEffectBuffExcelConfigDatum {
     #[serde(rename = "buffId")]
     pub buff_id: i64,
 
-    #[serde(rename = "BAJIHJHAKCG")]
-    pub bajihjhakcg: String,
+    #[serde(rename = "BHCJKANDNPF")]
+    pub bhcjkandnpf: String,
 
     #[serde(rename = "abilityName")]
     pub ability_name: String,
 
-    #[serde(rename = "KFFAOOFGOFJ")]
-    pub kffaoofgofj: i64,
+    #[serde(rename = "JDEOJCLKGHE")]
+    pub jdeojclkghe: i64,
 
-    #[serde(rename = "JHMABOBCAAP")]
-    pub jhmabobcaap: i64,
+    #[serde(rename = "NOIJLLLJNFA")]
+    pub noijllljnfa: i64,
 
-    #[serde(rename = "IJFLOIFAJHH")]
-    pub ijfloifajhh: i64,
+    #[serde(rename = "ONGLICJMKEB")]
+    pub onglicjmkeb: i64,
 
-    #[serde(rename = "IKBNJBMNEED")]
-    pub ikbnjbmneed: Vec<String>,
+    #[serde(rename = "CNFEODJFEPL")]
+    pub cnfeodjfepl: Vec<String>,
 }
 
 pub fn load() -> Result<ActivityCrystalLinkEffectBuffExcelConfigData, crate::json::JsonError> {

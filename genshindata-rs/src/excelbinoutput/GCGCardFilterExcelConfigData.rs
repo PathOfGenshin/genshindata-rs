@@ -13,26 +13,26 @@ pub struct GcgCardFilterExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "EGGANPFIEJK")]
-    pub egganpfiejk: Option<bool>,
+    #[serde(rename = "DNHDEDGNEDJ")]
+    pub dnhdedgnedj: Option<bool>,
 
-    #[serde(rename = "AJHKJIBPFLD")]
-    pub ajhkjibpfld: String,
+    #[serde(rename = "ICFAINOJCNG")]
+    pub icfainojcng: String,
 
-    #[serde(rename = "MENKJOIAGAI")]
-    pub menkjoiagai: i64,
+    #[serde(rename = "CCBJNPNNLCH")]
+    pub ccbjnpnnlch: i64,
 
     #[serde(rename = "paramList")]
     pub param_list: Vec<i64>,
 
-    #[serde(rename = "EJCPNMPJEDO")]
-    pub ejcpnmpjedo: i64,
+    #[serde(rename = "DBLLCEGGGBG")]
+    pub dbllcegggbg: i64,
 
-    #[serde(rename = "PBJBCNKKFEK")]
-    pub pbjbcnkkfek: Option<bool>,
+    #[serde(rename = "HOHKJKFMPFM")]
+    pub hohkjkfmpfm: Option<bool>,
 
-    #[serde(rename = "DFFPNNAALHO")]
-    pub dffpnnaalho: Option<bool>,
+    #[serde(rename = "IBEJFELIPHO")]
+    pub ibejfelipho: Option<bool>,
 }
 
 pub fn load() -> Result<GcgCardFilterExcelConfigData, crate::json::JsonError> {

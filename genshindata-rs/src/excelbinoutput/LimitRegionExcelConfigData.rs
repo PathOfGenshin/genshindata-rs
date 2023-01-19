@@ -22,8 +22,8 @@ pub struct LimitRegionExcelConfigDatum {
     #[serde(rename = "type")]
     pub limit_region_excel_config_datum_type: Type,
 
-    #[serde(rename = "EDJGHBIGGNB")]
-    pub edjghbiggnb: Option<String>,
+    #[serde(rename = "GOCFNAGAHKG")]
+    pub gocfnagahkg: Option<String>,
 
     #[serde(rename = "order")]
     pub order: Option<i64>,

@@ -34,8 +34,8 @@ pub struct PhotographExpressionExcelConfigDatum {
     #[serde(rename = "openConds")]
     pub open_conds: Vec<OpenCond>,
 
-    #[serde(rename = "NJAMEFECDPJ")]
-    pub njamefecdpj: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "NKHEPEJMMDG")]
+    pub nkhepejmmdg: Vec<Option<serde_json::Value>>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

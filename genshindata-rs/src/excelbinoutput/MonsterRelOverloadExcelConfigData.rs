@@ -13,44 +13,50 @@ pub struct MonsterRelOverloadExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HAPPJDPDMCP")]
-    pub happjdpdmcp: Happjdpdmcp,
+    #[serde(rename = "CMBJBIMAFPM")]
+    pub cmbjbimafpm: Cmbjbimafpm,
 
-    #[serde(rename = "BCFFALFNMNE")]
-    pub bcffalfnmne: Bcffalfnmne,
+    #[serde(rename = "FOBMLMMHAPE")]
+    pub fobmlmmhape: Fobmlmmhape,
 
-    #[serde(rename = "BPNMHIJGEFJ")]
-    pub bpnmhijgefj: Vec<Bpnmhijgefj>,
+    #[serde(rename = "MOGBDAHNNAC")]
+    pub mogbdahnnac: Vec<Mogbdahnnac>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bpnmhijgefj {
+pub struct Mogbdahnnac {
     #[serde(rename = "paramList")]
     pub param_list: Vec<i64>,
 
-    #[serde(rename = "KKKFFHGMABN")]
-    pub kkkffhgmabn: Kkkffhgmabn,
+    #[serde(rename = "DKGKLHDACDI")]
+    pub dkgklhdacdi: Dkgklhdacdi,
 
     #[serde(rename = "monsterRarity")]
     pub monster_rarity: MonsterRarity,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bcffalfnmne {
+pub enum Cmbjbimafpm {
+    #[serde(rename = "MONSTER_POLY_DROP_GV")]
+    MonsterPolyDropGv,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Fobmlmmhape {
     #[serde(rename = "_MONSTER_FUNGUSSTATE_")]
     MonsterFungusstate,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kkkffhgmabn {
+pub enum Dkgklhdacdi {
+    #[serde(rename = "异化蕈兽")]
+    Dkgklhdacdi,
+
     #[serde(rename = "蕈兽")]
     Empty,
 
     #[serde(rename = "大异化蕈兽")]
     Fluffy,
-
-    #[serde(rename = "异化蕈兽")]
-    Kkkffhgmabn,
 
     #[serde(rename = "大蕈兽")]
     Purple,
@@ -63,12 +69,6 @@ pub enum MonsterRarity {
 
     #[serde(rename = "MONSTER_RARITY_SMALL_MONSTER")]
     MonsterRaritySmallMonster,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Happjdpdmcp {
-    #[serde(rename = "MONSTER_POLY_DROP_GV")]
-    MonsterPolyDropGv,
 }
 
 pub fn load() -> Result<MonsterRelOverloadExcelConfigData, crate::json::JsonError> {

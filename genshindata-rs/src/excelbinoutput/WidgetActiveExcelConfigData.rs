@@ -13,20 +13,20 @@ pub struct WidgetActiveExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "LDDJFKFPKKG")]
-    pub lddjfkfpkkg: Vec<i64>,
+    #[serde(rename = "OFFGODOPHEF")]
+    pub offgodophef: Vec<i64>,
 
-    #[serde(rename = "GFDGGGMDFKM")]
-    pub gfdgggmdfkm: String,
+    #[serde(rename = "LAHJBPOHGEP")]
+    pub lahjbpohgep: String,
 
-    #[serde(rename = "FEALBOMBNKG")]
-    pub fealbombnkg: Vec<i64>,
+    #[serde(rename = "GIGCIPJIKOA")]
+    pub gigcipjikoa: Vec<i64>,
 
-    #[serde(rename = "JCNLMMHFEKG")]
-    pub jcnlmmhfekg: Vec<i64>,
+    #[serde(rename = "JEOHDHLHIHF")]
+    pub jeohdhlhihf: Vec<i64>,
 
-    #[serde(rename = "DLFNEHADIBF")]
-    pub dlfnehadibf: Option<bool>,
+    #[serde(rename = "BNCAHIFNPDH")]
+    pub bncahifnpdh: Option<bool>,
 }
 
 pub fn load() -> Result<WidgetActiveExcelConfigData, crate::json::JsonError> {

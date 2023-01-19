@@ -13,15 +13,15 @@ pub struct TrialAvatarFetterDataConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "FJLAMCNFKEI")]
-    pub fjlamcnfkei: i64,
+    #[serde(rename = "DOANGAKPMHE")]
+    pub doangakpmhe: i64,
 
-    #[serde(rename = "AOEKLBCFJNJ")]
-    pub aoeklbcfjnj: Aoeklbcfjnj,
+    #[serde(rename = "GCODACJGFMN")]
+    pub gcodacjgfmn: Gcodacjgfmn,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Aoeklbcfjnj {
+pub struct Gcodacjgfmn {
     #[serde(rename = "paramList")]
     pub param_list: Vec<i64>,
 

@@ -133,6 +133,45 @@ pub enum ActionAfter {
     #[serde(rename = "DialogAction/D722720205_After")]
     DialogActionD722720205After,
 
+    #[serde(rename = "DialogAction/D731862803_After")]
+    DialogActionD731862803After,
+
+    #[serde(rename = "DialogAction/D731873203_After")]
+    DialogActionD731873203After,
+
+    #[serde(rename = "DialogAction/D731875203_After")]
+    DialogActionD731875203After,
+
+    #[serde(rename = "DialogAction/D732195908_After")]
+    DialogActionD732195908After,
+
+    #[serde(rename = "DialogAction/D732810215_After")]
+    DialogActionD732810215After,
+
+    #[serde(rename = "DialogAction/D732810217_After")]
+    DialogActionD732810217After,
+
+    #[serde(rename = "DialogAction/D732812603_After")]
+    DialogActionD732812603After,
+
+    #[serde(rename = "DialogAction/D732812605_After")]
+    DialogActionD732812605After,
+
+    #[serde(rename = "DialogAction/D732812703_After")]
+    DialogActionD732812703After,
+
+    #[serde(rename = "DialogAction/D732812705_After")]
+    DialogActionD732812705After,
+
+    #[serde(rename = "DialogAction/D732871633_After")]
+    DialogActionD732871633After,
+
+    #[serde(rename = "DialogAction/D732871636_After")]
+    DialogActionD732871636After,
+
+    #[serde(rename = "DialogAction/D732873103_After")]
+    DialogActionD732873103After,
+
     #[serde(rename = "DialogAction/D790230810_After")]
     DialogActionD790230810After,
 
@@ -148,8 +187,8 @@ pub enum ActionAfter {
     #[serde(rename = "GCG/open_GcgLevelPage_CatBar")]
     GcgOpenGcgLevelPageCatBar,
 
-    #[serde(rename = "GCG/open_GcgLevelPage_CatBar_1")]
-    GcgOpenGcgLevelPageCatBar1,
+    #[serde(rename = "GCG/open_GcgLevelPage_CatBar_2")]
+    GcgOpenGcgLevelPageCatBar2,
 
     #[serde(rename = "GCG/open_GcgQuestLevelPage_1")]
     GcgOpenGcgQuestLevelPage1,
@@ -427,6 +466,9 @@ pub enum ActionAfter {
     #[serde(rename = "Shop/shop_open_31001")]
     ShopShopOpen31001,
 
+    #[serde(rename = "SimpleTalk/Akimbo")]
+    SimpleTalkAkimbo,
+
     #[serde(rename = "SimpleTalk/Downcast")]
     SimpleTalkDowncast,
 
@@ -444,6 +486,9 @@ pub enum ActionAfter {
 
     #[serde(rename = "SimpleTalk/RandomTalk")]
     SimpleTalkRandomTalk,
+
+    #[serde(rename = "SimpleTalk/RandomTalkHold")]
+    SimpleTalkRandomTalkHold,
 
     #[serde(rename = "SimpleTalk/Standby")]
     SimpleTalkStandby,
@@ -679,6 +724,12 @@ pub enum ActionAfter {
     #[serde(rename = "UI/open_activity_GrowFlowers_page")]
     UiOpenActivityGrowFlowersPage,
 
+    #[serde(rename = "UI/open_activity_lanv3_boatgamematch_page")]
+    UiOpenActivityLanv3BoatgamematchPage,
+
+    #[serde(rename = "UI/open_activity_lanv3_shadowgame_selectlevel_page")]
+    UiOpenActivityLanv3ShadowgameSelectlevelPage,
+
     #[serde(rename = "UI/open_activity_LunaRiteMarkPage_Inazuma")]
     UiOpenActivityLunaRiteMarkPageInazuma,
 
@@ -744,6 +795,21 @@ pub enum ActionAfter {
 
     #[serde(rename = "UI/open_luminance_stone_page")]
     UiOpenLuminanceStonePage,
+
+    #[serde(rename = "UI/open_OnikabutoActivity_Page1")]
+    UiOpenOnikabutoActivityPage1,
+
+    #[serde(rename = "UI/open_OnikabutoActivity_Page2")]
+    UiOpenOnikabutoActivityPage2,
+
+    #[serde(rename = "UI/open_OnikabutoActivity_Page3")]
+    UiOpenOnikabutoActivityPage3,
+
+    #[serde(rename = "UI/open_OnikabutoActivity_Page4")]
+    UiOpenOnikabutoActivityPage4,
+
+    #[serde(rename = "UI/open_OnikabutoActivity_Page5")]
+    UiOpenOnikabutoActivityPage5,
 
     #[serde(rename = "UI/open_playerlevel_page")]
     UiOpenPlayerlevelPage,
@@ -862,6 +928,9 @@ pub enum ActionBefore {
     #[serde(rename = "GCG/ClearWorldChallengeTalk")]
     GcgClearWorldChallengeTalk,
 
+    #[serde(rename = "GCG/ClearWorldChallengeTalk_CatBar")]
+    GcgClearWorldChallengeTalkCatBar,
+
     #[serde(rename = "GCG/ClearWorldChallengeTalk_Nosteer")]
     GcgClearWorldChallengeTalkNosteer,
 
@@ -876,6 +945,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "GCG/open_GcgLevelPage")]
     GcgOpenGcgLevelPage,
+
+    #[serde(rename = "GCG/open_GcgLevelPage_CatBar_1")]
+    GcgOpenGcgLevelPageCatBar1,
 
     #[serde(rename = "GCG/open_GcgLevelPage_Invitation")]
     GcgOpenGcgLevelPageInvitation,
@@ -961,11 +1033,17 @@ pub enum ActionBefore {
     #[serde(rename = "SimpleTalk/RandomTalk_Start")]
     SimpleTalkRandomTalkStart,
 
+    #[serde(rename = "SimpleTalk/Refuse")]
+    SimpleTalkRefuse,
+
     #[serde(rename = "SimpleTalk/Request01_Start")]
     SimpleTalkRequest01Start,
 
     #[serde(rename = "SimpleTalk/ShakeHead")]
     SimpleTalkShakeHead,
+
+    #[serde(rename = "SimpleTalk/Shrug")]
+    SimpleTalkShrug,
 
     #[serde(rename = "SimpleTalk/Standby")]
     SimpleTalkStandby,
@@ -975,6 +1053,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "SimpleTalk/StrikeChest_Start")]
     SimpleTalkStrikeChestStart,
+
+    #[serde(rename = "SimpleTalk/Think")]
+    SimpleTalkThink,
 
     #[serde(rename = "SimpleTalk/Think_Start")]
     SimpleTalkThinkStart,
@@ -1699,6 +1780,9 @@ pub enum OptionIcon {
     #[serde(rename = "UI_Icon_Intee_DailyEvent_1")]
     UiIconInteeDailyEvent1,
 
+    #[serde(rename = "UI_Icon_Intee_ElectroherculesBattle")]
+    UiIconInteeElectroherculesBattle,
+
     #[serde(rename = "UI_Icon_Intee_Explore_0")]
     UiIconInteeExplore0,
 
@@ -1725,6 +1809,12 @@ pub enum OptionIcon {
 
     #[serde(rename = "UI_Icon_Intee_HomeSwitch")]
     UiIconInteeHomeSwitch,
+
+    #[serde(rename = "UI_Icon_Intee_LanV3BoatGame")]
+    UiIconInteeLanV3BoatGame,
+
+    #[serde(rename = "UI_Icon_Intee_LanV3Shadow")]
+    UiIconInteeLanV3Shadow,
 
     #[serde(rename = "UI_Icon_Intee_LuminanceStone")]
     UiIconInteeLuminanceStone,

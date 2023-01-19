@@ -16,14 +16,14 @@ pub struct ActivityMistTrialLevelFactorExcelConfigDatum {
     #[serde(rename = "param")]
     pub param: Vec<String>,
 
-    #[serde(rename = "EEGIKDADNDC")]
-    pub eegikdadndc: i64,
+    #[serde(rename = "ELCFIOHFOIG")]
+    pub elcfiohfoig: i64,
 
-    #[serde(rename = "BNEDGDBFPCA")]
-    pub bnedgdbfpca: i64,
+    #[serde(rename = "NGAMBCADNBP")]
+    pub ngambcadnbp: i64,
 
-    #[serde(rename = "GIKKFKBBLLK")]
-    pub gikkfkbbllk: i64,
+    #[serde(rename = "OHKBCGIAOEB")]
+    pub ohkbcgiaoeb: i64,
 }
 
 pub fn load() -> Result<ActivityMistTrialLevelFactorExcelConfigData, crate::json::JsonError> {

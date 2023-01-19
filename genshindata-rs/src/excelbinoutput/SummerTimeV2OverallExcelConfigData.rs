@@ -13,8 +13,8 @@ pub struct SummerTimeV2OverallExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "KBFFMIJCNOC")]
-    pub kbffmijcnoc: i64,
+    #[serde(rename = "ADHFBKFHBIN")]
+    pub adhfbkfhbin: i64,
 
     #[serde(rename = "itemId")]
     pub item_id: i64,

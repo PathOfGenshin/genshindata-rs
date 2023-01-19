@@ -31,8 +31,8 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "challengeType")]
     pub challenge_type: ChallengeType,
 
-    #[serde(rename = "FBABALEKNCO")]
-    pub fbabaleknco: Vec<String>,
+    #[serde(rename = "DIANDBGAGNA")]
+    pub diandbgagna: Vec<String>,
 
     #[serde(rename = "noSuccessHint")]
     pub no_success_hint: Option<bool>,
@@ -55,14 +55,14 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "subChallengeBannerRule")]
     pub sub_challenge_banner_rule: Option<String>,
 
-    #[serde(rename = "DPNOHCCDMCB")]
-    pub dpnohccdmcb: Option<bool>,
+    #[serde(rename = "DDKFBIMONGN")]
+    pub ddkfbimongn: Option<bool>,
 
     #[serde(rename = "recordType")]
     pub record_type: Option<String>,
 
-    #[serde(rename = "ADILCBFCGND")]
-    pub adilcbfcgnd: Option<bool>,
+    #[serde(rename = "LKEIPIMNFHO")]
+    pub lkeipimnfho: Option<bool>,
 
     #[serde(rename = "isSuccessWhenNotSettled")]
     pub is_success_when_not_settled: Option<bool>,
@@ -73,20 +73,20 @@ pub struct DungeonChallengeConfigDatum {
     #[serde(rename = "isForwardTiming")]
     pub is_forward_timing: Option<bool>,
 
-    #[serde(rename = "GGLDLMJEPHB")]
-    pub ggldlmjephb: Option<bool>,
+    #[serde(rename = "CBIFPCLGFON")]
+    pub cbifpclgfon: Option<bool>,
 
-    #[serde(rename = "ALGKJMLCMIE")]
-    pub algkjmlcmie: Option<String>,
+    #[serde(rename = "NAKNHMNKGMG")]
+    pub naknhmnkgmg: Option<String>,
 
-    #[serde(rename = "GJMFEJABPGD")]
-    pub gjmfejabpgd: Option<String>,
+    #[serde(rename = "GBDLPLGLJOD")]
+    pub gbdlplgljod: Option<String>,
 
-    #[serde(rename = "EKNGADHOPOA")]
-    pub ekngadhopoa: Option<String>,
+    #[serde(rename = "HKCFMPEGLIH")]
+    pub hkcfmpeglih: Option<String>,
 
-    #[serde(rename = "MEHILNPPHBG")]
-    pub mehilnpphbg: Option<String>,
+    #[serde(rename = "OJPAGPOJNKA")]
+    pub ojpagpojnka: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

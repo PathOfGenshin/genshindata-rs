@@ -13,8 +13,8 @@ pub struct VehicleSkillDepotExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "EJIPHPNNAOI")]
-    pub ejiphpnnaoi: Vec<i64>,
+    #[serde(rename = "JILDLKOLCID")]
+    pub jildlkolcid: Vec<i64>,
 }
 
 pub fn load() -> Result<VehicleSkillDepotExcelConfigData, crate::json::JsonError> {

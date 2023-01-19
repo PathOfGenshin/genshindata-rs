@@ -16,20 +16,20 @@ pub struct CoinCollectSkillExcelConfigDatum {
     #[serde(rename = "abilityName")]
     pub ability_name: Vec<String>,
 
-    #[serde(rename = "AKGINPADGCH")]
-    pub akginpadgch: Option<bool>,
+    #[serde(rename = "GOHNCOPJGKE")]
+    pub gohncopjgke: Option<bool>,
 
-    #[serde(rename = "LKIHNDDKPMF")]
-    pub lkihnddkpmf: String,
+    #[serde(rename = "EFCNCNCOAEK")]
+    pub efcncncoaek: String,
 
-    #[serde(rename = "HCBFKDMDJML")]
-    pub hcbfkdmdjml: i64,
+    #[serde(rename = "EGGOMFIBIMM")]
+    pub eggomfibimm: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
-    #[serde(rename = "GGIGMGKHGFD")]
-    pub ggigmgkhgfd: Option<bool>,
+    #[serde(rename = "JHMMLBHCOJG")]
+    pub jhmmlbhcojg: Option<bool>,
 }
 
 pub fn load() -> Result<CoinCollectSkillExcelConfigData, crate::json::JsonError> {

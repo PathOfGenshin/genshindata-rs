@@ -16,17 +16,17 @@ pub struct BrickBreakerDungeonLevelExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "ACHINFJKPOD")]
-    pub achinfjkpod: i64,
+    #[serde(rename = "LAPHKJFJAEO")]
+    pub laphkjfjaeo: i64,
 
     #[serde(rename = "limitTime")]
     pub limit_time: i64,
 
-    #[serde(rename = "OOHDEGCFMFB")]
-    pub oohdegcfmfb: i64,
+    #[serde(rename = "KBONLOMIOFH")]
+    pub kbonlomiofh: i64,
 
-    #[serde(rename = "NDMEONJHCIH")]
-    pub ndmeonjhcih: i64,
+    #[serde(rename = "CFDKMHDHJHD")]
+    pub cfdkmhdhjhd: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
@@ -40,20 +40,20 @@ pub struct BrickBreakerDungeonLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "EGMOAJDFCDP")]
-    pub egmoajdfcdp: i64,
+    #[serde(rename = "GEEPALEMABO")]
+    pub geepalemabo: i64,
 
-    #[serde(rename = "CKMDDANJPBJ")]
-    pub ckmddanjpbj: i64,
+    #[serde(rename = "JFLOONOAOBB")]
+    pub jfloonoaobb: i64,
 
-    #[serde(rename = "FKIMIKJCEFI")]
-    pub fkimikjcefi: Vec<i64>,
+    #[serde(rename = "EFFIIFFKHHJ")]
+    pub effiiffkhhj: Vec<i64>,
 
-    #[serde(rename = "DMOOIIJHFBP")]
-    pub dmooiijhfbp: Vec<String>,
+    #[serde(rename = "AEPACDKIALH")]
+    pub aepacdkialh: Vec<String>,
 
-    #[serde(rename = "EPFCEJJIGMD")]
-    pub epfcejjigmd: Vec<i64>,
+    #[serde(rename = "EKKNKNFAIGI")]
+    pub ekknknfaigi: Vec<i64>,
 }
 
 pub fn load() -> Result<BrickBreakerDungeonLevelExcelConfigData, crate::json::JsonError> {

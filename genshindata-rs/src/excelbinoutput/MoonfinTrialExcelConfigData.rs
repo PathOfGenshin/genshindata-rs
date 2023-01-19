@@ -16,29 +16,29 @@ pub struct MoonfinTrialExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "DJEKBPJHPKA")]
-    pub djekbpjhpka: Vec<i64>,
+    #[serde(rename = "KHAKJEOMIAC")]
+    pub khakjeomiac: Vec<i64>,
 
-    #[serde(rename = "FINEMIHEDEP")]
-    pub finemihedep: i64,
+    #[serde(rename = "LPGOMIKGMFI")]
+    pub lpgomikgmfi: i64,
 
-    #[serde(rename = "GKNPALILPCD")]
-    pub gknpalilpcd: i64,
+    #[serde(rename = "OPEOPPAMHEO")]
+    pub opeoppamheo: i64,
 
-    #[serde(rename = "LAGKIHDLBKF")]
-    pub lagkihdlbkf: i64,
+    #[serde(rename = "LPKLAKJDEGJ")]
+    pub lpklakjdegj: i64,
 
-    #[serde(rename = "ABDGPNDIMPA")]
-    pub abdgpndimpa: i64,
+    #[serde(rename = "JIKKGOAHOIO")]
+    pub jikkgoahoio: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "DHEHFPOHMKM")]
-    pub dhehfpohmkm: Vec<i64>,
+    #[serde(rename = "BNAACGLCCBB")]
+    pub bnaacglccbb: Vec<i64>,
 
-    #[serde(rename = "PMJIAJFJEAC")]
-    pub pmjiajfjeac: Vec<i64>,
+    #[serde(rename = "CKDLPIDIFEG")]
+    pub ckdlpidifeg: Vec<i64>,
 }
 
 pub fn load() -> Result<MoonfinTrialExcelConfigData, crate::json::JsonError> {

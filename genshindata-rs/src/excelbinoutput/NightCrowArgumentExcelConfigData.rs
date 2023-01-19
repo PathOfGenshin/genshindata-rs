@@ -10,57 +10,39 @@ pub type NightCrowArgumentExcelConfigData = Vec<NightCrowArgumentExcelConfigDatu
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NightCrowArgumentExcelConfigDatum {
-    #[serde(rename = "GNNPJBAIOFP")]
-    pub gnnpjbaiofp: i64,
+    #[serde(rename = "GKDNNEPGBKG")]
+    pub gkdnnepgbkg: i64,
 
-    #[serde(rename = "IMOICJLBBOB")]
-    pub imoicjlbbob: Vec<i64>,
+    #[serde(rename = "EGGMPFDGBEC")]
+    pub eggmpfdgbec: Vec<i64>,
 
-    #[serde(rename = "JFJGJFBMPMP")]
-    pub jfjgjfbmpmp: Jfjgjfbmpmp,
+    #[serde(rename = "MJLOCJEOOKB")]
+    pub mjlocjeookb: Mjlocjeookb,
 
-    #[serde(rename = "CCKHJKMMEJC")]
-    pub cckhjkmmejc: String,
+    #[serde(rename = "HHLLFHCOKNH")]
+    pub hhllfhcoknh: String,
 
-    #[serde(rename = "FGFBKOIBPCL")]
-    pub fgfbkoibpcl: String,
+    #[serde(rename = "JPHFNBKGHIG")]
+    pub jphfnbkghig: String,
 
-    #[serde(rename = "OENECFNHOHE")]
-    pub oenecfnhohe: String,
+    #[serde(rename = "MGCPGOMKGGD")]
+    pub mgcpgomkggd: String,
 
-    #[serde(rename = "BCCHBDOGNGL")]
-    pub bcchbdogngl: String,
+    #[serde(rename = "JKMJFEMBBDP")]
+    pub jkmjfembbdp: String,
 
-    #[serde(rename = "LBEFOHIHHAK")]
-    pub lbefohihhak: Lbefohihhak,
+    #[serde(rename = "PLCDDLIPEFJ")]
+    pub plcddlipefj: Plcddlipefj,
 
-    #[serde(rename = "OEIHGGIOKGE")]
-    pub oeihggiokge: Oeihggiokge,
+    #[serde(rename = "JHNCHEBJJDF")]
+    pub jhnchebjjdf: Jhnchebjjdf,
 
-    #[serde(rename = "HNCBBMLBJPL")]
-    pub hncbbmlbjpl: String,
+    #[serde(rename = "FOGEMFLBKIE")]
+    pub fogemflbkie: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jfjgjfbmpmp {
-    #[serde(rename = "0,1.5,0")]
-    The0150,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Lbefohihhak {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "-1,1,-0.01,1,-2,2")]
-    The11001122,
-
-    #[serde(rename = "-1,1,-0.457,2,-2,2.6")]
-    The1104572226,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Oeihggiokge {
+pub enum Jhnchebjjdf {
     #[serde(rename = "")]
     Empty,
 
@@ -69,6 +51,24 @@ pub enum Oeihggiokge {
 
     #[serde(rename = "28.44794,43,-10.34")]
     The2844794431034,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mjlocjeookb {
+    #[serde(rename = "0,1.5,0")]
+    The0150,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Plcddlipefj {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "-1,1,-0.01,1,-2,2")]
+    The11001122,
+
+    #[serde(rename = "-1,1,-0.457,2,-2,2.6")]
+    The1104572226,
 }
 
 pub fn load() -> Result<NightCrowArgumentExcelConfigData, crate::json::JsonError> {

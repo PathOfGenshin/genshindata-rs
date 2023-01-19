@@ -22,8 +22,8 @@ pub struct RogueDiaryBuffDataExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 
-    #[serde(rename = "AEBIGPPLCFF")]
-    pub aebigpplcff: i64,
+    #[serde(rename = "CBNLIKIKJII")]
+    pub cbnlikikjii: i64,
 
     #[serde(rename = "icon")]
     pub icon: String,

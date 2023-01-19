@@ -10,17 +10,17 @@ pub type InstableSprayDifficultyExcelConfigData = Vec<InstableSprayDifficultyExc
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InstableSprayDifficultyExcelConfigDatum {
-    #[serde(rename = "OAHMACMOCEL")]
-    pub oahmacmocel: i64,
+    #[serde(rename = "NJBCFPJKAJE")]
+    pub njbcfpjkaje: i64,
 
-    #[serde(rename = "OLDBOEPEJBE")]
-    pub oldboepejbe: i64,
+    #[serde(rename = "JEHOPJPJPEF")]
+    pub jehopjpjpef: i64,
 
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
 
-    #[serde(rename = "PNGMEAJFNKF")]
-    pub pngmeajfnkf: i64,
+    #[serde(rename = "NJNJFNIOOLJ")]
+    pub njnjfnioolj: i64,
 }
 
 pub fn load() -> Result<InstableSprayDifficultyExcelConfigData, crate::json::JsonError> {

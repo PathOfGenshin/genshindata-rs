@@ -22,8 +22,8 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "serverScript")]
     pub server_script: ServerScript,
 
-    #[serde(rename = "FBNHGKAFFPH")]
-    pub fbnhgkaffph: i64,
+    #[serde(rename = "CJAECDKDIMP")]
+    pub cjaecdkdimp: i64,
 
     #[serde(rename = "affix")]
     pub affix: Vec<i64>,
@@ -100,8 +100,8 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "physicalSubHurt")]
     pub physical_sub_hurt: Option<f64>,
 
-    #[serde(rename = "GJCPCNGOAGI")]
-    pub gjcpcngoagi: Option<i64>,
+    #[serde(rename = "LLNKFJAEIFM")]
+    pub llnkfjaeifm: Option<i64>,
 
     #[serde(rename = "prefabPathHash")]
     pub prefab_path_hash: Option<i64>,
@@ -112,8 +112,8 @@ pub struct MonsterExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "DAHDIAPDAPB")]
-    pub dahdiapdapb: i64,
+    #[serde(rename = "HGKPLCICKMD")]
+    pub hgkplcickmd: i64,
 
     #[serde(rename = "prefabPathRemoteHash")]
     pub prefab_path_remote_hash: i64,

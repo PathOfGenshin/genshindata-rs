@@ -16,8 +16,8 @@ pub struct BartenderEventExcelConfigDatum {
     #[serde(rename = "effectType")]
     pub effect_type: Option<EffectType>,
 
-    #[serde(rename = "OCAGMMIANMA")]
-    pub ocagmmianma: Option<i64>,
+    #[serde(rename = "ECKCCIKPLJG")]
+    pub eckccikpljg: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

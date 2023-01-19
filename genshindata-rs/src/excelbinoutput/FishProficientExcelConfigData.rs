@@ -5,6 +5,7 @@
 use std::env;
 
 extern crate serde_derive;
+use std::collections::HashMap;
 
 pub type FishProficientExcelConfigData = Vec<FishProficientExcelConfigDatum>;
 
@@ -13,20 +14,8 @@ pub struct FishProficientExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "AGJLMKLCKDH")]
-    pub agjlmklckdh: Vec<Agjlmklckdh>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Agjlmklckdh {
-    #[serde(rename = "JNBCKLCINDE")]
-    pub jnbcklcinde: i64,
-
-    #[serde(rename = "IMMIMMBFIJB")]
-    pub immimmbfijb: f64,
-
-    #[serde(rename = "POMPAGFJMOA")]
-    pub pompagfjmoa: f64,
+    #[serde(rename = "OCPLAOBFMAO")]
+    pub ocplaobfmao: Vec<HashMap<String, f64>>,
 }
 
 pub fn load() -> Result<FishProficientExcelConfigData, crate::json::JsonError> {

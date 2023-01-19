@@ -28,8 +28,8 @@ pub struct NewActivityAvatarSelectionExcelConfigDatum {
     #[serde(rename = "costItemNum")]
     pub cost_item_num: Vec<i64>,
 
-    #[serde(rename = "AGIBIFKIMED")]
-    pub agibifkimed: Vec<i64>,
+    #[serde(rename = "KDJOIJNFGDL")]
+    pub kdjoijnfgdl: Vec<i64>,
 }
 
 pub fn load() -> Result<NewActivityAvatarSelectionExcelConfigData, crate::json::JsonError> {

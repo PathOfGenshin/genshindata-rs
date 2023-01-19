@@ -16,8 +16,8 @@ pub struct HomeworldModuleExcelConfigDatum {
     #[serde(rename = "isFree")]
     pub is_free: Option<bool>,
 
-    #[serde(rename = "GHCAGJGHMAO")]
-    pub ghcagjghmao: i64,
+    #[serde(rename = "HFDBHFBNEGL")]
+    pub hfdbhfbnegl: i64,
 
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: i64,

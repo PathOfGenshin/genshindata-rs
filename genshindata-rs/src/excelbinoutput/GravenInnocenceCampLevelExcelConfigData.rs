@@ -13,14 +13,14 @@ pub struct GravenInnocenceCampLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JICEOLNKCME")]
-    pub jiceolnkcme: i64,
+    #[serde(rename = "KKAAOAGIFEF")]
+    pub kkaaoagifef: i64,
 
-    #[serde(rename = "MHOGHOMNKDO")]
-    pub mhoghomnkdo: i64,
+    #[serde(rename = "IAEDJIKKJDH")]
+    pub iaedjikkjdh: i64,
 
-    #[serde(rename = "GPDMDFIILBI")]
-    pub gpdmdfiilbi: i64,
+    #[serde(rename = "MOAGDEFEBCE")]
+    pub moagdefebce: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceCampLevelExcelConfigData, crate::json::JsonError> {

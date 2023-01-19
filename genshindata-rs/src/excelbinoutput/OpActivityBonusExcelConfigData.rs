@@ -31,11 +31,11 @@ pub struct OpActivityBonusExcelConfigDatum {
     #[serde(rename = "trackPara")]
     pub track_para: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "DMAOAJIPKKP")]
-    pub dmaoajipkkp: i64,
+    #[serde(rename = "JNCFHLEOLBA")]
+    pub jncfhleolba: i64,
 
-    #[serde(rename = "FICOINHJLLD")]
-    pub ficoinhjlld: Option<i64>,
+    #[serde(rename = "NAAGFNAOBBO")]
+    pub naagfnaobbo: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

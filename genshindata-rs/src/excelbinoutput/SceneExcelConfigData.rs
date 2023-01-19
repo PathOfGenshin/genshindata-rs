@@ -31,44 +31,47 @@ pub struct SceneExcelConfigDatum {
     #[serde(rename = "comment")]
     pub comment: Comment,
 
-    #[serde(rename = "BHIFNEHFNJF")]
-    pub bhifnehfnjf: Vec<i64>,
+    #[serde(rename = "LFFMIOLMPLC")]
+    pub lffmiolmplc: Vec<f64>,
 
-    #[serde(rename = "GABFKINBCLE")]
-    pub gabfkinbcle: Option<bool>,
+    #[serde(rename = "JFNODLLJGJF")]
+    pub jfnodlljgjf: Vec<i64>,
+
+    #[serde(rename = "MAEGJOKJLHO")]
+    pub maegjokjlho: Option<bool>,
 
     #[serde(rename = "maxSpecifiedAvatarNum")]
     pub max_specified_avatar_num: Option<i64>,
 
-    #[serde(rename = "EOFFCLFCHGJ")]
-    pub eoffclfchgj: Option<String>,
+    #[serde(rename = "KPILJJNBNCP")]
+    pub kpiljjnbncp: Option<String>,
 
-    #[serde(rename = "CFPKJMDHPIA")]
-    pub cfpkjmdhpia: Option<bool>,
+    #[serde(rename = "DIICEBHNNBO")]
+    pub diicebhnnbo: Option<bool>,
 
-    #[serde(rename = "KPHDNLKMONM")]
-    pub kphdnlkmonm: Option<i64>,
+    #[serde(rename = "KEJHBMCPLNF")]
+    pub kejhbmcplnf: Option<i64>,
 
-    #[serde(rename = "LIJCHLBDCDH")]
-    pub lijchlbdcdh: Option<bool>,
+    #[serde(rename = "ODAGMCBMAKA")]
+    pub odagmcbmaka: Option<bool>,
 
-    #[serde(rename = "AOCOFPCNDOB")]
-    pub aocofpcndob: Option<bool>,
+    #[serde(rename = "ACGFBBHHNDB")]
+    pub acgfbbhhndb: Option<bool>,
 
-    #[serde(rename = "ANJMEELNHMK")]
-    pub anjmeelnhmk: Option<f64>,
+    #[serde(rename = "KKDCOIONAEA")]
+    pub kkdcoionaea: Option<f64>,
 
-    #[serde(rename = "IOJNINIHBMF")]
-    pub iojninihbmf: Option<String>,
+    #[serde(rename = "AJPJFHBLFFB")]
+    pub ajpjfhblffb: Option<String>,
 
     #[serde(rename = "entityAppearSorted")]
     pub entity_appear_sorted: Option<i64>,
 
-    #[serde(rename = "KDFBPBGFKKG")]
-    pub kdfbpbgfkkg: Option<Kdfbpbgfkkg>,
+    #[serde(rename = "IKEJHONFFGD")]
+    pub ikejhonffgd: Option<Ikejhonffgd>,
 
-    #[serde(rename = "IGJKKIFLAHK")]
-    pub igjkkiflahk: Option<i64>,
+    #[serde(rename = "OMFNIOEDJPB")]
+    pub omfnioedjpb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -81,7 +84,7 @@ pub enum Comment {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kdfbpbgfkkg {
+pub enum Ikejhonffgd {
     #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
     SceneSubTypePersistentDungeon,
 }

@@ -13,60 +13,48 @@ pub struct PassCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JHMGLDHKKMI")]
-    pub jhmgldhkkmi: i64,
+    #[serde(rename = "NKIDBLBGJLI")]
+    pub nkidblbgjli: i64,
 
-    #[serde(rename = "MBGKPCKJCBH")]
-    pub mbgkpckjcbh: i64,
+    #[serde(rename = "EJHEGNNODCJ")]
+    pub ejhegnnodcj: i64,
 
-    #[serde(rename = "OGLLMCOBLJO")]
-    pub ogllmcobljo: String,
+    #[serde(rename = "ILFAHAGIAIO")]
+    pub ilfahagiaio: String,
 
-    #[serde(rename = "GBECKABMACL")]
-    pub gbeckabmacl: Gbeckabmacl,
+    #[serde(rename = "EINIPCMDHJJ")]
+    pub einipcmdhjj: Einipcmdhjj,
 
-    #[serde(rename = "NNMJMBLGJAE")]
-    pub nnmjmblgjae: String,
+    #[serde(rename = "HBODBCCFJCJ")]
+    pub hbodbccfjcj: String,
 
-    #[serde(rename = "GDHLCPHFJBD")]
-    pub gdhlcphfjbd: Vec<Gdhlcphfjbd>,
+    #[serde(rename = "DIIEGPCMBKL")]
+    pub diiegpcmbkl: Vec<Diiegpcmbkl>,
 
-    #[serde(rename = "AFLKNBDECFB")]
-    pub aflknbdecfb: Option<bool>,
+    #[serde(rename = "OLMAHHDIHIM")]
+    pub olmahhdihim: Option<bool>,
 
-    #[serde(rename = "IAGBCKEAALD")]
-    pub iagbckeaald: Option<i64>,
+    #[serde(rename = "EKNLIMLPCLB")]
+    pub eknlimlpclb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Gdhlcphfjbd {
+pub struct Diiegpcmbkl {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
-    #[serde(rename = "CMMHNAEMCGO")]
-    pub cmmhnaemcgo: Cmmhnaemcgo,
+    #[serde(rename = "DBEAEBMLCJG")]
+    pub dbeaebmlcjg: Dbeaebmlcjg,
 
-    #[serde(rename = "IAGBCKEAALD")]
-    pub iagbckeaald: Option<i64>,
+    #[serde(rename = "EKNLIMLPCLB")]
+    pub eknlimlpclb: Option<i64>,
 
     #[serde(rename = "weight")]
     pub weight: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Gbeckabmacl {
-    #[serde(rename = "BIGWORLD")]
-    Bigworld,
-
-    #[serde(rename = "POLYGON")]
-    Polygon,
-
-    #[serde(rename = "SUBAREA")]
-    Subarea,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Cmmhnaemcgo {
+pub enum Dbeaebmlcjg {
     #[serde(rename = "DeshretPoint_jinruzhiyin01")]
     DeshretPointJinruzhiyin01,
 
@@ -150,6 +138,18 @@ pub enum Cmmhnaemcgo {
 
     #[serde(rename = "")]
     Empty,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Einipcmdhjj {
+    #[serde(rename = "BIGWORLD")]
+    Bigworld,
+
+    #[serde(rename = "POLYGON")]
+    Polygon,
+
+    #[serde(rename = "SUBAREA")]
+    Subarea,
 }
 
 pub fn load() -> Result<PassCatalogDataData, crate::json::JsonError> {

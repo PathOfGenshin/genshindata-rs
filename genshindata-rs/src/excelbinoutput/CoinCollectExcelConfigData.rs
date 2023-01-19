@@ -16,11 +16,11 @@ pub struct CoinCollectExcelConfigDatum {
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
 
-    #[serde(rename = "HDOLJAIPPGC")]
-    pub hdoljaippgc: i64,
+    #[serde(rename = "CNCFLOOMOMF")]
+    pub cncfloomomf: i64,
 
-    #[serde(rename = "GOCPBKJIKNI")]
-    pub gocpbkjikni: i64,
+    #[serde(rename = "IHKMHDDFFJA")]
+    pub ihkmhddffja: i64,
 
     #[serde(rename = "draftId")]
     pub draft_id: i64,
@@ -28,26 +28,26 @@ pub struct CoinCollectExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "FMMNIAEFNHB")]
-    pub fmmniaefnhb: i64,
+    #[serde(rename = "LKLMBIJGJIP")]
+    pub lklmbijgjip: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "HHDOLJNKLNM")]
-    pub hhdoljnklnm: i64,
+    #[serde(rename = "HKEOFEEKOOL")]
+    pub hkeofeekool: i64,
 
-    #[serde(rename = "ODPOCDANKBD")]
-    pub odpocdankbd: Vec<i64>,
+    #[serde(rename = "OHNAPLDNIJL")]
+    pub ohnapldnijl: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "DAAIJHJJJMN")]
-    pub daaijhjjjmn: i64,
+    #[serde(rename = "GFDFJMMHMIC")]
+    pub gfdfjmmhmic: i64,
 
-    #[serde(rename = "DANMDCGNJBA")]
-    pub danmdcgnjba: i64,
+    #[serde(rename = "OKPLOMJEIIB")]
+    pub okplomjeiib: i64,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -55,14 +55,14 @@ pub struct CoinCollectExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "OENJJHLKAOL")]
-    pub oenjjhlkaol: i64,
+    #[serde(rename = "DMEOKDENLMA")]
+    pub dmeokdenlma: i64,
 
-    #[serde(rename = "EGLPDLIINOK")]
-    pub eglpdliinok: Vec<i64>,
+    #[serde(rename = "ODGJEDHADAK")]
+    pub odgjedhadak: Vec<i64>,
 
-    #[serde(rename = "DBFLDLDNACA")]
-    pub dbfldldnaca: String,
+    #[serde(rename = "OJHIKLAHHFK")]
+    pub ojhiklahhfk: String,
 }
 
 pub fn load() -> Result<CoinCollectExcelConfigData, crate::json::JsonError> {

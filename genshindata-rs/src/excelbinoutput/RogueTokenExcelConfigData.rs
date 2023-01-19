@@ -19,21 +19,21 @@ pub struct RogueTokenExcelConfigDatum {
     #[serde(rename = "level")]
     pub level: i64,
 
-    #[serde(rename = "GNAHIEEDDKG")]
-    pub gnahieeddkg: Vec<i64>,
+    #[serde(rename = "DGIBGNHIHJF")]
+    pub dgibgnhihjf: Vec<i64>,
 
-    #[serde(rename = "EGMCDMGHAIA")]
-    pub egmcdmghaia: Vec<i64>,
+    #[serde(rename = "ENLINFGJFHN")]
+    pub enlinfgjfhn: Vec<i64>,
 
-    #[serde(rename = "HFECNOEIOEL")]
-    pub hfecnoeioel: Vec<i64>,
+    #[serde(rename = "MCLLDFHOCMG")]
+    pub mclldfhocmg: Vec<i64>,
 
-    #[serde(rename = "JIPOLNFCBIH")]
-    pub jipolnfcbih: Option<Jipolnfcbih>,
+    #[serde(rename = "LABLCINJFIB")]
+    pub lablcinjfib: Option<Lablcinjfib>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jipolnfcbih {
+pub enum Lablcinjfib {
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_BOSS")]
     RogueMonsterDifficultyBoss,
 

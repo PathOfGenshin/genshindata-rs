@@ -10,33 +10,33 @@ pub type CustomGadgetTabExcelConfigData = Vec<CustomGadgetTabExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomGadgetTabExcelConfigDatum {
-    #[serde(rename = "FDFAHKHDLDG")]
-    pub fdfahkhdldg: i64,
+    #[serde(rename = "JDIKEENBMCD")]
+    pub jdikeenbmcd: i64,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
 
-    #[serde(rename = "MFAIAKIOMCL")]
-    pub mfaiakiomcl: Vec<String>,
+    #[serde(rename = "GMADAOIOIEK")]
+    pub gmadaoioiek: Vec<String>,
 
-    #[serde(rename = "IGADKKCLMKN")]
-    pub igadkkclmkn: Igadkkclmkn,
+    #[serde(rename = "FGFJDBKDAEB")]
+    pub fgfjdbkdaeb: Fgfjdbkdaeb,
 
-    #[serde(rename = "PJKBDGJJAMI")]
-    pub pjkbdgjjami: Pjkbdgjjami,
+    #[serde(rename = "PBDCHOGKANI")]
+    pub pbdchogkani: Pbdchogkani,
 
-    #[serde(rename = "CEEDBCJGKEG")]
-    pub ceedbcjgkeg: i64,
+    #[serde(rename = "DOOCIBFFKIK")]
+    pub doocibffkik: i64,
 
-    #[serde(rename = "IPDJCKKFPBP")]
-    pub ipdjckkfpbp: i64,
+    #[serde(rename = "CBKBAEANHGL")]
+    pub cbkbaeanhgl: i64,
 
-    #[serde(rename = "EEFFHGBFNCG")]
-    pub eeffhgbfncg: Option<i64>,
+    #[serde(rename = "IPIELILAKPH")]
+    pub ipielilakph: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Igadkkclmkn {
+pub enum Fgfjdbkdaeb {
     #[serde(rename = "Eff_SceneObj_FlowerPot_Selected")]
     EffSceneObjFlowerPotSelected,
 
@@ -51,7 +51,7 @@ pub enum Igadkkclmkn {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pjkbdgjjami {
+pub enum Pbdchogkani {
     #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
     EffSceneObjFlowerShlefSwitch,
 

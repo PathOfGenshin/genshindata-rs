@@ -10,53 +10,53 @@ pub type InferenceWordExcelConfigData = Vec<InferenceWordExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferenceWordExcelConfigDatum {
-    #[serde(rename = "JIMANNHOGCF")]
-    pub jimannhogcf: i64,
+    #[serde(rename = "LCNCANKKCNE")]
+    pub lcncankkcne: i64,
 
-    #[serde(rename = "GNJHEMDOCLN")]
-    pub gnjhemdocln: i64,
+    #[serde(rename = "ABJJEFNJDIO")]
+    pub abjjefnjdio: i64,
 
-    #[serde(rename = "BHDLGDFFJLD")]
-    pub bhdlgdffjld: Option<bool>,
+    #[serde(rename = "MAPABFEODID")]
+    pub mapabfeodid: Option<bool>,
 
-    #[serde(rename = "GKLLFMMMPNL")]
-    pub gkllfmmmpnl: Option<bool>,
+    #[serde(rename = "CMHBGHLGFLN")]
+    pub cmhbghlgfln: Option<bool>,
 
-    #[serde(rename = "COGDPFAMGAH")]
-    pub cogdpfamgah: Vec<Cogdpfamgah>,
+    #[serde(rename = "OLAIKHKMPOM")]
+    pub olaikhkmpom: Vec<Nnihfnfejmd>,
 
-    #[serde(rename = "MHLOEJNCOLC")]
-    pub mhloejncolc: Option<bool>,
+    #[serde(rename = "OPOEPCEICFH")]
+    pub opoepceicfh: Option<bool>,
 
-    #[serde(rename = "DONDHIDFOMO")]
-    pub dondhidfomo: Option<i64>,
+    #[serde(rename = "BEJNIAIOGBP")]
+    pub bejniaiogbp: Option<i64>,
 
-    #[serde(rename = "EBOOJIIAABA")]
-    pub eboojiiaaba: Vec<Cogdpfamgah>,
+    #[serde(rename = "NNIHFNFEJMD")]
+    pub nnihfnfejmd: Vec<Nnihfnfejmd>,
 
-    #[serde(rename = "BACNAFHBAIM")]
-    pub bacnafhbaim: i64,
+    #[serde(rename = "OFBMFIDPDBG")]
+    pub ofbmfidpdbg: i64,
 
-    #[serde(rename = "LIFPCFBDJLG")]
-    pub lifpcfbdjlg: Option<i64>,
+    #[serde(rename = "EEMGBBAPFFD")]
+    pub eemgbbapffd: Option<i64>,
 
-    #[serde(rename = "BJHNLPOPALB")]
-    pub bjhnlpopalb: Option<i64>,
+    #[serde(rename = "DMHJHCIIFHK")]
+    pub dmhjhciifhk: Option<i64>,
 
-    #[serde(rename = "IAECKNABEHD")]
-    pub iaecknabehd: Option<i64>,
+    #[serde(rename = "LJMLAKDNCAL")]
+    pub ljmlakdncal: Option<i64>,
 
-    #[serde(rename = "JKIMOMICCNA")]
-    pub jkimomiccna: Option<bool>,
+    #[serde(rename = "IANNOHJJEGO")]
+    pub iannohjjego: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cogdpfamgah {
+pub struct Nnihfnfejmd {
+    #[serde(rename = "type")]
+    pub nnihfnfejmd_type: Option<String>,
+
     #[serde(rename = "param")]
     pub param: String,
-
-    #[serde(rename = "type")]
-    pub cogdpfamgah_type: Option<String>,
 }
 
 pub fn load() -> Result<InferenceWordExcelConfigData, crate::json::JsonError> {

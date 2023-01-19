@@ -22,11 +22,11 @@ pub struct NewActivityEntryConfigDatum {
     #[serde(rename = "tabIcon")]
     pub tab_icon: String,
 
-    #[serde(rename = "BDPNBACIJHC")]
-    pub bdpnbacijhc: Bdpnbacijhc,
+    #[serde(rename = "JIHHKBNPHHE")]
+    pub jihhkbnphhe: Jihhkbnphhe,
 
-    #[serde(rename = "GCJJFDFHFJK")]
-    pub gcjjfdfhfjk: Gcjjfdfhfjk,
+    #[serde(rename = "NPLHPPDBGLM")]
+    pub nplhppdbglm: Nplhppdbglm,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
@@ -36,7 +36,7 @@ pub struct NewActivityEntryConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bdpnbacijhc {
+pub enum Jihhkbnphhe {
     #[serde(rename = "ART/UI/Menus/Activity/BrickBreaker/BrickBreaker_PushDialog")]
     ArtUiMenusActivityBrickBreakerBrickBreakerPushDialog,
 
@@ -51,6 +51,9 @@ pub enum Bdpnbacijhc {
 
     #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV2/LanternRiteV2_PushDialog")]
     ArtUiMenusActivityLanternRiteV2LanternRiteV2PushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV3/LanternRiteV3_PushDialog")]
+    ArtUiMenusActivityLanternRiteV3LanternRiteV3PushDialog,
 
     #[serde(rename = "ART/UI/Menus/Activity/MichiaeMatsuri/MichiaeMatsuri_PushDialog")]
     ArtUiMenusActivityMichiaeMatsuriMichiaeMatsuriPushDialog,
@@ -69,7 +72,7 @@ pub enum Bdpnbacijhc {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Gcjjfdfhfjk {
+pub enum Nplhppdbglm {
     #[serde(rename = "Eff_UI_BrickBreaker_PushDialog_Unlock")]
     EffUiBrickBreakerPushDialogUnlock,
 
@@ -84,6 +87,9 @@ pub enum Gcjjfdfhfjk {
 
     #[serde(rename = "Eff_UI_LanternRiteV2_PushDialog_Unlock")]
     EffUiLanternRiteV2PushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_LanternRiteV3_PushDialog_Unlock")]
+    EffUiLanternRiteV3PushDialogUnlock,
 
     #[serde(rename = "Eff_UI_MichiaeMatsuri_PushDialog_Unlock")]
     EffUiMichiaeMatsuriPushDialogUnlock,

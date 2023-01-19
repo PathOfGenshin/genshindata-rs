@@ -10,29 +10,29 @@ pub type FungusCampExcelConfigData = Vec<FungusCampExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FungusCampExcelConfigDatum {
-    #[serde(rename = "AAMAGGPFIHM")]
-    pub aamaggpfihm: i64,
+    #[serde(rename = "OCAMLGCOBHM")]
+    pub ocamlgcobhm: i64,
 
     #[serde(rename = "campNameTextMapHash")]
     pub camp_name_text_map_hash: i64,
 
-    #[serde(rename = "EGKHABGENGP")]
-    pub egkhabgengp: i64,
+    #[serde(rename = "BDHGNMNHEFG")]
+    pub bdhgnmnhefg: i64,
 
-    #[serde(rename = "IJMPOKMLHNF")]
-    pub ijmpokmlhnf: i64,
+    #[serde(rename = "JKAMKKGPBBJ")]
+    pub jkamkkgpbbj: i64,
 
     #[serde(rename = "questId")]
     pub quest_id: Option<i64>,
 
-    #[serde(rename = "OBNOKOHCKOM")]
-    pub obnokohckom: Option<i64>,
+    #[serde(rename = "EAJIAOHFDJE")]
+    pub eajiaohfdje: Option<i64>,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
-    #[serde(rename = "ALPKPEEJGPH")]
-    pub alpkpeejgph: Option<i64>,
+    #[serde(rename = "EAPMKHIJKKL")]
+    pub eapmkhijkkl: Option<i64>,
 }
 
 pub fn load() -> Result<FungusCampExcelConfigData, crate::json::JsonError> {

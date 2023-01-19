@@ -34,8 +34,14 @@ pub struct WorldAreaConfigDatum {
     #[serde(rename = "showTips")]
     pub show_tips: Option<bool>,
 
-    #[serde(rename = "GreyLevel")]
-    pub grey_level: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "IMFAFEGJMAN")]
+    pub imfafegjman: Vec<i64>,
+
+    #[serde(rename = "BIIDMOCNDEL")]
+    pub biidmocndel: Vec<f64>,
+
+    #[serde(rename = "HBLACDGEBND")]
+    pub hblacdgebnd: Vec<f64>,
 
     #[serde(rename = "minimapScale")]
     pub minimap_scale: f64,
@@ -48,6 +54,9 @@ pub struct WorldAreaConfigDatum {
 
     #[serde(rename = "AreaDefaultLock")]
     pub area_default_lock: Option<bool>,
+
+    #[serde(rename = "GreyLevel")]
+    pub grey_level: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

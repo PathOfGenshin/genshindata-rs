@@ -10,23 +10,23 @@ pub type FungusPlotDungeonEnemyExcelConfigData = Vec<FungusPlotDungeonEnemyExcel
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FungusPlotDungeonEnemyExcelConfigDatum {
-    #[serde(rename = "NALAKGLMPJP")]
-    pub nalakglmpjp: i64,
+    #[serde(rename = "KACFHIKNCJL")]
+    pub kacfhikncjl: i64,
 
-    #[serde(rename = "KOAIAGNLGBO")]
-    pub koaiagnlgbo: i64,
+    #[serde(rename = "KPOBFMBFOGK")]
+    pub kpobfmbfogk: i64,
 
-    #[serde(rename = "ENIKJGPMHAG")]
-    pub enikjgpmhag: i64,
+    #[serde(rename = "ACDLIIGNKJE")]
+    pub acdliignkje: i64,
 
-    #[serde(rename = "LHKAGKLKANJ")]
-    pub lhkagklkanj: String,
+    #[serde(rename = "KJJMOLAHBHO")]
+    pub kjjmolahbho: String,
 
-    #[serde(rename = "JCNBCLPOINM")]
-    pub jcnbclpoinm: String,
+    #[serde(rename = "OINLDBAADOC")]
+    pub oinldbaadoc: String,
 
-    #[serde(rename = "MJKPBNFFIIA")]
-    pub mjkpbnffiia: String,
+    #[serde(rename = "KAKJFGMGIBH")]
+    pub kakjfgmgibh: String,
 }
 
 pub fn load() -> Result<FungusPlotDungeonEnemyExcelConfigData, crate::json::JsonError> {

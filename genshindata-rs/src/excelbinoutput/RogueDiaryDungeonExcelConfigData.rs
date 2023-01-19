@@ -16,20 +16,20 @@ pub struct RogueDiaryDungeonExcelConfigDatum {
     #[serde(rename = "groupList")]
     pub group_list: Vec<i64>,
 
-    #[serde(rename = "FIMKOKHLLGM")]
-    pub fimkokhllgm: Vec<Fimkokhllgm>,
+    #[serde(rename = "EEHBPFLEIBF")]
+    pub eehbpfleibf: Vec<Eehbpfleibf>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fimkokhllgm {
-    #[serde(rename = "LDOBCIDOGBH")]
-    pub ldobcidogbh: Option<i64>,
+pub struct Eehbpfleibf {
+    #[serde(rename = "GOBCDMPIGEC")]
+    pub gobcdmpigec: Option<i64>,
 
-    #[serde(rename = "DEHNLGGCGFO")]
-    pub dehnlggcgfo: Vec<i64>,
+    #[serde(rename = "LPIEMBGNCNN")]
+    pub lpiembgncnn: Vec<i64>,
 
-    #[serde(rename = "AJDGLMCBMNP")]
-    pub ajdglmcbmnp: Option<i64>,
+    #[serde(rename = "HKNOFDKAFDJ")]
+    pub hknofdkafdj: Option<i64>,
 }
 
 pub fn load() -> Result<RogueDiaryDungeonExcelConfigData, crate::json::JsonError> {

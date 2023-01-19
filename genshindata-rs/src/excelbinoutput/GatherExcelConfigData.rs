@@ -43,11 +43,11 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "initDisableInteract")]
     pub init_disable_interact: Option<bool>,
 
-    #[serde(rename = "CIENIJLPNIN")]
-    pub cienijlpnin: Option<Cienijlpnin>,
+    #[serde(rename = "BMLFKEOHKGI")]
+    pub bmlfkeohkgi: Option<Bmlfkeohkgi>,
 
-    #[serde(rename = "JAFPHBNDGJF")]
-    pub jafphbndgjf: Option<bool>,
+    #[serde(rename = "DHJMOIMEFDC")]
+    pub dhjmoimefdc: Option<bool>,
 
     #[serde(rename = "pointLocation")]
     pub point_location: Option<PointLocation>,
@@ -55,8 +55,8 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "isForbidGuest")]
     pub is_forbid_guest: Option<bool>,
 
-    #[serde(rename = "LCCCBCMJPHK")]
-    pub lcccbcmjphk: Option<bool>,
+    #[serde(rename = "BMJFGLFCODC")]
+    pub bmjfglfcodc: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -69,7 +69,7 @@ pub struct BlockLimit {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cienijlpnin {
+pub enum Bmlfkeohkgi {
     #[serde(rename = "GATHER_SAVE_TYPE_HIGH")]
     GatherSaveTypeHigh,
 

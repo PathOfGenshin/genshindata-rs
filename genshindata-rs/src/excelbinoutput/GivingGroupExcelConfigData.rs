@@ -22,8 +22,8 @@ pub struct GivingGroupExcelConfigDatum {
     #[serde(rename = "mistakeTalkId")]
     pub mistake_talk_id: Option<i64>,
 
-    #[serde(rename = "IGADMCLNBDH")]
-    pub igadmclnbdh: Option<i64>,
+    #[serde(rename = "FHHNPDMOGCA")]
+    pub fhhnpdmogca: Option<i64>,
 }
 
 pub fn load() -> Result<GivingGroupExcelConfigData, crate::json::JsonError> {

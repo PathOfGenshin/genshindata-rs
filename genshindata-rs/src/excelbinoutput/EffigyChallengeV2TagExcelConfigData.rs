@@ -13,11 +13,11 @@ pub struct EffigyChallengeV2TagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "AGHHMGDDFEP")]
-    pub aghhmgddfep: i64,
+    #[serde(rename = "LBIGHGOCIPN")]
+    pub lbighgocipn: i64,
 
-    #[serde(rename = "LEDJJBHBLHI")]
-    pub ledjjbhblhi: Vec<Vec<f64>>,
+    #[serde(rename = "BFNEPMHODGA")]
+    pub bfnepmhodga: Vec<Vec<f64>>,
 }
 
 pub fn load() -> Result<EffigyChallengeV2TagExcelConfigData, crate::json::JsonError> {

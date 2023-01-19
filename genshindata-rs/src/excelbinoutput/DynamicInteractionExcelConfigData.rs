@@ -13,23 +13,23 @@ pub struct DynamicInteractionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "PGKIBHLLANK")]
-    pub pgkibhllank: i64,
+    #[serde(rename = "NIAIGEPAMEH")]
+    pub niaigepameh: i64,
 
-    #[serde(rename = "BDOPIEDGAOB")]
-    pub bdopiedgaob: i64,
+    #[serde(rename = "MOPOGIAILDI")]
+    pub mopogiaildi: i64,
 
-    #[serde(rename = "JMIJOFHBKDK")]
-    pub jmijofhbkdk: String,
+    #[serde(rename = "MDMIBNLMICC")]
+    pub mdmibnlmicc: String,
 
-    #[serde(rename = "HMDPGFMENPI")]
-    pub hmdpgfmenpi: i64,
+    #[serde(rename = "JKNHHOPDLIO")]
+    pub jknhhopdlio: i64,
 
-    #[serde(rename = "NDBKJJGLGOE")]
-    pub ndbkjjglgoe: String,
+    #[serde(rename = "FDAHEJEAGLA")]
+    pub fdahejeagla: String,
 
-    #[serde(rename = "OFAJMFBCFCN")]
-    pub ofajmfbcfcn: bool,
+    #[serde(rename = "HLPFJOBOCFB")]
+    pub hlpfjobocfb: bool,
 }
 
 pub fn load() -> Result<DynamicInteractionExcelConfigData, crate::json::JsonError> {

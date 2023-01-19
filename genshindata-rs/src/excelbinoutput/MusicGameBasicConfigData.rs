@@ -23,8 +23,8 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "jsonPath")]
     pub json_path: String,
 
-    #[serde(rename = "PFJNOLPCBLI")]
-    pub pfjnolpcbli: i64,
+    #[serde(rename = "BBGLIGAMPDM")]
+    pub bbgligampdm: i64,
 
     #[serde(rename = "successLatePoint")]
     pub success_late_point: i64,
@@ -35,17 +35,17 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scoreOneKey")]
     pub score_one_key: i64,
 
-    #[serde(rename = "AGPEGPGIHDL")]
-    pub agpegpgihdl: i64,
+    #[serde(rename = "AJIADKFDMGK")]
+    pub ajiadkfdmgk: i64,
 
-    #[serde(rename = "LDPIEDGDCCJ")]
-    pub ldpiedgdccj: i64,
+    #[serde(rename = "CNBKGMKMMCE")]
+    pub cnbkgmkmmce: i64,
 
-    #[serde(rename = "PADMIAEEMOA")]
-    pub padmiaeemoa: f64,
+    #[serde(rename = "DONIBIFFNAI")]
+    pub donibiffnai: f64,
 
-    #[serde(rename = "JHAJDBEANNB")]
-    pub jhajdbeannb: HashMap<String, f64>,
+    #[serde(rename = "JHMKJHMFOKF")]
+    pub jhmkjhmfokf: HashMap<String, f64>,
 
     #[serde(rename = "comboConfig")]
     pub combo_config: Vec<i64>,
@@ -53,27 +53,27 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scaleRange")]
     pub scale_range: i64,
 
-    #[serde(rename = "GPGELMLCCKC")]
-    pub gpgelmlcckc: String,
+    #[serde(rename = "OLMGBALMLNA")]
+    pub olmgbalmlna: String,
 
-    #[serde(rename = "LFJMFLFENOJ")]
-    pub lfjmflfenoj: String,
+    #[serde(rename = "JCPDHCIEKJG")]
+    pub jcpdhciekjg: String,
 
-    #[serde(rename = "EHFGOLFGGHH")]
-    pub ehfgolfgghh: i64,
+    #[serde(rename = "OIDBLAODKGD")]
+    pub oidblaodkgd: i64,
 
-    #[serde(rename = "BHLLCBDBEFL")]
-    pub bhllcbdbefl: Vec<Bhllcbdbefl>,
+    #[serde(rename = "PFJBEJJKCDB")]
+    pub pfjbejjkcdb: Vec<Giikbkobgkb>,
 
     #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
 
-    #[serde(rename = "NJIEPKDENOG")]
-    pub njiepkdenog: Vec<Bhllcbdbefl>,
+    #[serde(rename = "GIIKBKOBGKB")]
+    pub giikbkobgkb: Vec<Giikbkobgkb>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bhllcbdbefl {
+pub struct Giikbkobgkb {
 }
 
 pub fn load() -> Result<MusicGameBasicConfigData, crate::json::JsonError> {

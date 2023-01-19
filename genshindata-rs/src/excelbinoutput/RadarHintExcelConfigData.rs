@@ -13,8 +13,8 @@ pub struct RadarHintExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CDDDFGLMLIM")]
-    pub cdddfglmlim: String,
+    #[serde(rename = "GHCAHKKIHKM")]
+    pub ghcahkkihkm: String,
 
     #[serde(rename = "name")]
     pub name: String,
@@ -31,8 +31,8 @@ pub struct RadarHintExcelConfigDatum {
     #[serde(rename = "audioName")]
     pub audio_name: AudioName,
 
-    #[serde(rename = "PCIIFMHFMKH")]
-    pub pciifmhfmkh: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "BLDACDFLDPF")]
+    pub bldacdfldpf: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "offsetRadius")]
     pub offset_radius: Option<f64>,
@@ -40,8 +40,11 @@ pub struct RadarHintExcelConfigDatum {
     #[serde(rename = "areaRadius")]
     pub area_radius: Option<f64>,
 
-    #[serde(rename = "PJODOAHGPKB")]
-    pub pjodoahgpkb: Option<bool>,
+    #[serde(rename = "KDBNMMFABEK")]
+    pub kdbnmmfabek: Option<bool>,
+
+    #[serde(rename = "CGFILAIIOBF")]
+    pub cgfilaiiobf: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

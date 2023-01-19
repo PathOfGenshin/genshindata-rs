@@ -22,8 +22,8 @@ pub struct SystemOpenUiConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "EPGOBOBJMLG")]
-    pub epgobobjmlg: Option<bool>,
+    #[serde(rename = "EEAPBKLPPCD")]
+    pub eeapbklppcd: Option<bool>,
 }
 
 pub fn load() -> Result<SystemOpenUiConfigData, crate::json::JsonError> {

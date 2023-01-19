@@ -6,16 +6,7 @@ use std::env;
 
 extern crate serde_derive;
 
-pub type HandbookQuestGuideHintPicExcelConfigData = Vec<HandbookQuestGuideHintPicExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct HandbookQuestGuideHintPicExcelConfigDatum {
-    #[serde(rename = "HIHFDJPEEMJ")]
-    pub hihfdjpeemj: i64,
-
-    #[serde(rename = "KBNHJOHHKDO")]
-    pub kbnhjohhkdo: String,
-}
+pub type HandbookQuestGuideHintPicExcelConfigData = Vec<Option<serde_json::Value>>;
 
 pub fn load() -> Result<HandbookQuestGuideHintPicExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

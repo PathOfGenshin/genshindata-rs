@@ -13,32 +13,32 @@ pub struct OraionokamiDataExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "NNMAEBBBKCD")]
-    pub nnmaebbbkcd: i64,
+    #[serde(rename = "MCAGNOJALOE")]
+    pub mcagnojaloe: i64,
 
-    #[serde(rename = "NNEGFDOFJPI")]
-    pub nnegfdofjpi: i64,
+    #[serde(rename = "JAFLCPODJLA")]
+    pub jaflcpodjla: i64,
 
     #[serde(rename = "serverBuffId")]
     pub server_buff_id: i64,
 
-    #[serde(rename = "JGKFKNMPEOD")]
-    pub jgkfknmpeod: Vec<i64>,
+    #[serde(rename = "HHEFLAJCCCL")]
+    pub hheflajcccl: Vec<i64>,
 
-    #[serde(rename = "GBHHEIMIENB")]
-    pub gbhheimienb: i64,
+    #[serde(rename = "PPGBLPGAPBE")]
+    pub ppgblpgapbe: i64,
 
-    #[serde(rename = "EGIABOILDHC")]
-    pub egiaboildhc: i64,
+    #[serde(rename = "FNCOIILOKJO")]
+    pub fncoiilokjo: i64,
 
-    #[serde(rename = "NIGIAEOAIEN")]
-    pub nigiaeoaien: i64,
+    #[serde(rename = "HHHAEKBJKCL")]
+    pub hhhaekbjkcl: i64,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "IDHEEMANMBA")]
-    pub idheemanmba: i64,
+    #[serde(rename = "MLIPIBGFLIK")]
+    pub mlipibgflik: i64,
 
     #[serde(rename = "iconPath")]
     pub icon_path: String,

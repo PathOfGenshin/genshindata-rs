@@ -16,8 +16,8 @@ pub struct ActivityCrystalLinkDifficultyExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "OMHMDNEFHKP")]
-    pub omhmdnefhkp: i64,
+    #[serde(rename = "IIGCOLKJKHN")]
+    pub iigcolkjkhn: i64,
 
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,

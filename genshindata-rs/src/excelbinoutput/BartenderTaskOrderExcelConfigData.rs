@@ -13,23 +13,23 @@ pub struct BartenderTaskOrderExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "KHENOBOCPNA")]
-    pub khenobocpna: Vec<i64>,
+    #[serde(rename = "KDLCJAEOGLB")]
+    pub kdlcjaeoglb: Vec<i64>,
 
-    #[serde(rename = "GLNPAOCLAKD")]
-    pub glnpaoclakd: i64,
+    #[serde(rename = "DKMMHCJKAIP")]
+    pub dkmmhcjkaip: i64,
 
-    #[serde(rename = "GCOKPDBEMBL")]
-    pub gcokpdbembl: i64,
+    #[serde(rename = "LGMPJPICPMP")]
+    pub lgmpjpicpmp: i64,
 
-    #[serde(rename = "JPABNAAIABL")]
-    pub jpabnaaiabl: i64,
+    #[serde(rename = "FAKKOCMJBFD")]
+    pub fakkocmjbfd: i64,
 
-    #[serde(rename = "LGEBBACPDHB")]
-    pub lgebbacpdhb: Option<i64>,
+    #[serde(rename = "JJFFNDFBIEI")]
+    pub jjffndfbiei: Option<i64>,
 
-    #[serde(rename = "AEIEJGFMMFG")]
-    pub aeiejgfmmfg: Option<bool>,
+    #[serde(rename = "DEOBAMPPPCL")]
+    pub deobampppcl: Option<bool>,
 }
 
 pub fn load() -> Result<BartenderTaskOrderExcelConfigData, crate::json::JsonError> {

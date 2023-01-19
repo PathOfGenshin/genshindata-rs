@@ -67,8 +67,8 @@ pub struct ProudSkillExcelConfigDatum {
     #[serde(rename = "effectiveForTeam")]
     pub effective_for_team: Option<i64>,
 
-    #[serde(rename = "GALDAHCPLHD")]
-    pub galdahcplhd: Option<bool>,
+    #[serde(rename = "EPCDAIAKJBM")]
+    pub epcdaiakjbm: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

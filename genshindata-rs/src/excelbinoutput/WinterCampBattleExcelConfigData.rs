@@ -19,11 +19,11 @@ pub struct WinterCampBattleExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "JICEOLNKCME")]
-    pub jiceolnkcme: i64,
+    #[serde(rename = "KKAAOAGIFEF")]
+    pub kkaaoagifef: i64,
 
-    #[serde(rename = "MHOGHOMNKDO")]
-    pub mhoghomnkdo: i64,
+    #[serde(rename = "IAEDJIKKJDH")]
+    pub iaedjikkjdh: i64,
 
     #[serde(rename = "rewardID")]
     pub reward_id: i64,

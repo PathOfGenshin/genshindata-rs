@@ -13,18 +13,18 @@ pub struct GcgElementReactionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "PECNGABCFLK")]
-    pub pecngabcflk: Pecngabcflk,
+    #[serde(rename = "HFOFLKLECMI")]
+    pub hfoflklecmi: Hfoflklecmi,
 
-    #[serde(rename = "EIMLCFBHPGL")]
-    pub eimlcfbhpgl: String,
+    #[serde(rename = "EHCAMKOLCIB")]
+    pub ehcamkolcib: String,
 
-    #[serde(rename = "FFEPABHJKDG")]
-    pub ffepabhjkdg: i64,
+    #[serde(rename = "IKNKIEBAPOG")]
+    pub iknkiebapog: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pecngabcflk {
+pub enum Hfoflklecmi {
     #[serde(rename = "GCG_ELEMENT_CRYO")]
     GcgElementCryo,
 

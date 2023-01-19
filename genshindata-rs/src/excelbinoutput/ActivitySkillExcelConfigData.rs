@@ -28,8 +28,8 @@ pub struct ActivitySkillExcelConfigDatum {
     #[serde(rename = "energyMax")]
     pub energy_max: i64,
 
-    #[serde(rename = "EEOPHAJKBJB")]
-    pub eeophajkbjb: Vec<i64>,
+    #[serde(rename = "IIPFMDPIBEC")]
+    pub iipfmdpibec: Vec<i64>,
 
     #[serde(rename = "cdTime")]
     pub cd_time: f64,
@@ -55,11 +55,11 @@ pub struct ActivitySkillExcelConfigDatum {
     #[serde(rename = "interruptTextTextMapHash")]
     pub interrupt_text_text_map_hash: i64,
 
-    #[serde(rename = "JGPJNNADHEA")]
-    pub jgpjnnadhea: Option<i64>,
+    #[serde(rename = "LOJIINMKCAC")]
+    pub lojiinmkcac: Option<i64>,
 
-    #[serde(rename = "NGNOHCDNOKH")]
-    pub ngnohcdnokh: Option<bool>,
+    #[serde(rename = "ALIMBFLIODH")]
+    pub alimbfliodh: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

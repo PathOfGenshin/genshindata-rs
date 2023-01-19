@@ -22,8 +22,8 @@ pub struct AnimalCodexExcelConfigDatum {
     #[serde(rename = "SortOrder")]
     pub sort_order: i64,
 
-    #[serde(rename = "ILKEIIJGDJB")]
-    pub ilkeiijgdjb: Option<Ilkeiijgdjb>,
+    #[serde(rename = "DAICMNOFMNG")]
+    pub daicmnofmng: Option<Daicmnofmng>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -54,7 +54,7 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ilkeiijgdjb {
+pub enum Daicmnofmng {
     #[serde(rename = "CODEX_COUNT_TYPE_CAPTURE")]
     CodexCountTypeCapture,
 

@@ -16,8 +16,8 @@ pub struct ChargeBarStyleExcelConfigDatum {
     #[serde(rename = "iconName")]
     pub icon_name: String,
 
-    #[serde(rename = "OMFCKFGMHAH")]
-    pub omfckfgmhah: Option<String>,
+    #[serde(rename = "GPLPPNJKGLK")]
+    pub gplppnjkglk: Option<String>,
 }
 
 pub fn load() -> Result<ChargeBarStyleExcelConfigData, crate::json::JsonError> {

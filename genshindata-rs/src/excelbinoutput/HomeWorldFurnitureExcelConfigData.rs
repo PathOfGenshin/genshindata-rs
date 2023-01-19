@@ -31,8 +31,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "cost")]
     pub cost: Option<i64>,
 
-    #[serde(rename = "FKDAJOKFHII")]
-    pub fkdajokfhii: Option<i64>,
+    #[serde(rename = "JCNHMPNPAGK")]
+    pub jcnhmpnpagk: Option<i64>,
 
     #[serde(rename = "itemIcon")]
     pub item_icon: String,
@@ -40,8 +40,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "effectIcon")]
     pub effect_icon: EffectIcon,
 
-    #[serde(rename = "IBPHMOFJCLH")]
-    pub ibphmofjclh: Option<f64>,
+    #[serde(rename = "NNMAFILLDKD")]
+    pub nnmafilldkd: Option<f64>,
 
     #[serde(rename = "rankLevel")]
     pub rank_level: i64,
@@ -49,8 +49,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "jsonName")]
     pub json_name: JsonName,
 
-    #[serde(rename = "BIMHLPMNPDJ")]
-    pub bimhlpmnpdj: Vec<i64>,
+    #[serde(rename = "IMMMCMKDBPK")]
+    pub immmcmkdbpk: Vec<i64>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -70,8 +70,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "rank")]
     pub rank: Option<i64>,
 
-    #[serde(rename = "PKKHGGDHCFG")]
-    pub pkkhggdhcfg: Option<Pkkhggdhcfg>,
+    #[serde(rename = "KPDGOCHDLHI")]
+    pub kpdgochdlhi: Option<Kpdgochdlhi>,
 
     #[serde(rename = "isUnique")]
     pub is_unique: Option<i64>,
@@ -82,17 +82,17 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "height")]
     pub height: Option<f64>,
 
-    #[serde(rename = "PAHDEGEBCGL")]
-    pub pahdegebcgl: Option<i64>,
+    #[serde(rename = "CFCONCFFOFL")]
+    pub cfconcffofl: Option<i64>,
 
-    #[serde(rename = "OCANMCBHHOG")]
-    pub ocanmcbhhog: Option<i64>,
+    #[serde(rename = "GDNDDAJPJNJ")]
+    pub gdnddajpjnj: Option<i64>,
 
-    #[serde(rename = "MFGACDIOHGF")]
-    pub mfgacdiohgf: Option<i64>,
+    #[serde(rename = "GCIKBHNEAKP")]
+    pub gcikbhneakp: Option<i64>,
 
-    #[serde(rename = "PBNIGMKKMEO")]
-    pub pbnigmkkmeo: Option<i64>,
+    #[serde(rename = "PEFFHINKOCE")]
+    pub peffhinkoce: Option<i64>,
 
     #[serde(rename = "roomSceneID")]
     pub room_scene_id: Option<i64>,
@@ -100,11 +100,11 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "JEIFIEHKBJM")]
-    pub jeifiehkbjm: Option<String>,
+    #[serde(rename = "GEPNMEPLEMN")]
+    pub gepnmeplemn: Option<String>,
 
-    #[serde(rename = "EFOOPFLOABA")]
-    pub efoopfloaba: Option<i64>,
+    #[serde(rename = "MHBBPCHKCFP")]
+    pub mhbbpchkcfp: Option<i64>,
 
     #[serde(rename = "furnitureNameTextMapHash")]
     pub furniture_name_text_map_hash: Option<bool>,
@@ -156,7 +156,7 @@ pub enum JsonName {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pkkhggdhcfg {
+pub enum Kpdgochdlhi {
     #[serde(rename = "Apartment")]
     Apartment,
 

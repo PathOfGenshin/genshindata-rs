@@ -10,20 +10,20 @@ pub type HomeWorldFarmFieldExcelConfigData = Vec<HomeWorldFarmFieldExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldFarmFieldExcelConfigDatum {
-    #[serde(rename = "NIJMMICEOOL")]
-    pub nijmmiceool: i64,
+    #[serde(rename = "FIOHABBFNCI")]
+    pub fiohabbfnci: i64,
 
-    #[serde(rename = "BEAAOJPJPFH")]
-    pub beaaojpjpfh: String,
+    #[serde(rename = "GPBLMEJADCH")]
+    pub gpblmejadch: String,
 
-    #[serde(rename = "NLPIINAKJMI")]
-    pub nlpiinakjmi: i64,
+    #[serde(rename = "MAENGLHEOJD")]
+    pub maenglheojd: i64,
 
-    #[serde(rename = "DAKEOEFHANE")]
-    pub dakeoefhane: i64,
+    #[serde(rename = "GEDNGGEKFCA")]
+    pub gednggekfca: i64,
 
-    #[serde(rename = "HKPABECEBNO")]
-    pub hkpabecebno: Vec<i64>,
+    #[serde(rename = "BEKAGIELGDD")]
+    pub bekagielgdd: Vec<i64>,
 }
 
 pub fn load() -> Result<HomeWorldFarmFieldExcelConfigData, crate::json::JsonError> {

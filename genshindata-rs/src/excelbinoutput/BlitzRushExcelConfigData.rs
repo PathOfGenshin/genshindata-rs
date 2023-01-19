@@ -22,17 +22,17 @@ pub struct BlitzRushExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "MLFHJINKKFM")]
-    pub mlfhjinkkfm: i64,
+    #[serde(rename = "NPKFHMGOEAJ")]
+    pub npkfhmgoeaj: i64,
 
-    #[serde(rename = "KBFFMIJCNOC")]
-    pub kbffmijcnoc: i64,
+    #[serde(rename = "ADHFBKFHBIN")]
+    pub adhfbkfhbin: i64,
 
-    #[serde(rename = "PNIMHNPCFCI")]
-    pub pnimhnpcfci: i64,
+    #[serde(rename = "AEIHAJMHMKC")]
+    pub aeihajmhmkc: i64,
 
-    #[serde(rename = "PKIPGKMPMMC")]
-    pub pkipgkmpmmc: Vec<i64>,
+    #[serde(rename = "AEHKPEACKPL")]
+    pub aehkpeackpl: Vec<i64>,
 
     #[serde(rename = "rewardPreview")]
     pub reward_preview: i64,

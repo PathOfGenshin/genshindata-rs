@@ -16,11 +16,11 @@ pub struct BrickBreakerBaseExcelConfigDatum {
     #[serde(rename = "matchId")]
     pub match_id: i64,
 
-    #[serde(rename = "ACKHOGDGKGK")]
-    pub ackhogdgkgk: i64,
+    #[serde(rename = "EMNLMADAGBI")]
+    pub emnlmadagbi: i64,
 
-    #[serde(rename = "DPCMDNEJJNM")]
-    pub dpcmdnejjnm: i64,
+    #[serde(rename = "DLPOGMLFAFE")]
+    pub dlpogmlfafe: i64,
 }
 
 pub fn load() -> Result<BrickBreakerBaseExcelConfigData, crate::json::JsonError> {

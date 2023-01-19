@@ -13,29 +13,29 @@ pub struct GcgDeckExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CBPFHHBCHFI")]
-    pub cbpfhhbchfi: Vec<i64>,
+    #[serde(rename = "CGKPJKFEEBJ")]
+    pub cgkpjkfeebj: Vec<i64>,
 
-    #[serde(rename = "NPHKAKLDHOC")]
-    pub nphkakldhoc: Vec<i64>,
+    #[serde(rename = "ADBGJDKKLIL")]
+    pub adbgjdkklil: Vec<i64>,
 
-    #[serde(rename = "FOCNIOAIGEG")]
-    pub focnioaigeg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HCHGNECBDLD")]
+    pub hchgnecbdld: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "NMKLIBEPKNO")]
-    pub nmklibepkno: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "GEGECAJGKAC")]
+    pub gegecajgkac: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "FEJOINMFEPP")]
-    pub fejoinmfepp: Vec<Fejoinmfepp>,
+    #[serde(rename = "IMKIGMJBMJJ")]
+    pub imkigmjbmjj: Vec<Imkigmjbmjj>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fejoinmfepp {
+pub struct Imkigmjbmjj {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
-    #[serde(rename = "KKPJFOJGEPB")]
-    pub kkpjfojgepb: Option<i64>,
+    #[serde(rename = "GNLOPIADCCA")]
+    pub gnlopiadcca: Option<i64>,
 }
 
 pub fn load() -> Result<GcgDeckExcelConfigData, crate::json::JsonError> {

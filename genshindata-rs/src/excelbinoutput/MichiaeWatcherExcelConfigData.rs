@@ -13,8 +13,8 @@ pub struct MichiaeWatcherExcelConfigDatum {
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
 
-    #[serde(rename = "IJFLOIFAJHH")]
-    pub ijfloifajhh: i64,
+    #[serde(rename = "ONGLICJMKEB")]
+    pub onglicjmkeb: i64,
 }
 
 pub fn load() -> Result<MichiaeWatcherExcelConfigData, crate::json::JsonError> {

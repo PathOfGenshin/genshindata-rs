@@ -16,29 +16,29 @@ pub struct ActivityGearExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "GOLILJCIEMP")]
-    pub goliljciemp: Vec<i64>,
+    #[serde(rename = "KNGJLKAOFPD")]
+    pub kngjlkaofpd: Vec<i64>,
 
-    #[serde(rename = "BJHPOPPDADL")]
-    pub bjhpoppdadl: f64,
+    #[serde(rename = "EKEPJPBDLIG")]
+    pub ekepjpbdlig: f64,
 
-    #[serde(rename = "KKHDCNOJHOL")]
-    pub kkhdcnojhol: f64,
+    #[serde(rename = "FEHBNEEDDIF")]
+    pub fehbneeddif: f64,
 
-    #[serde(rename = "PNDOEAIPNOA")]
-    pub pndoeaipnoa: String,
+    #[serde(rename = "KNACNDNIFMC")]
+    pub knacndnifmc: String,
 
-    #[serde(rename = "ENCABPCJHHO")]
-    pub encabpcjhho: String,
+    #[serde(rename = "GGFGEGHAPHJ")]
+    pub ggfgeghaphj: String,
 
-    #[serde(rename = "CEJKMNFMDIE")]
-    pub cejkmnfmdie: String,
+    #[serde(rename = "GNGMLDANHGL")]
+    pub gngmldanhgl: String,
 
-    #[serde(rename = "LCILDKAHBEH")]
-    pub lcildkahbeh: String,
+    #[serde(rename = "BGFPBPPECKA")]
+    pub bgfpbppecka: String,
 
-    #[serde(rename = "LIJHBLCDJMN")]
-    pub lijhblcdjmn: String,
+    #[serde(rename = "HMIMNLBMNPK")]
+    pub hmimnlbmnpk: String,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
@@ -46,8 +46,8 @@ pub struct ActivityGearExcelConfigDatum {
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "BCNGELPJKOB")]
-    pub bcngelpjkob: f64,
+    #[serde(rename = "ECCELLOHNHE")]
+    pub eccellohnhe: f64,
 }
 
 pub fn load() -> Result<ActivityGearExcelConfigData, crate::json::JsonError> {

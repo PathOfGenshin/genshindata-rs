@@ -16,23 +16,23 @@ pub struct ActivityGearGadgetGearExcelConfigDatum {
     #[serde(rename = "gadgetID")]
     pub gadget_id: i64,
 
-    #[serde(rename = "DEMAJFJGJAM")]
-    pub demajfjgjam: Vec<f64>,
+    #[serde(rename = "FCIFHFEHLCP")]
+    pub fcifhfehlcp: Vec<f64>,
 
-    #[serde(rename = "MMDAJKFBMGP")]
-    pub mmdajkfbmgp: Vec<i64>,
+    #[serde(rename = "JLJCGPIBDCE")]
+    pub jljcgpibdce: Vec<i64>,
 
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "IOOPBAOHMLI")]
-    pub ioopbaohmli: String,
+    #[serde(rename = "NGLGBLMPION")]
+    pub nglgblmpion: String,
 
-    #[serde(rename = "LIJHBLCDJMN")]
-    pub lijhblcdjmn: String,
+    #[serde(rename = "HMIMNLBMNPK")]
+    pub hmimnlbmnpk: String,
 
-    #[serde(rename = "LCILDKAHBEH")]
-    pub lcildkahbeh: String,
+    #[serde(rename = "BGFPBPPECKA")]
+    pub bgfpbppecka: String,
 }
 
 pub fn load() -> Result<ActivityGearGadgetGearExcelConfigData, crate::json::JsonError> {

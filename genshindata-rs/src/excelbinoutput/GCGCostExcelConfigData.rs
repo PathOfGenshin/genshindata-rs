@@ -13,8 +13,8 @@ pub struct GcgCostExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_cost_excel_config_datum_type: String,
 
-    #[serde(rename = "BNKFFFCCNGF")]
-    pub bnkfffccngf: i64,
+    #[serde(rename = "IEIJOKCHEOK")]
+    pub ieijokcheok: i64,
 }
 
 pub fn load() -> Result<GcgCostExcelConfigData, crate::json::JsonError> {

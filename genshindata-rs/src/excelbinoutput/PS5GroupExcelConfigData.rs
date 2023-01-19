@@ -19,8 +19,8 @@ pub struct Ps5GroupExcelConfigDatum {
     #[serde(rename = "iconPath")]
     pub icon_path: String,
 
-    #[serde(rename = "KFFAMLJMIML")]
-    pub kffamljmiml: String,
+    #[serde(rename = "IBMHEFDMDJC")]
+    pub ibmhefdmdjc: String,
 }
 
 pub fn load() -> Result<Ps5GroupExcelConfigData, crate::json::JsonError> {

@@ -16,14 +16,14 @@ pub struct IrodoriQuestExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "DLHJHCDKBPN")]
-    pub dlhjhcdkbpn: Vec<i64>,
+    #[serde(rename = "KKNKCLLCECA")]
+    pub kknkcllceca: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "AIPKIHDAPOJ")]
-    pub aipkihdapoj: i64,
+    #[serde(rename = "MFGDPCGDBOL")]
+    pub mfgdpcgdbol: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -31,14 +31,14 @@ pub struct IrodoriQuestExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "CAHKKMONMJC")]
-    pub cahkkmonmjc: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "OBLMOFGFHBE")]
+    pub oblmofgfhbe: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
 
-    #[serde(rename = "AKGCFJAILBN")]
-    pub akgcfjailbn: Option<String>,
+    #[serde(rename = "IBEBPNDNJHK")]
+    pub ibebpndnjhk: Option<String>,
 }
 
 pub fn load() -> Result<IrodoriQuestExcelConfigData, crate::json::JsonError> {

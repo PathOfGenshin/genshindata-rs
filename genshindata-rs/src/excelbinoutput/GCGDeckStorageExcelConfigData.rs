@@ -13,14 +13,14 @@ pub struct GcgDeckStorageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KPINCGJPICF")]
-    pub kpincgjpicf: i64,
+    #[serde(rename = "LLHKCKOBCEL")]
+    pub llhkckobcel: i64,
 
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Option<String>,
 
-    #[serde(rename = "LKOILEBONPH")]
-    pub lkoilebonph: Option<i64>,
+    #[serde(rename = "GEPDGCLJHDF")]
+    pub gepdgcljhdf: Option<i64>,
 }
 
 pub fn load() -> Result<GcgDeckStorageExcelConfigData, crate::json::JsonError> {

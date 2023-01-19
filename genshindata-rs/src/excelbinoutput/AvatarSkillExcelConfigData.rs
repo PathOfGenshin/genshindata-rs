@@ -91,8 +91,8 @@ pub struct AvatarSkillExcelConfigDatum {
     #[serde(rename = "energyMin")]
     pub energy_min: Option<f64>,
 
-    #[serde(rename = "FCJKOLMCMIG")]
-    pub fcjkolmcmig: Option<i64>,
+    #[serde(rename = "BDIHDCLIHDM")]
+    pub bdihdclihdm: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -139,11 +139,17 @@ pub enum DragType {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum GlobalValueKey {
+    #[serde(rename = "AVATAR_BLOCKING_ENERGY")]
+    AvatarBlockingEnergy,
+
     #[serde(rename = "AVATAR_BREAKOUT_ENERGY")]
     AvatarBreakoutEnergy,
 
     #[serde(rename = "AVATAR_GLIDING_ENERGY")]
     AvatarGlidingEnergy,
+
+    #[serde(rename = "AVATAR_LANV3RACE_ENERGY")]
+    AvatarLanv3RaceEnergy,
 
     #[serde(rename = "AVATAR_SEEKANDHIDE_ENERGY")]
     AvatarSeekandhideEnergy,

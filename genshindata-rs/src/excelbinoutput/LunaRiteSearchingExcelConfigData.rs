@@ -13,38 +13,38 @@ pub struct LunaRiteSearchingExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "GBECKABMACL")]
-    pub gbeckabmacl: String,
+    #[serde(rename = "EINIPCMDHJJ")]
+    pub einipcmdhjj: String,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "ACKGDLGBKID")]
-    pub ackgdlgbkid: i64,
+    #[serde(rename = "GDABEMKBKIG")]
+    pub gdabemkbkig: i64,
 
-    #[serde(rename = "MNCMLAMFHHJ")]
-    pub mncmlamfhhj: Vec<i64>,
+    #[serde(rename = "IHHONBFLPJM")]
+    pub ihhonbflpjm: Vec<i64>,
 
     #[serde(rename = "regionCenter")]
     pub region_center: Vec<f64>,
 
-    #[serde(rename = "GGHBJAPBCLB")]
-    pub gghbjapbclb: i64,
+    #[serde(rename = "NADEOMEPDJA")]
+    pub nadeomepdja: i64,
 
     #[serde(rename = "regionRadius")]
     pub region_radius: f64,
 
-    #[serde(rename = "FNPDEOPMNPA")]
-    pub fnpdeopmnpa: i64,
+    #[serde(rename = "PFOCNLJOAJI")]
+    pub pfocnljoaji: i64,
 
-    #[serde(rename = "HNHDNKBHNHJ")]
-    pub hnhdnkbhnhj: i64,
+    #[serde(rename = "AGBHIKJGJHL")]
+    pub agbhikjgjhl: i64,
 
-    #[serde(rename = "BDBAAMCHGLJ")]
-    pub bdbaamchglj: i64,
+    #[serde(rename = "PJCINKMHADA")]
+    pub pjcinkmhada: i64,
 
-    #[serde(rename = "KAGIDBCGGDK")]
-    pub kagidbcggdk: i64,
+    #[serde(rename = "DPECKLHCNKD")]
+    pub dpecklhcnkd: i64,
 }
 
 pub fn load() -> Result<LunaRiteSearchingExcelConfigData, crate::json::JsonError> {

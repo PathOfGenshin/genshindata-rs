@@ -20,7 +20,7 @@ pub struct ReputationRequestExcelConfigDatum {
     pub group_id: i64,
 
     #[serde(rename = "weight")]
-    pub weight: Option<i64>,
+    pub weight: i64,
 
     #[serde(rename = "npcId")]
     pub npc_id: i64,

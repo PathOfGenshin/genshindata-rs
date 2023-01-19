@@ -16,56 +16,56 @@ pub struct IrodoriPoetryExcelConfigDatum {
     #[serde(rename = "condID")]
     pub cond_id: i64,
 
-    #[serde(rename = "MGMCHDFDICN")]
-    pub mgmchdfdicn: i64,
+    #[serde(rename = "FOOMEFLDGKL")]
+    pub foomefldgkl: i64,
 
-    #[serde(rename = "EGKHABGENGP")]
-    pub egkhabgengp: i64,
+    #[serde(rename = "BDHGNMNHEFG")]
+    pub bdhgnmnhefg: i64,
 
     #[serde(rename = "entityType")]
     pub entity_type: String,
 
-    #[serde(rename = "ALLDLHMNLLM")]
-    pub alldlhmnllm: Vec<Alldlhmnllm>,
+    #[serde(rename = "JDDKBPLKBPF")]
+    pub jddkbplkbpf: Vec<Jddkbplkbpf>,
 
-    #[serde(rename = "LDBPEBKBLDO")]
-    pub ldbpebkbldo: i64,
+    #[serde(rename = "GOEKOFNLKFI")]
+    pub goekofnlkfi: i64,
 
-    #[serde(rename = "JJKPDHBIFBM")]
-    pub jjkpdhbifbm: i64,
+    #[serde(rename = "KIADPHPALKC")]
+    pub kiadphpalkc: i64,
 
-    #[serde(rename = "MIJPLHLICLA")]
-    pub mijplhlicla: i64,
+    #[serde(rename = "BJJPMIJFBHM")]
+    pub bjjpmijfbhm: i64,
 
-    #[serde(rename = "DNAEBEBMFMI")]
-    pub dnaebebmfmi: Vec<i64>,
+    #[serde(rename = "EKOMIGMDNIL")]
+    pub ekomigmdnil: Vec<i64>,
 
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,
 
-    #[serde(rename = "HPGOOGHNEEM")]
-    pub hpgooghneem: i64,
+    #[serde(rename = "HAMAGENMAOL")]
+    pub hamagenmaol: i64,
 
-    #[serde(rename = "FHLKABMHNPK")]
-    pub fhlkabmhnpk: i64,
+    #[serde(rename = "EFGDIPKOGIP")]
+    pub efgdipkogip: i64,
 
-    #[serde(rename = "DGJKPDPIEHB")]
-    pub dgjkpdpiehb: i64,
+    #[serde(rename = "EHEEJKJIHIP")]
+    pub eheejkjihip: i64,
 
-    #[serde(rename = "FEEELNDKLCK")]
-    pub feeelndklck: i64,
+    #[serde(rename = "CKCCDPEGCFE")]
+    pub ckccdpegcfe: i64,
 
-    #[serde(rename = "OBLPCHLPFMI")]
-    pub oblpchlpfmi: Vec<i64>,
+    #[serde(rename = "GGMPPGCDNEM")]
+    pub ggmppgcdnem: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Alldlhmnllm {
-    #[serde(rename = "IAIEPLPCMPC")]
-    pub iaieplpcmpc: Vec<i64>,
+pub struct Jddkbplkbpf {
+    #[serde(rename = "JEPLIJKNKMG")]
+    pub jeplijknkmg: Vec<i64>,
 
-    #[serde(rename = "BOKHDOICOHI")]
-    pub bokhdoicohi: Option<i64>,
+    #[serde(rename = "LENEAHCDNHL")]
+    pub leneahcdnhl: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriPoetryExcelConfigData, crate::json::JsonError> {

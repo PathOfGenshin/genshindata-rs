@@ -23,17 +23,17 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "HCNBJHGCIHC")]
-    pub hcnbjhgcihc: Vec<i64>,
+    #[serde(rename = "OBAOGFIILAL")]
+    pub obaogfiilal: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "NNJGLAGCPCG")]
-    pub nnjglagcpcg: Vec<i64>,
+    #[serde(rename = "BACGDFGGKIG")]
+    pub bacgdfggkig: Vec<i64>,
 
-    #[serde(rename = "NKBIBNEHMKI")]
-    pub nkbibnehmki: Vec<i64>,
+    #[serde(rename = "EJMIIENEJJD")]
+    pub ejmiienejjd: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
@@ -41,20 +41,20 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "LMKCPIKEBBI")]
-    pub lmkcpikebbi: Vec<HashMap<String, Vec<String>>>,
+    #[serde(rename = "FINPCANEAKL")]
+    pub finpcaneakl: Vec<HashMap<String, Vec<String>>>,
 
-    #[serde(rename = "PEHELHFCPEM")]
-    pub pehelhfcpem: Vec<HashMap<String, Vec<i64>>>,
+    #[serde(rename = "AGNGGOABDPP")]
+    pub agnggoabdpp: Vec<HashMap<String, Vec<i64>>>,
 
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
 
-    #[serde(rename = "GHJFGBKMLPN")]
-    pub ghjfgbkmlpn: i64,
+    #[serde(rename = "BAAOHHIDGAB")]
+    pub baaohhidgab: i64,
 
-    #[serde(rename = "DEPAMHLBAEL")]
-    pub depamhlbael: i64,
+    #[serde(rename = "JOOCMELANNI")]
+    pub joocmelanni: i64,
 }
 
 pub fn load() -> Result<ActivityCrystalLinkLevelExcelConfigData, crate::json::JsonError> {

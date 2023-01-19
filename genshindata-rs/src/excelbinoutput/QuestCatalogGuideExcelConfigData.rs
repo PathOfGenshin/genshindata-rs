@@ -19,8 +19,8 @@ pub struct QuestCatalogGuideExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "FGCHCLLDPMO")]
-    pub fgchclldpmo: Option<i64>,
+    #[serde(rename = "LINIEJKGMEJ")]
+    pub liniejkgmej: Option<i64>,
 }
 
 pub fn load() -> Result<QuestCatalogGuideExcelConfigData, crate::json::JsonError> {

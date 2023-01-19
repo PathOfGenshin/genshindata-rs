@@ -19,14 +19,14 @@ pub struct GravenInnocenceRaceLevelExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "JICEOLNKCME")]
-    pub jiceolnkcme: i64,
+    #[serde(rename = "KKAAOAGIFEF")]
+    pub kkaaoagifef: i64,
 
-    #[serde(rename = "HPPECOPECAK")]
-    pub hppecopecak: Vec<i64>,
+    #[serde(rename = "CFCKMLPNMCP")]
+    pub cfckmlpnmcp: Vec<i64>,
 
-    #[serde(rename = "EOGHHDGEHPK")]
-    pub eoghhdgehpk: Vec<i64>,
+    #[serde(rename = "DLLPDDAEBAE")]
+    pub dllpddaebae: Vec<i64>,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -34,14 +34,14 @@ pub struct GravenInnocenceRaceLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "BNKJEJFKLEK")]
-    pub bnkjejfklek: i64,
+    #[serde(rename = "NCAKNMBAIJB")]
+    pub ncaknmbaijb: i64,
 
-    #[serde(rename = "LAPBBGEDIJM")]
-    pub lapbbgedijm: f64,
+    #[serde(rename = "DMLBFPHOADL")]
+    pub dmlbfphoadl: f64,
 
-    #[serde(rename = "PJJMFLFKCEE")]
-    pub pjjmflfkcee: f64,
+    #[serde(rename = "LJODAJCOPGL")]
+    pub ljodajcopgl: f64,
 }
 
 pub fn load() -> Result<GravenInnocenceRaceLevelExcelConfigData, crate::json::JsonError> {

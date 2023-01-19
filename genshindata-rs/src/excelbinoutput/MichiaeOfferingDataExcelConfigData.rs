@@ -13,17 +13,17 @@ pub struct MichiaeOfferingDataExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "JMMOCCDPKGL")]
-    pub jmmoccdpkgl: i64,
+    #[serde(rename = "JKOLHJJPGOD")]
+    pub jkolhjjpgod: i64,
 
-    #[serde(rename = "IHDAPPCHCDE")]
-    pub ihdappchcde: Vec<String>,
+    #[serde(rename = "OJHAFHPOILO")]
+    pub ojhafhpoilo: Vec<String>,
 
-    #[serde(rename = "FKOOFLCIMDO")]
-    pub fkooflcimdo: i64,
+    #[serde(rename = "ENHIDJBPENJ")]
+    pub enhidjbpenj: i64,
 
-    #[serde(rename = "OHEAHDHJALG")]
-    pub oheahdhjalg: Vec<String>,
+    #[serde(rename = "OADKPKHMIBA")]
+    pub oadkpkhmiba: Vec<String>,
 
     #[serde(rename = "level")]
     pub level: Option<i64>,

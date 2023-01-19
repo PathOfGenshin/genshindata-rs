@@ -10,20 +10,20 @@ pub type LanV2FireworksFactorDataExcelConfigData = Vec<LanV2FireworksFactorDataE
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LanV2FireworksFactorDataExcelConfigDatum {
-    #[serde(rename = "FNMPALAAFOJ")]
-    pub fnmpalaafoj: i64,
+    #[serde(rename = "MPGMEHOEKMP")]
+    pub mpgmehoekmp: i64,
 
-    #[serde(rename = "JENGIJGKHAP")]
-    pub jengijgkhap: Vec<i64>,
+    #[serde(rename = "EHLEFGMCFHE")]
+    pub ehlefgmcfhe: Vec<i64>,
 
-    #[serde(rename = "EBEFIKLDBCJ")]
-    pub ebefikldbcj: i64,
+    #[serde(rename = "HFMDFACKNOO")]
+    pub hfmdfacknoo: i64,
 
     #[serde(rename = "type")]
     pub lan_v2_fireworks_factor_data_excel_config_datum_type: String,
 
-    #[serde(rename = "BLOKGALPLLO")]
-    pub blokgalpllo: Vec<i64>,
+    #[serde(rename = "GNDPEOEGPLE")]
+    pub gndpeoegple: Vec<i64>,
 }
 
 pub fn load() -> Result<LanV2FireworksFactorDataExcelConfigData, crate::json::JsonError> {

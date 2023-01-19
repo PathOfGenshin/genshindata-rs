@@ -16,8 +16,8 @@ pub struct GravenInnocenceCampStageExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "DJEKBPJHPKA")]
-    pub djekbpjhpka: Vec<i64>,
+    #[serde(rename = "KHAKJEOMIAC")]
+    pub khakjeomiac: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,

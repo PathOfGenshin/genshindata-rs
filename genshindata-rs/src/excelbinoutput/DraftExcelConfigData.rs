@@ -20,7 +20,7 @@ pub struct DraftExcelConfigDatum {
     pub scene_id: Option<i64>,
 
     #[serde(rename = "exec")]
-    pub exec: Exec,
+    pub exec: String,
 
     #[serde(rename = "param")]
     pub param: Option<i64>,
@@ -43,8 +43,8 @@ pub struct DraftExcelConfigDatum {
     #[serde(rename = "twiceConfirmCountDown")]
     pub twice_confirm_count_down: i64,
 
-    #[serde(rename = "FFIHHDMPHJL")]
-    pub ffihhdmphjl: Option<String>,
+    #[serde(rename = "PIOMDKGKJOC")]
+    pub piomdkgkjoc: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -54,27 +54,6 @@ pub struct TransferConfig {
 
     #[serde(rename = "configId")]
     pub config_id: Option<i64>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Exec {
-    #[serde(rename = "DRAFT_EXEC_AUTOSTART_GALLERY")]
-    DraftExecAutostartGallery,
-
-    #[serde(rename = "DRAFT_EXEC_BRICK_BREAKER")]
-    DraftExecBrickBreaker,
-
-    #[serde(rename = "DRAFT_EXEC_CHAR_AMUSEMENT")]
-    DraftExecCharAmusement,
-
-    #[serde(rename = "DRAFT_EXEC_COIN_COLLECT")]
-    DraftExecCoinCollect,
-
-    #[serde(rename = "DRAFT_EXEC_GALLERY")]
-    DraftExecGallery,
-
-    #[serde(rename = "DRAFT_EXEC_HIDE_AND_SEEK")]
-    DraftExecHideAndSeek,
 }
 
 pub fn load() -> Result<DraftExcelConfigData, crate::json::JsonError> {

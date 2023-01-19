@@ -13,8 +13,8 @@ pub struct DeshretPoiCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GPDMDFIILBI")]
-    pub gpdmdfiilbi: i64,
+    #[serde(rename = "MOAGDEFEBCE")]
+    pub moagdefebce: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -25,14 +25,14 @@ pub struct DeshretPoiCatalogDataDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "PCPNFNLJPMC")]
-    pub pcpnfnljpmc: i64,
+    #[serde(rename = "NGCDLFHHIBP")]
+    pub ngcdlfhhibp: i64,
 
-    #[serde(rename = "PNIMBMFIEAE")]
-    pub pnimbmfieae: i64,
+    #[serde(rename = "FFLANBJABHF")]
+    pub fflanbjabhf: i64,
 
-    #[serde(rename = "MHJEJCFFFGO")]
-    pub mhjejcfffgo: i64,
+    #[serde(rename = "FPIFPJNBEEP")]
+    pub fpifpjnbeep: i64,
 }
 
 pub fn load() -> Result<DeshretPoiCatalogDataData, crate::json::JsonError> {

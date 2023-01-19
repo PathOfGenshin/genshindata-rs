@@ -13,26 +13,26 @@ pub struct SubQuestCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KFKAEMIEMLM")]
-    pub kfkaemiemlm: Kfkaemiemlm,
+    #[serde(rename = "DJLKOKOCOPE")]
+    pub djlkokocope: Djlkokocope,
 
-    #[serde(rename = "CKPIACLNHBP")]
-    pub ckpiaclnhbp: Vec<Ckpiaclnhbp>,
+    #[serde(rename = "CHKLPFMDJOD")]
+    pub chklpfmdjod: Vec<Chklpfmdjod>,
 
-    #[serde(rename = "PDGKEMPCDIN")]
-    pub pdgkempcdin: Vec<Ckpiaclnhbp>,
+    #[serde(rename = "KHMJLIBIMLC")]
+    pub khmjlibimlc: Vec<Chklpfmdjod>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "PJADJDNALON")]
-    pub pjadjdnalon: Option<Kfkaemiemlm>,
+    #[serde(rename = "MJFFDBIIAHC")]
+    pub mjffdbiiahc: Option<Djlkokocope>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ckpiaclnhbp {
+pub struct Chklpfmdjod {
     #[serde(rename = "type")]
-    pub ckpiaclnhbp_type: Option<Type>,
+    pub chklpfmdjod_type: Option<Type>,
 
     #[serde(rename = "param")]
     pub param: Option<i64>,
@@ -45,7 +45,7 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kfkaemiemlm {
+pub enum Djlkokocope {
     #[serde(rename = "LOGIC_AND")]
     LogicAnd,
 

@@ -16,14 +16,14 @@ pub struct EchoShellPreviewExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "EEGGLGHEKGI")]
-    pub eegglghekgi: i64,
+    #[serde(rename = "LJFFGGDMIKH")]
+    pub ljffggdmikh: i64,
 
-    #[serde(rename = "LMBCMGCGONC")]
-    pub lmbcmgcgonc: Option<i64>,
+    #[serde(rename = "PIPPMIBCLKG")]
+    pub pippmibclkg: Option<i64>,
 
-    #[serde(rename = "BDIEECCDFKI")]
-    pub bdieeccdfki: Option<i64>,
+    #[serde(rename = "NBKDAAGJHFB")]
+    pub nbkdaagjhfb: Option<i64>,
 }
 
 pub fn load() -> Result<EchoShellPreviewExcelConfigData, crate::json::JsonError> {

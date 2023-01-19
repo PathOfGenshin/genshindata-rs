@@ -28,30 +28,18 @@ pub struct RandomQuestEntranceExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FilterList {
-    #[serde(rename = "EENMNNJDAIE")]
-    pub eenmnnjdaie: Eenmnnjdaie,
+    #[serde(rename = "HHONEAJNKGB")]
+    pub hhoneajnkgb: Hhoneajnkgb,
 
-    #[serde(rename = "CCLEAEMJIMB")]
-    pub ccleaemjimb: Vec<i64>,
+    #[serde(rename = "MNKNCLCABJF")]
+    pub mnknclcabjf: Vec<i64>,
 
-    #[serde(rename = "AJHKJIBPFLD")]
-    pub ajhkjibpfld: Option<Ajhkjibpfld>,
+    #[serde(rename = "ICFAINOJCNG")]
+    pub icfainojcng: Option<Icfainojcng>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ajhkjibpfld {
-    #[serde(rename = "RQ_FILTER_NPC")]
-    RqFilterNpc,
-
-    #[serde(rename = "RQ_FILTER_PLAYER_LEVEL")]
-    RqFilterPlayerLevel,
-
-    #[serde(rename = "RQ_FILTER_PLAYER_POS_RING")]
-    RqFilterPlayerPosRing,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Eenmnnjdaie {
+pub enum Hhoneajnkgb {
     #[serde(rename = "")]
     Empty,
 
@@ -69,6 +57,18 @@ pub enum Eenmnnjdaie {
 
     #[serde(rename = "{QuestRescuePos1}")]
     QuestRescuePos1,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Icfainojcng {
+    #[serde(rename = "RQ_FILTER_NPC")]
+    RqFilterNpc,
+
+    #[serde(rename = "RQ_FILTER_PLAYER_LEVEL")]
+    RqFilterPlayerLevel,
+
+    #[serde(rename = "RQ_FILTER_PLAYER_POS_RING")]
+    RqFilterPlayerPosRing,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

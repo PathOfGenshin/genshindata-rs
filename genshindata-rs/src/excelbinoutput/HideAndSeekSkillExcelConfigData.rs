@@ -31,8 +31,8 @@ pub struct HideAndSeekSkillExcelConfigDatum {
     #[serde(rename = "categoryDescTextMapHash")]
     pub category_desc_text_map_hash: i64,
 
-    #[serde(rename = "ENGHDMEKDBN")]
-    pub enghdmekdbn: i64,
+    #[serde(rename = "KMCFGICEJLF")]
+    pub kmcfgicejlf: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

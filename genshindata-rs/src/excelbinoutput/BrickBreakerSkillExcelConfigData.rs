@@ -16,29 +16,29 @@ pub struct BrickBreakerSkillExcelConfigDatum {
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
 
-    #[serde(rename = "PPDOPFEOBIG")]
-    pub ppdopfeobig: i64,
+    #[serde(rename = "EIMJFLKOFPK")]
+    pub eimjflkofpk: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 
-    #[serde(rename = "GOOGPDHGMGN")]
-    pub googpdhgmgn: i64,
+    #[serde(rename = "GCAAGFNKLAN")]
+    pub gcaagfnklan: i64,
 
     #[serde(rename = "unlockWorldLevel")]
     pub unlock_world_level: Option<i64>,
 
-    #[serde(rename = "ABIDEDDCCOF")]
-    pub abideddccof: Vec<i64>,
+    #[serde(rename = "HLOFIBJHBCD")]
+    pub hlofibjhbcd: Vec<i64>,
 
-    #[serde(rename = "IGNFAMBBNAM")]
-    pub ignfambbnam: String,
+    #[serde(rename = "MMGDOOFIPMG")]
+    pub mmgdoofipmg: String,
 
-    #[serde(rename = "NKNPFCEHAGF")]
-    pub nknpfcehagf: Option<i64>,
+    #[serde(rename = "MPACDGLDCAD")]
+    pub mpacdgldcad: Option<i64>,
 }
 
 pub fn load() -> Result<BrickBreakerSkillExcelConfigData, crate::json::JsonError> {

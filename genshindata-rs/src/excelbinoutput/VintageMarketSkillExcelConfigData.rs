@@ -16,17 +16,17 @@ pub struct VintageMarketSkillExcelConfigDatum {
     #[serde(rename = "effectList")]
     pub effect_list: Vec<EffectList>,
 
-    #[serde(rename = "HCBFKDMDJML")]
-    pub hcbfkdmdjml: i64,
+    #[serde(rename = "EGGOMFIBIMM")]
+    pub eggomfibimm: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
-    #[serde(rename = "IJFLOIFAJHH")]
-    pub ijfloifajhh: i64,
+    #[serde(rename = "ONGLICJMKEB")]
+    pub onglicjmkeb: i64,
 
-    #[serde(rename = "HFBICCHMJLE")]
-    pub hfbicchmjle: i64,
+    #[serde(rename = "HAABGKNJAKP")]
+    pub haabgknjakp: i64,
 
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,

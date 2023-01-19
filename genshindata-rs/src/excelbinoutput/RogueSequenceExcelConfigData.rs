@@ -16,30 +16,30 @@ pub struct RogueSequenceExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "EDPDKGFIHLI")]
-    pub edpdkgfihli: i64,
+    #[serde(rename = "NPNIDDAPEHH")]
+    pub npniddapehh: i64,
 
-    #[serde(rename = "BDLPLFIJJNG")]
-    pub bdlplfijjng: Vec<i64>,
+    #[serde(rename = "HCDLCJJHBCN")]
+    pub hcdlcjjhbcn: Vec<i64>,
 
-    #[serde(rename = "FBFIJJDPJEP")]
-    pub fbfijjdpjep: Fbfijjdpjep,
+    #[serde(rename = "PPILIHEAIMP")]
+    pub ppiliheaimp: Ppiliheaimp,
 
-    #[serde(rename = "FEDINKDMEFI")]
-    pub fedinkdmefi: Vec<Fedinkdmefi>,
+    #[serde(rename = "DHGDGPBBFFM")]
+    pub dhgdgpbbffm: Vec<Dhgdgpbbffm>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fbfijjdpjep {
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Fedinkdmefi {
+pub struct Dhgdgpbbffm {
     #[serde(rename = "type")]
-    pub fedinkdmefi_type: Option<Type>,
+    pub dhgdgpbbffm_type: Option<Type>,
 
-    #[serde(rename = "LDNOKGFIMMJ")]
-    pub ldnokgfimmj: Vec<i64>,
+    #[serde(rename = "FKKFNEGLLOF")]
+    pub fkkfnegllof: Vec<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Ppiliheaimp {
 }
 
 #[derive(Debug, Serialize, Deserialize)]

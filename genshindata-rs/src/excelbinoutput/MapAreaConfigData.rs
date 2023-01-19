@@ -19,14 +19,14 @@ pub struct MapAreaConfigDatum {
     #[serde(rename = "name")]
     pub name: String,
 
-    #[serde(rename = "GNHBKHBADPP")]
-    pub gnhbkhbadpp: Vec<i64>,
+    #[serde(rename = "KIEAAECFJNH")]
+    pub kieaaecfjnh: Vec<i64>,
 
-    #[serde(rename = "AAPKKFBMLKI")]
-    pub aapkkfbmlki: Option<i64>,
+    #[serde(rename = "KLCNOOALHLK")]
+    pub klcnooalhlk: Option<i64>,
 
-    #[serde(rename = "OOCNKICNOPG")]
-    pub oocnkicnopg: Option<Oocnkicnopg>,
+    #[serde(rename = "NPEKCMLDMIK")]
+    pub npekcmldmik: Option<Npekcmldmik>,
 
     #[serde(rename = "type")]
     pub map_area_config_datum_type: Option<Type>,
@@ -42,7 +42,7 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oocnkicnopg {
+pub enum Npekcmldmik {
     #[serde(rename = "MistOpen")]
     MistOpen,
 }

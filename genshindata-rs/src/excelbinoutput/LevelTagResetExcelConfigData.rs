@@ -16,8 +16,8 @@ pub struct LevelTagResetExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "DAPHAPKJGOG")]
-    pub daphapkjgog: Vec<i64>,
+    #[serde(rename = "NJGJIHKPNEP")]
+    pub njgjihkpnep: Vec<i64>,
 }
 
 pub fn load() -> Result<LevelTagResetExcelConfigData, crate::json::JsonError> {

@@ -19,8 +19,8 @@ pub struct TreasureMapBonusRegionExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "IGOIACILDLG")]
-    pub igoiacildlg: i64,
+    #[serde(rename = "OPMAFHHLKHM")]
+    pub opmafhhlkhm: i64,
 
     #[serde(rename = "reviseLevel")]
     pub revise_level: i64,
@@ -34,8 +34,8 @@ pub struct TreasureMapBonusRegionExcelConfigDatum {
     #[serde(rename = "showImage")]
     pub show_image: String,
 
-    #[serde(rename = "JFJBIHKPBGK")]
-    pub jfjbihkpbgk: i64,
+    #[serde(rename = "GJPHHNHKDAG")]
+    pub gjphhnhkdag: i64,
 
     #[serde(rename = "regionCenter")]
     pub region_center: Vec<f64>,

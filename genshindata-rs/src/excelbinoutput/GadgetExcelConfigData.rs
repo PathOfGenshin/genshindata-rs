@@ -34,8 +34,8 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "DAHDIAPDAPB")]
-    pub dahdiapdapb: Option<i64>,
+    #[serde(rename = "HGKPLCICKMD")]
+    pub hgkplcickmd: Option<i64>,
 
     #[serde(rename = "campID")]
     pub camp_id: Option<i64>,
@@ -61,8 +61,8 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "isEquip")]
     pub is_equip: Option<bool>,
 
-    #[serde(rename = "GGGJDMHGFOO")]
-    pub gggjdmhgfoo: Option<i64>,
+    #[serde(rename = "EFBBLEIKHIB")]
+    pub efbbleikhib: Option<i64>,
 
     #[serde(rename = "landSoundID")]
     pub land_sound_id: Option<i64>,
@@ -73,8 +73,8 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
 
-    #[serde(rename = "CGLDOIKJIPD")]
-    pub cgldoikjipd: Option<bool>,
+    #[serde(rename = "LDCABPJDNBH")]
+    pub ldcabpjdnbh: Option<bool>,
 
     #[serde(rename = "itemPrefabPathHash")]
     pub item_prefab_path_hash: Option<i64>,

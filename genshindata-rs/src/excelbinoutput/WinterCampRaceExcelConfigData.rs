@@ -19,26 +19,26 @@ pub struct WinterCampRaceExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "JICEOLNKCME")]
-    pub jiceolnkcme: i64,
+    #[serde(rename = "KKAAOAGIFEF")]
+    pub kkaaoagifef: i64,
 
-    #[serde(rename = "KEALFKBKPPG")]
-    pub kealfkbkppg: Vec<i64>,
+    #[serde(rename = "ICOFNPPLAMG")]
+    pub icofnpplamg: Vec<i64>,
 
-    #[serde(rename = "EOGHHDGEHPK")]
-    pub eoghhdgehpk: Vec<i64>,
+    #[serde(rename = "DLLPDDAEBAE")]
+    pub dllpddaebae: Vec<i64>,
 
-    #[serde(rename = "LAPBBGEDIJM")]
-    pub lapbbgedijm: i64,
+    #[serde(rename = "DMLBFPHOADL")]
+    pub dmlbfphoadl: i64,
 
-    #[serde(rename = "PJJMFLFKCEE")]
-    pub pjjmflfkcee: i64,
+    #[serde(rename = "LJODAJCOPGL")]
+    pub ljodajcopgl: i64,
 
-    #[serde(rename = "LCDMCLFKCDG")]
-    pub lcdmclfkcdg: i64,
+    #[serde(rename = "DDDFMIJEHPF")]
+    pub dddfmijehpf: i64,
 
-    #[serde(rename = "FOLMAJDIJLJ")]
-    pub folmajdijlj: Vec<i64>,
+    #[serde(rename = "APHLLJGFBIN")]
+    pub aphlljgfbin: Vec<i64>,
 }
 
 pub fn load() -> Result<WinterCampRaceExcelConfigData, crate::json::JsonError> {

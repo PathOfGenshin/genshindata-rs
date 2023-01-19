@@ -19,26 +19,26 @@ pub struct LanV2FireworksChallengeDataExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "CHKHPPIKDPL")]
-    pub chkhppikdpl: Vec<i64>,
+    #[serde(rename = "MBJBBGBJMCJ")]
+    pub mbjbbgbjmcj: Vec<i64>,
 
-    #[serde(rename = "NALKHFGNIBI")]
-    pub nalkhfgnibi: i64,
+    #[serde(rename = "LLENBEHLAIA")]
+    pub llenbehlaia: i64,
 
-    #[serde(rename = "JBOACICJMMF")]
-    pub jboacicjmmf: i64,
+    #[serde(rename = "NDCEAPJEJBE")]
+    pub ndceapjejbe: i64,
 
-    #[serde(rename = "HNGIGCNBFLM")]
-    pub hngigcnbflm: i64,
+    #[serde(rename = "ANGFJPIAIJN")]
+    pub angfjpiaijn: i64,
 
-    #[serde(rename = "IGBALGHIKOI")]
-    pub igbalghikoi: i64,
+    #[serde(rename = "CHDOIOABOKD")]
+    pub chdoioabokd: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "NMKPJMJBCIF")]
-    pub nmkpjmjbcif: i64,
+    #[serde(rename = "LLNCGCPLPGC")]
+    pub llncgcplpgc: i64,
 }
 
 pub fn load() -> Result<LanV2FireworksChallengeDataExcelConfigData, crate::json::JsonError> {

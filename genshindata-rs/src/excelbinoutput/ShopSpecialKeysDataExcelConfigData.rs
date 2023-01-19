@@ -13,8 +13,8 @@ pub struct ShopSpecialKeysDataExcelConfigDatum {
     #[serde(rename = "goodsId")]
     pub goods_id: i64,
 
-    #[serde(rename = "KOFGKCLGGBN")]
-    pub kofgkclggbn: i64,
+    #[serde(rename = "LGNNPAIJOIO")]
+    pub lgnnpaijoio: i64,
 }
 
 pub fn load() -> Result<ShopSpecialKeysDataExcelConfigData, crate::json::JsonError> {

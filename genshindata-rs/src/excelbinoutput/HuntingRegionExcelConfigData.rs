@@ -34,8 +34,8 @@ pub struct HuntingRegionExcelConfigDatum {
     #[serde(rename = "regionInfoTextMapHash")]
     pub region_info_text_map_hash: i64,
 
-    #[serde(rename = "NJKEKGMAKDJ")]
-    pub njkekgmakdj: Vec<i64>,
+    #[serde(rename = "OFIHKIJOCPN")]
+    pub ofihkijocpn: Vec<i64>,
 }
 
 pub fn load() -> Result<HuntingRegionExcelConfigData, crate::json::JsonError> {

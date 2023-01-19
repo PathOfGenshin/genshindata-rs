@@ -97,6 +97,9 @@ pub struct TalkExcelConfigDatum {
     #[serde(rename = "questIdleTalk")]
     pub quest_idle_talk: Option<bool>,
 
+    #[serde(rename = "forceNpcNotDestroy")]
+    pub force_npc_not_destroy: Option<bool>,
+
     #[serde(rename = "decoratorID")]
     pub decorator_id: Option<i64>,
 }

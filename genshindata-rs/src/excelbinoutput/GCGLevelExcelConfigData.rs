@@ -22,8 +22,8 @@ pub struct GcgLevelExcelConfigDatum {
     #[serde(rename = "unlockDescTextMapHash")]
     pub unlock_desc_text_map_hash: i64,
 
-    #[serde(rename = "GHOJNFPNCPD")]
-    pub ghojnfpncpd: Option<String>,
+    #[serde(rename = "FFOPEEAFKPN")]
+    pub ffopeeafkpn: Option<String>,
 }
 
 pub fn load() -> Result<GcgLevelExcelConfigData, crate::json::JsonError> {

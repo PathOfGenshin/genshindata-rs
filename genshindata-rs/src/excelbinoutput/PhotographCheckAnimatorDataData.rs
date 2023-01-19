@@ -13,18 +13,18 @@ pub struct PhotographCheckAnimatorDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DPGKONKALJF")]
-    pub dpgkonkaljf: i64,
+    #[serde(rename = "FEAHIMAPLCC")]
+    pub feahimaplcc: i64,
 
-    #[serde(rename = "DBJGDDINILC")]
-    pub dbjgddinilc: Vec<String>,
+    #[serde(rename = "MHPAHMCEGBI")]
+    pub mhpahmcegbi: Vec<String>,
 
-    #[serde(rename = "NBKOAGEDHAH")]
-    pub nbkoagedhah: Vec<Nbkoagedhah>,
+    #[serde(rename = "GMPNLIKLCNK")]
+    pub gmpnliklcnk: Vec<Gmpnliklcnk>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Nbkoagedhah {
+pub enum Gmpnliklcnk {
     #[serde(rename = "AVATAR_JUMP")]
     AvatarJump,
 

@@ -16,32 +16,32 @@ pub struct RogueDiaryStageExcelConfigDatum {
     #[serde(rename = "condId")]
     pub cond_id: i64,
 
-    #[serde(rename = "PBBBIOPKCAI")]
-    pub pbbbiopkcai: Vec<i64>,
+    #[serde(rename = "KEPDLFCEDPC")]
+    pub kepdlfcedpc: Vec<i64>,
 
-    #[serde(rename = "MCIMHJLHIFJ")]
-    pub mcimhjlhifj: Vec<i64>,
+    #[serde(rename = "OCABDFPFINL")]
+    pub ocabdfpfinl: Vec<i64>,
 
-    #[serde(rename = "FFEJNELDLBI")]
-    pub ffejneldlbi: Vec<i64>,
+    #[serde(rename = "MIPIJGCOJFO")]
+    pub mipijgcojfo: Vec<i64>,
 
-    #[serde(rename = "PNPBLPOKOJJ")]
-    pub pnpblpokojj: i64,
+    #[serde(rename = "MKBBMMAOFMD")]
+    pub mkbbmmaofmd: i64,
 
-    #[serde(rename = "HENKLCIGBGP")]
-    pub henklcigbgp: i64,
+    #[serde(rename = "CFPAJCPAMPH")]
+    pub cfpajcpamph: i64,
 
-    #[serde(rename = "KEABOJCBIHN")]
-    pub keabojcbihn: String,
+    #[serde(rename = "OHJEOBFPKEH")]
+    pub ohjeobfpkeh: String,
 
-    #[serde(rename = "IABBNCDFIGJ")]
-    pub iabbncdfigj: Option<i64>,
+    #[serde(rename = "EMOKLJBGBBF")]
+    pub emokljbgbbf: Option<i64>,
 
-    #[serde(rename = "HCNBJHGCIHC")]
-    pub hcnbjhgcihc: Vec<i64>,
+    #[serde(rename = "OBAOGFIILAL")]
+    pub obaogfiilal: Vec<i64>,
 
-    #[serde(rename = "CAPBAJIHODB")]
-    pub capbajihodb: Vec<i64>,
+    #[serde(rename = "EDNFKKELHOP")]
+    pub ednfkkelhop: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
@@ -49,14 +49,14 @@ pub struct RogueDiaryStageExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "AOAMGBJANDP")]
-    pub aoamgbjandp: i64,
+    #[serde(rename = "KNGMNLBDFEG")]
+    pub kngmnlbdfeg: i64,
 
-    #[serde(rename = "FOMCEGDAJHE")]
-    pub fomcegdajhe: i64,
+    #[serde(rename = "FLFLCLPEFAP")]
+    pub flflclpefap: i64,
 
-    #[serde(rename = "PDJFFAOBBOE")]
-    pub pdjffaobboe: Option<i64>,
+    #[serde(rename = "DEMNANDJFHO")]
+    pub demnandjfho: Option<i64>,
 }
 
 pub fn load() -> Result<RogueDiaryStageExcelConfigData, crate::json::JsonError> {

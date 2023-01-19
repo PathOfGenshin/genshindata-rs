@@ -16,32 +16,32 @@ pub struct LanV2OverAllDataExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "ILCBKFJKCLB")]
-    pub ilcbkfjkclb: i64,
+    #[serde(rename = "LHKEPKPLCFD")]
+    pub lhkepkplcfd: i64,
 
-    #[serde(rename = "EPMGDIFJIBJ")]
-    pub epmgdifjibj: i64,
+    #[serde(rename = "GCJGDIIMOLC")]
+    pub gcjgdiimolc: i64,
 
-    #[serde(rename = "JOPJOPGMCHM")]
-    pub jopjopgmchm: Vec<i64>,
+    #[serde(rename = "HCGKDNOAMLG")]
+    pub hcgkdnoamlg: Vec<i64>,
 
-    #[serde(rename = "DGAOFMKKFLB")]
-    pub dgaofmkkflb: Vec<i64>,
+    #[serde(rename = "MBHCNPKGCBD")]
+    pub mbhcnpkgcbd: Vec<i64>,
 
-    #[serde(rename = "AILIOOINPMD")]
-    pub ailiooinpmd: i64,
+    #[serde(rename = "JJJHPBAIJFB")]
+    pub jjjhpbaijfb: i64,
 
-    #[serde(rename = "CKNKEDFBDJN")]
-    pub cknkedfbdjn: Vec<i64>,
+    #[serde(rename = "IAIELMGHBOK")]
+    pub iaielmghbok: Vec<i64>,
 
-    #[serde(rename = "LNJMJGAJJPO")]
-    pub lnjmjgajjpo: i64,
+    #[serde(rename = "CIFGHEEOLCN")]
+    pub cifgheeolcn: i64,
 
-    #[serde(rename = "LBJPNFIABJP")]
-    pub lbjpnfiabjp: Vec<i64>,
+    #[serde(rename = "CENFHOIHKMG")]
+    pub cenfhoihkmg: Vec<i64>,
 
-    #[serde(rename = "CFBBNDKKLIL")]
-    pub cfbbndkklil: i64,
+    #[serde(rename = "GIEJGCDLJCM")]
+    pub giejgcdljcm: i64,
 }
 
 pub fn load() -> Result<LanV2OverAllDataExcelConfigData, crate::json::JsonError> {

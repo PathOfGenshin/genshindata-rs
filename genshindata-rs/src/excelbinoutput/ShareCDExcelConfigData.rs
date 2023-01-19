@@ -13,17 +13,17 @@ pub struct ShareCdExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MDMLKPGFMJK")]
-    pub mdmlkpgfmjk: Vec<Mdmlkpgfmjk>,
+    #[serde(rename = "CBGOFNBBLIP")]
+    pub cbgofnbblip: Vec<Cbgofnbblip>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Mdmlkpgfmjk {
-    #[serde(rename = "EFLLHHKALPH")]
-    pub efllhhkalph: f64,
+pub struct Cbgofnbblip {
+    #[serde(rename = "MBIFEECFCLJ")]
+    pub mbifeecfclj: f64,
 
-    #[serde(rename = "GDOPIKCEPID")]
-    pub gdopikcepid: Option<i64>,
+    #[serde(rename = "OMKFPAHADIE")]
+    pub omkfpahadie: Option<i64>,
 }
 
 pub fn load() -> Result<ShareCdExcelConfigData, crate::json::JsonError> {

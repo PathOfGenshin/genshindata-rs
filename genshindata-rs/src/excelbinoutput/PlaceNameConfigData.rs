@@ -13,32 +13,32 @@ pub struct PlaceNameConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "EOGPHNIECEI")]
-    pub eogphniecei: Option<Eogphniecei>,
+    #[serde(rename = "PFBGFKEMHDI")]
+    pub pfbgfkemhdi: Option<Pfbgfkemhdi>,
 
-    #[serde(rename = "NILDPFBNDHM")]
-    pub nildpfbndhm: String,
+    #[serde(rename = "FBAFIJNCMAF")]
+    pub fbafijncmaf: String,
 
     #[serde(rename = "conditionType")]
     pub condition_type: ConditionType,
 
-    #[serde(rename = "ANEPCHGOPNK")]
-    pub anepchgopnk: String,
+    #[serde(rename = "INNFAJECDPI")]
+    pub innfajecdpi: String,
 
-    #[serde(rename = "ILBMMPNAFEK")]
-    pub ilbmmpnafek: String,
+    #[serde(rename = "PBCFBGGIAGP")]
+    pub pbcfbggiagp: String,
 
     #[serde(rename = "actionType")]
     pub action_type: ActionType,
 
-    #[serde(rename = "HGLBHEECNFB")]
-    pub hglbheecnfb: i64,
+    #[serde(rename = "HJAPGNCJEGO")]
+    pub hjapgncjego: i64,
 
     #[serde(rename = "type")]
-    pub place_name_config_datum_type: Option<String>,
+    pub place_name_config_datum_type: Option<Type>,
 
-    #[serde(rename = "NKKBHMALPFG")]
-    pub nkkbhmalpfg: Option<i64>,
+    #[serde(rename = "HBNFHHABGCK")]
+    pub hbnfhhabgck: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -66,7 +66,7 @@ pub enum ConditionType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Eogphniecei {
+pub enum Pfbgfkemhdi {
     #[serde(rename = "Abyssalisle")]
     Abyssalisle,
 
@@ -75,6 +75,12 @@ pub enum Eogphniecei {
 
     #[serde(rename = "TheChasm")]
     TheChasm,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Type {
+    #[serde(rename = "SubArea")]
+    SubArea,
 }
 
 pub fn load() -> Result<PlaceNameConfigData, crate::json::JsonError> {

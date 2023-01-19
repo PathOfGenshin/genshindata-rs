@@ -19,8 +19,8 @@ pub struct ClientSceneTagConfigDatum {
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "OMBDOKPOHAM")]
-    pub ombdokpoham: String,
+    #[serde(rename = "FNJFNDLANHF")]
+    pub fnjfndlanhf: String,
 }
 
 pub fn load() -> Result<ClientSceneTagConfigData, crate::json::JsonError> {

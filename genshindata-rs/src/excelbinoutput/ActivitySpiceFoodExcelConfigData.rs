@@ -5,9 +5,8 @@
 use std::env;
 
 extern crate serde_derive;
-use std::collections::HashMap;
 
-pub type ActivitySpiceFoodExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ActivitySpiceFoodExcelConfigData = Vec<Option<serde_json::Value>>;
 
 pub fn load() -> Result<ActivitySpiceFoodExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

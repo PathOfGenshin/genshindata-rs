@@ -13,8 +13,8 @@ pub struct BrickBreakerWorldLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HJDKODMLFEM")]
-    pub hjdkodmlfem: Option<i64>,
+    #[serde(rename = "CBEHOEDKCGO")]
+    pub cbehoedkcgo: Option<i64>,
 
     #[serde(rename = "draftId")]
     pub draft_id: Option<i64>,
@@ -22,8 +22,8 @@ pub struct BrickBreakerWorldLevelExcelConfigDatum {
     #[serde(rename = "limitTime")]
     pub limit_time: i64,
 
-    #[serde(rename = "NDMEONJHCIH")]
-    pub ndmeonjhcih: i64,
+    #[serde(rename = "CFDKMHDHJHD")]
+    pub cfdkmhdhjhd: i64,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
@@ -43,36 +43,36 @@ pub struct BrickBreakerWorldLevelExcelConfigDatum {
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
 
-    #[serde(rename = "HKLBCGJAALH")]
-    pub hklbcgjaalh: i64,
+    #[serde(rename = "MPIGPKCEDAB")]
+    pub mpigpkcedab: i64,
 
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "EGMOAJDFCDP")]
-    pub egmoajdfcdp: i64,
+    #[serde(rename = "GEEPALEMABO")]
+    pub geepalemabo: i64,
 
-    #[serde(rename = "FKIMIKJCEFI")]
-    pub fkimikjcefi: Vec<i64>,
+    #[serde(rename = "EFFIIFFKHHJ")]
+    pub effiiffkhhj: Vec<i64>,
 
-    #[serde(rename = "DMOOIIJHFBP")]
-    pub dmooiijhfbp: Vec<Dmooiijhfbp>,
+    #[serde(rename = "AEPACDKIALH")]
+    pub aepacdkialh: Vec<Aepacdkialh>,
 
-    #[serde(rename = "EPFCEJJIGMD")]
-    pub epfcejjigmd: Vec<i64>,
+    #[serde(rename = "EKKNKNFAIGI")]
+    pub ekknknfaigi: Vec<i64>,
 
-    #[serde(rename = "GJOIKBNHEJM")]
-    pub gjoikbnhejm: Option<bool>,
+    #[serde(rename = "BLLCDGLJMGM")]
+    pub bllcdgljmgm: Option<bool>,
 
-    #[serde(rename = "OOHDEGCFMFB")]
-    pub oohdegcfmfb: Option<i64>,
+    #[serde(rename = "KBONLOMIOFH")]
+    pub kbonlomiofh: Option<i64>,
 
-    #[serde(rename = "NKAGCJEOBHE")]
-    pub nkagcjeobhe: Option<bool>,
+    #[serde(rename = "JMOBKJLMLPJ")]
+    pub jmobkjlmlpj: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dmooiijhfbp {
+pub enum Aepacdkialh {
     #[serde(rename = "Fire")]
     Fire,
 

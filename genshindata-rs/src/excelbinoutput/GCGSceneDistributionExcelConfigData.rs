@@ -13,17 +13,17 @@ pub struct GcgSceneDistributionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KJMMOCPNADC")]
-    pub kjmmocpnadc: Vec<i64>,
+    #[serde(rename = "DAGAGDEOKJN")]
+    pub dagagdeokjn: Vec<i64>,
 
-    #[serde(rename = "CKFFBOEGINL")]
-    pub ckffboeginl: Vec<i64>,
+    #[serde(rename = "DJEKFDJJFJE")]
+    pub djekfdjjfje: Vec<i64>,
 
-    #[serde(rename = "EMEILJJJLNE")]
-    pub emeiljjjlne: i64,
+    #[serde(rename = "CCIKFLJOOOA")]
+    pub ccikfljoooa: i64,
 
-    #[serde(rename = "EMNEKFFNINA")]
-    pub emnekffnina: i64,
+    #[serde(rename = "AACFGHPGJHO")]
+    pub aacfghpgjho: i64,
 }
 
 pub fn load() -> Result<GcgSceneDistributionExcelConfigData, crate::json::JsonError> {

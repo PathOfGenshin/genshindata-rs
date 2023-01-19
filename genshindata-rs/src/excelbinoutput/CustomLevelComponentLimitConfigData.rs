@@ -5,20 +5,9 @@
 use std::env;
 
 extern crate serde_derive;
+use std::collections::HashMap;
 
-pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct CustomLevelComponentLimitConfigDatum {
-    #[serde(rename = "KJAJADIDMGG")]
-    pub kjajadidmgg: i64,
-
-    #[serde(rename = "HODHFHGBONO")]
-    pub hodhfhgbono: i64,
-
-    #[serde(rename = "JJNNIGJAJEG")]
-    pub jjnnigjajeg: i64,
-}
+pub type CustomLevelComponentLimitConfigData = Vec<HashMap<String, i64>>;
 
 pub fn load() -> Result<CustomLevelComponentLimitConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

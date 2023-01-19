@@ -10,38 +10,38 @@ pub type HomeWorldPlantExcelConfigData = Vec<HomeWorldPlantExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldPlantExcelConfigDatum {
-    #[serde(rename = "FKODAMIEEIM")]
-    pub fkodamieeim: i64,
+    #[serde(rename = "AHDGBJBCFNH")]
+    pub ahdgbjbcfnh: i64,
 
-    #[serde(rename = "DCMGFMHLIMH")]
-    pub dcmgfmhlimh: Vec<i64>,
+    #[serde(rename = "KAFIMCABCAG")]
+    pub kafimcabcag: Vec<i64>,
 
-    #[serde(rename = "IODMEBBDFNI")]
-    pub iodmebbdfni: Option<i64>,
+    #[serde(rename = "GDKPIOFHCBO")]
+    pub gdkpiofhcbo: Option<i64>,
 
-    #[serde(rename = "OGPPCAFDNII")]
-    pub ogppcafdnii: Option<i64>,
+    #[serde(rename = "AGKNFFBKMMI")]
+    pub agknffbkmmi: Option<i64>,
 
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,
 
-    #[serde(rename = "BGPLDPBBDNO")]
-    pub bgpldpbbdno: Vec<Bgpldpbbdno>,
+    #[serde(rename = "IIKKEPOAGBD")]
+    pub iikkepoagbd: Vec<Iikkepoagbd>,
 
-    #[serde(rename = "ACDKNKLPJEB")]
-    pub acdknklpjeb: i64,
+    #[serde(rename = "KPHFBGAIEPO")]
+    pub kphfbgaiepo: i64,
 
     #[serde(rename = "time")]
     pub time: i64,
 
-    #[serde(rename = "EGDGOGKBABI")]
-    pub egdgogkbabi: i64,
+    #[serde(rename = "AMBOFJCHNNC")]
+    pub ambofjchnnc: i64,
 
-    #[serde(rename = "KCNKPOJOPEH")]
-    pub kcnkpojopeh: i64,
+    #[serde(rename = "CLFPMANCAMM")]
+    pub clfpmancamm: i64,
 
-    #[serde(rename = "PKBGOFIEJPG")]
-    pub pkbgofiejpg: i64,
+    #[serde(rename = "JGLFPBLEAKM")]
+    pub jglfpbleakm: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
@@ -49,17 +49,17 @@ pub struct HomeWorldPlantExcelConfigDatum {
     #[serde(rename = "inteeIconName")]
     pub intee_icon_name: InteeIconName,
 
-    #[serde(rename = "KKLMDMKDIDI")]
-    pub kklmdmkdidi: i64,
+    #[serde(rename = "LNGMDMFIOPM")]
+    pub lngmdmfiopm: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bgpldpbbdno {
-    #[serde(rename = "IODMEBBDFNI")]
-    pub iodmebbdfni: Option<i64>,
+pub struct Iikkepoagbd {
+    #[serde(rename = "GDKPIOFHCBO")]
+    pub gdkpiofhcbo: Option<i64>,
 
-    #[serde(rename = "OGPPCAFDNII")]
-    pub ogppcafdnii: Option<i64>,
+    #[serde(rename = "AGKNFFBKMMI")]
+    pub agknffbkmmi: Option<i64>,
 
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,

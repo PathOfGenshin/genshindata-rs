@@ -5,9 +5,32 @@
 use std::env;
 
 extern crate serde_derive;
-use std::collections::HashMap;
 
-pub type ActivityVintageQuestDataExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ActivityVintageQuestDataExcelConfigData = Vec<ActivityVintageQuestDataExcelConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ActivityVintageQuestDataExcelConfigDatum {
+    #[serde(rename = "id")]
+    pub id: i64,
+
+    #[serde(rename = "questId")]
+    pub quest_id: i64,
+
+    #[serde(rename = "MMLOKMKDJGC")]
+    pub mmlokmkdjgc: i64,
+
+    #[serde(rename = "chapterTitleTextMapHash")]
+    pub chapter_title_text_map_hash: i64,
+
+    #[serde(rename = "CJPKFALNMDO")]
+    pub cjpkfalnmdo: i64,
+
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
+
+    #[serde(rename = "preQuestId")]
+    pub pre_quest_id: Option<i64>,
+}
 
 pub fn load() -> Result<ActivityVintageQuestDataExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

@@ -28,8 +28,8 @@ pub struct ForgeExcelConfigDatum {
     #[serde(rename = "showItemId")]
     pub show_item_id: i64,
 
-    #[serde(rename = "JCEPJOHDFHM")]
-    pub jcepjohdfhm: Option<i64>,
+    #[serde(rename = "NBGDHDMGBED")]
+    pub nbgdhdmgbed: Option<i64>,
 
     #[serde(rename = "resultItemId")]
     pub result_item_id: Option<i64>,

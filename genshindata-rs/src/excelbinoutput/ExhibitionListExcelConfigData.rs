@@ -13,17 +13,17 @@ pub struct ExhibitionListExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FLFFNIIDFNB")]
-    pub flffniidfnb: i64,
+    #[serde(rename = "IHIINMEOCNP")]
+    pub ihiinmeocnp: i64,
 
-    #[serde(rename = "JCBMNNCPECH")]
-    pub jcbmnncpech: i64,
+    #[serde(rename = "KPGFELNHDPC")]
+    pub kpgfelnhdpc: i64,
 
-    #[serde(rename = "NGLJJIPEFPK")]
-    pub ngljjipefpk: i64,
+    #[serde(rename = "KKMENFIONKG")]
+    pub kkmenfionkg: i64,
 
-    #[serde(rename = "GKBEMNNIHLK")]
-    pub gkbemnnihlk: i64,
+    #[serde(rename = "MAAJIGJPDMB")]
+    pub maajigjpdmb: i64,
 
     #[serde(rename = "displayType")]
     pub display_type: DisplayType,

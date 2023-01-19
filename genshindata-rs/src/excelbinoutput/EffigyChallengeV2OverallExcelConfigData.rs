@@ -13,14 +13,14 @@ pub struct EffigyChallengeV2OverallExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "CBAJFIDJDHD")]
-    pub cbajfidjdhd: i64,
+    #[serde(rename = "HODEMHGDAIO")]
+    pub hodemhgdaio: i64,
 
-    #[serde(rename = "LKCOKKGEMEE")]
-    pub lkcokkgemee: i64,
+    #[serde(rename = "FOFJINJBNOM")]
+    pub fofjinjbnom: i64,
 
-    #[serde(rename = "PFAMGJCBOCD")]
-    pub pfamgjcbocd: String,
+    #[serde(rename = "HILMDLNPOOJ")]
+    pub hilmdlnpooj: String,
 }
 
 pub fn load() -> Result<EffigyChallengeV2OverallExcelConfigData, crate::json::JsonError> {

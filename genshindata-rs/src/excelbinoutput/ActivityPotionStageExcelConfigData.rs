@@ -16,26 +16,26 @@ pub struct ActivityPotionStageExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "DJEKBPJHPKA")]
-    pub djekbpjhpka: Vec<i64>,
+    #[serde(rename = "KHAKJEOMIAC")]
+    pub khakjeomiac: Vec<i64>,
 
-    #[serde(rename = "AEIKDKOOBHD")]
-    pub aeikdkoobhd: i64,
+    #[serde(rename = "GAHONNOEJFP")]
+    pub gahonnoejfp: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "HCNBJHGCIHC")]
-    pub hcnbjhgcihc: Vec<i64>,
+    #[serde(rename = "OBAOGFIILAL")]
+    pub obaogfiilal: Vec<i64>,
 
-    #[serde(rename = "ODJCJAJMGGG")]
-    pub odjcjajmggg: Vec<i64>,
+    #[serde(rename = "HGHDONCFIMD")]
+    pub hghdoncfimd: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "OKPDONMPBBD")]
-    pub okpdonmpbbd: i64,
+    #[serde(rename = "AJJFHOEKKCC")]
+    pub ajjfhoekkcc: i64,
 }
 
 pub fn load() -> Result<ActivityPotionStageExcelConfigData, crate::json::JsonError> {

@@ -13,11 +13,11 @@ pub struct VehicleSkillExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "HCBFKDMDJML")]
-    pub hcbfkdmdjml: i64,
+    #[serde(rename = "EGGOMFIBIMM")]
+    pub eggomfibimm: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
     #[serde(rename = "abilityName")]
     pub ability_name: String,
@@ -25,26 +25,47 @@ pub struct VehicleSkillExcelConfigDatum {
     #[serde(rename = "skillIcon")]
     pub skill_icon: String,
 
-    #[serde(rename = "JLEELAEIILI")]
-    pub jleelaeiili: f64,
+    #[serde(rename = "OGLEFCJOGJD")]
+    pub oglefcjogjd: f64,
 
-    #[serde(rename = "GLDMKMHNCOB")]
-    pub gldmkmhncob: i64,
+    #[serde(rename = "OBEDJJMCFKP")]
+    pub obedjjmcfkp: i64,
 
     #[serde(rename = "lockShape")]
-    pub lock_shape: String,
+    pub lock_shape: LockShape,
 
     #[serde(rename = "lockWeightParams")]
     pub lock_weight_params: Vec<f64>,
 
     #[serde(rename = "globalValueKey")]
-    pub global_value_key: String,
+    pub global_value_key: GlobalValueKey,
 
-    #[serde(rename = "JAHBGMECCAB")]
-    pub jahbgmeccab: Option<i64>,
+    #[serde(rename = "LBAGOFJKAAP")]
+    pub lbagofjkaap: Option<i64>,
 
-    #[serde(rename = "FFNMHDMHCIM")]
-    pub ffnmhdmhcim: Option<i64>,
+    #[serde(rename = "IOBNKAFDLEF")]
+    pub iobnkafdlef: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum GlobalValueKey {
+    #[serde(rename = "_ABILITY_LanV3BoatGame_Skill_Energy")]
+    AbilityLanV3BoatGameSkillEnergy,
+
+    #[serde(rename = "_ABILITY_Skiff_SprintValue")]
+    AbilitySkiffSprintValue,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum LockShape {
+    #[serde(rename = "CircleLockEnemyR50H30HC")]
+    CircleLockEnemyR50H30Hc,
+
+    #[serde(rename = "CircleLockEnemyR5H6HC")]
+    CircleLockEnemyR5H6Hc,
 }
 
 pub fn load() -> Result<VehicleSkillExcelConfigData, crate::json::JsonError> {

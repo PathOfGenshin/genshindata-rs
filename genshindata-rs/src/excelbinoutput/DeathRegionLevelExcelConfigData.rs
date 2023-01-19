@@ -10,14 +10,14 @@ pub type DeathRegionLevelExcelConfigData = Vec<DeathRegionLevelExcelConfigDatum>
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct DeathRegionLevelExcelConfigDatum {
-    #[serde(rename = "KIFIDCDOEOA")]
-    pub kifidcdoeoa: Option<f64>,
+    #[serde(rename = "GBOHJLMMADO")]
+    pub gbohjlmmado: Option<f64>,
 
-    #[serde(rename = "HINKCMOGHMA")]
-    pub hinkcmoghma: Option<i64>,
+    #[serde(rename = "CGMIBIBLOKD")]
+    pub cgmibiblokd: Option<i64>,
 
-    #[serde(rename = "IKINILBIMCL")]
-    pub ikinilbimcl: Option<f64>,
+    #[serde(rename = "MGONNLKPENI")]
+    pub mgonnlkpeni: Option<f64>,
 }
 
 pub fn load() -> Result<DeathRegionLevelExcelConfigData, crate::json::JsonError> {

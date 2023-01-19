@@ -61,12 +61,12 @@ pub struct FetterInfoExcelConfigDatum {
     #[serde(rename = "openConds")]
     pub open_conds: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "NJAMEFECDPJ")]
-    pub njamefecdpj: Vec<Njamefecdpj>,
+    #[serde(rename = "NKHEPEJMMDG")]
+    pub nkhepejmmdg: Vec<Nkhepejmmdg>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Njamefecdpj {
+pub struct Nkhepejmmdg {
     #[serde(rename = "condType")]
     pub cond_type: CondType,
 

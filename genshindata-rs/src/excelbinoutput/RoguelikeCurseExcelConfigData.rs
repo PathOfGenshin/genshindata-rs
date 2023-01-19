@@ -16,35 +16,35 @@ pub struct RoguelikeCurseExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "JPFCODFFPOL")]
-    pub jpfcodffpol: i64,
+    #[serde(rename = "HAONFLHBGEI")]
+    pub haonflhbgei: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MOCCNJPNFCP")]
-    pub moccnjpnfcp: Moccnjpnfcp,
+    #[serde(rename = "KIKGLNIKGFG")]
+    pub kikglnikgfg: Kikglnikgfg,
 
-    #[serde(rename = "MEJPPEIAEAA")]
-    pub mejppeiaeaa: Option<bool>,
+    #[serde(rename = "AIABAFNDBEO")]
+    pub aiabafndbeo: Option<bool>,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<f64>,
 
-    #[serde(rename = "IPHDOCKEMDE")]
-    pub iphdockemde: Vec<bool>,
+    #[serde(rename = "JKOCFKIDHIM")]
+    pub jkocfkidhim: Vec<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Moccnjpnfcp {
+pub struct Kikglnikgfg {
     #[serde(rename = "effectType")]
     pub effect_type: String,
 
-    #[serde(rename = "PIOMJPCNDKA")]
-    pub piomjpcndka: String,
+    #[serde(rename = "BHCHCKJGHGG")]
+    pub bhchckjghgg: String,
 
-    #[serde(rename = "AHIDGHIMNBK")]
-    pub ahidghimnbk: String,
+    #[serde(rename = "KMMOMGBGEGO")]
+    pub kmmomgbgego: String,
 }
 
 pub fn load() -> Result<RoguelikeCurseExcelConfigData, crate::json::JsonError> {

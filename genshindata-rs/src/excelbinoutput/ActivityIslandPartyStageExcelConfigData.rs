@@ -13,14 +13,14 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FPIMNAJGDLL")]
-    pub fpimnajgdll: String,
+    #[serde(rename = "ICNDAMONABN")]
+    pub icndamonabn: String,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "MFFGPLCLJFL")]
-    pub mffgplcljfl: i64,
+    #[serde(rename = "KIDBEFKHLDB")]
+    pub kidbefkhldb: i64,
 
     #[serde(rename = "matchId")]
     pub match_id: i64,
@@ -28,8 +28,8 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "draftId")]
     pub draft_id: i64,
 
-    #[serde(rename = "EGKHABGENGP")]
-    pub egkhabgengp: i64,
+    #[serde(rename = "BDHGNMNHEFG")]
+    pub bdhgnmnhefg: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -37,17 +37,17 @@ pub struct ActivityIslandPartyStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LNOHGHNENHB")]
-    pub lnohghnenhb: i64,
+    #[serde(rename = "CFLFGDGJAHG")]
+    pub cflfgdgjahg: i64,
 
-    #[serde(rename = "LBPHAECGJDM")]
-    pub lbphaecgjdm: i64,
+    #[serde(rename = "EGLHLIOOCMI")]
+    pub eglhlioocmi: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "GLCJNANKNJD")]
-    pub glcjnanknjd: Vec<i64>,
+    #[serde(rename = "KGAGOPOBDHK")]
+    pub kgagopobdhk: Vec<i64>,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,

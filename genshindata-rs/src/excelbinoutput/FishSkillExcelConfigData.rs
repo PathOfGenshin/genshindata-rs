@@ -16,26 +16,26 @@ pub struct FishSkillExcelConfigDatum {
     #[serde(rename = "skillCategory")]
     pub skill_category: SkillCategory,
 
-    #[serde(rename = "IGNFAMBBNAM")]
-    pub ignfambbnam: Ignfambbnam,
+    #[serde(rename = "MMGDOOFIPMG")]
+    pub mmgdoofipmg: Mmgdoofipmg,
 
     #[serde(rename = "param")]
     pub param: Vec<f64>,
 
-    #[serde(rename = "LLIPBAIEACC")]
-    pub llipbaieacc: Option<f64>,
+    #[serde(rename = "PKLDKIDODOK")]
+    pub pkldkidodok: Option<f64>,
 
-    #[serde(rename = "PKOLMDNJHNE")]
-    pub pkolmdnjhne: Vec<f64>,
+    #[serde(rename = "HGAAGGKJNPA")]
+    pub hgaaggkjnpa: Vec<f64>,
 
-    #[serde(rename = "PCHIAAFPPIA")]
-    pub pchiaafppia: Vec<f64>,
+    #[serde(rename = "OAJMLKLMLPG")]
+    pub oajmlklmlpg: Vec<f64>,
 
-    #[serde(rename = "EPECOMOPMAN")]
-    pub epecomopman: Vec<i64>,
+    #[serde(rename = "OCGJNOEBECL")]
+    pub ocgjnoebecl: Vec<i64>,
 
-    #[serde(rename = "MBDDOKDBOJL")]
-    pub mbddokdbojl: Vec<f64>,
+    #[serde(rename = "KINMFOCBDHP")]
+    pub kinmfocbdhp: Vec<f64>,
 
     #[serde(rename = "duration")]
     pub duration: f64,
@@ -43,12 +43,12 @@ pub struct FishSkillExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "EIFJBBNKLAA")]
-    pub eifjbbnklaa: Option<i64>,
+    #[serde(rename = "EDOAKMPAFAM")]
+    pub edoakmpafam: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ignfambbnam {
+pub enum Mmgdoofipmg {
     #[serde(rename = "FISH_SKILL_HP")]
     FishSkillHp,
 

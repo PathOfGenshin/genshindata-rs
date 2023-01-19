@@ -10,17 +10,17 @@ pub type VintageMarketAttrUpgradeExcelConfigData = Vec<VintageMarketAttrUpgradeE
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct VintageMarketAttrUpgradeExcelConfigDatum {
-    #[serde(rename = "AOJBEBFJJCO")]
-    pub aojbebfjjco: Vec<Aojbebfjjco>,
+    #[serde(rename = "BDHOMHLAAJF")]
+    pub bdhomhlaajf: Vec<Bdhomhlaajf>,
 
     #[serde(rename = "id")]
     pub id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Aojbebfjjco {
-    #[serde(rename = "CLFPLKNHHNL")]
-    pub clfplknhhnl: Vec<i64>,
+pub struct Bdhomhlaajf {
+    #[serde(rename = "NPNLKGOIGIG")]
+    pub npnlkgoigig: Vec<i64>,
 }
 
 pub fn load() -> Result<VintageMarketAttrUpgradeExcelConfigData, crate::json::JsonError> {

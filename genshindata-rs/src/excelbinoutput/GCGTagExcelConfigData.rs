@@ -13,18 +13,18 @@ pub struct GcgTagExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_tag_excel_config_datum_type: String,
 
-    #[serde(rename = "PHMOLEPKEIB")]
-    pub phmolepkeib: Vec<Phmolepkeib>,
+    #[serde(rename = "ILMBFONBEPI")]
+    pub ilmbfonbepi: Vec<Ilmbfonbepi>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "CGMPNPBDJKM")]
-    pub cgmpnpbdjkm: i64,
+    #[serde(rename = "IGHFDFBOBPI")]
+    pub ighfdfbobpi: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Phmolepkeib {
+pub enum Ilmbfonbepi {
     #[serde(rename = "GCG_TAG_IDENTIFIER_ASSIST")]
     GcgTagIdentifierAssist,
 

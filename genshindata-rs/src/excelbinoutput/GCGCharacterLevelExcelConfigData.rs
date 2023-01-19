@@ -5,7 +5,6 @@
 use std::env;
 
 extern crate serde_derive;
-use std::collections::HashMap;
 
 pub type GcgCharacterLevelExcelConfigData = Vec<GcgCharacterLevelExcelConfigDatum>;
 
@@ -20,44 +19,53 @@ pub struct GcgCharacterLevelExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "NAAKDGKJPKK")]
-    pub naakdgkjpkk: Vec<HashMap<String, i64>>,
+    #[serde(rename = "FGBGPPHFOCH")]
+    pub fgbgpphfoch: Vec<Fgbgpphfoch>,
 
-    #[serde(rename = "NNGHFPHLBOG")]
-    pub nnghfphlbog: i64,
+    #[serde(rename = "LJBDOJNCJJF")]
+    pub ljbdojncjjf: i64,
 
-    #[serde(rename = "DOOCADCGGKO")]
-    pub doocadcggko: i64,
+    #[serde(rename = "BDHLNEPKKBM")]
+    pub bdhlnepkkbm: i64,
 
-    #[serde(rename = "NHDGMGAHMFO")]
-    pub nhdgmgahmfo: Option<bool>,
+    #[serde(rename = "GNFAKOLDMBG")]
+    pub gnfakoldmbg: Option<bool>,
 
-    #[serde(rename = "BHCJELIKNPB")]
-    pub bhcjeliknpb: Option<i64>,
+    #[serde(rename = "MDPNINJHHFC")]
+    pub mdpninjhhfc: Option<i64>,
 
-    #[serde(rename = "KHHPKLKFKHG")]
-    pub khhpklkfkhg: Option<i64>,
+    #[serde(rename = "OINFCMLPFFP")]
+    pub oinfcmlpffp: Option<i64>,
 
-    #[serde(rename = "HOKFFPKBJCO")]
-    pub hokffpkbjco: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DGHFOKDOHMD")]
+    pub dghfokdohmd: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "NIDONEPDAOP")]
-    pub nidonepdaop: i64,
+    #[serde(rename = "INEDENAOILJ")]
+    pub inedenaoilj: i64,
 
-    #[serde(rename = "HEGBPOCJBCF")]
-    pub hegbpocjbcf: i64,
+    #[serde(rename = "MKDADKNJJEG")]
+    pub mkdadknjjeg: i64,
 
-    #[serde(rename = "GLAAKALKCEJ")]
-    pub glaakalkcej: i64,
+    #[serde(rename = "DBAHFIIAPID")]
+    pub dbahfiiapid: i64,
 
-    #[serde(rename = "FMDNIFOPMGP")]
-    pub fmdnifopmgp: i64,
+    #[serde(rename = "JNCDCDCEMFI")]
+    pub jncdcdcemfi: i64,
 
-    #[serde(rename = "LHOBJKLEJNC")]
-    pub lhobjklejnc: i64,
+    #[serde(rename = "HCEGDEAINOH")]
+    pub hcegdeainoh: i64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Fgbgpphfoch {
+    #[serde(rename = "JDJNDEEMIOM")]
+    pub jdjndeemiom: i64,
+
+    #[serde(rename = "DJHADHCMGOM")]
+    pub djhadhcmgom: i64,
 }
 
 pub fn load() -> Result<GcgCharacterLevelExcelConfigData, crate::json::JsonError> {

@@ -16,23 +16,23 @@ pub struct CatalogExcelConfigDatum {
     #[serde(rename = "type")]
     pub catalog_excel_config_datum_type: String,
 
-    #[serde(rename = "OFCDLOBEHGK")]
-    pub ofcdlobehgk: Vec<Vec<i64>>,
+    #[serde(rename = "KBHLNACPELK")]
+    pub kbhlnacpelk: Vec<Vec<i64>>,
 
-    #[serde(rename = "MLGLNLPMCCD")]
-    pub mlglnlpmccd: Vec<Mlglnlpmccd>,
+    #[serde(rename = "AHACBAIEGIN")]
+    pub ahacbaiegin: Vec<Ahacbaiegin>,
 
-    #[serde(rename = "DIFAPPALAIL")]
-    pub difappalail: Vec<i64>,
+    #[serde(rename = "DACDEABCBNA")]
+    pub dacdeabcbna: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Mlglnlpmccd {
-    #[serde(rename = "HKOJACADDNH")]
-    pub hkojacaddnh: Option<i64>,
+pub struct Ahacbaiegin {
+    #[serde(rename = "DEELDDFDCMC")]
+    pub deelddfdcmc: Option<i64>,
 
-    #[serde(rename = "JMHPGKOPEBM")]
-    pub jmhpgkopebm: Option<i64>,
+    #[serde(rename = "PMAFIEJNFID")]
+    pub pmafiejnfid: Option<i64>,
 }
 
 pub fn load() -> Result<CatalogExcelConfigData, crate::json::JsonError> {

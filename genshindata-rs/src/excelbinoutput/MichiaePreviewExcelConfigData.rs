@@ -17,11 +17,11 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "OMCPAKNJGAO")]
-    pub omcpaknjgao: i64,
+    #[serde(rename = "DCFODBJCHFN")]
+    pub dcfodbjchfn: i64,
 
-    #[serde(rename = "HMOILPBNGHB")]
-    pub hmoilpbnghb: i64,
+    #[serde(rename = "GGMGGBEBDKI")]
+    pub ggmggbebdki: i64,
 
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
@@ -29,32 +29,32 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "KMNGGOEPFAH")]
-    pub kmnggoepfah: i64,
+    #[serde(rename = "APCACCBIHAP")]
+    pub apcaccbihap: i64,
 
-    #[serde(rename = "KEFCGFDKJGO")]
-    pub kefcgfdkjgo: f64,
+    #[serde(rename = "PIEADEOBPCM")]
+    pub pieadeobpcm: f64,
 
-    #[serde(rename = "HJDFKEEMIEH")]
-    pub hjdfkeemieh: f64,
+    #[serde(rename = "MPHHLBHKKLB")]
+    pub mphhlbhkklb: f64,
 
-    #[serde(rename = "DGDIBPCOGEM")]
-    pub dgdibpcogem: i64,
+    #[serde(rename = "HCGHBAELFDJ")]
+    pub hcghbaelfdj: i64,
 
-    #[serde(rename = "GODDHFAAKBN")]
-    pub goddhfaakbn: i64,
+    #[serde(rename = "GJPMGFCAJNJ")]
+    pub gjpmgfcajnj: i64,
 
-    #[serde(rename = "HCFNHNIOKEN")]
-    pub hcfnhnioken: i64,
+    #[serde(rename = "HFMJMONLIBA")]
+    pub hfmjmonliba: i64,
 
-    #[serde(rename = "EGLHGHKBJPD")]
-    pub eglhghkbjpd: i64,
+    #[serde(rename = "JNEDOAGFHFE")]
+    pub jnedoagfhfe: i64,
 
-    #[serde(rename = "FHFLLPCEJAF")]
-    pub fhfllpcejaf: HashMap<String, i64>,
+    #[serde(rename = "NIFMJKAPOEP")]
+    pub nifmjkapoep: HashMap<String, i64>,
 
-    #[serde(rename = "JMBFBGNFBIM")]
-    pub jmbfbgnfbim: Vec<i64>,
+    #[serde(rename = "GEJKLECBJIF")]
+    pub gejklecbjif: Vec<i64>,
 }
 
 pub fn load() -> Result<MichiaePreviewExcelConfigData, crate::json::JsonError> {

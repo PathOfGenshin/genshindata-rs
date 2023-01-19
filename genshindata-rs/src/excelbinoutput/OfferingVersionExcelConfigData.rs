@@ -16,8 +16,8 @@ pub struct OfferingVersionExcelConfigDatum {
     #[serde(rename = "offeringId")]
     pub offering_id: i64,
 
-    #[serde(rename = "KDIEDJDGLIB")]
-    pub kdiedjdglib: i64,
+    #[serde(rename = "EEMDAEIJEHH")]
+    pub eemdaeijehh: i64,
 }
 
 pub fn load() -> Result<OfferingVersionExcelConfigData, crate::json::JsonError> {

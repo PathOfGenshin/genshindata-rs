@@ -52,8 +52,8 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "sortLevel")]
     pub sort_level: i64,
 
-    #[serde(rename = "FDAHBCAJOBE")]
-    pub fdahbcajobe: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "AIHHDEFKIAF")]
+    pub aihhdefkiaf: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "buyLimit")]
     pub buy_limit: Option<i64>,
@@ -73,8 +73,11 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "refreshParam")]
     pub refresh_param: Option<i64>,
 
-    #[serde(rename = "KFENLLGOLDB")]
-    pub kfenllgoldb: Option<bool>,
+    #[serde(rename = "IOHDPJDHNEL")]
+    pub iohdpjdhnel: Option<bool>,
+
+    #[serde(rename = "secondarySheetId")]
+    pub secondary_sheet_id: Option<i64>,
 
     #[serde(rename = "subTabId")]
     pub sub_tab_id: Option<i64>,
@@ -100,9 +103,6 @@ pub struct ShopGoodsExcelConfigDatum {
     #[serde(rename = "costMcoin")]
     pub cost_mcoin: Option<i64>,
 
-    #[serde(rename = "secondarySheetId")]
-    pub secondary_sheet_id: Option<i64>,
-
     #[serde(rename = "chooseOneGroupId")]
     pub choose_one_group_id: Option<i64>,
 }
@@ -118,14 +118,14 @@ pub struct CostItem {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct PlatformTypeList {
-    #[serde(rename = "EJNOOPLGGMK")]
-    pub ejnooplggmk: Option<Precondition>,
+    #[serde(rename = "AEHGDAOGFCG")]
+    pub aehgdaogfcg: Option<Precondition>,
 
-    #[serde(rename = "NGMJHIAOCKE")]
-    pub ngmjhiaocke: Option<i64>,
+    #[serde(rename = "HPEDPCCKEID")]
+    pub hpedpcckeid: Option<i64>,
 
-    #[serde(rename = "HFJHEMCAAPH")]
-    pub hfjhemcaaph: Option<i64>,
+    #[serde(rename = "CCPEDOPPGDB")]
+    pub ccpedoppgdb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

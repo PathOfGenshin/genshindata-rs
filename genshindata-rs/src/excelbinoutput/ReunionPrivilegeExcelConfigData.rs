@@ -16,8 +16,8 @@ pub struct ReunionPrivilegeExcelConfigDatum {
     #[serde(rename = "dailyNum")]
     pub daily_num: i64,
 
-    #[serde(rename = "NDDPNBMHLIB")]
-    pub nddpnbmhlib: i64,
+    #[serde(rename = "MGCBANNJKLD")]
+    pub mgcbannjkld: i64,
 
     #[serde(rename = "privilegeType")]
     pub privilege_type: Vec<PrivilegeType>,

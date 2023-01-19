@@ -16,18 +16,18 @@ pub struct GcgScenePointExcelConfigDatum {
     #[serde(rename = "pos")]
     pub pos: Vec<f64>,
 
-    #[serde(rename = "ECPFACDGEDP")]
-    pub ecpfacdgedp: f64,
+    #[serde(rename = "OELGFMCEKAC")]
+    pub oelgfmcekac: f64,
 
-    #[serde(rename = "CFIDIBAPDLJ")]
-    pub cfidibapdlj: Option<Cfidibapdlj>,
+    #[serde(rename = "INCNPFFFHIJ")]
+    pub incnpfffhij: Option<Incnpfffhij>,
 
-    #[serde(rename = "FBGBCDMEEKJ")]
-    pub fbgbcdmeekj: Vec<Fbgbcdmeekj>,
+    #[serde(rename = "NNEMGINJCFC")]
+    pub nnemginjcfc: Vec<Nnemginjcfc>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cfidibapdlj {
+pub enum Incnpfffhij {
     #[serde(rename = "POINT_MOTION_SIT")]
     PointMotionSit,
 
@@ -36,7 +36,7 @@ pub enum Cfidibapdlj {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fbgbcdmeekj {
+pub enum Nnemginjcfc {
     #[serde(rename = "SUPPORT_CALL")]
     SupportCall,
 

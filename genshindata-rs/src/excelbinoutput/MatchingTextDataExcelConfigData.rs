@@ -46,8 +46,8 @@ pub struct MatchingTextDataExcelConfigDatum {
     #[serde(rename = "matchSuccessDescTextMapHash")]
     pub match_success_desc_text_map_hash: i64,
 
-    #[serde(rename = "LLNKLKEHEDC")]
-    pub llnklkehedc: i64,
+    #[serde(rename = "NAPIPNIPMAO")]
+    pub napipnipmao: i64,
 }
 
 pub fn load() -> Result<MatchingTextDataExcelConfigData, crate::json::JsonError> {

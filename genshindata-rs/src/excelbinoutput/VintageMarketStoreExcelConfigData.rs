@@ -10,41 +10,41 @@ pub type VintageMarketStoreExcelConfigData = Vec<VintageMarketStoreExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct VintageMarketStoreExcelConfigDatum {
-    #[serde(rename = "JJBMLJGHNOG")]
-    pub jjbmljghnog: i64,
+    #[serde(rename = "DHICLENPCMF")]
+    pub dhiclenpcmf: i64,
 
-    #[serde(rename = "FLOLOJOGGCN")]
-    pub flolojoggcn: i64,
+    #[serde(rename = "GHGBONFOENI")]
+    pub ghgbonfoeni: i64,
 
-    #[serde(rename = "JMEOADGENAK")]
-    pub jmeoadgenak: i64,
+    #[serde(rename = "DNALAPDMBKN")]
+    pub dnalapdmbkn: i64,
 
-    #[serde(rename = "BNGINDBCCEB")]
-    pub bngindbcceb: Vec<i64>,
+    #[serde(rename = "ECELAIHBIJP")]
+    pub ecelaihbijp: Vec<i64>,
 
-    #[serde(rename = "OFACDMAOFEH")]
-    pub ofacdmaofeh: Vec<Ofacdmaofeh>,
+    #[serde(rename = "FMNAEGPBHPH")]
+    pub fmnaegpbhph: Vec<Fmnaegpbhph>,
 
-    #[serde(rename = "LBJOIKGBCLD")]
-    pub lbjoikgbcld: i64,
+    #[serde(rename = "FDBLBOEHJKM")]
+    pub fdblboehjkm: i64,
 
-    #[serde(rename = "BHILPBNEPCN")]
-    pub bhilpbnepcn: Vec<i64>,
+    #[serde(rename = "FGANCCBLKIN")]
+    pub fganccblkin: Vec<i64>,
 
     #[serde(rename = "npcId")]
     pub npc_id: i64,
 
-    #[serde(rename = "BNOMCBPKFFG")]
-    pub bnomcbpkffg: i64,
+    #[serde(rename = "BDCLNEKOMIO")]
+    pub bdclnekomio: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ofacdmaofeh {
+pub struct Fmnaegpbhph {
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
 
-    #[serde(rename = "FGFNFFFFEKN")]
-    pub fgfnffffekn: i64,
+    #[serde(rename = "BNHPJBGHGOP")]
+    pub bnhpjbghgop: i64,
 }
 
 pub fn load() -> Result<VintageMarketStoreExcelConfigData, crate::json::JsonError> {

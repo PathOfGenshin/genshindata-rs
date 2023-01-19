@@ -10,38 +10,38 @@ pub type FungusCultivateExcelConfigData = Vec<FungusCultivateExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FungusCultivateExcelConfigDatum {
-    #[serde(rename = "HGIOCHOPMBD")]
-    pub hgiochopmbd: i64,
+    #[serde(rename = "DGKDBDDLJEO")]
+    pub dgkdbddljeo: i64,
 
-    #[serde(rename = "LFNGIGOENAO")]
-    pub lfngigoenao: i64,
+    #[serde(rename = "PJNHBLKECAC")]
+    pub pjnhblkecac: i64,
 
-    #[serde(rename = "OBNOKOHCKOM")]
-    pub obnokohckom: Option<i64>,
+    #[serde(rename = "EAJIAOHFDJE")]
+    pub eajiaohfdje: Option<i64>,
 
-    #[serde(rename = "IFFHICGMDEP")]
-    pub iffhicgmdep: i64,
+    #[serde(rename = "GDBENBLMIHG")]
+    pub gdbenblmihg: i64,
 
-    #[serde(rename = "EGKHABGENGP")]
-    pub egkhabgengp: i64,
+    #[serde(rename = "BDHGNMNHEFG")]
+    pub bdhgnmnhefg: i64,
 
-    #[serde(rename = "IBDCOLAKMEB")]
-    pub ibdcolakmeb: Vec<i64>,
+    #[serde(rename = "GCKNKGGMDHA")]
+    pub gcknkggmdha: Vec<i64>,
 
-    #[serde(rename = "IHHEPPONHDM")]
-    pub ihhepponhdm: Vec<i64>,
+    #[serde(rename = "OBGPNHBFCHL")]
+    pub obgpnhbfchl: Vec<i64>,
 
-    #[serde(rename = "PHMGJKFALMH")]
-    pub phmgjkfalmh: Vec<i64>,
+    #[serde(rename = "POAAFCNKPAE")]
+    pub poaafcnkpae: Vec<i64>,
 
-    #[serde(rename = "KKOGOHHNNPJ")]
-    pub kkogohhnnpj: Vec<Vec<i64>>,
+    #[serde(rename = "KBICPPGHHAB")]
+    pub kbicppghhab: Vec<Vec<i64>>,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
-    #[serde(rename = "PPJJGIMHABM")]
-    pub ppjjgimhabm: Option<i64>,
+    #[serde(rename = "FMEHOOABADE")]
+    pub fmehooabade: Option<i64>,
 
     #[serde(rename = "tutorialId")]
     pub tutorial_id: Option<i64>,

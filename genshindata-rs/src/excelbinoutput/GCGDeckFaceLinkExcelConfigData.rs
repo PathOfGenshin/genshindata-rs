@@ -10,11 +10,11 @@ pub type GcgDeckFaceLinkExcelConfigData = Vec<GcgDeckFaceLinkExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgDeckFaceLinkExcelConfigDatum {
-    #[serde(rename = "KFDMIAPDCEG")]
-    pub kfdmiapdceg: i64,
+    #[serde(rename = "BAHNBAOENOB")]
+    pub bahnbaoenob: i64,
 
-    #[serde(rename = "AGBEBLBIMGD")]
-    pub agbeblbimgd: i64,
+    #[serde(rename = "EPCOACJIJJP")]
+    pub epcoacjijjp: i64,
 }
 
 pub fn load() -> Result<GcgDeckFaceLinkExcelConfigData, crate::json::JsonError> {

@@ -13,47 +13,47 @@ pub struct LanV2ProjectionExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "EGFFDLIKCMI")]
-    pub egffdlikcmi: f64,
+    #[serde(rename = "DAMDLCKKBLF")]
+    pub damdlckkblf: f64,
 
-    #[serde(rename = "JFLDBCFPIDH")]
-    pub jfldbcfpidh: f64,
+    #[serde(rename = "LLMBBIFGFDO")]
+    pub llmbbifgfdo: f64,
 
-    #[serde(rename = "EABFLGDNPHF")]
-    pub eabflgdnphf: f64,
+    #[serde(rename = "NOCENHKADGI")]
+    pub nocenhkadgi: f64,
 
-    #[serde(rename = "PAMFKJKOOJD")]
-    pub pamfkjkoojd: f64,
+    #[serde(rename = "NHDHBOHNLBD")]
+    pub nhdhbohnlbd: f64,
 
-    #[serde(rename = "MNAGKLHIDBH")]
-    pub mnagklhidbh: f64,
+    #[serde(rename = "PKNHBIIAEOF")]
+    pub pknhbiiaeof: f64,
 
-    #[serde(rename = "HJHGLHFEAGB")]
-    pub hjhglhfeagb: f64,
+    #[serde(rename = "CBBGMDAMDFE")]
+    pub cbbgmdamdfe: f64,
 
-    #[serde(rename = "DCABJOHOIEG")]
-    pub dcabjohoieg: i64,
+    #[serde(rename = "LOLKJICDOHJ")]
+    pub lolkjicdohj: i64,
 
-    #[serde(rename = "NHJCFDABFEA")]
-    pub nhjcfdabfea: i64,
+    #[serde(rename = "KIECAFNGNEN")]
+    pub kiecafngnen: i64,
 
-    #[serde(rename = "MJEHLBOGCLH")]
-    pub mjehlbogclh: i64,
+    #[serde(rename = "MOODCIIMBPF")]
+    pub moodciimbpf: i64,
 
-    #[serde(rename = "DNGPOAODBJP")]
-    pub dngpoaodbjp: i64,
+    #[serde(rename = "HLFDHNFADJG")]
+    pub hlfdhnfadjg: i64,
 
-    #[serde(rename = "OKMNLABMLFB")]
-    pub okmnlabmlfb: i64,
+    #[serde(rename = "ANMANBLFIAO")]
+    pub anmanblfiao: i64,
 
-    #[serde(rename = "PHJKDDOBHFB")]
-    pub phjkddobhfb: i64,
+    #[serde(rename = "FFKDJFDNMLL")]
+    pub ffkdjfdnmll: i64,
 
-    #[serde(rename = "MILNMCCMKBA")]
-    pub milnmccmkba: Vec<String>,
+    #[serde(rename = "NBHBGMOJOOH")]
+    pub nbhbgmojooh: Vec<String>,
 
-    #[serde(rename = "FEDNNAGAPGN")]
-    pub fednnagapgn: Vec<String>,
+    #[serde(rename = "CHKACKKBFBA")]
+    pub chkackkbfba: Vec<String>,
 
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,

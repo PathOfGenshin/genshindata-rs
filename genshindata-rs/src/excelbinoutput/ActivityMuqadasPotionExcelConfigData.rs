@@ -13,71 +13,71 @@ pub struct ActivityMuqadasPotionExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "KIFPAEJMAIB")]
-    pub kifpaejmaib: i64,
+    #[serde(rename = "GCKOLAOGOEG")]
+    pub gckolaogoeg: i64,
 
     #[serde(rename = "energyLimit")]
     pub energy_limit: i64,
 
-    #[serde(rename = "IFOAKGAMOLL")]
-    pub ifoakgamoll: i64,
+    #[serde(rename = "PCNJPPPMDKC")]
+    pub pcnjpppmdkc: i64,
 
-    #[serde(rename = "CBOKIOJACBD")]
-    pub cbokiojacbd: i64,
+    #[serde(rename = "GMDJFIPNKHH")]
+    pub gmdjfipnkhh: i64,
 
-    #[serde(rename = "GILBHCNNKGC")]
-    pub gilbhcnnkgc: i64,
+    #[serde(rename = "DBBHALIGKAB")]
+    pub dbbhaligkab: i64,
 
-    #[serde(rename = "KLAFKKJKJEB")]
-    pub klafkkjkjeb: i64,
+    #[serde(rename = "DJLHIMEOMNO")]
+    pub djlhimeomno: i64,
 
-    #[serde(rename = "OEOFEMHMDAK")]
-    pub oeofemhmdak: f64,
+    #[serde(rename = "OHIMGJJLAGA")]
+    pub ohimgjjlaga: f64,
 
-    #[serde(rename = "MPAAAOGKLNH")]
-    pub mpaaaogklnh: f64,
+    #[serde(rename = "CKLPEKHPNCO")]
+    pub cklpekhpnco: f64,
 
-    #[serde(rename = "EGNDINMOJCH")]
-    pub egndinmojch: i64,
+    #[serde(rename = "GGNNPLNBFEL")]
+    pub ggnnplnbfel: i64,
 
-    #[serde(rename = "BPBIKMOHKBA")]
-    pub bpbikmohkba: f64,
+    #[serde(rename = "EPFPILLAAGH")]
+    pub epfpillaagh: f64,
 
-    #[serde(rename = "FMOOAAFMALC")]
-    pub fmooaafmalc: String,
+    #[serde(rename = "BLDADFPPEAK")]
+    pub bldadfppeak: String,
 
-    #[serde(rename = "PAGGNKLJKFO")]
-    pub paggnkljkfo: String,
+    #[serde(rename = "DFDIJPJAKKL")]
+    pub dfdijpjakkl: String,
 
-    #[serde(rename = "LINAPKNHNBO")]
-    pub linapknhnbo: String,
+    #[serde(rename = "ANOMKDHPOIM")]
+    pub anomkdhpoim: String,
 
-    #[serde(rename = "CAJNNMGKDOG")]
-    pub cajnnmgkdog: String,
+    #[serde(rename = "PDKMBIEACLN")]
+    pub pdkmbieacln: String,
 
-    #[serde(rename = "FAIKCOKNBHA")]
-    pub faikcoknbha: String,
+    #[serde(rename = "OPOBAHBEPKL")]
+    pub opobahbepkl: String,
 
-    #[serde(rename = "BPHFJLEHJEH")]
-    pub bphfjlehjeh: String,
+    #[serde(rename = "MNHNKPDBMNP")]
+    pub mnhnkpdbmnp: String,
 
-    #[serde(rename = "JGBNMOLJBDJ")]
-    pub jgbnmoljbdj: String,
+    #[serde(rename = "AEEHGFGGNBO")]
+    pub aeehgfggnbo: String,
 
-    #[serde(rename = "OBEGBGGABLM")]
-    pub obegbggablm: String,
+    #[serde(rename = "GKFPIMCGJJG")]
+    pub gkfpimcgjjg: String,
 
-    #[serde(rename = "MGCIJFJBCIM")]
-    pub mgcijfjbcim: f64,
+    #[serde(rename = "LIOODLNIDMD")]
+    pub lioodlnidmd: f64,
 
-    #[serde(rename = "PEAJEEEMLBA")]
-    pub peajeeemlba: f64,
+    #[serde(rename = "JDODKCJLDKG")]
+    pub jdodkcjldkg: f64,
 
-    #[serde(rename = "PAPICHMFJJE")]
-    pub papichmfjje: f64,
+    #[serde(rename = "OJONIAAFLBM")]
+    pub ojoniaaflbm: f64,
 
-    #[serde(rename = "FONHBJJAIKK")]
-    pub fonhbjjaikk: i64,
+    #[serde(rename = "DOEGCPOOLCE")]
+    pub doegcpoolce: i64,
 }
 
 pub fn load() -> Result<ActivityMuqadasPotionExcelConfigData, crate::json::JsonError> {

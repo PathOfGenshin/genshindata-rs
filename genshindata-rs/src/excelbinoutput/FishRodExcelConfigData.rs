@@ -13,20 +13,20 @@ pub struct FishRodExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MODPAKDPOLM")]
-    pub modpakdpolm: f64,
+    #[serde(rename = "MPGPMHNMIFE")]
+    pub mpgpmhnmife: f64,
 
     #[serde(rename = "cityId")]
     pub city_id: Option<i64>,
 
-    #[serde(rename = "HJHNPDKGJON")]
-    pub hjhnpdkgjon: Option<f64>,
+    #[serde(rename = "PKHELLGHDIO")]
+    pub pkhellghdio: Option<f64>,
 
-    #[serde(rename = "MNGNHINPOBE")]
-    pub mngnhinpobe: Option<f64>,
+    #[serde(rename = "LBCBKBPEOKA")]
+    pub lbcbkbpeoka: Option<f64>,
 
-    #[serde(rename = "GCIAJBJLPCI")]
-    pub gciajbjlpci: Option<f64>,
+    #[serde(rename = "PCLEHADCIIM")]
+    pub pclehadciim: Option<f64>,
 }
 
 pub fn load() -> Result<FishRodExcelConfigData, crate::json::JsonError> {

@@ -13,8 +13,8 @@ pub struct DeshretPushTipsCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JLNFANDMABO")]
-    pub jlnfandmabo: i64,
+    #[serde(rename = "ACOMFLIELDA")]
+    pub acomflielda: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -22,11 +22,11 @@ pub struct DeshretPushTipsCatalogDataDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "PFGNLCCNHBN")]
-    pub pfgnlccnhbn: i64,
+    #[serde(rename = "GEEEBDFHHKO")]
+    pub geeebdfhhko: i64,
 
-    #[serde(rename = "NCCCEELPICM")]
-    pub nccceelpicm: i64,
+    #[serde(rename = "DPGOKCHIAEC")]
+    pub dpgokchiaec: i64,
 }
 
 pub fn load() -> Result<DeshretPushTipsCatalogDataData, crate::json::JsonError> {

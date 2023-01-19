@@ -13,20 +13,20 @@ pub struct BrickBreakerStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BHKNKPLLHAF")]
-    pub bhknkpllhaf: Vec<i64>,
+    #[serde(rename = "HBJIHBHOCON")]
+    pub hbjihbhocon: Vec<i64>,
 
-    #[serde(rename = "OMHMDNEFHKP")]
-    pub omhmdnefhkp: i64,
+    #[serde(rename = "IIGCOLKJKHN")]
+    pub iigcolkjkhn: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "IBNFFCGMMGK")]
-    pub ibnffcgmmgk: Vec<Vec<i64>>,
+    #[serde(rename = "DPFGAJFHANI")]
+    pub dpfgajfhani: Vec<Vec<i64>>,
 
-    #[serde(rename = "FPOIKAHKCKH")]
-    pub fpoikahkckh: Vec<i64>,
+    #[serde(rename = "DBEPLFEHALH")]
+    pub dbeplfehalh: Vec<i64>,
 }
 
 pub fn load() -> Result<BrickBreakerStageExcelConfigData, crate::json::JsonError> {

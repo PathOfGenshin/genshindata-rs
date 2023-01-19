@@ -13,8 +13,8 @@ pub struct GcgRuleTextDetailExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IFJNLHHKLME")]
-    pub ifjnlhhklme: Ifjnlhhklme,
+    #[serde(rename = "ADPCHNFAAOE")]
+    pub adpchnfaaoe: Adpchnfaaoe,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -22,15 +22,15 @@ pub struct GcgRuleTextDetailExcelConfigDatum {
     #[serde(rename = "contentTextMapHash")]
     pub content_text_map_hash: i64,
 
-    #[serde(rename = "LJFOKNADHHA")]
-    pub ljfoknadhha: Option<bool>,
+    #[serde(rename = "MEENOPBAHED")]
+    pub meenopbahed: Option<bool>,
 
-    #[serde(rename = "BPFBMDOCDFK")]
-    pub bpfbmdocdfk: Option<i64>,
+    #[serde(rename = "DAIFFLEEHME")]
+    pub daiffleehme: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ifjnlhhklme {
+pub enum Adpchnfaaoe {
     #[serde(rename = "")]
     Empty,
 

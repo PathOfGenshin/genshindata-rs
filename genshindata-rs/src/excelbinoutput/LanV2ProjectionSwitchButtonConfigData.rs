@@ -13,8 +13,8 @@ pub struct LanV2ProjectionSwitchButtonConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HPMLADPHEIK")]
-    pub hpmladpheik: String,
+    #[serde(rename = "ONKDLPKLEJB")]
+    pub onkdlpklejb: String,
 
     #[serde(rename = "iconPath")]
     pub icon_path: String,

@@ -16,35 +16,35 @@ pub struct EffigyChallengeV2ExcelConfigDatum {
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
 
-    #[serde(rename = "GJOHIBCENMI")]
-    pub gjohibcenmi: i64,
+    #[serde(rename = "IAMCAOJKHFO")]
+    pub iamcaojkhfo: i64,
 
-    #[serde(rename = "LDOGIIJLGFL")]
-    pub ldogiijlgfl: Vec<i64>,
+    #[serde(rename = "LOHPPMEBCMB")]
+    pub lohppmebcmb: Vec<i64>,
 
-    #[serde(rename = "FCMDFCPIBLC")]
-    pub fcmdfcpiblc: Vec<i64>,
+    #[serde(rename = "CEGKLCBNILG")]
+    pub cegklcbnilg: Vec<i64>,
 
-    #[serde(rename = "OKPBHHENMAH")]
-    pub okpbhhenmah: Vec<i64>,
+    #[serde(rename = "LKPDDLDGGMA")]
+    pub lkpddldggma: Vec<i64>,
 
-    #[serde(rename = "OFOMPLGPOKK")]
-    pub ofomplgpokk: String,
+    #[serde(rename = "OCDGFFCPKNC")]
+    pub ocdgffcpknc: String,
 
-    #[serde(rename = "MLHDIOICGIJ")]
-    pub mlhdioicgij: String,
+    #[serde(rename = "MCAPNCFJDOH")]
+    pub mcapncfjdoh: String,
 
-    #[serde(rename = "HLPNPPGAONA")]
-    pub hlpnppgaona: i64,
+    #[serde(rename = "NOOEBGJCKPI")]
+    pub nooebgjckpi: i64,
 
-    #[serde(rename = "DNENLPONMGB")]
-    pub dnenlponmgb: Vec<i64>,
+    #[serde(rename = "MICHDLCINCL")]
+    pub michdlcincl: Vec<i64>,
 
-    #[serde(rename = "GLBIJOPHJKN")]
-    pub glbijophjkn: Vec<i64>,
+    #[serde(rename = "MCOHEHNMACA")]
+    pub mcohehnmaca: Vec<i64>,
 
-    #[serde(rename = "EAMODOGEMPB")]
-    pub eamodogempb: Vec<i64>,
+    #[serde(rename = "MJHFJGHDIII")]
+    pub mjhfjghdiii: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
@@ -52,11 +52,11 @@ pub struct EffigyChallengeV2ExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "DCJKJOMAPOI")]
-    pub dcjkjomapoi: i64,
+    #[serde(rename = "DPCDLBHHODI")]
+    pub dpcdlbhhodi: i64,
 
-    #[serde(rename = "FCFFFLHDFDE")]
-    pub fcffflhdfde: i64,
+    #[serde(rename = "ANIJKEBDNGP")]
+    pub anijkebdngp: i64,
 }
 
 pub fn load() -> Result<EffigyChallengeV2ExcelConfigData, crate::json::JsonError> {

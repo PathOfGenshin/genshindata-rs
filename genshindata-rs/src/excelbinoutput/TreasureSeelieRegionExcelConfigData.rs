@@ -22,14 +22,14 @@ pub struct TreasureSeelieRegionExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "EDNGLANAEMJ")]
-    pub ednglanaemj: i64,
+    #[serde(rename = "ILIAHGBFMME")]
+    pub iliahgbfmme: i64,
 
-    #[serde(rename = "KMPJKBEAFKD")]
-    pub kmpjkbeafkd: Vec<i64>,
+    #[serde(rename = "HMNFHODOBCI")]
+    pub hmnfhodobci: Vec<i64>,
 
-    #[serde(rename = "ANFMMOIKMAF")]
-    pub anfmmoikmaf: i64,
+    #[serde(rename = "DKKCAJDAPIJ")]
+    pub dkkcajdapij: i64,
 }
 
 pub fn load() -> Result<TreasureSeelieRegionExcelConfigData, crate::json::JsonError> {

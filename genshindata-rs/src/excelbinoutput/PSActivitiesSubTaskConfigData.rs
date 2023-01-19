@@ -19,15 +19,15 @@ pub struct PsActivitiesSubTaskConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "KFFAMLJMIML")]
-    pub kffamljmiml: Kffamljmiml,
+    #[serde(rename = "IBMHEFDMDJC")]
+    pub ibmhefdmdjc: Ibmhefdmdjc,
 
     #[serde(rename = "hidden")]
     pub hidden: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kffamljmiml {
+pub enum Ibmhefdmdjc {
     #[serde(rename = "1.5.0")]
     The150,
 

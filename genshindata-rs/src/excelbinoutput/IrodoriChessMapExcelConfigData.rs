@@ -11,41 +11,41 @@ pub type IrodoriChessMapExcelConfigData = Vec<IrodoriChessMapExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriChessMapExcelConfigDatum {
-    #[serde(rename = "OFGAFMMPPCI")]
-    pub ofgafmmppci: i64,
+    #[serde(rename = "LNLDCBMGPBG")]
+    pub lnldcbmgpbg: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "DHBCFLICENH")]
-    pub dhbcflicenh: i64,
+    #[serde(rename = "DIBNPBCMAJA")]
+    pub dibnpbcmaja: i64,
 
     #[serde(rename = "show")]
     pub show: bool,
 
-    #[serde(rename = "HHBICMOPAKF")]
-    pub hhbicmopakf: Vec<i64>,
+    #[serde(rename = "ODOHLFCIKAL")]
+    pub odohlfcikal: Vec<i64>,
 
-    #[serde(rename = "CEEAGEDLCFG")]
-    pub ceeagedlcfg: i64,
+    #[serde(rename = "DDFPAPIOILB")]
+    pub ddfpapioilb: i64,
 
-    #[serde(rename = "HJHGHKBENNL")]
-    pub hjhghkbennl: HashMap<String, i64>,
+    #[serde(rename = "BNPIEBPPJJI")]
+    pub bnpiebppjji: HashMap<String, i64>,
 
-    #[serde(rename = "PEHGKDBJOMA")]
-    pub pehgkdbjoma: Vec<i64>,
+    #[serde(rename = "AMOJBIMGEDO")]
+    pub amojbimgedo: Vec<i64>,
 
-    #[serde(rename = "MKJKJEPIIKF")]
-    pub mkjkjepiikf: Vec<i64>,
+    #[serde(rename = "JNCAIKOKBGN")]
+    pub jncaikokbgn: Vec<i64>,
 
-    #[serde(rename = "EAILELIMNNI")]
-    pub eailelimnni: Vec<i64>,
+    #[serde(rename = "KPIAKLLNDOA")]
+    pub kpiakllndoa: Vec<i64>,
 
-    #[serde(rename = "DOMOIMEMPDC")]
-    pub domoimempdc: Vec<i64>,
+    #[serde(rename = "FEOPBCFMEDI")]
+    pub feopbcfmedi: Vec<i64>,
 
-    #[serde(rename = "FJJEDOLGFHF")]
-    pub fjjedolgfhf: i64,
+    #[serde(rename = "BAMOOLCCLEL")]
+    pub bamoolcclel: i64,
 
     #[serde(rename = "mapNameTextMapHash")]
     pub map_name_text_map_hash: i64,
@@ -56,11 +56,11 @@ pub struct IrodoriChessMapExcelConfigDatum {
     #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
 
-    #[serde(rename = "IHOIIPNKFJJ")]
-    pub ihoiipnkfjj: HashMap<String, i64>,
+    #[serde(rename = "DDGLPFNHBGH")]
+    pub ddglpfnhbgh: HashMap<String, i64>,
 
-    #[serde(rename = "FMOHCIFDCMC")]
-    pub fmohcifdcmc: Option<i64>,
+    #[serde(rename = "GMOGJHFJLKB")]
+    pub gmogjhfjlkb: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriChessMapExcelConfigData, crate::json::JsonError> {

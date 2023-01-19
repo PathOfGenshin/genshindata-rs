@@ -10,8 +10,8 @@ pub type RoguelikeCursePoolExcelConfigData = Vec<RoguelikeCursePoolExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RoguelikeCursePoolExcelConfigDatum {
-    #[serde(rename = "EDPDKGFIHLI")]
-    pub edpdkgfihli: i64,
+    #[serde(rename = "NPNIDDAPEHH")]
+    pub npniddapehh: i64,
 
     #[serde(rename = "poolId")]
     pub pool_id: i64,

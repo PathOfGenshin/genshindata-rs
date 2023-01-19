@@ -10,8 +10,8 @@ pub type IrodoriChessDisorderExcelConfigData = Vec<IrodoriChessDisorderExcelConf
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriChessDisorderExcelConfigDatum {
-    #[serde(rename = "LLEDDJNHBAB")]
-    pub lleddjnhbab: i64,
+    #[serde(rename = "FFLAOILJMGD")]
+    pub fflaoiljmgd: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,

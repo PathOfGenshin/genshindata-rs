@@ -21,9 +21,6 @@ pub struct ReliquaryMainPropExcelConfigDatum {
 
     #[serde(rename = "affixName")]
     pub affix_name: String,
-
-    #[serde(rename = "weight")]
-    pub weight: Option<i64>,
 }
 
 pub fn load() -> Result<ReliquaryMainPropExcelConfigData, crate::json::JsonError> {

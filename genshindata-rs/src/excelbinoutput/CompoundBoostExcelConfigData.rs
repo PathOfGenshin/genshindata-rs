@@ -13,8 +13,8 @@ pub struct CompoundBoostExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LFDGCKPFONC")]
-    pub lfdgckpfonc: i64,
+    #[serde(rename = "CLAMFMGHGII")]
+    pub clamfmghgii: i64,
 }
 
 pub fn load() -> Result<CompoundBoostExcelConfigData, crate::json::JsonError> {

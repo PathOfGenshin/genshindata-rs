@@ -10,41 +10,41 @@ pub type AvatarRenameExcelConfigData = Vec<AvatarRenameExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AvatarRenameExcelConfigDatum {
-    #[serde(rename = "NJEDGCHAKBC")]
-    pub njedgchakbc: i64,
+    #[serde(rename = "NFMBJCBLLKA")]
+    pub nfmbjcbllka: i64,
 
     #[serde(rename = "type")]
     pub avatar_rename_excel_config_datum_type: String,
 
-    #[serde(rename = "BACANCJEJAF")]
-    pub bacancjejaf: i64,
+    #[serde(rename = "BGDIKFFCOAL")]
+    pub bgdikffcoal: i64,
 
-    #[serde(rename = "IJNLGCNBBJA")]
-    pub ijnlgcnbbja: i64,
+    #[serde(rename = "CCJEDNCIGMB")]
+    pub ccjedncigmb: i64,
 
-    #[serde(rename = "JAIMJAIAPOH")]
-    pub jaimjaiapoh: i64,
+    #[serde(rename = "AOCJCLEKHCN")]
+    pub aocjclekhcn: i64,
 
-    #[serde(rename = "DIGAGDKNIJL")]
-    pub digagdknijl: i64,
+    #[serde(rename = "ILJBBMJDGGG")]
+    pub iljbbmjdggg: i64,
 
-    #[serde(rename = "CNKOHNIBELH")]
-    pub cnkohnibelh: Vec<Cnkohnibelh>,
+    #[serde(rename = "CDBDCPDJMHO")]
+    pub cdbdcpdjmho: Vec<Cdbdcpdjmho>,
 
-    #[serde(rename = "IAIEPFHNJDD")]
-    pub iaiepfhnjdd: String,
+    #[serde(rename = "KPDPCKPLMND")]
+    pub kpdpckplmnd: String,
 
-    #[serde(rename = "DEIHFJMODAB")]
-    pub deihfjmodab: Vec<i64>,
+    #[serde(rename = "GFLPCBFJCFG")]
+    pub gflpcbfjcfg: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cnkohnibelh {
-    #[serde(rename = "PLPFPKEKACG")]
-    pub plpfpkekacg: String,
+pub struct Cdbdcpdjmho {
+    #[serde(rename = "DFHKNDHEKEM")]
+    pub dfhkndhekem: String,
 
-    #[serde(rename = "NLEDLOOBLKJ")]
-    pub nledlooblkj: String,
+    #[serde(rename = "AHMMCDIJOFE")]
+    pub ahmmcdijofe: String,
 }
 
 pub fn load() -> Result<AvatarRenameExcelConfigData, crate::json::JsonError> {

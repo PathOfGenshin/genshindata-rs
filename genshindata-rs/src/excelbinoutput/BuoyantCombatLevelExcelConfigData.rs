@@ -25,23 +25,23 @@ pub struct BuoyantCombatLevelExcelConfigDatum {
     #[serde(rename = "rewardPreview")]
     pub reward_preview: i64,
 
-    #[serde(rename = "HEBCFCLDOAN")]
-    pub hebcfcldoan: i64,
+    #[serde(rename = "JLCEFDOFDGF")]
+    pub jlcefdofdgf: i64,
 
-    #[serde(rename = "CBFCGKOENMH")]
-    pub cbfcgkoenmh: i64,
+    #[serde(rename = "GGMLOMHOADF")]
+    pub ggmlomhoadf: i64,
 
-    #[serde(rename = "MNCMLAMFHHJ")]
-    pub mncmlamfhhj: Vec<i64>,
+    #[serde(rename = "IHHONBFLPJM")]
+    pub ihhonbflpjm: Vec<i64>,
 
-    #[serde(rename = "DCANJPOOONG")]
-    pub dcanjpooong: Vec<i64>,
+    #[serde(rename = "NEDOIKNOPPG")]
+    pub nedoiknoppg: Vec<i64>,
 
     #[serde(rename = "recommendLevel")]
     pub recommend_level: Vec<i64>,
 
-    #[serde(rename = "GLFMPBKELPJ")]
-    pub glfmpbkelpj: Vec<f64>,
+    #[serde(rename = "PHDBOCKBJDN")]
+    pub phdbockbjdn: Vec<f64>,
 }
 
 pub fn load() -> Result<BuoyantCombatLevelExcelConfigData, crate::json::JsonError> {

@@ -28,8 +28,8 @@ pub struct EffigyDifficultyExcelConfigDatum {
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
 
-    #[serde(rename = "BBPOEGJCLHD")]
-    pub bbpoegjclhd: i64,
+    #[serde(rename = "BGEJFFIOJAD")]
+    pub bgejffiojad: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

@@ -19,41 +19,41 @@ pub struct GcgDeckFieldExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KPINCGJPICF")]
-    pub kpincgjpicf: i64,
+    #[serde(rename = "LLHKCKOBCEL")]
+    pub llhkckobcel: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
 
-    #[serde(rename = "BDFNKMJCNBF")]
-    pub bdfnkmjcnbf: i64,
+    #[serde(rename = "GNBKLMFGBIA")]
+    pub gnbklmfgbia: i64,
 
-    #[serde(rename = "IPIBEODHCMM")]
-    pub ipibeodhcmm: String,
+    #[serde(rename = "MOFKENOMJCP")]
+    pub mofkenomjcp: String,
 
-    #[serde(rename = "BICINJPEBOM")]
-    pub bicinjpebom: i64,
+    #[serde(rename = "FCFNDLNEFGK")]
+    pub fcfndlnefgk: i64,
 
-    #[serde(rename = "DENLMICDELF")]
-    pub denlmicdelf: i64,
+    #[serde(rename = "INICJIKCLJO")]
+    pub inicjikcljo: i64,
 
-    #[serde(rename = "ENNAEGIECEN")]
-    pub ennaegiecen: Vec<String>,
+    #[serde(rename = "JJJHINAKHAG")]
+    pub jjjhinakhag: Vec<String>,
 
-    #[serde(rename = "AEPIJOEMFKG")]
-    pub aepijoemfkg: Vec<String>,
+    #[serde(rename = "GDPKHAFHLKJ")]
+    pub gdpkhafhlkj: Vec<String>,
 
-    #[serde(rename = "NCOFAOIKAAO")]
-    pub ncofaoikaao: Vec<String>,
+    #[serde(rename = "CLGICHKGBOP")]
+    pub clgichkgbop: Vec<String>,
 
-    #[serde(rename = "OMEIFIALNAH")]
-    pub omeifialnah: String,
+    #[serde(rename = "NLMDGGOFAOJ")]
+    pub nlmdggofaoj: String,
 
-    #[serde(rename = "EKIEJHJGDHJ")]
-    pub ekiejhjgdhj: String,
+    #[serde(rename = "LIAMEFONLIF")]
+    pub liamefonlif: String,
 
-    #[serde(rename = "MFCNIONLJGE")]
-    pub mfcnionljge: String,
+    #[serde(rename = "MCHNBJCLILF")]
+    pub mchnbjclilf: String,
 
     #[serde(rename = "id")]
     pub id: Option<i64>,

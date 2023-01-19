@@ -16,20 +16,20 @@ pub struct IrodoriChessCardExcelConfigDatum {
     #[serde(rename = "costPoints")]
     pub cost_points: i64,
 
-    #[serde(rename = "CFHNHPLBLHE")]
-    pub cfhnhplblhe: Cfhnhplblhe,
+    #[serde(rename = "DJMHGOMGKDJ")]
+    pub djmhgomgkdj: Djmhgomgkdj,
 
-    #[serde(rename = "DDGIENOPMBA")]
-    pub ddgienopmba: Vec<Cfhnhplblhe>,
+    #[serde(rename = "MDKODMBOKIA")]
+    pub mdkodmbokia: Vec<Djmhgomgkdj>,
 
     #[serde(rename = "cardType")]
     pub card_type: Option<CardType>,
 
-    #[serde(rename = "ACMMEMBEMOI")]
-    pub acmmembemoi: String,
+    #[serde(rename = "GBDFPKAKMMJ")]
+    pub gbdfpkakmmj: String,
 
-    #[serde(rename = "FIJJOLEOOMN")]
-    pub fijjoleoomn: i64,
+    #[serde(rename = "HPAHMDJDDKH")]
+    pub hpahmdjddkh: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -37,15 +37,27 @@ pub struct IrodoriChessCardExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<f64>,
 
-    #[serde(rename = "CHHMJNPHLJP")]
-    pub chhmjnphljp: Vec<Chhmjnphljp>,
+    #[serde(rename = "BGDLBMBFOAK")]
+    pub bgdlbmbfoak: Vec<Bgdlbmbfoak>,
 
-    #[serde(rename = "MDKOGCPIILE")]
-    pub mdkogcpiile: Option<Mdkogcpiile>,
+    #[serde(rename = "ONKHGINPMGB")]
+    pub onkhginpmgb: Option<Onkhginpmgb>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cfhnhplblhe {
+pub struct Bgdlbmbfoak {
+    #[serde(rename = "JJCOKBCJIOA")]
+    pub jjcokbcjioa: Option<Jjcokbcjioa>,
+
+    #[serde(rename = "LKACCELENFG")]
+    pub lkaccelenfg: Option<Lkaccelenfg>,
+
+    #[serde(rename = "FDHLMDDIHMC")]
+    pub fdhlmddihmc: Option<f64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Djmhgomgkdj {
     #[serde(rename = "targetType")]
     pub target_type: Option<TargetType>,
 
@@ -63,15 +75,27 @@ pub struct Cfhnhplblhe {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Chhmjnphljp {
-    #[serde(rename = "KLANCDAEKGF")]
-    pub klancdaekgf: Option<Klancdaekgf>,
+pub enum Jjcokbcjioa {
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK")]
+    IrodoriCardNumericalAttack,
 
-    #[serde(rename = "JOKNHAHGPOK")]
-    pub joknhahgpok: Option<Joknhahgpok>,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_INTERVAL")]
+    IrodoriCardNumericalAttackInterval,
 
-    #[serde(rename = "PFCFNJJAKNH")]
-    pub pfcfnjjaknh: Option<f64>,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_RANGE")]
+    IrodoriCardNumericalAttackRange,
+
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_MASTERY")]
+    IrodoriCardNumericalMastery,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Lkaccelenfg {
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
+    IrodoriCardNumericalBase,
+
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
+    IrodoriCardNumericalPercentage,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -108,31 +132,7 @@ pub enum TargetType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Joknhahgpok {
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
-    IrodoriCardNumericalBase,
-
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
-    IrodoriCardNumericalPercentage,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Klancdaekgf {
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK")]
-    IrodoriCardNumericalAttack,
-
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_INTERVAL")]
-    IrodoriCardNumericalAttackInterval,
-
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_RANGE")]
-    IrodoriCardNumericalAttackRange,
-
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_MASTERY")]
-    IrodoriCardNumericalMastery,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Mdkogcpiile {
+pub enum Onkhginpmgb {
     #[serde(rename = "IRODORI_CARD_QUALITY_GOOD")]
     IrodoriCardQualityGood,
 

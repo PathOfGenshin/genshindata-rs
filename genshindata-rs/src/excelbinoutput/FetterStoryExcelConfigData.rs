@@ -35,14 +35,14 @@ pub struct FetterStoryExcelConfigDatum {
     pub avatar_id: i64,
 
     #[serde(rename = "openConds")]
-    pub open_conds: Vec<Njamefecdpj>,
+    pub open_conds: Vec<Nkhepejmmdg>,
 
-    #[serde(rename = "NJAMEFECDPJ")]
-    pub njamefecdpj: Vec<Njamefecdpj>,
+    #[serde(rename = "NKHEPEJMMDG")]
+    pub nkhepejmmdg: Vec<Nkhepejmmdg>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Njamefecdpj {
+pub struct Nkhepejmmdg {
     #[serde(rename = "condType")]
     pub cond_type: Option<CondType>,
 

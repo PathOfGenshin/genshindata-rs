@@ -34,8 +34,8 @@ pub struct InvestigationConfigDatum {
     #[serde(rename = "unlockLevel")]
     pub unlock_level: Option<i64>,
 
-    #[serde(rename = "KKHEJJCEDCA")]
-    pub kkhejjcedca: Option<bool>,
+    #[serde(rename = "HNIDHLDIJKL")]
+    pub hnidhldijkl: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

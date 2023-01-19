@@ -6,16 +6,7 @@ use std::env;
 
 extern crate serde_derive;
 
-pub type ActivitySpiceGivingExcelConfigData = Vec<ActivitySpiceGivingExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct ActivitySpiceGivingExcelConfigDatum {
-    #[serde(rename = "PNHALECEJJJ")]
-    pub pnhalecejjj: i64,
-
-    #[serde(rename = "DHIPGFMDBEN")]
-    pub dhipgfmdben: i64,
-}
+pub type ActivitySpiceGivingExcelConfigData = Vec<Option<serde_json::Value>>;
 
 pub fn load() -> Result<ActivitySpiceGivingExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

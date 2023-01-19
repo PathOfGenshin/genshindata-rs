@@ -10,11 +10,20 @@ pub type GcgElementExcelConfigData = Vec<GcgElementExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgElementExcelConfigDatum {
-    #[serde(rename = "BNKFFFCCNGF")]
-    pub bnkfffccngf: i64,
+    #[serde(rename = "IEIJOKCHEOK")]
+    pub ieijokcheok: i64,
+
+    #[serde(rename = "OJBIEEPEKMK")]
+    pub ojbieepekmk: i64,
 
     #[serde(rename = "type")]
     pub gcg_element_excel_config_datum_type: Option<String>,
+
+    #[serde(rename = "GGDCMCJGBPB")]
+    pub ggdcmcjgbpb: Option<i64>,
+
+    #[serde(rename = "MJKLHKNOJGN")]
+    pub mjklhknojgn: Option<i64>,
 }
 
 pub fn load() -> Result<GcgElementExcelConfigData, crate::json::JsonError> {

@@ -5,20 +5,9 @@
 use std::env;
 
 extern crate serde_derive;
+use std::collections::HashMap;
 
-pub type EchoShellSummerTimeDungeonExcelConfigData = Vec<EchoShellSummerTimeDungeonExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct EchoShellSummerTimeDungeonExcelConfigDatum {
-    #[serde(rename = "dungeonId")]
-    pub dungeon_id: i64,
-
-    #[serde(rename = "BKLGLJOMBFB")]
-    pub bklgljombfb: i64,
-
-    #[serde(rename = "GHDGEAEAIEO")]
-    pub ghdgeaeaieo: Option<i64>,
-}
+pub type EchoShellSummerTimeDungeonExcelConfigData = Vec<HashMap<String, i64>>;
 
 pub fn load() -> Result<EchoShellSummerTimeDungeonExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

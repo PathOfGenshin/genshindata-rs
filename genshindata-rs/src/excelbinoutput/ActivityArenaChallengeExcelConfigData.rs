@@ -34,21 +34,57 @@ pub struct ActivityArenaChallengeExcelConfigDatum {
     #[serde(rename = "challengeTarget2TextMapHash")]
     pub challenge_target2_text_map_hash: i64,
 
-    #[serde(rename = "JDCNECGAAKA")]
-    pub jdcnecgaaka: Jdcnecgaaka,
+    #[serde(rename = "CPFOEPLILAG")]
+    pub cpfoeplilag: Cpfoeplilag,
 
-    #[serde(rename = "IMPDBLIIIOK")]
-    pub impdbliiiok: Impdbliiiok,
+    #[serde(rename = "LCODFEDICAG")]
+    pub lcodfedicag: Lcodfedicag,
 
-    #[serde(rename = "NCAEPNFJOBI")]
-    pub ncaepnfjobi: Ncaepnfjobi,
+    #[serde(rename = "ACAJJPEGJIO")]
+    pub acajjpegjio: Acajjpegjio,
 
-    #[serde(rename = "PGHKELNDNOC")]
-    pub pghkelndnoc: Option<bool>,
+    #[serde(rename = "CBGLDBOAALF")]
+    pub cbgldboaalf: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Impdbliiiok {
+pub enum Acajjpegjio {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "2010035;1")]
+    The20100351,
+
+    #[serde(rename = "2010035;12")]
+    The201003512,
+
+    #[serde(rename = "2010035;2")]
+    The20100352,
+
+    #[serde(rename = "2010035;3")]
+    The20100353,
+
+    #[serde(rename = "2010035;4")]
+    The20100354,
+
+    #[serde(rename = "2010035;6")]
+    The20100356,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Cpfoeplilag {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "2010036;180")]
+    The2010036180,
+
+    #[serde(rename = "2010069;150")]
+    The2010069150,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Lcodfedicag {
     #[serde(rename = "")]
     Empty,
 
@@ -72,42 +108,6 @@ pub enum Impdbliiiok {
 
     #[serde(rename = "2010044;15")]
     The201004415,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Jdcnecgaaka {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "2010036;180")]
-    The2010036180,
-
-    #[serde(rename = "2010069;150")]
-    The2010069150,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ncaepnfjobi {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "2010035;1")]
-    The20100351,
-
-    #[serde(rename = "2010035;12")]
-    The201003512,
-
-    #[serde(rename = "2010035;2")]
-    The20100352,
-
-    #[serde(rename = "2010035;3")]
-    The20100353,
-
-    #[serde(rename = "2010035;4")]
-    The20100354,
-
-    #[serde(rename = "2010035;6")]
-    The20100356,
 }
 
 pub fn load() -> Result<ActivityArenaChallengeExcelConfigData, crate::json::JsonError> {

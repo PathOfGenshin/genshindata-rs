@@ -10,8 +10,8 @@ pub type EffigyChallengeV2DifficultyExcelConfigData = Vec<EffigyChallengeV2Diffi
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct EffigyChallengeV2DifficultyExcelConfigDatum {
-    #[serde(rename = "KALDOHCHJIH")]
-    pub kaldohchjih: i64,
+    #[serde(rename = "LEEBGAPADJN")]
+    pub leebgapadjn: i64,
 
     #[serde(rename = "id")]
     pub id: Option<i64>,

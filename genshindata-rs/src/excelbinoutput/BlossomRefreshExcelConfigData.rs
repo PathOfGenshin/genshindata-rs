@@ -58,8 +58,8 @@ pub struct BlossomRefreshExcelConfigDatum {
     #[serde(rename = "rewardType")]
     pub reward_type: Option<String>,
 
-    #[serde(rename = "JFEELPLIEDI")]
-    pub jfeelpliedi: Option<bool>,
+    #[serde(rename = "FFCCPBOIIPP")]
+    pub ffccpboiipp: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

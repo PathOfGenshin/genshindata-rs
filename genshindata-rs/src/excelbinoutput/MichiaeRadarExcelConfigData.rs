@@ -10,11 +10,11 @@ pub type MichiaeRadarExcelConfigData = Vec<MichiaeRadarExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MichiaeRadarExcelConfigDatum {
-    #[serde(rename = "HOOIEAHEDPP")]
-    pub hooieahedpp: String,
+    #[serde(rename = "FKCOMOMCLCB")]
+    pub fkcomomclcb: String,
 
-    #[serde(rename = "BIIKJAANKNJ")]
-    pub biikjaanknj: Vec<i64>,
+    #[serde(rename = "FIBKNGALEJO")]
+    pub fibkngalejo: Vec<i64>,
 }
 
 pub fn load() -> Result<MichiaeRadarExcelConfigData, crate::json::JsonError> {

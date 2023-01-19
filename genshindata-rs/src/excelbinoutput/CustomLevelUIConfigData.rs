@@ -19,8 +19,8 @@ pub struct CustomLevelUiConfigDatum {
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "BLAJAIABGGM")]
-    pub blajaiabggm: Vec<i64>,
+    #[serde(rename = "PDEHFMJBEIJ")]
+    pub pdehfmjbeij: Vec<i64>,
 }
 
 pub fn load() -> Result<CustomLevelUiConfigData, crate::json::JsonError> {

@@ -10,26 +10,26 @@ pub type FireworksFactorExcelConfigData = Vec<FireworksFactorExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FireworksFactorExcelConfigDatum {
-    #[serde(rename = "OMBOHFCFAOD")]
-    pub ombohfcfaod: String,
+    #[serde(rename = "AONHINGMOEC")]
+    pub aonhingmoec: String,
 
-    #[serde(rename = "BACFDIKOFHA")]
-    pub bacfdikofha: i64,
+    #[serde(rename = "BJKFBALGLLH")]
+    pub bjkfbalgllh: i64,
 
-    #[serde(rename = "GCLGLLGPPJB")]
-    pub gclgllgppjb: String,
+    #[serde(rename = "MMLBECKNLAC")]
+    pub mmlbecknlac: String,
 
-    #[serde(rename = "PPODKJHGJAK")]
-    pub ppodkjhgjak: i64,
+    #[serde(rename = "BEOMLBENGKE")]
+    pub beomlbengke: i64,
 
-    #[serde(rename = "APABNNMCCNG")]
-    pub apabnnmccng: i64,
+    #[serde(rename = "CDLGOIBIHHC")]
+    pub cdlgoibihhc: i64,
 
-    #[serde(rename = "FJIOMCOEAEB")]
-    pub fjiomcoeaeb: i64,
+    #[serde(rename = "OBLBALEAEAM")]
+    pub oblbaleaeam: i64,
 
-    #[serde(rename = "BIOMMMJCOFG")]
-    pub biommmjcofg: f64,
+    #[serde(rename = "PKIEDCNEHIG")]
+    pub pkiedcnehig: f64,
 }
 
 pub fn load() -> Result<FireworksFactorExcelConfigData, crate::json::JsonError> {

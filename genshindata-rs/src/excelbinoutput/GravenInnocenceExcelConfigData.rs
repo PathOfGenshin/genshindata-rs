@@ -13,41 +13,41 @@ pub struct GravenInnocenceExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "PCLHBCBFEKC")]
-    pub pclhbcbfekc: i64,
+    #[serde(rename = "AKBDPGKNCEL")]
+    pub akbdpgkncel: i64,
 
-    #[serde(rename = "AFKJAJCNGGP")]
-    pub afkjajcnggp: i64,
+    #[serde(rename = "ICFNMMGLMKG")]
+    pub icfnmmglmkg: i64,
 
-    #[serde(rename = "KCDILALLFMO")]
-    pub kcdilallfmo: i64,
+    #[serde(rename = "KDAAOFFLHGC")]
+    pub kdaaofflhgc: i64,
 
-    #[serde(rename = "LHHCJLKNPBH")]
-    pub lhhcjlknpbh: i64,
+    #[serde(rename = "HBCPAIGNHEI")]
+    pub hbcpaignhei: i64,
 
-    #[serde(rename = "GFMEDEKPNIC")]
-    pub gfmedekpnic: i64,
+    #[serde(rename = "MPMCMJEOIFG")]
+    pub mpmcmjeoifg: i64,
 
-    #[serde(rename = "HIMCCIJFCIP")]
-    pub himccijfcip: i64,
+    #[serde(rename = "BFPNEANONMC")]
+    pub bfpneanonmc: i64,
 
-    #[serde(rename = "HJDHGLIFFNC")]
-    pub hjdhgliffnc: i64,
+    #[serde(rename = "AOMFIEDAPMM")]
+    pub aomfiedapmm: i64,
 
-    #[serde(rename = "NOBOBIIACLA")]
-    pub nobobiiacla: i64,
+    #[serde(rename = "ACFNNNEPFLB")]
+    pub acfnnnepflb: i64,
 
-    #[serde(rename = "MAMANEOBNHG")]
-    pub mamaneobnhg: i64,
+    #[serde(rename = "MFCGGDBPGID")]
+    pub mfcggdbpgid: i64,
 
-    #[serde(rename = "PFLGFOHIELH")]
-    pub pflgfohielh: Vec<i64>,
+    #[serde(rename = "ECFBDJMNEDF")]
+    pub ecfbdjmnedf: Vec<i64>,
 
-    #[serde(rename = "DBPNJALBIDP")]
-    pub dbpnjalbidp: i64,
+    #[serde(rename = "DBLHPPBMLHK")]
+    pub dblhppbmlhk: i64,
 
-    #[serde(rename = "MEMKJNJFAPG")]
-    pub memkjnjfapg: i64,
+    #[serde(rename = "JBLMADMAIFE")]
+    pub jblmadmaife: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceExcelConfigData, crate::json::JsonError> {

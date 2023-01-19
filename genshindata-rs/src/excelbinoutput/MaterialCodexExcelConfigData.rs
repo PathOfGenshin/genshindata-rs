@@ -28,20 +28,20 @@ pub struct MaterialCodexExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "GJLFPPCJBCP")]
-    pub gjlfppcjbcp: i64,
+    #[serde(rename = "FCHFOJLFAHC")]
+    pub fchfojlfahc: i64,
 
-    #[serde(rename = "KNICFPFMAHH")]
-    pub knicfpfmahh: i64,
+    #[serde(rename = "JECKFBFCPJP")]
+    pub jeckfbfcpjp: i64,
 
-    #[serde(rename = "MJLKLFNKJEL")]
-    pub mjlklfnkjel: i64,
+    #[serde(rename = "EGDGGGLKDPP")]
+    pub egdggglkdpp: i64,
 
-    #[serde(rename = "NFLNEBNEHKJ")]
-    pub nflnebnehkj: i64,
+    #[serde(rename = "COKJLJPEPFI")]
+    pub cokjljpepfi: i64,
 
-    #[serde(rename = "KCEBJAAGHKH")]
-    pub kcebjaaghkh: Option<i64>,
+    #[serde(rename = "PFIIHIJJCCA")]
+    pub pfiihijjcca: Option<i64>,
 
     #[serde(rename = "isDisuse")]
     pub is_disuse: Option<bool>,

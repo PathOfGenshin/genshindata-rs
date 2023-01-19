@@ -19,8 +19,8 @@ pub struct TransPointRewardConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "IMAIEIJPNHM")]
-    pub imaieijpnhm: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "MKOCFBEOHKD")]
+    pub mkocfbeohkd: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "groupIdVec")]
     pub group_id_vec: Vec<i64>,

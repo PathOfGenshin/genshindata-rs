@@ -10,14 +10,14 @@ pub type HandbookQuestGuideExcelConfigData = Vec<HandbookQuestGuideExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HandbookQuestGuideExcelConfigDatum {
-    #[serde(rename = "DEELLMEKECK")]
-    pub deellmekeck: i64,
+    #[serde(rename = "LBNNNEOBCNH")]
+    pub lbnnneobcnh: i64,
 
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "HHIAIKHLEIK")]
-    pub hhiaikhleik: i64,
+    #[serde(rename = "AOGJBEKGACL")]
+    pub aogjbekgacl: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
@@ -25,36 +25,36 @@ pub struct HandbookQuestGuideExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: Icon,
 
-    #[serde(rename = "PPNEFCPJMMB")]
-    pub ppnefcpjmmb: Vec<Ppnefcpjmmb>,
+    #[serde(rename = "MPOGDLMBEMO")]
+    pub mpogdlmbemo: Vec<Mpogdlmbemo>,
 
-    #[serde(rename = "NCACIBGPEGI")]
-    pub ncacibgpegi: Option<i64>,
+    #[serde(rename = "PPOPHIPFEPC")]
+    pub ppophipfepc: Option<i64>,
 
-    #[serde(rename = "AKGCFJAILBN")]
-    pub akgcfjailbn: Option<Akgcfjailbn>,
+    #[serde(rename = "IBEBPNDNJHK")]
+    pub ibebpndnjhk: Option<Ibebpndnjhk>,
 
-    #[serde(rename = "NKLGJGAHNFG")]
-    pub nklgjgahnfg: Option<bool>,
+    #[serde(rename = "BDJKGFNCNIN")]
+    pub bdjkgfncnin: Option<bool>,
 
-    #[serde(rename = "LDBPEBKBLDO")]
-    pub ldbpebkbldo: Option<i64>,
+    #[serde(rename = "GOEKOFNLKFI")]
+    pub goekofnlkfi: Option<i64>,
 
-    #[serde(rename = "FEEDCDKJMPP")]
-    pub feedcdkjmpp: Option<i64>,
+    #[serde(rename = "LPOJFKNHEHA")]
+    pub lpojfknheha: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ppnefcpjmmb {
+pub struct Mpogdlmbemo {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 
     #[serde(rename = "type")]
-    pub ppnefcpjmmb_type: Option<Type>,
+    pub mpogdlmbemo_type: Option<Type>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Akgcfjailbn {
+pub enum Ibebpndnjhk {
     #[serde(rename = "LQ")]
     Lq,
 

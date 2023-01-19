@@ -10,23 +10,23 @@ pub type GcgCardExcelConfigData = Vec<GcgCardExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgCardExcelConfigDatum {
-    #[serde(rename = "NJDEBIACCGJ")]
-    pub njdebiaccgj: i64,
+    #[serde(rename = "LLHAOOHLKCF")]
+    pub llhaoohlkcf: i64,
 
-    #[serde(rename = "PIGACPCFCPF")]
-    pub pigacpcfcpf: String,
+    #[serde(rename = "PLMLACHEPIE")]
+    pub plmlachepie: String,
 
-    #[serde(rename = "FLALADBPOPF")]
-    pub flaladbpopf: Vec<i64>,
+    #[serde(rename = "HLNIELEENMP")]
+    pub hlnieleenmp: Vec<i64>,
 
-    #[serde(rename = "BFOPNIGLEMK")]
-    pub bfopniglemk: Vec<Bfopniglemk>,
+    #[serde(rename = "JDBGABOANGP")]
+    pub jdbgaboangp: Vec<Jdbgaboangp>,
 
-    #[serde(rename = "BHJGPGHNMPB")]
-    pub bhjgpghnmpb: Option<i64>,
+    #[serde(rename = "HNHKBDKPACK")]
+    pub hnhkbdkpack: Option<i64>,
 
-    #[serde(rename = "APGBHOCBDBF")]
-    pub apgbhocbdbf: Vec<String>,
+    #[serde(rename = "PFFNJFJLEJK")]
+    pub pffnjfjlejk: Vec<String>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -40,63 +40,102 @@ pub struct GcgCardExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LDKBFGDBOKD")]
-    pub ldkbfgdbokd: Vec<Ldkbfgdbokd>,
+    #[serde(rename = "MGLOIGHBILB")]
+    pub mgloighbilb: Vec<Mgloighbilb>,
 
     #[serde(rename = "skillList")]
     pub skill_list: Vec<i64>,
 
-    #[serde(rename = "PMEAKELAHJJ")]
-    pub pmeakelahjj: Option<String>,
+    #[serde(rename = "AGCODHFBHJK")]
+    pub agcodhfbhjk: Option<String>,
 
-    #[serde(rename = "BBNNKHIKEEB")]
-    pub bbnnkhikeeb: Option<Bbnnkhikeeb>,
+    #[serde(rename = "EKMBNFCJEAN")]
+    pub ekmbnfcjean: Option<Ekmbnfcjean>,
 
-    #[serde(rename = "MHICIIIBLCI")]
-    pub mhiciiiblci: Option<Cmmfefpmgid>,
+    #[serde(rename = "HIMOFHNOIMF")]
+    pub himofhnoimf: Option<Efeaepmcbch>,
 
-    #[serde(rename = "EJLBDGICGCA")]
-    pub ejlbdgicgca: Option<Ejlbdgicgca>,
+    #[serde(rename = "IKKGAPALFCH")]
+    pub ikkgapalfch: Option<i64>,
 
-    #[serde(rename = "CMMFEFPMGID")]
-    pub cmmfefpmgid: Option<Cmmfefpmgid>,
+    #[serde(rename = "MOPDNNEMEKL")]
+    pub mopdnnemekl: Option<Mopdnnemekl>,
 
-    #[serde(rename = "MJEFNLJLBIJ")]
-    pub mjefnljlbij: Option<String>,
+    #[serde(rename = "EFEAEPMCBCH")]
+    pub efeaepmcbch: Option<Efeaepmcbch>,
+
+    #[serde(rename = "PNNPPKOBKIC")]
+    pub pnnppkobkic: Option<String>,
 
     #[serde(rename = "isHidden")]
     pub is_hidden: Option<bool>,
 
-    #[serde(rename = "FANGCKEJDOL")]
-    pub fangckejdol: Option<bool>,
+    #[serde(rename = "JAGIAHELDOD")]
+    pub jagiaheldod: Option<bool>,
 
-    #[serde(rename = "LEHHGAJEOEE")]
-    pub lehhgajeoee: Option<i64>,
+    #[serde(rename = "IFCNNPGDDHB")]
+    pub ifcnnpgddhb: Option<i64>,
 
-    #[serde(rename = "GDCDJNEBLAB")]
-    pub gdcdjneblab: Option<i64>,
+    #[serde(rename = "MCBGHDIKCDF")]
+    pub mcbghdikcdf: Option<i64>,
 
-    #[serde(rename = "LHGFAPKCEGE")]
-    pub lhgfapkcege: Option<Cmmfefpmgid>,
+    #[serde(rename = "NDNGLHKNIHI")]
+    pub ndnglhknihi: Option<Efeaepmcbch>,
 
-    #[serde(rename = "DOKABCHGHHO")]
-    pub dokabchghho: Option<i64>,
+    #[serde(rename = "DOBLKIHALEM")]
+    pub doblkihalem: Option<i64>,
 
-    #[serde(rename = "OFJHNOJLJOG")]
-    pub ofjhnojljog: Option<String>,
+    #[serde(rename = "LJPIKEBCEMF")]
+    pub ljpikebcemf: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bfopniglemk {
-    #[serde(rename = "CFKKLOGFHBH")]
-    pub cfkklogfhbh: Option<Cfkklogfhbh>,
+pub struct Jdbgaboangp {
+    #[serde(rename = "OHFMGCCFDLD")]
+    pub ohfmgccfdld: Option<Ohfmgccfdld>,
 
     #[serde(rename = "count")]
     pub count: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bbnnkhikeeb {
+pub enum CardType {
+    #[serde(rename = "GCG_CARD_ASSIST")]
+    GcgCardAssist,
+
+    #[serde(rename = "GCG_CARD_EVENT")]
+    GcgCardEvent,
+
+    #[serde(rename = "GCG_CARD_MODIFY")]
+    GcgCardModify,
+
+    #[serde(rename = "GCG_CARD_ONSTAGE")]
+    GcgCardOnstage,
+
+    #[serde(rename = "GCG_CARD_STATE")]
+    GcgCardState,
+
+    #[serde(rename = "GCG_CARD_SUMMON")]
+    GcgCardSummon,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Efeaepmcbch {
+    #[serde(rename = "GCG_TOKEN_COUNTER")]
+    GcgTokenCounter,
+
+    #[serde(rename = "GCG_TOKEN_LIFE")]
+    GcgTokenLife,
+
+    #[serde(rename = "GCG_TOKEN_ROUND_COUNT")]
+    GcgTokenRoundCount,
+
+    #[serde(rename = "GCG_TOKEN_SHIELD")]
+    GcgTokenShield,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ekmbnfcjean {
     #[serde(rename = "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM")]
     GcgPersistEffectExpectoPatronum,
 
@@ -111,7 +150,7 @@ pub enum Bbnnkhikeeb {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cfkklogfhbh {
+pub enum Ohfmgccfdld {
     #[serde(rename = "GCG_COST_DICE_ANEMO")]
     GcgCostDiceAnemo,
 
@@ -144,58 +183,7 @@ pub enum Cfkklogfhbh {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum CardType {
-    #[serde(rename = "GCG_CARD_ASSIST")]
-    GcgCardAssist,
-
-    #[serde(rename = "GCG_CARD_EVENT")]
-    GcgCardEvent,
-
-    #[serde(rename = "GCG_CARD_MODIFY")]
-    GcgCardModify,
-
-    #[serde(rename = "GCG_CARD_ONSTAGE")]
-    GcgCardOnstage,
-
-    #[serde(rename = "GCG_CARD_STATE")]
-    GcgCardState,
-
-    #[serde(rename = "GCG_CARD_SUMMON")]
-    GcgCardSummon,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Cmmfefpmgid {
-    #[serde(rename = "GCG_TOKEN_COUNTER")]
-    GcgTokenCounter,
-
-    #[serde(rename = "GCG_TOKEN_LIFE")]
-    GcgTokenLife,
-
-    #[serde(rename = "GCG_TOKEN_ROUND_COUNT")]
-    GcgTokenRoundCount,
-
-    #[serde(rename = "GCG_TOKEN_SHIELD")]
-    GcgTokenShield,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ejlbdgicgca {
-    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
-    GcgTokenIconBarrierShield,
-
-    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
-    GcgTokenIconClock,
-
-    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
-    GcgTokenIconHourglass,
-
-    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
-    GcgTokenIconNormalShield,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ldkbfgdbokd {
+pub enum Mgloighbilb {
     #[serde(rename = "GCG_TAG_ALLY")]
     GcgTagAlly,
 
@@ -210,6 +198,9 @@ pub enum Ldkbfgdbokd {
 
     #[serde(rename = "GCG_TAG_FORBIDDEN_ATTACK")]
     GcgTagForbiddenAttack,
+
+    #[serde(rename = "GCG_TAG_IMMUNE_CONTROL")]
+    GcgTagImmuneControl,
 
     #[serde(rename = "GCG_TAG_IMMUNE_FREEZING")]
     GcgTagImmuneFreezing,
@@ -252,6 +243,21 @@ pub enum Ldkbfgdbokd {
 
     #[serde(rename = "GCG_TAG_WEAPON_SWORD")]
     GcgTagWeaponSword,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mopdnnemekl {
+    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
+    GcgTokenIconBarrierShield,
+
+    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
+    GcgTokenIconClock,
+
+    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
+    GcgTokenIconHourglass,
+
+    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
+    GcgTokenIconNormalShield,
 }
 
 pub fn load() -> Result<GcgCardExcelConfigData, crate::json::JsonError> {

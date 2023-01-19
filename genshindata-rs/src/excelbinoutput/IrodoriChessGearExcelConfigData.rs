@@ -10,14 +10,14 @@ pub type IrodoriChessGearExcelConfigData = Vec<IrodoriChessGearExcelConfigDatum>
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriChessGearExcelConfigDatum {
-    #[serde(rename = "DAPCKMONPPB")]
-    pub dapckmonppb: i64,
+    #[serde(rename = "CEEIHCOLPKH")]
+    pub ceeihcolpkh: i64,
 
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "JLMNLNPBEKP")]
-    pub jlmnlnpbekp: i64,
+    #[serde(rename = "FELHMFAAFAD")]
+    pub felhmfaafad: i64,
 
     #[serde(rename = "gearNameTextMapHash")]
     pub gear_name_text_map_hash: i64,
@@ -31,8 +31,8 @@ pub struct IrodoriChessGearExcelConfigDatum {
     #[serde(rename = "gearIconPath")]
     pub gear_icon_path: String,
 
-    #[serde(rename = "JPIGAHDGKHJ")]
-    pub jpigahdgkhj: String,
+    #[serde(rename = "LCMEDPDDMIF")]
+    pub lcmedpddmif: String,
 
     #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
@@ -49,8 +49,8 @@ pub struct IrodoriChessGearExcelConfigDatum {
     #[serde(rename = "isEnableRotate")]
     pub is_enable_rotate: Option<bool>,
 
-    #[serde(rename = "KCKGHOGJOBM")]
-    pub kckghogjobm: Option<i64>,
+    #[serde(rename = "ONDJFDKHPJJ")]
+    pub ondjfdkhpjj: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriChessGearExcelConfigData, crate::json::JsonError> {

@@ -13,26 +13,26 @@ pub struct VintageMarketRoundExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HCBDBMEOFGE")]
-    pub hcbdbmeofge: Vec<Hcbdbmeofge>,
+    #[serde(rename = "DEPAKKEKCCJ")]
+    pub depakkekccj: Vec<Depakkekccj>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hcbdbmeofge {
-    #[serde(rename = "KOJMAFGFLHP")]
-    pub kojmafgflhp: Vec<f64>,
+pub struct Depakkekccj {
+    #[serde(rename = "CLMFNIEHGJE")]
+    pub clmfniehgje: Vec<f64>,
 
-    #[serde(rename = "GJHBMONEKOD")]
-    pub gjhbmonekod: i64,
+    #[serde(rename = "MJHOEKKDDHA")]
+    pub mjhoekkddha: i64,
 
-    #[serde(rename = "OIOHBCCPCFO")]
-    pub oiohbccpcfo: f64,
+    #[serde(rename = "KPFBFPGIGJH")]
+    pub kpfbfpgigjh: f64,
 
-    #[serde(rename = "OBCGKJEPMKK")]
-    pub obcgkjepmkk: Option<i64>,
+    #[serde(rename = "IBPOPLLLJDF")]
+    pub ibpopllljdf: Option<i64>,
 
-    #[serde(rename = "KJIHNGMNBPA")]
-    pub kjihngmnbpa: f64,
+    #[serde(rename = "MBPEANADOEL")]
+    pub mbpeanadoel: f64,
 }
 
 pub fn load() -> Result<VintageMarketRoundExcelConfigData, crate::json::JsonError> {

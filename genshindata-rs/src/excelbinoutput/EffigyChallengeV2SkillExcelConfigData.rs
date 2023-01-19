@@ -16,14 +16,14 @@ pub struct EffigyChallengeV2SkillExcelConfigDatum {
     #[serde(rename = "abilityName")]
     pub ability_name: String,
 
-    #[serde(rename = "NKABJCGGIME")]
-    pub nkabjcggime: i64,
+    #[serde(rename = "OKJOFGNLAJI")]
+    pub okjofgnlaji: i64,
 
-    #[serde(rename = "HCBFKDMDJML")]
-    pub hcbfkdmdjml: i64,
+    #[serde(rename = "EGGOMFIBIMM")]
+    pub eggomfibimm: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
     #[serde(rename = "descParam")]
     pub desc_param: Vec<f64>,

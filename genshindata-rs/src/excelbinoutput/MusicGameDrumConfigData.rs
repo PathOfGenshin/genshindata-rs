@@ -13,95 +13,95 @@ pub struct MusicGameDrumConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HDGJFCAJLCC")]
-    pub hdgjfcajlcc: Vec<f64>,
+    #[serde(rename = "KGONDJACLJA")]
+    pub kgondjaclja: Vec<f64>,
 
-    #[serde(rename = "BMACJJDHJFE")]
-    pub bmacjjdhjfe: Vec<f64>,
+    #[serde(rename = "BFPKCPNNMCA")]
+    pub bfpkcpnnmca: Vec<f64>,
 
-    #[serde(rename = "PJHLOKKPGFN")]
-    pub pjhlokkpgfn: Vec<f64>,
+    #[serde(rename = "DFGDBLOCAJC")]
+    pub dfgdblocajc: Vec<f64>,
 
-    #[serde(rename = "JENGIJGKHAP")]
-    pub jengijgkhap: Vec<f64>,
+    #[serde(rename = "EHLEFGMCFHE")]
+    pub ehlefgmcfhe: Vec<f64>,
 
-    #[serde(rename = "KCFHCHMNDMF")]
-    pub kcfhchmndmf: Vec<f64>,
+    #[serde(rename = "HBLCCLDEICF")]
+    pub hblccldeicf: Vec<f64>,
 
-    #[serde(rename = "NHKDEJKLKMC")]
-    pub nhkdejklkmc: i64,
+    #[serde(rename = "FDOHIJDLEON")]
+    pub fdohijdleon: i64,
 
-    #[serde(rename = "KLMGJAPHHOH")]
-    pub klmgjaphhoh: i64,
+    #[serde(rename = "FNKDHBOABHD")]
+    pub fnkdhboabhd: i64,
 
-    #[serde(rename = "OLMGPJDIBHF")]
-    pub olmgpjdibhf: i64,
+    #[serde(rename = "JLFCAFCDGAF")]
+    pub jlfcafcdgaf: i64,
 
-    #[serde(rename = "JAABCAHMFLB")]
-    pub jaabcahmflb: i64,
+    #[serde(rename = "NLIKBGGJLDO")]
+    pub nlikbggjldo: i64,
 
-    #[serde(rename = "LACJDAILGIF")]
-    pub lacjdailgif: i64,
+    #[serde(rename = "PBBFEKLEOGJ")]
+    pub pbbfekleogj: i64,
 
-    #[serde(rename = "OIAJBIIBIFG")]
-    pub oiajbiibifg: i64,
+    #[serde(rename = "DIKNFKLBNPP")]
+    pub diknfklbnpp: i64,
 
-    #[serde(rename = "OIHODLDPNGK")]
-    pub oihodldpngk: i64,
+    #[serde(rename = "BGFHMBNKCLP")]
+    pub bgfhmbnkclp: i64,
 
-    #[serde(rename = "EBIIODBKLCM")]
-    pub ebiiodbklcm: Vec<f64>,
+    #[serde(rename = "BPCBLICIIJO")]
+    pub bpcbliciijo: Vec<f64>,
 
-    #[serde(rename = "OOBPEAMMEGH")]
-    pub oobpeammegh: f64,
+    #[serde(rename = "KAKNPCFEOFH")]
+    pub kaknpcfeofh: f64,
 
-    #[serde(rename = "MOBPGMMJLOC")]
-    pub mobpgmmjloc: Vec<f64>,
+    #[serde(rename = "DDIGMBFCPLA")]
+    pub ddigmbfcpla: Vec<f64>,
 
-    #[serde(rename = "PNIPDGOJDFA")]
-    pub pnipdgojdfa: i64,
+    #[serde(rename = "DMFHGNJDKHB")]
+    pub dmfhgnjdkhb: i64,
 
-    #[serde(rename = "JDBNGGJMMEK")]
-    pub jdbnggjmmek: f64,
+    #[serde(rename = "OENABOBOJEB")]
+    pub oenabobojeb: f64,
 
-    #[serde(rename = "OAECDMFEJNM")]
-    pub oaecdmfejnm: f64,
+    #[serde(rename = "GJFGDNGBPEE")]
+    pub gjfgdngbpee: f64,
 
-    #[serde(rename = "KGHACJGIEGF")]
-    pub kghacjgiegf: i64,
+    #[serde(rename = "CEPDBHFKKHK")]
+    pub cepdbhfkkhk: i64,
 
-    #[serde(rename = "HKOLEIHJNDA")]
-    pub hkoleihjnda: Vec<f64>,
+    #[serde(rename = "MPLPINDEEMH")]
+    pub mplpindeemh: Vec<f64>,
 
-    #[serde(rename = "JKLMHJHOHGG")]
-    pub jklmhjhohgg: Vec<f64>,
+    #[serde(rename = "IEJOPLFPGJL")]
+    pub iejoplfpgjl: Vec<f64>,
 
-    #[serde(rename = "OPJKKNMKOMA")]
-    pub opjkknmkoma: Vec<f64>,
+    #[serde(rename = "LCMOIEFFHOD")]
+    pub lcmoieffhod: Vec<f64>,
 
-    #[serde(rename = "MFCNEIOCKKC")]
-    pub mfcneiockkc: Vec<f64>,
+    #[serde(rename = "MLBNFLLMJPE")]
+    pub mlbnfllmjpe: Vec<f64>,
 
-    #[serde(rename = "KKDKIJPEAMN")]
-    pub kkdkijpeamn: i64,
+    #[serde(rename = "OFCPIJDHNDJ")]
+    pub ofcpijdhndj: i64,
 
-    #[serde(rename = "BNJNIGLJHON")]
-    pub bnjnigljhon: Vec<i64>,
+    #[serde(rename = "DCOJAPHEMNK")]
+    pub dcojaphemnk: Vec<i64>,
 
-    #[serde(rename = "HCMBMOLHCKM")]
-    pub hcmbmolhckm: Vec<i64>,
+    #[serde(rename = "GHFLPIJLDOP")]
+    pub ghflpijldop: Vec<i64>,
 
-    #[serde(rename = "LFEJKFONNFN")]
-    pub lfejkfonnfn: Vec<i64>,
+    #[serde(rename = "EBJHLILKEBE")]
+    pub ebjhlilkebe: Vec<i64>,
 
-    #[serde(rename = "OEMOAHGJLMC")]
-    pub oemoahgjlmc: Vec<f64>,
+    #[serde(rename = "HCHPGGBFOFO")]
+    pub hchpggbfofo: Vec<f64>,
 
-    #[serde(rename = "HONHEGOIKGB")]
-    pub honhegoikgb: Vec<f64>,
+    #[serde(rename = "JKDMCCHIAGA")]
+    pub jkdmcchiaga: Vec<f64>,
 
-    #[serde(rename = "GGLAFIBINGP")]
-    pub gglafibingp: Vec<i64>,
+    #[serde(rename = "JMDPGBEIJOF")]
+    pub jmdpgbeijof: Vec<i64>,
 }
 
 pub fn load() -> Result<MusicGameDrumConfigData, crate::json::JsonError> {

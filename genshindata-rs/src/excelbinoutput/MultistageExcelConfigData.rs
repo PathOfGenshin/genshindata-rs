@@ -10,8 +10,8 @@ pub type MultistageExcelConfigData = Vec<MultistageExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MultistageExcelConfigDatum {
-    #[serde(rename = "FPIMNAJGDLL")]
-    pub fpimnajgdll: String,
+    #[serde(rename = "ICNDAMONABN")]
+    pub icndamonabn: String,
 }
 
 pub fn load() -> Result<MultistageExcelConfigData, crate::json::JsonError> {

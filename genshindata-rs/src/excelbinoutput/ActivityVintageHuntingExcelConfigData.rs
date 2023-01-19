@@ -13,14 +13,14 @@ pub struct ActivityVintageHuntingExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IIOGPJDCBDA")]
-    pub iiogpjdcbda: i64,
+    #[serde(rename = "FLIIOJGMGPK")]
+    pub fliiojgmgpk: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "BOMEAEBCLAB")]
-    pub bomeaebclab: i64,
+    #[serde(rename = "EFOGPJBDFCJ")]
+    pub efogpjbdfcj: i64,
 
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
@@ -31,35 +31,35 @@ pub struct ActivityVintageHuntingExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "AFGBBEAKHJL")]
-    pub afgbbeakhjl: i64,
+    #[serde(rename = "IBMGGNAHDMO")]
+    pub ibmggnahdmo: i64,
 
-    #[serde(rename = "NHDEEKOJELM")]
-    pub nhdeekojelm: Vec<i64>,
+    #[serde(rename = "MPFGCGGNLGA")]
+    pub mpfgcggnlga: Vec<i64>,
 
-    #[serde(rename = "MOLKOKCIGKJ")]
-    pub molkokcigkj: Vec<i64>,
+    #[serde(rename = "OBCKLMJNOAG")]
+    pub obcklmjnoag: Vec<i64>,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
     #[serde(rename = "tutorialId")]
     pub tutorial_id: i64,
 
-    #[serde(rename = "MHOBFKHEHHO")]
-    pub mhobfkhehho: i64,
+    #[serde(rename = "EJCJCFHEOHG")]
+    pub ejcjcfheohg: i64,
 
-    #[serde(rename = "JHIDPOPMLOJ")]
-    pub jhidpopmloj: i64,
+    #[serde(rename = "IPNBLELHBFF")]
+    pub ipnblelhbff: i64,
 
-    #[serde(rename = "LEFOKOPKBFD")]
-    pub lefokopkbfd: Vec<i64>,
+    #[serde(rename = "EJMKEEKLMIM")]
+    pub ejmkeeklmim: Vec<i64>,
 
-    #[serde(rename = "EJIHHECOCOH")]
-    pub ejihhecocoh: i64,
+    #[serde(rename = "EOMGGMEDBEG")]
+    pub eomggmedbeg: i64,
 
-    #[serde(rename = "LCGPBGOADJJ")]
-    pub lcgpbgoadjj: i64,
+    #[serde(rename = "LJBEBILKAJO")]
+    pub ljbebilkajo: i64,
 }
 
 pub fn load() -> Result<ActivityVintageHuntingExcelConfigData, crate::json::JsonError> {

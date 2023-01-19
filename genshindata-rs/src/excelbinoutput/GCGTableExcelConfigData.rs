@@ -13,14 +13,14 @@ pub struct GcgTableExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DMHBLHNAIKE")]
-    pub dmhblhnaike: Option<bool>,
+    #[serde(rename = "FNKFLHELMON")]
+    pub fnkflhelmon: Option<bool>,
 
-    #[serde(rename = "CMLHACFHELL")]
-    pub cmlhacfhell: String,
+    #[serde(rename = "KOFCKECFJNJ")]
+    pub kofckecfjnj: String,
 
-    #[serde(rename = "OKEBNGHLAPO")]
-    pub okebnghlapo: String,
+    #[serde(rename = "JMBAIOFHMFI")]
+    pub jmbaiofhmfi: String,
 }
 
 pub fn load() -> Result<GcgTableExcelConfigData, crate::json::JsonError> {

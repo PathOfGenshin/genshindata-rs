@@ -13,41 +13,41 @@ pub struct ActivityChessCardExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "GJDAMFBNKOP")]
-    pub gjdamfbnkop: i64,
+    #[serde(rename = "ACBBDPHEFNI")]
+    pub acbbdphefni: i64,
 
-    #[serde(rename = "ACMMEMBEMOI")]
-    pub acmmembemoi: Option<Acmmembemoi>,
+    #[serde(rename = "GBDFPKAKMMJ")]
+    pub gbdfpkakmmj: Option<Gbdfpkakmmj>,
 
-    #[serde(rename = "EDDKOPENING")]
-    pub eddkopening: i64,
+    #[serde(rename = "KMFBMKDHJAE")]
+    pub kmfbmkdhjae: i64,
 
-    #[serde(rename = "FIJJOLEOOMN")]
-    pub fijjoleoomn: i64,
+    #[serde(rename = "HPAHMDJDDKH")]
+    pub hpahmdjddkh: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KGJPFMIOECN")]
-    pub kgjpfmioecn: i64,
+    #[serde(rename = "PFBFJKBJHGG")]
+    pub pfbfjkbjhgg: i64,
 
-    #[serde(rename = "NBCNCKLPEFF")]
-    pub nbcncklpeff: i64,
+    #[serde(rename = "DDAKIONEAHP")]
+    pub ddakioneahp: i64,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<Vec<f64>>,
 
-    #[serde(rename = "IPHDOCKEMDE")]
-    pub iphdockemde: Vec<bool>,
+    #[serde(rename = "JKOCFKIDHIM")]
+    pub jkocfkidhim: Vec<bool>,
 
-    #[serde(rename = "KLANCDAEKGF")]
-    pub klancdaekgf: Option<Klancdaekgf>,
+    #[serde(rename = "JJCOKBCJIOA")]
+    pub jjcokbcjioa: Option<Jjcokbcjioa>,
 
-    #[serde(rename = "JOKNHAHGPOK")]
-    pub joknhahgpok: Option<Joknhahgpok>,
+    #[serde(rename = "LKACCELENFG")]
+    pub lkaccelenfg: Option<Lkaccelenfg>,
 
-    #[serde(rename = "PFCFNJJAKNH")]
-    pub pfcfnjjaknh: Option<f64>,
+    #[serde(rename = "FDHLMDDIHMC")]
+    pub fdhlmddihmc: Option<f64>,
 
     #[serde(rename = "costPoints")]
     pub cost_points: Option<i64>,
@@ -55,33 +55,33 @@ pub struct ActivityChessCardExcelConfigDatum {
     #[serde(rename = "cardType")]
     pub card_type: Option<CardType>,
 
-    #[serde(rename = "DKIPAOJNFID")]
-    pub dkipaojnfid: i64,
+    #[serde(rename = "HGFNCNJKPAH")]
+    pub hgfncnjkpah: i64,
 
-    #[serde(rename = "CFHNHPLBLHE")]
-    pub cfhnhplblhe: Cfhnhplblhe,
+    #[serde(rename = "DJMHGOMGKDJ")]
+    pub djmhgomgkdj: Djmhgomgkdj,
 
-    #[serde(rename = "FHFMPLDCCJA")]
-    pub fhfmpldccja: i64,
+    #[serde(rename = "BDPEODEBLCD")]
+    pub bdpeodeblcd: i64,
 
-    #[serde(rename = "OFKMMPLNELE")]
-    pub ofkmmplnele: Option<bool>,
+    #[serde(rename = "PMHEEKNCJIH")]
+    pub pmheekncjih: Option<bool>,
 
-    #[serde(rename = "CFIILNHFJJL")]
-    pub cfiilnhfjjl: Option<bool>,
+    #[serde(rename = "EIKDGFDDNCE")]
+    pub eikdgfddnce: Option<bool>,
 
-    #[serde(rename = "DDGIENOPMBA")]
-    pub ddgienopmba: Vec<Cfhnhplblhe>,
+    #[serde(rename = "MDKODMBOKIA")]
+    pub mdkodmbokia: Vec<Djmhgomgkdj>,
 
-    #[serde(rename = "DAKMHPIINJJ")]
-    pub dakmhpiinjj: Option<bool>,
+    #[serde(rename = "LIDDOEFCBJA")]
+    pub liddoefcbja: Option<bool>,
 
-    #[serde(rename = "MDKOGCPIILE")]
-    pub mdkogcpiile: Option<Mdkogcpiile>,
+    #[serde(rename = "ONKHGINPMGB")]
+    pub onkhginpmgb: Option<Onkhginpmgb>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cfhnhplblhe {
+pub struct Djmhgomgkdj {
     #[serde(rename = "targetType")]
     pub target_type: Option<TargetType>,
 
@@ -97,8 +97,8 @@ pub struct Cfhnhplblhe {
     #[serde(rename = "effectParam1")]
     pub effect_param1: Option<i64>,
 
-    #[serde(rename = "OJIKCKOMFCG")]
-    pub ojikckomfcg: Option<i64>,
+    #[serde(rename = "FOIPKPDIMFN")]
+    pub foipkpdimfn: Option<i64>,
 
     #[serde(rename = "effectParam2")]
     pub effect_param2: Option<i64>,
@@ -106,12 +106,33 @@ pub struct Cfhnhplblhe {
     #[serde(rename = "effectParam3")]
     pub effect_param3: Option<i64>,
 
-    #[serde(rename = "HMNDCKBNEBO")]
-    pub hmndckbnebo: Option<i64>,
+    #[serde(rename = "IELEGINAJML")]
+    pub ieleginajml: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Acmmembemoi {
+pub enum CardType {
+    #[serde(rename = "CHESS_CARD_CHALLENGE")]
+    ChessCardChallenge,
+
+    #[serde(rename = "CHESS_CARD_MECHANISM")]
+    ChessCardMechanism,
+
+    #[serde(rename = "CHESS_CARD_STRENGTHEN")]
+    ChessCardStrengthen,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum TargetType {
+    #[serde(rename = "CHESS_CARD_TARGET_ALL")]
+    ChessCardTargetAll,
+
+    #[serde(rename = "CHESS_CARD_TARGET_GADGETS")]
+    ChessCardTargetGadgets,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Gbdfpkakmmj {
     #[serde(rename = "CARD_TAG_ELECTRIC")]
     CardTagElectric,
 
@@ -138,37 +159,7 @@ pub enum Acmmembemoi {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum CardType {
-    #[serde(rename = "CHESS_CARD_CHALLENGE")]
-    ChessCardChallenge,
-
-    #[serde(rename = "CHESS_CARD_MECHANISM")]
-    ChessCardMechanism,
-
-    #[serde(rename = "CHESS_CARD_STRENGTHEN")]
-    ChessCardStrengthen,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum TargetType {
-    #[serde(rename = "CHESS_CARD_TARGET_ALL")]
-    ChessCardTargetAll,
-
-    #[serde(rename = "CHESS_CARD_TARGET_GADGETS")]
-    ChessCardTargetGadgets,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Joknhahgpok {
-    #[serde(rename = "CARD_NUMERICAL_BASE")]
-    CardNumericalBase,
-
-    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
-    CardNumericalPercentage,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Klancdaekgf {
+pub enum Jjcokbcjioa {
     #[serde(rename = "CARD_NUMERICAL_ATTACK")]
     CardNumericalAttack,
 
@@ -183,7 +174,16 @@ pub enum Klancdaekgf {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mdkogcpiile {
+pub enum Lkaccelenfg {
+    #[serde(rename = "CARD_NUMERICAL_BASE")]
+    CardNumericalBase,
+
+    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
+    CardNumericalPercentage,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Onkhginpmgb {
     #[serde(rename = "CARD_QUALITY_GOOD")]
     CardQualityGood,
 

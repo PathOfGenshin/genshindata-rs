@@ -46,8 +46,11 @@ pub struct CompoundExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JFFACGPCBCN")]
-    pub jffacgpcbcn: i64,
+    #[serde(rename = "LFECKAOEOMK")]
+    pub lfeckaoeomk: i64,
+
+    #[serde(rename = "dropId")]
+    pub drop_id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -63,6 +66,9 @@ pub struct PutVec {
 pub enum Type {
     #[serde(rename = "COMPOUND_COOK")]
     CompoundCook,
+
+    #[serde(rename = "COMPOUND_RANDOM_COOK")]
+    CompoundRandomCook,
 }
 
 pub fn load() -> Result<CompoundExcelConfigData, crate::json::JsonError> {

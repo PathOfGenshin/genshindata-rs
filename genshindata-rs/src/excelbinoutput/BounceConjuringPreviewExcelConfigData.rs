@@ -22,8 +22,8 @@ pub struct BounceConjuringPreviewExcelConfigDatum {
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
 
-    #[serde(rename = "NOKEFIKEBAO")]
-    pub nokefikebao: i64,
+    #[serde(rename = "GFAGIBFDPGF")]
+    pub gfagibfdpgf: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,

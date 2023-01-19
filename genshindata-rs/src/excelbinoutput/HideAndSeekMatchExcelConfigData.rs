@@ -25,11 +25,11 @@ pub struct HideAndSeekMatchExcelConfigDatum {
     #[serde(rename = "dscTextMapHash")]
     pub dsc_text_map_hash: i64,
 
-    #[serde(rename = "OEOMHLLDDEC")]
-    pub oeomhllddec: Vec<i64>,
+    #[serde(rename = "IKAKKOAPEJP")]
+    pub ikakkoapejp: Vec<i64>,
 
-    #[serde(rename = "MANBJHKMJEG")]
-    pub manbjhkmjeg: i64,
+    #[serde(rename = "PHOAILMBEHI")]
+    pub phoailmbehi: i64,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,

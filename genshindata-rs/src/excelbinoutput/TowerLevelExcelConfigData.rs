@@ -46,8 +46,8 @@ pub struct Cond {
     #[serde(rename = "towerCondType")]
     pub tower_cond_type: TowerCondType,
 
-    #[serde(rename = "FLIGHOGEHJA")]
-    pub flighogehja: Vec<i64>,
+    #[serde(rename = "IGBILKOKADI")]
+    pub igbilkokadi: Vec<i64>,
 
     #[serde(rename = "argumentList")]
     pub argument_list: Vec<i64>,

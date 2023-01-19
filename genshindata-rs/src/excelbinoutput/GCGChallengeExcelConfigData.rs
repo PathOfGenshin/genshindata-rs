@@ -19,14 +19,14 @@ pub struct GcgChallengeExcelConfigDatum {
     #[serde(rename = "paramList")]
     pub param_list: Vec<String>,
 
-    #[serde(rename = "MIPOKBOGHGJ")]
-    pub mipokboghgj: i64,
+    #[serde(rename = "NGAPJHFLLIB")]
+    pub ngapjhfllib: i64,
 
     #[serde(rename = "progress")]
     pub progress: i64,
 
-    #[serde(rename = "EMGLCHHPGPB")]
-    pub emglchhpgpb: Option<bool>,
+    #[serde(rename = "KMDDNOGMDDM")]
+    pub kmddnogmddm: Option<bool>,
 }
 
 pub fn load() -> Result<GcgChallengeExcelConfigData, crate::json::JsonError> {

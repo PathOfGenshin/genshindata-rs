@@ -52,14 +52,14 @@ pub struct TreasureMapRegionExcelConfigDatum {
     #[serde(rename = "mpTokenThreshold")]
     pub mp_token_threshold: i64,
 
-    #[serde(rename = "OEPCLEPLIPP")]
-    pub oepcleplipp: Vec<f64>,
+    #[serde(rename = "CEJNNBOLCKE")]
+    pub cejnnbolcke: Vec<f64>,
 
-    #[serde(rename = "EKPGMEPADPL")]
-    pub ekpgmepadpl: i64,
+    #[serde(rename = "GJCLIGEPEIF")]
+    pub gjcligepeif: i64,
 
-    #[serde(rename = "EJOGBFBEHAE")]
-    pub ejogbfbehae: Option<i64>,
+    #[serde(rename = "FMCEBKJFADP")]
+    pub fmcebkjfadp: Option<i64>,
 
     #[serde(rename = "mpGroupId")]
     pub mp_group_id: Option<i64>,
@@ -67,8 +67,8 @@ pub struct TreasureMapRegionExcelConfigDatum {
     #[serde(rename = "mpTypeId")]
     pub mp_type_id: Option<i64>,
 
-    #[serde(rename = "ODPLKBIEEBE")]
-    pub odplkbieebe: Option<i64>,
+    #[serde(rename = "MANPCPCDFIO")]
+    pub manpcpcdfio: Option<i64>,
 }
 
 pub fn load() -> Result<TreasureMapRegionExcelConfigData, crate::json::JsonError> {

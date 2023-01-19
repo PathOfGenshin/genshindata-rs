@@ -5,9 +5,23 @@
 use std::env;
 
 extern crate serde_derive;
-use std::collections::HashMap;
 
-pub type TreasureSeelieExcelConfigData = Vec<HashMap<String, i64>>;
+pub type TreasureSeelieExcelConfigData = Vec<TreasureSeelieExcelConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct TreasureSeelieExcelConfigDatum {
+    #[serde(rename = "scheduleId")]
+    pub schedule_id: i64,
+
+    #[serde(rename = "IAFNGOPOCAK")]
+    pub iafngopocak: i64,
+
+    #[serde(rename = "BMKENNHNKME")]
+    pub bmkennhnkme: i64,
+
+    #[serde(rename = "FJIDNGOMMKI")]
+    pub fjidngommki: i64,
+}
 
 pub fn load() -> Result<TreasureSeelieExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

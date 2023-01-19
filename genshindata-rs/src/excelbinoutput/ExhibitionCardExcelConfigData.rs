@@ -25,14 +25,17 @@ pub struct ExhibitionCardExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "DMDGMFFIIBM")]
-    pub dmdgmffiibm: Option<Dmdgmffiibm>,
+    #[serde(rename = "MLAMOLMECIA")]
+    pub mlamolmecia: Option<Mlamolmecia>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dmdgmffiibm {
+pub enum Mlamolmecia {
     #[serde(rename = "EXHIBITION_CARD_ORDER_GREATER_BETTER")]
     ExhibitionCardOrderGreaterBetter,
+
+    #[serde(rename = "EXHIBITION_CARD_ORDER_LESS_BETTER")]
+    ExhibitionCardOrderLessBetter,
 }
 
 pub fn load() -> Result<ExhibitionCardExcelConfigData, crate::json::JsonError> {

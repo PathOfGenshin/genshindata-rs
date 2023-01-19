@@ -13,11 +13,11 @@ pub struct RogueGadgetRotConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BGHILHOKCKA")]
-    pub bghilhokcka: Option<i64>,
+    #[serde(rename = "JJIOJPKDAJN")]
+    pub jjiojpkdajn: Option<i64>,
 
-    #[serde(rename = "CKFKMMKGDHA")]
-    pub ckfkmmkgdha: Option<String>,
+    #[serde(rename = "EJLOMNGIALE")]
+    pub ejlomngiale: Option<String>,
 }
 
 pub fn load() -> Result<RogueGadgetRotConfigData, crate::json::JsonError> {

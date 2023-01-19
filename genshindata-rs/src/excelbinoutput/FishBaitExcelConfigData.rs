@@ -13,26 +13,26 @@ pub struct FishBaitExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "INILFKMGHBB")]
-    pub inilfkmghbb: Vec<Inilfkmghbb>,
+    #[serde(rename = "BPGJPLIFMPL")]
+    pub bpgjplifmpl: Vec<Bpgjplifmpl>,
 
-    #[serde(rename = "IKBNPLPAFGL")]
-    pub ikbnplpafgl: i64,
+    #[serde(rename = "KGKMLDINJOP")]
+    pub kgkmldinjop: i64,
 
-    #[serde(rename = "FLKBCHDBOAC")]
-    pub flkbchdboac: Vec<i64>,
+    #[serde(rename = "JJKCMBEDIFF")]
+    pub jjkcmbediff: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Inilfkmghbb {
-    #[serde(rename = "OPPIANHGABA")]
-    pub oppianhgaba: Option<i64>,
+pub struct Bpgjplifmpl {
+    #[serde(rename = "NBKCDKIICCC")]
+    pub nbkcdkiiccc: Option<i64>,
 
     #[serde(rename = "weight")]
     pub weight: Option<f64>,
 
-    #[serde(rename = "DADKGALECKK")]
-    pub dadkgaleckk: Option<f64>,
+    #[serde(rename = "NHOFJKMAGDG")]
+    pub nhofjkmagdg: Option<f64>,
 }
 
 pub fn load() -> Result<FishBaitExcelConfigData, crate::json::JsonError> {

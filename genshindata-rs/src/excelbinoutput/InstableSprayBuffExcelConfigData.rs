@@ -13,14 +13,14 @@ pub struct InstableSprayBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BAJIHJHAKCG")]
-    pub bajihjhakcg: String,
+    #[serde(rename = "BHCJKANDNPF")]
+    pub bhcjkandnpf: String,
 
-    #[serde(rename = "ENMBNLNIOED")]
-    pub enmbnlnioed: String,
+    #[serde(rename = "HLFNCLKDDPM")]
+    pub hlfnclkddpm: String,
 
-    #[serde(rename = "IJFLOIFAJHH")]
-    pub ijfloifajhh: i64,
+    #[serde(rename = "ONGLICJMKEB")]
+    pub onglicjmkeb: i64,
 
     #[serde(rename = "elementType")]
     pub element_type: i64,
@@ -28,11 +28,11 @@ pub struct InstableSprayBuffExcelConfigDatum {
     #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
 
-    #[serde(rename = "NBBAGHJFMAP")]
-    pub nbbaghjfmap: i64,
+    #[serde(rename = "DNMPGBBMMPI")]
+    pub dnmpgbbmmpi: i64,
 
-    #[serde(rename = "HJIPLAPKEHM")]
-    pub hjiplapkehm: Vec<String>,
+    #[serde(rename = "LPIFKEDCMND")]
+    pub lpifkedcmnd: Vec<String>,
 }
 
 pub fn load() -> Result<InstableSprayBuffExcelConfigData, crate::json::JsonError> {

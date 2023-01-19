@@ -22,17 +22,17 @@ pub struct ReunionMissionExcelConfigDatum {
     #[serde(rename = "finishRewardId")]
     pub finish_reward_id: Option<i64>,
 
-    #[serde(rename = "EIFLBFCGGIC")]
-    pub eiflbfcggic: Vec<i64>,
+    #[serde(rename = "POOFMKMDHEO")]
+    pub poofmkmdheo: Vec<i64>,
 
-    #[serde(rename = "JNBDIGDPBBD")]
-    pub jnbdigdpbbd: Vec<i64>,
+    #[serde(rename = "JJCIDDDHINN")]
+    pub jjcidddhinn: Vec<i64>,
 
-    #[serde(rename = "PIIJCADFOHO")]
-    pub piijcadfoho: Vec<i64>,
+    #[serde(rename = "CIJFPMJJKAH")]
+    pub cijfpmjjkah: Vec<i64>,
 
-    #[serde(rename = "EFNAPKJOLGJ")]
-    pub efnapkjolgj: i64,
+    #[serde(rename = "HADDPHAPOBI")]
+    pub haddphapobi: i64,
 }
 
 pub fn load() -> Result<ReunionMissionExcelConfigData, crate::json::JsonError> {

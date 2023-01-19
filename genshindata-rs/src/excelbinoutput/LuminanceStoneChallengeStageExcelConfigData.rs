@@ -16,29 +16,29 @@ pub struct LuminanceStoneChallengeStageExcelConfigDatum {
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
 
-    #[serde(rename = "PANHLIEPKDG")]
-    pub panhliepkdg: i64,
+    #[serde(rename = "BHPHKKLJMAG")]
+    pub bhphkkljmag: i64,
 
-    #[serde(rename = "DIILCFOFHOK")]
-    pub diilcfofhok: i64,
+    #[serde(rename = "NMAJJKPDGIA")]
+    pub nmajjkpdgia: i64,
 
-    #[serde(rename = "AFJCNMICNEE")]
-    pub afjcnmicnee: i64,
+    #[serde(rename = "FIAOFPLGGKJ")]
+    pub fiaofplggkj: i64,
 
-    #[serde(rename = "IDHFFELCOCB")]
-    pub idhffelcocb: i64,
+    #[serde(rename = "EFKFNGPMGKE")]
+    pub efkfngpmgke: i64,
 
-    #[serde(rename = "CJDALAANEKA")]
-    pub cjdalaaneka: Vec<i64>,
+    #[serde(rename = "ABHMPLLAIKL")]
+    pub abhmpllaikl: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "JNFJNEFPIBA")]
-    pub jnfjnefpiba: Vec<i64>,
+    #[serde(rename = "CGNCMGAPMIH")]
+    pub cgncmgapmih: Vec<i64>,
 
-    #[serde(rename = "MNEJODPKJPO")]
-    pub mnejodpkjpo: i64,
+    #[serde(rename = "MBAIKHHJDNH")]
+    pub mbaikhhjdnh: i64,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,

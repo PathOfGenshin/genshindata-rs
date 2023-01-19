@@ -10,8 +10,8 @@ pub type ActivityRockBoardExploreQuestExcelConfigData = Vec<ActivityRockBoardExp
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
-    #[serde(rename = "DCPOIMPCNJH")]
-    pub dcpoimpcnjh: i64,
+    #[serde(rename = "IMHKJKLNBEJ")]
+    pub imhkjklnbej: i64,
 
     #[serde(rename = "questID")]
     pub quest_id: i64,
@@ -22,11 +22,11 @@ pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
     #[serde(rename = "iconName")]
     pub icon_name: String,
 
-    #[serde(rename = "DMHGKGCGIJG")]
-    pub dmhgkgcgijg: i64,
+    #[serde(rename = "CJPKFALNMDO")]
+    pub cjpkfalnmdo: i64,
 
-    #[serde(rename = "PODKEBDBGFJ")]
-    pub podkebdbgfj: i64,
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
 }
 
 pub fn load() -> Result<ActivityRockBoardExploreQuestExcelConfigData, crate::json::JsonError> {

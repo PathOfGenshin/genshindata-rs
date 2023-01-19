@@ -16,57 +16,57 @@ pub struct EchoShellExcelConfigDatum {
     #[serde(rename = "storyId")]
     pub story_id: Option<i64>,
 
-    #[serde(rename = "ICFAAGEFDJI")]
-    pub icfaagefdji: i64,
+    #[serde(rename = "DIGHEKFHFFN")]
+    pub dighekfhffn: i64,
 
-    #[serde(rename = "GFIHIPJKJBA")]
-    pub gfihipjkjba: i64,
+    #[serde(rename = "DCCDOOCFDKN")]
+    pub dccdoocfdkn: i64,
 
-    #[serde(rename = "MKHKIGHLANG")]
-    pub mkhkighlang: Vec<i64>,
+    #[serde(rename = "IGOKPHFKNGO")]
+    pub igokphfkngo: Vec<i64>,
 
-    #[serde(rename = "LMMLLMMEOPN")]
-    pub lmmllmmeopn: Vec<i64>,
+    #[serde(rename = "MOBOCEKDOPL")]
+    pub mobocekdopl: Vec<i64>,
 
-    #[serde(rename = "KBNHJOHHKDO")]
-    pub kbnhjohhkdo: String,
+    #[serde(rename = "NBDAFECDHIK")]
+    pub nbdafecdhik: String,
 
-    #[serde(rename = "JBKKLHNDHEP")]
-    pub jbkklhndhep: Vec<f64>,
+    #[serde(rename = "AEHMIPFEOPP")]
+    pub aehmipfeopp: Vec<f64>,
 
-    #[serde(rename = "JIGDPBPKPHF")]
-    pub jigdpbpkphf: i64,
+    #[serde(rename = "BBHGBIIHBBC")]
+    pub bbhgbiihbbc: i64,
 
-    #[serde(rename = "GHEDCPGOGHA")]
-    pub ghedcpgogha: i64,
+    #[serde(rename = "IGJNOKJAAKF")]
+    pub igjnokjaakf: i64,
 
-    #[serde(rename = "EFJODFLPHJP")]
-    pub efjodflphjp: Vec<i64>,
+    #[serde(rename = "EPOBBMBIBKE")]
+    pub epobbmbibke: Vec<i64>,
 
-    #[serde(rename = "EJLKCLNIEDA")]
-    pub ejlkclnieda: i64,
+    #[serde(rename = "IGLFNCKNAIC")]
+    pub iglfncknaic: i64,
 
-    #[serde(rename = "FDCCMOIODMO")]
-    pub fdccmoiodmo: i64,
+    #[serde(rename = "IHAGLKMBELO")]
+    pub ihaglkmbelo: i64,
 
-    #[serde(rename = "BCOGMJJGHEH")]
-    pub bcogmjjgheh: Vec<i64>,
+    #[serde(rename = "MACNJPIKJDP")]
+    pub macnjpikjdp: Vec<i64>,
 
-    #[serde(rename = "OEBEONLOCFJ")]
-    pub oebeonlocfj: Option<Oebeonlocfj>,
+    #[serde(rename = "PGNLFDENNDB")]
+    pub pgnlfdenndb: Option<Pgnlfdenndb>,
 
-    #[serde(rename = "DAOLFCOFKAD")]
-    pub daolfcofkad: Option<i64>,
+    #[serde(rename = "BANBGJIPCHE")]
+    pub banbgjipche: Option<i64>,
 
-    #[serde(rename = "MIDEPEPBHBF")]
-    pub midepepbhbf: Option<i64>,
+    #[serde(rename = "ECHCCBFHELA")]
+    pub echccbfhela: Option<i64>,
 
-    #[serde(rename = "ELBFEDOOPOD")]
-    pub elbfedoopod: Option<i64>,
+    #[serde(rename = "JFPDPIJKCAA")]
+    pub jfpdpijkcaa: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oebeonlocfj {
+pub enum Pgnlfdenndb {
     #[serde(rename = "ECHO_SHELL_TYPE_NORMAL_IMAGE")]
     EchoShellTypeNormalImage,
 

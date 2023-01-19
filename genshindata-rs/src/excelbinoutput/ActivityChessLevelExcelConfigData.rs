@@ -16,35 +16,35 @@ pub struct ActivityChessLevelExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "DMFDMFLMCIL")]
-    pub dmfdmflmcil: Option<i64>,
+    #[serde(rename = "BMLKHDCHDMP")]
+    pub bmlkhdchdmp: Option<i64>,
 
-    #[serde(rename = "OPOFCLNMDEL")]
-    pub opofclnmdel: i64,
+    #[serde(rename = "FFDOGGFGKBO")]
+    pub ffdoggfgkbo: i64,
 
-    #[serde(rename = "OLCOGJFLPOM")]
-    pub olcogjflpom: i64,
+    #[serde(rename = "PGOLOOINLKP")]
+    pub pgolooinlkp: i64,
 
-    #[serde(rename = "DKIPAOJNFID")]
-    pub dkipaojnfid: i64,
+    #[serde(rename = "HGFNCNJKPAH")]
+    pub hgfncnjkpah: i64,
 
-    #[serde(rename = "OGAAMIHDNLA")]
-    pub ogaamihdnla: i64,
+    #[serde(rename = "DEDKGGDGBAI")]
+    pub dedkggdgbai: i64,
 
-    #[serde(rename = "LOCALJBMLEO")]
-    pub localjbmleo: Vec<i64>,
+    #[serde(rename = "OCDAMHFMGMF")]
+    pub ocdamhfmgmf: Vec<i64>,
 
-    #[serde(rename = "BPJGLIBLMEB")]
-    pub bpjgliblmeb: i64,
+    #[serde(rename = "EAGGDNECEAC")]
+    pub eaggdneceac: i64,
 
-    #[serde(rename = "DHABLLAKKDO")]
-    pub dhabllakkdo: Option<bool>,
+    #[serde(rename = "MDMFAKNPNAF")]
+    pub mdmfaknpnaf: Option<bool>,
 
-    #[serde(rename = "NENNMIHNGJD")]
-    pub nennmihngjd: bool,
+    #[serde(rename = "FMPDGNLELLM")]
+    pub fmpdgnlellm: bool,
 
-    #[serde(rename = "KAJABPLDOEE")]
-    pub kajabpldoee: Option<String>,
+    #[serde(rename = "AHAKBMNMOOC")]
+    pub ahakbmnmooc: Option<String>,
 }
 
 pub fn load() -> Result<ActivityChessLevelExcelConfigData, crate::json::JsonError> {

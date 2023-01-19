@@ -13,17 +13,17 @@ pub struct BrickBreakerInfoExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DIKNBLNBCFD")]
-    pub diknblnbcfd: i64,
+    #[serde(rename = "FFGDGOLIFFP")]
+    pub ffgdgoliffp: i64,
 
-    #[serde(rename = "EOMJBEAHPBE")]
-    pub eomjbeahpbe: i64,
+    #[serde(rename = "APGNEPCMOAL")]
+    pub apgnepcmoal: i64,
 
     #[serde(rename = "levelIconHash")]
     pub level_icon_hash: i64,
 
-    #[serde(rename = "OKDLMKCPJAE")]
-    pub okdlmkcpjae: i64,
+    #[serde(rename = "LNEHFOFBEDF")]
+    pub lnehfofbedf: i64,
 }
 
 pub fn load() -> Result<BrickBreakerInfoExcelConfigData, crate::json::JsonError> {

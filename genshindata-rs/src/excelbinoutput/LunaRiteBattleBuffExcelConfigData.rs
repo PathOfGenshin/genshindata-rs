@@ -13,14 +13,14 @@ pub struct LunaRiteBattleBuffExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "GBECKABMACL")]
-    pub gbeckabmacl: String,
+    #[serde(rename = "EINIPCMDHJJ")]
+    pub einipcmdhjj: String,
 
-    #[serde(rename = "GJDAMFBNKOP")]
-    pub gjdamfbnkop: i64,
+    #[serde(rename = "ACBBDPHEFNI")]
+    pub acbbdphefni: i64,
 
-    #[serde(rename = "MCKDCJFHDMJ")]
-    pub mckdcjfhdmj: i64,
+    #[serde(rename = "KHBOJFAANDE")]
+    pub khbojfaande: i64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,

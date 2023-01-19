@@ -16,8 +16,8 @@ pub struct RogueMonsterPoolExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "FLKBCHDBOAC")]
-    pub flkbchdboac: Vec<i64>,
+    #[serde(rename = "JJKCMBEDIFF")]
+    pub jjkcmbediff: Vec<i64>,
 
     #[serde(rename = "difficulty")]
     pub difficulty: Option<Difficulty>,

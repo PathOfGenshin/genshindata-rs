@@ -16,14 +16,14 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "MNCMLAMFHHJ")]
-    pub mncmlamfhhj: Vec<i64>,
+    #[serde(rename = "IHHONBFLPJM")]
+    pub ihhonbflpjm: Vec<i64>,
 
     #[serde(rename = "mainQuest")]
     pub main_quest: Option<i64>,
 
-    #[serde(rename = "JBKKLHNDHEP")]
-    pub jbkklhndhep: Vec<f64>,
+    #[serde(rename = "AEHMIPFEOPP")]
+    pub aehmipfeopp: Vec<f64>,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -34,11 +34,11 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "EFEOOJFNKLN")]
-    pub efeoojfnkln: Option<String>,
+    #[serde(rename = "KMJBNNBFBML")]
+    pub kmjbnnbfbml: Option<String>,
 
-    #[serde(rename = "LDNAFOJBJLK")]
-    pub ldnafojbjlk: Option<i64>,
+    #[serde(rename = "MJHJFLFCDDA")]
+    pub mjhjflfcdda: Option<i64>,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: Option<i64>,
@@ -46,11 +46,11 @@ pub struct MoonfinTrialLevelExcelConfigDatum {
     #[serde(rename = "challengeId")]
     pub challenge_id: Option<i64>,
 
-    #[serde(rename = "KCHAGIJLMEH")]
-    pub kchagijlmeh: Option<i64>,
+    #[serde(rename = "IDCGCOFGNCJ")]
+    pub idcgcofgncj: Option<i64>,
 
-    #[serde(rename = "BDJJOHAKCEL")]
-    pub bdjjohakcel: Option<i64>,
+    #[serde(rename = "OFHMDHFIGGH")]
+    pub ofhmdhfiggh: Option<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: Option<i64>,

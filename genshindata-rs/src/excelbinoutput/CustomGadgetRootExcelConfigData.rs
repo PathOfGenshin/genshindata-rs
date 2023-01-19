@@ -10,27 +10,27 @@ pub type CustomGadgetRootExcelConfigData = Vec<CustomGadgetRootExcelConfigDatum>
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomGadgetRootExcelConfigDatum {
-    #[serde(rename = "AJOMPEGPLKO")]
-    pub ajompegplko: i64,
+    #[serde(rename = "JJNLGOEEGKM")]
+    pub jjnlgoeegkm: i64,
 
-    #[serde(rename = "APAJHCPLIDH")]
-    pub apajhcplidh: String,
+    #[serde(rename = "CFJPENGJFDG")]
+    pub cfjpengjfdg: String,
 
-    #[serde(rename = "BEPGGKMONJA")]
-    pub bepggkmonja: Bepggkmonja,
+    #[serde(rename = "NAACANGHGPL")]
+    pub naacanghgpl: Naacanghgpl,
 
-    #[serde(rename = "CJDAGEOFIJD")]
-    pub cjdageofijd: String,
+    #[serde(rename = "ECDIIBHDIPA")]
+    pub ecdiibhdipa: String,
 
-    #[serde(rename = "OFCDLOBEHGK")]
-    pub ofcdlobehgk: Vec<i64>,
+    #[serde(rename = "KBHLNACPELK")]
+    pub kbhlnacpelk: Vec<i64>,
 
-    #[serde(rename = "JGGLDIJFFAJ")]
-    pub jggldijffaj: Vec<i64>,
+    #[serde(rename = "OLELIHGHPPB")]
+    pub olelihghppb: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bepggkmonja {
+pub enum Naacanghgpl {
     #[serde(rename = "UI_HOMEWORLD_CHANGE_MOUNTAIN_BUTTON")]
     UiHomeworldChangeMountainButton,
 

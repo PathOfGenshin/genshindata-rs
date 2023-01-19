@@ -10,23 +10,23 @@ pub type TowerRewardExcelConfigData = Vec<TowerRewardExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TowerRewardExcelConfigDatum {
-    #[serde(rename = "IPGAJMFELEC")]
-    pub ipgajmfelec: i64,
+    #[serde(rename = "MFCGELFGNPG")]
+    pub mfcgelfgnpg: i64,
 
-    #[serde(rename = "IBLEPIOKENB")]
-    pub iblepiokenb: i64,
+    #[serde(rename = "EIIAJMDCBNH")]
+    pub eiiajmdcbnh: i64,
 
-    #[serde(rename = "HJPHFBGPFIA")]
-    pub hjphfbgpfia: i64,
+    #[serde(rename = "IBPLLDCCNHO")]
+    pub ibplldccnho: i64,
 
-    #[serde(rename = "EIHIHGLFECC")]
-    pub eihihglfecc: i64,
+    #[serde(rename = "JAEJHHIJNLD")]
+    pub jaejhhijnld: i64,
 
-    #[serde(rename = "AHOINMOIFKF")]
-    pub ahoinmoifkf: i64,
+    #[serde(rename = "JMLMIKFGHAJ")]
+    pub jmlmikfghaj: i64,
 
-    #[serde(rename = "MHGCHJIMGJJ")]
-    pub mhgchjimgjj: Vec<i64>,
+    #[serde(rename = "HNAGPHNPLCI")]
+    pub hnagphnplci: Vec<i64>,
 }
 
 pub fn load() -> Result<TowerRewardExcelConfigData, crate::json::JsonError> {

@@ -37,8 +37,8 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "searchPointNum")]
     pub search_point_num: Option<i64>,
 
-    #[serde(rename = "GBHFKLAGBIF")]
-    pub gbhfklagbif: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HIOMBCNMNOB")]
+    pub hiombcnmnob: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "clueTextIdList")]
     pub clue_text_id_list: Vec<i64>,
@@ -49,17 +49,17 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "traitTextTextMapHash")]
     pub trait_text_text_map_hash: i64,
 
-    #[serde(rename = "KLHLMJKMMNE")]
-    pub klhlmjkmmne: i64,
+    #[serde(rename = "GPJAHNBGMHH")]
+    pub gpjahnbgmhh: i64,
 
-    #[serde(rename = "NPPLEMMDLOA")]
-    pub npplemmdloa: i64,
+    #[serde(rename = "GGBHAPFKOPD")]
+    pub ggbhapfkopd: i64,
 
-    #[serde(rename = "OLAJOPIKOOE")]
-    pub olajopikooe: i64,
+    #[serde(rename = "NBKNAHNFBDI")]
+    pub nbknahnfbdi: i64,
 
-    #[serde(rename = "HLDDPFOIHIC")]
-    pub hlddpfoihic: i64,
+    #[serde(rename = "NALBHOJIGGD")]
+    pub nalbhojiggd: i64,
 
     #[serde(rename = "refreshCond")]
     pub refresh_cond: Vec<i64>,
@@ -67,11 +67,11 @@ pub struct HuntingMonsterExcelConfigDatum {
     #[serde(rename = "createPosType")]
     pub create_pos_type: Option<String>,
 
-    #[serde(rename = "DHICKEOOMJK")]
-    pub dhickeoomjk: Option<bool>,
+    #[serde(rename = "EEONMDJOCAA")]
+    pub eeonmdjocaa: Option<bool>,
 
-    #[serde(rename = "KNJPJHLADKA")]
-    pub knjpjhladka: Option<i64>,
+    #[serde(rename = "KACBOILGOKA")]
+    pub kacboilgoka: Option<i64>,
 
     #[serde(rename = "difficulty")]
     pub difficulty: Option<Difficulty>,

@@ -16,14 +16,14 @@ pub struct ActivityVintagePlayTypeExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "DMHGKGCGIJG")]
-    pub dmhgkgcgijg: i64,
+    #[serde(rename = "CJPKFALNMDO")]
+    pub cjpkfalnmdo: i64,
 
-    #[serde(rename = "PODKEBDBGFJ")]
-    pub podkebdbgfj: i64,
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
 
-    #[serde(rename = "IEENLKHBKEP")]
-    pub ieenlkhbkep: Option<i64>,
+    #[serde(rename = "DKKCADEFAHL")]
+    pub dkkcadefahl: Option<i64>,
 
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: Option<i64>,

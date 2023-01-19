@@ -13,17 +13,17 @@ pub struct ReliquaryDecomposeExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BAHBOCAPPPB")]
-    pub bahbocapppb: i64,
+    #[serde(rename = "IFODFNCCNCG")]
+    pub ifodfnccncg: i64,
 
-    #[serde(rename = "FKPGCLLJLGK")]
-    pub fkpgclljlgk: i64,
+    #[serde(rename = "IHDHIFPGNJM")]
+    pub ihdhifpgnjm: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "CCDGEFELMGE")]
-    pub ccdgefelmge: i64,
+    #[serde(rename = "DLEKGLAIDKH")]
+    pub dlekglaidkh: i64,
 
     #[serde(rename = "effectDescTextMapHash")]
     pub effect_desc_text_map_hash: i64,

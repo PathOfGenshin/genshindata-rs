@@ -10,11 +10,11 @@ pub type ActivityChessScheduleExcelConfigData = Vec<ActivityChessScheduleExcelCo
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityChessScheduleExcelConfigDatum {
-    #[serde(rename = "ODOIHKHHNKJ")]
-    pub odoihkhhnkj: i64,
+    #[serde(rename = "JLDIJLDDIOH")]
+    pub jldijlddioh: i64,
 
-    #[serde(rename = "CFEAFDPAIBA")]
-    pub cfeafdpaiba: Option<i64>,
+    #[serde(rename = "GOIGJLMPJGF")]
+    pub goigjlmpjgf: Option<i64>,
 
     #[serde(rename = "openMapList")]
     pub open_map_list: Vec<i64>,

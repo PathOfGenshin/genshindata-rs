@@ -16,8 +16,8 @@ pub struct GcgSkillTagExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "BNKFFFCCNGF")]
-    pub bnkfffccngf: Option<i64>,
+    #[serde(rename = "IEIJOKCHEOK")]
+    pub ieijokcheok: Option<i64>,
 }
 
 pub fn load() -> Result<GcgSkillTagExcelConfigData, crate::json::JsonError> {

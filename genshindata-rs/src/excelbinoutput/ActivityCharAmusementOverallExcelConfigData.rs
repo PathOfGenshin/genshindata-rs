@@ -13,14 +13,14 @@ pub struct ActivityCharAmusementOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "AGIAKLKLDDO")]
-    pub agiaklklddo: i64,
+    #[serde(rename = "AFKPMDJADEE")]
+    pub afkpmdjadee: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "MDONLDEDKHP")]
-    pub mdonldedkhp: i64,
+    #[serde(rename = "HCHLCDICAJA")]
+    pub hchlcdicaja: i64,
 }
 
 pub fn load() -> Result<ActivityCharAmusementOverallExcelConfigData, crate::json::JsonError> {

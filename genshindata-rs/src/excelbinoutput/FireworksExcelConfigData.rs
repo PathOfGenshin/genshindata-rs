@@ -13,50 +13,41 @@ pub struct FireworksExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "PNDPMJJMHKE")]
-    pub pndpmjjmhke: Vec<Pndpmjjmhke>,
+    #[serde(rename = "GHKLMMFMNIA")]
+    pub ghklmmfmnia: Vec<Ghklmmfmnia>,
 
-    #[serde(rename = "PHOADJJMHCB")]
-    pub phoadjjmhcb: Phoadjjmhcb,
+    #[serde(rename = "PAECEKHNJCC")]
+    pub paecekhnjcc: Paecekhnjcc,
 
-    #[serde(rename = "HGJDPBPMJCH")]
-    pub hgjdpbpmjch: Hgjdpbpmjch,
+    #[serde(rename = "EPFGJDFJDPP")]
+    pub epfgjdfjdpp: Epfgjdfjdpp,
 
-    #[serde(rename = "GJHFPMAHNEK")]
-    pub gjhfpmahnek: String,
+    #[serde(rename = "HBMEANFLCOO")]
+    pub hbmeanflcoo: Vec<String>,
 
-    #[serde(rename = "MDCGLKFGKIO")]
-    pub mdcglkfgkio: i64,
+    #[serde(rename = "NGCJFPICJNA")]
+    pub ngcjfpicjna: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Pndpmjjmhke {
+pub struct Ghklmmfmnia {
     #[serde(rename = "type")]
-    pub pndpmjjmhke_type: Type,
+    pub ghklmmfmnia_type: Type,
 
-    #[serde(rename = "KKICHDPAPPF")]
-    pub kkichdpappf: i64,
+    #[serde(rename = "LJMNCLKNGKO")]
+    pub ljmnclkngko: i64,
 
-    #[serde(rename = "ONHLLPDNECJ")]
-    pub onhllpdnecj: Option<bool>,
+    #[serde(rename = "IHEPCNDBAKC")]
+    pub ihepcndbakc: Option<bool>,
 
-    #[serde(rename = "BNCEDOAGFBE")]
-    pub bncedoagfbe: Vec<i64>,
+    #[serde(rename = "LIAKCEOOOCH")]
+    pub liakceoooch: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hgjdpbpmjch {
+pub enum Epfgjdfjdpp {
     #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
     EffSceneObjFireworksBullet,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Phoadjjmhcb {
-    #[serde(rename = "PatternShapeFireworks")]
-    PatternShapeFireworks,
-
-    #[serde(rename = "SphericalFireworks")]
-    SphericalFireworks,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -75,6 +66,15 @@ pub enum Type {
 
     #[serde(rename = "FIREWORKS_REFORM_PARAM_SIZE")]
     FireworksReformParamSize,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Paecekhnjcc {
+    #[serde(rename = "PatternShapeFireworks")]
+    PatternShapeFireworks,
+
+    #[serde(rename = "SphericalFireworks")]
+    SphericalFireworks,
 }
 
 pub fn load() -> Result<FireworksExcelConfigData, crate::json::JsonError> {

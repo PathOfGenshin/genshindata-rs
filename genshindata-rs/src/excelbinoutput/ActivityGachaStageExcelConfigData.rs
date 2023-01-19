@@ -13,11 +13,11 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
 
-    #[serde(rename = "OMPIMECHFMM")]
-    pub ompimechfmm: i64,
+    #[serde(rename = "JCPEONEJHHC")]
+    pub jcpeonejhhc: i64,
 
-    #[serde(rename = "KLGIBGIJCIF")]
-    pub klgibgijcif: Option<bool>,
+    #[serde(rename = "BJDDJNJOPAK")]
+    pub bjddjnjopak: Option<bool>,
 
     #[serde(rename = "type")]
     pub activity_gacha_stage_excel_config_datum_type: String,
@@ -25,14 +25,14 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "PLBEHABAGNG")]
-    pub plbehabagng: Vec<i64>,
+    #[serde(rename = "MPCEMHPPHNG")]
+    pub mpcemhpphng: Vec<i64>,
 
-    #[serde(rename = "IPCFEPJCGEP")]
-    pub ipcfepjcgep: Vec<i64>,
+    #[serde(rename = "PGAFENHIIBJ")]
+    pub pgafenhiibj: Vec<i64>,
 
-    #[serde(rename = "AFJFKFKGOHF")]
-    pub afjfkfkgohf: Vec<i64>,
+    #[serde(rename = "JBBLLFOADHP")]
+    pub jbbllfoadhp: Vec<i64>,
 
     #[serde(rename = "condID")]
     pub cond_id: Option<i64>,
@@ -40,11 +40,11 @@ pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
 
-    #[serde(rename = "CFOCHCKNFFI")]
-    pub cfochcknffi: Option<i64>,
+    #[serde(rename = "EDCKBJHPJKJ")]
+    pub edckbjhpjkj: Option<i64>,
 
-    #[serde(rename = "MJMBHGEFHOD")]
-    pub mjmbhgefhod: Option<bool>,
+    #[serde(rename = "NNFDAAFOIAE")]
+    pub nnfdaafoiae: Option<bool>,
 }
 
 pub fn load() -> Result<ActivityGachaStageExcelConfigData, crate::json::JsonError> {

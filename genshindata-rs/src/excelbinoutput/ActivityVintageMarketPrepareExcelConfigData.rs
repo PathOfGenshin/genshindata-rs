@@ -13,35 +13,35 @@ pub struct ActivityVintageMarketPrepareExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
 
-    #[serde(rename = "BBIAIPKFAEN")]
-    pub bbiaipkfaen: i64,
+    #[serde(rename = "LOJMLNMBCGO")]
+    pub lojmlnmbcgo: i64,
 
-    #[serde(rename = "ADPALKAKBKI")]
-    pub adpalkakbki: Option<String>,
+    #[serde(rename = "DKFEBIGCMLM")]
+    pub dkfebigcmlm: Option<String>,
 
-    #[serde(rename = "NOLCJBFPAEA")]
-    pub nolcjbfpaea: String,
+    #[serde(rename = "MPJOGABPIPC")]
+    pub mpjogabpipc: String,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "CGIHMCKEIDL")]
-    pub cgihmckeidl: i64,
+    #[serde(rename = "OOCPOAHBPKB")]
+    pub oocpoahbpkb: i64,
 
-    #[serde(rename = "ELBFEDOOPOD")]
-    pub elbfedoopod: i64,
+    #[serde(rename = "JFPDPIJKCAA")]
+    pub jfpdpijkcaa: i64,
 
-    #[serde(rename = "CMOEFPEBNCI")]
-    pub cmoefpebnci: Option<i64>,
+    #[serde(rename = "BHMNMCODBCL")]
+    pub bhmnmcodbcl: Option<i64>,
 
-    #[serde(rename = "NOONPDEGFIK")]
-    pub noonpdegfik: Option<i64>,
+    #[serde(rename = "CCNALILEPJF")]
+    pub ccnalilepjf: Option<i64>,
 
-    #[serde(rename = "JIGDPBPKPHF")]
-    pub jigdpbpkphf: i64,
+    #[serde(rename = "BBHGBIIHBBC")]
+    pub bbhgbiihbbc: i64,
 
-    #[serde(rename = "KAJGLBDKNAK")]
-    pub kajglbdknak: i64,
+    #[serde(rename = "AKIHONDGKJN")]
+    pub akihondgkjn: i64,
 }
 
 pub fn load() -> Result<ActivityVintageMarketPrepareExcelConfigData, crate::json::JsonError> {

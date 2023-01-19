@@ -13,35 +13,50 @@ pub struct GcgGameExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MBJIAMCDJLJ")]
-    pub mbjiamcdjlj: i64,
+    #[serde(rename = "MBOLNEAALBF")]
+    pub mbolneaalbf: i64,
 
-    #[serde(rename = "MLDMNDHKNIM")]
-    pub mldmndhknim: i64,
+    #[serde(rename = "MCEDOPGBHPM")]
+    pub mcedopgbhpm: i64,
 
-    #[serde(rename = "AKHLBCODMGH")]
-    pub akhlbcodmgh: Option<i64>,
+    #[serde(rename = "MIJHPKBIOPI")]
+    pub mijhpkbiopi: Option<i64>,
 
-    #[serde(rename = "AFHBIDHLJOE")]
-    pub afhbidhljoe: Option<i64>,
+    #[serde(rename = "GHDGOBAAJGM")]
+    pub ghdgobaajgm: Option<i64>,
 
     #[serde(rename = "guideName")]
     pub guide_name: GuideName,
 
-    #[serde(rename = "GAKGBAKEKDB")]
-    pub gakgbakekdb: Option<Gakgbakekdb>,
+    #[serde(rename = "DNMCOPPPNLB")]
+    pub dnmcopppnlb: Option<Dnmcopppnlb>,
 
-    #[serde(rename = "HCHPNEOGLJI")]
-    pub hchpneoglji: Option<Hchpneoglji>,
+    #[serde(rename = "GLMOGBIKNFG")]
+    pub glmogbiknfg: Option<Glmogbiknfg>,
+
+    #[serde(rename = "AFDLJEHJMBM")]
+    pub afdljehjmbm: Option<bool>,
+
+    #[serde(rename = "DOIPEHEKFHD")]
+    pub doipehekfhd: Option<i64>,
+
+    #[serde(rename = "EOKDDNCPBJF")]
+    pub eokddncpbjf: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Gakgbakekdb {
+pub enum Dnmcopppnlb {
     #[serde(rename = "AI")]
     Ai,
 
     #[serde(rename = "PVE")]
     Pve,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Glmogbiknfg {
+    #[serde(rename = "SELF")]
+    GlmogbiknfgSelf,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -66,12 +81,6 @@ pub enum GuideName {
 
     #[serde(rename = "Tutorial_2_2")]
     Tutorial2_2,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Hchpneoglji {
-    #[serde(rename = "SELF")]
-    HchpneogljiSelf,
 }
 
 pub fn load() -> Result<GcgGameExcelConfigData, crate::json::JsonError> {

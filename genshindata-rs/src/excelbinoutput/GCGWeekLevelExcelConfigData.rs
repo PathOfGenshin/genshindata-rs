@@ -16,39 +16,39 @@ pub struct GcgWeekLevelExcelConfigDatum {
     #[serde(rename = "npcId")]
     pub npc_id: i64,
 
-    #[serde(rename = "DHPCAAOLDAK")]
-    pub dhpcaaoldak: Dhpcaaoldak,
+    #[serde(rename = "GKLFKPHCIAJ")]
+    pub gklfkphciaj: Gklfkphciaj,
 
-    #[serde(rename = "ICMIJCCHBIP")]
-    pub icmijcchbip: Vec<Icmijcchbip>,
+    #[serde(rename = "POMFEHMFAMK")]
+    pub pomfehmfamk: Vec<Pomfehmfamk>,
 
-    #[serde(rename = "HOKFFPKBJCO")]
-    pub hokffpkbjco: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DGHFOKDOHMD")]
+    pub dghfokdohmd: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "iconName")]
     pub icon_name: String,
 
-    #[serde(rename = "JNNENPFOPKI")]
-    pub jnnenpfopki: Option<bool>,
+    #[serde(rename = "JEBBECDEKNO")]
+    pub jebbecdekno: Option<bool>,
 
     #[serde(rename = "openQuestId")]
     pub open_quest_id: Option<i64>,
 
-    #[serde(rename = "AGBBDMHIKPK")]
-    pub agbbdmhikpk: Option<i64>,
+    #[serde(rename = "JBIODBMJBIC")]
+    pub jbiodbmjbic: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Icmijcchbip {
+pub struct Pomfehmfamk {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "BNGOLCGKCFA")]
-    pub bngolcgkcfa: i64,
+    #[serde(rename = "PDPEMMHJDPI")]
+    pub pdpemmhjdpi: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dhpcaaoldak {
+pub enum Gklfkphciaj {
     #[serde(rename = "WEEK_NPC_CHARACTER")]
     WeekNpcCharacter,
 

@@ -13,32 +13,32 @@ pub struct GcgBossLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NNGHFPHLBOG")]
-    pub nnghfphlbog: i64,
+    #[serde(rename = "LJBDOJNCJJF")]
+    pub ljbdojncjjf: i64,
 
-    #[serde(rename = "DOOCADCGGKO")]
-    pub doocadcggko: i64,
+    #[serde(rename = "BDHLNEPKKBM")]
+    pub bdhlnepkkbm: i64,
 
     #[serde(rename = "unlockCond")]
     pub unlock_cond: String,
 
-    #[serde(rename = "LKOILEBONPH")]
-    pub lkoilebonph: i64,
+    #[serde(rename = "GEPDGCLJHDF")]
+    pub gepdgcljhdf: i64,
 
-    #[serde(rename = "AIIDKAAKFNL")]
-    pub aiidkaakfnl: i64,
+    #[serde(rename = "DOAEHFLLBAM")]
+    pub doaehfllbam: i64,
 
-    #[serde(rename = "AFBMPHFNJDK")]
-    pub afbmphfnjdk: i64,
+    #[serde(rename = "OIHPFIOEBLH")]
+    pub oihpfioeblh: i64,
 
-    #[serde(rename = "JECHMICDJBE")]
-    pub jechmicdjbe: i64,
+    #[serde(rename = "GFAPBEIFFFF")]
+    pub gfapbeiffff: i64,
 
     #[serde(rename = "monsterId")]
     pub monster_id: i64,
 
-    #[serde(rename = "OAPOAACBKHJ")]
-    pub oapoaacbkhj: i64,
+    #[serde(rename = "BJMJHPBMBPM")]
+    pub bjmjhpbmbpm: i64,
 }
 
 pub fn load() -> Result<GcgBossLevelExcelConfigData, crate::json::JsonError> {

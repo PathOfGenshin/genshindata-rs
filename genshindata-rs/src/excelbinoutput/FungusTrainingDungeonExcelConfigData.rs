@@ -13,81 +13,81 @@ pub struct FungusTrainingDungeonExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "JCGOBEMLDFJ")]
-    pub jcgobemldfj: i64,
+    #[serde(rename = "GIMKAKOLPBI")]
+    pub gimkakolpbi: i64,
 
-    #[serde(rename = "BDHGILCKEAP")]
-    pub bdhgilckeap: Bdhgilckeap,
+    #[serde(rename = "EFHFCCKOBEF")]
+    pub efhfcckobef: Efhfcckobef,
 
-    #[serde(rename = "EGKHABGENGP")]
-    pub egkhabgengp: i64,
+    #[serde(rename = "BDHGNMNHEFG")]
+    pub bdhgnmnhefg: i64,
 
-    #[serde(rename = "NBNJJCHBCOJ")]
-    pub nbnjjchbcoj: i64,
+    #[serde(rename = "HILPHHFDPBC")]
+    pub hilphhfdpbc: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "NPPCJOALKIC")]
-    pub nppcjoalkic: Vec<i64>,
+    #[serde(rename = "MCBBKEGMCJE")]
+    pub mcbbkegmcje: Vec<i64>,
 
-    #[serde(rename = "DPDAKJEBBKD")]
-    pub dpdakjebbkd: Vec<i64>,
+    #[serde(rename = "MPCKKCIENEG")]
+    pub mpckkcieneg: Vec<i64>,
 
-    #[serde(rename = "JPODDNGDCIO")]
-    pub jpoddngdcio: i64,
+    #[serde(rename = "KCHLIDLDDNE")]
+    pub kchlidlddne: i64,
 
-    #[serde(rename = "PMJOJJIAEDO")]
-    pub pmjojjiaedo: i64,
+    #[serde(rename = "IALOMHHDFIH")]
+    pub ialomhhdfih: i64,
 
-    #[serde(rename = "AMINEIFEFDC")]
-    pub amineifefdc: Vec<i64>,
+    #[serde(rename = "KMCIBOCIKHB")]
+    pub kmcibocikhb: Vec<i64>,
 
     #[serde(rename = "baseScore")]
     pub base_score: f64,
 
-    #[serde(rename = "HBPLDONPGOH")]
-    pub hbpldonpgoh: Option<f64>,
+    #[serde(rename = "MCJLALKJDNA")]
+    pub mcjlalkjdna: Option<f64>,
 
-    #[serde(rename = "IFOPNKJOCJF")]
-    pub ifopnkjocjf: Option<f64>,
+    #[serde(rename = "GMAMCEABAOA")]
+    pub gmamceabaoa: Option<f64>,
 
-    #[serde(rename = "KMCHCKDJJHK")]
-    pub kmchckdjjhk: f64,
+    #[serde(rename = "PHHBAJPBLAH")]
+    pub phhbajpblah: f64,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
-    #[serde(rename = "FNMMDMMIBIN")]
-    pub fnmmdmmibin: i64,
+    #[serde(rename = "DPHBDNLOJDA")]
+    pub dphbdnlojda: i64,
 
-    #[serde(rename = "OCNGGMGIPAF")]
-    pub ocnggmgipaf: i64,
+    #[serde(rename = "BCBMMKABDOI")]
+    pub bcbmmkabdoi: i64,
 
-    #[serde(rename = "OHBKNKMNHHL")]
-    pub ohbknkmnhhl: i64,
+    #[serde(rename = "ACMJOCLNHHH")]
+    pub acmjoclnhhh: i64,
 
-    #[serde(rename = "LDKCOCKDLHD")]
-    pub ldkcockdlhd: i64,
+    #[serde(rename = "CCPMBHPGJNM")]
+    pub ccpmbhpgjnm: i64,
 
-    #[serde(rename = "EMEMLGCENPB")]
-    pub ememlgcenpb: Vec<i64>,
+    #[serde(rename = "LIALJOIMGCA")]
+    pub lialjoimgca: Vec<i64>,
 
-    #[serde(rename = "DCPBGLGKOJL")]
-    pub dcpbglgkojl: Option<i64>,
+    #[serde(rename = "MENCHPDDBBN")]
+    pub menchpddbbn: Option<i64>,
 
-    #[serde(rename = "BPKBLCMDJBG")]
-    pub bpkblcmdjbg: Option<i64>,
+    #[serde(rename = "JNFENNDIHJE")]
+    pub jnfenndihje: Option<i64>,
 
-    #[serde(rename = "JFPNLMPKFGG")]
-    pub jfpnlmpkfgg: Option<i64>,
+    #[serde(rename = "EBINBOEJEEP")]
+    pub ebinboejeep: Option<i64>,
 
-    #[serde(rename = "AMNNLOJGBFN")]
-    pub amnnlojgbfn: Option<f64>,
+    #[serde(rename = "ELCPHIDIMGF")]
+    pub elcphidimgf: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bdhgilckeap {
+pub enum Efhfcckobef {
     #[serde(rename = "FUNGUS_TRAINING_DUNGEON_ATTACK")]
     FungusTrainingDungeonAttack,
 

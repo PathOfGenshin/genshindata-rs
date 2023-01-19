@@ -22,8 +22,8 @@ pub struct BounceConjuringChapterExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "OMNJLKAPAJL")]
-    pub omnjlkapajl: i64,
+    #[serde(rename = "CINGBEAEKHA")]
+    pub cingbeaekha: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
@@ -34,17 +34,17 @@ pub struct BounceConjuringChapterExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "FNMKHFJLJIA")]
-    pub fnmkhfjljia: Vec<i64>,
+    #[serde(rename = "GACMAJONPNJ")]
+    pub gacmajonpnj: Vec<i64>,
 
-    #[serde(rename = "BMNKALDFKKK")]
-    pub bmnkaldfkkk: Vec<i64>,
+    #[serde(rename = "NLKIGPPPBDM")]
+    pub nlkigpppbdm: Vec<i64>,
 
-    #[serde(rename = "HBDPBJEGPEF")]
-    pub hbdpbjegpef: Vec<i64>,
+    #[serde(rename = "KNBEKNBENEN")]
+    pub knbeknbenen: Vec<i64>,
 
-    #[serde(rename = "LDHPHBIBNGE")]
-    pub ldhphbibnge: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LEEEABDFHPK")]
+    pub leeeabdfhpk: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "pos")]
     pub pos: Vec<f64>,

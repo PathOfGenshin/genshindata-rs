@@ -16,17 +16,17 @@ pub struct ShopmallGoodsSaleConfigDatum {
     #[serde(rename = "goodsId")]
     pub goods_id: i64,
 
-    #[serde(rename = "POLLNEMJEBP")]
-    pub pollnemjebp: i64,
+    #[serde(rename = "OIPBBKLNJEN")]
+    pub oipbbklnjen: i64,
 
     #[serde(rename = "discountRate")]
     pub discount_rate: f64,
 
-    #[serde(rename = "HAKHEMGDKAG")]
-    pub hakhemgdkag: String,
+    #[serde(rename = "COFCJHFDPML")]
+    pub cofcjhfdpml: String,
 
-    #[serde(rename = "GBJDMPPAMJC")]
-    pub gbjdmppamjc: String,
+    #[serde(rename = "DNFKPFLHKMG")]
+    pub dnfkpflhkmg: String,
 }
 
 pub fn load() -> Result<ShopmallGoodsSaleConfigData, crate::json::JsonError> {

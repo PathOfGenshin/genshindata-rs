@@ -37,8 +37,8 @@ pub struct BuffExcelConfigDatum {
     #[serde(rename = "modifierName")]
     pub modifier_name: String,
 
-    #[serde(rename = "PKICOOKLMBL")]
-    pub pkicooklmbl: Option<bool>,
+    #[serde(rename = "HGIDAJDJLKP")]
+    pub hgidajdjlkp: Option<bool>,
 
     #[serde(rename = "stackType")]
     pub stack_type: Option<StackType>,

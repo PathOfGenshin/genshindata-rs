@@ -31,11 +31,11 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "templateEmotionPath")]
     pub template_emotion_path: TemplateEmotionPath,
 
-    #[serde(rename = "MGDAJILLGMO")]
-    pub mgdajillgmo: Vec<i64>,
+    #[serde(rename = "GIJLPIOFACI")]
+    pub gijlpiofaci: Vec<i64>,
 
-    #[serde(rename = "LIPNEOMGAAD")]
-    pub lipneomgaad: i64,
+    #[serde(rename = "KBBNAELIOLC")]
+    pub kbbnaeliolc: i64,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -43,8 +43,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "DAHDIAPDAPB")]
-    pub dahdiapdapb: i64,
+    #[serde(rename = "HGKPLCICKMD")]
+    pub hgkplcickmd: i64,
 
     #[serde(rename = "campID")]
     pub camp_id: i64,
@@ -58,8 +58,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "hasAudio")]
     pub has_audio: Option<bool>,
 
-    #[serde(rename = "ACPPMKKGABK")]
-    pub acppmkkgabk: Option<i64>,
+    #[serde(rename = "DEMIMHAPADI")]
+    pub demimhapadi: Option<i64>,
 
     #[serde(rename = "isDaily")]
     pub is_daily: Option<bool>,
@@ -79,8 +79,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "firstMetId")]
     pub first_met_id: Option<i64>,
 
-    #[serde(rename = "FFPDCNJOFOA")]
-    pub ffpdcnjofoa: Option<bool>,
+    #[serde(rename = "LGLGJOKJMNM")]
+    pub lglgjokjmnm: Option<bool>,
 
     #[serde(rename = "billboardType")]
     pub billboard_type: Option<BillboardType>,
@@ -91,17 +91,17 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "luaDataIndex")]
     pub lua_data_index: Option<i64>,
 
-    #[serde(rename = "DKDNFLOAIFL")]
-    pub dkdnfloaifl: Option<i64>,
-
-    #[serde(rename = "animatorConfigPathHash")]
-    pub animator_config_path_hash: Option<bool>,
+    #[serde(rename = "ICPJAPECEAJ")]
+    pub icpjapeceaj: Option<i64>,
 
     #[serde(rename = "jsonPathHash")]
     pub json_path_hash: Option<bool>,
 
-    #[serde(rename = "NJDGNJLPDLI")]
-    pub njdgnjlpdli: Option<Njdgnjlpdli>,
+    #[serde(rename = "animatorConfigPathHash")]
+    pub animator_config_path_hash: Option<bool>,
+
+    #[serde(rename = "OKLPLMJOPPC")]
+    pub oklplmjoppc: Option<Oklplmjoppc>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -117,6 +117,9 @@ pub enum BillboardIcon {
 
     #[serde(rename = "UI_NPCTopIcon_Activity_Drake_Primo_Rock")]
     UiNpcTopIconActivityDrakePrimoRock,
+
+    #[serde(rename = "UI_NPCTopIcon_Activity_DuelHeart")]
+    UiNpcTopIconActivityDuelHeart,
 
     #[serde(rename = "UI_NPCTopIcon_Activity_FleurFair")]
     UiNpcTopIconActivityFleurFair,
@@ -196,6 +199,9 @@ pub enum BillboardIcon {
     #[serde(rename = "UI_NPCTopIcon_HideandSeek")]
     UiNpcTopIconHideandSeek,
 
+    #[serde(rename = "UI_NPCTopIcon_LanV3Shadow")]
+    UiNpcTopIconLanV3Shadow,
+
     #[serde(rename = "UI_NPCTopIcon_LuminanceStone")]
     UiNpcTopIconLuminanceStone,
 
@@ -204,6 +210,21 @@ pub enum BillboardIcon {
 
     #[serde(rename = "UI_NPCTopIcon_MiscsMarvs")]
     UiNpcTopIconMiscsMarvs,
+
+    #[serde(rename = "UI_NPCTopIcon_R1")]
+    UiNpcTopIconR1,
+
+    #[serde(rename = "UI_NPCTopIcon_R2")]
+    UiNpcTopIconR2,
+
+    #[serde(rename = "UI_NPCTopIcon_R3")]
+    UiNpcTopIconR3,
+
+    #[serde(rename = "UI_NPCTopIcon_R4")]
+    UiNpcTopIconR4,
+
+    #[serde(rename = "UI_NPCTopIcon_R5")]
+    UiNpcTopIconR5,
 
     #[serde(rename = "UI_NPCTopIcon_Reputation")]
     UiNpcTopIconReputation,
@@ -561,7 +582,7 @@ pub enum LuaDataPath {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Njdgnjlpdli {
+pub enum Oklplmjoppc {
     #[serde(rename = "NPC_SPECIAL_ARANARA")]
     NpcSpecialAranara,
 }

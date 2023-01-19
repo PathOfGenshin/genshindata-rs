@@ -22,8 +22,8 @@ pub struct BuoyantCombatExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "DJEKBPJHPKA")]
-    pub djekbpjhpka: Vec<i64>,
+    #[serde(rename = "KHAKJEOMIAC")]
+    pub khakjeomiac: Vec<i64>,
 }
 
 pub fn load() -> Result<BuoyantCombatExcelConfigData, crate::json::JsonError> {

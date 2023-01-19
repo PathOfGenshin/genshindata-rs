@@ -19,8 +19,8 @@ pub struct BounceConjuringItemExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "HAANBOBJNIK")]
-    pub haanbobjnik: i64,
+    #[serde(rename = "APGKLBCLENA")]
+    pub apgklbclena: i64,
 }
 
 pub fn load() -> Result<BounceConjuringItemExcelConfigData, crate::json::JsonError> {

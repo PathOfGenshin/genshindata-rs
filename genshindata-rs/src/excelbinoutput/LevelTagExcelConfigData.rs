@@ -13,26 +13,26 @@ pub struct LevelTagExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "OHOKKAHDNAO")]
-    pub ohokkahdnao: String,
+    #[serde(rename = "JFGOCEABHPG")]
+    pub jfgoceabhpg: String,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "EOPGGJNBDCF")]
-    pub eopggjnbdcf: Vec<i64>,
+    #[serde(rename = "LKLPFLIFNKE")]
+    pub lklpflifnke: Vec<i64>,
 
-    #[serde(rename = "HGLCCGANCPH")]
-    pub hglccgancph: Vec<i64>,
+    #[serde(rename = "BOBLHFNGMPB")]
+    pub boblhfngmpb: Vec<i64>,
 
-    #[serde(rename = "NLHJOMJANDM")]
-    pub nlhjomjandm: Option<bool>,
+    #[serde(rename = "LDPNEBHPHJL")]
+    pub ldpnebhphjl: Option<bool>,
 
-    #[serde(rename = "IJHBMHKIPKP")]
-    pub ijhbmhkipkp: Option<f64>,
+    #[serde(rename = "CPNHJPMOLBM")]
+    pub cpnhjpmolbm: Option<f64>,
 
-    #[serde(rename = "CJEPMFFGKAC")]
-    pub cjepmffgkac: Vec<i64>,
+    #[serde(rename = "LJAPGHDFPKC")]
+    pub ljapghdfpkc: Vec<i64>,
 }
 
 pub fn load() -> Result<LevelTagExcelConfigData, crate::json::JsonError> {

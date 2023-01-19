@@ -25,8 +25,8 @@ pub struct PsActivitiesTaskConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "KFFAMLJMIML")]
-    pub kffamljmiml: String,
+    #[serde(rename = "IBMHEFDMDJC")]
+    pub ibmhefdmdjc: String,
 
     #[serde(rename = "hidden")]
     pub hidden: Option<bool>,

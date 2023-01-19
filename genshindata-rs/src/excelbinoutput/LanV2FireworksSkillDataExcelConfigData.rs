@@ -10,41 +10,41 @@ pub type LanV2FireworksSkillDataExcelConfigData = Vec<LanV2FireworksSkillDataExc
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LanV2FireworksSkillDataExcelConfigDatum {
-    #[serde(rename = "FFEPABHJKDG")]
-    pub ffepabhjkdg: i64,
+    #[serde(rename = "IKNKIEBAPOG")]
+    pub iknkiebapog: i64,
 
-    #[serde(rename = "IGNFAMBBNAM")]
-    pub ignfambbnam: String,
+    #[serde(rename = "MMGDOOFIPMG")]
+    pub mmgdoofipmg: String,
 
-    #[serde(rename = "IJGGHNNFAJB")]
-    pub ijgghnnfajb: i64,
+    #[serde(rename = "NONBGKJFAEF")]
+    pub nonbgkjfaef: i64,
 
-    #[serde(rename = "DIEHPPNOPEF")]
-    pub diehppnopef: i64,
+    #[serde(rename = "LMEJOCNOECB")]
+    pub lmejocnoecb: i64,
 
-    #[serde(rename = "DLEONIFAJCE")]
-    pub dleonifajce: Option<i64>,
+    #[serde(rename = "BFBIPOBAMMH")]
+    pub bfbipobammh: Option<i64>,
 
-    #[serde(rename = "BMOLJCKKANL")]
-    pub bmoljckkanl: Option<i64>,
+    #[serde(rename = "DGAIEGOKIKP")]
+    pub dgaiegokikp: Option<i64>,
 
-    #[serde(rename = "CFFNLKBNILA")]
-    pub cffnlkbnila: Option<i64>,
+    #[serde(rename = "NCOMAFNKJNK")]
+    pub ncomafnkjnk: Option<i64>,
 
-    #[serde(rename = "FNHANBCDGBJ")]
-    pub fnhanbcdgbj: Vec<i64>,
+    #[serde(rename = "HMHNMKBMFNO")]
+    pub hmhnmkbmfno: Vec<i64>,
 
-    #[serde(rename = "PPDOPFEOBIG")]
-    pub ppdopfeobig: i64,
+    #[serde(rename = "EIMJFLKOFPK")]
+    pub eimjflkofpk: i64,
 
-    #[serde(rename = "DKOLHEPIKIP")]
-    pub dkolhepikip: i64,
+    #[serde(rename = "DCHPDLPJDMO")]
+    pub dchpdlpjdmo: i64,
 
-    #[serde(rename = "ECKMPLJMNPH")]
-    pub eckmpljmnph: Vec<i64>,
+    #[serde(rename = "HJOICJDIEAE")]
+    pub hjoicjdieae: Vec<i64>,
 
-    #[serde(rename = "FIHNOBPKGGD")]
-    pub fihnobpkggd: Option<i64>,
+    #[serde(rename = "ONFMNCPFFJI")]
+    pub onfmncpffji: Option<i64>,
 }
 
 pub fn load() -> Result<LanV2FireworksSkillDataExcelConfigData, crate::json::JsonError> {

@@ -19,17 +19,17 @@ pub struct IrodoriMasterLevelExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "AFGBBEAKHJL")]
-    pub afgbbeakhjl: i64,
+    #[serde(rename = "IBMGGNAHDMO")]
+    pub ibmggnahdmo: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "AJKLAJNFNBA")]
-    pub ajklajnfnba: String,
+    #[serde(rename = "DPAGKEMAPDB")]
+    pub dpagkemapdb: String,
 
-    #[serde(rename = "HCNBJHGCIHC")]
-    pub hcnbjhgcihc: Vec<i64>,
+    #[serde(rename = "OBAOGFIILAL")]
+    pub obaogfiilal: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,

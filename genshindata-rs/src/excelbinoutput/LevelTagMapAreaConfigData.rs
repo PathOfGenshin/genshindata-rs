@@ -5,9 +5,20 @@
 use std::env;
 
 extern crate serde_derive;
-use std::collections::HashMap;
 
-pub type LevelTagMapAreaConfigData = Vec<HashMap<String, i64>>;
+pub type LevelTagMapAreaConfigData = Vec<LevelTagMapAreaConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct LevelTagMapAreaConfigDatum {
+    #[serde(rename = "BJFLNEFJGIO")]
+    pub bjflnefjgio: i64,
+
+    #[serde(rename = "NFFLABFNEBK")]
+    pub nfflabfnebk: i64,
+
+    #[serde(rename = "index")]
+    pub index: Option<i64>,
+}
 
 pub fn load() -> Result<LevelTagMapAreaConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

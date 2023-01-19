@@ -16,50 +16,50 @@ pub struct HomeWorldNpcExcelConfigDatum {
     #[serde(rename = "avatarID")]
     pub avatar_id: Option<i64>,
 
-    #[serde(rename = "MNGHPNFKFLB")]
-    pub mnghpnfkflb: i64,
+    #[serde(rename = "NMJDFBHGKEJ")]
+    pub nmjdfbhgkej: i64,
 
-    #[serde(rename = "LBIEANDEEJH")]
-    pub lbieandeejh: Vec<i64>,
+    #[serde(rename = "GIMFNFBKOAM")]
+    pub gimfnfbkoam: Vec<i64>,
 
-    #[serde(rename = "KKEEHKBAHMD")]
-    pub kkeehkbahmd: Kkeehkbahmd,
+    #[serde(rename = "FBLKEOOEIEH")]
+    pub fblkeooeieh: Eejhbclkjpo,
 
-    #[serde(rename = "KAMIJOFDANL")]
-    pub kamijofdanl: Kamijofdanl,
+    #[serde(rename = "MBCNKJBDLLM")]
+    pub mbcnkjbdllm: Mbcnkjbdllm,
 
-    #[serde(rename = "NFEGNIECKEK")]
-    pub nfegnieckek: Kkeehkbahmd,
+    #[serde(rename = "EEJHBCLKJPO")]
+    pub eejhbclkjpo: Eejhbclkjpo,
 
-    #[serde(rename = "HIEKFBEKFEF")]
-    pub hiekfbekfef: i64,
+    #[serde(rename = "MNHNCONKGCP")]
+    pub mnhnconkgcp: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "CNCDAEFJLCD")]
-    pub cncdaefjlcd: Option<bool>,
+    #[serde(rename = "DDNAFPOKBBN")]
+    pub ddnafpokbbn: Option<bool>,
 
-    #[serde(rename = "AIPELKHLJFI")]
-    pub aipelkhljfi: Option<String>,
+    #[serde(rename = "CMOIKFLHLML")]
+    pub cmoikflhlml: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kamijofdanl {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "UI_AvatarIcon_Paimon")]
-    UiAvatarIconPaimon,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Kkeehkbahmd {
+pub enum Eejhbclkjpo {
     #[serde(rename = "")]
     Empty,
 
     #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
     UiAvatarIconSidePaimon,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mbcnkjbdllm {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "UI_AvatarIcon_Paimon")]
+    UiAvatarIconPaimon,
 }
 
 pub fn load() -> Result<HomeWorldNpcExcelConfigData, crate::json::JsonError> {

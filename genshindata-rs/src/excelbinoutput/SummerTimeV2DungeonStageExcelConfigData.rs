@@ -19,8 +19,8 @@ pub struct SummerTimeV2DungeonStageExcelConfigDatum {
     #[serde(rename = "prevDungeonId")]
     pub prev_dungeon_id: i64,
 
-    #[serde(rename = "KBLILOALEGL")]
-    pub kbliloalegl: i64,
+    #[serde(rename = "ILABOKHGBKF")]
+    pub ilabokhgbkf: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
@@ -31,47 +31,47 @@ pub struct SummerTimeV2DungeonStageExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "IOCNIGLFPPJ")]
-    pub iocniglfppj: i64,
+    #[serde(rename = "PCLMHGLNFJA")]
+    pub pclmhglnfja: i64,
 
-    #[serde(rename = "HGMMHEPOFFD")]
-    pub hgmmhepoffd: i64,
+    #[serde(rename = "CDIDCAGONOF")]
+    pub cdidcagonof: i64,
 
-    #[serde(rename = "PODKEBDBGFJ")]
-    pub podkebdbgfj: i64,
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "MLFHJINKKFM")]
-    pub mlfhjinkkfm: i64,
+    #[serde(rename = "NPKFHMGOEAJ")]
+    pub npkfhmgoeaj: i64,
 
-    #[serde(rename = "EIPPJKJCIIH")]
-    pub eippjkjciih: i64,
+    #[serde(rename = "HGBCJAHDKDK")]
+    pub hgbcjahdkdk: i64,
 
-    #[serde(rename = "IHGMCAKBNPP")]
-    pub ihgmcakbnpp: Option<i64>,
+    #[serde(rename = "IICEBMAJDFJ")]
+    pub iicebmajdfj: Option<i64>,
 
-    #[serde(rename = "GLDENPFDELL")]
-    pub gldenpfdell: Option<i64>,
+    #[serde(rename = "IHFENAHNIAN")]
+    pub ihfenahnian: Option<i64>,
 
-    #[serde(rename = "MOKJAPEAGPO")]
-    pub mokjapeagpo: Vec<i64>,
+    #[serde(rename = "JGGJHPGNCHP")]
+    pub jggjhpgnchp: Vec<i64>,
 
-    #[serde(rename = "OCACBBKFKPB")]
-    pub ocacbbkfkpb: Vec<i64>,
+    #[serde(rename = "HGCJNINGCLG")]
+    pub hgcjningclg: Vec<i64>,
 
-    #[serde(rename = "PFPMHFAJEOF")]
-    pub pfpmhfajeof: i64,
+    #[serde(rename = "NJPLNJBGEDN")]
+    pub njplnjbgedn: i64,
 
-    #[serde(rename = "HNNBKDAMNLL")]
-    pub hnnbkdamnll: i64,
+    #[serde(rename = "NGHCJGMCCKF")]
+    pub nghcjgmcckf: i64,
 
-    #[serde(rename = "BFAKHOCOODI")]
-    pub bfakhocoodi: i64,
+    #[serde(rename = "IJFBNGAMDGA")]
+    pub ijfbngamdga: i64,
 
-    #[serde(rename = "FMLFCMNOHDO")]
-    pub fmlfcmnohdo: i64,
+    #[serde(rename = "LCJLLNLBCEH")]
+    pub lcjllnlbceh: i64,
 }
 
 pub fn load() -> Result<SummerTimeV2DungeonStageExcelConfigData, crate::json::JsonError> {

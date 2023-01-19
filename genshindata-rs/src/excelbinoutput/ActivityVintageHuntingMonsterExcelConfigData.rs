@@ -13,8 +13,8 @@ pub struct ActivityVintageHuntingMonsterExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HCJIGBINHBB")]
-    pub hcjigbinhbb: i64,
+    #[serde(rename = "GOJFJINBMOK")]
+    pub gojfjinbmok: i64,
 
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: Vec<i64>,

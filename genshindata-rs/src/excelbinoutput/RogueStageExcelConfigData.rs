@@ -16,14 +16,14 @@ pub struct RogueStageExcelConfigDatum {
     #[serde(rename = "firstPassRewardId")]
     pub first_pass_reward_id: Option<i64>,
 
-    #[serde(rename = "DNEMMPCMGEJ")]
-    pub dnemmpcmgej: Option<i64>,
+    #[serde(rename = "EBMIKHBOGGH")]
+    pub ebmikhboggh: Option<i64>,
 
-    #[serde(rename = "AABLCDBCGOI")]
-    pub aablcdbcgoi: i64,
+    #[serde(rename = "DOHKEDMCCHK")]
+    pub dohkedmcchk: i64,
 
-    #[serde(rename = "OKMHPPOKMOE")]
-    pub okmhppokmoe: Option<i64>,
+    #[serde(rename = "BKHBKALAPLD")]
+    pub bkhbkalapld: Option<i64>,
 
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
@@ -34,29 +34,29 @@ pub struct RogueStageExcelConfigDatum {
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
 
-    #[serde(rename = "DIILCFOFHOK")]
-    pub diilcfofhok: i64,
+    #[serde(rename = "NMAJJKPDGIA")]
+    pub nmajjkpdgia: i64,
 
-    #[serde(rename = "BKHCPIJKBOI")]
-    pub bkhcpijkboi: Vec<i64>,
+    #[serde(rename = "MJPHMJCNFBA")]
+    pub mjphmjcnfba: Vec<i64>,
 
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: Vec<Vec<i64>>,
 
-    #[serde(rename = "CPMALMBBNJE")]
-    pub cpmalmbbnje: Vec<Vec<i64>>,
+    #[serde(rename = "AMFKPHKKKFC")]
+    pub amfkphkkkfc: Vec<Vec<i64>>,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
 
-    #[serde(rename = "IMHMJLNOHFB")]
-    pub imhmjlnohfb: i64,
+    #[serde(rename = "LNCPJOIANKH")]
+    pub lncpjoiankh: i64,
 
-    #[serde(rename = "KCOKKAEOPEN")]
-    pub kcokkaeopen: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LKDKNJIINEA")]
+    pub lkdknjiinea: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "BABBGGIFJJL")]
-    pub babbggifjjl: Option<bool>,
+    #[serde(rename = "GDNLBKCMMOA")]
+    pub gdnlbkcmmoa: Option<bool>,
 }
 
 pub fn load() -> Result<RogueStageExcelConfigData, crate::json::JsonError> {

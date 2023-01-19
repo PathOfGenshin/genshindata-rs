@@ -6,49 +6,7 @@ use std::env;
 
 extern crate serde_derive;
 
-pub type ActivitySpiceStageDataExcelConfigData = Vec<ActivitySpiceStageDataExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct ActivitySpiceStageDataExcelConfigDatum {
-    #[serde(rename = "id")]
-    pub id: i64,
-
-    #[serde(rename = "CAOIJLGKBAH")]
-    pub caoijlgkbah: i64,
-
-    #[serde(rename = "JBFEKNPGPLP")]
-    pub jbfeknpgplp: i64,
-
-    #[serde(rename = "HBGMGGBKJKH")]
-    pub hbgmggbkjkh: Vec<i64>,
-
-    #[serde(rename = "HPOOHKHNJBD")]
-    pub hpoohkhnjbd: Vec<i64>,
-
-    #[serde(rename = "FAOKGJJCFON")]
-    pub faokgjjcfon: Vec<i64>,
-
-    #[serde(rename = "nameTextMapHash")]
-    pub name_text_map_hash: i64,
-
-    #[serde(rename = "descTextMapHash")]
-    pub desc_text_map_hash: i64,
-
-    #[serde(rename = "FPJENGPMJLP")]
-    pub fpjengpmjlp: f64,
-
-    #[serde(rename = "times")]
-    pub times: i64,
-
-    #[serde(rename = "KMJDLCMPEGI")]
-    pub kmjdlcmpegi: i64,
-
-    #[serde(rename = "GPMMFNGMJLH")]
-    pub gpmmfngmjlh: Vec<i64>,
-
-    #[serde(rename = "watcherId")]
-    pub watcher_id: i64,
-}
+pub type ActivitySpiceStageDataExcelConfigData = Vec<Option<serde_json::Value>>;
 
 pub fn load() -> Result<ActivitySpiceStageDataExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

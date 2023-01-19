@@ -22,8 +22,8 @@ pub struct OfferingLevelUpExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,
 
-    #[serde(rename = "HNOGGPCKOIP")]
-    pub hnoggpckoip: Vec<Hnoggpckoip>,
+    #[serde(rename = "PHNLLGNAADA")]
+    pub phnllgnaada: Vec<Phnllgnaada>,
 
     #[serde(rename = "cutSceneId")]
     pub cut_scene_id: Option<i64>,
@@ -31,8 +31,8 @@ pub struct OfferingLevelUpExcelConfigDatum {
     #[serde(rename = "consumeItemConfig")]
     pub consume_item_config: Option<bool>,
 
-    #[serde(rename = "MKHIELJBILN")]
-    pub mkhieljbiln: Option<bool>,
+    #[serde(rename = "NBMGHKCPLPJ")]
+    pub nbmghkcplpj: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -45,7 +45,7 @@ pub struct ActionVec {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hnoggpckoip {
+pub struct Phnllgnaada {
     #[serde(rename = "param")]
     pub param: String,
 

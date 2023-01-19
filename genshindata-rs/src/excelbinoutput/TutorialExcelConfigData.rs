@@ -16,17 +16,17 @@ pub struct TutorialExcelConfigDatum {
     #[serde(rename = "detailIdList")]
     pub detail_id_list: Vec<i64>,
 
-    #[serde(rename = "ELDNIOAGCFF")]
-    pub eldnioagcff: Vec<i64>,
+    #[serde(rename = "BGBDFBBPNCL")]
+    pub bgbdfbbpncl: Vec<i64>,
 
-    #[serde(rename = "JHPEEFHMBGE")]
-    pub jhpeefhmbge: Vec<i64>,
+    #[serde(rename = "MFPCMMGMHJM")]
+    pub mfpcmmgmhjm: Vec<i64>,
 
     #[serde(rename = "pauseGame")]
     pub pause_game: Option<bool>,
 
-    #[serde(rename = "JNKPNPDAAHB")]
-    pub jnkpnpdaahb: Option<bool>,
+    #[serde(rename = "HFNNHKLGNDO")]
+    pub hfnnhklgndo: Option<bool>,
 }
 
 pub fn load() -> Result<TutorialExcelConfigData, crate::json::JsonError> {

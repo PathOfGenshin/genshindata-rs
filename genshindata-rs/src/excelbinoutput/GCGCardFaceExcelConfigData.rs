@@ -16,17 +16,17 @@ pub struct GcgCardFaceExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "KFDMIAPDCEG")]
-    pub kfdmiapdceg: i64,
+    #[serde(rename = "BAHNBAOENOB")]
+    pub bahnbaoenob: i64,
 
-    #[serde(rename = "KHLLLEIAKED")]
-    pub khllleiaked: Khllleiaked,
+    #[serde(rename = "JLCPJOOCJAC")]
+    pub jlcpjoocjac: Jlcpjoocjac,
 
-    #[serde(rename = "LCEEIGFHEJC")]
-    pub lceeigfhejc: Option<i64>,
+    #[serde(rename = "OCCOFKOKCHH")]
+    pub occofkokchh: Option<i64>,
 
-    #[serde(rename = "FEMFJLADFOC")]
-    pub femfjladfoc: Vec<i64>,
+    #[serde(rename = "PBPMPBJICND")]
+    pub pbpmpbjicnd: Vec<i64>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -34,20 +34,20 @@ pub struct GcgCardFaceExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "OCDONPLBONM")]
-    pub ocdonplbonm: Option<Ocdonplbonm>,
+    #[serde(rename = "EHOCLIBNFEO")]
+    pub ehoclibnfeo: Option<Ehoclibnfeo>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Khllleiaked {
-    #[serde(rename = "GCG_CARD_FACE_GOLD")]
-    GcgCardFaceGold,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ocdonplbonm {
+pub enum Ehoclibnfeo {
     #[serde(rename = "GCG_PROFICIENCY_REWARD")]
     GcgProficiencyReward,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Jlcpjoocjac {
+    #[serde(rename = "GCG_CARD_FACE_GOLD")]
+    GcgCardFaceGold,
 }
 
 pub fn load() -> Result<GcgCardFaceExcelConfigData, crate::json::JsonError> {

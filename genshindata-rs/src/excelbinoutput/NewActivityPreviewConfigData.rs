@@ -16,50 +16,50 @@ pub struct NewActivityPreviewConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "OMCPAKNJGAO")]
-    pub omcpaknjgao: i64,
+    #[serde(rename = "DCFODBJCHFN")]
+    pub dcfodbjchfn: i64,
 
-    #[serde(rename = "HMOILPBNGHB")]
-    pub hmoilpbnghb: i64,
+    #[serde(rename = "GGMGGBEBDKI")]
+    pub ggmggbebdki: i64,
 
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: Option<i64>,
 
-    #[serde(rename = "OBEKBIMDHCH")]
-    pub obekbimdhch: Option<i64>,
+    #[serde(rename = "LKOOIMNBDJD")]
+    pub lkooimnbdjd: Option<i64>,
 
-    #[serde(rename = "KCONEEMOCHA")]
-    pub kconeemocha: Vec<i64>,
+    #[serde(rename = "CNONHCPNLMC")]
+    pub cnonhcpnlmc: Vec<i64>,
 
-    #[serde(rename = "DLKEEPGNMDA")]
-    pub dlkeepgnmda: Vec<i64>,
+    #[serde(rename = "FAGNNACCOPI")]
+    pub fagnnaccopi: Vec<i64>,
 
-    #[serde(rename = "CFOCHCKNFFI")]
-    pub cfochcknffi: Option<i64>,
+    #[serde(rename = "EDCKBJHPJKJ")]
+    pub edckbjhpjkj: Option<i64>,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "ECNPNFFMDKG")]
-    pub ecnpnffmdkg: Vec<i64>,
+    #[serde(rename = "MOILPAENADN")]
+    pub moilpaenadn: Vec<i64>,
 
-    #[serde(rename = "NOAGIDLHAGK")]
-    pub noagidlhagk: Vec<i64>,
+    #[serde(rename = "DNKHGFCEJBH")]
+    pub dnkhgfcejbh: Vec<i64>,
 
-    #[serde(rename = "FLKFJPJOHMC")]
-    pub flkfjpjohmc: Vec<i64>,
+    #[serde(rename = "CIBDOPFLCCC")]
+    pub cibdopflccc: Vec<i64>,
 
-    #[serde(rename = "EMLAGHILEJJ")]
-    pub emlaghilejj: Vec<Emlaghilejj>,
+    #[serde(rename = "MFNABOMAODL")]
+    pub mfnabomaodl: Vec<Mfnabomaodl>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Emlaghilejj {
+pub struct Mfnabomaodl {
     #[serde(rename = "desc")]
     pub desc: Desc,
 
-    #[serde(rename = "HAOCPNBIADK")]
-    pub haocpnbiadk: Option<i64>,
+    #[serde(rename = "LHAIHFLDECK")]
+    pub lhaihfldeck: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

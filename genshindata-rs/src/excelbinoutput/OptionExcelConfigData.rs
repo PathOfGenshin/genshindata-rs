@@ -22,8 +22,8 @@ pub struct OptionExcelConfigDatum {
     #[serde(rename = "gusetInteeButtonShow")]
     pub guset_intee_button_show: Option<bool>,
 
-    #[serde(rename = "CBLFOAFFLNI")]
-    pub cblfoafflni: Option<f64>,
+    #[serde(rename = "BFIAFEDPHKO")]
+    pub bfiafedphko: Option<f64>,
 
     #[serde(rename = "cancelOnlineMatch")]
     pub cancel_online_match: Option<bool>,

@@ -13,26 +13,26 @@ pub struct ActivityVintageDecoExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "AHDABCIEIDM")]
-    pub ahdabcieidm: Vec<i64>,
+    #[serde(rename = "BGOHGLNMHDO")]
+    pub bgohglnmhdo: Vec<i64>,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
-    #[serde(rename = "NALDDLHIPBJ")]
-    pub nalddlhipbj: Vec<i64>,
+    #[serde(rename = "HEKJMOKLFLC")]
+    pub hekjmoklflc: Vec<i64>,
 
-    #[serde(rename = "JMLFAMGCOPO")]
-    pub jmlfamgcopo: String,
+    #[serde(rename = "JBHCBCLADHE")]
+    pub jbhcbcladhe: String,
 
-    #[serde(rename = "MNMGOLBEKKK")]
-    pub mnmgolbekkk: i64,
+    #[serde(rename = "JNCMIONOLIF")]
+    pub jncmionolif: i64,
 
-    #[serde(rename = "LDMJELNBHBL")]
-    pub ldmjelnbhbl: i64,
+    #[serde(rename = "NJHCFBEJAAB")]
+    pub njhcfbejaab: i64,
 
-    #[serde(rename = "CFOCHCKNFFI")]
-    pub cfochcknffi: i64,
+    #[serde(rename = "EDCKBJHPJKJ")]
+    pub edckbjhpjkj: i64,
 }
 
 pub fn load() -> Result<ActivityVintageDecoExcelConfigData, crate::json::JsonError> {

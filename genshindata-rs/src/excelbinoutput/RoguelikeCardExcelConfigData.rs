@@ -19,57 +19,57 @@ pub struct RoguelikeCardExcelConfigDatum {
     #[serde(rename = "type")]
     pub roguelike_card_excel_config_datum_type: Type,
 
-    #[serde(rename = "EOHCDKMPDNN")]
-    pub eohcdkmpdnn: Vec<i64>,
+    #[serde(rename = "LAAPPPFJDDH")]
+    pub laapppfjddh: Vec<i64>,
 
-    #[serde(rename = "CKNAMPIDGOD")]
-    pub cknampidgod: Vec<String>,
+    #[serde(rename = "FCELGKOMMDM")]
+    pub fcelgkommdm: Vec<String>,
 
-    #[serde(rename = "MOCCNJPNFCP")]
-    pub moccnjpnfcp: Moccnjpnfcp,
+    #[serde(rename = "KIKGLNIKGFG")]
+    pub kikglnikgfg: Kikglnikgfg,
 
-    #[serde(rename = "FIJJOLEOOMN")]
-    pub fijjoleoomn: i64,
+    #[serde(rename = "HPAHMDJDDKH")]
+    pub hpahmdjddkh: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KGJPFMIOECN")]
-    pub kgjpfmioecn: i64,
+    #[serde(rename = "PFBFJKBJHGG")]
+    pub pfbfjkbjhgg: i64,
 
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<f64>,
 
-    #[serde(rename = "IPHDOCKEMDE")]
-    pub iphdockemde: Vec<bool>,
+    #[serde(rename = "JKOCFKIDHIM")]
+    pub jkocfkidhim: Vec<bool>,
 
-    #[serde(rename = "MEOJNEKJIIL")]
-    pub meojnekjiil: Vec<f64>,
+    #[serde(rename = "OADEPLCMMMF")]
+    pub oadeplcmmmf: Vec<f64>,
 
-    #[serde(rename = "MHBKMJMMBGJ")]
-    pub mhbkmjmmbgj: Option<Mhbkmjmmbgj>,
+    #[serde(rename = "FFCHHOPLLMA")]
+    pub ffchhopllma: Option<Ffchhopllma>,
 
-    #[serde(rename = "MEJPPEIAEAA")]
-    pub mejppeiaeaa: Option<bool>,
+    #[serde(rename = "AIABAFNDBEO")]
+    pub aiabafndbeo: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Moccnjpnfcp {
+pub struct Kikglnikgfg {
     #[serde(rename = "effectType")]
     pub effect_type: String,
 
-    #[serde(rename = "PIOMJPCNDKA")]
-    pub piomjpcndka: String,
+    #[serde(rename = "BHCHCKJGHGG")]
+    pub bhchckjghgg: String,
 
-    #[serde(rename = "AHIDGHIMNBK")]
-    pub ahidghimnbk: String,
+    #[serde(rename = "KMMOMGBGEGO")]
+    pub kmmomgbgego: String,
 
-    #[serde(rename = "MCNFEOJIGKK")]
-    pub mcnfeojigkk: Option<i64>,
+    #[serde(rename = "KKPKHOBKOJP")]
+    pub kkpkhobkojp: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mhbkmjmmbgj {
+pub enum Ffchhopllma {
     #[serde(rename = "ROGUELIKE_CARD_LABEL_EQUIPMENT")]
     RoguelikeCardLabelEquipment,
 

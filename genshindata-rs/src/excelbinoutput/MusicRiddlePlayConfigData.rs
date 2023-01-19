@@ -16,17 +16,17 @@ pub struct MusicRiddlePlayConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "OOPLEHOKEPN")]
-    pub ooplehokepn: String,
+    #[serde(rename = "FHBHMGHILLD")]
+    pub fhbhmghilld: String,
 
-    #[serde(rename = "CDCNNOIOEDG")]
-    pub cdcnnoioedg: f64,
+    #[serde(rename = "PLOMNELIMHG")]
+    pub plomnelimhg: f64,
 
-    #[serde(rename = "JADIGHMKCNC")]
-    pub jadighmkcnc: Vec<i64>,
+    #[serde(rename = "BNHJAMPOFOK")]
+    pub bnhjampofok: Vec<i64>,
 
-    #[serde(rename = "DGCBBFHOGAF")]
-    pub dgcbbfhogaf: i64,
+    #[serde(rename = "FAKCEDJGOOE")]
+    pub fakcedjgooe: i64,
 }
 
 pub fn load() -> Result<MusicRiddlePlayConfigData, crate::json::JsonError> {

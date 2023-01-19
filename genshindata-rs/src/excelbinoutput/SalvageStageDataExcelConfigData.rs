@@ -13,23 +13,23 @@ pub struct SalvageStageDataExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
 
-    #[serde(rename = "JPEKMEMNPMK")]
-    pub jpekmemnpmk: i64,
+    #[serde(rename = "OBHBENDEMHJ")]
+    pub obhbendemhj: i64,
 
-    #[serde(rename = "KNEGGLJKGKA")]
-    pub kneggljkgka: i64,
+    #[serde(rename = "NKEIDLGMAGJ")]
+    pub nkeidlgmagj: i64,
 
-    #[serde(rename = "AGJPJBEMMNG")]
-    pub agjpjbemmng: Vec<i64>,
+    #[serde(rename = "DGIFPJFFCJE")]
+    pub dgifpjffcje: Vec<i64>,
 
-    #[serde(rename = "PADNINBHALP")]
-    pub padninbhalp: Vec<i64>,
+    #[serde(rename = "OMGFAMCEMNG")]
+    pub omgfamcemng: Vec<i64>,
 
-    #[serde(rename = "PMPLPIFHBMG")]
-    pub pmplpifhbmg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LOMCAHDGGCC")]
+    pub lomcahdggcc: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "JEEMCFBCLOL")]
-    pub jeemcfbclol: Vec<i64>,
+    #[serde(rename = "OCCIMLELLPG")]
+    pub occimlellpg: Vec<i64>,
 }
 
 pub fn load() -> Result<SalvageStageDataExcelConfigData, crate::json::JsonError> {

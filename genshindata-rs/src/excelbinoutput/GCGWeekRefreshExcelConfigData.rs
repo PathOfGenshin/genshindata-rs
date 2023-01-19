@@ -10,23 +10,23 @@ pub type GcgWeekRefreshExcelConfigData = Vec<GcgWeekRefreshExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgWeekRefreshExcelConfigDatum {
-    #[serde(rename = "BNGOLCGKCFA")]
-    pub bngolcgkcfa: i64,
+    #[serde(rename = "PDPEMMHJDPI")]
+    pub pdpemmhjdpi: i64,
 
-    #[serde(rename = "ALGJIGNHLCK")]
-    pub algjignhlck: i64,
+    #[serde(rename = "KPLEGMKBBPN")]
+    pub kplegmkbbpn: i64,
 
-    #[serde(rename = "ILIOPGNIEBD")]
-    pub iliopgniebd: i64,
+    #[serde(rename = "OEGEABHJJHB")]
+    pub oegeabhjjhb: i64,
 
-    #[serde(rename = "HMGBDBFCGOL")]
-    pub hmgbdbfcgol: Vec<Hmgbdbfcgol>,
+    #[serde(rename = "AJHPOGFNJEK")]
+    pub ajhpogfnjek: Vec<Ajhpogfnjek>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Hmgbdbfcgol {
-    #[serde(rename = "OFJIGAEBNNB")]
-    pub ofjigaebnnb: Vec<i64>,
+pub struct Ajhpogfnjek {
+    #[serde(rename = "DKIDEHDPCAI")]
+    pub dkidehdpcai: Vec<i64>,
 
     #[serde(rename = "weight")]
     pub weight: Option<i64>,

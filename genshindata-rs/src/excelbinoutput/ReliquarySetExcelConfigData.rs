@@ -25,11 +25,11 @@ pub struct ReliquarySetExcelConfigDatum {
     #[serde(rename = "containsList")]
     pub contains_list: Vec<i64>,
 
-    #[serde(rename = "MIEBEHKDCFN")]
-    pub miebehkdcfn: Option<i64>,
+    #[serde(rename = "LONEOHOJGNK")]
+    pub loneohojgnk: Option<i64>,
 
-    #[serde(rename = "AKAIKNIJEKJ")]
-    pub akaiknijekj: Vec<i64>,
+    #[serde(rename = "JAAHBKDEOMM")]
+    pub jaahbkdeomm: Vec<i64>,
 
     #[serde(rename = "textList")]
     pub text_list: Vec<i64>,

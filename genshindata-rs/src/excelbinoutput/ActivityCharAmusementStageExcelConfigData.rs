@@ -13,11 +13,11 @@ pub struct ActivityCharAmusementStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
 
-    #[serde(rename = "FPIMNAJGDLL")]
-    pub fpimnajgdll: String,
+    #[serde(rename = "ICNDAMONABN")]
+    pub icndamonabn: String,
 
-    #[serde(rename = "GEPKCDMLNKN")]
-    pub gepkcdmlnkn: Vec<i64>,
+    #[serde(rename = "IBOEMOPIHHA")]
+    pub iboemopihha: Vec<i64>,
 
     #[serde(rename = "dayIndex")]
     pub day_index: i64,

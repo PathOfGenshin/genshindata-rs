@@ -10,13 +10,13 @@ pub type DialogSelectTimeOutExcelConfigData = Vec<DialogSelectTimeOutExcelConfig
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct DialogSelectTimeOutExcelConfigDatum {
-    #[serde(rename = "_id")]
+    #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "_timeLimit")]
+    #[serde(rename = "timeLimit")]
     pub time_limit: f64,
 
-    #[serde(rename = "_nextDialogID")]
+    #[serde(rename = "nextDialogID")]
     pub next_dialog_id: i64,
 }
 

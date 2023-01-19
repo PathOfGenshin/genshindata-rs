@@ -13,8 +13,8 @@ pub struct EpicCatalogShieldConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NMOGKCAEJNG")]
-    pub nmogkcaejng: String,
+    #[serde(rename = "IBFDOEMKKBE")]
+    pub ibfdoemkkbe: String,
 }
 
 pub fn load() -> Result<EpicCatalogShieldConfigData, crate::json::JsonError> {

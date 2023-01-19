@@ -19,17 +19,17 @@ pub struct ActivityHachiFinalStageExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
 
-    #[serde(rename = "DMHGKGCGIJG")]
-    pub dmhgkgcgijg: i64,
+    #[serde(rename = "CJPKFALNMDO")]
+    pub cjpkfalnmdo: i64,
 
-    #[serde(rename = "PODKEBDBGFJ")]
-    pub podkebdbgfj: i64,
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
 
-    #[serde(rename = "HPFMDAAAPMA")]
-    pub hpfmdaaapma: i64,
+    #[serde(rename = "ONGADJOKGMA")]
+    pub ongadjokgma: i64,
 
-    #[serde(rename = "LMOLLGLNEHC")]
-    pub lmollglnehc: i64,
+    #[serde(rename = "BPPAEHPKKNF")]
+    pub bppaehpkknf: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
@@ -40,11 +40,11 @@ pub struct ActivityHachiFinalStageExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "FGHMPCNKLIE")]
-    pub fghmpcnklie: Vec<i64>,
+    #[serde(rename = "HGOPHBOELIH")]
+    pub hgophboelih: Vec<i64>,
 
-    #[serde(rename = "MLFHJINKKFM")]
-    pub mlfhjinkkfm: i64,
+    #[serde(rename = "NPKFHMGOEAJ")]
+    pub npkfhmgoeaj: i64,
 }
 
 pub fn load() -> Result<ActivityHachiFinalStageExcelConfigData, crate::json::JsonError> {

@@ -25,11 +25,11 @@ pub struct EffigyLimitingConditionExcelConfigDatum {
     #[serde(rename = "conditionParam1")]
     pub condition_param1: i64,
 
-    #[serde(rename = "ILBMMPNAFEK")]
-    pub ilbmmpnafek: Vec<i64>,
+    #[serde(rename = "PBCFBGGIAGP")]
+    pub pbcfbggiagp: Vec<i64>,
 
-    #[serde(rename = "JAGAPPNHFHA")]
-    pub jagappnhfha: i64,
+    #[serde(rename = "BDNEPBMFIOP")]
+    pub bdnepbmfiop: i64,
 
     #[serde(rename = "score")]
     pub score: i64,
@@ -37,8 +37,8 @@ pub struct EffigyLimitingConditionExcelConfigDatum {
     #[serde(rename = "exclusiveId")]
     pub exclusive_id: Option<i64>,
 
-    #[serde(rename = "PNHGKAMJBGN")]
-    pub pnhgkamjbgn: Option<bool>,
+    #[serde(rename = "NJGDMGCNGNK")]
+    pub njgdmgcngnk: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

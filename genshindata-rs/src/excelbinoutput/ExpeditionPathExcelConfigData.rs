@@ -31,8 +31,8 @@ pub struct ExpeditionPathExcelConfigDatum {
     #[serde(rename = "pathDescTextMapHash")]
     pub path_desc_text_map_hash: i64,
 
-    #[serde(rename = "LMIALOGODOK")]
-    pub lmialogodok: Vec<i64>,
+    #[serde(rename = "ABAEMNJNCJE")]
+    pub abaemnjncje: Vec<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,

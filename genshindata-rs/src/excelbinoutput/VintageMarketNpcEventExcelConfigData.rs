@@ -22,18 +22,18 @@ pub struct VintageMarketNpcEventExcelConfigDatum {
     #[serde(rename = "duration")]
     pub duration: i64,
 
-    #[serde(rename = "OCOLFHHCAAK")]
-    pub ocolfhhcaak: Vec<i64>,
+    #[serde(rename = "JPOOKLFAPJN")]
+    pub jpooklfapjn: Vec<i64>,
 
-    #[serde(rename = "KJAADGCMMHM")]
-    pub kjaadgcmmhm: Vec<Kjaadgcmmhm>,
+    #[serde(rename = "BKMODDLOPJJ")]
+    pub bkmoddlopjj: Vec<Bkmoddlopjj>,
 
-    #[serde(rename = "FPJICGAGDLC")]
-    pub fpjicgagdlc: i64,
+    #[serde(rename = "MDDOCFEEONO")]
+    pub mddocfeeono: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Kjaadgcmmhm {
+pub struct Bkmoddlopjj {
     #[serde(rename = "talkId")]
     pub talk_id: Option<i64>,
 

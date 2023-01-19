@@ -13,8 +13,8 @@ pub struct GroupTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LCENNMMJODO")]
-    pub lcennmmjodo: String,
+    #[serde(rename = "BMLLJAKMAML")]
+    pub bmlljakmaml: String,
 }
 
 pub fn load() -> Result<GroupTagExcelConfigData, crate::json::JsonError> {

@@ -22,15 +22,15 @@ pub struct ProductIdConfigDatum {
     #[serde(rename = "entitlementId")]
     pub entitlement_id: String,
 
-    #[serde(rename = "NMOGKCAEJNG")]
-    pub nmogkcaejng: String,
+    #[serde(rename = "IBFDOEMKKBE")]
+    pub ibfdoemkkbe: String,
 
-    #[serde(rename = "EHPPIPEGIMN")]
-    pub ehppipegimn: Vec<Ehppipegimn>,
+    #[serde(rename = "JMGKLBLLDKK")]
+    pub jmgklblldkk: Vec<Jmgklblldkk>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ehppipegimn {
+pub enum Jmgklblldkk {
     #[serde(rename = "CLOUD_ANDROID")]
     CloudAndroid,
 

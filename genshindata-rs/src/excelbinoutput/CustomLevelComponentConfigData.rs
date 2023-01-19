@@ -10,63 +10,63 @@ pub type CustomLevelComponentConfigData = Vec<CustomLevelComponentConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomLevelComponentConfigDatum {
-    #[serde(rename = "HODHFHGBONO")]
-    pub hodhfhgbono: i64,
+    #[serde(rename = "LPHEJMNCJDF")]
+    pub lphejmncjdf: i64,
 
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "IPIMDCPCFMD")]
-    pub ipimdcpcfmd: i64,
+    #[serde(rename = "HFCEOAGLNGE")]
+    pub hfceoaglnge: i64,
 
-    #[serde(rename = "AGHHMGDDFEP")]
-    pub aghhmgddfep: i64,
+    #[serde(rename = "LBIGHGOCIPN")]
+    pub lbighgocipn: i64,
 
-    #[serde(rename = "NPDFPBNKNEF")]
-    pub npdfpbnknef: Option<i64>,
+    #[serde(rename = "KBGDCAHJACI")]
+    pub kbgdcahjaci: Option<i64>,
 
-    #[serde(rename = "BDIOBLOGKOC")]
-    pub bdioblogkoc: String,
+    #[serde(rename = "FHKOLHBOIDL")]
+    pub fhkolhboidl: String,
 
-    #[serde(rename = "HGCPHIJFBKJ")]
-    pub hgcphijfbkj: i64,
+    #[serde(rename = "EGDKAJNJNJB")]
+    pub egdkajnjnjb: i64,
 
-    #[serde(rename = "KNOFOLCDJCP")]
-    pub knofolcdjcp: i64,
+    #[serde(rename = "CPCDGFMBNBK")]
+    pub cpcdgfmbnbk: i64,
 
-    #[serde(rename = "HCFHFMGOJCC")]
-    pub hcfhfmgojcc: i64,
+    #[serde(rename = "PHFDGHHFPEE")]
+    pub phfdghhfpee: i64,
 
-    #[serde(rename = "JMAILDKCPEI")]
-    pub jmaildkcpei: Option<Jmaildkcpei>,
+    #[serde(rename = "DBANLMEBDOB")]
+    pub dbanlmebdob: Option<Dbanlmebdob>,
 
-    #[serde(rename = "OPMFGCBPGDM")]
-    pub opmfgcbpgdm: Option<i64>,
+    #[serde(rename = "OECIDHHJEPF")]
+    pub oecidhhjepf: Option<i64>,
 
-    #[serde(rename = "OLCMBKNGKPH")]
-    pub olcmbkngkph: Option<bool>,
+    #[serde(rename = "GEFHAFIIIGF")]
+    pub gefhafiiigf: Option<bool>,
 
-    #[serde(rename = "FLKBKJEKNBP")]
-    pub flkbkjeknbp: Option<String>,
+    #[serde(rename = "FKAHPFOENCP")]
+    pub fkahpfoencp: Option<String>,
 
-    #[serde(rename = "BNFFMIJIGAP")]
-    pub bnffmijigap: i64,
+    #[serde(rename = "HEIAJHAACJD")]
+    pub heiajhaacjd: i64,
 
-    #[serde(rename = "GLMGIKMOFKK")]
-    pub glmgikmofkk: i64,
+    #[serde(rename = "EIIGOILJAOP")]
+    pub eiigoiljaop: i64,
 
-    #[serde(rename = "JHGLGIEBIJA")]
-    pub jhglgiebija: i64,
+    #[serde(rename = "HGNNELNDEJN")]
+    pub hgnnelndejn: i64,
 
-    #[serde(rename = "DDPFOKOIFAA")]
-    pub ddpfokoifaa: Option<i64>,
+    #[serde(rename = "KOINDHAPCBN")]
+    pub koindhapcbn: Option<i64>,
 
-    #[serde(rename = "LBELOBOILMN")]
-    pub lbeloboilmn: Option<bool>,
+    #[serde(rename = "BLEDPPKMLFN")]
+    pub bledppkmlfn: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jmaildkcpei {
+pub enum Dbanlmebdob {
     #[serde(rename = "BRICK_ROTATE_45")]
     BrickRotate45,
 

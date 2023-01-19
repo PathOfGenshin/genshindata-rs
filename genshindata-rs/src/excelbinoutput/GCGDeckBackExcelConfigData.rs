@@ -13,8 +13,8 @@ pub struct GcgDeckBackExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "MAEDEOPNNON")]
-    pub maedeopnnon: String,
+    #[serde(rename = "DOHHHNAHHMO")]
+    pub dohhhnahhmo: String,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -22,14 +22,17 @@ pub struct GcgDeckBackExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KPINCGJPICF")]
-    pub kpincgjpicf: i64,
+    #[serde(rename = "LLHKCKOBCEL")]
+    pub llhkckobcel: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
 
-    #[serde(rename = "BDFNKMJCNBF")]
-    pub bdfnkmjcnbf: i64,
+    #[serde(rename = "GNBKLMFGBIA")]
+    pub gnbklmfgbia: i64,
+
+    #[serde(rename = "AHKPCJOLHKD")]
+    pub ahkpcjolhkd: i64,
 
     #[serde(rename = "id")]
     pub id: Option<i64>,

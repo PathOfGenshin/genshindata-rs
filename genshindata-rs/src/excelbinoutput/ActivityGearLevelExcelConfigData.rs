@@ -13,11 +13,11 @@ pub struct ActivityGearLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HBLGJDCKILO")]
-    pub hblgjdckilo: Vec<i64>,
+    #[serde(rename = "DJOOKKHHLNB")]
+    pub djookkhhlnb: Vec<i64>,
 
-    #[serde(rename = "CAOIJLGKBAH")]
-    pub caoijlgkbah: i64,
+    #[serde(rename = "PNBNAELKHHN")]
+    pub pnbnaelkhhn: i64,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -25,11 +25,11 @@ pub struct ActivityGearLevelExcelConfigDatum {
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,
 
-    #[serde(rename = "ACKBJPHMFBK")]
-    pub ackbjphmfbk: i64,
+    #[serde(rename = "IFBEDLJFKLI")]
+    pub ifbedljfkli: i64,
 
-    #[serde(rename = "JHJANNGBIID")]
-    pub jhjanngbiid: i64,
+    #[serde(rename = "HBPDIEJHNGL")]
+    pub hbpdiejhngl: i64,
 }
 
 pub fn load() -> Result<ActivityGearLevelExcelConfigData, crate::json::JsonError> {

@@ -13,8 +13,8 @@ pub struct AvatarReplaceCostumeExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "CMDMOMDHDMC")]
-    pub cmdmomdhdmc: i64,
+    #[serde(rename = "DEPEPJDEBFD")]
+    pub depepjdebfd: i64,
 }
 
 pub fn load() -> Result<AvatarReplaceCostumeExcelConfigData, crate::json::JsonError> {

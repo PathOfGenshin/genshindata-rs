@@ -34,8 +34,8 @@ pub struct ReunionWatcherExcelConfigDatum {
     #[serde(rename = "progress")]
     pub progress: i64,
 
-    #[serde(rename = "IDBMHNIFEIB")]
-    pub idbmhnifeib: Option<i64>,
+    #[serde(rename = "BKHIBDBOADC")]
+    pub bkhibdboadc: Option<i64>,
 
     #[serde(rename = "isDisuse")]
     pub is_disuse: Option<bool>,

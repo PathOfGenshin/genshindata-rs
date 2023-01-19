@@ -13,14 +13,14 @@ pub struct ActivityPotionOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "CAFPGGBFEEA")]
-    pub cafpggbfeea: f64,
+    #[serde(rename = "ABECKEEDMIO")]
+    pub abeckeedmio: f64,
 
-    #[serde(rename = "NPKPFCNMFKL")]
-    pub npkpfcnmfkl: f64,
+    #[serde(rename = "OLOLLMOOHDJ")]
+    pub olollmoohdj: f64,
 
-    #[serde(rename = "GLPGIOICDHG")]
-    pub glpgioicdhg: f64,
+    #[serde(rename = "OKDMJFJMGBP")]
+    pub okdmjfjmgbp: f64,
 }
 
 pub fn load() -> Result<ActivityPotionOverallExcelConfigData, crate::json::JsonError> {

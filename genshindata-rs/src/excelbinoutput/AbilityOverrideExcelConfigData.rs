@@ -16,23 +16,23 @@ pub struct AbilityOverrideExcelConfigDatum {
     #[serde(rename = "abilityName")]
     pub ability_name: String,
 
-    #[serde(rename = "KABMNNPGELO")]
-    pub kabmnnpgelo: Vec<Kabmnnpgelo>,
+    #[serde(rename = "JENJFHFHAFA")]
+    pub jenjfhfhafa: Vec<Jenjfhfhafa>,
 
-    #[serde(rename = "ABLGHODOJCE")]
-    pub ablghodojce: Vec<String>,
+    #[serde(rename = "FHFBLEBEELJ")]
+    pub fhfblebeelj: Vec<String>,
 
-    #[serde(rename = "CFKOLCBJKDF")]
-    pub cfkolcbjkdf: Vec<f64>,
+    #[serde(rename = "MJFGKGHAFLD")]
+    pub mjfgkghafld: Vec<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Kabmnnpgelo {
-    #[serde(rename = "MGANAADFOPI")]
-    pub mganaadfopi: String,
+pub struct Jenjfhfhafa {
+    #[serde(rename = "HMJBEDCDOOJ")]
+    pub hmjbedcdooj: String,
 
-    #[serde(rename = "BDNOPKOAFML")]
-    pub bdnopkoafml: Option<f64>,
+    #[serde(rename = "COBMBKGBMGP")]
+    pub cobmbkgbmgp: Option<f64>,
 }
 
 pub fn load() -> Result<AbilityOverrideExcelConfigData, crate::json::JsonError> {

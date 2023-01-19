@@ -13,26 +13,26 @@ pub struct RogueDiaryRoomExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KMFLFNPJAHE")]
-    pub kmflfnpjahe: i64,
+    #[serde(rename = "LDMKAGKFLKE")]
+    pub ldmkagkflke: i64,
 
     #[serde(rename = "challengeId")]
     pub challenge_id: Option<i64>,
 
-    #[serde(rename = "KPPJGNPPNGN")]
-    pub kppjgnppngn: Option<i64>,
+    #[serde(rename = "AJOGLJNLJGK")]
+    pub ajogljnljgk: Option<i64>,
 
-    #[serde(rename = "IDENMIEPIEN")]
-    pub idenmiepien: Option<i64>,
+    #[serde(rename = "KNCHMGHMKBO")]
+    pub knchmghmkbo: Option<i64>,
 
-    #[serde(rename = "MONGGOLMMGI")]
-    pub monggolmmgi: i64,
+    #[serde(rename = "BDOLBLPLCLO")]
+    pub bdolblplclo: i64,
 
-    #[serde(rename = "HMKPANHDPIG")]
-    pub hmkpanhdpig: Option<i64>,
+    #[serde(rename = "MKGNIAHNJBJ")]
+    pub mkgniahnjbj: Option<i64>,
 
-    #[serde(rename = "NJGHPMCFEEF")]
-    pub njghpmcfeef: Option<bool>,
+    #[serde(rename = "KIIOEKAGACE")]
+    pub kiioekagace: Option<bool>,
 }
 
 pub fn load() -> Result<RogueDiaryRoomExcelConfigData, crate::json::JsonError> {

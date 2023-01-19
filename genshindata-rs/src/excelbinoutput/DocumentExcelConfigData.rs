@@ -25,17 +25,26 @@ pub struct DocumentExcelConfigDatum {
     #[serde(rename = "videoPath")]
     pub video_path: VideoPath,
 
-    #[serde(rename = "PMDFHOFBMAF")]
-    pub pmdfhofbmaf: Vec<i64>,
+    #[serde(rename = "KDDJJFDMOHK")]
+    pub kddjjfdmohk: Vec<i64>,
 
-    #[serde(rename = "OPAHFFDFJIE")]
-    pub opahffdfjie: Vec<i64>,
+    #[serde(rename = "DHANHJMFHKB")]
+    pub dhanhjmfhkb: Vec<i64>,
+
+    #[serde(rename = "IHEMMFPDDJB")]
+    pub ihemmfpddjb: Option<Ihemmfpddjb>,
 
     #[serde(rename = "documentType")]
     pub document_type: Option<String>,
 
     #[serde(rename = "subtitleID")]
     pub subtitle_id: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ihemmfpddjb {
+    #[serde(rename = "DOCUMENT_SPLIT_TYPE_BY_LINE")]
+    DocumentSplitTypeByLine,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

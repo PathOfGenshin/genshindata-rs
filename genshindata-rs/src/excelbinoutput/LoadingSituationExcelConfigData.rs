@@ -13,24 +13,24 @@ pub struct LoadingSituationExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
 
-    #[serde(rename = "AAHEMABIEAL")]
-    pub aahemabieal: String,
+    #[serde(rename = "JPAHLDLFDBB")]
+    pub jpahldlfdbb: String,
 
-    #[serde(rename = "PMOBDHCBBPG")]
-    pub pmobdhcbbpg: Vec<i64>,
+    #[serde(rename = "HNINJCICCMK")]
+    pub hninjciccmk: Vec<i64>,
 
-    #[serde(rename = "GMJPCNMOHMB")]
-    pub gmjpcnmohmb: Vec<i64>,
+    #[serde(rename = "JNOEFPFGGFC")]
+    pub jnoefpfggfc: Vec<i64>,
 
-    #[serde(rename = "ANPKJEDECBO")]
-    pub anpkjedecbo: Option<Anpkjedecbo>,
+    #[serde(rename = "AHFEFHAPINK")]
+    pub ahfefhapink: Option<Ahfefhapink>,
 
     #[serde(rename = "picPath")]
     pub pic_path: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Anpkjedecbo {
+pub enum Ahfefhapink {
     #[serde(rename = "LOADING_AREA_CITY")]
     LoadingAreaCity,
 

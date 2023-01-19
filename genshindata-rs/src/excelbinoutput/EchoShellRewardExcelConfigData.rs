@@ -16,11 +16,11 @@ pub struct EchoShellRewardExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "AJHEGJINPKM")]
-    pub ajhegjinpkm: i64,
+    #[serde(rename = "FHPBKBIDNDK")]
+    pub fhpbkbidndk: i64,
 
-    #[serde(rename = "NNBHAGDDMFP")]
-    pub nnbhagddmfp: Option<bool>,
+    #[serde(rename = "GPLDJPNPLKB")]
+    pub gpldjpnplkb: Option<bool>,
 }
 
 pub fn load() -> Result<EchoShellRewardExcelConfigData, crate::json::JsonError> {

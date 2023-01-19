@@ -10,20 +10,20 @@ pub type MatchNewRuleExcelConfigData = Vec<MatchNewRuleExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MatchNewRuleExcelConfigDatum {
-    #[serde(rename = "KOHODMEMBBB")]
-    pub kohodmembbb: String,
+    #[serde(rename = "CJFDPNAFDJH")]
+    pub cjfdpnafdjh: String,
 
-    #[serde(rename = "DGJPJGENKNJ")]
-    pub dgjpjgenknj: bool,
+    #[serde(rename = "OPLDALGNEMP")]
+    pub opldalgnemp: bool,
 
     #[serde(rename = "minLevel")]
     pub min_level: i64,
 
-    #[serde(rename = "JGEFDJIDFBC")]
-    pub jgefdjidfbc: i64,
+    #[serde(rename = "GFBGCPJIIEH")]
+    pub gfbgcpjiieh: i64,
 
-    #[serde(rename = "KFHHOADAIEK")]
-    pub kfhhoadaiek: i64,
+    #[serde(rename = "NFIBKHICJCI")]
+    pub nfibkhicjci: i64,
 }
 
 pub fn load() -> Result<MatchNewRuleExcelConfigData, crate::json::JsonError> {

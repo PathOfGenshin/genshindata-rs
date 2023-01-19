@@ -5,17 +5,9 @@
 use std::env;
 
 extern crate serde_derive;
+use std::collections::HashMap;
 
-pub type OraionokamiDescExcelConfigData = Vec<OraionokamiDescExcelConfigDatum>;
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct OraionokamiDescExcelConfigDatum {
-    #[serde(rename = "GNGJIJIAOGG")]
-    pub gngjijiaogg: i64,
-
-    #[serde(rename = "EGIABOILDHC")]
-    pub egiaboildhc: i64,
-}
+pub type OraionokamiDescExcelConfigData = Vec<HashMap<String, i64>>;
 
 pub fn load() -> Result<OraionokamiDescExcelConfigData, crate::json::JsonError> {
     let game_resources_path = env::var("GAME_DATA_PATH").unwrap();

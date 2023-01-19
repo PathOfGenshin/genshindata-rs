@@ -13,14 +13,14 @@ pub struct MichiaeErosionMapExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FEKMJGLJOFF")]
-    pub fekmjgljoff: Vec<i64>,
+    #[serde(rename = "EHFHBCKOMJO")]
+    pub ehfhbckomjo: Vec<i64>,
 
-    #[serde(rename = "AEMDNBONONC")]
-    pub aemdnbononc: i64,
+    #[serde(rename = "JPGHHFNPJBD")]
+    pub jpghhfnpjbd: i64,
 
-    #[serde(rename = "MANPDHDOEII")]
-    pub manpdhdoeii: i64,
+    #[serde(rename = "ELBGJLKPGAF")]
+    pub elbgjlkpgaf: i64,
 }
 
 pub fn load() -> Result<MichiaeErosionMapExcelConfigData, crate::json::JsonError> {

@@ -13,8 +13,8 @@ pub struct HomeWorldExtraFurnitureExcelConfigDatum {
     #[serde(rename = "furnitureID")]
     pub furniture_id: i64,
 
-    #[serde(rename = "OKJHOGHJDLM")]
-    pub okjhoghjdlm: Vec<String>,
+    #[serde(rename = "DMDBEFMKKOA")]
+    pub dmdbefmkkoa: Vec<String>,
 }
 
 pub fn load() -> Result<HomeWorldExtraFurnitureExcelConfigData, crate::json::JsonError> {

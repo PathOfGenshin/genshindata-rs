@@ -25,8 +25,8 @@ pub struct ActivityChessGearExcelConfigDatum {
     #[serde(rename = "gearIconPath")]
     pub gear_icon_path: String,
 
-    #[serde(rename = "JPIGAHDGKHJ")]
-    pub jpigahdgkhj: String,
+    #[serde(rename = "LCMEDPDDMIF")]
+    pub lcmedpddmif: String,
 
     #[serde(rename = "attack")]
     pub attack: i64,
@@ -46,20 +46,20 @@ pub struct ActivityChessGearExcelConfigDatum {
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "PGNCEOMKDDK")]
-    pub pgnceomkddk: Vec<i64>,
+    #[serde(rename = "INAKCIDCHPB")]
+    pub inakcidchpb: Vec<i64>,
 
-    #[serde(rename = "JLMNLNPBEKP")]
-    pub jlmnlnpbekp: i64,
+    #[serde(rename = "FELHMFAAFAD")]
+    pub felhmfaafad: i64,
 
-    #[serde(rename = "EDDKOPENING")]
-    pub eddkopening: i64,
+    #[serde(rename = "KMFBMKDHJAE")]
+    pub kmfbmkdhjae: i64,
 
     #[serde(rename = "isEnableRotate")]
     pub is_enable_rotate: Option<bool>,
 
-    #[serde(rename = "KCKGHOGJOBM")]
-    pub kckghogjobm: Option<i64>,
+    #[serde(rename = "ONDJFDKHPJJ")]
+    pub ondjfdkhpjj: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityChessGearExcelConfigData, crate::json::JsonError> {

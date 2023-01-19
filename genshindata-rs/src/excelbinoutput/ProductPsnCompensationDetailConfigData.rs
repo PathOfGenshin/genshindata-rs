@@ -16,8 +16,8 @@ pub struct ProductPsnCompensationDetailConfigDatum {
     #[serde(rename = "mailConfigId")]
     pub mail_config_id: i64,
 
-    #[serde(rename = "KHGIMHAEGHD")]
-    pub khgimhaeghd: i64,
+    #[serde(rename = "HCLNCHNLJOL")]
+    pub hclnchnljol: i64,
 
     #[serde(rename = "configId")]
     pub config_id: i64,

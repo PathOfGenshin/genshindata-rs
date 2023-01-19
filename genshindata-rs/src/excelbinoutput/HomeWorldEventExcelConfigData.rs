@@ -10,33 +10,33 @@ pub type HomeWorldEventExcelConfigData = Vec<HomeWorldEventExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldEventExcelConfigDatum {
-    #[serde(rename = "NFLJELOCAKA")]
-    pub nfljelocaka: i64,
+    #[serde(rename = "ANKPEFHKOAL")]
+    pub ankpefhkoal: i64,
 
-    #[serde(rename = "OFHDECIHKIM")]
-    pub ofhdecihkim: Ofhdecihkim,
+    #[serde(rename = "KNCEFIKCEIJ")]
+    pub kncefikceij: Kncefikceij,
 
     #[serde(rename = "avatarID")]
     pub avatar_id: i64,
 
-    #[serde(rename = "LLKDBAPDNBJ")]
-    pub llkdbapdnbj: Option<i64>,
+    #[serde(rename = "LKFBGCLOCNL")]
+    pub lkfbgclocnl: Option<i64>,
 
     #[serde(rename = "rewardID")]
     pub reward_id: Option<i64>,
 
-    #[serde(rename = "FNCOIDFIGPN")]
-    pub fncoidfigpn: i64,
+    #[serde(rename = "NFHDGDMJCHP")]
+    pub nfhdgdmjchp: i64,
 
     #[serde(rename = "order")]
     pub order: Option<i64>,
 
-    #[serde(rename = "MKOJPKOPLAM")]
-    pub mkojpkoplam: Option<i64>,
+    #[serde(rename = "LCPCJHEDIPM")]
+    pub lcpcjhedipm: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ofhdecihkim {
+pub enum Kncefikceij {
     #[serde(rename = "HOME_AVATAR_REWARD_EVENT")]
     HomeAvatarRewardEvent,
 

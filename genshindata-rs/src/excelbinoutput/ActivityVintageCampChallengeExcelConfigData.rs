@@ -13,38 +13,38 @@ pub struct ActivityVintageCampChallengeExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IIOGPJDCBDA")]
-    pub iiogpjdcbda: i64,
+    #[serde(rename = "FLIIOJGMGPK")]
+    pub fliiojgmgpk: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "MKNIIAMCKMM")]
-    pub mkniiamckmm: i64,
+    #[serde(rename = "IGDANFGMEAO")]
+    pub igdanfgmeao: i64,
 
-    #[serde(rename = "MCFFLGAJCDD")]
-    pub mcfflgajcdd: i64,
+    #[serde(rename = "PJHLICCHJFA")]
+    pub pjhlicchjfa: i64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "LPODHPEHPJD")]
-    pub lpodhpehpjd: Vec<String>,
+    #[serde(rename = "JOJABIAOPPO")]
+    pub jojabiaoppo: Vec<String>,
 
-    #[serde(rename = "LDFLPBNDCFH")]
-    pub ldflpbndcfh: Vec<i64>,
+    #[serde(rename = "JMDCMDKPCMA")]
+    pub jmdcmdkpcma: Vec<i64>,
 
-    #[serde(rename = "BNOOGNDAOLI")]
-    pub bnoogndaoli: String,
+    #[serde(rename = "AJFJEMAOJHJ")]
+    pub ajfjemaojhj: String,
 
-    #[serde(rename = "EFOMALADEDB")]
-    pub efomaladedb: Vec<i64>,
+    #[serde(rename = "GNCNAJGELKJ")]
+    pub gncnajgelkj: Vec<i64>,
 
-    #[serde(rename = "KDJHCDAFHII")]
-    pub kdjhcdafhii: i64,
+    #[serde(rename = "BNMCNKEHFDL")]
+    pub bnmcnkehfdl: i64,
 
-    #[serde(rename = "NBBAGHJFMAP")]
-    pub nbbaghjfmap: i64,
+    #[serde(rename = "DNMPGBBMMPI")]
+    pub dnmpgbbmmpi: i64,
 }
 
 pub fn load() -> Result<ActivityVintageCampChallengeExcelConfigData, crate::json::JsonError> {

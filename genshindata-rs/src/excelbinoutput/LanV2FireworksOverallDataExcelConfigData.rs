@@ -13,29 +13,29 @@ pub struct LanV2FireworksOverallDataExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "CAGDIKMNGLH")]
-    pub cagdikmnglh: i64,
+    #[serde(rename = "GPOGGMPFMJM")]
+    pub gpoggmpfmjm: i64,
 
-    #[serde(rename = "KNCFPBNKNEJ")]
-    pub kncfpbnknej: Vec<Kncfpbnknej>,
+    #[serde(rename = "JHOHMEBIJOP")]
+    pub jhohmebijop: Vec<Jhohmebijop>,
 
-    #[serde(rename = "FLDLBFEABHG")]
-    pub fldlbfeabhg: f64,
+    #[serde(rename = "AIMEGMMJKID")]
+    pub aimegmmjkid: f64,
 
-    #[serde(rename = "JMKNAPCGCGD")]
-    pub jmknapcgcgd: f64,
+    #[serde(rename = "GPBAOPFKEHB")]
+    pub gpbaopfkehb: f64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Kncfpbnknej {
-    #[serde(rename = "LDNOKGFIMMJ")]
-    pub ldnokgfimmj: Vec<i64>,
+pub struct Jhohmebijop {
+    #[serde(rename = "FKKFNEGLLOF")]
+    pub fkkfnegllof: Vec<i64>,
 
-    #[serde(rename = "KDMCDIFJGLH")]
-    pub kdmcdifjglh: Option<i64>,
+    #[serde(rename = "HLCIEMEOOFG")]
+    pub hlciemeoofg: Option<i64>,
 }
 
 pub fn load() -> Result<LanV2FireworksOverallDataExcelConfigData, crate::json::JsonError> {

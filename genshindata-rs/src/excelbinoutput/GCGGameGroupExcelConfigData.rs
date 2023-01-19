@@ -13,8 +13,8 @@ pub struct GcgGameGroupExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GEPKCDMLNKN")]
-    pub gepkcdmlnkn: Vec<i64>,
+    #[serde(rename = "IBOEMOPIHHA")]
+    pub iboemopihha: Vec<i64>,
 }
 
 pub fn load() -> Result<GcgGameGroupExcelConfigData, crate::json::JsonError> {
