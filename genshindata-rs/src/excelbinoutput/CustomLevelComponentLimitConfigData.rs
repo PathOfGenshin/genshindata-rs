@@ -2,15 +2,25 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConfigDatum>;
 
-pub type CustomLevelComponentLimitConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct CustomLevelComponentLimitConfigDatum {
+    #[serde(rename = "EBBPJKKKJHM")]
+    pub ebbpjkkkjhm: i64,
+
+    #[serde(rename = "LPHEJMNCJDF")]
+    pub lphejmncjdf: i64,
+
+    #[serde(rename = "BJCCPILLOOB")]
+    pub bjccpilloob: i64,
+}
 
 pub fn load() -> Result<CustomLevelComponentLimitConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

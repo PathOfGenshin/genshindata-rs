@@ -2,9 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type LanV3CampStageExcelConfigData = Vec<LanV3CampStageExcelConfigDatum>;
 
@@ -24,7 +23,7 @@ pub struct LanV3CampStageExcelConfigDatum {
 }
 
 pub fn load() -> Result<LanV3CampStageExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

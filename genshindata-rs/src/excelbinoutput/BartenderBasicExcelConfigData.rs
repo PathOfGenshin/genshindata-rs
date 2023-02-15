@@ -2,15 +2,58 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type BartenderBasicExcelConfigData = Vec<BartenderBasicExcelConfigDatum>;
 
-pub type BartenderBasicExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct BartenderBasicExcelConfigDatum {
+    #[serde(rename = "activityId")]
+    pub activity_id: i64,
+
+    #[serde(rename = "APMJBFLKCID")]
+    pub apmjbflkcid: i64,
+
+    #[serde(rename = "PPOPHIPFEPC")]
+    pub ppophipfepc: i64,
+
+    #[serde(rename = "OKBHANCDMPG")]
+    pub okbhancdmpg: i64,
+
+    #[serde(rename = "BJGFBHEIBMA")]
+    pub bjgfbheibma: i64,
+
+    #[serde(rename = "DMIPLGOCFEB")]
+    pub dmiplgocfeb: i64,
+
+    #[serde(rename = "DAANKKEGCJL")]
+    pub daankkegcjl: i64,
+
+    #[serde(rename = "MMGDOKLELBC")]
+    pub mmgdoklelbc: i64,
+
+    #[serde(rename = "NBEIBAPKILJ")]
+    pub nbeibapkilj: i64,
+
+    #[serde(rename = "NJLMCLNOEAJ")]
+    pub njlmclnoeaj: i64,
+
+    #[serde(rename = "JMPDOPFAMPC")]
+    pub jmpdopfampc: i64,
+
+    #[serde(rename = "JLDJFLMAMME")]
+    pub jldjflmamme: i64,
+
+    #[serde(rename = "COEHABLOLMM")]
+    pub coehablolmm: i64,
+
+    #[serde(rename = "AOJMGOEFHIF")]
+    pub aojmgoefhif: i64,
+}
 
 pub fn load() -> Result<BartenderBasicExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

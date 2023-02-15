@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type EnvAnimalWeightExcelConfigData = Vec<EnvAnimalWeightExcelConfigDatum>;
 
@@ -30,7 +28,16 @@ pub struct WeightVec {
     pub weight: Option<i64>,
 
     #[serde(rename = "aliveHourMap")]
-    pub alive_hour_map: HashMap<String, i64>,
+    pub alive_hour_map: AliveHourMap,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct AliveHourMap {
+    #[serde(rename = "18")]
+    pub the_18: Option<i64>,
+
+    #[serde(rename = "0")]
+    pub the_0: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -43,7 +50,7 @@ pub enum EntityType {
 }
 
 pub fn load() -> Result<EnvAnimalWeightExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

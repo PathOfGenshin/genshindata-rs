@@ -2,15 +2,52 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type LunaRitePreviewExcelConfigData = Vec<LunaRitePreviewExcelConfigDatum>;
 
-pub type LunaRitePreviewExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct LunaRitePreviewExcelConfigDatum {
+    #[serde(rename = "Id")]
+    pub id: i64,
+
+    #[serde(rename = "activityId")]
+    pub activity_id: i64,
+
+    #[serde(rename = "CLNKBPHAIPI")]
+    pub clnkbphaipi: i64,
+
+    #[serde(rename = "EDOJMKHGEAM")]
+    pub edojmkhgeam: i64,
+
+    #[serde(rename = "unlockPlayerLevel")]
+    pub unlock_player_level: i64,
+
+    #[serde(rename = "rewardId")]
+    pub reward_id: i64,
+
+    #[serde(rename = "JNEDOAGFHFE")]
+    pub jnedoagfhfe: i64,
+
+    #[serde(rename = "guideQuestId")]
+    pub guide_quest_id: i64,
+
+    #[serde(rename = "OELIKOAGHJB")]
+    pub oelikoaghjb: i64,
+
+    #[serde(rename = "NANOCFEHOFA")]
+    pub nanocfehofa: i64,
+
+    #[serde(rename = "JIKIPKKDEGA")]
+    pub jikipkkdega: i64,
+
+    #[serde(rename = "OHKOPEEHGKC")]
+    pub ohkopeehgkc: i64,
+}
 
 pub fn load() -> Result<LunaRitePreviewExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

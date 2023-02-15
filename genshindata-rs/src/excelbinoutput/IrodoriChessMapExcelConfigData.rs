@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type IrodoriChessMapExcelConfigData = Vec<IrodoriChessMapExcelConfigDatum>;
 
@@ -30,7 +28,7 @@ pub struct IrodoriChessMapExcelConfigDatum {
     pub ddfpapioilb: i64,
 
     #[serde(rename = "BNPIEBPPJJI")]
-    pub bnpiebppjji: HashMap<String, i64>,
+    pub bnpiebppjji: Bnpiebppjji,
 
     #[serde(rename = "AMOJBIMGEDO")]
     pub amojbimgedo: Vec<i64>,
@@ -57,14 +55,119 @@ pub struct IrodoriChessMapExcelConfigDatum {
     pub map_icon_path: String,
 
     #[serde(rename = "DDGLPFNHBGH")]
-    pub ddglpfnhbgh: HashMap<String, i64>,
+    pub ddglpfnhbgh: Ddglpfnhbgh,
 
     #[serde(rename = "GMOGJHFJLKB")]
     pub gmogjhfjlkb: Option<i64>,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Bnpiebppjji {
+    #[serde(rename = "11")]
+    pub the_11: Option<i64>,
+
+    #[serde(rename = "2")]
+    pub the_2: Option<i64>,
+
+    #[serde(rename = "3")]
+    pub the_3: Option<i64>,
+
+    #[serde(rename = "4")]
+    pub the_4: Option<i64>,
+
+    #[serde(rename = "1")]
+    pub the_1: Option<i64>,
+
+    #[serde(rename = "5")]
+    pub the_5: Option<i64>,
+
+    #[serde(rename = "10")]
+    pub the_10: Option<i64>,
+
+    #[serde(rename = "6")]
+    pub the_6: Option<i64>,
+
+    #[serde(rename = "7")]
+    pub the_7: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Ddglpfnhbgh {
+    #[serde(rename = "30")]
+    pub the_30: Option<i64>,
+
+    #[serde(rename = "31")]
+    pub the_31: Option<i64>,
+
+    #[serde(rename = "32")]
+    pub the_32: Option<i64>,
+
+    #[serde(rename = "33")]
+    pub the_33: Option<i64>,
+
+    #[serde(rename = "34")]
+    pub the_34: Option<i64>,
+
+    #[serde(rename = "35")]
+    pub the_35: Option<i64>,
+
+    #[serde(rename = "41")]
+    pub the_41: Option<i64>,
+
+    #[serde(rename = "43")]
+    pub the_43: Option<i64>,
+
+    #[serde(rename = "44")]
+    pub the_44: Option<i64>,
+
+    #[serde(rename = "45")]
+    pub the_45: Option<i64>,
+
+    #[serde(rename = "46")]
+    pub the_46: Option<i64>,
+
+    #[serde(rename = "47")]
+    pub the_47: Option<i64>,
+
+    #[serde(rename = "48")]
+    pub the_48: Option<i64>,
+
+    #[serde(rename = "51")]
+    pub the_51: Option<i64>,
+
+    #[serde(rename = "52")]
+    pub the_52: Option<i64>,
+
+    #[serde(rename = "53")]
+    pub the_53: Option<i64>,
+
+    #[serde(rename = "54")]
+    pub the_54: Option<i64>,
+
+    #[serde(rename = "55")]
+    pub the_55: Option<i64>,
+
+    #[serde(rename = "56")]
+    pub the_56: Option<i64>,
+
+    #[serde(rename = "62")]
+    pub the_62: Option<i64>,
+
+    #[serde(rename = "63")]
+    pub the_63: Option<i64>,
+
+    #[serde(rename = "64")]
+    pub the_64: Option<i64>,
+
+    #[serde(rename = "65")]
+    pub the_65: Option<i64>,
+
+    #[serde(rename = "66")]
+    pub the_66: Option<i64>,
+}
+
 pub fn load() -> Result<IrodoriChessMapExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

@@ -2,15 +2,49 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type AudioPlayerlvConfigData = Vec<AudioPlayerlvConfigDatum>;
 
-pub type AudioPlayerlvConfigData = Vec<HashMap<String, f64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct AudioPlayerlvConfigDatum {
+    #[serde(rename = "CPOBBALBJFI")]
+    pub cpobbalbjfi: i64,
+
+    #[serde(rename = "IKFLJMKJAAC")]
+    pub ikfljmkjaac: f64,
+
+    #[serde(rename = "EAKKGHAHPNK")]
+    pub eakkghahpnk: i64,
+
+    #[serde(rename = "IFKAHCGFGNJ")]
+    pub ifkahcgfgnj: f64,
+
+    #[serde(rename = "CJDOAOEJAPM")]
+    pub cjdoaoejapm: i64,
+
+    #[serde(rename = "IHOCKKFOKOA")]
+    pub ihockkfokoa: i64,
+
+    #[serde(rename = "FFAMLNLCDJA")]
+    pub ffamlnlcdja: Option<f64>,
+
+    #[serde(rename = "EKCHBMPLEIF")]
+    pub ekchbmpleif: Option<f64>,
+
+    #[serde(rename = "AAHLOBEAAIB")]
+    pub aahlobeaaib: Option<i64>,
+
+    #[serde(rename = "OFCCGFKPBCC")]
+    pub ofccgfkpbcc: Option<f64>,
+
+    #[serde(rename = "NCJHDOOFPAD")]
+    pub ncjhdoofpad: Option<f64>,
+}
 
 pub fn load() -> Result<AudioPlayerlvConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

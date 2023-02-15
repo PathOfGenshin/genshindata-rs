@@ -2,15 +2,28 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type MichiaeErosionAreaExcelConfigData = Vec<MichiaeErosionAreaExcelConfigDatum>;
 
-pub type MichiaeErosionAreaExcelConfigData = Vec<HashMap<String, f64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct MichiaeErosionAreaExcelConfigDatum {
+    #[serde(rename = "MDHKCCDJHDK")]
+    pub mdhkccdjhdk: Option<i64>,
+
+    #[serde(rename = "GPKJIBAINAE")]
+    pub gpkjibainae: Option<f64>,
+
+    #[serde(rename = "DGBLCCGFHEB")]
+    pub dgblccgfheb: Option<f64>,
+
+    #[serde(rename = "EENNNKEOAFL")]
+    pub eennnkeoafl: Option<f64>,
+}
 
 pub fn load() -> Result<MichiaeErosionAreaExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

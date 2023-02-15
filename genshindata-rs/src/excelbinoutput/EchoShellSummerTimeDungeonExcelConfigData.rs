@@ -2,15 +2,25 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type EchoShellSummerTimeDungeonExcelConfigData = Vec<EchoShellSummerTimeDungeonExcelConfigDatum>;
 
-pub type EchoShellSummerTimeDungeonExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct EchoShellSummerTimeDungeonExcelConfigDatum {
+    #[serde(rename = "dungeonId")]
+    pub dungeon_id: i64,
+
+    #[serde(rename = "FDHJJBDKFBM")]
+    pub fdhjjbdkfbm: i64,
+
+    #[serde(rename = "GDKHJMJHDNC")]
+    pub gdkhjmjhdnc: Option<i64>,
+}
 
 pub fn load() -> Result<EchoShellSummerTimeDungeonExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

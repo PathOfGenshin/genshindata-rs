@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type GatherBundleExcelConfigData = Vec<GatherBundleExcelConfigDatum>;
 
@@ -21,11 +19,38 @@ pub struct GatherBundleExcelConfigDatum {
     pub base_gadget_id: i64,
 
     #[serde(rename = "points")]
-    pub points: Vec<HashMap<String, f64>>,
+    pub points: Vec<Point>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Point {
+    #[serde(rename = "pointID")]
+    pub point_id: Option<i64>,
+
+    #[serde(rename = "pointType")]
+    pub point_type: Option<i64>,
+
+    #[serde(rename = "offsetX")]
+    pub offset_x: Option<f64>,
+
+    #[serde(rename = "offsetY")]
+    pub offset_y: Option<f64>,
+
+    #[serde(rename = "offsetZ")]
+    pub offset_z: Option<f64>,
+
+    #[serde(rename = "rotY")]
+    pub rot_y: Option<f64>,
+
+    #[serde(rename = "rotX")]
+    pub rot_x: Option<f64>,
+
+    #[serde(rename = "rotZ")]
+    pub rot_z: Option<f64>,
 }
 
 pub fn load() -> Result<GatherBundleExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

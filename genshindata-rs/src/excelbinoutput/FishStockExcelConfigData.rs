@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type FishStockExcelConfigData = Vec<FishStockExcelConfigDatum>;
 
@@ -18,7 +16,181 @@ pub struct FishStockExcelConfigDatum {
     pub fish_stock_excel_config_datum_type: Type,
 
     #[serde(rename = "fishWeight")]
-    pub fish_weight: HashMap<String, i64>,
+    pub fish_weight: FishWeight,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct FishWeight {
+    #[serde(rename = "1")]
+    pub the_1: Option<i64>,
+
+    #[serde(rename = "2")]
+    pub the_2: Option<i64>,
+
+    #[serde(rename = "5")]
+    pub the_5: Option<i64>,
+
+    #[serde(rename = "6")]
+    pub the_6: Option<i64>,
+
+    #[serde(rename = "10")]
+    pub the_10: Option<i64>,
+
+    #[serde(rename = "11")]
+    pub the_11: Option<i64>,
+
+    #[serde(rename = "17")]
+    pub the_17: Option<i64>,
+
+    #[serde(rename = "18")]
+    pub the_18: Option<i64>,
+
+    #[serde(rename = "4")]
+    pub the_4: Option<i64>,
+
+    #[serde(rename = "1001")]
+    pub the_1001: Option<i64>,
+
+    #[serde(rename = "1004")]
+    pub the_1004: Option<i64>,
+
+    #[serde(rename = "12")]
+    pub the_12: Option<i64>,
+
+    #[serde(rename = "1012")]
+    pub the_1012: Option<i64>,
+
+    #[serde(rename = "16")]
+    pub the_16: Option<i64>,
+
+    #[serde(rename = "1016")]
+    pub the_1016: Option<i64>,
+
+    #[serde(rename = "1006")]
+    pub the_1006: Option<i64>,
+
+    #[serde(rename = "9")]
+    pub the_9: Option<i64>,
+
+    #[serde(rename = "1009")]
+    pub the_1009: Option<i64>,
+
+    #[serde(rename = "1005")]
+    pub the_1005: Option<i64>,
+
+    #[serde(rename = "13")]
+    pub the_13: Option<i64>,
+
+    #[serde(rename = "1013")]
+    pub the_1013: Option<i64>,
+
+    #[serde(rename = "21")]
+    pub the_21: Option<i64>,
+
+    #[serde(rename = "1021")]
+    pub the_1021: Option<i64>,
+
+    #[serde(rename = "20")]
+    pub the_20: Option<i64>,
+
+    #[serde(rename = "1020")]
+    pub the_1020: Option<i64>,
+
+    #[serde(rename = "1010")]
+    pub the_1010: Option<i64>,
+
+    #[serde(rename = "1011")]
+    pub the_1011: Option<i64>,
+
+    #[serde(rename = "3")]
+    pub the_3: Option<i64>,
+
+    #[serde(rename = "1003")]
+    pub the_1003: Option<i64>,
+
+    #[serde(rename = "14")]
+    pub the_14: Option<i64>,
+
+    #[serde(rename = "1014")]
+    pub the_1014: Option<i64>,
+
+    #[serde(rename = "8")]
+    pub the_8: Option<i64>,
+
+    #[serde(rename = "1008")]
+    pub the_1008: Option<i64>,
+
+    #[serde(rename = "1017")]
+    pub the_1017: Option<i64>,
+
+    #[serde(rename = "1002")]
+    pub the_1002: Option<i64>,
+
+    #[serde(rename = "15")]
+    pub the_15: Option<i64>,
+
+    #[serde(rename = "1015")]
+    pub the_1015: Option<i64>,
+
+    #[serde(rename = "1018")]
+    pub the_1018: Option<i64>,
+
+    #[serde(rename = "7")]
+    pub the_7: Option<i64>,
+
+    #[serde(rename = "1007")]
+    pub the_1007: Option<i64>,
+
+    #[serde(rename = "22")]
+    pub the_22: Option<i64>,
+
+    #[serde(rename = "1022")]
+    pub the_1022: Option<i64>,
+
+    #[serde(rename = "23")]
+    pub the_23: Option<i64>,
+
+    #[serde(rename = "1023")]
+    pub the_1023: Option<i64>,
+
+    #[serde(rename = "28")]
+    pub the_28: Option<i64>,
+
+    #[serde(rename = "1028")]
+    pub the_1028: Option<i64>,
+
+    #[serde(rename = "29")]
+    pub the_29: Option<i64>,
+
+    #[serde(rename = "1029")]
+    pub the_1029: Option<i64>,
+
+    #[serde(rename = "25")]
+    pub the_25: Option<i64>,
+
+    #[serde(rename = "1025")]
+    pub the_1025: Option<i64>,
+
+    #[serde(rename = "27")]
+    pub the_27: Option<i64>,
+
+    #[serde(rename = "1027")]
+    pub the_1027: Option<i64>,
+
+    #[serde(rename = "26")]
+    pub the_26: Option<i64>,
+
+    #[serde(rename = "1026")]
+    pub the_1026: Option<i64>,
+
+    #[serde(rename = "24")]
+    pub the_24: Option<i64>,
+
+    #[serde(rename = "1024")]
+    pub the_1024: Option<i64>,
+
+    #[serde(rename = "1019")]
+    pub the_1019: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -34,7 +206,7 @@ pub enum Type {
 }
 
 pub fn load() -> Result<FishStockExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

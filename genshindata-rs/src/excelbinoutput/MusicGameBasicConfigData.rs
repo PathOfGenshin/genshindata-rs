@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type MusicGameBasicConfigData = Vec<MusicGameBasicConfigDatum>;
 
@@ -45,7 +43,7 @@ pub struct MusicGameBasicConfigDatum {
     pub donibiffnai: f64,
 
     #[serde(rename = "JHMKJHMFOKF")]
-    pub jhmkjhmfokf: HashMap<String, f64>,
+    pub jhmkjhmfokf: Jhmkjhmfokf,
 
     #[serde(rename = "comboConfig")]
     pub combo_config: Vec<i64>,
@@ -76,8 +74,41 @@ pub struct MusicGameBasicConfigDatum {
 pub struct Giikbkobgkb {
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Jhmkjhmfokf {
+    #[serde(rename = "0")]
+    pub the_0: f64,
+
+    #[serde(rename = "2841")]
+    pub the_2841: Option<f64>,
+
+    #[serde(rename = "54265")]
+    pub the_54265: Option<f64>,
+
+    #[serde(rename = "20248")]
+    pub the_20248: Option<f64>,
+
+    #[serde(rename = "46144")]
+    pub the_46144: Option<f64>,
+
+    #[serde(rename = "55424")]
+    pub the_55424: Option<f64>,
+
+    #[serde(rename = "67350")]
+    pub the_67350: Option<f64>,
+
+    #[serde(rename = "74221")]
+    pub the_74221: Option<f64>,
+
+    #[serde(rename = "77517")]
+    pub the_77517: Option<f64>,
+
+    #[serde(rename = "84358")]
+    pub the_84358: Option<f64>,
+}
+
 pub fn load() -> Result<MusicGameBasicConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

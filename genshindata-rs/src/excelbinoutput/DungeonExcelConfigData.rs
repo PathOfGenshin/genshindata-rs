@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type DungeonExcelConfigData = Vec<DungeonExcelConfigDatum>;
 
@@ -81,7 +79,7 @@ pub struct DungeonExcelConfigDatum {
     pub abelmeodgfp: Vec<String>,
 
     #[serde(rename = "levelConfigMap")]
-    pub level_config_map: HashMap<String, i64>,
+    pub level_config_map: LevelConfigMap,
 
     #[serde(rename = "enterCostItems")]
     pub enter_cost_items: Vec<i64>,
@@ -158,6 +156,462 @@ pub struct DungeonExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Anfiknndlie {
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct LevelConfigMap {
+    #[serde(rename = "1000")]
+    pub the_1000: Option<i64>,
+
+    #[serde(rename = "1001")]
+    pub the_1001: Option<i64>,
+
+    #[serde(rename = "1002")]
+    pub the_1002: Option<i64>,
+
+    #[serde(rename = "1070")]
+    pub the_1070: Option<i64>,
+
+    #[serde(rename = "1071")]
+    pub the_1071: Option<i64>,
+
+    #[serde(rename = "1050")]
+    pub the_1050: Option<i64>,
+
+    #[serde(rename = "1051")]
+    pub the_1051: Option<i64>,
+
+    #[serde(rename = "1161")]
+    pub the_1161: Option<i64>,
+
+    #[serde(rename = "1162")]
+    pub the_1162: Option<i64>,
+
+    #[serde(rename = "1163")]
+    pub the_1163: Option<i64>,
+
+    #[serde(rename = "1164")]
+    pub the_1164: Option<i64>,
+
+    #[serde(rename = "1165")]
+    pub the_1165: Option<i64>,
+
+    #[serde(rename = "1166")]
+    pub the_1166: Option<i64>,
+
+    #[serde(rename = "1052")]
+    pub the_1052: Option<i64>,
+
+    #[serde(rename = "1053")]
+    pub the_1053: Option<i64>,
+
+    #[serde(rename = "1369")]
+    pub the_1369: Option<i64>,
+
+    #[serde(rename = "1768")]
+    pub the_1768: Option<i64>,
+
+    #[serde(rename = "1769")]
+    pub the_1769: Option<i64>,
+
+    #[serde(rename = "1770")]
+    pub the_1770: Option<i64>,
+
+    #[serde(rename = "1701")]
+    pub the_1701: Option<i64>,
+
+    #[serde(rename = "1745")]
+    pub the_1745: Option<i64>,
+
+    #[serde(rename = "1386")]
+    pub the_1386: Option<i64>,
+
+    #[serde(rename = "1619")]
+    pub the_1619: Option<i64>,
+
+    #[serde(rename = "1688")]
+    pub the_1688: Option<i64>,
+
+    #[serde(rename = "1750")]
+    pub the_1750: Option<i64>,
+
+    #[serde(rename = "1728")]
+    pub the_1728: Option<i64>,
+
+    #[serde(rename = "1743")]
+    pub the_1743: Option<i64>,
+
+    #[serde(rename = "1744")]
+    pub the_1744: Option<i64>,
+
+    #[serde(rename = "1761")]
+    pub the_1761: Option<i64>,
+
+    #[serde(rename = "1364")]
+    pub the_1364: Option<i64>,
+
+    #[serde(rename = "1674")]
+    pub the_1674: Option<i64>,
+
+    #[serde(rename = "1675")]
+    pub the_1675: Option<i64>,
+
+    #[serde(rename = "1676")]
+    pub the_1676: Option<i64>,
+
+    #[serde(rename = "1370")]
+    pub the_1370: Option<i64>,
+
+    #[serde(rename = "1612")]
+    pub the_1612: Option<i64>,
+
+    #[serde(rename = "1613")]
+    pub the_1613: Option<i64>,
+
+    #[serde(rename = "1614")]
+    pub the_1614: Option<i64>,
+
+    #[serde(rename = "1615")]
+    pub the_1615: Option<i64>,
+
+    #[serde(rename = "1616")]
+    pub the_1616: Option<i64>,
+
+    #[serde(rename = "1617")]
+    pub the_1617: Option<i64>,
+
+    #[serde(rename = "1632")]
+    pub the_1632: Option<i64>,
+
+    #[serde(rename = "1622")]
+    pub the_1622: Option<i64>,
+
+    #[serde(rename = "1624")]
+    pub the_1624: Option<i64>,
+
+    #[serde(rename = "1620")]
+    pub the_1620: Option<i64>,
+
+    #[serde(rename = "1621")]
+    pub the_1621: Option<i64>,
+
+    #[serde(rename = "1623")]
+    pub the_1623: Option<i64>,
+
+    #[serde(rename = "1625")]
+    pub the_1625: Option<i64>,
+
+    #[serde(rename = "1626")]
+    pub the_1626: Option<i64>,
+
+    #[serde(rename = "1639")]
+    pub the_1639: Option<i64>,
+
+    #[serde(rename = "1640")]
+    pub the_1640: Option<i64>,
+
+    #[serde(rename = "1683")]
+    pub the_1683: Option<i64>,
+
+    #[serde(rename = "1689")]
+    pub the_1689: Option<i64>,
+
+    #[serde(rename = "1690")]
+    pub the_1690: Option<i64>,
+
+    #[serde(rename = "1691")]
+    pub the_1691: Option<i64>,
+
+    #[serde(rename = "1692")]
+    pub the_1692: Option<i64>,
+
+    #[serde(rename = "1693")]
+    pub the_1693: Option<i64>,
+
+    #[serde(rename = "1694")]
+    pub the_1694: Option<i64>,
+
+    #[serde(rename = "1551")]
+    pub the_1551: Option<i64>,
+
+    #[serde(rename = "1553")]
+    pub the_1553: Option<i64>,
+
+    #[serde(rename = "1552")]
+    pub the_1552: Option<i64>,
+
+    #[serde(rename = "1554")]
+    pub the_1554: Option<i64>,
+
+    #[serde(rename = "1737")]
+    pub the_1737: Option<i64>,
+
+    #[serde(rename = "1736")]
+    pub the_1736: Option<i64>,
+
+    #[serde(rename = "1759")]
+    pub the_1759: Option<i64>,
+
+    #[serde(rename = "1760")]
+    pub the_1760: Option<i64>,
+
+    #[serde(rename = "1764")]
+    pub the_1764: Option<i64>,
+
+    #[serde(rename = "1762")]
+    pub the_1762: Option<i64>,
+
+    #[serde(rename = "1763")]
+    pub the_1763: Option<i64>,
+
+    #[serde(rename = "1765")]
+    pub the_1765: Option<i64>,
+
+    #[serde(rename = "1302")]
+    pub the_1302: Option<i64>,
+
+    #[serde(rename = "1303")]
+    pub the_1303: Option<i64>,
+
+    #[serde(rename = "1301")]
+    pub the_1301: Option<i64>,
+
+    #[serde(rename = "1605")]
+    pub the_1605: Option<i64>,
+
+    #[serde(rename = "1726")]
+    pub the_1726: Option<i64>,
+
+    #[serde(rename = "1604")]
+    pub the_1604: Option<i64>,
+
+    #[serde(rename = "1725")]
+    pub the_1725: Option<i64>,
+
+    #[serde(rename = "1100")]
+    pub the_1100: Option<i64>,
+
+    #[serde(rename = "1101")]
+    pub the_1101: Option<i64>,
+
+    #[serde(rename = "1102")]
+    pub the_1102: Option<i64>,
+
+    #[serde(rename = "1103")]
+    pub the_1103: Option<i64>,
+
+    #[serde(rename = "1104")]
+    pub the_1104: Option<i64>,
+
+    #[serde(rename = "1105")]
+    pub the_1105: Option<i64>,
+
+    #[serde(rename = "1106")]
+    pub the_1106: Option<i64>,
+
+    #[serde(rename = "1107")]
+    pub the_1107: Option<i64>,
+
+    #[serde(rename = "1108")]
+    pub the_1108: Option<i64>,
+
+    #[serde(rename = "1109")]
+    pub the_1109: Option<i64>,
+
+    #[serde(rename = "1110")]
+    pub the_1110: Option<i64>,
+
+    #[serde(rename = "1111")]
+    pub the_1111: Option<i64>,
+
+    #[serde(rename = "1112")]
+    pub the_1112: Option<i64>,
+
+    #[serde(rename = "1113")]
+    pub the_1113: Option<i64>,
+
+    #[serde(rename = "1377")]
+    pub the_1377: Option<i64>,
+
+    #[serde(rename = "1378")]
+    pub the_1378: Option<i64>,
+
+    #[serde(rename = "1379")]
+    pub the_1379: Option<i64>,
+
+    #[serde(rename = "1727")]
+    pub the_1727: Option<i64>,
+
+    #[serde(rename = "1756")]
+    pub the_1756: Option<i64>,
+
+    #[serde(rename = "1114")]
+    pub the_1114: Option<i64>,
+
+    #[serde(rename = "1115")]
+    pub the_1115: Option<i64>,
+
+    #[serde(rename = "1116")]
+    pub the_1116: Option<i64>,
+
+    #[serde(rename = "1117")]
+    pub the_1117: Option<i64>,
+
+    #[serde(rename = "1118")]
+    pub the_1118: Option<i64>,
+
+    #[serde(rename = "1119")]
+    pub the_1119: Option<i64>,
+
+    #[serde(rename = "1120")]
+    pub the_1120: Option<i64>,
+
+    #[serde(rename = "1121")]
+    pub the_1121: Option<i64>,
+
+    #[serde(rename = "1122")]
+    pub the_1122: Option<i64>,
+
+    #[serde(rename = "1123")]
+    pub the_1123: Option<i64>,
+
+    #[serde(rename = "1124")]
+    pub the_1124: Option<i64>,
+
+    #[serde(rename = "1125")]
+    pub the_1125: Option<i64>,
+
+    #[serde(rename = "1126")]
+    pub the_1126: Option<i64>,
+
+    #[serde(rename = "1127")]
+    pub the_1127: Option<i64>,
+
+    #[serde(rename = "1128")]
+    pub the_1128: Option<i64>,
+
+    #[serde(rename = "1129")]
+    pub the_1129: Option<i64>,
+
+    #[serde(rename = "1344")]
+    pub the_1344: Option<i64>,
+
+    #[serde(rename = "1700")]
+    pub the_1700: Option<i64>,
+
+    #[serde(rename = "1606")]
+    pub the_1606: Option<i64>,
+
+    #[serde(rename = "1677")]
+    pub the_1677: Option<i64>,
+
+    #[serde(rename = "1304")]
+    pub the_1304: Option<i64>,
+
+    #[serde(rename = "1305")]
+    pub the_1305: Option<i64>,
+
+    #[serde(rename = "1300")]
+    pub the_1300: Option<i64>,
+
+    #[serde(rename = "43")]
+    pub the_43: Option<i64>,
+
+    #[serde(rename = "1354")]
+    pub the_1354: Option<i64>,
+
+    #[serde(rename = "1353")]
+    pub the_1353: Option<i64>,
+
+    #[serde(rename = "1355")]
+    pub the_1355: Option<i64>,
+
+    #[serde(rename = "1356")]
+    pub the_1356: Option<i64>,
+
+    #[serde(rename = "1365")]
+    pub the_1365: Option<i64>,
+
+    #[serde(rename = "1371")]
+    pub the_1371: Option<i64>,
+
+    #[serde(rename = "1372")]
+    pub the_1372: Option<i64>,
+
+    #[serde(rename = "1373")]
+    pub the_1373: Option<i64>,
+
+    #[serde(rename = "1374")]
+    pub the_1374: Option<i64>,
+
+    #[serde(rename = "1375")]
+    pub the_1375: Option<i64>,
+
+    #[serde(rename = "1376")]
+    pub the_1376: Option<i64>,
+
+    #[serde(rename = "1465")]
+    pub the_1465: Option<i64>,
+
+    #[serde(rename = "1466")]
+    pub the_1466: Option<i64>,
+
+    #[serde(rename = "1467")]
+    pub the_1467: Option<i64>,
+
+    #[serde(rename = "1461")]
+    pub the_1461: Option<i64>,
+
+    #[serde(rename = "1462")]
+    pub the_1462: Option<i64>,
+
+    #[serde(rename = "1463")]
+    pub the_1463: Option<i64>,
+
+    #[serde(rename = "1464")]
+    pub the_1464: Option<i64>,
+
+    #[serde(rename = "1671")]
+    pub the_1671: Option<i64>,
+
+    #[serde(rename = "1672")]
+    pub the_1672: Option<i64>,
+
+    #[serde(rename = "1673")]
+    pub the_1673: Option<i64>,
+
+    #[serde(rename = "1607")]
+    pub the_1607: Option<i64>,
+
+    #[serde(rename = "1633")]
+    pub the_1633: Option<i64>,
+
+    #[serde(rename = "1707")]
+    pub the_1707: Option<i64>,
+
+    #[serde(rename = "1724")]
+    pub the_1724: Option<i64>,
+
+    #[serde(rename = "1713")]
+    pub the_1713: Option<i64>,
+
+    #[serde(rename = "1720")]
+    pub the_1720: Option<i64>,
+
+    #[serde(rename = "1721")]
+    pub the_1721: Option<i64>,
+
+    #[serde(rename = "1722")]
+    pub the_1722: Option<i64>,
+
+    #[serde(rename = "1723")]
+    pub the_1723: Option<i64>,
+
+    #[serde(rename = "1758")]
+    pub the_1758: Option<i64>,
+
+    #[serde(rename = "1757")]
+    pub the_1757: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -284,7 +738,7 @@ pub enum SubType {
 }
 
 pub fn load() -> Result<DungeonExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

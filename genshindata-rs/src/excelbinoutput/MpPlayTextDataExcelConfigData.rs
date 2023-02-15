@@ -2,15 +2,55 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type MpPlayTextDataExcelConfigData = Vec<MpPlayTextDataExcelConfigDatum>;
 
-pub type MpPlayTextDataExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct MpPlayTextDataExcelConfigDatum {
+    #[serde(rename = "mpPlayId")]
+    pub mp_play_id: i64,
+
+    #[serde(rename = "questTextMapHash")]
+    pub quest_text_map_hash: i64,
+
+    #[serde(rename = "rewardTextMapHash")]
+    pub reward_text_map_hash: i64,
+
+    #[serde(rename = "inviteTextMapHash")]
+    pub invite_text_map_hash: i64,
+
+    #[serde(rename = "invitedescTextMapHash")]
+    pub invitedesc_text_map_hash: i64,
+
+    #[serde(rename = "invitedeschostTextMapHash")]
+    pub invitedeschost_text_map_hash: i64,
+
+    #[serde(rename = "startTextMapHash")]
+    pub start_text_map_hash: i64,
+
+    #[serde(rename = "starttipTextMapHash")]
+    pub starttip_text_map_hash: i64,
+
+    #[serde(rename = "victoryTextMapHash")]
+    pub victory_text_map_hash: i64,
+
+    #[serde(rename = "failTextMapHash")]
+    pub fail_text_map_hash: i64,
+
+    #[serde(rename = "riviveTextMapHash")]
+    pub rivive_text_map_hash: i64,
+
+    #[serde(rename = "timespendTextMapHash")]
+    pub timespend_text_map_hash: i64,
+
+    #[serde(rename = "upAvatarTextTextMapHash")]
+    pub up_avatar_text_text_map_hash: i64,
+}
 
 pub fn load() -> Result<MpPlayTextDataExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

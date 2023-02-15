@@ -2,15 +2,40 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type DigStageDataExcelConfigData = Vec<DigStageDataExcelConfigDatum>;
 
-pub type DigStageDataExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct DigStageDataExcelConfigDatum {
+    #[serde(rename = "stageID")]
+    pub stage_id: i64,
+
+    #[serde(rename = "LLBGHCFIAGF")]
+    pub llbghcfiagf: Option<i64>,
+
+    #[serde(rename = "questID")]
+    pub quest_id: Option<i64>,
+
+    #[serde(rename = "FHKGFOCNMNI")]
+    pub fhkgfocnmni: i64,
+
+    #[serde(rename = "CJPKFALNMDO")]
+    pub cjpkfalnmdo: i64,
+
+    #[serde(rename = "OOBFELNJHLI")]
+    pub oobfelnjhli: i64,
+
+    #[serde(rename = "pushTipsId")]
+    pub push_tips_id: Option<i64>,
+
+    #[serde(rename = "unlockTime")]
+    pub unlock_time: i64,
+}
 
 pub fn load() -> Result<DigStageDataExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type FishPoolExcelConfigData = Vec<FishPoolExcelConfigDatum>;
 
@@ -18,7 +16,7 @@ pub struct FishPoolExcelConfigDatum {
     pub stock_list: Vec<i64>,
 
     #[serde(rename = "stockGuarantee")]
-    pub stock_guarantee: HashMap<String, i64>,
+    pub stock_guarantee: StockGuarantee,
 
     #[serde(rename = "stockLimitList")]
     pub stock_limit_list: Vec<StockLimitList>,
@@ -49,6 +47,105 @@ pub struct FishPoolExcelConfigDatum {
 
     #[serde(rename = "cityId")]
     pub city_id: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct StockGuarantee {
+    #[serde(rename = "1000023")]
+    pub the_1000023: Option<i64>,
+
+    #[serde(rename = "1000043")]
+    pub the_1000043: Option<i64>,
+
+    #[serde(rename = "1000053")]
+    pub the_1000053: Option<i64>,
+
+    #[serde(rename = "13")]
+    pub the_13: Option<i64>,
+
+    #[serde(rename = "23")]
+    pub the_23: Option<i64>,
+
+    #[serde(rename = "33")]
+    pub the_33: Option<i64>,
+
+    #[serde(rename = "43")]
+    pub the_43: Option<i64>,
+
+    #[serde(rename = "53")]
+    pub the_53: Option<i64>,
+
+    #[serde(rename = "63")]
+    pub the_63: Option<i64>,
+
+    #[serde(rename = "73")]
+    pub the_73: Option<i64>,
+
+    #[serde(rename = "83")]
+    pub the_83: Option<i64>,
+
+    #[serde(rename = "93")]
+    pub the_93: Option<i64>,
+
+    #[serde(rename = "103")]
+    pub the_103: Option<i64>,
+
+    #[serde(rename = "113")]
+    pub the_113: Option<i64>,
+
+    #[serde(rename = "123")]
+    pub the_123: Option<i64>,
+
+    #[serde(rename = "133")]
+    pub the_133: Option<i64>,
+
+    #[serde(rename = "143")]
+    pub the_143: Option<i64>,
+
+    #[serde(rename = "153")]
+    pub the_153: Option<i64>,
+
+    #[serde(rename = "163")]
+    pub the_163: Option<i64>,
+
+    #[serde(rename = "173")]
+    pub the_173: Option<i64>,
+
+    #[serde(rename = "183")]
+    pub the_183: Option<i64>,
+
+    #[serde(rename = "193")]
+    pub the_193: Option<i64>,
+
+    #[serde(rename = "203")]
+    pub the_203: Option<i64>,
+
+    #[serde(rename = "213")]
+    pub the_213: Option<i64>,
+
+    #[serde(rename = "223")]
+    pub the_223: Option<i64>,
+
+    #[serde(rename = "233")]
+    pub the_233: Option<i64>,
+
+    #[serde(rename = "243")]
+    pub the_243: Option<i64>,
+
+    #[serde(rename = "253")]
+    pub the_253: Option<i64>,
+
+    #[serde(rename = "263")]
+    pub the_263: Option<i64>,
+
+    #[serde(rename = "273")]
+    pub the_273: Option<i64>,
+
+    #[serde(rename = "283")]
+    pub the_283: Option<i64>,
+
+    #[serde(rename = "293")]
+    pub the_293: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -88,7 +185,7 @@ pub enum TeamAbilityGroup {
 }
 
 pub fn load() -> Result<FishPoolExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

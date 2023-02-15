@@ -2,15 +2,55 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type ActivityTanukiTravelRouteDataExcelConfigData = Vec<ActivityTanukiTravelRouteDataExcelConfigDatum>;
 
-pub type ActivityTanukiTravelRouteDataExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ActivityTanukiTravelRouteDataExcelConfigDatum {
+    #[serde(rename = "Id")]
+    pub id: i64,
+
+    #[serde(rename = "MMLOKMKDJGC")]
+    pub mmlokmkdjgc: i64,
+
+    #[serde(rename = "PNBNAELKHHN")]
+    pub pnbnaelkhhn: i64,
+
+    #[serde(rename = "questId")]
+    pub quest_id: i64,
+
+    #[serde(rename = "AFCGEBNNIJN")]
+    pub afcgebnnijn: i64,
+
+    #[serde(rename = "watcherId")]
+    pub watcher_id: i64,
+
+    #[serde(rename = "ONGMJJMHIAM")]
+    pub ongmjjmhiam: i64,
+
+    #[serde(rename = "titleTextMapHash")]
+    pub title_text_map_hash: i64,
+
+    #[serde(rename = "descTextMapHash")]
+    pub desc_text_map_hash: i64,
+
+    #[serde(rename = "IOPGEHCPEMP")]
+    pub iopgehcpemp: i64,
+
+    #[serde(rename = "IHFADDCEMPF")]
+    pub ihfaddcempf: i64,
+
+    #[serde(rename = "LEEKKKPLEIC")]
+    pub leekkkpleic: Option<i64>,
+
+    #[serde(rename = "MDGFJFBAFPB")]
+    pub mdgfjfbafpb: Option<i64>,
+}
 
 pub fn load() -> Result<ActivityTanukiTravelRouteDataExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

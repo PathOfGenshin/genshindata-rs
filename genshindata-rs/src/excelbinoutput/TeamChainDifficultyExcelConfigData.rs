@@ -2,15 +2,28 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type TeamChainDifficultyExcelConfigData = Vec<TeamChainDifficultyExcelConfigDatum>;
 
-pub type TeamChainDifficultyExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct TeamChainDifficultyExcelConfigDatum {
+    #[serde(rename = "NJBCFPJKAJE")]
+    pub njbcfpjkaje: i64,
+
+    #[serde(rename = "NPENOJGJJFE")]
+    pub npenojgjjfe: i64,
+
+    #[serde(rename = "IIGCOLKJKHN")]
+    pub iigcolkjkhn: i64,
+
+    #[serde(rename = "descTextMapHash")]
+    pub desc_text_map_hash: i64,
+}
 
 pub fn load() -> Result<TeamChainDifficultyExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

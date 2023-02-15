@@ -2,15 +2,28 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type GachaRestrictConfigData = Vec<GachaRestrictConfigDatum>;
 
-pub type GachaRestrictConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GachaRestrictConfigDatum {
+    #[serde(rename = "PPELPPMNDPK")]
+    pub ppelppmndpk: i64,
+
+    #[serde(rename = "DEHFCCOGHBG")]
+    pub dehfccoghbg: i64,
+
+    #[serde(rename = "PBFBAIPPJCC")]
+    pub pbfbaippjcc: i64,
+
+    #[serde(rename = "IGCCNDBPBLF")]
+    pub igccndbpblf: i64,
+}
 
 pub fn load() -> Result<GachaRestrictConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

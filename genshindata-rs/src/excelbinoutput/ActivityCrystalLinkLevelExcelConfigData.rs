@@ -2,10 +2,8 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
-
-extern crate serde_derive;
-use std::collections::HashMap;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
 pub type ActivityCrystalLinkLevelExcelConfigData = Vec<ActivityCrystalLinkLevelExcelConfigDatum>;
 
@@ -42,10 +40,10 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     pub level_desc_text_map_hash: i64,
 
     #[serde(rename = "FINPCANEAKL")]
-    pub finpcaneakl: Vec<HashMap<String, Vec<String>>>,
+    pub finpcaneakl: Vec<Finpcaneakl>,
 
     #[serde(rename = "AGNGGOABDPP")]
-    pub agnggoabdpp: Vec<HashMap<String, Vec<i64>>>,
+    pub agnggoabdpp: Vec<Agnggoabdpp>,
 
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
@@ -57,8 +55,26 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     pub joocmelanni: i64,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Agnggoabdpp {
+    #[serde(rename = "FOCFLDNPCNJ")]
+    pub focfldnpcnj: Vec<i64>,
+
+    #[serde(rename = "ADKNKJIPKAN")]
+    pub adknkjipkan: Vec<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Finpcaneakl {
+    #[serde(rename = "FOCFLDNPCNJ")]
+    pub focfldnpcnj: Vec<String>,
+
+    #[serde(rename = "ADKNKJIPKAN")]
+    pub adknkjipkan: Vec<String>,
+}
+
 pub fn load() -> Result<ActivityCrystalLinkLevelExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",

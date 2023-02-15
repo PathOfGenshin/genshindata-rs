@@ -2,15 +2,67 @@
 // (see Sync-ExcelBinOutput.ps1 for more info).
 // DO NOT manually edit this file!
 
-use std::env;
+#[allow(unused_imports)]
+use serde::{Serialize, Deserialize};
 
-extern crate serde_derive;
-use std::collections::HashMap;
+pub type GcgTalkExcelConfigData = Vec<GcgTalkExcelConfigDatum>;
 
-pub type GcgTalkExcelConfigData = Vec<HashMap<String, i64>>;
+#[derive(Debug, Serialize, Deserialize)]
+pub struct GcgTalkExcelConfigDatum {
+    #[serde(rename = "IALGDAFBNHF")]
+    pub ialgdafbnhf: i64,
+
+    #[serde(rename = "OMJJPIGOFJH")]
+    pub omjjpigofjh: i64,
+
+    #[serde(rename = "FFPPAGKEDNG")]
+    pub ffppagkedng: i64,
+
+    #[serde(rename = "IKJPPHIBDDE")]
+    pub ikjpphibdde: Option<i64>,
+
+    #[serde(rename = "BAABJIIICGP")]
+    pub baabjiiicgp: Option<i64>,
+
+    #[serde(rename = "MELFLPPNACG")]
+    pub melflppnacg: Option<i64>,
+
+    #[serde(rename = "FBCGHHLFBOB")]
+    pub fbcghhlfbob: Option<i64>,
+
+    #[serde(rename = "APJKAFFMOFP")]
+    pub apjkaffmofp: i64,
+
+    #[serde(rename = "DDOEDECBNNL")]
+    pub ddoedecbnnl: i64,
+
+    #[serde(rename = "MKMFFGDENCG")]
+    pub mkmffgdencg: Option<i64>,
+
+    #[serde(rename = "GGBDJLJDEMA")]
+    pub ggbdjljdema: Option<i64>,
+
+    #[serde(rename = "KFEAIHMFJIB")]
+    pub kfeaihmfjib: Option<i64>,
+
+    #[serde(rename = "BJINAMOEDKB")]
+    pub bjinamoedkb: Option<i64>,
+
+    #[serde(rename = "OMDHNHFIJJB")]
+    pub omdhnhfijjb: Option<i64>,
+
+    #[serde(rename = "FDLFAOPEHEP")]
+    pub fdlfaopehep: Option<i64>,
+
+    #[serde(rename = "DGOIGMOKHHN")]
+    pub dgoigmokhhn: Option<i64>,
+
+    #[serde(rename = "KFNLOBJLIKH")]
+    pub kfnlobjlikh: Option<i64>,
+}
 
 pub fn load() -> Result<GcgTalkExcelConfigData, crate::json::JsonError> {
-    let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
+    let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();
     let path: std::path::PathBuf = [
         game_resources_path.as_str(),
         "ExcelBinOutput",
