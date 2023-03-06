@@ -9,50 +9,50 @@ pub type FungusPlotDungeonExcelConfigData = Vec<FungusPlotDungeonExcelConfigDatu
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FungusPlotDungeonExcelConfigDatum {
-    #[serde(rename = "DMMJFGHBFJF")]
-    pub dmmjfghbfjf: i64,
+    #[serde(rename = "KDONCEPFJOA")]
+    pub kdoncepfjoa: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "MCBBKEGMCJE")]
-    pub mcbbkegmcje: Vec<i64>,
+    #[serde(rename = "BNDFJHEEGJN")]
+    pub bndfjheegjn: Vec<i64>,
 
-    #[serde(rename = "DHNNBBLMFHI")]
-    pub dhnnbblmfhi: Vec<i64>,
+    #[serde(rename = "JGCDOGOADCP")]
+    pub jgcdogoadcp: Vec<i64>,
 
-    #[serde(rename = "MPCKKCIENEG")]
-    pub mpckkcieneg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HHGJODLBEKG")]
+    pub hhgjodlbekg: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
-    #[serde(rename = "DECPDFFCPDH")]
-    pub decpdffcpdh: i64,
+    #[serde(rename = "LOBPJIEKONH")]
+    pub lobpjiekonh: i64,
 
-    #[serde(rename = "LJCPEGDKMCD")]
-    pub ljcpegdkmcd: String,
+    #[serde(rename = "HJAEFMGNHDM")]
+    pub hjaefmgnhdm: String,
 
-    #[serde(rename = "JNEMLCMIGJP")]
-    pub jnemlcmigjp: Vec<i64>,
+    #[serde(rename = "ONHOJLAKOCE")]
+    pub onhojlakoce: Vec<i64>,
 
-    #[serde(rename = "CNGKFFJNOHB")]
-    pub cngkffjnohb: i64,
+    #[serde(rename = "FIANKHHPGPP")]
+    pub fiankhhpgpp: i64,
 
-    #[serde(rename = "LKAODFIOMBD")]
-    pub lkaodfiombd: i64,
+    #[serde(rename = "BHPNCHAJGCH")]
+    pub bhpnchajgch: i64,
 
-    #[serde(rename = "LDNOLJFMBKP")]
-    pub ldnoljfmbkp: i64,
+    #[serde(rename = "DHCCOGEAFDE")]
+    pub dhccogeafde: i64,
 
-    #[serde(rename = "IJLKPPIHIPG")]
-    pub ijlkppihipg: i64,
+    #[serde(rename = "DDOGIMPGKLM")]
+    pub ddogimpgklm: i64,
 
-    #[serde(rename = "MIMPIEFGIGE")]
-    pub mimpiefgige: i64,
+    #[serde(rename = "OPFMLODMNAI")]
+    pub opfmlodmnai: i64,
 
-    #[serde(rename = "KODDCEIJFKC")]
-    pub koddceijfkc: i64,
+    #[serde(rename = "LMBIFIFHBME")]
+    pub lmbififhbme: i64,
 }
 
 pub fn load() -> Result<FungusPlotDungeonExcelConfigData, crate::json::JsonError> {

@@ -12,32 +12,32 @@ pub struct ActivitySummerTimeRaceExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "IDPEHDOBMKA")]
-    pub idpehdobmka: Vec<i64>,
+    #[serde(rename = "IJODMBEMHAK")]
+    pub ijodmbemhak: Vec<i64>,
 
-    #[serde(rename = "EGFKILFKCJB")]
-    pub egfkilfkcjb: Vec<f64>,
+    #[serde(rename = "GGPIBIDFJHP")]
+    pub ggpibidfjhp: Vec<f64>,
 
-    #[serde(rename = "ICAMKENKPFJ")]
-    pub icamkenkpfj: Vec<i64>,
+    #[serde(rename = "PONJJEFEACB")]
+    pub ponjjefeacb: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
 
-    #[serde(rename = "DMLBFPHOADL")]
-    pub dmlbfphoadl: i64,
+    #[serde(rename = "DAHMLDJKJAJ")]
+    pub dahmldjkjaj: i64,
 
-    #[serde(rename = "LJODAJCOPGL")]
-    pub ljodajcopgl: i64,
+    #[serde(rename = "EKHFIJPNNEA")]
+    pub ekhfijpnnea: i64,
 
-    #[serde(rename = "PNAFJCGHKBC")]
-    pub pnafjcghkbc: i64,
+    #[serde(rename = "IMIABPNNGGL")]
+    pub imiabpnnggl: i64,
 
-    #[serde(rename = "MKPJPMMOEML")]
-    pub mkpjpmmoeml: i64,
+    #[serde(rename = "IAAOMFPABMJ")]
+    pub iaaomfpabmj: i64,
 
-    #[serde(rename = "FNKLCMEIFNP")]
-    pub fnklcmeifnp: i64,
+    #[serde(rename = "JMEIFIAFEBL")]
+    pub jmeifiafebl: i64,
 }
 
 pub fn load() -> Result<ActivitySummerTimeRaceExcelConfigData, crate::json::JsonError> {

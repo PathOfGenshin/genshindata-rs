@@ -12,11 +12,11 @@ pub struct VehicleSkillExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "EGGOMFIBIMM")]
-    pub eggomfibimm: i64,
+    #[serde(rename = "NDIIIAEKONA")]
+    pub ndiiiaekona: i64,
 
-    #[serde(rename = "DCHPDLPJDMO")]
-    pub dchpdlpjdmo: i64,
+    #[serde(rename = "IFLGLLEHDNL")]
+    pub iflgllehdnl: i64,
 
     #[serde(rename = "abilityName")]
     pub ability_name: String,
@@ -24,11 +24,11 @@ pub struct VehicleSkillExcelConfigDatum {
     #[serde(rename = "skillIcon")]
     pub skill_icon: String,
 
-    #[serde(rename = "OGLEFCJOGJD")]
-    pub oglefcjogjd: f64,
+    #[serde(rename = "DEDHAIHBPLA")]
+    pub dedhaihbpla: f64,
 
-    #[serde(rename = "OBEDJJMCFKP")]
-    pub obedjjmcfkp: i64,
+    #[serde(rename = "HCBCAOPONMA")]
+    pub hcbcaoponma: i64,
 
     #[serde(rename = "lockShape")]
     pub lock_shape: LockShape,
@@ -39,11 +39,11 @@ pub struct VehicleSkillExcelConfigDatum {
     #[serde(rename = "globalValueKey")]
     pub global_value_key: GlobalValueKey,
 
-    #[serde(rename = "LBAGOFJKAAP")]
-    pub lbagofjkaap: Option<i64>,
+    #[serde(rename = "EMOFOGKEOGI")]
+    pub emofogkeogi: Option<i64>,
 
-    #[serde(rename = "IOBNKAFDLEF")]
-    pub iobnkafdlef: Option<i64>,
+    #[serde(rename = "KCKIPHCDIFH")]
+    pub kckiphcdifh: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

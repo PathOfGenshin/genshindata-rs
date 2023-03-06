@@ -462,6 +462,9 @@ pub enum ActionAfter {
     #[serde(rename = "Shop/shop_open_1088")]
     ShopShopOpen1088,
 
+    #[serde(rename = "Shop/shop_open_1089")]
+    ShopShopOpen1089,
+
     #[serde(rename = "Shop/shop_open_31001")]
     ShopShopOpen31001,
 
@@ -489,11 +492,17 @@ pub enum ActionAfter {
     #[serde(rename = "SimpleTalk/RandomTalkHold")]
     SimpleTalkRandomTalkHold,
 
+    #[serde(rename = "SimpleTalk/SimpleBlackScreen_End")]
+    SimpleTalkSimpleBlackScreenEnd,
+
     #[serde(rename = "SimpleTalk/Standby")]
     SimpleTalkStandby,
 
     #[serde(rename = "SimpleTalk/SteerOnly")]
     SimpleTalkSteerOnly,
+
+    #[serde(rename = "SimpleTalk/StrikeChest")]
+    SimpleTalkStrikeChest,
 
     #[serde(rename = "TEST/BlossomTalkEnd")]
     TestBlossomTalkEnd,
@@ -774,11 +783,17 @@ pub enum ActionAfter {
     #[serde(rename = "UI/open_explorationpage_02")]
     UiOpenExplorationpage02,
 
+    #[serde(rename = "UI/open_FleurFairV2PhotoStagePageContext")]
+    UiOpenFleurFairV2PhotoStagePageContext,
+
     #[serde(rename = "UI/open_forging_page")]
     UiOpenForgingPage,
 
     #[serde(rename = "UI/open_FungusCultivate")]
     UiOpenFungusCultivate,
+
+    #[serde(rename = "UI/open_GcgLevelPage_FleurFlower")]
+    UiOpenGcgLevelPageFleurFlower,
 
     #[serde(rename = "UI/open_giving_page")]
     UiOpenGivingPage,
@@ -921,6 +936,9 @@ pub enum ActionBefore {
     #[serde(rename = "DialogAction/D721510701_Before.json")]
     DialogActionD721510701BeforeJson,
 
+    #[serde(rename = "DialogAction/D736890105_Before")]
+    DialogActionD736890105Before,
+
     #[serde(rename = "")]
     Empty,
 
@@ -999,8 +1017,14 @@ pub enum ActionBefore {
     #[serde(rename = "SimpleTalk/Downcast_Start")]
     SimpleTalkDowncastStart,
 
+    #[serde(rename = "SimpleTalk/Greet")]
+    SimpleTalkGreet,
+
     #[serde(rename = "SimpleTalk/Greet_Start")]
     SimpleTalkGreetStart,
+
+    #[serde(rename = "SimpleTalk/Happy_Start")]
+    SimpleTalkHappyStart,
 
     #[serde(rename = "SimpleTalk/HoldArm")]
     SimpleTalkHoldArm,
@@ -1016,6 +1040,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "SimpleTalk/LerpInNpcNoSteer_Start")]
     SimpleTalkLerpInNpcNoSteerStart,
+
+    #[serde(rename = "SimpleTalk/NodHead")]
+    SimpleTalkNodHead,
 
     #[serde(rename = "SimpleTalk/PaimonInTalk_Start")]
     SimpleTalkPaimonInTalkStart,
@@ -1043,6 +1070,9 @@ pub enum ActionBefore {
 
     #[serde(rename = "SimpleTalk/Shrug")]
     SimpleTalkShrug,
+
+    #[serde(rename = "SimpleTalk/Shy")]
+    SimpleTalkShy,
 
     #[serde(rename = "SimpleTalk/Standby")]
     SimpleTalkStandby,
@@ -1794,6 +1824,9 @@ pub enum OptionIcon {
     #[serde(rename = "UI_Icon_Intee_FungusFighter")]
     UiIconInteeFungusFighter,
 
+    #[serde(rename = "UI_Icon_Intee_FungusFighterV2")]
+    UiIconInteeFungusFighterV2,
+
     #[serde(rename = "UI_Icon_Intee_FurnitureBuild")]
     UiIconInteeFurnitureBuild,
 
@@ -1823,6 +1856,12 @@ pub enum OptionIcon {
 
     #[serde(rename = "UI_Icon_Intee_Miscsmarvs")]
     UiIconInteeMiscsmarvs,
+
+    #[serde(rename = "UI_Icon_Intee_Music")]
+    UiIconInteeMusic,
+
+    #[serde(rename = "UI_Icon_Intee_Pacman")]
+    UiIconInteePacman,
 
     #[serde(rename = "UI_Icon_Intee_PlayerLevel_0")]
     UiIconInteePlayerLevel0,

@@ -15,11 +15,11 @@ pub struct GroupLinksBundleExcelConfigDatum {
     #[serde(rename = "groupList")]
     pub group_list: Vec<i64>,
 
-    #[serde(rename = "KEJIJAGKHHK")]
-    pub kejijagkhhk: i64,
+    #[serde(rename = "OKFOCPDDCDO")]
+    pub okfocpddcdo: i64,
 
-    #[serde(rename = "GAAHMGLGJFD")]
-    pub gaahmglgjfd: Option<i64>,
+    #[serde(rename = "PFBMIKEOOCL")]
+    pub pfbmikeoocl: Option<i64>,
 
     #[serde(rename = "rewardType")]
     pub reward_type: Option<RewardType>,
@@ -36,35 +36,35 @@ pub struct GroupLinksBundleExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "AHLJCIAJGHF")]
-    pub ahljciajghf: i64,
+    #[serde(rename = "HFJGMLKBMLN")]
+    pub hfjgmlkbmln: i64,
 
-    #[serde(rename = "EAKLBGJDNKH")]
-    pub eaklbgjdnkh: Option<i64>,
+    #[serde(rename = "FKFIECEDCBC")]
+    pub fkfiecedcbc: Option<i64>,
 
-    #[serde(rename = "GGJGJDPNHHG")]
-    pub ggjgjdpnhhg: Option<bool>,
+    #[serde(rename = "KCELBGLFECA")]
+    pub kcelbglfeca: Option<bool>,
 
-    #[serde(rename = "HMFMGMGHIID")]
-    pub hmfmgmghiid: Option<bool>,
+    #[serde(rename = "JDPKJGFIFAF")]
+    pub jdpkjgfifaf: Option<bool>,
 
-    #[serde(rename = "DNBJOOPBHCB")]
-    pub dnbjoopbhcb: Option<i64>,
+    #[serde(rename = "EIMMHFFLCFN")]
+    pub eimmhfflcfn: Option<i64>,
 
     #[serde(rename = "playType")]
     pub play_type: Option<String>,
 
-    #[serde(rename = "MOKHGFEGGEF")]
-    pub mokhgfeggef: Option<bool>,
+    #[serde(rename = "KLFINLFAJFM")]
+    pub klfinlfajfm: Option<bool>,
 
-    #[serde(rename = "EEPHCPPBHEF")]
-    pub eephcppbhef: Option<i64>,
+    #[serde(rename = "ODEEMOKBLPL")]
+    pub odeemokblpl: Option<i64>,
 
-    #[serde(rename = "OLEJJFOPGLP")]
-    pub olejjfopglp: Option<bool>,
+    #[serde(rename = "KIJJLIOONJN")]
+    pub kijjlioonjn: Option<bool>,
 
-    #[serde(rename = "NBNIALBEFOE")]
-    pub nbnialbefoe: Option<bool>,
+    #[serde(rename = "KDCIDCIHPDG")]
+    pub kdcidcihpdg: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

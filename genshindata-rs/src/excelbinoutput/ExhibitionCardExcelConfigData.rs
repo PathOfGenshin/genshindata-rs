@@ -24,12 +24,12 @@ pub struct ExhibitionCardExcelConfigDatum {
     #[serde(rename = "priority")]
     pub priority: i64,
 
-    #[serde(rename = "MLAMOLMECIA")]
-    pub mlamolmecia: Option<Mlamolmecia>,
+    #[serde(rename = "GHBINIECOAO")]
+    pub ghbiniecoao: Option<Ghbiniecoao>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mlamolmecia {
+pub enum Ghbiniecoao {
     #[serde(rename = "EXHIBITION_CARD_ORDER_GREATER_BETTER")]
     ExhibitionCardOrderGreaterBetter,
 

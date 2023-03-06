@@ -12,14 +12,14 @@ pub struct BartenderAffixExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MLAMOLMECIA")]
-    pub mlamolmecia: String,
+    #[serde(rename = "GHBINIECOAO")]
+    pub ghbiniecoao: String,
 
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "CHCNGHHDMAA")]
-    pub chcnghhdmaa: i64,
+    #[serde(rename = "HCJKHOGFBEN")]
+    pub hcjkhogfben: i64,
 }
 
 pub fn load() -> Result<BartenderAffixExcelConfigData, crate::json::JsonError> {

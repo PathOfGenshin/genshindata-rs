@@ -12,26 +12,26 @@ pub struct DigGroupLinkExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FFBKDABNKFG")]
-    pub ffbkdabnkfg: i64,
+    #[serde(rename = "MCKAOJBIJFH")]
+    pub mckaojbijfh: i64,
 
-    #[serde(rename = "HMHFLPKKNNI")]
-    pub hmhflpkknni: i64,
+    #[serde(rename = "ELEHEHHHCMG")]
+    pub elehehhhcmg: i64,
 
-    #[serde(rename = "MOCBFCNHJKM")]
-    pub mocbfcnhjkm: i64,
+    #[serde(rename = "JHMKFDEBCFO")]
+    pub jhmkfdebcfo: i64,
 
-    #[serde(rename = "IHHONBFLPJM")]
-    pub ihhonbflpjm: Vec<i64>,
+    #[serde(rename = "MGAJLAEHLIL")]
+    pub mgajlaehlil: Vec<i64>,
 
-    #[serde(rename = "HBCBCHIOOPF")]
-    pub hbcbchioopf: String,
+    #[serde(rename = "GGCACGAIFGH")]
+    pub ggcacgaifgh: String,
 
-    #[serde(rename = "LECBCGCKGJB")]
-    pub lecbcgckgjb: Option<i64>,
+    #[serde(rename = "HOCFPAJOOBF")]
+    pub hocfpajoobf: Option<i64>,
 
-    #[serde(rename = "NAHKMPPLEID")]
-    pub nahkmppleid: Option<i64>,
+    #[serde(rename = "AGNNJGBIBNG")]
+    pub agnnjgbibng: Option<i64>,
 }
 
 pub fn load() -> Result<DigGroupLinkExcelConfigData, crate::json::JsonError> {

@@ -9,24 +9,24 @@ pub type GcgTalkDetailExcelConfigData = Vec<GcgTalkDetailExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgTalkDetailExcelConfigDatum {
-    #[serde(rename = "KNNCGKHOJCN")]
-    pub knncgkhojcn: i64,
+    #[serde(rename = "BMLBIGMGJMJ")]
+    pub bmlbigmgjmj: i64,
 
-    #[serde(rename = "BKIKLPOIGIH")]
-    pub bkiklpoigih: Vec<i64>,
+    #[serde(rename = "IDHKGBPOILK")]
+    pub idhkgbpoilk: Vec<i64>,
 
-    #[serde(rename = "DIGLOKJAFKL")]
-    pub diglokjafkl: Vec<i64>,
+    #[serde(rename = "CMILJFLGHDJ")]
+    pub cmiljflghdj: Vec<i64>,
 
-    #[serde(rename = "EGHPAOBOHJE")]
-    pub eghpaobohje: Vec<i64>,
+    #[serde(rename = "ILNLFOLAKAB")]
+    pub ilnlfolakab: Vec<i64>,
 
-    #[serde(rename = "HOLCONNDEEG")]
-    pub holconndeeg: Vec<Holconndeeg>,
+    #[serde(rename = "IIBMGEBECKO")]
+    pub iibmgebecko: Vec<Iibmgebecko>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Holconndeeg {
+pub enum Iibmgebecko {
     #[serde(rename = "GCG_TALK_EMOJI_AWKWARD")]
     GcgTalkEmojiAwkward,
 

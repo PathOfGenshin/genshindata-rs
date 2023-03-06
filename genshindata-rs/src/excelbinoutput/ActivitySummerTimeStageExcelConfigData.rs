@@ -24,23 +24,23 @@ pub struct ActivitySummerTimeStageExcelConfigDatum {
     #[serde(rename = "mainQuest")]
     pub main_quest: i64,
 
-    #[serde(rename = "GPFDJKNFAIG")]
-    pub gpfdjknfaig: Option<i64>,
+    #[serde(rename = "OJPNDEAAGND")]
+    pub ojpndeaagnd: Option<i64>,
 
-    #[serde(rename = "KAFJOGGPENK")]
-    pub kafjoggpenk: Option<i64>,
+    #[serde(rename = "NPOOHGEINFE")]
+    pub npoohgeinfe: Option<i64>,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
-    #[serde(rename = "EKODBBGKEDD")]
-    pub ekodbbgkedd: i64,
+    #[serde(rename = "IJEGBCHLBLG")]
+    pub ijegbchlblg: i64,
 
-    #[serde(rename = "ACKNGCCIKHJ")]
-    pub ackngccikhj: i64,
+    #[serde(rename = "DFHCAPBCAEO")]
+    pub dfhcapbcaeo: i64,
 
     #[serde(rename = "preQuest")]
     pub pre_quest: Option<i64>,

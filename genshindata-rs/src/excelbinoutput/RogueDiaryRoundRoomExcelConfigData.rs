@@ -12,20 +12,20 @@ pub struct RogueDiaryRoundRoomExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "ENMKLCGEIOF")]
-    pub enmklcgeiof: Option<i64>,
+    #[serde(rename = "MGAPGMFEDEO")]
+    pub mgapgmfedeo: Option<i64>,
 
-    #[serde(rename = "CCCEJNIDCOG")]
-    pub cccejnidcog: Vec<Cccejnidcog>,
+    #[serde(rename = "CECKCOGFKKI")]
+    pub ceckcogfkki: Vec<Ceckcogfkki>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cccejnidcog {
-    #[serde(rename = "IJDMLPJHPNK")]
-    pub ijdmlpjhpnk: Vec<i64>,
+pub struct Ceckcogfkki {
+    #[serde(rename = "FLKNKLONLNO")]
+    pub flknklonlno: Vec<i64>,
 
-    #[serde(rename = "LODPCKONJOP")]
-    pub lodpckonjop: Vec<i64>,
+    #[serde(rename = "FNMJEGAOOBA")]
+    pub fnmjegaooba: Vec<i64>,
 }
 
 pub fn load() -> Result<RogueDiaryRoundRoomExcelConfigData, crate::json::JsonError> {

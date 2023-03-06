@@ -150,14 +150,14 @@ pub struct StockGuarantee {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct StockLimitList {
-    #[serde(rename = "CIHEEACIANH")]
-    pub ciheeacianh: Option<Ciheeacianh>,
+    #[serde(rename = "MLCHPAFOOAD")]
+    pub mlchpafooad: Option<Mlchpafooad>,
 
-    #[serde(rename = "BFIAMFPKLEA")]
-    pub bfiamfpklea: Option<i64>,
+    #[serde(rename = "POHCPHGEECE")]
+    pub pohcphgeece: Option<i64>,
 
-    #[serde(rename = "HMLJLKCJEBH")]
-    pub hmljlkcjebh: Option<i64>,
+    #[serde(rename = "EEBNBFLNAAD")]
+    pub eebnbflnaad: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -167,7 +167,7 @@ pub enum AbilityGroup {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ciheeacianh {
+pub enum Mlchpafooad {
     #[serde(rename = "FISH_STOCK_TYPE_ANY")]
     FishStockTypeAny,
 

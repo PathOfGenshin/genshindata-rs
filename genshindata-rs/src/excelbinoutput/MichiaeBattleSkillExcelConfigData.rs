@@ -9,17 +9,17 @@ pub type MichiaeBattleSkillExcelConfigData = Vec<MichiaeBattleSkillExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MichiaeBattleSkillExcelConfigDatum {
-    #[serde(rename = "IKNKIEBAPOG")]
-    pub iknkiebapog: i64,
+    #[serde(rename = "ONEJALHEENC")]
+    pub onejalheenc: i64,
 
-    #[serde(rename = "EGGOMFIBIMM")]
-    pub eggomfibimm: i64,
+    #[serde(rename = "NDIIIAEKONA")]
+    pub ndiiiaekona: i64,
 
-    #[serde(rename = "DCHPDLPJDMO")]
-    pub dchpdlpjdmo: i64,
+    #[serde(rename = "IFLGLLEHDNL")]
+    pub iflgllehdnl: i64,
 
-    #[serde(rename = "HJOICJDIEAE")]
-    pub hjoicjdieae: Vec<String>,
+    #[serde(rename = "FOCHHNMHONL")]
+    pub fochhnmhonl: Vec<String>,
 
     #[serde(rename = "iconPath")]
     pub icon_path: String,
@@ -30,8 +30,8 @@ pub struct MichiaeBattleSkillExcelConfigDatum {
     #[serde(rename = "materialNum")]
     pub material_num: i64,
 
-    #[serde(rename = "GCCCOJGOFHB")]
-    pub gcccojgofhb: String,
+    #[serde(rename = "LFPJLPPPFJO")]
+    pub lfpjlpppfjo: String,
 }
 
 pub fn load() -> Result<MichiaeBattleSkillExcelConfigData, crate::json::JsonError> {

@@ -12,11 +12,11 @@ pub struct ReunionCommercialExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "AKKBCMFMBMD")]
-    pub akkbcmfmbmd: String,
+    #[serde(rename = "MBNHMEACLNM")]
+    pub mbnhmeaclnm: String,
 
-    #[serde(rename = "EGANPDHMOIB")]
-    pub eganpdhmoib: String,
+    #[serde(rename = "NMIDMGHGAFC")]
+    pub nmidmghgafc: String,
 }
 
 pub fn load() -> Result<ReunionCommercialExcelConfigData, crate::json::JsonError> {

@@ -12,14 +12,14 @@ pub struct ActivityDuelHeartExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IAMOPDJKMOH")]
-    pub iamopdjkmoh: i64,
+    #[serde(rename = "ECNEBNKICID")]
+    pub ecnebnkicid: i64,
 
-    #[serde(rename = "NPMOOKNCHLF")]
-    pub npmooknchlf: i64,
+    #[serde(rename = "LFBEOHGIAIC")]
+    pub lfbeohgiaic: i64,
 
-    #[serde(rename = "GLCIDMHLDHJ")]
-    pub glcidmhldhj: i64,
+    #[serde(rename = "JBNGLHLFAAO")]
+    pub jbnglhlfaao: i64,
 }
 
 pub fn load() -> Result<ActivityDuelHeartExcelConfigData, crate::json::JsonError> {

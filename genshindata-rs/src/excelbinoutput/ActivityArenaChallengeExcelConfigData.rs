@@ -33,21 +33,21 @@ pub struct ActivityArenaChallengeExcelConfigDatum {
     #[serde(rename = "challengeTarget2TextMapHash")]
     pub challenge_target2_text_map_hash: i64,
 
-    #[serde(rename = "CPFOEPLILAG")]
-    pub cpfoeplilag: Cpfoeplilag,
+    #[serde(rename = "OJJHNGLOGKG")]
+    pub ojjhnglogkg: Ojjhnglogkg,
 
-    #[serde(rename = "LCODFEDICAG")]
-    pub lcodfedicag: Lcodfedicag,
+    #[serde(rename = "NHACPGNBGAB")]
+    pub nhacpgnbgab: Nhacpgnbgab,
 
-    #[serde(rename = "ACAJJPEGJIO")]
-    pub acajjpegjio: Acajjpegjio,
+    #[serde(rename = "ECDFEGFNGCJ")]
+    pub ecdfegfngcj: Ecdfegfngcj,
 
-    #[serde(rename = "CBGLDBOAALF")]
-    pub cbgldboaalf: Option<bool>,
+    #[serde(rename = "BIAHCMPFOMN")]
+    pub biahcmpfomn: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Acajjpegjio {
+pub enum Ecdfegfngcj {
     #[serde(rename = "")]
     Empty,
 
@@ -71,19 +71,7 @@ pub enum Acajjpegjio {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Cpfoeplilag {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "2010036;180")]
-    The2010036180,
-
-    #[serde(rename = "2010069;150")]
-    The2010069150,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Lcodfedicag {
+pub enum Nhacpgnbgab {
     #[serde(rename = "")]
     Empty,
 
@@ -107,6 +95,18 @@ pub enum Lcodfedicag {
 
     #[serde(rename = "2010044;15")]
     The201004415,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ojjhnglogkg {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "2010036;180")]
+    The2010036180,
+
+    #[serde(rename = "2010069;150")]
+    The2010069150,
 }
 
 pub fn load() -> Result<ActivityArenaChallengeExcelConfigData, crate::json::JsonError> {

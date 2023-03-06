@@ -9,11 +9,11 @@ pub type LevelTagMapAreaConfigData = Vec<LevelTagMapAreaConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LevelTagMapAreaConfigDatum {
-    #[serde(rename = "BJFLNEFJGIO")]
-    pub bjflnefjgio: i64,
+    #[serde(rename = "JGBKOEKDHEP")]
+    pub jgbkoekdhep: i64,
 
-    #[serde(rename = "NFFLABFNEBK")]
-    pub nfflabfnebk: i64,
+    #[serde(rename = "JBFHEFJBJHG")]
+    pub jbfhefjbjhg: i64,
 
     #[serde(rename = "index")]
     pub index: Option<i64>,

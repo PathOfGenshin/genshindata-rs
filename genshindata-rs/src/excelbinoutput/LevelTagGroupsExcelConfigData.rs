@@ -12,20 +12,20 @@ pub struct LevelTagGroupsExcelConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "GOBHNNHMBOK")]
-    pub gobhnnhmbok: Vec<Gobhnnhmbok>,
+    #[serde(rename = "GNJAIJCHFDP")]
+    pub gnjaijchfdp: Vec<Gnjaijchfdp>,
 
-    #[serde(rename = "KEJBBJFBDKN")]
-    pub kejbbjfbdkn: Vec<i64>,
+    #[serde(rename = "DDHPDJNLNJC")]
+    pub ddhpdjnlnjc: Vec<i64>,
 
-    #[serde(rename = "CNFJCLLBMIL")]
-    pub cnfjcllbmil: i64,
+    #[serde(rename = "ADBJBMOGBHJ")]
+    pub adbjbmogbhj: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Gobhnnhmbok {
-    #[serde(rename = "JPBHFOKBDBJ")]
-    pub jpbhfokbdbj: Vec<i64>,
+pub struct Gnjaijchfdp {
+    #[serde(rename = "AFGLIONNJNN")]
+    pub afglionnjnn: Vec<i64>,
 }
 
 pub fn load() -> Result<LevelTagGroupsExcelConfigData, crate::json::JsonError> {

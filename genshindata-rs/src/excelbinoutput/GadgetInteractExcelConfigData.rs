@@ -18,8 +18,8 @@ pub struct GadgetInteractExcelConfigDatum {
     #[serde(rename = "param1")]
     pub param1: Option<i64>,
 
-    #[serde(rename = "FNKIDIBBNGL")]
-    pub fnkidibbngl: Vec<Fnkidibbngl>,
+    #[serde(rename = "LPLHBEJOLMO")]
+    pub lplhbejolmo: Vec<Lplhbejolmo>,
 
     #[serde(rename = "costItems")]
     pub cost_items: Vec<CostItem>,
@@ -59,7 +59,7 @@ pub struct CostItem {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fnkidibbngl {
+pub struct Lplhbejolmo {
     #[serde(rename = "actionType")]
     pub action_type: Option<ActionType>,
 

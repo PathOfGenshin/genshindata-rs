@@ -18,17 +18,17 @@ pub struct ActivitySummerTimeFloatSignalExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "NANAJLBNHPG")]
-    pub nanajlbnhpg: Option<i64>,
+    #[serde(rename = "JABOOAKEJDF")]
+    pub jabooakejdf: Option<i64>,
 
-    #[serde(rename = "OFBDPNFPCGJ")]
-    pub ofbdpnfpcgj: i64,
+    #[serde(rename = "NLFBJKODJMH")]
+    pub nlfbjkodjmh: i64,
 
-    #[serde(rename = "IEOFGBJBHPC")]
-    pub ieofgbjbhpc: i64,
+    #[serde(rename = "CFLNJJLEMPE")]
+    pub cflnjjlempe: i64,
 
-    #[serde(rename = "ADCOFMFJBNK")]
-    pub adcofmfjbnk: Option<bool>,
+    #[serde(rename = "HAJKDPHDKKL")]
+    pub hajkdphdkkl: Option<bool>,
 }
 
 pub fn load() -> Result<ActivitySummerTimeFloatSignalExcelConfigData, crate::json::JsonError> {

@@ -27,17 +27,17 @@ pub struct TeamChainExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "MPFGCGGNLGA")]
-    pub mpfgcggnlga: Vec<i64>,
+    #[serde(rename = "IPDEINDKDBC")]
+    pub ipdeindkdbc: Vec<i64>,
 
-    #[serde(rename = "ACJAOGKKFCA")]
-    pub acjaogkkfca: Vec<Vec<i64>>,
+    #[serde(rename = "EFPAAONBHFE")]
+    pub efpaaonbhfe: Vec<Vec<i64>>,
 
-    #[serde(rename = "GBHDLCJJIMM")]
-    pub gbhdlcjjimm: Vec<i64>,
+    #[serde(rename = "AKPEBHLFMEC")]
+    pub akpebhlfmec: Vec<i64>,
 
-    #[serde(rename = "EILHFMAFOOB")]
-    pub eilhfmafoob: Vec<Vec<i64>>,
+    #[serde(rename = "HMHMAMDBAMM")]
+    pub hmhmamdbamm: Vec<Vec<i64>>,
 }
 
 pub fn load() -> Result<TeamChainExcelConfigData, crate::json::JsonError> {

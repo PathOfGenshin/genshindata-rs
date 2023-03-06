@@ -12,12 +12,12 @@ pub struct AranaraCollectionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MMILBJEKICD")]
-    pub mmilbjekicd: Mmilbjekicd,
+    #[serde(rename = "PHHOGPAAAPH")]
+    pub phhogpaaaph: Phhogpaaaph,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mmilbjekicd {
+pub enum Phhogpaaaph {
     #[serde(rename = "ARANARA_COLLECTION_TYPE_CATALOG_V1")]
     AranaraCollectionTypeCatalogV1,
 }

@@ -12,8 +12,8 @@ pub struct QuestDialogDecoratorExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NLODIJNBFMH")]
-    pub nlodijnbfmh: String,
+    #[serde(rename = "IBIDBJCPOEK")]
+    pub ibidbjcpoek: String,
 }
 
 pub fn load() -> Result<QuestDialogDecoratorExcelConfigData, crate::json::JsonError> {

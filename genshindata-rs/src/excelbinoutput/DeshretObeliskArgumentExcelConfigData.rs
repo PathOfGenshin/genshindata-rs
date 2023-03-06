@@ -9,41 +9,41 @@ pub type DeshretObeliskArgumentExcelConfigData = Vec<DeshretObeliskArgumentExcel
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct DeshretObeliskArgumentExcelConfigDatum {
-    #[serde(rename = "GKDNNEPGBKG")]
-    pub gkdnnepgbkg: i64,
+    #[serde(rename = "JBDPAGCKFBC")]
+    pub jbdpagckfbc: i64,
 
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "FIBKNGALEJO")]
-    pub fibkngalejo: Vec<i64>,
+    #[serde(rename = "JLLJGHCCAJF")]
+    pub jlljghccajf: Vec<i64>,
 
     #[serde(rename = "effectName")]
     pub effect_name: EffectName,
 
-    #[serde(rename = "KNIJGMOOGAO")]
-    pub knijgmoogao: Vec<f64>,
+    #[serde(rename = "LHECHDMDHKE")]
+    pub lhechdmdhke: Vec<f64>,
 
-    #[serde(rename = "HFLIEFBLEFP")]
-    pub hfliefblefp: f64,
+    #[serde(rename = "DAEKPHPGKMF")]
+    pub daekphpgkmf: f64,
 
-    #[serde(rename = "DPEMFCKLOLH")]
-    pub dpemfcklolh: f64,
+    #[serde(rename = "NFNNFENDGKL")]
+    pub nfnnfendgkl: f64,
 
-    #[serde(rename = "EPENKMFIOLL")]
-    pub epenkmfioll: Vec<f64>,
+    #[serde(rename = "KODGAFFGLNA")]
+    pub kodgaffglna: Vec<f64>,
 
-    #[serde(rename = "GEMPCOGMCLJ")]
-    pub gempcogmclj: Vec<f64>,
+    #[serde(rename = "HFPCCEJDMLM")]
+    pub hfpccejdmlm: Vec<f64>,
 
-    #[serde(rename = "IFOBBFPCGNG")]
-    pub ifobbfpcgng: f64,
+    #[serde(rename = "ILIHAHLBIJP")]
+    pub ilihahlbijp: f64,
 
-    #[serde(rename = "FGMBDLLCKFI")]
-    pub fgmbdllckfi: f64,
+    #[serde(rename = "GFFDILPLMCG")]
+    pub gffdilplmcg: f64,
 
-    #[serde(rename = "IBFHPFBEJIE")]
-    pub ibfhpfbejie: f64,
+    #[serde(rename = "ELCJLEPHBLN")]
+    pub elcjlephbln: f64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

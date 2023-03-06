@@ -18,8 +18,8 @@ pub struct GcgSceneConstNpcExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "DGHFOKDOHMD")]
-    pub dghfokdohmd: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "NDEEAIHNEHK")]
+    pub ndeeaihnehk: Vec<Option<serde_json::Value>>,
 }
 
 pub fn load() -> Result<GcgSceneConstNpcExcelConfigData, crate::json::JsonError> {

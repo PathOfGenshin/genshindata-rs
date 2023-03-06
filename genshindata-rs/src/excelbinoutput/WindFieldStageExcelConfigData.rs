@@ -27,8 +27,8 @@ pub struct WindFieldStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "NBKDLJDOOMK")]
-    pub nbkdljdoomk: i64,
+    #[serde(rename = "KHLECHHBBLE")]
+    pub khlechhbble: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,

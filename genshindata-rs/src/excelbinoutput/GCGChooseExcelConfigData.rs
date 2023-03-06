@@ -15,110 +15,50 @@ pub struct GcgChooseExcelConfigDatum {
     #[serde(rename = "cardType")]
     pub card_type: CardType,
 
-    #[serde(rename = "KBGLJJMDLNJ")]
-    pub kbgljjmdlnj: Kbgljjmdlnj,
+    #[serde(rename = "PEJDNIKKJFH")]
+    pub pejdnikkjfh: Pejdnikkjfh,
 
-    #[serde(rename = "MGLOIGHBILB")]
-    pub mgloighbilb: Vec<Mgloighbilb>,
+    #[serde(rename = "LKIILDFIPKC")]
+    pub lkiildfipkc: Vec<Lkiildfipkc>,
 
-    #[serde(rename = "HNCKFLBAKAD")]
-    pub hnckflbakad: Vec<Hnckflbakad>,
+    #[serde(rename = "FNDEJBOMHKH")]
+    pub fndejbomhkh: Vec<Fndejbomhkh>,
 
     #[serde(rename = "condList")]
-    pub cond_list: Vec<Mfbhlcbpoie>,
+    pub cond_list: Vec<Nciaelicobm>,
 
-    #[serde(rename = "MFBHLCBPOIE")]
-    pub mfbhlcbpoie: Vec<Mfbhlcbpoie>,
+    #[serde(rename = "NCIAELICOBM")]
+    pub nciaelicobm: Vec<Nciaelicobm>,
 
-    #[serde(rename = "BFBFDLKMADP")]
-    pub bfbfdlkmadp: Vec<Bfbfdlkmadp>,
+    #[serde(rename = "JLGOBEBFKDL")]
+    pub jlgobebfkdl: Vec<Jlgobebfkdl>,
 
-    #[serde(rename = "CANLKLLAFEA")]
-    pub canlkllafea: i64,
+    #[serde(rename = "KHOGICKNONE")]
+    pub khogicknone: i64,
 
-    #[serde(rename = "BOFCMEIOMIN")]
-    pub bofcmeiomin: Option<Bofcmeiomin>,
+    #[serde(rename = "KPKBDDPHBPM")]
+    pub kpkbddphbpm: Option<Kpkbddphbpm>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bfbfdlkmadp {
+pub struct Nciaelicobm {
     #[serde(rename = "type")]
-    pub bfbfdlkmadp_type: Option<BfbfdlkmadpType>,
-
-    #[serde(rename = "DAACPEJHIAN")]
-    pub daacpejhian: Option<bool>,
-
-    #[serde(rename = "GBDFPKAKMMJ")]
-    pub gbdfpkakmmj: Option<Hnckflbakad>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Mfbhlcbpoie {
-    #[serde(rename = "type")]
-    pub mfbhlcbpoie_type: Option<MfbhlcbpoieType>,
+    pub nciaelicobm_type: Option<NciaelicobmType>,
 
     #[serde(rename = "value")]
     pub value: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum BfbfdlkmadpType {
-    #[serde(rename = "CHARACTER_ORDER")]
-    CharacterOrder,
+pub struct Jlgobebfkdl {
+    #[serde(rename = "type")]
+    pub jlgobebfkdl_type: Option<JlgobebfkdlType>,
 
-    #[serde(rename = "CREATE_ORDER")]
-    CreateOrder,
+    #[serde(rename = "AEDFPOBANLB")]
+    pub aedfpobanlb: Option<bool>,
 
-    #[serde(rename = "HAS_TAG")]
-    HasTag,
-
-    #[serde(rename = "HP")]
-    Hp,
-
-    #[serde(rename = "TOKEN_TO_SHOW")]
-    TokenToShow,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Hnckflbakad {
-    #[serde(rename = "GCG_TAG_ELEMENT_ANEMO")]
-    GcgTagElementAnemo,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_CRYO")]
-    GcgTagElementCryo,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_DENDRO")]
-    GcgTagElementDendro,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_ELECTRO")]
-    GcgTagElementElectro,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_GEO")]
-    GcgTagElementGeo,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_HYDRO")]
-    GcgTagElementHydro,
-
-    #[serde(rename = "GCG_TAG_ELEMENT_PYRO")]
-    GcgTagElementPyro,
-
-    #[serde(rename = "GCG_TAG_NONE")]
-    GcgTagNone,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Bofcmeiomin {
-    #[serde(rename = "HEALING")]
-    Healing,
-
-    #[serde(rename = "RELIC")]
-    Relic,
-
-    #[serde(rename = "TALENT")]
-    Talent,
-
-    #[serde(rename = "WEAPON")]
-    Weapon,
+    #[serde(rename = "JLIILFDPKNB")]
+    pub jliilfdpknb: Option<Fndejbomhkh>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -131,7 +71,7 @@ pub enum CardType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum MfbhlcbpoieType {
+pub enum NciaelicobmType {
     #[serde(rename = "ALIVE_CHAR_COUNT")]
     AliveCharCount,
 
@@ -170,16 +110,67 @@ pub enum MfbhlcbpoieType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kbgljjmdlnj {
-    #[serde(rename = "ENEMY")]
-    Enemy,
+pub enum Fndejbomhkh {
+    #[serde(rename = "GCG_TAG_ELEMENT_ANEMO")]
+    GcgTagElementAnemo,
 
-    #[serde(rename = "FRIENDLY")]
-    Friendly,
+    #[serde(rename = "GCG_TAG_ELEMENT_CRYO")]
+    GcgTagElementCryo,
+
+    #[serde(rename = "GCG_TAG_ELEMENT_DENDRO")]
+    GcgTagElementDendro,
+
+    #[serde(rename = "GCG_TAG_ELEMENT_ELECTRO")]
+    GcgTagElementElectro,
+
+    #[serde(rename = "GCG_TAG_ELEMENT_GEO")]
+    GcgTagElementGeo,
+
+    #[serde(rename = "GCG_TAG_ELEMENT_HYDRO")]
+    GcgTagElementHydro,
+
+    #[serde(rename = "GCG_TAG_ELEMENT_PYRO")]
+    GcgTagElementPyro,
+
+    #[serde(rename = "GCG_TAG_NONE")]
+    GcgTagNone,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mgloighbilb {
+pub enum JlgobebfkdlType {
+    #[serde(rename = "CHARACTER_ORDER")]
+    CharacterOrder,
+
+    #[serde(rename = "CREATE_ORDER")]
+    CreateOrder,
+
+    #[serde(rename = "HAS_TAG")]
+    HasTag,
+
+    #[serde(rename = "HP")]
+    Hp,
+
+    #[serde(rename = "TOKEN_TO_SHOW")]
+    TokenToShow,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Kpkbddphbpm {
+    #[serde(rename = "HEALING")]
+    Healing,
+
+    #[serde(rename = "RELIC")]
+    Relic,
+
+    #[serde(rename = "TALENT")]
+    Talent,
+
+    #[serde(rename = "WEAPON")]
+    Weapon,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Lkiildfipkc {
     #[serde(rename = "GCG_TAG_NONE")]
     GcgTagNone,
 
@@ -197,6 +188,15 @@ pub enum Mgloighbilb {
 
     #[serde(rename = "GCG_TAG_WEAPON_SWORD")]
     GcgTagWeaponSword,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Pejdnikkjfh {
+    #[serde(rename = "ENEMY")]
+    Enemy,
+
+    #[serde(rename = "FRIENDLY")]
+    Friendly,
 }
 
 pub fn load() -> Result<GcgChooseExcelConfigData, crate::json::JsonError> {

@@ -9,38 +9,38 @@ pub type AudioPlayerlvConfigData = Vec<AudioPlayerlvConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AudioPlayerlvConfigDatum {
-    #[serde(rename = "CPOBBALBJFI")]
-    pub cpobbalbjfi: i64,
+    #[serde(rename = "FFPKMLDJJOF")]
+    pub ffpkmldjjof: i64,
 
-    #[serde(rename = "IKFLJMKJAAC")]
-    pub ikfljmkjaac: f64,
+    #[serde(rename = "FGFHBKLONMO")]
+    pub fgfhbklonmo: f64,
 
-    #[serde(rename = "EAKKGHAHPNK")]
-    pub eakkghahpnk: i64,
+    #[serde(rename = "HNIKHPCOCGO")]
+    pub hnikhpcocgo: i64,
 
-    #[serde(rename = "IFKAHCGFGNJ")]
-    pub ifkahcgfgnj: f64,
+    #[serde(rename = "CDGHNEANGKJ")]
+    pub cdghneangkj: f64,
 
-    #[serde(rename = "CJDOAOEJAPM")]
-    pub cjdoaoejapm: i64,
+    #[serde(rename = "HBLIDIPOKOK")]
+    pub hblidipokok: i64,
 
-    #[serde(rename = "IHOCKKFOKOA")]
-    pub ihockkfokoa: i64,
+    #[serde(rename = "KFHKLCHHPCO")]
+    pub kfhklchhpco: i64,
 
-    #[serde(rename = "FFAMLNLCDJA")]
-    pub ffamlnlcdja: Option<f64>,
+    #[serde(rename = "GCNPPKPKKMA")]
+    pub gcnppkpkkma: Option<f64>,
 
-    #[serde(rename = "EKCHBMPLEIF")]
-    pub ekchbmpleif: Option<f64>,
+    #[serde(rename = "GEDJPNCOFIH")]
+    pub gedjpncofih: Option<f64>,
 
-    #[serde(rename = "AAHLOBEAAIB")]
-    pub aahlobeaaib: Option<i64>,
+    #[serde(rename = "FPGHKEADLLO")]
+    pub fpghkeadllo: Option<i64>,
 
-    #[serde(rename = "OFCCGFKPBCC")]
-    pub ofccgfkpbcc: Option<f64>,
+    #[serde(rename = "KFGPCCCFMAJ")]
+    pub kfgpcccfmaj: Option<f64>,
 
-    #[serde(rename = "NCJHDOOFPAD")]
-    pub ncjhdoofpad: Option<f64>,
+    #[serde(rename = "KJDAJHCENGO")]
+    pub kjdajhcengo: Option<f64>,
 }
 
 pub fn load() -> Result<AudioPlayerlvConfigData, crate::json::JsonError> {

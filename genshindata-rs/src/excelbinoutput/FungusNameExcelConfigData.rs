@@ -9,14 +9,14 @@ pub type FungusNameExcelConfigData = Vec<FungusNameExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FungusNameExcelConfigDatum {
-    #[serde(rename = "BHAFOPCHKDC")]
-    pub bhafopchkdc: i64,
+    #[serde(rename = "NBFEJJPNCNK")]
+    pub nbfejjpncnk: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "JEEAKKMEJKC")]
-    pub jeeakkmejkc: i64,
+    #[serde(rename = "JIPFPPCONLJ")]
+    pub jipfppconlj: i64,
 }
 
 pub fn load() -> Result<FungusNameExcelConfigData, crate::json::JsonError> {

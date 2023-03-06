@@ -21,17 +21,17 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "OBAOGFIILAL")]
-    pub obaogfiilal: Vec<i64>,
+    #[serde(rename = "MOJECJHNMMC")]
+    pub mojecjhnmmc: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "BACGDFGGKIG")]
-    pub bacgdfggkig: Vec<i64>,
+    #[serde(rename = "POLELOHLAGG")]
+    pub polelohlagg: Vec<i64>,
 
-    #[serde(rename = "EJMIIENEJJD")]
-    pub ejmiienejjd: Vec<i64>,
+    #[serde(rename = "OIEEBBFDNLM")]
+    pub oieebbfdnlm: Vec<i64>,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
@@ -39,38 +39,38 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "FINPCANEAKL")]
-    pub finpcaneakl: Vec<Finpcaneakl>,
+    #[serde(rename = "NIPKIPLMMME")]
+    pub nipkiplmmme: Vec<Nipkiplmmme>,
 
-    #[serde(rename = "AGNGGOABDPP")]
-    pub agnggoabdpp: Vec<Agnggoabdpp>,
+    #[serde(rename = "MPHLMPHKHIG")]
+    pub mphlmphkhig: Vec<Mphlmphkhig>,
 
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
 
-    #[serde(rename = "BAAOHHIDGAB")]
-    pub baaohhidgab: i64,
+    #[serde(rename = "DLGNPKDKADP")]
+    pub dlgnpkdkadp: i64,
 
-    #[serde(rename = "JOOCMELANNI")]
-    pub joocmelanni: i64,
+    #[serde(rename = "NGCCGNMHJGN")]
+    pub ngccgnmhjgn: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Agnggoabdpp {
-    #[serde(rename = "FOCFLDNPCNJ")]
-    pub focfldnpcnj: Vec<i64>,
+pub struct Mphlmphkhig {
+    #[serde(rename = "DAADPONJKLG")]
+    pub daadponjklg: Vec<i64>,
 
-    #[serde(rename = "ADKNKJIPKAN")]
-    pub adknkjipkan: Vec<i64>,
+    #[serde(rename = "FAFPLJMMCEA")]
+    pub fafpljmmcea: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Finpcaneakl {
-    #[serde(rename = "FOCFLDNPCNJ")]
-    pub focfldnpcnj: Vec<String>,
+pub struct Nipkiplmmme {
+    #[serde(rename = "DAADPONJKLG")]
+    pub daadponjklg: Vec<String>,
 
-    #[serde(rename = "ADKNKJIPKAN")]
-    pub adknkjipkan: Vec<String>,
+    #[serde(rename = "FAFPLJMMCEA")]
+    pub fafpljmmcea: Vec<String>,
 }
 
 pub fn load() -> Result<ActivityCrystalLinkLevelExcelConfigData, crate::json::JsonError> {

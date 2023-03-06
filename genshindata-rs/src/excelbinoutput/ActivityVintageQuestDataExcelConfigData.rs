@@ -15,17 +15,17 @@ pub struct ActivityVintageQuestDataExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "MMLOKMKDJGC")]
-    pub mmlokmkdjgc: i64,
+    #[serde(rename = "IKBBOKCILNN")]
+    pub ikbbokcilnn: i64,
 
     #[serde(rename = "chapterTitleTextMapHash")]
     pub chapter_title_text_map_hash: i64,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,

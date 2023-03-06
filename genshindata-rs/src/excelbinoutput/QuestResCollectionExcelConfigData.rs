@@ -12,8 +12,8 @@ pub struct QuestResCollectionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MMLJNKFFBIL")]
-    pub mmljnkffbil: Option<bool>,
+    #[serde(rename = "NFIJDLJNKFH")]
+    pub nfijdljnkfh: Option<bool>,
 }
 
 pub fn load() -> Result<QuestResCollectionExcelConfigData, crate::json::JsonError> {

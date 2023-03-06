@@ -15,23 +15,23 @@ pub struct ActivityCharAmusementLevelExcelConfigDatum {
     #[serde(rename = "weight")]
     pub weight: i64,
 
-    #[serde(rename = "KMJBNNBFBML")]
-    pub kmjbnnbfbml: Kmjbnnbfbml,
+    #[serde(rename = "LLJKOKNFJNL")]
+    pub lljkoknfjnl: Lljkoknfjnl,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "EKDNHBNBNBK")]
-    pub ekdnhbnbnbk: i64,
+    #[serde(rename = "NKHOMHEKBEM")]
+    pub nkhomhekbem: i64,
 
-    #[serde(rename = "NNDHNKHDNFG")]
-    pub nndhnkhdnfg: i64,
+    #[serde(rename = "JAMONPDDPFP")]
+    pub jamonpddpfp: i64,
 
-    #[serde(rename = "OBAOGFIILAL")]
-    pub obaogfiilal: Vec<i64>,
+    #[serde(rename = "MOJECJHNMMC")]
+    pub mojecjhnmmc: Vec<i64>,
 
-    #[serde(rename = "CHEPEFOEAHN")]
-    pub chepefoeahn: String,
+    #[serde(rename = "BDEKNGDIJOH")]
+    pub bdekngdijoh: String,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
@@ -39,12 +39,12 @@ pub struct ActivityCharAmusementLevelExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "JLCEFDOFDGF")]
-    pub jlcefdofdgf: i64,
+    #[serde(rename = "IAIAOJMOAFG")]
+    pub iaiaojmoafg: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kmjbnnbfbml {
+pub enum Lljkoknfjnl {
     #[serde(rename = "LEVEL_TYPE_AMUSEMENT")]
     LevelTypeAmusement,
 

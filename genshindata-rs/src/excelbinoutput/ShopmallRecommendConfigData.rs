@@ -19,7 +19,7 @@ pub struct ShopmallRecommendConfigDatum {
     pub shop_type: String,
 
     #[serde(rename = "condVec")]
-    pub cond_vec: Vec<i64>,
+    pub cond_vec: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "configIdVec")]
     pub config_id_vec: Vec<i64>,
@@ -35,15 +35,6 @@ pub struct ShopmallRecommendConfigDatum {
 
     #[serde(rename = "colShowIconName")]
     pub col_show_icon_name: Vec<Option<serde_json::Value>>,
-
-    #[serde(rename = "tabType")]
-    pub tab_type: Option<String>,
-
-    #[serde(rename = "AGNPDLJOCHD")]
-    pub agnpdljochd: Option<i64>,
-
-    #[serde(rename = "HCGIBGBJPMG")]
-    pub hcgibgbjpmg: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -51,11 +42,11 @@ pub struct GoodsIdVec {
     #[serde(rename = "type")]
     pub goods_id_vec_type: Option<String>,
 
-    #[serde(rename = "KONEHADGJDJ")]
-    pub konehadgjdj: String,
+    #[serde(rename = "OGKLGOLOLOO")]
+    pub ogklgololoo: String,
 
-    #[serde(rename = "GBCDDNDOKAJ")]
-    pub gbcddndokaj: String,
+    #[serde(rename = "LOJDHOINDLE")]
+    pub lojdhoindle: String,
 }
 
 pub fn load() -> Result<ShopmallRecommendConfigData, crate::json::JsonError> {

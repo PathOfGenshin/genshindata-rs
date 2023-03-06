@@ -18,26 +18,26 @@ pub struct DigOverAllExcelConfigDatum {
     #[serde(rename = "duration")]
     pub duration: i64,
 
-    #[serde(rename = "LLBGHCFIAGF")]
-    pub llbghcfiagf: i64,
+    #[serde(rename = "KAJHDDMFBEO")]
+    pub kajhddmfbeo: i64,
 
     #[serde(rename = "questID")]
     pub quest_id: i64,
 
-    #[serde(rename = "FHKGFOCNMNI")]
-    pub fhkgfocnmni: i64,
+    #[serde(rename = "KDHLGCHNPOJ")]
+    pub kdhlgchnpoj: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "MGEGNAJPJFH")]
-    pub mgegnajpjfh: i64,
+    #[serde(rename = "HLIJPHBCLCI")]
+    pub hlijphbclci: i64,
 
-    #[serde(rename = "NJHHJBLDHJK")]
-    pub njhhjbldhjk: i64,
+    #[serde(rename = "FBGOGHLANOG")]
+    pub fbgoghlanog: i64,
 
-    #[serde(rename = "NHDHELMJDBK")]
-    pub nhdhelmjdbk: i64,
+    #[serde(rename = "GPPGELFPAMA")]
+    pub gppgelfpama: i64,
 }
 
 pub fn load() -> Result<DigOverAllExcelConfigData, crate::json::JsonError> {

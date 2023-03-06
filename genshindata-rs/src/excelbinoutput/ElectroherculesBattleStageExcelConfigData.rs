@@ -15,44 +15,44 @@ pub struct ElectroherculesBattleStageExcelConfigDatum {
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
 
-    #[serde(rename = "NCHJIOAEMEA")]
-    pub nchjioaemea: i64,
+    #[serde(rename = "BHKIMJOAEHE")]
+    pub bhkimjoaehe: i64,
 
-    #[serde(rename = "KHAKJEOMIAC")]
-    pub khakjeomiac: Vec<i64>,
+    #[serde(rename = "LKJEHDNDCNJ")]
+    pub lkjehdndcnj: Vec<i64>,
 
-    #[serde(rename = "DOHKEDMCCHK")]
-    pub dohkedmcchk: i64,
+    #[serde(rename = "AMHKGAEEJIP")]
+    pub amhkgaeejip: i64,
 
-    #[serde(rename = "NOLJOMCJGIB")]
-    pub noljomcjgib: i64,
+    #[serde(rename = "FKCGAGIBPBF")]
+    pub fkcgagibpbf: i64,
 
-    #[serde(rename = "EKDFABPEMLI")]
-    pub ekdfabpemli: i64,
+    #[serde(rename = "DCPPDDHEAJF")]
+    pub dcppddheajf: i64,
 
-    #[serde(rename = "HFPMGBHIEBG")]
-    pub hfpmgbhiebg: String,
+    #[serde(rename = "KBJMNOBIPBJ")]
+    pub kbjmnobipbj: String,
 
-    #[serde(rename = "GEELAMBOKAC")]
-    pub geelambokac: String,
+    #[serde(rename = "GKILLAJFGJA")]
+    pub gkillajfgja: String,
 
-    #[serde(rename = "MBMHENNOPNH")]
-    pub mbmhennopnh: String,
+    #[serde(rename = "IEHCEHJMAOP")]
+    pub iehcehjmaop: String,
 
-    #[serde(rename = "ICNDAMONABN")]
-    pub icndamonabn: String,
+    #[serde(rename = "ICLHINBKGMK")]
+    pub iclhinbkgmk: String,
 
-    #[serde(rename = "KDHLCBPEFKA")]
-    pub kdhlcbpefka: i64,
+    #[serde(rename = "NMFPCOHMNGH")]
+    pub nmfpcohmngh: i64,
 
-    #[serde(rename = "EPBPJPOGPPC")]
-    pub epbpjpogppc: i64,
+    #[serde(rename = "BEBOFNCNAIO")]
+    pub bebofncnaio: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "NOIEMHJHNAL")]
-    pub noiemhjhnal: Option<i64>,
+    #[serde(rename = "OFMEOIAFGBD")]
+    pub ofmeoiafgbd: Option<i64>,
 }
 
 pub fn load() -> Result<ElectroherculesBattleStageExcelConfigData, crate::json::JsonError> {

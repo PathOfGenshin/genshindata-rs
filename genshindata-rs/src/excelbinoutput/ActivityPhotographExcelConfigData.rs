@@ -15,50 +15,50 @@ pub struct ActivityPhotographExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "DEOAPECFCEI")]
-    pub deoapecfcei: Vec<i64>,
+    #[serde(rename = "MKHHFPGFGOG")]
+    pub mkhhfpgfgog: Vec<i64>,
 
-    #[serde(rename = "EGJOOOCFEPN")]
-    pub egjooocfepn: Vec<i64>,
+    #[serde(rename = "NHMNJPFNHPN")]
+    pub nhmnjpfnhpn: Vec<i64>,
 
-    #[serde(rename = "JDPBDMPFCEA")]
-    pub jdpbdmpfcea: f64,
+    #[serde(rename = "JEMEJHHAOPF")]
+    pub jemejhhaopf: f64,
 
-    #[serde(rename = "BICEIDEMOAM")]
-    pub biceidemoam: f64,
+    #[serde(rename = "LDFEPJKENAB")]
+    pub ldfepjkenab: f64,
 
-    #[serde(rename = "DKCNNJGPLHM")]
-    pub dkcnnjgplhm: f64,
+    #[serde(rename = "DEFPLEOMNEB")]
+    pub defpleomneb: f64,
 
-    #[serde(rename = "JCDJKKMGHKM")]
-    pub jcdjkkmghkm: f64,
+    #[serde(rename = "DPDOCIJOFLL")]
+    pub dpdocijofll: f64,
 
-    #[serde(rename = "FCAMPMICPJC")]
-    pub fcampmicpjc: f64,
+    #[serde(rename = "OFIGMKKHALO")]
+    pub ofigmkkhalo: f64,
 
-    #[serde(rename = "FHLIAPAABPN")]
-    pub fhliapaabpn: f64,
+    #[serde(rename = "NCEPAMGMIAB")]
+    pub ncepamgmiab: f64,
 
-    #[serde(rename = "BJGODMEIHOP")]
-    pub bjgodmeihop: f64,
+    #[serde(rename = "NNOLPKGEFGF")]
+    pub nnolpkgefgf: f64,
 
-    #[serde(rename = "BLIDGKMLFGK")]
-    pub blidgkmlfgk: i64,
+    #[serde(rename = "NDDIBHFJFPE")]
+    pub nddibhfjfpe: i64,
 
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "MONMNGHHOMC")]
-    pub monmnghhomc: f64,
+    #[serde(rename = "ELOEONEPNGF")]
+    pub eloeonepngf: f64,
 
-    #[serde(rename = "CJBJCFABHLO")]
-    pub cjbjcfabhlo: Vec<i64>,
+    #[serde(rename = "AGMGAEMPIEA")]
+    pub agmgaempiea: Vec<i64>,
 
-    #[serde(rename = "PAEEONJBLPG")]
-    pub paeeonjblpg: Vec<i64>,
+    #[serde(rename = "OJHNMCJGPMO")]
+    pub ojhnmcjgpmo: Vec<i64>,
 
-    #[serde(rename = "NHMNGNBBNCG")]
-    pub nhmngnbbncg: Vec<i64>,
+    #[serde(rename = "HGOMLONOAMB")]
+    pub hgomlonoamb: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityPhotographExcelConfigData, crate::json::JsonError> {

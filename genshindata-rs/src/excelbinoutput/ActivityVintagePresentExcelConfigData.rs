@@ -9,11 +9,11 @@ pub type ActivityVintagePresentExcelConfigData = Vec<ActivityVintagePresentExcel
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityVintagePresentExcelConfigDatum {
-    #[serde(rename = "FHJBPCPCMFD")]
-    pub fhjbpcpcmfd: i64,
+    #[serde(rename = "ABEEIBGOJLE")]
+    pub abeeibgojle: i64,
 
-    #[serde(rename = "FLIIOJGMGPK")]
-    pub fliiojgmgpk: i64,
+    #[serde(rename = "CMBPCEKICHA")]
+    pub cmbpcekicha: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -21,30 +21,30 @@ pub struct ActivityVintagePresentExcelConfigDatum {
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "AGGAKKMDIMF")]
-    pub aggakkmdimf: Vec<f64>,
+    #[serde(rename = "KBBKIDANABA")]
+    pub kbbkidanaba: Vec<f64>,
 
-    #[serde(rename = "JAKDJJAGPFP")]
-    pub jakdjjagpfp: f64,
+    #[serde(rename = "FHOGKMBMDMB")]
+    pub fhogkmbmdmb: f64,
 
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "LPOAPJMGGEJ")]
-    pub lpoapjmggej: Lpoapjmggej,
+    #[serde(rename = "DIGFAGCPKIK")]
+    pub digfagcpkik: Digfagcpkik,
 
-    #[serde(rename = "FFFLLMCCIBO")]
-    pub fffllmccibo: String,
+    #[serde(rename = "HFHCLMGHCPJ")]
+    pub hfhclmghcpj: String,
 
-    #[serde(rename = "NAFEALAKKCO")]
-    pub nafealakkco: i64,
+    #[serde(rename = "EGKNILHMFOA")]
+    pub egknilhmfoa: i64,
 
-    #[serde(rename = "ABDHNKFGBJE")]
-    pub abdhnkfgbje: i64,
+    #[serde(rename = "OIDLDNMPBPI")]
+    pub oidldnmpbpi: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Lpoapjmggej {
+pub enum Digfagcpkik {
     #[serde(rename = "PRESENT_TYPE_NORMAL")]
     PresentTypeNormal,
 

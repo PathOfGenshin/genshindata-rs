@@ -24,11 +24,11 @@ pub struct MusicInfoConfigDatum {
     #[serde(rename = "musicDescTextMapHash")]
     pub music_desc_text_map_hash: i64,
 
-    #[serde(rename = "JMKAHKHNGDL")]
-    pub jmkahkhngdl: i64,
+    #[serde(rename = "EOONMCKBMDD")]
+    pub eoonmckbmdd: i64,
 
-    #[serde(rename = "FPIFPJNBEEP")]
-    pub fpifpjnbeep: i64,
+    #[serde(rename = "FJHPDAHPBBL")]
+    pub fjhpdahpbbl: i64,
 
     #[serde(rename = "condID")]
     pub cond_id: i64,
@@ -39,8 +39,8 @@ pub struct MusicInfoConfigDatum {
     #[serde(rename = "pointID")]
     pub point_id: i64,
 
-    #[serde(rename = "ENBCBABJBLD")]
-    pub enbcbabjbld: i64,
+    #[serde(rename = "JILPKMCILIM")]
+    pub jilpkmcilim: i64,
 }
 
 pub fn load() -> Result<MusicInfoConfigData, crate::json::JsonError> {

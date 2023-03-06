@@ -12,14 +12,14 @@ pub struct GravenInnocenceBossDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "ONGADJOKGMA")]
-    pub ongadjokgma: i64,
+    #[serde(rename = "PEOAACMJNMC")]
+    pub peoaacmjnmc: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "GINKPAAOPHM")]
-    pub ginkpaaophm: i64,
+    #[serde(rename = "BFHFKMHHBCL")]
+    pub bfhfkmhhbcl: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceBossDataExcelConfigData, crate::json::JsonError> {

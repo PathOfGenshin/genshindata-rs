@@ -12,44 +12,44 @@ pub struct BartenderBasicExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "APMJBFLKCID")]
-    pub apmjbflkcid: i64,
+    #[serde(rename = "BOFDBFKGDJH")]
+    pub bofdbfkgdjh: i64,
 
-    #[serde(rename = "PPOPHIPFEPC")]
-    pub ppophipfepc: i64,
+    #[serde(rename = "GNFOJGKJFLC")]
+    pub gnfojgkjflc: i64,
 
-    #[serde(rename = "OKBHANCDMPG")]
-    pub okbhancdmpg: i64,
+    #[serde(rename = "NFIMGMNGBCG")]
+    pub nfimgmngbcg: i64,
 
-    #[serde(rename = "BJGFBHEIBMA")]
-    pub bjgfbheibma: i64,
+    #[serde(rename = "CIGGEPPPBOM")]
+    pub ciggepppbom: i64,
 
-    #[serde(rename = "DMIPLGOCFEB")]
-    pub dmiplgocfeb: i64,
+    #[serde(rename = "BNPANELDLFB")]
+    pub bnpaneldlfb: i64,
 
-    #[serde(rename = "DAANKKEGCJL")]
-    pub daankkegcjl: i64,
+    #[serde(rename = "HAIDOPGOKEH")]
+    pub haidopgokeh: i64,
 
-    #[serde(rename = "MMGDOKLELBC")]
-    pub mmgdoklelbc: i64,
+    #[serde(rename = "JBNKOCGDNIH")]
+    pub jbnkocgdnih: i64,
 
-    #[serde(rename = "NBEIBAPKILJ")]
-    pub nbeibapkilj: i64,
+    #[serde(rename = "AJBDDAINANB")]
+    pub ajbddainanb: i64,
 
-    #[serde(rename = "NJLMCLNOEAJ")]
-    pub njlmclnoeaj: i64,
+    #[serde(rename = "AGGHNPBLEJB")]
+    pub agghnpblejb: i64,
 
-    #[serde(rename = "JMPDOPFAMPC")]
-    pub jmpdopfampc: i64,
+    #[serde(rename = "JLLMFCOEHAK")]
+    pub jllmfcoehak: i64,
 
-    #[serde(rename = "JLDJFLMAMME")]
-    pub jldjflmamme: i64,
+    #[serde(rename = "NMCNPKNEOAA")]
+    pub nmcnpkneoaa: i64,
 
-    #[serde(rename = "COEHABLOLMM")]
-    pub coehablolmm: i64,
+    #[serde(rename = "PKLAGBJEOGE")]
+    pub pklagbjeoge: i64,
 
-    #[serde(rename = "AOJMGOEFHIF")]
-    pub aojmgoefhif: i64,
+    #[serde(rename = "BPHMOAOLHHB")]
+    pub bphmoaolhhb: i64,
 }
 
 pub fn load() -> Result<BartenderBasicExcelConfigData, crate::json::JsonError> {

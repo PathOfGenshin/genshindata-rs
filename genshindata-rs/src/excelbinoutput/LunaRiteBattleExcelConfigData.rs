@@ -12,36 +12,36 @@ pub struct LunaRiteBattleExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "EINIPCMDHJJ")]
-    pub einipcmdhjj: Einipcmdhjj,
+    #[serde(rename = "EKJOMEDJHHI")]
+    pub ekjomedjhhi: Ekjomedjhhi,
 
-    #[serde(rename = "OPDNKFGIGCG")]
-    pub opdnkfgigcg: Option<i64>,
+    #[serde(rename = "PDBIONGECJF")]
+    pub pdbiongecjf: Option<i64>,
 
-    #[serde(rename = "PJHLICCHJFA")]
-    pub pjhlicchjfa: i64,
+    #[serde(rename = "PILMHKEJJNI")]
+    pub pilmhkejjni: i64,
 
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "IHCGHCEGDNE")]
-    pub ihcghcegdne: String,
+    #[serde(rename = "PLLBHDKHIEO")]
+    pub pllbhdkhieo: String,
 
-    #[serde(rename = "AJFJEMAOJHJ")]
-    pub ajfjemaojhj: String,
+    #[serde(rename = "PKOFNGDFPKM")]
+    pub pkofngdfpkm: String,
 
-    #[serde(rename = "GNCNAJGELKJ")]
-    pub gncnajgelkj: String,
+    #[serde(rename = "EDCLMONBKMK")]
+    pub edclmonbkmk: String,
 
-    #[serde(rename = "HONEABAMEOE")]
-    pub honeabameoe: i64,
+    #[serde(rename = "HJBBPIHKKCK")]
+    pub hjbbpihkkck: i64,
 
-    #[serde(rename = "CNCBIDBLHCD")]
-    pub cncbidblhcd: i64,
+    #[serde(rename = "FLDBFFFDIKP")]
+    pub fldbfffdikp: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Einipcmdhjj {
+pub enum Ekjomedjhhi {
     #[serde(rename = "LUNA_RITE_REGION_TYPE_DRAGONSPINE")]
     LunaRiteRegionTypeDragonspine,
 

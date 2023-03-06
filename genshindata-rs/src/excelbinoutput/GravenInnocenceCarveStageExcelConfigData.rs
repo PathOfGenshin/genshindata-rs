@@ -12,8 +12,8 @@ pub struct GravenInnocenceCarveStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NEFLEHJGBGP")]
-    pub neflehjgbgp: i64,
+    #[serde(rename = "PJKADLHCPNF")]
+    pub pjkadlhcpnf: i64,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,

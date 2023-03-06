@@ -9,17 +9,26 @@ pub type MusicInstrumentConfigData = Vec<MusicInstrumentConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicInstrumentConfigDatum {
-    #[serde(rename = "ENBCBABJBLD")]
-    pub enbcbabjbld: i64,
+    #[serde(rename = "JILPKMCILIM")]
+    pub jilpkmcilim: i64,
 
-    #[serde(rename = "EMHJJGKAGBG")]
-    pub emhjjgkagbg: i64,
+    #[serde(rename = "OIPFLLCBBBG")]
+    pub oipfllcbbbg: i64,
 
-    #[serde(rename = "IPNEKKGCHIE")]
-    pub ipnekkgchie: i64,
+    #[serde(rename = "GEDPLNBBAAJ")]
+    pub gedplnbbaaj: i64,
 
-    #[serde(rename = "DMDIDKGFGKP")]
-    pub dmdidkgfgkp: String,
+    #[serde(rename = "IGJALPMGIPB")]
+    pub igjalpmgipb: String,
+
+    #[serde(rename = "DIEDIBLNIEP")]
+    pub diediblniep: String,
+
+    #[serde(rename = "CONMLLOHLDB")]
+    pub conmllohldb: String,
+
+    #[serde(rename = "LPKBEAEHGDE")]
+    pub lpkbeaehgde: String,
 }
 
 pub fn load() -> Result<MusicInstrumentConfigData, crate::json::JsonError> {

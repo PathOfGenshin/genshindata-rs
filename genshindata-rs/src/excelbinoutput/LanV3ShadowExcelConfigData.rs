@@ -12,44 +12,44 @@ pub struct LanV3ShadowExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "ABNKCOAELEN")]
-    pub abnkcoaelen: f64,
+    #[serde(rename = "FOMJNLGGKNL")]
+    pub fomjnlggknl: f64,
 
-    #[serde(rename = "GFKJJAELCNF")]
-    pub gfkjjaelcnf: f64,
+    #[serde(rename = "ODJOHDKJLDN")]
+    pub odjohdkjldn: f64,
 
-    #[serde(rename = "ELJPILANMFI")]
-    pub eljpilanmfi: f64,
+    #[serde(rename = "BGDEPHCINJH")]
+    pub bgdephcinjh: f64,
 
-    #[serde(rename = "EKCNIAICABI")]
-    pub ekcniaicabi: f64,
+    #[serde(rename = "JHFLKPOBEHG")]
+    pub jhflkpobehg: f64,
 
-    #[serde(rename = "MLKLOHCAGEP")]
-    pub mlklohcagep: f64,
+    #[serde(rename = "DMHPBGKNPKA")]
+    pub dmhpbgknpka: f64,
 
-    #[serde(rename = "LIDJGIDOGFB")]
-    pub lidjgidogfb: i64,
+    #[serde(rename = "OHLBOKEAIIP")]
+    pub ohlbokeaiip: i64,
 
-    #[serde(rename = "NPJCBPNFNFK")]
-    pub npjcbpnfnfk: i64,
+    #[serde(rename = "NOEHBCJGGBM")]
+    pub noehbcjggbm: i64,
 
-    #[serde(rename = "BACPOACGFCA")]
-    pub bacpoacgfca: i64,
+    #[serde(rename = "OFNJIIEPIPP")]
+    pub ofnjiiepipp: i64,
 
-    #[serde(rename = "NJHLPEIIGBM")]
-    pub njhlpeiigbm: Vec<f64>,
+    #[serde(rename = "NMJGLMNMAOF")]
+    pub nmjglmnmaof: Vec<f64>,
 
-    #[serde(rename = "FLBFLCBLKPJ")]
-    pub flbflcblkpj: f64,
+    #[serde(rename = "JFBACFNCLKP")]
+    pub jfbacfnclkp: f64,
 
-    #[serde(rename = "OLGHFGHOKBM")]
-    pub olghfghokbm: i64,
+    #[serde(rename = "CKBAMPKHNKK")]
+    pub ckbampkhnkk: i64,
 
-    #[serde(rename = "LMGBKMHFFOK")]
-    pub lmgbkmhffok: i64,
+    #[serde(rename = "PGBFEDIBFAH")]
+    pub pgbfedibfah: i64,
 
-    #[serde(rename = "PMNMBBLJFPA")]
-    pub pmnmbbljfpa: i64,
+    #[serde(rename = "AMFDEDFHGJG")]
+    pub amfdedfhgjg: i64,
 }
 
 pub fn load() -> Result<LanV3ShadowExcelConfigData, crate::json::JsonError> {

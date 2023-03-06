@@ -9,20 +9,20 @@ pub type AttackAttenuationExcelConfigData = Vec<AttackAttenuationExcelConfigDatu
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AttackAttenuationExcelConfigDatum {
-    #[serde(rename = "AFHKNOIDNIG")]
-    pub afhknoidnig: String,
+    #[serde(rename = "FADHHLLAEFN")]
+    pub fadhhllaefn: String,
 
-    #[serde(rename = "CBFECOPMGMN")]
-    pub cbfecopmgmn: f64,
+    #[serde(rename = "FIDBKFHIELH")]
+    pub fidbkfhielh: f64,
 
-    #[serde(rename = "APEMGMHHJIH")]
-    pub apemgmhhjih: Vec<f64>,
+    #[serde(rename = "LBBCONIKJFF")]
+    pub lbbconikjff: Vec<f64>,
 
-    #[serde(rename = "GIMPEHLIEFG")]
-    pub gimpehliefg: Vec<f64>,
+    #[serde(rename = "ECHCLFGMJHA")]
+    pub echclfgmjha: Vec<f64>,
 
-    #[serde(rename = "EOFIKAIIJLC")]
-    pub eofikaiijlc: Vec<f64>,
+    #[serde(rename = "HILNLABDOEO")]
+    pub hilnlabdoeo: Vec<f64>,
 }
 
 pub fn load() -> Result<AttackAttenuationExcelConfigData, crate::json::JsonError> {

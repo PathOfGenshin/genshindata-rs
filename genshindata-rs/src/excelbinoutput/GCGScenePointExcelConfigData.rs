@@ -15,32 +15,32 @@ pub struct GcgScenePointExcelConfigDatum {
     #[serde(rename = "pos")]
     pub pos: Vec<f64>,
 
-    #[serde(rename = "OELGFMCEKAC")]
-    pub oelgfmcekac: f64,
+    #[serde(rename = "DGFNNFACJCG")]
+    pub dgfnnfacjcg: f64,
 
-    #[serde(rename = "INCNPFFFHIJ")]
-    pub incnpfffhij: Option<Incnpfffhij>,
+    #[serde(rename = "MHGMMHNIPCP")]
+    pub mhgmmhnipcp: Option<Mhgmmhnipcp>,
 
-    #[serde(rename = "NNEMGINJCFC")]
-    pub nnemginjcfc: Vec<Nnemginjcfc>,
+    #[serde(rename = "CILGBCJDGAL")]
+    pub cilgbcjdgal: Vec<Cilgbcjdgal>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Incnpfffhij {
-    #[serde(rename = "POINT_MOTION_SIT")]
-    PointMotionSit,
-
-    #[serde(rename = "POINT_MOTION_STAND")]
-    PointMotionStand,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Nnemginjcfc {
+pub enum Cilgbcjdgal {
     #[serde(rename = "SUPPORT_CALL")]
     SupportCall,
 
     #[serde(rename = "SUPPORT_NONE")]
     SupportNone,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mhgmmhnipcp {
+    #[serde(rename = "POINT_MOTION_SIT")]
+    PointMotionSit,
+
+    #[serde(rename = "POINT_MOTION_STAND")]
+    PointMotionStand,
 }
 
 pub fn load() -> Result<GcgScenePointExcelConfigData, crate::json::JsonError> {

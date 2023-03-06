@@ -21,20 +21,20 @@ pub struct ActivityPotionLevelExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "HIAJJFFPOEF")]
-    pub hiajjffpoef: i64,
+    #[serde(rename = "CLNMMCLKPNI")]
+    pub clnmmclkpni: i64,
 
-    #[serde(rename = "KDJOHGJOJHB")]
-    pub kdjohgjojhb: Vec<i64>,
+    #[serde(rename = "NLICGPCOFLL")]
+    pub nlicgpcofll: Vec<i64>,
 
-    #[serde(rename = "NMKMCPCFIBA")]
-    pub nmkmcpcfiba: Vec<i64>,
+    #[serde(rename = "EBEIAGCANEP")]
+    pub ebeiagcanep: Vec<i64>,
 
-    #[serde(rename = "PCHMEFOBOLI")]
-    pub pchmefoboli: Vec<i64>,
+    #[serde(rename = "GEEOPLAAGKD")]
+    pub geeoplaagkd: Vec<i64>,
 
-    #[serde(rename = "IMMGDJCLDAF")]
-    pub immgdjcldaf: Vec<i64>,
+    #[serde(rename = "ELMMNKHOPAP")]
+    pub elmmnkhopap: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityPotionLevelExcelConfigData, crate::json::JsonError> {

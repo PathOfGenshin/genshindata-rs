@@ -30,11 +30,11 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "templateEmotionPath")]
     pub template_emotion_path: TemplateEmotionPath,
 
-    #[serde(rename = "GIJLPIOFACI")]
-    pub gijlpiofaci: Vec<i64>,
+    #[serde(rename = "KKNGKOPIHGB")]
+    pub kkngkopihgb: Vec<i64>,
 
-    #[serde(rename = "KBBNAELIOLC")]
-    pub kbbnaeliolc: i64,
+    #[serde(rename = "KKAKJBPCGDC")]
+    pub kkakjbpcgdc: i64,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -42,8 +42,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "HGKPLCICKMD")]
-    pub hgkplcickmd: i64,
+    #[serde(rename = "KIFHDDMCNHB")]
+    pub kifhddmcnhb: i64,
 
     #[serde(rename = "campID")]
     pub camp_id: i64,
@@ -57,8 +57,8 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "hasAudio")]
     pub has_audio: Option<bool>,
 
-    #[serde(rename = "DEMIMHAPADI")]
-    pub demimhapadi: Option<i64>,
+    #[serde(rename = "LNAGABBOOFN")]
+    pub lnagabboofn: Option<i64>,
 
     #[serde(rename = "isDaily")]
     pub is_daily: Option<bool>,
@@ -78,11 +78,14 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "firstMetId")]
     pub first_met_id: Option<i64>,
 
-    #[serde(rename = "LGLGJOKJMNM")]
-    pub lglgjokjmnm: Option<bool>,
+    #[serde(rename = "DABMOPGBHGA")]
+    pub dabmopgbhga: Option<bool>,
 
     #[serde(rename = "billboardType")]
     pub billboard_type: Option<BillboardType>,
+
+    #[serde(rename = "NBAOBKNPGMD")]
+    pub nbaobknpgmd: Option<i64>,
 
     #[serde(rename = "prefabPathHash")]
     pub prefab_path_hash: Option<i64>,
@@ -90,17 +93,14 @@ pub struct NpcExcelConfigDatum {
     #[serde(rename = "luaDataIndex")]
     pub lua_data_index: Option<i64>,
 
-    #[serde(rename = "ICPJAPECEAJ")]
-    pub icpjapeceaj: Option<i64>,
-
     #[serde(rename = "jsonPathHash")]
     pub json_path_hash: Option<bool>,
 
     #[serde(rename = "animatorConfigPathHash")]
     pub animator_config_path_hash: Option<bool>,
 
-    #[serde(rename = "OKLPLMJOPPC")]
-    pub oklplmjoppc: Option<Oklplmjoppc>,
+    #[serde(rename = "BJLOOCFPOPC")]
+    pub bjloocfpopc: Option<Bjloocfpopc>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -119,9 +119,6 @@ pub enum BillboardIcon {
 
     #[serde(rename = "UI_NPCTopIcon_Activity_DuelHeart")]
     UiNpcTopIconActivityDuelHeart,
-
-    #[serde(rename = "UI_NPCTopIcon_Activity_FleurFair")]
-    UiNpcTopIconActivityFleurFair,
 
     #[serde(rename = "UI_NPCTopIcon_Activity_Gear")]
     UiNpcTopIconActivityGear,
@@ -251,6 +248,12 @@ pub enum BillboardType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub enum Bjloocfpopc {
+    #[serde(rename = "NPC_SPECIAL_ARANARA")]
+    NpcSpecialAranara,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub enum BodyType {
     #[serde(rename = "AVATAR_BOY")]
     AvatarBoy,
@@ -278,6 +281,9 @@ pub enum BodyType {
 
     #[serde(rename = "Chongyun")]
     Chongyun,
+
+    #[serde(rename = "Collei")]
+    Collei,
 
     #[serde(rename = "Diona")]
     Diona,
@@ -333,6 +339,9 @@ pub enum JsonName {
     #[serde(rename = "ConfigNpc_Common_AnimatorMove_Female")]
     ConfigNpcCommonAnimatorMoveFemale,
 
+    #[serde(rename = "ConfigNpc_Common_AnimatorMove_Female_Haniyyah3.5")]
+    ConfigNpcCommonAnimatorMoveFemaleHaniyyah35,
+
     #[serde(rename = "ConfigNpc_Common_AnimatorMove_Female_large")]
     ConfigNpcCommonAnimatorMoveFemaleLarge,
 
@@ -347,6 +356,9 @@ pub enum JsonName {
 
     #[serde(rename = "ConfigNpc_Common_AnimatorMove_Male")]
     ConfigNpcCommonAnimatorMoveMale,
+
+    #[serde(rename = "ConfigNpc_Common_AnimatorMove_Male_Balfour3.5")]
+    ConfigNpcCommonAnimatorMoveMaleBalfour35,
 
     #[serde(rename = "ConfigNpc_Common_AnimatorMove_Male_GuardRadius")]
     ConfigNpcCommonAnimatorMoveMaleGuardRadius,
@@ -581,12 +593,6 @@ pub enum LuaDataPath {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oklplmjoppc {
-    #[serde(rename = "NPC_SPECIAL_ARANARA")]
-    NpcSpecialAranara,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
 pub enum ScriptDataPath {
     #[serde(rename = "Data/ScriptData/PropObject/SneakAI")]
     DataScriptDataPropObjectSneakAi,
@@ -656,6 +662,9 @@ pub enum TemplateEmotionPath {
 
     #[serde(rename = "Cs_Emo_Coop_Common/Cs_Emo_Coop_Avatar/Diona/")]
     CsEmoCoopCommonCsEmoCoopAvatarDiona,
+
+    #[serde(rename = "Cs_Emo_Coop_Common/Cs_Emo_Coop_Avatar/Faruzan/")]
+    CsEmoCoopCommonCsEmoCoopAvatarFaruzan,
 
     #[serde(rename = "Cs_Emo_Coop_Common/Cs_Emo_Coop_Avatar/Gorou/")]
     CsEmoCoopCommonCsEmoCoopAvatarGorou,

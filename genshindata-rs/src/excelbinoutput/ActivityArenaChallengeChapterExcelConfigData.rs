@@ -12,20 +12,20 @@ pub struct ActivityArenaChallengeChapterExcelConfigDatum {
     #[serde(rename = "chapterId")]
     pub chapter_id: i64,
 
-    #[serde(rename = "FOKCEOIOIEA")]
-    pub fokceoioiea: i64,
+    #[serde(rename = "LBKLAMPHOHM")]
+    pub lbklamphohm: i64,
 
-    #[serde(rename = "EMFIOJAPDLK")]
-    pub emfiojapdlk: i64,
+    #[serde(rename = "GICPJFDDKIG")]
+    pub gicpjfddkig: i64,
 
-    #[serde(rename = "HNDONNCALIC")]
-    pub hndonncalic: i64,
+    #[serde(rename = "GPNOMCCCGMA")]
+    pub gpnomcccgma: i64,
 
-    #[serde(rename = "FHLAMHHAFHL")]
-    pub fhlamhhafhl: i64,
+    #[serde(rename = "DFIDLKOCOFB")]
+    pub dfidlkocofb: i64,
 
-    #[serde(rename = "CKEDNBOCALL")]
-    pub ckednbocall: i64,
+    #[serde(rename = "FNONOHIMFMD")]
+    pub fnonohimfmd: i64,
 }
 
 pub fn load() -> Result<ActivityArenaChallengeChapterExcelConfigData, crate::json::JsonError> {

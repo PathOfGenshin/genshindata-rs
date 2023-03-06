@@ -12,41 +12,41 @@ pub struct LanV3BoatBaseExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "OCFKJGNNPAM")]
-    pub ocfkjgnnpam: Vec<i64>,
+    #[serde(rename = "HADGAMCMGGM")]
+    pub hadgamcmggm: Vec<i64>,
 
-    #[serde(rename = "JPJAFGAHBJG")]
-    pub jpjafgahbjg: Vec<i64>,
+    #[serde(rename = "JANODOHDGEJ")]
+    pub janodohdgej: Vec<i64>,
 
-    #[serde(rename = "FCIFMJOOFDO")]
-    pub fcifmjoofdo: String,
+    #[serde(rename = "PHCOPOMKIOJ")]
+    pub phcopomkioj: String,
 
-    #[serde(rename = "EPOBINHGKLE")]
-    pub epobinhgkle: String,
+    #[serde(rename = "DFGGPEJGJIG")]
+    pub dfggpejgjig: String,
 
-    #[serde(rename = "BPHPOCBGEGI")]
-    pub bphpocbgegi: String,
+    #[serde(rename = "NLKLHPMOLDD")]
+    pub nlklhpmoldd: String,
 
-    #[serde(rename = "AIKJKBOGBHN")]
-    pub aikjkbogbhn: String,
+    #[serde(rename = "GCGMJLDJNEB")]
+    pub gcgmjldjneb: String,
 
-    #[serde(rename = "EIOOMDKFMLG")]
-    pub eioomdkfmlg: f64,
+    #[serde(rename = "GODKLOFELFL")]
+    pub godklofelfl: f64,
 
-    #[serde(rename = "KLPCDFKDGAA")]
-    pub klpcdfkdgaa: Vec<i64>,
+    #[serde(rename = "CPKMFGADJJP")]
+    pub cpkmfgadjjp: Vec<i64>,
 
-    #[serde(rename = "EDNNCMLACMD")]
-    pub ednncmlacmd: Vec<i64>,
+    #[serde(rename = "MFHMFKJKODF")]
+    pub mfhmfkjkodf: Vec<i64>,
 
-    #[serde(rename = "MKFJDLBLCHI")]
-    pub mkfjdlblchi: Vec<i64>,
+    #[serde(rename = "OJDAMPBAHGM")]
+    pub ojdampbahgm: Vec<i64>,
 
-    #[serde(rename = "KHFPMNIGOBL")]
-    pub khfpmnigobl: i64,
+    #[serde(rename = "EJMCFJPCDPI")]
+    pub ejmcfjpcdpi: i64,
 
-    #[serde(rename = "BBHINNCNPJP")]
-    pub bbhinncnpjp: f64,
+    #[serde(rename = "FCBNIEMNGDL")]
+    pub fcbniemngdl: f64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
@@ -57,29 +57,29 @@ pub struct LanV3BoatBaseExcelConfigDatum {
     #[serde(rename = "draftId")]
     pub draft_id: i64,
 
-    #[serde(rename = "EBNMMJGMNKB")]
-    pub ebnmmjgmnkb: i64,
+    #[serde(rename = "AKNICCNJEMC")]
+    pub akniccnjemc: i64,
 
-    #[serde(rename = "IEMAOOAEPNM")]
-    pub iemaooaepnm: i64,
+    #[serde(rename = "JPJIHANLHEP")]
+    pub jpjihanlhep: i64,
 
-    #[serde(rename = "MCOOGACCFBI")]
-    pub mcoogaccfbi: Vec<String>,
+    #[serde(rename = "GOFBNEJKDCA")]
+    pub gofbnejkdca: Vec<String>,
 
-    #[serde(rename = "OFMDPOODKAO")]
-    pub ofmdpoodkao: Vec<String>,
+    #[serde(rename = "LCAFCBHNCHH")]
+    pub lcafcbhnchh: Vec<String>,
 
-    #[serde(rename = "MFOIAIHDFCB")]
-    pub mfoiaihdfcb: i64,
+    #[serde(rename = "EKHELIJJBAN")]
+    pub ekhelijjban: i64,
 
-    #[serde(rename = "EMABNGKBNOB")]
-    pub emabngkbnob: i64,
+    #[serde(rename = "IJOHIIGHMHJ")]
+    pub ijohiighmhj: i64,
 
-    #[serde(rename = "BHCJKANDNPF")]
-    pub bhcjkandnpf: String,
+    #[serde(rename = "LADKLKNNEKD")]
+    pub ladklknnekd: String,
 
-    #[serde(rename = "FKNPMPKBCDF")]
-    pub fknpmpkbcdf: String,
+    #[serde(rename = "PFONFKBBPEL")]
+    pub pfonfkbbpel: String,
 }
 
 pub fn load() -> Result<LanV3BoatBaseExcelConfigData, crate::json::JsonError> {

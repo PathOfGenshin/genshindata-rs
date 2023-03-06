@@ -12,11 +12,11 @@ pub struct GcgTutorialTextExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BJHAKOIKMOB")]
-    pub bjhakoikmob: i64,
+    #[serde(rename = "FBNHAKEAHPP")]
+    pub fbnhakeahpp: i64,
 
-    #[serde(rename = "CFACMKDBJKA")]
-    pub cfacmkdbjka: Option<i64>,
+    #[serde(rename = "OKACIABCJJA")]
+    pub okaciabcjja: Option<i64>,
 }
 
 pub fn load() -> Result<GcgTutorialTextExcelConfigData, crate::json::JsonError> {

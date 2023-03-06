@@ -12,29 +12,29 @@ pub struct ActivityPlantFlowerMainExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "BJHNJAJOLOI")]
-    pub bjhnjajoloi: Vec<i64>,
+    #[serde(rename = "PMLCINENOML")]
+    pub pmlcinenoml: Vec<i64>,
 
-    #[serde(rename = "LGNNKMKIALG")]
-    pub lgnnkmkialg: Vec<i64>,
+    #[serde(rename = "GFPFABMBNNP")]
+    pub gfpfabmbnnp: Vec<i64>,
 
-    #[serde(rename = "JIKGJJJIFPL")]
-    pub jikgjjjifpl: i64,
+    #[serde(rename = "AFLEGMGGIMJ")]
+    pub aflegmggimj: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "PJJCFDLAGHK")]
-    pub pjjcfdlaghk: i64,
+    #[serde(rename = "GKAJOIFNGEG")]
+    pub gkajoifngeg: i64,
 
-    #[serde(rename = "GEJKLECBJIF")]
-    pub gejklecbjif: Vec<i64>,
+    #[serde(rename = "FEMJBJMFDFG")]
+    pub femjbjmfdfg: Vec<i64>,
 
     #[serde(rename = "openQuestId")]
     pub open_quest_id: i64,
 
-    #[serde(rename = "BIELGECBOIH")]
-    pub bielgecboih: i64,
+    #[serde(rename = "PAAEIEAIBEH")]
+    pub paaeieaibeh: i64,
 
     #[serde(rename = "dailyConfigIdList")]
     pub daily_config_id_list: Vec<i64>,

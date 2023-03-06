@@ -28,10 +28,10 @@ pub struct RoutineDetailExcelConfigDatum {
     pub finish_content: FinishContent,
 
     #[serde(rename = "goodsIdVec")]
-    pub goods_id_vec: Vec<Phnllgnaada>,
+    pub goods_id_vec: Vec<Mkogmkfdnim>,
 
-    #[serde(rename = "PHNLLGNAADA")]
-    pub phnllgnaada: Vec<Phnllgnaada>,
+    #[serde(rename = "MKOGMKFDNIM")]
+    pub mkogmkfdnim: Vec<Mkogmkfdnim>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -68,7 +68,7 @@ pub struct FinishContent {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Phnllgnaada {
+pub struct Mkogmkfdnim {
 }
 
 #[derive(Debug, Serialize, Deserialize)]

@@ -9,50 +9,50 @@ pub type InferenceWordExcelConfigData = Vec<InferenceWordExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferenceWordExcelConfigDatum {
-    #[serde(rename = "LCNCANKKCNE")]
-    pub lcncankkcne: i64,
+    #[serde(rename = "ECIMFDJCFBG")]
+    pub ecimfdjcfbg: i64,
 
-    #[serde(rename = "ABJJEFNJDIO")]
-    pub abjjefnjdio: i64,
+    #[serde(rename = "INPDDAGAPKG")]
+    pub inpddagapkg: i64,
 
-    #[serde(rename = "MAPABFEODID")]
-    pub mapabfeodid: Option<bool>,
+    #[serde(rename = "OPJEPFFMDNF")]
+    pub opjepffmdnf: Option<bool>,
 
-    #[serde(rename = "CMHBGHLGFLN")]
-    pub cmhbghlgfln: Option<bool>,
+    #[serde(rename = "HBGMJCICPGP")]
+    pub hbgmjcicpgp: Option<bool>,
 
-    #[serde(rename = "OLAIKHKMPOM")]
-    pub olaikhkmpom: Vec<Nnihfnfejmd>,
+    #[serde(rename = "ICODKFPNCPB")]
+    pub icodkfpncpb: Vec<Aeocagefjmp>,
 
-    #[serde(rename = "OPOEPCEICFH")]
-    pub opoepceicfh: Option<bool>,
+    #[serde(rename = "IKKEHHCMOIJ")]
+    pub ikkehhcmoij: Option<bool>,
 
-    #[serde(rename = "BEJNIAIOGBP")]
-    pub bejniaiogbp: Option<i64>,
+    #[serde(rename = "JJGEEJCFAOH")]
+    pub jjgeejcfaoh: Option<i64>,
 
-    #[serde(rename = "NNIHFNFEJMD")]
-    pub nnihfnfejmd: Vec<Nnihfnfejmd>,
+    #[serde(rename = "AEOCAGEFJMP")]
+    pub aeocagefjmp: Vec<Aeocagefjmp>,
 
-    #[serde(rename = "OFBMFIDPDBG")]
-    pub ofbmfidpdbg: i64,
+    #[serde(rename = "MLCAIFCCEKP")]
+    pub mlcaifccekp: i64,
 
-    #[serde(rename = "EEMGBBAPFFD")]
-    pub eemgbbapffd: Option<i64>,
+    #[serde(rename = "BNMHOMKCLHA")]
+    pub bnmhomkclha: Option<i64>,
 
-    #[serde(rename = "DMHJHCIIFHK")]
-    pub dmhjhciifhk: Option<i64>,
+    #[serde(rename = "LPKOLDHFCND")]
+    pub lpkoldhfcnd: Option<i64>,
 
-    #[serde(rename = "LJMLAKDNCAL")]
-    pub ljmlakdncal: Option<i64>,
+    #[serde(rename = "OKNFGNMMIGD")]
+    pub oknfgnmmigd: Option<i64>,
 
-    #[serde(rename = "IANNOHJJEGO")]
-    pub iannohjjego: Option<bool>,
+    #[serde(rename = "MMHBLHFKLPM")]
+    pub mmhblhfklpm: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nnihfnfejmd {
+pub struct Aeocagefjmp {
     #[serde(rename = "type")]
-    pub nnihfnfejmd_type: Option<String>,
+    pub aeocagefjmp_type: Option<String>,
 
     #[serde(rename = "param")]
     pub param: String,

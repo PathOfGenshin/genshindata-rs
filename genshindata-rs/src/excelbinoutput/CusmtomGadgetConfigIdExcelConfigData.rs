@@ -18,11 +18,11 @@ pub struct CusmtomGadgetConfigIdExcelConfigDatum {
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "NHMDAFPJICP")]
-    pub nhmdafpjicp: i64,
+    #[serde(rename = "GCAHLCEBDPE")]
+    pub gcahlcebdpe: i64,
 
-    #[serde(rename = "EOEEOCIHPGP")]
-    pub eoeeocihpgp: i64,
+    #[serde(rename = "FMJKFABMOFF")]
+    pub fmjkfabmoff: i64,
 }
 
 pub fn load() -> Result<CusmtomGadgetConfigIdExcelConfigData, crate::json::JsonError> {

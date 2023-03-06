@@ -27,8 +27,8 @@ pub struct NewActivityExcelConfigDatum {
     #[serde(rename = "watcherId")]
     pub watcher_id: Vec<i64>,
 
-    #[serde(rename = "PPDLJLHLGAD")]
-    pub ppdljlhlgad: Vec<i64>,
+    #[serde(rename = "FMJCBAKFDJJ")]
+    pub fmjcbakfdjj: Vec<i64>,
 
     #[serde(rename = "dungeonIdList")]
     pub dungeon_id_list: Vec<i64>,
@@ -36,14 +36,17 @@ pub struct NewActivityExcelConfigDatum {
     #[serde(rename = "isLoadTerrain")]
     pub is_load_terrain: Option<bool>,
 
-    #[serde(rename = "PLAANLBECKI")]
-    pub plaanlbecki: Option<bool>,
+    #[serde(rename = "BFLEFLFPOID")]
+    pub bfleflfpoid: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum ActivitySceneTag {
     #[serde(rename = "")]
     Empty,
+
+    #[serde(rename = "FleurFairV2")]
+    FleurFairV2,
 
     #[serde(rename = "FungusFighter")]
     FungusFighter,

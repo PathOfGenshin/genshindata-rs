@@ -18,60 +18,69 @@ pub struct GcgSkillExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LNOFAAGANLL")]
-    pub lnofaaganll: String,
+    #[serde(rename = "FECDCBKJJKC")]
+    pub fecdcbkjjkc: String,
 
-    #[serde(rename = "MOAPENOOOCA")]
-    pub moapenoooca: String,
+    #[serde(rename = "PMBFALEBOJO")]
+    pub pmbfalebojo: String,
 
-    #[serde(rename = "LCBLPJKOJHA")]
-    pub lcblpjkojha: String,
+    #[serde(rename = "LPMKJGFEHFO")]
+    pub lpmkjgfehfo: String,
 
-    #[serde(rename = "JDBGABOANGP")]
-    pub jdbgaboangp: Vec<Jdbgaboangp>,
+    #[serde(rename = "MPCBBHIOOJD")]
+    pub mpcbbhioojd: Vec<Mpcbbhioojd>,
 
-    #[serde(rename = "EKIKMPBOGOH")]
-    pub ekikmpbogoh: Vec<Ekikmpbogoh>,
+    #[serde(rename = "KHEMKOEBBGE")]
+    pub khemkoebbge: Vec<Khemkoebbge>,
 
-    #[serde(rename = "MNFKDMFCFLN")]
-    pub mnfkdmfcfln: Option<Mnfkdmfcfln>,
+    #[serde(rename = "MOMJFBEMJDI")]
+    pub momjfbemjdi: Option<Momjfbemjdi>,
 
-    #[serde(rename = "GCAAGFNKLAN")]
-    pub gcaagfnklan: Option<i64>,
+    #[serde(rename = "HBPNPFPCLGH")]
+    pub hbpnpfpclgh: Option<i64>,
 
-    #[serde(rename = "MEDMDEBGOKG")]
-    pub medmdebgokg: Option<i64>,
+    #[serde(rename = "GOIGKLKEMMI")]
+    pub goigklkemmi: Option<i64>,
 
-    #[serde(rename = "CFACMKDBJKA")]
-    pub cfacmkdbjka: Option<i64>,
+    #[serde(rename = "OKACIABCJJA")]
+    pub okaciabcjja: Option<i64>,
 
-    #[serde(rename = "EGILPGBBIPO")]
-    pub egilpgbbipo: Option<f64>,
+    #[serde(rename = "OAFMDBDGKFG")]
+    pub oafmdbdgkfg: Option<f64>,
 
-    #[serde(rename = "DAHPCOIBAAN")]
-    pub dahpcoibaan: Option<bool>,
+    #[serde(rename = "BDHJNEJGGHA")]
+    pub bdhjnejggha: Option<bool>,
+
+    #[serde(rename = "INJJHCIIIJI")]
+    pub injjhciiiji: Option<Injjhciiiji>,
 
     #[serde(rename = "isHidden")]
     pub is_hidden: Option<bool>,
 
-    #[serde(rename = "LHEEECLKKMJ")]
-    pub lheeeclkkmj: Option<bool>,
+    #[serde(rename = "IFOFGHJODHJ")]
+    pub ifofghjodhj: Option<bool>,
 
-    #[serde(rename = "LOLPGKPEMKI")]
-    pub lolpgkpemki: Option<bool>,
+    #[serde(rename = "BLGGLALLLKF")]
+    pub blgglalllkf: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jdbgaboangp {
-    #[serde(rename = "OHFMGCCFDLD")]
-    pub ohfmgccfdld: Option<Ohfmgccfdld>,
+pub struct Mpcbbhioojd {
+    #[serde(rename = "BCGPIIPDEPC")]
+    pub bcgpiipdepc: Option<Bcgpiipdepc>,
 
     #[serde(rename = "count")]
     pub count: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ekikmpbogoh {
+pub enum Injjhciiiji {
+    #[serde(rename = "Self")]
+    InjjhciiijiSelf,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Khemkoebbge {
     #[serde(rename = "GCG_SKILL_TAG_A")]
     GcgSkillTagA,
 
@@ -89,7 +98,22 @@ pub enum Ekikmpbogoh {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ohfmgccfdld {
+pub enum Momjfbemjdi {
+    #[serde(rename = "OnBannerShow")]
+    OnBannerShow,
+
+    #[serde(rename = "OnBehaviorStart")]
+    OnBehaviorStart,
+
+    #[serde(rename = "OnCostReviseReceived")]
+    OnCostReviseReceived,
+
+    #[serde(rename = "OnHitLanded")]
+    OnHitLanded,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Bcgpiipdepc {
     #[serde(rename = "GCG_COST_DICE_ANEMO")]
     GcgCostDiceAnemo,
 
@@ -119,18 +143,6 @@ pub enum Ohfmgccfdld {
 
     #[serde(rename = "GCG_COST_ENERGY")]
     GcgCostEnergy,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Mnfkdmfcfln {
-    #[serde(rename = "OnBannerShow")]
-    OnBannerShow,
-
-    #[serde(rename = "OnBehaviorStart")]
-    OnBehaviorStart,
-
-    #[serde(rename = "OnHitLanded")]
-    OnHitLanded,
 }
 
 pub fn load() -> Result<GcgSkillExcelConfigData, crate::json::JsonError> {

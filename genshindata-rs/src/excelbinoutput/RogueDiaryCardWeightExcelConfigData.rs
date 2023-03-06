@@ -12,14 +12,14 @@ pub struct RogueDiaryCardWeightExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "HJHCKIPKOCC")]
-    pub hjhckipkocc: i64,
+    #[serde(rename = "ILKHEKIIBOB")]
+    pub ilkhekiibob: i64,
 
     #[serde(rename = "weight")]
     pub weight: Option<i64>,
 
-    #[serde(rename = "IEKAAKDNNFF")]
-    pub iekaakdnnff: i64,
+    #[serde(rename = "JNFMNDBBKEA")]
+    pub jnfmndbbkea: i64,
 }
 
 pub fn load() -> Result<RogueDiaryCardWeightExcelConfigData, crate::json::JsonError> {

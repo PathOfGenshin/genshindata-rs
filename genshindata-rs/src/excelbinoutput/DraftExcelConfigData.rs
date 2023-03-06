@@ -42,8 +42,8 @@ pub struct DraftExcelConfigDatum {
     #[serde(rename = "twiceConfirmCountDown")]
     pub twice_confirm_count_down: i64,
 
-    #[serde(rename = "PIOMDKGKJOC")]
-    pub piomdkgkjoc: Option<String>,
+    #[serde(rename = "NHDHHMDJBPK")]
+    pub nhdhhmdjbpk: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

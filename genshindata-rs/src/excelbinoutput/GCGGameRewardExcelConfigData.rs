@@ -12,59 +12,50 @@ pub struct GcgGameRewardExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "ALMDDPDGFME")]
-    pub almddpdgfme: Vec<Almddpdgfme>,
+    #[serde(rename = "NJKIONICHCH")]
+    pub njkionichch: Vec<Njkionichch>,
 
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
 
-    #[serde(rename = "OMLGKBNCHEA")]
-    pub omlgkbnchea: i64,
+    #[serde(rename = "LCDFHLPBNFF")]
+    pub lcdfhlpbnff: i64,
 
-    #[serde(rename = "FOKLBMBPHNB")]
-    pub foklbmbphnb: Vec<i64>,
+    #[serde(rename = "JFALOFICHDF")]
+    pub jfalofichdf: Vec<i64>,
 
-    #[serde(rename = "HPGIMBAMDNI")]
-    pub hpgimbamdni: Vec<i64>,
+    #[serde(rename = "FNHKEJBPIBJ")]
+    pub fnhkejbpibj: Vec<i64>,
 
-    #[serde(rename = "OMPPGIKDNNI")]
-    pub omppgikdnni: Vec<i64>,
+    #[serde(rename = "CBAKGGNAMEL")]
+    pub cbakggnamel: Vec<i64>,
 
     #[serde(rename = "failTips")]
     pub fail_tips: Vec<i64>,
 
-    #[serde(rename = "KMJBNNBFBML")]
-    pub kmjbnnbfbml: Option<Kmjbnnbfbml>,
+    #[serde(rename = "LLJKOKNFJNL")]
+    pub lljkoknfjnl: Option<Lljkoknfjnl>,
 
-    #[serde(rename = "DCLDLAHHLIH")]
-    pub dcldlahhlih: i64,
+    #[serde(rename = "PLNANOLFFLN")]
+    pub plnanolffln: i64,
 
-    #[serde(rename = "IAPINLONGNO")]
-    pub iapinlongno: Option<String>,
+    #[serde(rename = "COIPFLJOHBM")]
+    pub coipfljohbm: Option<String>,
 
     #[serde(rename = "condList")]
     pub cond_list: Vec<CondList>,
 
-    #[serde(rename = "FOKOCIBCLPK")]
-    pub fokocibclpk: Fokocibclpk,
+    #[serde(rename = "PKDBOPGJOFB")]
+    pub pkdbopgjofb: Pkdbopgjofb,
 
-    #[serde(rename = "JHCHELFJGFO")]
-    pub jhchelfjgfo: Option<bool>,
+    #[serde(rename = "EHMGMFIDPPM")]
+    pub ehmgmfidppm: Option<bool>,
 
     #[serde(rename = "groupId")]
     pub group_id: Option<i64>,
 
-    #[serde(rename = "LLGONNEHHBB")]
-    pub llgonnehhbb: Option<bool>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Almddpdgfme {
-    #[serde(rename = "challengeId")]
-    pub challenge_id: Option<i64>,
-
-    #[serde(rename = "rewardId")]
-    pub reward_id: Option<i64>,
+    #[serde(rename = "JDHEAGPAILJ")]
+    pub jdheagpailj: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -77,6 +68,15 @@ pub struct CondList {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+pub struct Njkionichch {
+    #[serde(rename = "challengeId")]
+    pub challenge_id: Option<i64>,
+
+    #[serde(rename = "rewardId")]
+    pub reward_id: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 pub enum Type {
     #[serde(rename = "FINISH_LEVEL_CHALLENGE")]
     FinishLevelChallenge,
@@ -86,7 +86,13 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fokocibclpk {
+pub enum Lljkoknfjnl {
+    #[serde(rename = "PVE_MONSTER")]
+    PveMonster,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Pkdbopgjofb {
     #[serde(rename = "")]
     Empty,
 
@@ -101,12 +107,6 @@ pub enum Fokocibclpk {
 
     #[serde(rename = "Gcg_Loading_Bg5")]
     GcgLoadingBg5,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Kmjbnnbfbml {
-    #[serde(rename = "PVE_MONSTER")]
-    PveMonster,
 }
 
 pub fn load() -> Result<GcgGameRewardExcelConfigData, crate::json::JsonError> {

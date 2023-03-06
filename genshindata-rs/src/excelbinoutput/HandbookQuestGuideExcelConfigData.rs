@@ -9,14 +9,20 @@ pub type HandbookQuestGuideExcelConfigData = Vec<HandbookQuestGuideExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HandbookQuestGuideExcelConfigDatum {
-    #[serde(rename = "LBNNNEOBCNH")]
-    pub lbnnneobcnh: i64,
+    #[serde(rename = "BNLNGCCFIHK")]
+    pub bnlngccfihk: i64,
 
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "AOGJBEKGACL")]
-    pub aogjbekgacl: i64,
+    #[serde(rename = "IKHNOCCFOOL")]
+    pub ikhnoccfool: i64,
+
+    #[serde(rename = "GNFOJGKJFLC")]
+    pub gnfojgkjflc: Option<i64>,
+
+    #[serde(rename = "GFIJPMCJODC")]
+    pub gfijpmcjodc: Gfijpmcjodc,
 
     #[serde(rename = "order")]
     pub order: i64,
@@ -24,36 +30,39 @@ pub struct HandbookQuestGuideExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: Icon,
 
-    #[serde(rename = "MPOGDLMBEMO")]
-    pub mpogdlmbemo: Vec<Mpogdlmbemo>,
+    #[serde(rename = "GDPBJIIGEKJ")]
+    pub gdpbjiigekj: Option<bool>,
 
-    #[serde(rename = "PPOPHIPFEPC")]
-    pub ppophipfepc: Option<i64>,
+    #[serde(rename = "AIBKOHDAHHP")]
+    pub aibkohdahhp: Vec<Aibkohdahhp>,
 
-    #[serde(rename = "IBEBPNDNJHK")]
-    pub ibebpndnjhk: Option<Ibebpndnjhk>,
+    #[serde(rename = "LBFNMFAMMKP")]
+    pub lbfnmfammkp: Option<i64>,
 
-    #[serde(rename = "BDJKGFNCNIN")]
-    pub bdjkgfncnin: Option<bool>,
-
-    #[serde(rename = "GOEKOFNLKFI")]
-    pub goekofnlkfi: Option<i64>,
-
-    #[serde(rename = "LPOJFKNHEHA")]
-    pub lpojfknheha: Option<i64>,
+    #[serde(rename = "FHLNPEMKENG")]
+    pub fhlnpemkeng: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Mpogdlmbemo {
+pub struct Aibkohdahhp {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 
     #[serde(rename = "type")]
-    pub mpogdlmbemo_type: Option<Type>,
+    pub aibkohdahhp_type: Option<Type>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ibebpndnjhk {
+pub enum Type {
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
+    QuestGuideShowCondLevelGtOrEq,
+
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
+    QuestGuideShowCondPrequestFinished,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Gfijpmcjodc {
     #[serde(rename = "LQ")]
     Lq,
 
@@ -83,15 +92,6 @@ pub enum Icon {
 
     #[serde(rename = "ART/UI/Atlas/HandbookGuideIcon/UI_GuideIcon_PlotUnlock")]
     ArtUiAtlasHandbookGuideIconUiGuideIconPlotUnlock,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Type {
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
-    QuestGuideShowCondLevelGtOrEq,
-
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
-    QuestGuideShowCondPrequestFinished,
 }
 
 pub fn load() -> Result<HandbookQuestGuideExcelConfigData, crate::json::JsonError> {

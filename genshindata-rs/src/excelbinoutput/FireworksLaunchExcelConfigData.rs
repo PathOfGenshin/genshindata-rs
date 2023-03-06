@@ -9,20 +9,20 @@ pub type FireworksLaunchExcelConfigData = Vec<FireworksLaunchExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FireworksLaunchExcelConfigDatum {
-    #[serde(rename = "AAKFPPEAEAC")]
-    pub aakfppeaeac: String,
+    #[serde(rename = "CKDDMLJBHDH")]
+    pub ckddmljbhdh: String,
 
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
 
-    #[serde(rename = "DOPMOCINIDN")]
-    pub dopmocinidn: Vec<i64>,
+    #[serde(rename = "PPHOOOAAADO")]
+    pub pphoooaaado: Vec<i64>,
 
-    #[serde(rename = "OBJLPADKKJJ")]
-    pub objlpadkkjj: i64,
+    #[serde(rename = "IMHCBLIPLDP")]
+    pub imhcblipldp: i64,
 
-    #[serde(rename = "GBJLDIOJKNA")]
-    pub gbjldiojkna: i64,
+    #[serde(rename = "OKGPFLNDEPL")]
+    pub okgpflndepl: i64,
 }
 
 pub fn load() -> Result<FireworksLaunchExcelConfigData, crate::json::JsonError> {

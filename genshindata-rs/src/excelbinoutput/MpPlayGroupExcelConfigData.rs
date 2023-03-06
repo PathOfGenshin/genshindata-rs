@@ -87,8 +87,8 @@ pub struct MpPlayGroupExcelConfigDatum {
     #[serde(rename = "clientShowType")]
     pub client_show_type: Option<String>,
 
-    #[serde(rename = "GJIEHJEMJEK")]
-    pub gjiehjemjek: Option<bool>,
+    #[serde(rename = "JAAEJEGDDJD")]
+    pub jaaejegddjd: Option<bool>,
 
     #[serde(rename = "materialCostId")]
     pub material_cost_id: Option<i64>,
@@ -96,8 +96,8 @@ pub struct MpPlayGroupExcelConfigDatum {
     #[serde(rename = "materialCostNum")]
     pub material_cost_num: Option<i64>,
 
-    #[serde(rename = "NJPLCPAPFJD")]
-    pub njplcpapfjd: Option<bool>,
+    #[serde(rename = "APAGCNIGLBI")]
+    pub apagcniglbi: Option<bool>,
 
     #[serde(rename = "singlePrepareTime")]
     pub single_prepare_time: Option<i64>,

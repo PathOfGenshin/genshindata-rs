@@ -12,14 +12,14 @@ pub struct ActivitySumoDifficultyExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "ONMNOCANJPI")]
-    pub onmnocanjpi: i64,
+    #[serde(rename = "IKDFANCDDEP")]
+    pub ikdfancddep: i64,
 
-    #[serde(rename = "IIGCOLKJKHN")]
-    pub iigcolkjkhn: i64,
+    #[serde(rename = "MKOBJIKDAKK")]
+    pub mkobjikdakk: i64,
 
-    #[serde(rename = "HLCIEMEOOFG")]
-    pub hlciemeoofg: f64,
+    #[serde(rename = "CBLPGBEDOOK")]
+    pub cblpgbedook: f64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,

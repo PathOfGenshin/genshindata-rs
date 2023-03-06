@@ -12,20 +12,20 @@ pub struct ActivityGearJigsawExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "GOEKOFNLKFI")]
-    pub goekofnlkfi: i64,
+    #[serde(rename = "LBFNMFAMMKP")]
+    pub lbfnmfammkp: i64,
 
-    #[serde(rename = "MDGJAOKEBNB")]
-    pub mdgjaokebnb: String,
+    #[serde(rename = "FKMDCHOMGHP")]
+    pub fkmdchomghp: String,
 
-    #[serde(rename = "BGFPBPPECKA")]
-    pub bgfpbppecka: String,
+    #[serde(rename = "FOEAKPLBMKK")]
+    pub foeakplbmkk: String,
 
-    #[serde(rename = "GJBFOGJHHHD")]
-    pub gjbfogjhhhd: String,
+    #[serde(rename = "LBABLLAACNK")]
+    pub lbabllaacnk: String,
 
-    #[serde(rename = "GIHOICCMPJF")]
-    pub gihoiccmpjf: i64,
+    #[serde(rename = "EBGNDIJPALH")]
+    pub ebgndijpalh: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,

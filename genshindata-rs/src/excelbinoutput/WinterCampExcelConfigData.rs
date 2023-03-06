@@ -15,47 +15,47 @@ pub struct WinterCampExcelConfigDatum {
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "OMLNENAPFDD")]
-    pub omlnenapfdd: Vec<i64>,
+    #[serde(rename = "AEBOHNCMDLI")]
+    pub aebohncmdli: Vec<i64>,
 
-    #[serde(rename = "BIJAICOIFIO")]
-    pub bijaicoifio: i64,
+    #[serde(rename = "ILIGFBKAKCC")]
+    pub iligfbkakcc: i64,
 
-    #[serde(rename = "OFJMLELHPGB")]
-    pub ofjmlelhpgb: i64,
+    #[serde(rename = "DFNKNLCPFBM")]
+    pub dfnknlcpfbm: i64,
 
-    #[serde(rename = "ILIBCIEPGAC")]
-    pub ilibciepgac: Vec<i64>,
+    #[serde(rename = "CJIEJFDMJJE")]
+    pub cjiejfdmjje: Vec<i64>,
 
-    #[serde(rename = "MIFCIFGEIJI")]
-    pub mifcifgeiji: Vec<i64>,
+    #[serde(rename = "BGMKFCNCGAK")]
+    pub bgmkfcncgak: Vec<i64>,
 
-    #[serde(rename = "FHGJEOJGCAN")]
-    pub fhgjeojgcan: i64,
+    #[serde(rename = "DAIMIEJOBCK")]
+    pub daimiejobck: i64,
 
-    #[serde(rename = "BGKJBICIFBP")]
-    pub bgkjbicifbp: i64,
+    #[serde(rename = "DBPKBBPKHDL")]
+    pub dbpkbbpkhdl: i64,
 
-    #[serde(rename = "KFFOPGAMDPP")]
-    pub kffopgamdpp: Vec<i64>,
+    #[serde(rename = "BOKIPNEHDNA")]
+    pub bokipnehdna: Vec<i64>,
 
-    #[serde(rename = "JABJHKBGADM")]
-    pub jabjhkbgadm: i64,
+    #[serde(rename = "JBMLJHAFGDM")]
+    pub jbmljhafgdm: i64,
 
-    #[serde(rename = "CECFMEBFKMM")]
-    pub cecfmebfkmm: Vec<i64>,
+    #[serde(rename = "NKHEIADAAJJ")]
+    pub nkheiadaajj: Vec<i64>,
 
-    #[serde(rename = "DAICNJMHEAC")]
-    pub daicnjmheac: i64,
+    #[serde(rename = "FDICFGNCKEK")]
+    pub fdicfgnckek: i64,
 
-    #[serde(rename = "MCLLDEFHPPG")]
-    pub mclldefhppg: i64,
+    #[serde(rename = "EHDKKAPCDLI")]
+    pub ehdkkapcdli: i64,
 
-    #[serde(rename = "FJHDJIHAGAG")]
-    pub fjhdjihagag: i64,
+    #[serde(rename = "AGBKKLABCJJ")]
+    pub agbkklabcjj: i64,
 
-    #[serde(rename = "FPMFKCCLNOA")]
-    pub fpmfkcclnoa: i64,
+    #[serde(rename = "LPKIOLGDBAP")]
+    pub lpkiolgdbap: i64,
 }
 
 pub fn load() -> Result<WinterCampExcelConfigData, crate::json::JsonError> {

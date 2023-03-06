@@ -18,62 +18,62 @@ pub struct ActivityHachiStageExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
-    #[serde(rename = "MONGBNNJJBB")]
-    pub mongbnnjjbb: i64,
+    #[serde(rename = "JNNOENDAMDP")]
+    pub jnnoendamdp: i64,
 
-    #[serde(rename = "BJIHGHEJKEG")]
-    pub bjihghejkeg: i64,
+    #[serde(rename = "HGNEDOCNCOP")]
+    pub hgnedocncop: i64,
 
-    #[serde(rename = "ONGGNMCPAPE")]
-    pub onggnmcpape: i64,
+    #[serde(rename = "LGDEDHFNCPN")]
+    pub lgdedhfncpn: i64,
 
-    #[serde(rename = "GJABIEPGHEE")]
-    pub gjabiepghee: i64,
+    #[serde(rename = "LKCIMBEPJPJ")]
+    pub lkcimbepjpj: i64,
 
-    #[serde(rename = "PEDBPCMJCEI")]
-    pub pedbpcmjcei: String,
+    #[serde(rename = "HCGGFMMDBJA")]
+    pub hcggfmmdbja: String,
 
-    #[serde(rename = "HPDBIIEEIEH")]
-    pub hpdbiieeieh: String,
+    #[serde(rename = "BIANMLJANDD")]
+    pub bianmljandd: String,
 
-    #[serde(rename = "PPHBMLPLEMG")]
-    pub pphbmlplemg: i64,
+    #[serde(rename = "EEGMINKKLJJ")]
+    pub eegminkkljj: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "JKCCDDMDCOE")]
-    pub jkccddmdcoe: Vec<f64>,
+    #[serde(rename = "IEOBBKGGOFK")]
+    pub ieobbkggofk: Vec<f64>,
 
-    #[serde(rename = "GDMBKPBMBNM")]
-    pub gdmbkpbmbnm: Vec<f64>,
+    #[serde(rename = "NMIEAOHLKAH")]
+    pub nmieaohlkah: Vec<f64>,
 
-    #[serde(rename = "AAFEEDMCFFA")]
-    pub aafeedmcffa: Vec<f64>,
+    #[serde(rename = "ICKNDIJEBHJ")]
+    pub ickndijebhj: Vec<f64>,
 
-    #[serde(rename = "OGAFFLGIHLN")]
-    pub ogafflgihln: Vec<i64>,
+    #[serde(rename = "EEEJBDAHGPP")]
+    pub eeejbdahgpp: Vec<i64>,
 
-    #[serde(rename = "BDKOKJLKLAD")]
-    pub bdkokjlklad: Vec<i64>,
+    #[serde(rename = "PDGLAIJGFNM")]
+    pub pdglaijgfnm: Vec<i64>,
 
-    #[serde(rename = "NMPNDAODCHL")]
-    pub nmpndaodchl: i64,
+    #[serde(rename = "HIJBFOJFMGK")]
+    pub hijbfojfmgk: i64,
 
-    #[serde(rename = "AGFIOBOOEFC")]
-    pub agfiobooefc: i64,
+    #[serde(rename = "MBACJFKJOKK")]
+    pub mbacjfkjokk: i64,
 
-    #[serde(rename = "GJCDBMHOFDN")]
-    pub gjcdbmhofdn: i64,
+    #[serde(rename = "ADCLCOICLBL")]
+    pub adclcoiclbl: i64,
 
-    #[serde(rename = "EHHOJGHFHGM")]
-    pub ehhojghfhgm: i64,
+    #[serde(rename = "BPJODECAOCI")]
+    pub bpjodecaoci: i64,
 }
 
 pub fn load() -> Result<ActivityHachiStageExcelConfigData, crate::json::JsonError> {

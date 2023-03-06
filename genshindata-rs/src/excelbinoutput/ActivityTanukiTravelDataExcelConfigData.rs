@@ -18,20 +18,20 @@ pub struct ActivityTanukiTravelDataExcelConfigDatum {
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
 
-    #[serde(rename = "ODPHGIDKCIM")]
-    pub odphgidkcim: Vec<i64>,
+    #[serde(rename = "HJHLHCKNPJC")]
+    pub hjhlhcknpjc: Vec<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "NJKCHNFADNO")]
-    pub njkchnfadno: i64,
+    #[serde(rename = "BJGFKELLHCA")]
+    pub bjgfkellhca: i64,
 
-    #[serde(rename = "KKKPNFBGLDJ")]
-    pub kkkpnfbgldj: i64,
+    #[serde(rename = "HKCBHIEDJAB")]
+    pub hkcbhiedjab: i64,
 
-    #[serde(rename = "LDCGFHNGHOH")]
-    pub ldcgfhnghoh: Vec<i64>,
+    #[serde(rename = "INFLOINDAAG")]
+    pub infloindaag: Vec<i64>,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,

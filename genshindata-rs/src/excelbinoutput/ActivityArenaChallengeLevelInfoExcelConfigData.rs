@@ -30,20 +30,20 @@ pub struct ActivityArenaChallengeLevelInfoExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "FHADPKJNLNC")]
-    pub fhadpkjnlnc: String,
+    #[serde(rename = "PLEMLDAAKFO")]
+    pub plemldaakfo: String,
 
-    #[serde(rename = "KCOIBCLMHCP")]
-    pub kcoibclmhcp: i64,
+    #[serde(rename = "EGNOPFGGPCF")]
+    pub egnopfggpcf: i64,
 
-    #[serde(rename = "CFDFJEMNFIB")]
-    pub cfdfjemnfib: String,
+    #[serde(rename = "LFJLKCIMGDE")]
+    pub lfjlkcimgde: String,
 
-    #[serde(rename = "BHIBDJIHJDL")]
-    pub bhibdjihjdl: i64,
+    #[serde(rename = "AAKLPNBEHJH")]
+    pub aaklpnbehjh: i64,
 
-    #[serde(rename = "LFMGBHCDEKF")]
-    pub lfmgbhcdekf: String,
+    #[serde(rename = "PFHOJHDFECA")]
+    pub pfhojhdfeca: String,
 
     #[serde(rename = "levelDetailDescTextMapHash")]
     pub level_detail_desc_text_map_hash: i64,

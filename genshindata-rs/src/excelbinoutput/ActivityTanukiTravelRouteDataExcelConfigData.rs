@@ -12,23 +12,23 @@ pub struct ActivityTanukiTravelRouteDataExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "MMLOKMKDJGC")]
-    pub mmlokmkdjgc: i64,
+    #[serde(rename = "IKBBOKCILNN")]
+    pub ikbbokcilnn: i64,
 
-    #[serde(rename = "PNBNAELKHHN")]
-    pub pnbnaelkhhn: i64,
+    #[serde(rename = "HGBGJJPDLLJ")]
+    pub hgbgjjpdllj: i64,
 
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "AFCGEBNNIJN")]
-    pub afcgebnnijn: i64,
+    #[serde(rename = "IPGJIOGLDHI")]
+    pub ipgjiogldhi: i64,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
 
-    #[serde(rename = "ONGMJJMHIAM")]
-    pub ongmjjmhiam: i64,
+    #[serde(rename = "CFFPOCPHADF")]
+    pub cffpocphadf: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -36,17 +36,17 @@ pub struct ActivityTanukiTravelRouteDataExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "IOPGEHCPEMP")]
-    pub iopgehcpemp: i64,
+    #[serde(rename = "DFKMBLOAMIB")]
+    pub dfkmbloamib: i64,
 
-    #[serde(rename = "IHFADDCEMPF")]
-    pub ihfaddcempf: i64,
+    #[serde(rename = "IHKLNHBKHAC")]
+    pub ihklnhbkhac: i64,
 
-    #[serde(rename = "LEEKKKPLEIC")]
-    pub leekkkpleic: Option<i64>,
+    #[serde(rename = "OIOBLBHCOAG")]
+    pub oioblbhcoag: Option<i64>,
 
-    #[serde(rename = "MDGFJFBAFPB")]
-    pub mdgfjfbafpb: Option<i64>,
+    #[serde(rename = "DCLKGHLOACJ")]
+    pub dclkghloacj: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityTanukiTravelRouteDataExcelConfigData, crate::json::JsonError> {

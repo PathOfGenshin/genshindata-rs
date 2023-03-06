@@ -45,8 +45,8 @@ pub struct CompoundExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LFECKAOEOMK")]
-    pub lfeckaoeomk: i64,
+    #[serde(rename = "PNMIMINIAEF")]
+    pub pnmiminiaef: i64,
 
     #[serde(rename = "dropId")]
     pub drop_id: Option<i64>,

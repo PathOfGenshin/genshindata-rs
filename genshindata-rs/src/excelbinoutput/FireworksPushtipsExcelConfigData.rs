@@ -15,11 +15,11 @@ pub struct FireworksPushtipsExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "JFLKJPIDFKL")]
-    pub jflkjpidfkl: i64,
+    #[serde(rename = "LIOPPLOCILJ")]
+    pub liopplocilj: i64,
 
-    #[serde(rename = "MEPHKIBMKDC")]
-    pub mephkibmkdc: Vec<i64>,
+    #[serde(rename = "GELOEICCJKL")]
+    pub geloeiccjkl: Vec<i64>,
 }
 
 pub fn load() -> Result<FireworksPushtipsExcelConfigData, crate::json::JsonError> {

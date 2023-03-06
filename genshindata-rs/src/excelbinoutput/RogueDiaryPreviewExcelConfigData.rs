@@ -12,26 +12,26 @@ pub struct RogueDiaryPreviewExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "NPKFHMGOEAJ")]
-    pub npkfhmgoeaj: i64,
+    #[serde(rename = "JGDKIIOLODP")]
+    pub jgdkiiolodp: i64,
 
-    #[serde(rename = "FHDEJBKIJHC")]
-    pub fhdejbkijhc: i64,
+    #[serde(rename = "KIFDAHDKCFJ")]
+    pub kifdahdkcfj: i64,
 
-    #[serde(rename = "JNLCKGKKEIH")]
-    pub jnlckgkkeih: Vec<i64>,
+    #[serde(rename = "OMBCDBAELFN")]
+    pub ombcdbaelfn: Vec<i64>,
 
-    #[serde(rename = "KGNIFFMIKNM")]
-    pub kgniffmiknm: Vec<i64>,
+    #[serde(rename = "DFFLOPELPIC")]
+    pub dfflopelpic: Vec<i64>,
 
-    #[serde(rename = "GEJKLECBJIF")]
-    pub gejklecbjif: Vec<i64>,
+    #[serde(rename = "FEMJBJMFDFG")]
+    pub femjbjmfdfg: Vec<i64>,
 
-    #[serde(rename = "CDGBBKIOOEE")]
-    pub cdgbbkiooee: i64,
+    #[serde(rename = "ODCLHPLNMMM")]
+    pub odclhplnmmm: i64,
 
-    #[serde(rename = "COKJKIFGNMG")]
-    pub cokjkifgnmg: i64,
+    #[serde(rename = "CJGELFGDNMA")]
+    pub cjgelfgdnma: i64,
 
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: i64,

@@ -12,14 +12,14 @@ pub struct CaptureExcelConfigDatum {
     #[serde(rename = "monsterID")]
     pub monster_id: i64,
 
-    #[serde(rename = "ADACLDHLPLN")]
-    pub adacldhlpln: Vec<Adacldhlpln>,
+    #[serde(rename = "JNCMENLOHAA")]
+    pub jncmenlohaa: Vec<Jncmenlohaa>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Adacldhlpln {
-    #[serde(rename = "EHLEDHLBLND")]
-    pub ehledhlblnd: Option<i64>,
+pub struct Jncmenlohaa {
+    #[serde(rename = "IGIMFOELABE")]
+    pub igimfoelabe: Option<i64>,
 
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,

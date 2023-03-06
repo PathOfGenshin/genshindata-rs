@@ -12,41 +12,35 @@ pub struct FireworksExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "GHKLMMFMNIA")]
-    pub ghklmmfmnia: Vec<Ghklmmfmnia>,
+    #[serde(rename = "BPOCCFNLKLF")]
+    pub bpoccfnlklf: Vec<Bpoccfnlklf>,
 
-    #[serde(rename = "PAECEKHNJCC")]
-    pub paecekhnjcc: Paecekhnjcc,
+    #[serde(rename = "POAIECELNBI")]
+    pub poaiecelnbi: Poaiecelnbi,
 
-    #[serde(rename = "EPFGJDFJDPP")]
-    pub epfgjdfjdpp: Epfgjdfjdpp,
+    #[serde(rename = "NFLMNDPKKBK")]
+    pub nflmndpkkbk: Nflmndpkkbk,
 
-    #[serde(rename = "HBMEANFLCOO")]
-    pub hbmeanflcoo: Vec<String>,
+    #[serde(rename = "BNBKFBBFCFD")]
+    pub bnbkfbbfcfd: Vec<String>,
 
-    #[serde(rename = "NGCJFPICJNA")]
-    pub ngcjfpicjna: i64,
+    #[serde(rename = "BDFIFBFOEOG")]
+    pub bdfifbfoeog: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ghklmmfmnia {
+pub struct Bpoccfnlklf {
     #[serde(rename = "type")]
-    pub ghklmmfmnia_type: Type,
+    pub bpoccfnlklf_type: Type,
 
-    #[serde(rename = "LJMNCLKNGKO")]
-    pub ljmnclkngko: i64,
+    #[serde(rename = "CEFKFOBDEEK")]
+    pub cefkfobdeek: i64,
 
-    #[serde(rename = "IHEPCNDBAKC")]
-    pub ihepcndbakc: Option<bool>,
+    #[serde(rename = "JLFFBIENKNG")]
+    pub jlffbienkng: Option<bool>,
 
-    #[serde(rename = "LIAKCEOOOCH")]
-    pub liakceoooch: Vec<i64>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Epfgjdfjdpp {
-    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
-    EffSceneObjFireworksBullet,
+    #[serde(rename = "PBLDJLKOLII")]
+    pub pbldjlkolii: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -68,7 +62,13 @@ pub enum Type {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Paecekhnjcc {
+pub enum Nflmndpkkbk {
+    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
+    EffSceneObjFireworksBullet,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Poaiecelnbi {
     #[serde(rename = "PatternShapeFireworks")]
     PatternShapeFireworks,
 

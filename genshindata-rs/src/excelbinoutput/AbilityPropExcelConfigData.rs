@@ -23,9 +23,6 @@ pub struct AbilityPropExcelConfigDatum {
 
     #[serde(rename = "limitTagMax")]
     pub limit_tag_max: Option<f64>,
-
-    #[serde(rename = "succeedOwner")]
-    pub succeed_owner: Option<bool>,
 }
 
 pub fn load() -> Result<AbilityPropExcelConfigData, crate::json::JsonError> {

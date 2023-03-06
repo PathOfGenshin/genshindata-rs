@@ -42,8 +42,8 @@ pub struct GivingExcelConfigDatum {
     #[serde(rename = "isRemoveItem")]
     pub is_remove_item: Option<bool>,
 
-    #[serde(rename = "JEFODOBMMJI")]
-    pub jefodobmmji: Jefodobmmji,
+    #[serde(rename = "LMBCBEGGOFE")]
+    pub lmbcbeggofe: Lmbcbeggofe,
 
     #[serde(rename = "isRepeatable")]
     pub is_repeatable: Option<bool>,
@@ -51,14 +51,14 @@ pub struct GivingExcelConfigDatum {
     #[serde(rename = "givingGroupCount")]
     pub giving_group_count: Option<i64>,
 
-    #[serde(rename = "DIKNPNJMBAP")]
-    pub diknpnjmbap: Option<bool>,
+    #[serde(rename = "HMLCHIIDOJN")]
+    pub hmlchiidojn: Option<bool>,
 
-    #[serde(rename = "KMPNANCCAEC")]
-    pub kmpnanccaec: Option<bool>,
+    #[serde(rename = "PEDNLGDPKKF")]
+    pub pednlgdpkkf: Option<bool>,
 
-    #[serde(rename = "MCCOPDKHBGD")]
-    pub mccopdkhbgd: Option<bool>,
+    #[serde(rename = "LNICKMJHAOJ")]
+    pub lnickmjhaoj: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -92,7 +92,7 @@ pub enum Icon {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jefodobmmji {
+pub enum Lmbcbeggofe {
     #[serde(rename = "GIVING_TYPE_GADGET")]
     GivingTypeGadget,
 

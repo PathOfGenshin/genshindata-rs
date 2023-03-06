@@ -45,12 +45,12 @@ pub struct PhotographTaskDatum {
     #[serde(rename = "startTime")]
     pub start_time: Option<f64>,
 
-    #[serde(rename = "IEMBKHGBOFN")]
-    pub iembkhgbofn: Option<Iembkhgbofn>,
+    #[serde(rename = "OBNEBLFBGHK")]
+    pub obneblfbghk: Option<Obneblfbghk>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Iembkhgbofn {
+pub enum Obneblfbghk {
     #[serde(rename = "PHOTOGRAPH_TASK_TYPE_INTERACTION")]
     PhotographTaskTypeInteraction,
 }

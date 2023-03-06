@@ -15,23 +15,23 @@ pub struct SalvageChallengeDataExcelConfigDatum {
     #[serde(rename = "playType")]
     pub play_type: String,
 
-    #[serde(rename = "JKAMKKGPBBJ")]
-    pub jkamkkgpbbj: i64,
+    #[serde(rename = "EADIHALBGCN")]
+    pub eadihalbgcn: i64,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: Option<i64>,
 
-    #[serde(rename = "GHIAHNNFDOD")]
-    pub ghiahnnfdod: Vec<i64>,
+    #[serde(rename = "CEHPCAOMKMP")]
+    pub cehpcaomkmp: Vec<i64>,
 
-    #[serde(rename = "IIHEPFGDIIE")]
-    pub iihepfgdiie: Vec<i64>,
+    #[serde(rename = "NGHIMMLPPAI")]
+    pub nghimmlppai: Vec<i64>,
 
-    #[serde(rename = "IEOFGBJBHPC")]
-    pub ieofgbjbhpc: Option<i64>,
+    #[serde(rename = "CFLNJJLEMPE")]
+    pub cflnjjlempe: Option<i64>,
 
-    #[serde(rename = "JMDCMDKPCMA")]
-    pub jmdcmdkpcma: Vec<i64>,
+    #[serde(rename = "KAHAIAHOPMH")]
+    pub kahaiahopmh: Vec<i64>,
 }
 
 pub fn load() -> Result<SalvageChallengeDataExcelConfigData, crate::json::JsonError> {

@@ -21,18 +21,18 @@ pub struct WinterCampExploreExcelConfigDatum {
     #[serde(rename = "groupID")]
     pub group_id: i64,
 
-    #[serde(rename = "KKAAOAGIFEF")]
-    pub kkaaoagifef: i64,
+    #[serde(rename = "OGODALFELJP")]
+    pub ogodalfeljp: i64,
 
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
 
-    #[serde(rename = "FCMANBCPKOA")]
-    pub fcmanbcpkoa: Vec<Fcmanbcpkoa>,
+    #[serde(rename = "JGIDPOHCCKN")]
+    pub jgidpohcckn: Vec<Jgidpohcckn>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fcmanbcpkoa {
+pub struct Jgidpohcckn {
     #[serde(rename = "dropId")]
     pub drop_id: Vec<i64>,
 }

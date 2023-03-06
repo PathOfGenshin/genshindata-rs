@@ -12,14 +12,14 @@ pub struct ActivityBannerExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "BMNALBAMHHL")]
-    pub bmnalbamhhl: Option<Bmnalbamhhl>,
+    #[serde(rename = "OCEEPGNJMLC")]
+    pub oceepgnjmlc: Option<Oceepgnjmlc>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: Option<i64>,
 
-    #[serde(rename = "PPIAMBMPHEN")]
-    pub ppiambmphen: String,
+    #[serde(rename = "JIJKDFCAPHA")]
+    pub jijkdfcapha: String,
 
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
@@ -27,12 +27,12 @@ pub struct ActivityBannerExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "PDCCILKOACA")]
-    pub pdccilkoaca: Option<bool>,
+    #[serde(rename = "NHBCFEAAAJO")]
+    pub nhbcfeaaajo: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Bmnalbamhhl {
+pub enum Oceepgnjmlc {
     #[serde(rename = "ACTIVITY_BANNER_MONSTER")]
     ActivityBannerMonster,
 }

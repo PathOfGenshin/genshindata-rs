@@ -12,11 +12,11 @@ pub struct OfferingLumenStoneExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "HHHAEKBJKCL")]
-    pub hhhaekbjkcl: i64,
+    #[serde(rename = "MHJBHEIDBNB")]
+    pub mhjbheidbnb: i64,
 
-    #[serde(rename = "PAPJJMOMBNK")]
-    pub papjjmombnk: i64,
+    #[serde(rename = "LOJNKMMMGCA")]
+    pub lojnkmmmgca: i64,
 
     #[serde(rename = "iconPath")]
     pub icon_path: IconPath,

@@ -15,14 +15,14 @@ pub struct ActivityGearGadgetJigsawExcelConfigDatum {
     #[serde(rename = "gadgetID")]
     pub gadget_id: i64,
 
-    #[serde(rename = "NDALOMCHCNI")]
-    pub ndalomchcni: i64,
+    #[serde(rename = "LHLFFIJFBOE")]
+    pub lhlffijfboe: i64,
 
     #[serde(rename = "materialID")]
     pub material_id: i64,
 
-    #[serde(rename = "GJBFOGJHHHD")]
-    pub gjbfogjhhhd: String,
+    #[serde(rename = "LBABLLAACNK")]
+    pub lbabllaacnk: String,
 }
 
 pub fn load() -> Result<ActivityGearGadgetJigsawExcelConfigData, crate::json::JsonError> {

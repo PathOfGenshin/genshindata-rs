@@ -9,14 +9,14 @@ pub type IrodoriExcelConfigData = Vec<IrodoriExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IrodoriExcelConfigDatum {
-    #[serde(rename = "OMJBKDOOEIO")]
-    pub omjbkdooeio: i64,
+    #[serde(rename = "PJGEHBLALOO")]
+    pub pjgehblaloo: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "EFDOGFPLPMB")]
-    pub efdogfplpmb: i64,
+    #[serde(rename = "HFMPMIGMHFF")]
+    pub hfmpmigmhff: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -30,11 +30,11 @@ pub struct IrodoriExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "EJCJCFHEOHG")]
-    pub ejcjcfheohg: i64,
+    #[serde(rename = "IFKKGKLCMFO")]
+    pub ifkkgklcmfo: i64,
 
-    #[serde(rename = "IPNBLELHBFF")]
-    pub ipnblelhbff: i64,
+    #[serde(rename = "CFKMNGOENAP")]
+    pub cfkmngoenap: i64,
 }
 
 pub fn load() -> Result<IrodoriExcelConfigData, crate::json::JsonError> {

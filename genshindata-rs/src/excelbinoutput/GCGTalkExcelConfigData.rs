@@ -9,56 +9,56 @@ pub type GcgTalkExcelConfigData = Vec<GcgTalkExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgTalkExcelConfigDatum {
-    #[serde(rename = "IALGDAFBNHF")]
-    pub ialgdafbnhf: i64,
+    #[serde(rename = "IDNICJNHDFF")]
+    pub idnicjnhdff: i64,
 
-    #[serde(rename = "OMJJPIGOFJH")]
-    pub omjjpigofjh: i64,
+    #[serde(rename = "NFPBAOPFKOB")]
+    pub nfpbaopfkob: i64,
 
-    #[serde(rename = "FFPPAGKEDNG")]
-    pub ffppagkedng: i64,
+    #[serde(rename = "ALKLNHOFBNG")]
+    pub alklnhofbng: i64,
 
-    #[serde(rename = "IKJPPHIBDDE")]
-    pub ikjpphibdde: Option<i64>,
+    #[serde(rename = "ADDKJHCPJBF")]
+    pub addkjhcpjbf: Option<i64>,
 
-    #[serde(rename = "BAABJIIICGP")]
-    pub baabjiiicgp: Option<i64>,
+    #[serde(rename = "CFAEHEMKMNF")]
+    pub cfaehemkmnf: Option<i64>,
 
-    #[serde(rename = "MELFLPPNACG")]
-    pub melflppnacg: Option<i64>,
+    #[serde(rename = "JJDHEDIELLH")]
+    pub jjdhediellh: Option<i64>,
 
-    #[serde(rename = "FBCGHHLFBOB")]
-    pub fbcghhlfbob: Option<i64>,
+    #[serde(rename = "JMJFMNDOGLH")]
+    pub jmjfmndoglh: Option<i64>,
 
-    #[serde(rename = "APJKAFFMOFP")]
-    pub apjkaffmofp: i64,
+    #[serde(rename = "LHMDLBIBIPE")]
+    pub lhmdlbibipe: i64,
 
-    #[serde(rename = "DDOEDECBNNL")]
-    pub ddoedecbnnl: i64,
+    #[serde(rename = "PIJOEHNBEJN")]
+    pub pijoehnbejn: i64,
 
-    #[serde(rename = "MKMFFGDENCG")]
-    pub mkmffgdencg: Option<i64>,
+    #[serde(rename = "IACKPCPKOHO")]
+    pub iackpcpkoho: Option<i64>,
 
-    #[serde(rename = "GGBDJLJDEMA")]
-    pub ggbdjljdema: Option<i64>,
+    #[serde(rename = "KKHGLJOGDGO")]
+    pub kkhgljogdgo: Option<i64>,
 
-    #[serde(rename = "KFEAIHMFJIB")]
-    pub kfeaihmfjib: Option<i64>,
+    #[serde(rename = "HBPEGCLACLM")]
+    pub hbpegclaclm: Option<i64>,
 
-    #[serde(rename = "BJINAMOEDKB")]
-    pub bjinamoedkb: Option<i64>,
+    #[serde(rename = "GIHOFCHGGBM")]
+    pub gihofchggbm: Option<i64>,
 
-    #[serde(rename = "OMDHNHFIJJB")]
-    pub omdhnhfijjb: Option<i64>,
+    #[serde(rename = "FIAGDEGBNEB")]
+    pub fiagdegbneb: Option<i64>,
 
-    #[serde(rename = "FDLFAOPEHEP")]
-    pub fdlfaopehep: Option<i64>,
+    #[serde(rename = "NLCAELBPNFC")]
+    pub nlcaelbpnfc: Option<i64>,
 
-    #[serde(rename = "DGOIGMOKHHN")]
-    pub dgoigmokhhn: Option<i64>,
+    #[serde(rename = "DLOIFGPEJEP")]
+    pub dloifgpejep: Option<i64>,
 
-    #[serde(rename = "KFNLOBJLIKH")]
-    pub kfnlobjlikh: Option<i64>,
+    #[serde(rename = "JGILBOBNCHL")]
+    pub jgilbobnchl: Option<i64>,
 }
 
 pub fn load() -> Result<GcgTalkExcelConfigData, crate::json::JsonError> {

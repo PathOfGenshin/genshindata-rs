@@ -12,20 +12,20 @@ pub struct FishProficientExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "OCPLAOBFMAO")]
-    pub ocplaobfmao: Vec<Ocplaobfmao>,
+    #[serde(rename = "HEOGAIGCGJB")]
+    pub heogaigcgjb: Vec<Heogaigcgjb>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ocplaobfmao {
-    #[serde(rename = "DFBGENIMMNF")]
-    pub dfbgenimmnf: i64,
+pub struct Heogaigcgjb {
+    #[serde(rename = "LOAGDNDMMJC")]
+    pub loagdndmmjc: i64,
 
-    #[serde(rename = "JLDEJDEPMOL")]
-    pub jldejdepmol: f64,
+    #[serde(rename = "ELOOJDJNGOG")]
+    pub eloojdjngog: f64,
 
-    #[serde(rename = "HBOEJNBHPDN")]
-    pub hboejnbhpdn: f64,
+    #[serde(rename = "JBGNAOPANHD")]
+    pub jbgnaopanhd: f64,
 }
 
 pub fn load() -> Result<FishProficientExcelConfigData, crate::json::JsonError> {

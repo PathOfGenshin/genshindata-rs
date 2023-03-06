@@ -12,44 +12,44 @@ pub struct SubQuestCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DJLKOKOCOPE")]
-    pub djlkokocope: Djlkokocope,
+    #[serde(rename = "OBEMIEIODDM")]
+    pub obemieioddm: Obemieioddm,
 
-    #[serde(rename = "CHKLPFMDJOD")]
-    pub chklpfmdjod: Vec<Chklpfmdjod>,
+    #[serde(rename = "FMLHNMLKEGI")]
+    pub fmlhnmlkegi: Vec<Fmlhnmlkegi>,
 
-    #[serde(rename = "KHMJLIBIMLC")]
-    pub khmjlibimlc: Vec<Chklpfmdjod>,
+    #[serde(rename = "JDDOGCEHGHF")]
+    pub jddogcehghf: Vec<Fmlhnmlkegi>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MJFFDBIIAHC")]
-    pub mjffdbiiahc: Option<Djlkokocope>,
+    #[serde(rename = "CEFDKFMCMMP")]
+    pub cefdkfmcmmp: Option<Obemieioddm>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Chklpfmdjod {
+pub struct Fmlhnmlkegi {
     #[serde(rename = "type")]
-    pub chklpfmdjod_type: Option<Type>,
+    pub fmlhnmlkegi_type: Option<Type>,
 
     #[serde(rename = "param")]
     pub param: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Type {
-    #[serde(rename = "QUEST_CATALOG_COND_TYPE_QUEST")]
-    QuestCatalogCondTypeQuest,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Djlkokocope {
+pub enum Obemieioddm {
     #[serde(rename = "LOGIC_AND")]
     LogicAnd,
 
     #[serde(rename = "LOGIC_OR")]
     LogicOr,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Type {
+    #[serde(rename = "QUEST_CATALOG_COND_TYPE_QUEST")]
+    QuestCatalogCondTypeQuest,
 }
 
 pub fn load() -> Result<SubQuestCatalogExcelConfigData, crate::json::JsonError> {

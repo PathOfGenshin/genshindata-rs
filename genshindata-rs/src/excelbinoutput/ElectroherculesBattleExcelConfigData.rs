@@ -15,20 +15,20 @@ pub struct ElectroherculesBattleExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "PCAOAFPABJE")]
-    pub pcaoafpabje: i64,
+    #[serde(rename = "KGOAFDCPLIC")]
+    pub kgoafdcplic: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "CDMGJPIFHHG")]
-    pub cdmgjpifhhg: Vec<i64>,
+    #[serde(rename = "DPPAAOJNOCF")]
+    pub dppaaojnocf: Vec<i64>,
 
-    #[serde(rename = "HHGDFIGMCCG")]
-    pub hhgdfigmccg: f64,
+    #[serde(rename = "FFMILHPDFKC")]
+    pub ffmilhpdfkc: f64,
 
-    #[serde(rename = "HFMCCDDABNE")]
-    pub hfmccddabne: f64,
+    #[serde(rename = "FBPDOHDGMMI")]
+    pub fbpdohdgmmi: f64,
 }
 
 pub fn load() -> Result<ElectroherculesBattleExcelConfigData, crate::json::JsonError> {

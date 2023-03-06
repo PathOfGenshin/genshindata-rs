@@ -18,17 +18,23 @@ pub struct MapAreaConfigDatum {
     #[serde(rename = "name")]
     pub name: String,
 
-    #[serde(rename = "KIEAAECFJNH")]
-    pub kieaaecfjnh: Vec<i64>,
+    #[serde(rename = "NAACJNBILEO")]
+    pub naacjnbileo: Vec<i64>,
 
-    #[serde(rename = "KLCNOOALHLK")]
-    pub klcnooalhlk: Option<i64>,
+    #[serde(rename = "IKHEMFHPGEI")]
+    pub ikhemfhpgei: Option<i64>,
 
-    #[serde(rename = "NPEKCMLDMIK")]
-    pub npekcmldmik: Option<Npekcmldmik>,
+    #[serde(rename = "CKILCMPABGP")]
+    pub ckilcmpabgp: Option<Ckilcmpabgp>,
 
     #[serde(rename = "type")]
     pub map_area_config_datum_type: Option<Type>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ckilcmpabgp {
+    #[serde(rename = "MistOpen")]
+    MistOpen,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -38,12 +44,6 @@ pub enum Type {
 
     #[serde(rename = "MAP_AREA_TYPE_LEVEL_TAG")]
     MapAreaTypeLevelTag,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Npekcmldmik {
-    #[serde(rename = "MistOpen")]
-    MistOpen,
 }
 
 pub fn load() -> Result<MapAreaConfigData, crate::json::JsonError> {

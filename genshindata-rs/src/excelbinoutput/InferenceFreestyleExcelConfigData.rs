@@ -9,20 +9,20 @@ pub type InferenceFreestyleExcelConfigData = Vec<InferenceFreestyleExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferenceFreestyleExcelConfigDatum {
-    #[serde(rename = "LJMLAKDNCAL")]
-    pub ljmlakdncal: i64,
+    #[serde(rename = "OKNFGNMMIGD")]
+    pub oknfgnmmigd: i64,
 
-    #[serde(rename = "OBHAEIGCJIC")]
-    pub obhaeigcjic: i64,
+    #[serde(rename = "ADGLHGBDJBB")]
+    pub adglhgbdjbb: i64,
 
-    #[serde(rename = "MKBCKHDMMAN")]
-    pub mkbckhdmman: i64,
+    #[serde(rename = "FIMNLLODNCM")]
+    pub fimnllodncm: i64,
 
-    #[serde(rename = "KKIEPJJMLOH")]
-    pub kkiepjjmloh: i64,
+    #[serde(rename = "KBKMMCICBAM")]
+    pub kbkmmcicbam: i64,
 
-    #[serde(rename = "BFDHBFNODGD")]
-    pub bfdhbfnodgd: i64,
+    #[serde(rename = "MEOHDJCCBFP")]
+    pub meohdjccbfp: i64,
 }
 
 pub fn load() -> Result<InferenceFreestyleExcelConfigData, crate::json::JsonError> {

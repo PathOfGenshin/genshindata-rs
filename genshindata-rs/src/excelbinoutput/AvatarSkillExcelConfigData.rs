@@ -90,8 +90,8 @@ pub struct AvatarSkillExcelConfigDatum {
     #[serde(rename = "energyMin")]
     pub energy_min: Option<f64>,
 
-    #[serde(rename = "BDIHDCLIHDM")]
-    pub bdihdclihdm: Option<i64>,
+    #[serde(rename = "IDPGANBPIGN")]
+    pub idpganbpign: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -155,6 +155,9 @@ pub enum GlobalValueKey {
 
     #[serde(rename = "")]
     Empty,
+
+    #[serde(rename = "TEAM_ANTI_KILL_ENERGY")]
+    TeamAntiKillEnergy,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

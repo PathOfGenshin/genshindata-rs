@@ -12,14 +12,14 @@ pub struct RogueCellWeightExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "EFDJBEKKOAE")]
-    pub efdjbekkoae: i64,
+    #[serde(rename = "GMFBEHBOKMF")]
+    pub gmfbehbokmf: i64,
 
-    #[serde(rename = "DKDDPKPKKHC")]
-    pub dkddpkpkkhc: i64,
+    #[serde(rename = "DEHIEOCGOIK")]
+    pub dehieocgoik: i64,
 
-    #[serde(rename = "DNJBNPMICJC")]
-    pub dnjbnpmicjc: i64,
+    #[serde(rename = "PMCBNPCLELF")]
+    pub pmcbnpclelf: i64,
 }
 
 pub fn load() -> Result<RogueCellWeightExcelConfigData, crate::json::JsonError> {

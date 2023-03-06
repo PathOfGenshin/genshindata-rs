@@ -15,11 +15,11 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "DCFODBJCHFN")]
-    pub dcfodbjchfn: i64,
+    #[serde(rename = "FHMMHOGPFLH")]
+    pub fhmmhogpflh: i64,
 
-    #[serde(rename = "GGMGGBEBDKI")]
-    pub ggmggbebdki: i64,
+    #[serde(rename = "MPOJNBEIIPM")]
+    pub mpojnbeiipm: i64,
 
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
@@ -27,36 +27,36 @@ pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "APCACCBIHAP")]
-    pub apcaccbihap: i64,
+    #[serde(rename = "FIEKOAGLKNC")]
+    pub fiekoaglknc: i64,
 
-    #[serde(rename = "PIEADEOBPCM")]
-    pub pieadeobpcm: f64,
+    #[serde(rename = "PMMKHLPCKPM")]
+    pub pmmkhlpckpm: f64,
 
-    #[serde(rename = "MPHHLBHKKLB")]
-    pub mphhlbhkklb: f64,
+    #[serde(rename = "JBJENHLJCDK")]
+    pub jbjenhljcdk: f64,
 
-    #[serde(rename = "HCGHBAELFDJ")]
-    pub hcghbaelfdj: i64,
+    #[serde(rename = "HBIBHOKJLPD")]
+    pub hbibhokjlpd: i64,
 
-    #[serde(rename = "GJPMGFCAJNJ")]
-    pub gjpmgfcajnj: i64,
+    #[serde(rename = "LEEIEPPAMHK")]
+    pub leeieppamhk: i64,
 
-    #[serde(rename = "HFMJMONLIBA")]
-    pub hfmjmonliba: i64,
+    #[serde(rename = "LJFEFEEAJHL")]
+    pub ljfefeeajhl: i64,
 
-    #[serde(rename = "JNEDOAGFHFE")]
-    pub jnedoagfhfe: i64,
+    #[serde(rename = "IIHJAPDINJP")]
+    pub iihjapdinjp: i64,
 
-    #[serde(rename = "NIFMJKAPOEP")]
-    pub nifmjkapoep: Nifmjkapoep,
+    #[serde(rename = "FKOIDGNPIBC")]
+    pub fkoidgnpibc: Fkoidgnpibc,
 
-    #[serde(rename = "GEJKLECBJIF")]
-    pub gejklecbjif: Vec<i64>,
+    #[serde(rename = "FEMJBJMFDFG")]
+    pub femjbjmfdfg: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Nifmjkapoep {
+pub struct Fkoidgnpibc {
     #[serde(rename = "40060")]
     pub the_40060: i64,
 

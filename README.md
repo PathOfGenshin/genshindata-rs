@@ -21,4 +21,4 @@ This assumes that we are working in a Windows environment with PowerShell instal
 
 ---
 
-Currently updated for game version: **3.4.0**
+Currently updated for game version: **3.5.0**

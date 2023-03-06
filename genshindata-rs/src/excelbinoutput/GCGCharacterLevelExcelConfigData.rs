@@ -18,53 +18,53 @@ pub struct GcgCharacterLevelExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "FGBGPPHFOCH")]
-    pub fgbgpphfoch: Vec<Fgbgpphfoch>,
+    #[serde(rename = "KJHAANJFIGB")]
+    pub kjhaanjfigb: Vec<Kjhaanjfigb>,
 
-    #[serde(rename = "LJBDOJNCJJF")]
-    pub ljbdojncjjf: i64,
+    #[serde(rename = "DDCEJFKKBEO")]
+    pub ddcejfkkbeo: i64,
 
-    #[serde(rename = "BDHLNEPKKBM")]
-    pub bdhlnepkkbm: i64,
+    #[serde(rename = "NHFGOPOOJKE")]
+    pub nhfgopoojke: i64,
 
-    #[serde(rename = "GNFAKOLDMBG")]
-    pub gnfakoldmbg: Option<bool>,
+    #[serde(rename = "FGEKEAEDLCI")]
+    pub fgekeaedlci: Option<bool>,
 
-    #[serde(rename = "MDPNINJHHFC")]
-    pub mdpninjhhfc: Option<i64>,
+    #[serde(rename = "DGOJCOGKCIM")]
+    pub dgojcogkcim: Option<i64>,
 
-    #[serde(rename = "OINFCMLPFFP")]
-    pub oinfcmlpffp: Option<i64>,
+    #[serde(rename = "KINKMFIFEGO")]
+    pub kinkmfifego: Option<i64>,
 
-    #[serde(rename = "DGHFOKDOHMD")]
-    pub dghfokdohmd: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "NDEEAIHNEHK")]
+    pub ndeeaihnehk: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "INEDENAOILJ")]
-    pub inedenaoilj: i64,
+    #[serde(rename = "BDELGIJDDDJ")]
+    pub bdelgijdddj: i64,
 
-    #[serde(rename = "MKDADKNJJEG")]
-    pub mkdadknjjeg: i64,
+    #[serde(rename = "HIDBCKGBBFM")]
+    pub hidbckgbbfm: i64,
 
-    #[serde(rename = "DBAHFIIAPID")]
-    pub dbahfiiapid: i64,
+    #[serde(rename = "EGICOOKDEEC")]
+    pub egicookdeec: i64,
 
-    #[serde(rename = "JNCDCDCEMFI")]
-    pub jncdcdcemfi: i64,
+    #[serde(rename = "LNKFICEBPPN")]
+    pub lnkficebppn: i64,
 
-    #[serde(rename = "HCEGDEAINOH")]
-    pub hcegdeainoh: i64,
+    #[serde(rename = "JPOCFCHFPAN")]
+    pub jpocfchfpan: i64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Fgbgpphfoch {
-    #[serde(rename = "JDJNDEEMIOM")]
-    pub jdjndeemiom: i64,
+pub struct Kjhaanjfigb {
+    #[serde(rename = "HKGOEJBFNMM")]
+    pub hkgoejbfnmm: i64,
 
-    #[serde(rename = "DJHADHCMGOM")]
-    pub djhadhcmgom: i64,
+    #[serde(rename = "PBOJONACIHL")]
+    pub pbojonacihl: i64,
 }
 
 pub fn load() -> Result<GcgCharacterLevelExcelConfigData, crate::json::JsonError> {

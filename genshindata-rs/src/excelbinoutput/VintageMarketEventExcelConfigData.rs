@@ -15,18 +15,18 @@ pub struct VintageMarketEventExcelConfigDatum {
     #[serde(rename = "triggerType")]
     pub trigger_type: TriggerType,
 
-    #[serde(rename = "KFMAAIKGIGJ")]
-    pub kfmaaikgigj: String,
+    #[serde(rename = "AGNAJFOOLMF")]
+    pub agnajfoolmf: String,
 
-    #[serde(rename = "KNCEFIKCEIJ")]
-    pub kncefikceij: Kncefikceij,
+    #[serde(rename = "KFOGGEMLJFE")]
+    pub kfoggemljfe: Kfoggemljfe,
 
-    #[serde(rename = "JBOFPBILKCK")]
-    pub jbofpbilkck: i64,
+    #[serde(rename = "HCKBELDPEND")]
+    pub hckbeldpend: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kncefikceij {
+pub enum Kfoggemljfe {
     #[serde(rename = "VINTAGE_MARKET_EVENT_ENV")]
     VintageMarketEventEnv,
 

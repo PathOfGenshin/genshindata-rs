@@ -12,8 +12,8 @@ pub struct RoguelikeRuneExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KGAGEIPJPPE")]
-    pub kgageipjppe: bool,
+    #[serde(rename = "DMAFAJNKPME")]
+    pub dmafajnkpme: bool,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -21,20 +21,20 @@ pub struct RoguelikeRuneExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "BIAECAPIPCD")]
-    pub biaecapipcd: String,
+    #[serde(rename = "OKFCEMGMHKA")]
+    pub okfcemgmhka: String,
 
-    #[serde(rename = "GLAHNNMFLAN")]
-    pub glahnnmflan: String,
+    #[serde(rename = "ICCGGDKHBDE")]
+    pub iccggdkhbde: String,
 
-    #[serde(rename = "AOKMMHNOAEP")]
-    pub aokmmhnoaep: String,
+    #[serde(rename = "PIBHABGNIMG")]
+    pub pibhabgnimg: String,
 
-    #[serde(rename = "DFNALCNOBMJ")]
-    pub dfnalcnobmj: String,
+    #[serde(rename = "HBCOCHIBEIH")]
+    pub hbcochibeih: String,
 
-    #[serde(rename = "HCMJACIMBHE")]
-    pub hcmjacimbhe: i64,
+    #[serde(rename = "EBBJDLGDPIJ")]
+    pub ebbjdlgdpij: i64,
 
     #[serde(rename = "elementType")]
     pub element_type: i64,

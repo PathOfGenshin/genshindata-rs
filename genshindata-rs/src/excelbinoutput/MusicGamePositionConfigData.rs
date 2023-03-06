@@ -9,26 +9,26 @@ pub type MusicGamePositionConfigData = Vec<MusicGamePositionConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicGamePositionConfigDatum {
-    #[serde(rename = "ELHOCJPJNEF")]
-    pub elhocjpjnef: i64,
+    #[serde(rename = "DBDOAFLDHHF")]
+    pub dbdoafldhhf: i64,
 
-    #[serde(rename = "GBGJDLMGHIF")]
-    pub gbgjdlmghif: Vec<f64>,
+    #[serde(rename = "POMENKLMCFD")]
+    pub pomenklmcfd: Vec<f64>,
 
-    #[serde(rename = "PEGHKMJDHMH")]
-    pub peghkmjdhmh: Option<f64>,
+    #[serde(rename = "OFHEPGCOJGK")]
+    pub ofhepgcojgk: Option<f64>,
 
-    #[serde(rename = "NMJDFBHGKEJ")]
-    pub nmjdfbhgkej: Option<i64>,
+    #[serde(rename = "ALGAJGCFHNH")]
+    pub algajgcfhnh: Option<i64>,
 
-    #[serde(rename = "JFPDPIJKCAA")]
-    pub jfpdpijkcaa: Option<i64>,
+    #[serde(rename = "OKGONBMGJCG")]
+    pub okgonbmgjcg: Option<i64>,
 
-    #[serde(rename = "MGAJJACPJGN")]
-    pub mgajjacpjgn: Option<i64>,
+    #[serde(rename = "JDLNMNGPPME")]
+    pub jdlnmngppme: Option<i64>,
 
-    #[serde(rename = "JBHCBCLADHE")]
-    pub jbhcbcladhe: String,
+    #[serde(rename = "MFMHJGDCBPK")]
+    pub mfmhjgdcbpk: String,
 }
 
 pub fn load() -> Result<MusicGamePositionConfigData, crate::json::JsonError> {

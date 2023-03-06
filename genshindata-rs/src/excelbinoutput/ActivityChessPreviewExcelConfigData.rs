@@ -18,11 +18,11 @@ pub struct ActivityChessPreviewExcelConfigDatum {
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "KPEKFDBANJE")]
-    pub kpekfdbanje: i64,
+    #[serde(rename = "CGKLMAEPBAC")]
+    pub cgklmaepbac: i64,
 
-    #[serde(rename = "LGIJFGOJIEK")]
-    pub lgijfgojiek: i64,
+    #[serde(rename = "IGGIFIKJICM")]
+    pub iggifikjicm: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
@@ -30,26 +30,26 @@ pub struct ActivityChessPreviewExcelConfigDatum {
     #[serde(rename = "matchPlayerLimit")]
     pub match_player_limit: i64,
 
-    #[serde(rename = "BAJJDHLOIJA")]
-    pub bajjdhloija: bool,
+    #[serde(rename = "AHHAFHJGJPM")]
+    pub ahhafhjgjpm: bool,
 
-    #[serde(rename = "IPAGCNONFLF")]
-    pub ipagcnonflf: i64,
+    #[serde(rename = "OJLFNCBNACF")]
+    pub ojlfncbnacf: i64,
 
-    #[serde(rename = "IOKMMOOFBAK")]
-    pub iokmmoofbak: i64,
+    #[serde(rename = "CHOMHEOEFHP")]
+    pub chomheoefhp: i64,
 
     #[serde(rename = "punishTime")]
     pub punish_time: i64,
 
-    #[serde(rename = "LFKKMMJANOC")]
-    pub lfkkmmjanoc: i64,
+    #[serde(rename = "LGJIDIKOMOD")]
+    pub lgjidikomod: i64,
 
-    #[serde(rename = "KPGFELNHDPC")]
-    pub kpgfelnhdpc: i64,
+    #[serde(rename = "NCNJMDEGMIL")]
+    pub ncnjmdegmil: i64,
 
-    #[serde(rename = "CFFAOKDNALC")]
-    pub cffaokdnalc: Vec<i64>,
+    #[serde(rename = "ANALKHEMMCA")]
+    pub analkhemmca: Vec<i64>,
 }
 
 pub fn load() -> Result<ActivityChessPreviewExcelConfigData, crate::json::JsonError> {

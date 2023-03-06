@@ -12,21 +12,21 @@ pub struct KeywordEasterEggExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
 
-    #[serde(rename = "BDBLLHBPLAA")]
-    pub bdbllhbplaa: Vec<Bdbllhbplaa>,
+    #[serde(rename = "DJEEBFFGOEO")]
+    pub djeebffgoeo: Vec<Djeebffgoeo>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bdbllhbplaa {
-    #[serde(rename = "DFHKNDHEKEM")]
-    pub dfhkndhekem: Dfhkndhekem,
+pub struct Djeebffgoeo {
+    #[serde(rename = "DLGJMPJICJC")]
+    pub dlgjmpjicjc: Dlgjmpjicjc,
 
-    #[serde(rename = "AHMMCDIJOFE")]
-    pub ahmmcdijofe: String,
+    #[serde(rename = "HNBDNGHHDAP")]
+    pub hnbdnghhdap: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Dfhkndhekem {
+pub enum Dlgjmpjicjc {
     #[serde(rename = "LANGUAGE_DE")]
     LanguageDe,
 

@@ -12,86 +12,86 @@ pub struct FungusBaseExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "FMNCFIBCFPC")]
-    pub fmncfibcfpc: i64,
+    #[serde(rename = "NKJGJDEGOKJ")]
+    pub nkjgjdegokj: i64,
 
-    #[serde(rename = "HIAFDAAGDBF")]
-    pub hiafdaagdbf: i64,
+    #[serde(rename = "OHMBKADBBNN")]
+    pub ohmbkadbbnn: i64,
 
-    #[serde(rename = "EEOGJPPDLGG")]
-    pub eeogjppdlgg: i64,
+    #[serde(rename = "OFECOBJILHM")]
+    pub ofecobjilhm: i64,
 
-    #[serde(rename = "PEEDIDNKJGL")]
-    pub peedidnkjgl: i64,
+    #[serde(rename = "BHBKGBCJELM")]
+    pub bhbkgbcjelm: i64,
 
-    #[serde(rename = "BABIMDOIOCB")]
-    pub babimdoiocb: i64,
+    #[serde(rename = "KEDCPEEGDIA")]
+    pub kedcpeegdia: i64,
 
-    #[serde(rename = "DNILMCFJOKH")]
-    pub dnilmcfjokh: i64,
+    #[serde(rename = "PEOKNNNHKBI")]
+    pub peoknnnhkbi: i64,
 
-    #[serde(rename = "DCLLBOGKNFM")]
-    pub dcllbogknfm: String,
+    #[serde(rename = "DNDPPIMFNKN")]
+    pub dndppimfnkn: String,
 
-    #[serde(rename = "DCIGMFKFEIC")]
-    pub dcigmfkfeic: Vec<String>,
+    #[serde(rename = "NCDLBCMNDJA")]
+    pub ncdlbcmndja: Vec<String>,
 
-    #[serde(rename = "ELCKJPNOBJF")]
-    pub elckjpnobjf: String,
+    #[serde(rename = "FGLFIGDANPA")]
+    pub fglfigdanpa: String,
 
-    #[serde(rename = "ECELMLJHKHA")]
-    pub ecelmljhkha: i64,
+    #[serde(rename = "JMPIIJOBKAN")]
+    pub jmpiijobkan: i64,
 
-    #[serde(rename = "JPDPEAJNIOP")]
-    pub jpdpeajniop: i64,
+    #[serde(rename = "KAHDGHFBEDF")]
+    pub kahdghfbedf: i64,
 
-    #[serde(rename = "GIJHOHHNFHI")]
-    pub gijhohhnfhi: Vec<i64>,
+    #[serde(rename = "PFMFMHAIFEI")]
+    pub pfmfmhaifei: Vec<i64>,
 
-    #[serde(rename = "LJEPPINDHOP")]
-    pub ljeppindhop: Vec<i64>,
+    #[serde(rename = "EDGNDCGKKCO")]
+    pub edgndcgkkco: Vec<i64>,
 
-    #[serde(rename = "IJDDABFAGPD")]
-    pub ijddabfagpd: i64,
+    #[serde(rename = "GODNEPOKIBG")]
+    pub godnepokibg: i64,
 
-    #[serde(rename = "MKFAHADFLIF")]
-    pub mkfahadflif: i64,
+    #[serde(rename = "EEKJMCMAEJH")]
+    pub eekjmcmaejh: i64,
 
-    #[serde(rename = "FJGJPCFNFDL")]
-    pub fjgjpcfnfdl: i64,
+    #[serde(rename = "ONCBEPOENII")]
+    pub oncbepoenii: i64,
 
-    #[serde(rename = "GIJMFINLPAM")]
-    pub gijmfinlpam: i64,
+    #[serde(rename = "LJELPHLOOCP")]
+    pub ljelphloocp: i64,
 
-    #[serde(rename = "HJENILHBDMJ")]
-    pub hjenilhbdmj: i64,
+    #[serde(rename = "IEFOHLKHNPC")]
+    pub iefohlkhnpc: i64,
 
-    #[serde(rename = "LIBEKEMLJBE")]
-    pub libekemljbe: i64,
+    #[serde(rename = "HPAKGIDGDHE")]
+    pub hpakgidgdhe: i64,
 
-    #[serde(rename = "GBCFINGALNL")]
-    pub gbcfingalnl: i64,
+    #[serde(rename = "BEBNFDMLFGN")]
+    pub bebnfdmlfgn: i64,
 
-    #[serde(rename = "JDPJDHLHOLP")]
-    pub jdpjdhlholp: i64,
+    #[serde(rename = "GCHBADEJHMI")]
+    pub gchbadejhmi: i64,
 
-    #[serde(rename = "AEBKGCOCLOH")]
-    pub aebkgcocloh: i64,
+    #[serde(rename = "EKOGHHNDGCE")]
+    pub ekoghhndgce: i64,
 
-    #[serde(rename = "CCMKMLOJDND")]
-    pub ccmkmlojdnd: i64,
+    #[serde(rename = "NEKKAMCMKFC")]
+    pub nekkamcmkfc: i64,
 
-    #[serde(rename = "NBEDAFCJKLP")]
-    pub nbedafcjklp: i64,
+    #[serde(rename = "JLCMICDJBAM")]
+    pub jlcmicdjbam: i64,
 
-    #[serde(rename = "EMNOOCBJJEK")]
-    pub emnoocbjjek: i64,
+    #[serde(rename = "GNOJONMFIHM")]
+    pub gnojonmfihm: i64,
 
-    #[serde(rename = "PEAEKPCCGFJ")]
-    pub peaekpccgfj: i64,
+    #[serde(rename = "LIPLEOICPHP")]
+    pub lipleoicphp: i64,
 
-    #[serde(rename = "JGKEPLGLILM")]
-    pub jgkeplglilm: i64,
+    #[serde(rename = "AEIEDKCNOEH")]
+    pub aeiedkcnoeh: i64,
 }
 
 pub fn load() -> Result<FungusBaseExcelConfigData, crate::json::JsonError> {

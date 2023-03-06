@@ -9,14 +9,14 @@ pub type HomeWorldWoodExcelConfigData = Vec<HomeWorldWoodExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldWoodExcelConfigDatum {
-    #[serde(rename = "MFMIHFPJNLH")]
-    pub mfmihfpjnlh: i64,
+    #[serde(rename = "AMCCHOKCMKD")]
+    pub amcchokcmkd: i64,
 
-    #[serde(rename = "PLBCKBGKOHO")]
-    pub plbckbgkoho: i64,
+    #[serde(rename = "BNPGJJOGLHC")]
+    pub bnpgjjoglhc: i64,
 
-    #[serde(rename = "BLLCAIJHDJL")]
-    pub bllcaijhdjl: Vec<Vec<i64>>,
+    #[serde(rename = "JKOPGABHFND")]
+    pub jkopgabhfnd: Vec<Vec<i64>>,
 }
 
 pub fn load() -> Result<HomeWorldWoodExcelConfigData, crate::json::JsonError> {

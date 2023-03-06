@@ -12,14 +12,14 @@ pub struct WinterCampSnowmanExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NCFINPOEJCK")]
-    pub ncfinpoejck: Vec<i64>,
+    #[serde(rename = "EOGAHJCKBJE")]
+    pub eogahjckbje: Vec<i64>,
 
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "DBBPIJKJMAL")]
-    pub dbbpijkjmal: i64,
+    #[serde(rename = "MNKBDIPBBAJ")]
+    pub mnkbdipbbaj: i64,
 }
 
 pub fn load() -> Result<WinterCampSnowmanExcelConfigData, crate::json::JsonError> {

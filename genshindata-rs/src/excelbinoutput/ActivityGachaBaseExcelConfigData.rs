@@ -15,47 +15,47 @@ pub struct ActivityGachaBaseExcelConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
 
-    #[serde(rename = "BHPEOAOJGJH")]
-    pub bhpeoaojgjh: i64,
+    #[serde(rename = "CBHHLGANFMB")]
+    pub cbhhlganfmb: i64,
 
-    #[serde(rename = "ELFLCJPMBGD")]
-    pub elflcjpmbgd: i64,
+    #[serde(rename = "GLONDADFGNG")]
+    pub glondadfgng: i64,
 
-    #[serde(rename = "KKGNECCGNAH")]
-    pub kkgneccgnah: i64,
+    #[serde(rename = "NCGBCDGBOMG")]
+    pub ncgbcdgbomg: i64,
 
-    #[serde(rename = "AOAFKOCIEKE")]
-    pub aoafkocieke: i64,
+    #[serde(rename = "FJNLLGGHPFJ")]
+    pub fjnllgghpfj: i64,
 
-    #[serde(rename = "CMOBPKKHFPM")]
-    pub cmobpkkhfpm: i64,
+    #[serde(rename = "GFONDAKAEBD")]
+    pub gfondakaebd: i64,
 
-    #[serde(rename = "LHGPAEFNKMD")]
-    pub lhgpaefnkmd: i64,
+    #[serde(rename = "LCIEIDFBECK")]
+    pub lcieidfbeck: i64,
 
-    #[serde(rename = "BFBDOICKJIB")]
-    pub bfbdoickjib: i64,
+    #[serde(rename = "HHDAFOIAJHB")]
+    pub hhdafoiajhb: i64,
 
-    #[serde(rename = "DMJKEJKOJLA")]
-    pub dmjkejkojla: i64,
+    #[serde(rename = "OHBBIKCNOPH")]
+    pub ohbbikcnoph: i64,
 
-    #[serde(rename = "MKABDPKHIPO")]
-    pub mkabdpkhipo: i64,
+    #[serde(rename = "OKNFGGNKFCE")]
+    pub oknfggnkfce: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "CGNCMGAPMIH")]
-    pub cgncmgapmih: Vec<i64>,
+    #[serde(rename = "HIOCOCBGOKP")]
+    pub hiococbgokp: Vec<i64>,
 
     #[serde(rename = "reminderId")]
     pub reminder_id: i64,
 
-    #[serde(rename = "DFAGIMLMNIK")]
-    pub dfagimlmnik: i64,
+    #[serde(rename = "DMIDCJCLDFM")]
+    pub dmidcjcldfm: i64,
 
-    #[serde(rename = "GHCCOANEAJD")]
-    pub ghccoaneajd: i64,
+    #[serde(rename = "IPPAJJMHHHN")]
+    pub ippajjmhhhn: i64,
 }
 
 pub fn load() -> Result<ActivityGachaBaseExcelConfigData, crate::json::JsonError> {

@@ -5,7 +5,34 @@
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
 
-pub type ActivitySpiceExcelConfigData = Vec<Option<serde_json::Value>>;
+pub type ActivitySpiceExcelConfigData = Vec<ActivitySpiceExcelConfigDatum>;
+
+#[derive(Debug, Serialize, Deserialize)]
+pub struct ActivitySpiceExcelConfigDatum {
+    #[serde(rename = "id")]
+    pub id: i64,
+
+    #[serde(rename = "activityId")]
+    pub activity_id: i64,
+
+    #[serde(rename = "scheduleId")]
+    pub schedule_id: i64,
+
+    #[serde(rename = "PLMJGNMEDLP")]
+    pub plmjgnmedlp: i64,
+
+    #[serde(rename = "watcherIdList")]
+    pub watcher_id_list: Vec<i64>,
+
+    #[serde(rename = "FEOEKOPILAD")]
+    pub feoekopilad: i64,
+
+    #[serde(rename = "DCKLECAEPFH")]
+    pub dcklecaepfh: i64,
+
+    #[serde(rename = "CGLFFLPKGPG")]
+    pub cglfflpkgpg: i64,
+}
 
 pub fn load() -> Result<ActivitySpiceExcelConfigData, crate::json::JsonError> {
     let game_resources_path = std::env::var("GAME_DATA_PATH").unwrap();

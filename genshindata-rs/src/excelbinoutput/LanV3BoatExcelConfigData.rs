@@ -9,8 +9,8 @@ pub type LanV3BoatExcelConfigData = Vec<LanV3BoatExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LanV3BoatExcelConfigDatum {
-    #[serde(rename = "LNLDCBMGPBG")]
-    pub lnldcbmgpbg: i64,
+    #[serde(rename = "MKJGNABNEGM")]
+    pub mkjgnabnegm: i64,
 
     #[serde(rename = "type")]
     pub lan_v3_boat_excel_config_datum_type: String,
@@ -24,35 +24,35 @@ pub struct LanV3BoatExcelConfigDatum {
     #[serde(rename = "prepareTime")]
     pub prepare_time: i64,
 
-    #[serde(rename = "EKMCEBKFAPE")]
-    pub ekmcebkfape: i64,
+    #[serde(rename = "JMPFFNKONOA")]
+    pub jmpffnkonoa: i64,
 
-    #[serde(rename = "DLPOGMLFAFE")]
-    pub dlpogmlfafe: i64,
+    #[serde(rename = "CIAJAOCFJLD")]
+    pub ciajaocfjld: i64,
 
-    #[serde(rename = "IFCEOFJPGIL")]
-    pub ifceofjpgil: i64,
+    #[serde(rename = "OLEBPGMJGCI")]
+    pub olebpgmjgci: i64,
 
-    #[serde(rename = "CPKJMBHIHOG")]
-    pub cpkjmbhihog: i64,
+    #[serde(rename = "FBBLEKAPMOJ")]
+    pub fbblekapmoj: i64,
 
-    #[serde(rename = "BINBBBBJGKJ")]
-    pub binbbbbjgkj: i64,
+    #[serde(rename = "CFMGAIJJPLK")]
+    pub cfmgaijjplk: i64,
 
     #[serde(rename = "limitRegion")]
     pub limit_region: String,
 
-    #[serde(rename = "MKFJDLBLCHI")]
-    pub mkfjdlblchi: Vec<i64>,
+    #[serde(rename = "OJDAMPBAHGM")]
+    pub ojdampbahgm: Vec<i64>,
 
-    #[serde(rename = "DHENFKBIHPG")]
-    pub dhenfkbihpg: Vec<i64>,
+    #[serde(rename = "GCJPDBIJLCN")]
+    pub gcjpdbijlcn: Vec<i64>,
 
-    #[serde(rename = "HDDIELMIHBN")]
-    pub hddielmihbn: Vec<i64>,
+    #[serde(rename = "KDDOAECINIK")]
+    pub kddoaecinik: Vec<i64>,
 
-    #[serde(rename = "NJBMBIIEODE")]
-    pub njbmbiieode: Option<f64>,
+    #[serde(rename = "HJEBLNBAOIE")]
+    pub hjeblnbaoie: Option<f64>,
 }
 
 pub fn load() -> Result<LanV3BoatExcelConfigData, crate::json::JsonError> {

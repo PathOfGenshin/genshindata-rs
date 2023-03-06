@@ -18,29 +18,29 @@ pub struct LanV3RaceExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "JKAMKKGPBBJ")]
-    pub jkamkkgpbbj: i64,
+    #[serde(rename = "EADIHALBGCN")]
+    pub eadihalbgcn: i64,
 
-    #[serde(rename = "CFCKMLPNMCP")]
-    pub cfckmlpnmcp: Vec<i64>,
+    #[serde(rename = "CHHHPHEJKMK")]
+    pub chhhphejkmk: Vec<i64>,
 
-    #[serde(rename = "DMLBFPHOADL")]
-    pub dmlbfphoadl: f64,
+    #[serde(rename = "DAHMLDJKJAJ")]
+    pub dahmldjkjaj: f64,
 
-    #[serde(rename = "LJODAJCOPGL")]
-    pub ljodajcopgl: f64,
+    #[serde(rename = "EKHFIJPNNEA")]
+    pub ekhfijpnnea: f64,
 
-    #[serde(rename = "EIPIEAFPDFN")]
-    pub eipieafpdfn: Vec<i64>,
+    #[serde(rename = "PFJGEHBHJFN")]
+    pub pfjgehbhjfn: Vec<i64>,
 
-    #[serde(rename = "ODIOKGBEMLP")]
-    pub odiokgbemlp: f64,
+    #[serde(rename = "BDDMKAPKGIF")]
+    pub bddmkapkgif: f64,
 
-    #[serde(rename = "FDKDMFNBPFH")]
-    pub fdkdmfnbpfh: i64,
+    #[serde(rename = "JCMAKIIPLPJ")]
+    pub jcmakiiplpj: i64,
 
-    #[serde(rename = "CILFJBMLBFH")]
-    pub cilfjbmlbfh: f64,
+    #[serde(rename = "LLCELEOFAMN")]
+    pub llceleofamn: f64,
 }
 
 pub fn load() -> Result<LanV3RaceExcelConfigData, crate::json::JsonError> {

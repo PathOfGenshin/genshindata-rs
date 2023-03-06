@@ -12,50 +12,35 @@ pub struct GcgGameExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "MBOLNEAALBF")]
-    pub mbolneaalbf: i64,
+    #[serde(rename = "GIPCKIEBBDO")]
+    pub gipckiebbdo: i64,
 
-    #[serde(rename = "MCEDOPGBHPM")]
-    pub mcedopgbhpm: i64,
+    #[serde(rename = "IFEAPLFJIKH")]
+    pub ifeaplfjikh: i64,
 
-    #[serde(rename = "MIJHPKBIOPI")]
-    pub mijhpkbiopi: Option<i64>,
+    #[serde(rename = "ADKOIFEDKIM")]
+    pub adkoifedkim: Option<i64>,
 
-    #[serde(rename = "GHDGOBAAJGM")]
-    pub ghdgobaajgm: Option<i64>,
+    #[serde(rename = "NMABJHKFCEG")]
+    pub nmabjhkfceg: Option<i64>,
 
     #[serde(rename = "guideName")]
     pub guide_name: GuideName,
 
-    #[serde(rename = "DNMCOPPPNLB")]
-    pub dnmcopppnlb: Option<Dnmcopppnlb>,
+    #[serde(rename = "INCBEIKFJKO")]
+    pub incbeikfjko: Option<Incbeikfjko>,
 
-    #[serde(rename = "GLMOGBIKNFG")]
-    pub glmogbiknfg: Option<Glmogbiknfg>,
+    #[serde(rename = "OEEFBOIJEJB")]
+    pub oeefboijejb: Option<Oeefboijejb>,
 
-    #[serde(rename = "AFDLJEHJMBM")]
-    pub afdljehjmbm: Option<bool>,
+    #[serde(rename = "FGFLBIFHPBB")]
+    pub fgflbifhpbb: Option<bool>,
 
-    #[serde(rename = "DOIPEHEKFHD")]
-    pub doipehekfhd: Option<i64>,
+    #[serde(rename = "FEDIPCHJHNH")]
+    pub fedipchjhnh: Option<i64>,
 
-    #[serde(rename = "EOKDDNCPBJF")]
-    pub eokddncpbjf: Option<String>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Dnmcopppnlb {
-    #[serde(rename = "AI")]
-    Ai,
-
-    #[serde(rename = "PVE")]
-    Pve,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Glmogbiknfg {
-    #[serde(rename = "SELF")]
-    GlmogbiknfgSelf,
+    #[serde(rename = "FHBFDECLGEC")]
+    pub fhbfdeclgec: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -80,6 +65,21 @@ pub enum GuideName {
 
     #[serde(rename = "Tutorial_2_2")]
     Tutorial2_2,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Incbeikfjko {
+    #[serde(rename = "AI")]
+    Ai,
+
+    #[serde(rename = "PVE")]
+    Pve,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Oeefboijejb {
+    #[serde(rename = "SELF")]
+    OeefboijejbSelf,
 }
 
 pub fn load() -> Result<GcgGameExcelConfigData, crate::json::JsonError> {

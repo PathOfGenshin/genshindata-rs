@@ -12,33 +12,33 @@ pub struct QteExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JHKOJAIKGIM")]
-    pub jhkojaikgim: i64,
+    #[serde(rename = "OMKAMGFAEEE")]
+    pub omkamgfaeee: i64,
 
-    #[serde(rename = "PKCEHHGLKHH")]
-    pub pkcehhglkhh: String,
+    #[serde(rename = "MAIIKGNPIEL")]
+    pub maiikgnpiel: String,
 
-    #[serde(rename = "KLNNFLPDNFD")]
-    pub klnnflpdnfd: Vec<Cdhnihblman>,
+    #[serde(rename = "JLMKFMIDAEG")]
+    pub jlmkfmidaeg: Vec<Jlmkfmidaeg>,
 
-    #[serde(rename = "EGPOPHDJJOI")]
-    pub egpophdjjoi: Vec<Egpophdjjoi>,
+    #[serde(rename = "EKGDKOLPOCH")]
+    pub ekgdkolpoch: Vec<Ekgdkolpoch>,
 
-    #[serde(rename = "CDHNIHBLMEN")]
-    pub cdhnihblmen: Vec<Cdhnihblman>,
+    #[serde(rename = "PMFICKDBLFJ")]
+    pub pmfickdblfj: Vec<Jlmkfmidaeg>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Cdhnihblman {
+pub struct Ekgdkolpoch {
+    #[serde(rename = "type")]
+    pub ekgdkolpoch_type: Option<String>,
+
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Egpophdjjoi {
-    #[serde(rename = "type")]
-    pub egpophdjjoi_type: Option<String>,
-
+pub struct Jlmkfmidaeg {
     #[serde(rename = "param")]
     pub param: Vec<i64>,
 }

@@ -24,8 +24,8 @@ pub struct DungeonLevelEntityConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "AMCFGHNHLNC")]
-    pub amcfghnhlnc: i64,
+    #[serde(rename = "LLHCNKLAAIE")]
+    pub llhcnklaaie: i64,
 }
 
 pub fn load() -> Result<DungeonLevelEntityConfigData, crate::json::JsonError> {

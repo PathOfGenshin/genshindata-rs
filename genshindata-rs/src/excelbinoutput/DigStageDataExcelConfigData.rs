@@ -12,20 +12,20 @@ pub struct DigStageDataExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
 
-    #[serde(rename = "LLBGHCFIAGF")]
-    pub llbghcfiagf: Option<i64>,
+    #[serde(rename = "KAJHDDMFBEO")]
+    pub kajhddmfbeo: Option<i64>,
 
     #[serde(rename = "questID")]
     pub quest_id: Option<i64>,
 
-    #[serde(rename = "FHKGFOCNMNI")]
-    pub fhkgfocnmni: i64,
+    #[serde(rename = "KDHLGCHNPOJ")]
+    pub kdhlgchnpoj: i64,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,

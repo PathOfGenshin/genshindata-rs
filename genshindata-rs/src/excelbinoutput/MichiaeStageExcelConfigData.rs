@@ -18,11 +18,11 @@ pub struct MichiaeStageExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "DOPNMEEOEGD")]
-    pub dopnmeeoegd: i64,
+    #[serde(rename = "JCMOKCCCFKF")]
+    pub jcmokcccfkf: i64,
 
-    #[serde(rename = "PIPGGDKFKPO")]
-    pub pipggdkfkpo: i64,
+    #[serde(rename = "CFFCBHBNCLA")]
+    pub cffcbhbncla: i64,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,

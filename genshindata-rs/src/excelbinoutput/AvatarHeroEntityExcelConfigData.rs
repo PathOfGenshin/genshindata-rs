@@ -12,8 +12,8 @@ pub struct AvatarHeroEntityExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "HGKPLCICKMD")]
-    pub hgkplcickmd: i64,
+    #[serde(rename = "KIFHDDMCNHB")]
+    pub kifhddmcnhb: i64,
 
     #[serde(rename = "gachaImageNameHash")]
     pub gacha_image_name_hash: i64,

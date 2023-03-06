@@ -18,35 +18,35 @@ pub struct GravenInnocencePhotoStageExcelConfigDatum {
     #[serde(rename = "icon")]
     pub icon: String,
 
-    #[serde(rename = "PIBMCNOKHGJ")]
-    pub pibmcnokhgj: i64,
+    #[serde(rename = "OIDGCKBJOBE")]
+    pub oidgckbjobe: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "KHFOJPHIBDF")]
-    pub khfojphibdf: i64,
+    #[serde(rename = "IEHDLFOOEAB")]
+    pub iehdlfooeab: i64,
 
     #[serde(rename = "infoDescTextMapHash")]
     pub info_desc_text_map_hash: i64,
 
-    #[serde(rename = "CDHHKECHLIF")]
-    pub cdhhkechlif: Vec<i64>,
+    #[serde(rename = "GLNBFLNKPIP")]
+    pub glnbflnkpip: Vec<i64>,
 
-    #[serde(rename = "OBCMEGADNJP")]
-    pub obcmegadnjp: i64,
+    #[serde(rename = "GNNHGCFPCFI")]
+    pub gnnhgcfpcfi: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "JEBPJFDNBAA")]
-    pub jebpjfdnbaa: i64,
+    #[serde(rename = "DBPLLCGLHBC")]
+    pub dbpllcglhbc: i64,
 
-    #[serde(rename = "AEHKPEACKPL")]
-    pub aehkpeackpl: Vec<i64>,
+    #[serde(rename = "LLBPIOBNHBA")]
+    pub llbpiobnhba: Vec<i64>,
 
-    #[serde(rename = "MAEPGGGGJOM")]
-    pub maepggggjom: Option<i64>,
+    #[serde(rename = "CELIJOOEOII")]
+    pub celijooeoii: Option<i64>,
 }
 
 pub fn load() -> Result<GravenInnocencePhotoStageExcelConfigData, crate::json::JsonError> {

@@ -12,11 +12,11 @@ pub struct GravenInnocenceObjectDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DBBPIJKJMAL")]
-    pub dbbpijkjmal: Option<i64>,
+    #[serde(rename = "MNKBDIPBBAJ")]
+    pub mnkbdipbbaj: Option<i64>,
 
-    #[serde(rename = "ILIFPDPIBDN")]
-    pub ilifpdpibdn: i64,
+    #[serde(rename = "LLKANNHIFBH")]
+    pub llkannhifbh: i64,
 
     #[serde(rename = "watcher")]
     pub watcher: i64,
@@ -27,8 +27,8 @@ pub struct GravenInnocenceObjectDataExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "FLGDAEFGNNN")]
-    pub flgdaefgnnn: i64,
+    #[serde(rename = "NCFKCNBFGDM")]
+    pub ncfkcnbfgdm: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceObjectDataExcelConfigData, crate::json::JsonError> {

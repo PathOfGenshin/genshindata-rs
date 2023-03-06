@@ -15,26 +15,26 @@ pub struct CustomLevelGroupConfigDatum {
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
 
-    #[serde(rename = "FBAGALOIMLI")]
-    pub fbagaloimli: Vec<i64>,
+    #[serde(rename = "GCLAIJMDFOD")]
+    pub gclaijmdfod: Vec<i64>,
 
-    #[serde(rename = "NGNOLAMJCLC")]
-    pub ngnolamjclc: i64,
+    #[serde(rename = "NOODGLKGMJL")]
+    pub noodglkgmjl: i64,
 
-    #[serde(rename = "LFJKJKCKBPH")]
-    pub lfjkjkckbph: i64,
+    #[serde(rename = "DONFMIOCKIC")]
+    pub donfmiockic: i64,
 
-    #[serde(rename = "HECOKGJJBGK")]
-    pub hecokgjjbgk: i64,
+    #[serde(rename = "LPJHBKNDOOJ")]
+    pub lpjhbkndooj: i64,
 
-    #[serde(rename = "OKKFBCHLMID")]
-    pub okkfbchlmid: i64,
+    #[serde(rename = "OMILNBGKPAL")]
+    pub omilnbgkpal: i64,
 
-    #[serde(rename = "PALLKIIDECL")]
-    pub pallkiidecl: i64,
+    #[serde(rename = "EGLBKGCNNOD")]
+    pub eglbkgcnnod: i64,
 
-    #[serde(rename = "AOOPBMAOPDL")]
-    pub aoopbmaopdl: i64,
+    #[serde(rename = "NPFCGOIEONJ")]
+    pub npfcgoieonj: i64,
 }
 
 pub fn load() -> Result<CustomLevelGroupConfigData, crate::json::JsonError> {

@@ -18,11 +18,11 @@ pub struct MonsterRelationshipExcelConfigDatum {
     #[serde(rename = "monsterRarity")]
     pub monster_rarity: MonsterRarity,
 
-    #[serde(rename = "HEHBBIIDDLE")]
-    pub hehbbiiddle: String,
+    #[serde(rename = "AIFFJKKGJMP")]
+    pub aiffjkkgjmp: String,
 
-    #[serde(rename = "MANCMFGPCCJ")]
-    pub mancmfgpccj: Option<bool>,
+    #[serde(rename = "LOLEANKNHEC")]
+    pub loleanknhec: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

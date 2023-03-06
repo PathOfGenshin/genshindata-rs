@@ -18,17 +18,17 @@ pub struct ActivitySumoOverallConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "OJPIPPPAIPH")]
-    pub ojpipppaiph: i64,
+    #[serde(rename = "CDKDDFDEPKH")]
+    pub cdkddfdepkh: i64,
 
-    #[serde(rename = "OKJNLFBNIHH")]
-    pub okjnlfbnihh: i64,
+    #[serde(rename = "GNKIPECNEOE")]
+    pub gnkipecneoe: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "NPKFHMGOEAJ")]
-    pub npkfhmgoeaj: i64,
+    #[serde(rename = "JGDKIIOLODP")]
+    pub jgdkiiolodp: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
@@ -36,14 +36,14 @@ pub struct ActivitySumoOverallConfigDatum {
     #[serde(rename = "teamNum")]
     pub team_num: i64,
 
-    #[serde(rename = "NAMDLGLIAKA")]
-    pub namdlgliaka: i64,
+    #[serde(rename = "JDMDBAPPMJH")]
+    pub jdmdbappmjh: i64,
 
-    #[serde(rename = "LHHLGGKLGAH")]
-    pub lhhlggklgah: i64,
+    #[serde(rename = "AELELOCEEFB")]
+    pub aeleloceefb: i64,
 
-    #[serde(rename = "NCEPHNBADJK")]
-    pub ncephnbadjk: i64,
+    #[serde(rename = "AAAGOKLACAA")]
+    pub aaagoklacaa: i64,
 }
 
 pub fn load() -> Result<ActivitySumoOverallConfigData, crate::json::JsonError> {

@@ -15,14 +15,14 @@ pub struct IrodoriChessLevelExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "GFLCAMEGLDO")]
-    pub gflcamegldo: i64,
+    #[serde(rename = "FHGFNHHBJML")]
+    pub fhgfnhhbjml: i64,
 
-    #[serde(rename = "HIGALECPABI")]
-    pub higalecpabi: i64,
+    #[serde(rename = "FIOEOCCGBBD")]
+    pub fioeoccgbbd: i64,
 
-    #[serde(rename = "KCGCGIBMPBG")]
-    pub kcgcgibmpbg: i64,
+    #[serde(rename = "PKIDBAOIBCI")]
+    pub pkidbaoibci: i64,
 }
 
 pub fn load() -> Result<IrodoriChessLevelExcelConfigData, crate::json::JsonError> {

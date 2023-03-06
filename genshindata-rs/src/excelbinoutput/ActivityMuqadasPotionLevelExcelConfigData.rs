@@ -12,8 +12,8 @@ pub struct ActivityMuqadasPotionLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "PNBNAELKHHN")]
-    pub pnbnaelkhhn: i64,
+    #[serde(rename = "HGBGJJPDLLJ")]
+    pub hgbgjjpdllj: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
@@ -21,29 +21,29 @@ pub struct ActivityMuqadasPotionLevelExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "OBAOGFIILAL")]
-    pub obaogfiilal: Vec<i64>,
+    #[serde(rename = "MOJECJHNMMC")]
+    pub mojecjhnmmc: Vec<i64>,
 
-    #[serde(rename = "KNGMNLBDFEG")]
-    pub kngmnlbdfeg: i64,
+    #[serde(rename = "JMOHICPFFPN")]
+    pub jmohicpffpn: i64,
 
-    #[serde(rename = "FLFLCLPEFAP")]
-    pub flflclpefap: i64,
+    #[serde(rename = "JCJHGJFJPNO")]
+    pub jcjhgjfjpno: i64,
 
-    #[serde(rename = "DCHPDLPJDMO")]
-    pub dchpdlpjdmo: i64,
+    #[serde(rename = "IFLGLLEHDNL")]
+    pub iflgllehdnl: i64,
 
-    #[serde(rename = "NGGNGFKLKLK")]
-    pub nggngfklklk: String,
+    #[serde(rename = "NPIIMKJMNOA")]
+    pub npiimkjmnoa: String,
 
-    #[serde(rename = "EAHOBEPFHGF")]
-    pub eahobepfhgf: String,
+    #[serde(rename = "HPBLLFCLIFN")]
+    pub hpbllfclifn: String,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "AINMCNEABOF")]
-    pub ainmcneabof: i64,
+    #[serde(rename = "BNBOCNMLIIK")]
+    pub bnbocnmliik: i64,
 }
 
 pub fn load() -> Result<ActivityMuqadasPotionLevelExcelConfigData, crate::json::JsonError> {

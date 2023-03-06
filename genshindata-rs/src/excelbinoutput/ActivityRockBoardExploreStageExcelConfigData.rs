@@ -12,14 +12,14 @@ pub struct ActivityRockBoardExploreStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DBBPIJKJMAL")]
-    pub dbbpijkjmal: i64,
+    #[serde(rename = "MNKBDIPBBAJ")]
+    pub mnkbdipbbaj: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "FGPLMNNDBIB")]
-    pub fgplmnndbib: String,
+    #[serde(rename = "LDNKHFONPAD")]
+    pub ldnkhfonpad: String,
 
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
@@ -27,8 +27,8 @@ pub struct ActivityRockBoardExploreStageExcelConfigDatum {
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
 
-    #[serde(rename = "PIOEDONEINL")]
-    pub pioedoneinl: i64,
+    #[serde(rename = "BDPDLBFFHFF")]
+    pub bdpdlbffhff: i64,
 
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,

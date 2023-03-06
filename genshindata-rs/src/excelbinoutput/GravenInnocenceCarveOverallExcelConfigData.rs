@@ -15,14 +15,14 @@ pub struct GravenInnocenceCarveOverallExcelConfigDatum {
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "NCFINPOEJCK")]
-    pub ncfinpoejck: Vec<i64>,
+    #[serde(rename = "EOGAHJCKBJE")]
+    pub eogahjckbje: Vec<i64>,
 
-    #[serde(rename = "GFGGIBHBMLK")]
-    pub gfggibhbmlk: Vec<i64>,
+    #[serde(rename = "MDIPOBGEAPA")]
+    pub mdipobgeapa: Vec<i64>,
 
-    #[serde(rename = "BHNMKCGFFMC")]
-    pub bhnmkcgffmc: i64,
+    #[serde(rename = "KDBIPOBGNHF")]
+    pub kdbipobgnhf: i64,
 }
 
 pub fn load() -> Result<GravenInnocenceCarveOverallExcelConfigData, crate::json::JsonError> {

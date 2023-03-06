@@ -12,20 +12,20 @@ pub struct VintageMarketDealExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "LCKLOBJNLCE")]
-    pub lcklobjnlce: Vec<Lcklobjnlce>,
+    #[serde(rename = "HPJGKNDALEP")]
+    pub hpjgkndalep: Vec<Hpjgkndalep>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Lcklobjnlce {
+pub struct Hpjgkndalep {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
-    #[serde(rename = "PEOEHBJNDBI")]
-    pub peoehbjndbi: Option<i64>,
+    #[serde(rename = "JPPFGFOCJDF")]
+    pub jppfgfocjdf: Option<i64>,
 
-    #[serde(rename = "DFBGENIMMNF")]
-    pub dfbgenimmnf: Option<i64>,
+    #[serde(rename = "LOAGDNDMMJC")]
+    pub loagdndmmjc: Option<i64>,
 }
 
 pub fn load() -> Result<VintageMarketDealExcelConfigData, crate::json::JsonError> {

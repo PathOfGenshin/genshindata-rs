@@ -12,17 +12,17 @@ pub struct QuestCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "EHCPBIHBPEM")]
-    pub ehcpbihbpem: Vec<i64>,
+    #[serde(rename = "DIOMCDOJNHP")]
+    pub diomcdojnhp: Vec<i64>,
 
     #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
 
-    #[serde(rename = "ABMHEAKHDGG")]
-    pub abmheakhdgg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "MGGCEJONHDM")]
+    pub mggcejonhdm: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "HKMAEKBOPPK")]
-    pub hkmaekboppk: Vec<i64>,
+    #[serde(rename = "GEHBLGKOAOF")]
+    pub gehblgkoaof: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,

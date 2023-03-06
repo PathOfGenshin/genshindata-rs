@@ -12,15 +12,15 @@ pub struct AvatarExtraPropExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "ILJCDGPMFGJ")]
-    pub iljcdgpmfgj: Vec<Iljcdgpmfgj>,
+    #[serde(rename = "ELFNAOBKMPA")]
+    pub elfnaobkmpa: Vec<Elfnaobkmpa>,
 
-    #[serde(rename = "BJCCPILLOOB")]
-    pub bjccpilloob: i64,
+    #[serde(rename = "OJLPEBLFIHA")]
+    pub ojlpeblfiha: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Iljcdgpmfgj {
+pub struct Elfnaobkmpa {
     #[serde(rename = "propType")]
     pub prop_type: Option<String>,
 

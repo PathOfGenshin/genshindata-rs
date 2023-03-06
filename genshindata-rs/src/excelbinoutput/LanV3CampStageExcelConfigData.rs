@@ -12,14 +12,14 @@ pub struct LanV3CampStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
 
-    #[serde(rename = "KHAKJEOMIAC")]
-    pub khakjeomiac: Vec<i64>,
+    #[serde(rename = "LKJEHDNDCNJ")]
+    pub lkjehdndcnj: Vec<i64>,
 
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
 
-    #[serde(rename = "KKDEMBGOGMA")]
-    pub kkdembgogma: Vec<i64>,
+    #[serde(rename = "CPHLJCHAGME")]
+    pub cphljchagme: Vec<i64>,
 }
 
 pub fn load() -> Result<LanV3CampStageExcelConfigData, crate::json::JsonError> {

@@ -12,8 +12,8 @@ pub struct GcgDeckBackExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "DOHHHNAHHMO")]
-    pub dohhhnahhmo: String,
+    #[serde(rename = "FMPJAAOEFNK")]
+    pub fmpjaaoefnk: String,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -21,20 +21,23 @@ pub struct GcgDeckBackExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LLHKCKOBCEL")]
-    pub llhkckobcel: i64,
+    #[serde(rename = "KEMBEMMIJNB")]
+    pub kembemmijnb: i64,
 
     #[serde(rename = "order")]
     pub order: i64,
 
-    #[serde(rename = "GNBKLMFGBIA")]
-    pub gnbklmfgbia: i64,
+    #[serde(rename = "JFDMGHDNJCM")]
+    pub jfdmghdnjcm: i64,
 
-    #[serde(rename = "AHKPCJOLHKD")]
-    pub ahkpcjolhkd: i64,
+    #[serde(rename = "PPEDFCJEEAL")]
+    pub ppedfcjeeal: i64,
 
     #[serde(rename = "id")]
     pub id: Option<i64>,
+
+    #[serde(rename = "NJPPOMIEBLO")]
+    pub njppomieblo: Option<bool>,
 }
 
 pub fn load() -> Result<GcgDeckBackExcelConfigData, crate::json::JsonError> {

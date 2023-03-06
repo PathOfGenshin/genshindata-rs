@@ -12,11 +12,11 @@ pub struct EchoShellSummerTimeDungeonExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "FDHJJBDKFBM")]
-    pub fdhjjbdkfbm: i64,
+    #[serde(rename = "GDLGGMDMIOO")]
+    pub gdlggmdmioo: i64,
 
-    #[serde(rename = "GDKHJMJHDNC")]
-    pub gdkhjmjhdnc: Option<i64>,
+    #[serde(rename = "NNDJLCLCJPD")]
+    pub nndjlclcjpd: Option<i64>,
 }
 
 pub fn load() -> Result<EchoShellSummerTimeDungeonExcelConfigData, crate::json::JsonError> {

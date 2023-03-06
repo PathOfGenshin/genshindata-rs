@@ -12,11 +12,11 @@ pub struct ActivityPotionBuffExcelConfigDatum {
     #[serde(rename = "buffId")]
     pub buff_id: i64,
 
-    #[serde(rename = "BHCJKANDNPF")]
-    pub bhcjkandnpf: String,
+    #[serde(rename = "LADKLKNNEKD")]
+    pub ladklknnekd: String,
 
-    #[serde(rename = "CBNLIKIKJII")]
-    pub cbnlikikjii: i64,
+    #[serde(rename = "COGDOMABGGA")]
+    pub cogdomabgga: i64,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -27,11 +27,11 @@ pub struct ActivityPotionBuffExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 
-    #[serde(rename = "NCKEDPFOGCP")]
-    pub nckedpfogcp: i64,
+    #[serde(rename = "EDMLABBOHPA")]
+    pub edmlabbohpa: i64,
 
-    #[serde(rename = "OEKDBOMKBLO")]
-    pub oekdbomkblo: String,
+    #[serde(rename = "NIHEIONDHCB")]
+    pub niheiondhcb: String,
 }
 
 pub fn load() -> Result<ActivityPotionBuffExcelConfigData, crate::json::JsonError> {

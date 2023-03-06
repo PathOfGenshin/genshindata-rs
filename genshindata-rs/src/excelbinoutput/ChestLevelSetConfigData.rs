@@ -9,11 +9,11 @@ pub type ChestLevelSetConfigData = Vec<ChestLevelSetConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ChestLevelSetConfigDatum {
-    #[serde(rename = "zoneMinLevel")]
-    pub zone_min_level: i64,
-
     #[serde(rename = "chestLevel")]
     pub chest_level: i64,
+
+    #[serde(rename = "zoneMinLevel")]
+    pub zone_min_level: i64,
 }
 
 pub fn load() -> Result<ChestLevelSetConfigData, crate::json::JsonError> {

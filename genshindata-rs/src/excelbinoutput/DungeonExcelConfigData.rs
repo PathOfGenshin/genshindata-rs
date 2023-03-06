@@ -48,8 +48,8 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "dayEnterCount")]
     pub day_enter_count: Option<i64>,
 
-    #[serde(rename = "ANFIKNNDLIE")]
-    pub anfiknndlie: Vec<Anfiknndlie>,
+    #[serde(rename = "HKEJEEHBHOL")]
+    pub hkejeehbhol: Vec<Hkejeehbhol>,
 
     #[serde(rename = "passRewardPreviewID")]
     pub pass_reward_preview_id: Option<i64>,
@@ -75,8 +75,8 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "recommendElementTypes")]
     pub recommend_element_types: Vec<RecommendElementType>,
 
-    #[serde(rename = "ABELMEODGFP")]
-    pub abelmeodgfp: Vec<String>,
+    #[serde(rename = "EOFIMFNPOIN")]
+    pub eofimfnpoin: Vec<String>,
 
     #[serde(rename = "levelConfigMap")]
     pub level_config_map: LevelConfigMap,
@@ -84,8 +84,8 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "enterCostItems")]
     pub enter_cost_items: Vec<i64>,
 
-    #[serde(rename = "GIJJGHNAOGO")]
-    pub gijjghnaogo: i64,
+    #[serde(rename = "EHKDCNBLHFL")]
+    pub ehkdcnblhfl: i64,
 
     #[serde(rename = "cityID")]
     pub city_id: i64,
@@ -96,11 +96,11 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "stateType")]
     pub state_type: StateType,
 
-    #[serde(rename = "IGHNOEBJJJD")]
-    pub ighnoebjjjd: Ighnoebjjjd,
+    #[serde(rename = "LPGBALJHAFG")]
+    pub lpgbaljhafg: Lpgbaljhafg,
 
-    #[serde(rename = "MHELPCDCJAL")]
-    pub mhelpcdcjal: Mhelpcdcjal,
+    #[serde(rename = "ANGPEIKGMDF")]
+    pub angpeikgmdf: Angpeikgmdf,
 
     #[serde(rename = "avatarLimitType")]
     pub avatar_limit_type: Option<i64>,
@@ -114,17 +114,23 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "serialId")]
     pub serial_id: Option<i64>,
 
-    #[serde(rename = "LPMPEHGLEPN")]
-    pub lpmpehglepn: Option<bool>,
+    #[serde(rename = "KDIEJNJAEIK")]
+    pub kdiejnjaeik: Option<bool>,
 
-    #[serde(rename = "KKOCKLJGKDC")]
-    pub kkockljgkdc: Option<bool>,
+    #[serde(rename = "LALCELJOIEI")]
+    pub lalceljoiei: Option<bool>,
 
     #[serde(rename = "firstPassRewardPreviewID")]
     pub first_pass_reward_preview_id: Option<i64>,
 
     #[serde(rename = "passJumpDungeon")]
     pub pass_jump_dungeon: Option<i64>,
+
+    #[serde(rename = "KPMHGKAECPA")]
+    pub kpmhgkaecpa: Option<String>,
+
+    #[serde(rename = "KFJLAKKPGKP")]
+    pub kfjlakkpgkp: Option<bool>,
 
     #[serde(rename = "dontShowPushTips")]
     pub dont_show_push_tips: Option<bool>,
@@ -138,8 +144,8 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "reviveIntervalTime")]
     pub revive_interval_time: Option<i64>,
 
-    #[serde(rename = "LACKBLGMAGA")]
-    pub lackblgmaga: Option<bool>,
+    #[serde(rename = "OMGLDINHNGF")]
+    pub omgldinhngf: Option<bool>,
 
     #[serde(rename = "statueCostID")]
     pub statue_cost_id: Option<i64>,
@@ -150,12 +156,15 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "statueDrop")]
     pub statue_drop: Option<i64>,
 
-    #[serde(rename = "ONDNNKJCPNN")]
-    pub ondnnkjcpnn: Option<bool>,
+    #[serde(rename = "AIOFLCJBHKC")]
+    pub aioflcjbhkc: Option<bool>,
+
+    #[serde(rename = "IANCHKOEHAD")]
+    pub ianchkoehad: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Anfiknndlie {
+pub struct Hkejeehbhol {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -208,14 +217,11 @@ pub struct LevelConfigMap {
     #[serde(rename = "1369")]
     pub the_1369: Option<i64>,
 
-    #[serde(rename = "1768")]
-    pub the_1768: Option<i64>,
+    #[serde(rename = "1788")]
+    pub the_1788: Option<i64>,
 
-    #[serde(rename = "1769")]
-    pub the_1769: Option<i64>,
-
-    #[serde(rename = "1770")]
-    pub the_1770: Option<i64>,
+    #[serde(rename = "1789")]
+    pub the_1789: Option<i64>,
 
     #[serde(rename = "1701")]
     pub the_1701: Option<i64>,
@@ -330,6 +336,9 @@ pub struct LevelConfigMap {
 
     #[serde(rename = "1694")]
     pub the_1694: Option<i64>,
+
+    #[serde(rename = "1778")]
+    pub the_1778: Option<i64>,
 
     #[serde(rename = "1551")]
     pub the_1551: Option<i64>,
@@ -612,15 +621,36 @@ pub struct LevelConfigMap {
 
     #[serde(rename = "1757")]
     pub the_1757: Option<i64>,
+
+    #[serde(rename = "1777")]
+    pub the_1777: Option<i64>,
+
+    #[serde(rename = "1771")]
+    pub the_1771: Option<i64>,
+
+    #[serde(rename = "1772")]
+    pub the_1772: Option<i64>,
+
+    #[serde(rename = "1773")]
+    pub the_1773: Option<i64>,
+
+    #[serde(rename = "1774")]
+    pub the_1774: Option<i64>,
+
+    #[serde(rename = "1775")]
+    pub the_1775: Option<i64>,
+
+    #[serde(rename = "1776")]
+    pub the_1776: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ighnoebjjjd {
-    #[serde(rename = "ART/UI/Atlas/ClimatePic/UI_Img_Climate_LaSignora")]
-    ArtUiAtlasClimatePicUiImgClimateLaSignora,
+pub enum Angpeikgmdf {
+    #[serde(rename = "ART/UI/Atlas/DungeonTypeIcon/UI_Icon_TeamChain")]
+    ArtUiAtlasDungeonTypeIconUiIconTeamChain,
 
-    #[serde(rename = "ART/UI/Atlas/DungeonPic/UI_DungeonPic_TeamChain")]
-    ArtUiAtlasDungeonPicUiDungeonPicTeamChain,
+    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
+    ArtUiAtlasElementIconsUiIconClimateLaSignora,
 
     #[serde(rename = "")]
     Empty,
@@ -636,12 +666,12 @@ pub enum InvolveType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mhelpcdcjal {
-    #[serde(rename = "ART/UI/Atlas/DungeonTypeIcon/UI_Icon_TeamChain")]
-    ArtUiAtlasDungeonTypeIconUiIconTeamChain,
+pub enum Lpgbaljhafg {
+    #[serde(rename = "ART/UI/Atlas/ClimatePic/UI_Img_Climate_LaSignora")]
+    ArtUiAtlasClimatePicUiImgClimateLaSignora,
 
-    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
-    ArtUiAtlasElementIconsUiIconClimateLaSignora,
+    #[serde(rename = "ART/UI/Atlas/DungeonPic/UI_DungeonPic_TeamChain")]
+    ArtUiAtlasDungeonPicUiDungeonPicTeamChain,
 
     #[serde(rename = "")]
     Empty,

@@ -12,20 +12,20 @@ pub struct WidgetCameraExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DKLKJJMGELK")]
-    pub dklkjjmgelk: f64,
+    #[serde(rename = "BJMEDFPNCAJ")]
+    pub bjmedfpncaj: f64,
 
-    #[serde(rename = "BFEOLDAHNDF")]
-    pub bfeoldahndf: String,
+    #[serde(rename = "LKGIOGAELMM")]
+    pub lkgiogaelmm: String,
 
-    #[serde(rename = "AHLJCIAJGHF")]
-    pub ahljciajghf: i64,
+    #[serde(rename = "HFJGMLKBMLN")]
+    pub hfjgmlkbmln: i64,
 
-    #[serde(rename = "MNEJAAKLEOD")]
-    pub mnejaakleod: i64,
+    #[serde(rename = "MHMFBDLEFAJ")]
+    pub mhmfbdlefaj: i64,
 
-    #[serde(rename = "PMILJDBBBBG")]
-    pub pmiljdbbbbg: i64,
+    #[serde(rename = "GEEFPOFNJKN")]
+    pub geefpofnjkn: i64,
 }
 
 pub fn load() -> Result<WidgetCameraExcelConfigData, crate::json::JsonError> {

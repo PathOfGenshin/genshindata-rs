@@ -21,14 +21,14 @@ pub struct LanV2FireworksStageDataExcelConfigDatum {
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
-    #[serde(rename = "DJDNCJMKOOB")]
-    pub djdncjmkoob: Vec<i64>,
+    #[serde(rename = "BBEDAGAOGML")]
+    pub bbedagaogml: Vec<i64>,
 
-    #[serde(rename = "LCBLLDIMPJD")]
-    pub lcblldimpjd: i64,
+    #[serde(rename = "LFBMAJOGMNM")]
+    pub lfbmajogmnm: i64,
 }
 
 pub fn load() -> Result<LanV2FireworksStageDataExcelConfigData, crate::json::JsonError> {

@@ -15,30 +15,30 @@ pub struct RogueSequenceExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "NPNIDDAPEHH")]
-    pub npniddapehh: i64,
+    #[serde(rename = "LDDDHCCLGPH")]
+    pub ldddhcclgph: i64,
 
-    #[serde(rename = "HCDLCJJHBCN")]
-    pub hcdlcjjhbcn: Vec<i64>,
+    #[serde(rename = "DMKJNMIAGIM")]
+    pub dmkjnmiagim: Vec<i64>,
 
-    #[serde(rename = "PPILIHEAIMP")]
-    pub ppiliheaimp: Ppiliheaimp,
+    #[serde(rename = "OKDMBBGOPOG")]
+    pub okdmbbgopog: Okdmbbgopog,
 
-    #[serde(rename = "DHGDGPBBFFM")]
-    pub dhgdgpbbffm: Vec<Dhgdgpbbffm>,
+    #[serde(rename = "DBOHHNAEDMH")]
+    pub dbohhnaedmh: Vec<Dbohhnaedmh>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Dhgdgpbbffm {
+pub struct Dbohhnaedmh {
     #[serde(rename = "type")]
-    pub dhgdgpbbffm_type: Option<Type>,
+    pub dbohhnaedmh_type: Option<Type>,
 
-    #[serde(rename = "FKKFNEGLLOF")]
-    pub fkkfnegllof: Vec<i64>,
+    #[serde(rename = "NGCBPNFENJJ")]
+    pub ngcbpnfenjj: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ppiliheaimp {
+pub struct Okdmbbgopog {
 }
 
 #[derive(Debug, Serialize, Deserialize)]

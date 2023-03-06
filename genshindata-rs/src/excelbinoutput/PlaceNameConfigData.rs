@@ -12,32 +12,32 @@ pub struct PlaceNameConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "PFBGFKEMHDI")]
-    pub pfbgfkemhdi: Option<Pfbgfkemhdi>,
+    #[serde(rename = "FPJFGLANLCO")]
+    pub fpjfglanlco: Option<Fpjfglanlco>,
 
-    #[serde(rename = "FBAFIJNCMAF")]
-    pub fbafijncmaf: String,
+    #[serde(rename = "NEBJHNBNKGL")]
+    pub nebjhnbnkgl: String,
 
     #[serde(rename = "conditionType")]
     pub condition_type: ConditionType,
 
-    #[serde(rename = "INNFAJECDPI")]
-    pub innfajecdpi: String,
+    #[serde(rename = "JLGAAFMPJAE")]
+    pub jlgaafmpjae: String,
 
-    #[serde(rename = "PBCFBGGIAGP")]
-    pub pbcfbggiagp: String,
+    #[serde(rename = "GBDCPABMGOB")]
+    pub gbdcpabmgob: String,
 
     #[serde(rename = "actionType")]
     pub action_type: ActionType,
 
-    #[serde(rename = "HJAPGNCJEGO")]
-    pub hjapgncjego: i64,
+    #[serde(rename = "DDELCDHFEMF")]
+    pub ddelcdhfemf: i64,
 
     #[serde(rename = "type")]
     pub place_name_config_datum_type: Option<Type>,
 
-    #[serde(rename = "HBNFHHABGCK")]
-    pub hbnfhhabgck: Option<i64>,
+    #[serde(rename = "EFHGIIIKNID")]
+    pub efhgiiiknid: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -65,7 +65,7 @@ pub enum ConditionType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pfbgfkemhdi {
+pub enum Fpjfglanlco {
     #[serde(rename = "Abyssalisle")]
     Abyssalisle,
 

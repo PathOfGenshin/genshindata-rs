@@ -24,24 +24,48 @@ pub struct DocumentExcelConfigDatum {
     #[serde(rename = "videoPath")]
     pub video_path: VideoPath,
 
-    #[serde(rename = "KDDJJFDMOHK")]
-    pub kddjjfdmohk: Vec<i64>,
+    #[serde(rename = "KKKKOOJCBLL")]
+    pub kkkkoojcbll: Kkkkoojcbll,
 
-    #[serde(rename = "DHANHJMFHKB")]
-    pub dhanhjmfhkb: Vec<i64>,
+    #[serde(rename = "OKJFMGIFANL")]
+    pub okjfmgifanl: Vec<i64>,
 
-    #[serde(rename = "IHEMMFPDDJB")]
-    pub ihemmfpddjb: Option<Ihemmfpddjb>,
+    #[serde(rename = "OGFCAMGONIM")]
+    pub ogfcamgonim: Vec<i64>,
+
+    #[serde(rename = "MLBBGNJOPGM")]
+    pub mlbbgnjopgm: Option<Mlbbgnjopgm>,
 
     #[serde(rename = "documentType")]
-    pub document_type: Option<String>,
+    pub document_type: Option<DocumentType>,
 
     #[serde(rename = "subtitleID")]
     pub subtitle_id: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ihemmfpddjb {
+pub enum DocumentType {
+    #[serde(rename = "Letter")]
+    Letter,
+
+    #[serde(rename = "Video")]
+    Video,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Kkkkoojcbll {
+    #[serde(rename = "ART/UI/Menus/Widget/Letter/Common_ReadDialog_Special_Bg")]
+    ArtUiMenusWidgetLetterCommonReadDialogSpecialBg,
+
+    #[serde(rename = "ART/UI/Menus/Widget/Letter/FleurFairV2_ReadDialog_Special_Bg")]
+    ArtUiMenusWidgetLetterFleurFairV2ReadDialogSpecialBg,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Mlbbgnjopgm {
     #[serde(rename = "DOCUMENT_SPLIT_TYPE_BY_LINE")]
     DocumentSplitTypeByLine,
 }

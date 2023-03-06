@@ -21,8 +21,8 @@ pub struct OptionExcelConfigDatum {
     #[serde(rename = "gusetInteeButtonShow")]
     pub guset_intee_button_show: Option<bool>,
 
-    #[serde(rename = "BFIAFEDPHKO")]
-    pub bfiafedphko: Option<f64>,
+    #[serde(rename = "IELNFOGJEIG")]
+    pub ielnfogjeig: Option<f64>,
 
     #[serde(rename = "cancelOnlineMatch")]
     pub cancel_online_match: Option<bool>,
@@ -41,6 +41,9 @@ pub enum InteeIconName {
 
     #[serde(rename = "UI_Icon_Intee_ItemIcon_109")]
     UiIconInteeItemIcon109,
+
+    #[serde(rename = "UI_Icon_Intee_ItemIcon_120245")]
+    UiIconInteeItemIcon120245,
 
     #[serde(rename = "UI_Icon_Intee_Mechanism")]
     UiIconInteeMechanism,

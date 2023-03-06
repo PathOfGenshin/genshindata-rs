@@ -9,8 +9,8 @@ pub type RoguelikeShikigamiExcelConfigData = Vec<RoguelikeShikigamiExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RoguelikeShikigamiExcelConfigDatum {
-    #[serde(rename = "NPNIDDAPEHH")]
-    pub npniddapehh: i64,
+    #[serde(rename = "LDDDHCCLGPH")]
+    pub ldddhcclgph: i64,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
@@ -18,20 +18,20 @@ pub struct RoguelikeShikigamiExcelConfigDatum {
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Vec<UnlockCond>,
 
-    #[serde(rename = "KOJBJJELFIL")]
-    pub kojbjjelfil: i64,
+    #[serde(rename = "GNOCEAOMLIB")]
+    pub gnoceaomlib: i64,
 
-    #[serde(rename = "KPBCNFEDFDM")]
-    pub kpbcnfedfdm: i64,
+    #[serde(rename = "HOMLDKPPMBD")]
+    pub homldkppmbd: i64,
 
     #[serde(rename = "level")]
     pub level: Option<i64>,
 
-    #[serde(rename = "MDPNINJHHFC")]
-    pub mdpninjhhfc: Option<i64>,
+    #[serde(rename = "DGOJCOGKCIM")]
+    pub dgojcogkcim: Option<i64>,
 
-    #[serde(rename = "IKIBIBIBPLM")]
-    pub ikibibibplm: Option<i64>,
+    #[serde(rename = "PCOPABIOJPB")]
+    pub pcopabiojpb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

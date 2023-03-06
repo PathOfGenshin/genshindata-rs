@@ -9,14 +9,14 @@ pub type CoinCollectPreviewImageExcelConfigData = Vec<CoinCollectPreviewImageExc
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CoinCollectPreviewImageExcelConfigDatum {
-    #[serde(rename = "JMFGNNJHBOP")]
-    pub jmfgnnjhbop: i64,
+    #[serde(rename = "EAFAHJNKEDB")]
+    pub eafahjnkedb: i64,
 
-    #[serde(rename = "NBDAFECDHIK")]
-    pub nbdafecdhik: String,
+    #[serde(rename = "OOIFOJFOCKF")]
+    pub ooifojfockf: String,
 
-    #[serde(rename = "KFJKEMKODPI")]
-    pub kfjkemkodpi: i64,
+    #[serde(rename = "MPNJFOKFMNG")]
+    pub mpnjfokfmng: i64,
 }
 
 pub fn load() -> Result<CoinCollectPreviewImageExcelConfigData, crate::json::JsonError> {

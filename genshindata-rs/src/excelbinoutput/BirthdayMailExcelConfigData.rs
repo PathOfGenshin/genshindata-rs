@@ -21,8 +21,8 @@ pub struct BirthdayMailExcelConfigDatum {
     #[serde(rename = "effectiveDate")]
     pub effective_date: String,
 
-    #[serde(rename = "DLABBIPNECL")]
-    pub dlabbipnecl: i64,
+    #[serde(rename = "LGDKLOMEDMI")]
+    pub lgdklomedmi: i64,
 }
 
 pub fn load() -> Result<BirthdayMailExcelConfigData, crate::json::JsonError> {

@@ -12,41 +12,41 @@ pub struct ActivityPhotographPosExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "JKAMKKGPBBJ")]
-    pub jkamkkgpbbj: i64,
+    #[serde(rename = "EADIHALBGCN")]
+    pub eadihalbgcn: i64,
 
-    #[serde(rename = "DLMDAIIKNDD")]
-    pub dlmdaiikndd: i64,
+    #[serde(rename = "KJBIIIBCFOH")]
+    pub kjbiiibcfoh: i64,
 
-    #[serde(rename = "MKGHEFMNFLM")]
-    pub mkghefmnflm: i64,
+    #[serde(rename = "PEPCGLDNJMJ")]
+    pub pepcgldnjmj: i64,
 
-    #[serde(rename = "PKKMJHPJNAO")]
-    pub pkkmjhpjnao: i64,
+    #[serde(rename = "PCGNKLKNBNK")]
+    pub pcgnklknbnk: i64,
 
-    #[serde(rename = "CFCLCPCKBII")]
-    pub cfclcpckbii: i64,
+    #[serde(rename = "DIEGNCGGFIO")]
+    pub diegncggfio: i64,
 
-    #[serde(rename = "IOCKFBMDAEO")]
-    pub iockfbmdaeo: i64,
+    #[serde(rename = "OHFJNJMHIDM")]
+    pub ohfjnjmhidm: i64,
 
-    #[serde(rename = "PFOBEJHPNJE")]
-    pub pfobejhpnje: String,
+    #[serde(rename = "JEIKCJHLNJO")]
+    pub jeikcjhlnjo: String,
 
-    #[serde(rename = "GNLEOEOCGEM")]
-    pub gnleoeocgem: String,
+    #[serde(rename = "LIAPFBGEPLK")]
+    pub liapfbgeplk: String,
 
-    #[serde(rename = "DBALNKCPMIJ")]
-    pub dbalnkcpmij: i64,
+    #[serde(rename = "HBNCAAICCJF")]
+    pub hbncaaiccjf: i64,
 
-    #[serde(rename = "LEJDOAADLCB")]
-    pub lejdoaadlcb: i64,
+    #[serde(rename = "AEMMKBAPJJJ")]
+    pub aemmkbapjjj: i64,
 
-    #[serde(rename = "IIKINAJDBJF")]
-    pub iikinajdbjf: Vec<i64>,
+    #[serde(rename = "AJBBACFCMJH")]
+    pub ajbbacfcmjh: Vec<i64>,
 
-    #[serde(rename = "MFGHBGKMAJI")]
-    pub mfghbgkmaji: Vec<i64>,
+    #[serde(rename = "EFALCKLBAJM")]
+    pub efalcklbajm: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -57,23 +57,23 @@ pub struct ActivityPhotographPosExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "AGJPLMJGBIN")]
-    pub agjplmjgbin: i64,
+    #[serde(rename = "MFJHIDNMLOK")]
+    pub mfjhidnmlok: i64,
 
-    #[serde(rename = "COOGIDFOEAO")]
-    pub coogidfoeao: i64,
+    #[serde(rename = "PKCLFBBHLML")]
+    pub pkclfbbhlml: i64,
 
-    #[serde(rename = "OGJEGLGFFJJ")]
-    pub ogjeglgffjj: i64,
+    #[serde(rename = "MFPIEEDIFCK")]
+    pub mfpieedifck: i64,
 
-    #[serde(rename = "HNBBHIHLICO")]
-    pub hnbbhihlico: i64,
+    #[serde(rename = "NCCMPKEAJMC")]
+    pub nccmpkeajmc: i64,
 
-    #[serde(rename = "EDJAOFLGIBC")]
-    pub edjaoflgibc: Vec<String>,
+    #[serde(rename = "DFCMIADIBIB")]
+    pub dfcmiadibib: Vec<String>,
 
-    #[serde(rename = "BOHJJLANIBG")]
-    pub bohjjlanibg: Vec<String>,
+    #[serde(rename = "ELPDGCKBGEI")]
+    pub elpdgckbgei: Vec<String>,
 
     #[serde(rename = "sceneID")]
     pub scene_id: i64,

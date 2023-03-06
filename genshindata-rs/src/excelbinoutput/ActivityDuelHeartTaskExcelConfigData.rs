@@ -15,23 +15,23 @@ pub struct ActivityDuelHeartTaskExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 
-    #[serde(rename = "EGADGIEKCAL")]
-    pub egadgiekcal: i64,
+    #[serde(rename = "PHGIKOBNFLN")]
+    pub phgikobnfln: i64,
 
-    #[serde(rename = "NKEIDLGMAGJ")]
-    pub nkeidlgmagj: i64,
+    #[serde(rename = "FFNBPFJPEFJ")]
+    pub ffnbpfjpefj: i64,
 
-    #[serde(rename = "DJFKFDDNEBE")]
-    pub djfkfddnebe: Option<i64>,
+    #[serde(rename = "DBEJPHNPAKI")]
+    pub dbejphnpaki: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityDuelHeartTaskExcelConfigData, crate::json::JsonError> {

@@ -12,8 +12,8 @@ pub struct ExhibitionScoreExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KPGFELNHDPC")]
-    pub kpgfelnhdpc: i64,
+    #[serde(rename = "NCNJMDEGMIL")]
+    pub ncnjmdegmil: i64,
 
     #[serde(rename = "scoreType")]
     pub score_type: ScoreType,
@@ -24,8 +24,8 @@ pub struct ExhibitionScoreExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "HOPBLOKNCJP")]
-    pub hopblokncjp: Option<bool>,
+    #[serde(rename = "BFGJKCNDBBI")]
+    pub bfgjkcndbbi: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

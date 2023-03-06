@@ -15,36 +15,36 @@ pub struct HomeWorldNpcExcelConfigDatum {
     #[serde(rename = "avatarID")]
     pub avatar_id: Option<i64>,
 
-    #[serde(rename = "NMJDFBHGKEJ")]
-    pub nmjdfbhgkej: i64,
+    #[serde(rename = "ALGAJGCFHNH")]
+    pub algajgcfhnh: i64,
 
-    #[serde(rename = "GIMFNFBKOAM")]
-    pub gimfnfbkoam: Vec<i64>,
+    #[serde(rename = "NCGECEJIFAN")]
+    pub ncgecejifan: Vec<i64>,
 
-    #[serde(rename = "FBLKEOOEIEH")]
-    pub fblkeooeieh: Eejhbclkjpo,
+    #[serde(rename = "IIFIKGIODIA")]
+    pub iifikgiodia: Iifikgiodia,
 
-    #[serde(rename = "MBCNKJBDLLM")]
-    pub mbcnkjbdllm: Mbcnkjbdllm,
+    #[serde(rename = "JFOHKIFEPCE")]
+    pub jfohkifepce: Jfohkifepce,
 
-    #[serde(rename = "EEJHBCLKJPO")]
-    pub eejhbclkjpo: Eejhbclkjpo,
+    #[serde(rename = "PLNMODLDPCP")]
+    pub plnmodldpcp: Iifikgiodia,
 
-    #[serde(rename = "MNHNCONKGCP")]
-    pub mnhnconkgcp: i64,
+    #[serde(rename = "CKOGFAPIMDI")]
+    pub ckogfapimdi: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "DDNAFPOKBBN")]
-    pub ddnafpokbbn: Option<bool>,
+    #[serde(rename = "CFPBPKCBOON")]
+    pub cfpbpkcboon: Option<bool>,
 
-    #[serde(rename = "CMOIKFLHLML")]
-    pub cmoikflhlml: Option<String>,
+    #[serde(rename = "FBNODOEFEIC")]
+    pub fbnodoefeic: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Eejhbclkjpo {
+pub enum Iifikgiodia {
     #[serde(rename = "")]
     Empty,
 
@@ -53,7 +53,7 @@ pub enum Eejhbclkjpo {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mbcnkjbdllm {
+pub enum Jfohkifepce {
     #[serde(rename = "")]
     Empty,
 

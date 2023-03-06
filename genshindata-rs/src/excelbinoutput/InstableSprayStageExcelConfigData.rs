@@ -15,17 +15,17 @@ pub struct InstableSprayStageExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "BHPHKKLJMAG")]
-    pub bhphkkljmag: i64,
+    #[serde(rename = "PMPIOGGEMNM")]
+    pub pmpioggemnm: i64,
 
-    #[serde(rename = "NMAJJKPDGIA")]
-    pub nmajjkpdgia: i64,
+    #[serde(rename = "KMCGAMHLIPD")]
+    pub kmcgamhlipd: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "KHAKJEOMIAC")]
-    pub khakjeomiac: Vec<i64>,
+    #[serde(rename = "LKJEHDNDCNJ")]
+    pub lkjehdndcnj: Vec<i64>,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,

@@ -9,14 +9,14 @@ pub type ActivityPotionDifficultyExcelConfigData = Vec<ActivityPotionDifficultyE
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityPotionDifficultyExcelConfigDatum {
-    #[serde(rename = "NJBCFPJKAJE")]
-    pub njbcfpjkaje: i64,
+    #[serde(rename = "HEFCEPGDJMI")]
+    pub hefcepgdjmi: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "ONPOMFMCLGC")]
-    pub onpomfmclgc: Option<i64>,
+    #[serde(rename = "PBEBOPGFGFO")]
+    pub pbebopgfgfo: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityPotionDifficultyExcelConfigData, crate::json::JsonError> {

@@ -9,23 +9,26 @@ pub type GcgCardExcelConfigData = Vec<GcgCardExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgCardExcelConfigDatum {
-    #[serde(rename = "LLHAOOHLKCF")]
-    pub llhaoohlkcf: i64,
+    #[serde(rename = "DEMDFOLFFIC")]
+    pub demdfolffic: i64,
 
-    #[serde(rename = "PLMLACHEPIE")]
-    pub plmlachepie: String,
+    #[serde(rename = "FFKGPADFBPO")]
+    pub ffkgpadfbpo: String,
 
-    #[serde(rename = "HLNIELEENMP")]
-    pub hlnieleenmp: Vec<i64>,
+    #[serde(rename = "FAEMLLJHAEP")]
+    pub faemlljhaep: Vec<i64>,
 
-    #[serde(rename = "JDBGABOANGP")]
-    pub jdbgaboangp: Vec<Jdbgaboangp>,
+    #[serde(rename = "MPCBBHIOOJD")]
+    pub mpcbbhioojd: Vec<Mpcbbhioojd>,
 
-    #[serde(rename = "HNHKBDKPACK")]
-    pub hnhkbdkpack: Option<i64>,
+    #[serde(rename = "EBIICJPFCNH")]
+    pub ebiicjpfcnh: Option<i64>,
 
-    #[serde(rename = "PFFNJFJLEJK")]
-    pub pffnjfjlejk: Vec<String>,
+    #[serde(rename = "BEEPOLOBAAE")]
+    pub beepolobaae: Vec<i64>,
+
+    #[serde(rename = "JMBCANAFINK")]
+    pub jmbcanafink: Vec<String>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -39,59 +42,59 @@ pub struct GcgCardExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MGLOIGHBILB")]
-    pub mgloighbilb: Vec<Mgloighbilb>,
+    #[serde(rename = "LKIILDFIPKC")]
+    pub lkiildfipkc: Vec<Lkiildfipkc>,
 
     #[serde(rename = "skillList")]
     pub skill_list: Vec<i64>,
 
-    #[serde(rename = "AGCODHFBHJK")]
-    pub agcodhfbhjk: Option<String>,
+    #[serde(rename = "NLBJHJNLNEM")]
+    pub nlbjhjnlnem: Option<String>,
 
-    #[serde(rename = "EKMBNFCJEAN")]
-    pub ekmbnfcjean: Option<Ekmbnfcjean>,
+    #[serde(rename = "KOPPCMHBEEC")]
+    pub koppcmhbeec: Option<Koppcmhbeec>,
 
-    #[serde(rename = "HIMOFHNOIMF")]
-    pub himofhnoimf: Option<Efeaepmcbch>,
+    #[serde(rename = "IHDNPHPLBHC")]
+    pub ihdnphplbhc: Option<Ihdnphplbhc>,
 
-    #[serde(rename = "IKKGAPALFCH")]
-    pub ikkgapalfch: Option<i64>,
+    #[serde(rename = "IAGPPNEPGHB")]
+    pub iagppnepghb: Option<i64>,
 
-    #[serde(rename = "MOPDNNEMEKL")]
-    pub mopdnnemekl: Option<Mopdnnemekl>,
+    #[serde(rename = "FLPLPIMNMFD")]
+    pub flplpimnmfd: Option<Flplpimnmfd>,
 
-    #[serde(rename = "EFEAEPMCBCH")]
-    pub efeaepmcbch: Option<Efeaepmcbch>,
+    #[serde(rename = "NELGNLAEBKF")]
+    pub nelgnlaebkf: Option<Ihdnphplbhc>,
 
-    #[serde(rename = "PNNPPKOBKIC")]
-    pub pnnppkobkic: Option<String>,
+    #[serde(rename = "GEFBPICDPON")]
+    pub gefbpicdpon: Option<String>,
 
     #[serde(rename = "isHidden")]
     pub is_hidden: Option<bool>,
 
-    #[serde(rename = "JAGIAHELDOD")]
-    pub jagiaheldod: Option<bool>,
+    #[serde(rename = "DBNHFOFHBHA")]
+    pub dbnhfofhbha: Option<bool>,
 
-    #[serde(rename = "IFCNNPGDDHB")]
-    pub ifcnnpgddhb: Option<i64>,
+    #[serde(rename = "ENIMBFCCECO")]
+    pub enimbfcceco: Option<i64>,
 
-    #[serde(rename = "MCBGHDIKCDF")]
-    pub mcbghdikcdf: Option<i64>,
+    #[serde(rename = "PCBKMNCFBFN")]
+    pub pcbkmncfbfn: Option<i64>,
 
-    #[serde(rename = "NDNGLHKNIHI")]
-    pub ndnglhknihi: Option<Efeaepmcbch>,
+    #[serde(rename = "NLFCMGAMPFC")]
+    pub nlfcmgampfc: Option<Ihdnphplbhc>,
 
-    #[serde(rename = "DOBLKIHALEM")]
-    pub doblkihalem: Option<i64>,
+    #[serde(rename = "JCOGJHDGLEB")]
+    pub jcogjhdgleb: Option<i64>,
 
-    #[serde(rename = "LJPIKEBCEMF")]
-    pub ljpikebcemf: Option<String>,
+    #[serde(rename = "KGPIFEDAIDK")]
+    pub kgpifedaidk: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jdbgaboangp {
-    #[serde(rename = "OHFMGCCFDLD")]
-    pub ohfmgccfdld: Option<Ohfmgccfdld>,
+pub struct Mpcbbhioojd {
+    #[serde(rename = "BCGPIIPDEPC")]
+    pub bcgpiipdepc: Option<Bcgpiipdepc>,
 
     #[serde(rename = "count")]
     pub count: Option<i64>,
@@ -119,7 +122,22 @@ pub enum CardType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Efeaepmcbch {
+pub enum Flplpimnmfd {
+    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
+    GcgTokenIconBarrierShield,
+
+    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
+    GcgTokenIconClock,
+
+    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
+    GcgTokenIconHourglass,
+
+    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
+    GcgTokenIconNormalShield,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ihdnphplbhc {
     #[serde(rename = "GCG_TOKEN_COUNTER")]
     GcgTokenCounter,
 
@@ -134,7 +152,7 @@ pub enum Efeaepmcbch {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ekmbnfcjean {
+pub enum Koppcmhbeec {
     #[serde(rename = "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM")]
     GcgPersistEffectExpectoPatronum,
 
@@ -149,40 +167,7 @@ pub enum Ekmbnfcjean {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ohfmgccfdld {
-    #[serde(rename = "GCG_COST_DICE_ANEMO")]
-    GcgCostDiceAnemo,
-
-    #[serde(rename = "GCG_COST_DICE_CRYO")]
-    GcgCostDiceCryo,
-
-    #[serde(rename = "GCG_COST_DICE_DENDRO")]
-    GcgCostDiceDendro,
-
-    #[serde(rename = "GCG_COST_DICE_ELECTRO")]
-    GcgCostDiceElectro,
-
-    #[serde(rename = "GCG_COST_DICE_GEO")]
-    GcgCostDiceGeo,
-
-    #[serde(rename = "GCG_COST_DICE_HYDRO")]
-    GcgCostDiceHydro,
-
-    #[serde(rename = "GCG_COST_DICE_PYRO")]
-    GcgCostDicePyro,
-
-    #[serde(rename = "GCG_COST_DICE_SAME")]
-    GcgCostDiceSame,
-
-    #[serde(rename = "GCG_COST_DICE_VOID")]
-    GcgCostDiceVoid,
-
-    #[serde(rename = "GCG_COST_ENERGY")]
-    GcgCostEnergy,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Mgloighbilb {
+pub enum Lkiildfipkc {
     #[serde(rename = "GCG_TAG_ALLY")]
     GcgTagAlly,
 
@@ -245,18 +230,36 @@ pub enum Mgloighbilb {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Mopdnnemekl {
-    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
-    GcgTokenIconBarrierShield,
+pub enum Bcgpiipdepc {
+    #[serde(rename = "GCG_COST_DICE_ANEMO")]
+    GcgCostDiceAnemo,
 
-    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
-    GcgTokenIconClock,
+    #[serde(rename = "GCG_COST_DICE_CRYO")]
+    GcgCostDiceCryo,
 
-    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
-    GcgTokenIconHourglass,
+    #[serde(rename = "GCG_COST_DICE_DENDRO")]
+    GcgCostDiceDendro,
 
-    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
-    GcgTokenIconNormalShield,
+    #[serde(rename = "GCG_COST_DICE_ELECTRO")]
+    GcgCostDiceElectro,
+
+    #[serde(rename = "GCG_COST_DICE_GEO")]
+    GcgCostDiceGeo,
+
+    #[serde(rename = "GCG_COST_DICE_HYDRO")]
+    GcgCostDiceHydro,
+
+    #[serde(rename = "GCG_COST_DICE_PYRO")]
+    GcgCostDicePyro,
+
+    #[serde(rename = "GCG_COST_DICE_SAME")]
+    GcgCostDiceSame,
+
+    #[serde(rename = "GCG_COST_DICE_VOID")]
+    GcgCostDiceVoid,
+
+    #[serde(rename = "GCG_COST_ENERGY")]
+    GcgCostEnergy,
 }
 
 pub fn load() -> Result<GcgCardExcelConfigData, crate::json::JsonError> {

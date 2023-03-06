@@ -9,11 +9,11 @@ pub type AvatarCostumeExcelConfigData = Vec<AvatarCostumeExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AvatarCostumeExcelConfigDatum {
-    #[serde(rename = "HKMDGBEFJKI")]
-    pub hkmdgbefjki: i64,
+    #[serde(rename = "GIGOGHBMCND")]
+    pub gigoghbmcnd: i64,
 
-    #[serde(rename = "GMDIOGJIHBL")]
-    pub gmdiogjihbl: Option<i64>,
+    #[serde(rename = "JBDALLHLDLN")]
+    pub jbdallhldln: Option<i64>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -24,38 +24,38 @@ pub struct AvatarCostumeExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: Option<i64>,
 
-    #[serde(rename = "KADEICDMCBM")]
-    pub kadeicdmcbm: i64,
+    #[serde(rename = "OOJDBLPMLDD")]
+    pub oojdblpmldd: i64,
 
     #[serde(rename = "jsonName")]
     pub json_name: String,
 
-    #[serde(rename = "LJDMDHBHKLC")]
-    pub ljdmdhbhklc: Option<i64>,
+    #[serde(rename = "LMFEKDEOONK")]
+    pub lmfekdeoonk: Option<i64>,
 
-    #[serde(rename = "BHPKINONCIJ")]
-    pub bhpkinoncij: Option<i64>,
+    #[serde(rename = "FIOHANGCCNF")]
+    pub fiohangccnf: Option<i64>,
 
-    #[serde(rename = "FAEIJLEFHHM")]
-    pub faeijlefhhm: Option<i64>,
+    #[serde(rename = "FIDFIDLDEDE")]
+    pub fidfidldede: Option<i64>,
 
-    #[serde(rename = "KJLJGAPGNDG")]
-    pub kjljgapgndg: Option<i64>,
+    #[serde(rename = "MNALJOIJMMD")]
+    pub mnaljoijmmd: Option<i64>,
 
-    #[serde(rename = "CBNLIKIKJII")]
-    pub cbnlikikjii: Option<i64>,
+    #[serde(rename = "COGDOMABGGA")]
+    pub cogdomabgga: Option<i64>,
 
-    #[serde(rename = "PCIKIELFNHI")]
-    pub pcikielfnhi: String,
+    #[serde(rename = "PKPHLKMPHAH")]
+    pub pkphlkmphah: String,
 
     #[serde(rename = "sideIconName")]
     pub side_icon_name: String,
 
-    #[serde(rename = "HCEGDEAINOH")]
-    pub hcegdeainoh: Option<i64>,
+    #[serde(rename = "JPOCFCHFPAN")]
+    pub jpocfchfpan: Option<i64>,
 
-    #[serde(rename = "KGAGEIPJPPE")]
-    pub kgageipjppe: Option<bool>,
+    #[serde(rename = "DMAFAJNKPME")]
+    pub dmafajnkpme: Option<bool>,
 
     #[serde(rename = "hide")]
     pub hide: Option<bool>,
@@ -63,17 +63,17 @@ pub struct AvatarCostumeExcelConfigDatum {
     #[serde(rename = "gachaImageNameHash")]
     pub gacha_image_name_hash: Option<i64>,
 
-    #[serde(rename = "PHPPMDIGKEE")]
-    pub phppmdigkee: Option<i64>,
+    #[serde(rename = "AKEKAAMLHPM")]
+    pub akekaamlhpm: Option<i64>,
 
-    #[serde(rename = "EEBPDGMNMGM")]
-    pub eebpdgmnmgm: Option<i64>,
+    #[serde(rename = "INAPKEEHGLM")]
+    pub inapkeehglm: Option<i64>,
 
     #[serde(rename = "isDefault")]
     pub is_default: Option<bool>,
 
-    #[serde(rename = "EKILPNOCDAJ")]
-    pub ekilpnocdaj: Option<bool>,
+    #[serde(rename = "OELCGCPMFKJ")]
+    pub oelcgcpmfkj: Option<bool>,
 }
 
 pub fn load() -> Result<AvatarCostumeExcelConfigData, crate::json::JsonError> {

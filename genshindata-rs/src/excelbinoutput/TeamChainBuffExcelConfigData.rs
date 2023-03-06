@@ -12,8 +12,8 @@ pub struct TeamChainBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BHCJKANDNPF")]
-    pub bhcjkandnpf: String,
+    #[serde(rename = "LADKLKNNEKD")]
+    pub ladklknnekd: String,
 
     #[serde(rename = "icon")]
     pub icon: String,
@@ -21,11 +21,11 @@ pub struct TeamChainBuffExcelConfigDatum {
     #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
 
-    #[serde(rename = "DNMPGBBMMPI")]
-    pub dnmpgbbmmpi: i64,
+    #[serde(rename = "EOPGNNKMNGO")]
+    pub eopgnnkmngo: i64,
 
-    #[serde(rename = "LPIFKEDCMND")]
-    pub lpifkedcmnd: Vec<String>,
+    #[serde(rename = "NBDPLIKACFG")]
+    pub nbdplikacfg: Vec<String>,
 }
 
 pub fn load() -> Result<TeamChainBuffExcelConfigData, crate::json::JsonError> {

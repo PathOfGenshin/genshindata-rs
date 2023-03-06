@@ -33,8 +33,8 @@ pub struct PsActivitiesActivityConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "IBMHEFDMDJC")]
-    pub ibmhefdmdjc: String,
+    #[serde(rename = "IBOOHHBGJAH")]
+    pub iboohhbgjah: String,
 }
 
 pub fn load() -> Result<PsActivitiesActivityConfigData, crate::json::JsonError> {

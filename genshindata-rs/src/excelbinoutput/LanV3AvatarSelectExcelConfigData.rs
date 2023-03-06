@@ -12,8 +12,8 @@ pub struct LanV3AvatarSelectExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
 
-    #[serde(rename = "BAFFKIDEOOP")]
-    pub baffkideoop: i64,
+    #[serde(rename = "GECDKKNIIAE")]
+    pub gecdkkniiae: i64,
 }
 
 pub fn load() -> Result<LanV3AvatarSelectExcelConfigData, crate::json::JsonError> {

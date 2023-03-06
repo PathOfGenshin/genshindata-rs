@@ -9,11 +9,11 @@ pub type OraionokamiDescExcelConfigData = Vec<OraionokamiDescExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct OraionokamiDescExcelConfigDatum {
-    #[serde(rename = "AFKHNDDBGDN")]
-    pub afkhnddbgdn: i64,
+    #[serde(rename = "NMCOJGEKGPH")]
+    pub nmcojgekgph: i64,
 
-    #[serde(rename = "FNCOIILOKJO")]
-    pub fncoiilokjo: i64,
+    #[serde(rename = "HDJJIIFJOCH")]
+    pub hdjjiifjoch: i64,
 }
 
 pub fn load() -> Result<OraionokamiDescExcelConfigData, crate::json::JsonError> {

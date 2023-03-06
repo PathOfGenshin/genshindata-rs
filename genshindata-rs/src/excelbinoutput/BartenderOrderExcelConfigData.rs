@@ -12,11 +12,11 @@ pub struct BartenderOrderExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DPDGAPMFGAK")]
-    pub dpdgapmfgak: i64,
+    #[serde(rename = "PODOEAFHMOK")]
+    pub podoeafhmok: i64,
 
-    #[serde(rename = "MGKDJNCKBPP")]
-    pub mgkdjnckbpp: Vec<i64>,
+    #[serde(rename = "NBHINHFJGAA")]
+    pub nbhinhfjgaa: Vec<i64>,
 
     #[serde(rename = "iconName")]
     pub icon_name: String,
@@ -24,8 +24,8 @@ pub struct BartenderOrderExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JENFLKPHIEP")]
-    pub jenflkphiep: Option<Jenflkphiep>,
+    #[serde(rename = "CLAMAPMOOHH")]
+    pub clamapmoohh: Option<Clamapmoohh>,
 
     #[serde(rename = "time")]
     pub time: Option<i64>,
@@ -35,7 +35,7 @@ pub struct BartenderOrderExcelConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jenflkphiep {
+pub enum Clamapmoohh {
     #[serde(rename = "BARTENDER_CUP_BIG")]
     BartenderCupBig,
 

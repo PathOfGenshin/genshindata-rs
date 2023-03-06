@@ -12,8 +12,8 @@ pub struct CoinCollectOverallExcelConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
 
-    #[serde(rename = "IDHPMBJMOJL")]
-    pub idhpmbjmojl: i64,
+    #[serde(rename = "OFPIDMKAKDK")]
+    pub ofpidmkakdk: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
@@ -21,14 +21,14 @@ pub struct CoinCollectOverallExcelConfigDatum {
     #[serde(rename = "prepareTime")]
     pub prepare_time: i64,
 
-    #[serde(rename = "EMHJJGKAGBG")]
-    pub emhjjgkagbg: i64,
+    #[serde(rename = "OIPFLLCBBBG")]
+    pub oipfllcbbbg: i64,
 
-    #[serde(rename = "BHPLPFIBGJI")]
-    pub bhplpfibgji: i64,
+    #[serde(rename = "EMJHNGKIBHI")]
+    pub emjhngkibhi: i64,
 
-    #[serde(rename = "DNKCBBMMBEL")]
-    pub dnkcbbmmbel: i64,
+    #[serde(rename = "KDNFDPLFKPH")]
+    pub kdnfdplfkph: i64,
 }
 
 pub fn load() -> Result<CoinCollectOverallExcelConfigData, crate::json::JsonError> {

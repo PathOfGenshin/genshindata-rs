@@ -12,47 +12,47 @@ pub struct VintageMarketConstValueExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "OLEPGNPCJOF")]
-    pub olepgnpcjof: i64,
+    #[serde(rename = "BOINGMCMIJN")]
+    pub boingmcmijn: i64,
 
-    #[serde(rename = "NLOCPKHHMEP")]
-    pub nlocpkhhmep: i64,
+    #[serde(rename = "CCPHDCNCIHD")]
+    pub ccphdcncihd: i64,
 
-    #[serde(rename = "JKMHMNDGGJP")]
-    pub jkmhmndggjp: i64,
+    #[serde(rename = "APPBFKJHPIB")]
+    pub appbfkjhpib: i64,
 
-    #[serde(rename = "CILHBJCPDGA")]
-    pub cilhbjcpdga: i64,
+    #[serde(rename = "KAKGIGOIEDF")]
+    pub kakgigoiedf: i64,
 
-    #[serde(rename = "CEPIFIIOPFG")]
-    pub cepifiiopfg: i64,
+    #[serde(rename = "GFKFFGEGOIH")]
+    pub gfkffgegoih: i64,
 
-    #[serde(rename = "CNDABFCMFDB")]
-    pub cndabfcmfdb: i64,
+    #[serde(rename = "JCHJKMLOANH")]
+    pub jchjkmloanh: i64,
 
-    #[serde(rename = "EJJCHFPNAGM")]
-    pub ejjchfpnagm: f64,
+    #[serde(rename = "KEMACHCFOCK")]
+    pub kemachcfock: f64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "BOGOPAMGCAG")]
-    pub bogopamgcag: i64,
+    #[serde(rename = "PCJOGEPPNKO")]
+    pub pcjogeppnko: i64,
 
-    #[serde(rename = "JCNGFDLHFHO")]
-    pub jcngfdlhfho: i64,
+    #[serde(rename = "ENOCBMCBMND")]
+    pub enocbmcbmnd: i64,
 
-    #[serde(rename = "NKILMDNPEIJ")]
-    pub nkilmdnpeij: Vec<i64>,
+    #[serde(rename = "KMMDNCKCPAH")]
+    pub kmmdnckcpah: Vec<i64>,
 
-    #[serde(rename = "EBEGJJMNMLE")]
-    pub ebegjjmnmle: i64,
+    #[serde(rename = "FPCOODNPELP")]
+    pub fpcoodnpelp: i64,
 
-    #[serde(rename = "JAGBFJAAPLK")]
-    pub jagbfjaaplk: i64,
+    #[serde(rename = "HFBPMFEHKIB")]
+    pub hfbpmfehkib: i64,
 
-    #[serde(rename = "KIICNAIJCCH")]
-    pub kiicnaijcch: i64,
+    #[serde(rename = "CEJKEGHGDMK")]
+    pub cejkeghgdmk: i64,
 }
 
 pub fn load() -> Result<VintageMarketConstValueExcelConfigData, crate::json::JsonError> {

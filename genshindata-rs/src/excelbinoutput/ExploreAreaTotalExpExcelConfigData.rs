@@ -15,8 +15,8 @@ pub struct ExploreAreaTotalExpExcelConfigDatum {
     #[serde(rename = "totalExp")]
     pub total_exp: i64,
 
-    #[serde(rename = "AFHCMMIDMDC")]
-    pub afhcmmidmdc: Option<f64>,
+    #[serde(rename = "KMIOJKEFDOO")]
+    pub kmiojkefdoo: Option<f64>,
 }
 
 pub fn load() -> Result<ExploreAreaTotalExpExcelConfigData, crate::json::JsonError> {

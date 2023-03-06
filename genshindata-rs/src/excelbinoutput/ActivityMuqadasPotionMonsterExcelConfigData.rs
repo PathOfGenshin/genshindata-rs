@@ -12,20 +12,20 @@ pub struct ActivityMuqadasPotionMonsterExcelConfigDatum {
     #[serde(rename = "describeId")]
     pub describe_id: i64,
 
-    #[serde(rename = "NDDECDOOBPD")]
-    pub nddecdoobpd: f64,
+    #[serde(rename = "FBJLFKGDLFH")]
+    pub fbjlfkgdlfh: f64,
 
-    #[serde(rename = "OLHKIANHEAF")]
-    pub olhkianheaf: Vec<i64>,
+    #[serde(rename = "BPGFNHCNMEA")]
+    pub bpgfnhcnmea: Vec<i64>,
 
-    #[serde(rename = "ELMJELIKFCO")]
-    pub elmjelikfco: Vec<Elmjelikfco>,
+    #[serde(rename = "FHPAHAFGGAG")]
+    pub fhpahafggag: Vec<Fhpahafggag>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Elmjelikfco {
-    #[serde(rename = "BMALGAPCAIL")]
-    pub bmalgapcail: Vec<f64>,
+pub struct Fhpahafggag {
+    #[serde(rename = "KLNIKMBPLGL")]
+    pub klnikmbplgl: Vec<f64>,
 }
 
 pub fn load() -> Result<ActivityMuqadasPotionMonsterExcelConfigData, crate::json::JsonError> {

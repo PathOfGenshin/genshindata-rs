@@ -12,41 +12,41 @@ pub struct TeamChainOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
 
-    #[serde(rename = "BCAGDADNHNN")]
-    pub bcagdadnhnn: Vec<i64>,
+    #[serde(rename = "CABLBIDMDEM")]
+    pub cablbidmdem: Vec<i64>,
 
-    #[serde(rename = "NPKFHMGOEAJ")]
-    pub npkfhmgoeaj: i64,
+    #[serde(rename = "JGDKIIOLODP")]
+    pub jgdkiiolodp: i64,
 
     #[serde(rename = "baseScore")]
     pub base_score: i64,
 
-    #[serde(rename = "HOJADAEHLNA")]
-    pub hojadaehlna: f64,
+    #[serde(rename = "PLAGILPAIIE")]
+    pub plagilpaiie: f64,
 
-    #[serde(rename = "MDMKHPJPIDF")]
-    pub mdmkhpjpidf: f64,
+    #[serde(rename = "EDHHGKHFBJP")]
+    pub edhhgkhfbjp: f64,
 
-    #[serde(rename = "ABHFOANNAHB")]
-    pub abhfoannahb: i64,
+    #[serde(rename = "KECDHANNAGC")]
+    pub kecdhannagc: i64,
 
-    #[serde(rename = "FPJEBLLPNDN")]
-    pub fpjebllpndn: i64,
+    #[serde(rename = "IJEBCEPJAJI")]
+    pub ijebcepjaji: i64,
 
-    #[serde(rename = "FOOLNABAMBD")]
-    pub foolnabambd: i64,
+    #[serde(rename = "CAHJPKDAHLC")]
+    pub cahjpkdahlc: i64,
 
-    #[serde(rename = "AMNLKIIOHOH")]
-    pub amnlkiiohoh: String,
+    #[serde(rename = "MBKMNDAJIED")]
+    pub mbkmndajied: String,
 
-    #[serde(rename = "EMLIBEFMJAC")]
-    pub emlibefmjac: i64,
+    #[serde(rename = "KKGDJNCENEP")]
+    pub kkgdjncenep: i64,
 
-    #[serde(rename = "GEIIJBMJHOG")]
-    pub geiijbmjhog: i64,
+    #[serde(rename = "OOILLFPBLCM")]
+    pub ooillfpblcm: i64,
 
-    #[serde(rename = "LJKLBCNLPPJ")]
-    pub ljklbcnlppj: Vec<i64>,
+    #[serde(rename = "NKCPBAOKIGO")]
+    pub nkcpbaokigo: Vec<i64>,
 }
 
 pub fn load() -> Result<TeamChainOverallExcelConfigData, crate::json::JsonError> {

@@ -12,11 +12,11 @@ pub struct BonusTreasureSolutionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LABPMNGLOLJ")]
-    pub labpmnglolj: i64,
+    #[serde(rename = "BKCANIGBFEF")]
+    pub bkcanigbfef: i64,
 
-    #[serde(rename = "OIGONMBOEDB")]
-    pub oigonmboedb: Vec<i64>,
+    #[serde(rename = "AJJGNCPBODM")]
+    pub ajjgncpbodm: Vec<i64>,
 }
 
 pub fn load() -> Result<BonusTreasureSolutionExcelConfigData, crate::json::JsonError> {

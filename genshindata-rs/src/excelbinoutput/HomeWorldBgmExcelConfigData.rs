@@ -9,14 +9,14 @@ pub type HomeWorldBgmExcelConfigData = Vec<HomeWorldBgmExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldBgmExcelConfigDatum {
-    #[serde(rename = "DCDFLNBJFII")]
-    pub dcdflnbjfii: i64,
+    #[serde(rename = "KHCOCKKLNGA")]
+    pub khcockklnga: i64,
 
-    #[serde(rename = "JHKLODNDMLL")]
-    pub jhklodndmll: bool,
+    #[serde(rename = "ALNPIEOANEF")]
+    pub alnpieoanef: bool,
 
-    #[serde(rename = "DNJECBAKAMB")]
-    pub dnjecbakamb: bool,
+    #[serde(rename = "FOKADLPKMDC")]
+    pub fokadlpkmdc: bool,
 
     #[serde(rename = "cityId")]
     pub city_id: i64,
@@ -24,14 +24,14 @@ pub struct HomeWorldBgmExcelConfigDatum {
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,
 
-    #[serde(rename = "POCLHFIAAPD")]
-    pub poclhfiaapd: String,
+    #[serde(rename = "FKPMAKMFAMN")]
+    pub fkpmakmfamn: String,
 
-    #[serde(rename = "FOPEKNHINJF")]
-    pub fopeknhinjf: i64,
+    #[serde(rename = "FJACDCGLBHD")]
+    pub fjacdcglbhd: i64,
 
-    #[serde(rename = "KGAGEIPJPPE")]
-    pub kgageipjppe: Option<bool>,
+    #[serde(rename = "DMAFAJNKPME")]
+    pub dmafajnkpme: Option<bool>,
 }
 
 pub fn load() -> Result<HomeWorldBgmExcelConfigData, crate::json::JsonError> {

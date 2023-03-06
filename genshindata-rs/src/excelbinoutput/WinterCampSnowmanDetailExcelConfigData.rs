@@ -12,17 +12,17 @@ pub struct WinterCampSnowmanDetailExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "IIDDPLMAFAF")]
-    pub iiddplmafaf: i64,
+    #[serde(rename = "LDGJDLLOOML")]
+    pub ldgjdllooml: i64,
 
-    #[serde(rename = "EBAPOPNELKM")]
-    pub ebapopnelkm: i64,
+    #[serde(rename = "LEJHNOBPJND")]
+    pub lejhnobpjnd: i64,
 
-    #[serde(rename = "NKEIDLGMAGJ")]
-    pub nkeidlgmagj: i64,
+    #[serde(rename = "FFNBPFJPEFJ")]
+    pub ffnbpfjpefj: i64,
 
-    #[serde(rename = "AOICFFJAPKH")]
-    pub aoicffjapkh: i64,
+    #[serde(rename = "HAEANFIACAH")]
+    pub haeanfiacah: i64,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,

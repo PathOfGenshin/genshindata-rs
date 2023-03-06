@@ -15,11 +15,11 @@ pub struct ActivityIslandPartyOverallExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "KMKBIPHECCD")]
-    pub kmkbipheccd: i64,
+    #[serde(rename = "GBOMALMHIGN")]
+    pub gbomalmhign: i64,
 
-    #[serde(rename = "CEDHIKDADHO")]
-    pub cedhikdadho: i64,
+    #[serde(rename = "AOHCLNMONDL")]
+    pub aohclnmondl: i64,
 }
 
 pub fn load() -> Result<ActivityIslandPartyOverallExcelConfigData, crate::json::JsonError> {

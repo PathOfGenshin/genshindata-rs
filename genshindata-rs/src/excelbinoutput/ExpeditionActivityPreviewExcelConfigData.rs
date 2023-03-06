@@ -15,11 +15,11 @@ pub struct ExpeditionActivityPreviewExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "EIAENHMJMJK")]
-    pub eiaenhmjmjk: i64,
+    #[serde(rename = "KNNODHIEIOP")]
+    pub knnodhieiop: i64,
 
-    #[serde(rename = "AJOKMOJGELF")]
-    pub ajokmojgelf: i64,
+    #[serde(rename = "KACGFAHELHN")]
+    pub kacgfahelhn: i64,
 }
 
 pub fn load() -> Result<ExpeditionActivityPreviewExcelConfigData, crate::json::JsonError> {

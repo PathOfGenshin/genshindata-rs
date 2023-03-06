@@ -15,17 +15,17 @@ pub struct MaterialSourceDataExcelConfigDatum {
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
 
-    #[serde(rename = "BGAAIGBMLMO")]
-    pub bgaaigbmlmo: Vec<Bgaaigbmlmo>,
+    #[serde(rename = "GPBMAOBHCFH")]
+    pub gpbmaobhcfh: Vec<Gpbmaobhcfh>,
 
-    #[serde(rename = "JAAHBKDEOMM")]
-    pub jaahbkdeomm: Vec<i64>,
+    #[serde(rename = "AIEPNFMABNK")]
+    pub aiepnfmabnk: Vec<i64>,
 
-    #[serde(rename = "COKNAHGNGAL")]
-    pub coknahgngal: Vec<Coknahgngal>,
+    #[serde(rename = "OAOGDIAFCFJ")]
+    pub oaogdiafcfj: Vec<Oaogdiafcfj>,
 
-    #[serde(rename = "DBPNKDMLMDJ")]
-    pub dbpnkdmlmdj: Vec<i64>,
+    #[serde(rename = "JFDHMPGKPPJ")]
+    pub jfdhmpgkppj: Vec<i64>,
 
     #[serde(rename = "jumpList")]
     pub jump_list: Vec<i64>,
@@ -35,11 +35,11 @@ pub struct MaterialSourceDataExcelConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bgaaigbmlmo {
+pub struct Gpbmaobhcfh {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Coknahgngal {
+pub enum Oaogdiafcfj {
     #[serde(rename = "JUMP_INVESTIGATION")]
     JumpInvestigation,
 

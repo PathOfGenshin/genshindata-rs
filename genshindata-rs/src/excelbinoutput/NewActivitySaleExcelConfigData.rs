@@ -13,13 +13,19 @@ pub struct NewActivitySaleExcelConfigDatum {
     pub id: i64,
 
     #[serde(rename = "saleType")]
-    pub sale_type: String,
+    pub sale_type: SaleType,
 
     #[serde(rename = "saleParam")]
     pub sale_param: Vec<String>,
 
     #[serde(rename = "bufftipsTextMapHash")]
     pub bufftips_text_map_hash: i64,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum SaleType {
+    #[serde(rename = "NEW_ACTIVITY_SALE_TYPE_WEAPON_UPGRADE")]
+    NewActivitySaleTypeWeaponUpgrade,
 }
 
 pub fn load() -> Result<NewActivitySaleExcelConfigData, crate::json::JsonError> {

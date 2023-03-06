@@ -12,8 +12,8 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "ONMNOCANJPI")]
-    pub onmnocanjpi: i64,
+    #[serde(rename = "IKDFANCDDEP")]
+    pub ikdfancddep: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -24,20 +24,20 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "AJKOIOKMIOK")]
-    pub ajkoiokmiok: Vec<i64>,
+    #[serde(rename = "ELLGGIHOOFD")]
+    pub ellggihoofd: Vec<i64>,
 
-    #[serde(rename = "LDKDLAHKNNI")]
-    pub ldkdlahknni: Vec<i64>,
+    #[serde(rename = "NDNFGOJJLEE")]
+    pub ndnfgojjlee: Vec<i64>,
 
-    #[serde(rename = "FFFJNEEABLK")]
-    pub fffjneeablk: Vec<i64>,
+    #[serde(rename = "MLFJDHPHJEJ")]
+    pub mlfjdhphjej: Vec<i64>,
 
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "HNIKOMAACPC")]
-    pub hnikomaacpc: Vec<i64>,
+    #[serde(rename = "AAPLMBFPAML")]
+    pub aaplmbfpaml: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -45,29 +45,29 @@ pub struct ActivitySumoStageExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "DCINKOMEOHG")]
-    pub dcinkomeohg: Vec<i64>,
+    #[serde(rename = "MHEFMGPEMDO")]
+    pub mhefmgpemdo: Vec<i64>,
 
-    #[serde(rename = "OFKGECBDALA")]
-    pub ofkgecbdala: Vec<Ofkgecbdala>,
+    #[serde(rename = "DMCOJJNHAMI")]
+    pub dmcojjnhami: Vec<Dmcojjnhami>,
 
-    #[serde(rename = "LMMOHJNNOIH")]
-    pub lmmohjnnoih: Vec<i64>,
+    #[serde(rename = "NBLNJMNANMC")]
+    pub nblnjmnanmc: Vec<i64>,
 
-    #[serde(rename = "GKNPOMNJFNO")]
-    pub gknpomnjfno: Vec<i64>,
+    #[serde(rename = "HAGCKPCJJFO")]
+    pub hagckpcjjfo: Vec<i64>,
 
-    #[serde(rename = "IILCKDALMMD")]
-    pub iilckdalmmd: Option<String>,
+    #[serde(rename = "PBOIFNBCEGK")]
+    pub pboifnbcegk: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Ofkgecbdala {
-    #[serde(rename = "FOCFLDNPCNJ")]
-    pub focfldnpcnj: String,
+pub struct Dmcojjnhami {
+    #[serde(rename = "DAADPONJKLG")]
+    pub daadponjklg: String,
 
-    #[serde(rename = "OGDDGAJJGJP")]
-    pub ogddgajjgjp: String,
+    #[serde(rename = "CEFIHLOEMKJ")]
+    pub cefihloemkj: String,
 }
 
 pub fn load() -> Result<ActivitySumoStageExcelConfigData, crate::json::JsonError> {

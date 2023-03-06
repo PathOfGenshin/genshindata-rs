@@ -68,6 +68,9 @@ pub enum ChapterSerialNumberIcon {
 
     #[serde(rename = "UI_QuestType_Chapter_5")]
     UiQuestTypeChapter5,
+
+    #[serde(rename = "UI_QuestType_Chapter_6")]
+    UiQuestTypeChapter6,
 }
 
 pub fn load() -> Result<ChapterExcelConfigData, crate::json::JsonError> {

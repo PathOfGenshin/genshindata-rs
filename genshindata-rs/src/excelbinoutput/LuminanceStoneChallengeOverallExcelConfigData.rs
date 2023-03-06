@@ -15,20 +15,20 @@ pub struct LuminanceStoneChallengeOverallExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "DNFKECIFDJE")]
-    pub dnfkecifdje: i64,
+    #[serde(rename = "MPBMDFPKOIJ")]
+    pub mpbmdfpkoij: i64,
 
-    #[serde(rename = "DEKEHGODHAK")]
-    pub dekehgodhak: i64,
+    #[serde(rename = "IIOALGOGFLJ")]
+    pub iioalgogflj: i64,
 
-    #[serde(rename = "DMAEPPOBONC")]
-    pub dmaeppobonc: Vec<i64>,
+    #[serde(rename = "OMKNKOAHIDA")]
+    pub omknkoahida: Vec<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "AKEPBBFCFKN")]
-    pub akepbbfcfkn: i64,
+    #[serde(rename = "JGJNLHOBCKA")]
+    pub jgjnlhobcka: i64,
 }
 
 pub fn load() -> Result<LuminanceStoneChallengeOverallExcelConfigData, crate::json::JsonError> {

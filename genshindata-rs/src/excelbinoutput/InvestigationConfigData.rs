@@ -28,25 +28,13 @@ pub struct InvestigationConfigDatum {
     pub title_text_map_hash: i64,
 
     #[serde(rename = "investigationType")]
-    pub investigation_type: Option<InvestigationType>,
+    pub investigation_type: Option<String>,
 
     #[serde(rename = "unlockLevel")]
     pub unlock_level: Option<i64>,
 
-    #[serde(rename = "HNIDHLDIJKL")]
-    pub hnidhldijkl: Option<bool>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum InvestigationType {
-    #[serde(rename = "INVESTIGATION_EDCATION")]
-    InvestigationEdcation,
-
-    #[serde(rename = "INVESTIGATION_GCG")]
-    InvestigationGcg,
-
-    #[serde(rename = "INVESTIGATION_HOMEWORLD")]
-    InvestigationHomeworld,
+    #[serde(rename = "KLBLEOBKGPD")]
+    pub klbleobkgpd: Option<bool>,
 }
 
 pub fn load() -> Result<InvestigationConfigData, crate::json::JsonError> {

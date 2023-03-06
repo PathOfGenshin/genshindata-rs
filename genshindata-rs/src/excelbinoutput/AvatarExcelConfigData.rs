@@ -27,8 +27,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "chargeEfficiency")]
     pub charge_efficiency: f64,
 
-    #[serde(rename = "CJAECDKDIMP")]
-    pub cjaecdkdimp: i64,
+    #[serde(rename = "AOLGMPAGLOF")]
+    pub aolgmpaglof: i64,
 
     #[serde(rename = "initialWeapon")]
     pub initial_weapon: i64,
@@ -36,8 +36,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "weaponType")]
     pub weapon_type: WeaponType,
 
-    #[serde(rename = "AFNOMLKIGNC")]
-    pub afnomlkignc: i64,
+    #[serde(rename = "JPIEOFODOJN")]
+    pub jpieofodojn: i64,
 
     #[serde(rename = "imageName")]
     pub image_name: String,
@@ -105,8 +105,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "propGrowCurves")]
     pub prop_grow_curves: Vec<PropGrowCurve>,
 
-    #[serde(rename = "LLNKFJAEIFM")]
-    pub llnkfjaeifm: i64,
+    #[serde(rename = "OOJEOCILAJM")]
+    pub oojeocilajm: i64,
 
     #[serde(rename = "prefabPathHash")]
     pub prefab_path_hash: i64,
@@ -117,8 +117,8 @@ pub struct AvatarExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "HGKPLCICKMD")]
-    pub hgkplcickmd: i64,
+    #[serde(rename = "KIFHDDMCNHB")]
+    pub kifhddmcnhb: i64,
 
     #[serde(rename = "prefabPathRemoteHash")]
     pub prefab_path_remote_hash: i64,

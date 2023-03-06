@@ -9,8 +9,8 @@ pub type MultistageExcelConfigData = Vec<MultistageExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MultistageExcelConfigDatum {
-    #[serde(rename = "ICNDAMONABN")]
-    pub icndamonabn: String,
+    #[serde(rename = "ICLHINBKGMK")]
+    pub iclhinbkgmk: String,
 }
 
 pub fn load() -> Result<MultistageExcelConfigData, crate::json::JsonError> {

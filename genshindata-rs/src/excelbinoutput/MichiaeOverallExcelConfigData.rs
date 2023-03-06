@@ -18,38 +18,38 @@ pub struct MichiaeOverallExcelConfigDatum {
     #[serde(rename = "offeringId")]
     pub offering_id: i64,
 
-    #[serde(rename = "MOMGOJANGJI")]
-    pub momgojangji: i64,
+    #[serde(rename = "BEDBODIOJFN")]
+    pub bedbodiojfn: i64,
 
-    #[serde(rename = "GKPHBINIFNJ")]
-    pub gkphbinifnj: i64,
+    #[serde(rename = "FJEOONOFMJL")]
+    pub fjeoonofmjl: i64,
 
-    #[serde(rename = "KMFHPPAJMID")]
-    pub kmfhppajmid: Vec<i64>,
+    #[serde(rename = "KCPCEAAPIBP")]
+    pub kcpceaapibp: Vec<i64>,
 
-    #[serde(rename = "GBLDBDHBBOJ")]
-    pub gbldbdhbboj: i64,
+    #[serde(rename = "LGGGEEAMANB")]
+    pub lgggeeamanb: i64,
 
-    #[serde(rename = "DANEEOPOBEH")]
-    pub daneeopobeh: f64,
+    #[serde(rename = "JHCEDPLJMOC")]
+    pub jhcedpljmoc: f64,
 
-    #[serde(rename = "MKCMOHONHBC")]
-    pub mkcmohonhbc: f64,
+    #[serde(rename = "KFCEMLNJFCD")]
+    pub kfcemlnjfcd: f64,
 
-    #[serde(rename = "LOLPBANFIEJ")]
-    pub lolpbanfiej: i64,
+    #[serde(rename = "PLHINHCFJEJ")]
+    pub plhinhcfjej: i64,
 
-    #[serde(rename = "CJBOMLCIMMB")]
-    pub cjbomlcimmb: f64,
+    #[serde(rename = "LDLFHOJMJHF")]
+    pub ldlfhojmjhf: f64,
 
-    #[serde(rename = "CMGECEDGGDL")]
-    pub cmgecedggdl: i64,
+    #[serde(rename = "LHKHNDGEBFF")]
+    pub lhkhndgebff: i64,
 
-    #[serde(rename = "EGHAOBDNKEH")]
-    pub eghaobdnkeh: i64,
+    #[serde(rename = "LJOBAGPDEDI")]
+    pub ljobagpdedi: i64,
 
-    #[serde(rename = "BDKMOLLEDJK")]
-    pub bdkmolledjk: i64,
+    #[serde(rename = "KAGOLGKFLEC")]
+    pub kagolgkflec: i64,
 }
 
 pub fn load() -> Result<MichiaeOverallExcelConfigData, crate::json::JsonError> {

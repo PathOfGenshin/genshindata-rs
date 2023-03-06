@@ -12,20 +12,20 @@ pub struct LanV3ShadowCameraExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LPJPFMGEEDL")]
-    pub lpjpfmgeedl: f64,
+    #[serde(rename = "CKBNAHHOHCF")]
+    pub ckbnahhohcf: f64,
 
-    #[serde(rename = "PJCMCPCPCAM")]
-    pub pjcmcpcpcam: f64,
+    #[serde(rename = "DALNJFIHJOE")]
+    pub dalnjfihjoe: f64,
 
-    #[serde(rename = "OEHHODLOJBG")]
-    pub oehhodlojbg: f64,
+    #[serde(rename = "DFBLJHIAGDC")]
+    pub dfbljhiagdc: f64,
 
-    #[serde(rename = "JPMGCBHOLOL")]
-    pub jpmgcbholol: f64,
+    #[serde(rename = "EFELKKGAPIO")]
+    pub efelkkgapio: f64,
 
-    #[serde(rename = "NJHLPEIIGBM")]
-    pub njhlpeiigbm: Vec<f64>,
+    #[serde(rename = "NMJGLMNMAOF")]
+    pub nmjglmnmaof: Vec<f64>,
 }
 
 pub fn load() -> Result<LanV3ShadowCameraExcelConfigData, crate::json::JsonError> {

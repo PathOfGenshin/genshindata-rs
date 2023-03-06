@@ -21,86 +21,86 @@ pub struct LanV2ProjectionLevelExcelConfigDatum {
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
 
-    #[serde(rename = "ICPECCBDCGI")]
-    pub icpeccbdcgi: String,
+    #[serde(rename = "IIMFOHCNJPN")]
+    pub iimfohcnjpn: String,
 
-    #[serde(rename = "OPPIBPPFIAL")]
-    pub oppibppfial: String,
+    #[serde(rename = "ADCEKAKDKMP")]
+    pub adcekakdkmp: String,
 
-    #[serde(rename = "OEOCGBCGIFE")]
-    pub oeocgbcgife: Option<f64>,
+    #[serde(rename = "NHMBEDJPLCN")]
+    pub nhmbedjplcn: Option<f64>,
 
-    #[serde(rename = "MDKCODOKAKA")]
-    pub mdkcodokaka: f64,
+    #[serde(rename = "CMOKEDBCBOH")]
+    pub cmokedbcboh: f64,
 
-    #[serde(rename = "HKENJPJAACJ")]
-    pub hkenjpjaacj: f64,
+    #[serde(rename = "HFDAPGJLPFN")]
+    pub hfdapgjlpfn: f64,
 
-    #[serde(rename = "OGHDNHOBDJD")]
-    pub oghdnhobdjd: i64,
+    #[serde(rename = "FIMJBHLMBLA")]
+    pub fimjbhlmbla: i64,
 
-    #[serde(rename = "NJPFPFDFOFD")]
-    pub njpfpfdfofd: Vec<f64>,
+    #[serde(rename = "PEINNDNFPBF")]
+    pub peinndnfpbf: Vec<f64>,
 
-    #[serde(rename = "GPABEJKNJLD")]
-    pub gpabejknjld: Vec<f64>,
+    #[serde(rename = "KDBAHGNDOPB")]
+    pub kdbahgndopb: Vec<f64>,
 
-    #[serde(rename = "FOPBDONABPM")]
-    pub fopbdonabpm: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "JNGCGPHCHPI")]
+    pub jngcgphchpi: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "BEAAECFHDNH")]
-    pub beaaecfhdnh: Vec<f64>,
+    #[serde(rename = "INNACJMEPJI")]
+    pub innacjmepji: Vec<f64>,
 
-    #[serde(rename = "FAAPNHFDFBJ")]
-    pub faapnhfdfbj: Vec<f64>,
+    #[serde(rename = "LPHAPPEIMMD")]
+    pub lphappeimmd: Vec<f64>,
 
-    #[serde(rename = "ELDKBANIKOI")]
-    pub eldkbanikoi: Vec<Vec<i64>>,
+    #[serde(rename = "MOECGPDEKLF")]
+    pub moecgpdeklf: Vec<Vec<i64>>,
 
-    #[serde(rename = "GLBOGIBEJJE")]
-    pub glbogibejje: Vec<Glbogibejje>,
+    #[serde(rename = "CEIIMGGPJDE")]
+    pub ceiimggpjde: Vec<Ceiimggpjde>,
 
-    #[serde(rename = "LIJPIHOOANO")]
-    pub lijpihooano: Option<i64>,
+    #[serde(rename = "CDFPPNMLPGL")]
+    pub cdfppnmlpgl: Option<i64>,
 
-    #[serde(rename = "BNEHIGDCEJI")]
-    pub bnehigdceji: Option<String>,
+    #[serde(rename = "HHKMKJJNAMI")]
+    pub hhkmkjjnami: Option<String>,
 
-    #[serde(rename = "BENEALNGNOK")]
-    pub benealngnok: Option<f64>,
+    #[serde(rename = "CFMMDBIJAIM")]
+    pub cfmmdbijaim: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Glbogibejje {
+pub struct Ceiimggpjde {
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
 
-    #[serde(rename = "EHMIOFHCKHK")]
-    pub ehmiofhckhk: String,
+    #[serde(rename = "JKOKKKGKKDM")]
+    pub jkokkkgkkdm: String,
 
-    #[serde(rename = "OHHCAOGIELB")]
-    pub ohhcaogielb: Vec<f64>,
+    #[serde(rename = "LBOLPKFGCJF")]
+    pub lbolpkfgcjf: Vec<f64>,
 
-    #[serde(rename = "ECIJFEFOLBH")]
-    pub ecijfefolbh: Vec<f64>,
+    #[serde(rename = "NLEADGCOMOP")]
+    pub nleadgcomop: Vec<f64>,
 
-    #[serde(rename = "IICBPHACMDF")]
-    pub iicbphacmdf: Vec<f64>,
+    #[serde(rename = "LLCPJKCPKNL")]
+    pub llcpjkcpknl: Vec<f64>,
 
-    #[serde(rename = "KGCGPBMHGEB")]
-    pub kgcgpbmhgeb: Vec<f64>,
+    #[serde(rename = "PKDLJHEOPBC")]
+    pub pkdljheopbc: Vec<f64>,
 
-    #[serde(rename = "DEPOJJNPJMA")]
-    pub depojjnpjma: Vec<f64>,
+    #[serde(rename = "PJFFIAHDDFO")]
+    pub pjffiahddfo: Vec<f64>,
 
-    #[serde(rename = "ENMENFGLDDL")]
-    pub enmenfglddl: Option<i64>,
+    #[serde(rename = "MDAMNBNJEPC")]
+    pub mdamnbnjepc: Option<i64>,
 
-    #[serde(rename = "INCNPFFFHIJ")]
-    pub incnpfffhij: Option<String>,
+    #[serde(rename = "MHGMMHNIPCP")]
+    pub mhgmmhnipcp: Option<String>,
 
-    #[serde(rename = "KKMNECDJHFD")]
-    pub kkmnecdjhfd: Option<f64>,
+    #[serde(rename = "PGCFIJBPLHG")]
+    pub pgcfijbplhg: Option<f64>,
 }
 
 pub fn load() -> Result<LanV2ProjectionLevelExcelConfigData, crate::json::JsonError> {

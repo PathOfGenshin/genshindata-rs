@@ -15,23 +15,23 @@ pub struct BartenderLevelExcelConfigDatum {
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
-    #[serde(rename = "KPDLEHHJCCL")]
-    pub kpdlehhjccl: i64,
+    #[serde(rename = "EILPELLIMJC")]
+    pub eilpellimjc: i64,
 
-    #[serde(rename = "IGIPAAHLKNF")]
-    pub igipaahlknf: Vec<i64>,
+    #[serde(rename = "JFPLDODAEKJ")]
+    pub jfpldodaekj: Vec<i64>,
 
-    #[serde(rename = "HGGDOEJKBFG")]
-    pub hggdoejkbfg: i64,
+    #[serde(rename = "NJDNEFPNPIC")]
+    pub njdnefpnpic: i64,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "KKOIHFJIIBN")]
-    pub kkoihfjiibn: i64,
+    #[serde(rename = "AOHBPKPKOJF")]
+    pub aohbpkpkojf: i64,
 }
 
 pub fn load() -> Result<BartenderLevelExcelConfigData, crate::json::JsonError> {

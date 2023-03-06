@@ -18,8 +18,8 @@ pub struct QuestSpecialShowConfigDatum {
     #[serde(rename = "param1")]
     pub param1: i64,
 
-    #[serde(rename = "LJBNFOPBPGK")]
-    pub ljbnfopbpgk: i64,
+    #[serde(rename = "JDLGEFACKLI")]
+    pub jdlgefackli: i64,
 
     #[serde(rename = "param2")]
     pub param2: Option<i64>,

@@ -27,11 +27,11 @@ pub struct ActivityMistTrialWatcherListDataExcelConfigDatum {
     #[serde(rename = "progressFormatTextMapHash")]
     pub progress_format_text_map_hash: i64,
 
-    #[serde(rename = "FAHMFBPKPKM")]
-    pub fahmfbpkpkm: i64,
+    #[serde(rename = "OAMABFMAOJJ")]
+    pub oamabfmaojj: i64,
 
-    #[serde(rename = "HBNLAMPDIMI")]
-    pub hbnlampdimi: Option<bool>,
+    #[serde(rename = "FFPHPHOPBPG")]
+    pub ffphphopbpg: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

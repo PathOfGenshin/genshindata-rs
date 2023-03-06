@@ -18,23 +18,23 @@ pub struct BrickBreakerQuestExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "KMJBNNBFBML")]
-    pub kmjbnnbfbml: String,
+    #[serde(rename = "LLJKOKNFJNL")]
+    pub lljkoknfjnl: String,
 
     #[serde(rename = "levelID")]
     pub level_id: i64,
 
-    #[serde(rename = "HONNJOMEIKP")]
-    pub honnjomeikp: i64,
+    #[serde(rename = "GAMMOCGGIML")]
+    pub gammocggiml: i64,
 
-    #[serde(rename = "DJPGBDODPNI")]
-    pub djpgbdodpni: i64,
+    #[serde(rename = "IHHKHHNOBJG")]
+    pub ihhkhhnobjg: i64,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 }
 
 pub fn load() -> Result<BrickBreakerQuestExcelConfigData, crate::json::JsonError> {

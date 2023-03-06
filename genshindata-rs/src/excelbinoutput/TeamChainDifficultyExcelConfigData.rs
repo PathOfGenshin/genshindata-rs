@@ -9,14 +9,14 @@ pub type TeamChainDifficultyExcelConfigData = Vec<TeamChainDifficultyExcelConfig
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct TeamChainDifficultyExcelConfigDatum {
-    #[serde(rename = "NJBCFPJKAJE")]
-    pub njbcfpjkaje: i64,
+    #[serde(rename = "HEFCEPGDJMI")]
+    pub hefcepgdjmi: i64,
 
-    #[serde(rename = "NPENOJGJJFE")]
-    pub npenojgjjfe: i64,
+    #[serde(rename = "EJEMHPPCMJH")]
+    pub ejemhppcmjh: i64,
 
-    #[serde(rename = "IIGCOLKJKHN")]
-    pub iigcolkjkhn: i64,
+    #[serde(rename = "MKOBJIKDAKK")]
+    pub mkobjikdakk: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,

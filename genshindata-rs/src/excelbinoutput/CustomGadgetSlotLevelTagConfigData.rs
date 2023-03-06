@@ -12,30 +12,30 @@ pub struct CustomGadgetSlotLevelTagConfigDatum {
     #[serde(rename = "ID")]
     pub id: i64,
 
-    #[serde(rename = "CFJPENGJFDG")]
-    pub cfjpengjfdg: String,
+    #[serde(rename = "CCNKPAMPAHM")]
+    pub ccnkpampahm: String,
 
-    #[serde(rename = "BBCFAAINDOE")]
-    pub bbcfaaindoe: Vec<Bbcfaaindoe>,
+    #[serde(rename = "EONMJDBDHNN")]
+    pub eonmjdbdhnn: Vec<Eonmjdbdhnn>,
 
-    #[serde(rename = "EKBFMCGAGDJ")]
-    pub ekbfmcgagdj: i64,
+    #[serde(rename = "JKOJKPKDCEB")]
+    pub jkojkpkdceb: i64,
 
-    #[serde(rename = "DCBDHKECGCN")]
-    pub dcbdhkecgcn: i64,
+    #[serde(rename = "LBPAEMGKLIK")]
+    pub lbpaemgklik: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Bbcfaaindoe {
-    #[serde(rename = "OENADKFEOOC")]
-    pub oenadkfeooc: Oenadkfeooc,
+pub struct Eonmjdbdhnn {
+    #[serde(rename = "ODDOLIJEJDC")]
+    pub oddolijejdc: Oddolijejdc,
 
-    #[serde(rename = "OEOKNHIHMBH")]
-    pub oeoknhihmbh: Vec<i64>,
+    #[serde(rename = "CCFMMIIDCMN")]
+    pub ccfmmiidcmn: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oenadkfeooc {
+pub enum Oddolijejdc {
     #[serde(rename = "")]
     Empty,
 

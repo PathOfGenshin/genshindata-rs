@@ -18,17 +18,17 @@ pub struct BlitzRushStageExcelConfigDatum {
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "BHPHKKLJMAG")]
-    pub bhphkkljmag: i64,
+    #[serde(rename = "PMPIOGGEMNM")]
+    pub pmpioggemnm: i64,
 
-    #[serde(rename = "LLCHGINFMPK")]
-    pub llchginfmpk: i64,
+    #[serde(rename = "NKHDNDKHEEP")]
+    pub nkhdndkheep: i64,
 
-    #[serde(rename = "FDBIOHNOJAE")]
-    pub fdbiohnojae: i64,
+    #[serde(rename = "IKHACAOEBMJ")]
+    pub ikhacaoebmj: i64,
 
-    #[serde(rename = "PMLGMPFDGHN")]
-    pub pmlgmpfdghn: i64,
+    #[serde(rename = "EGNBHPHNCLP")]
+    pub egnbhphnclp: i64,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,

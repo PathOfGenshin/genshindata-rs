@@ -12,14 +12,14 @@ pub struct GcgCharExcelConfigDatum {
     #[serde(rename = "hp")]
     pub hp: i64,
 
-    #[serde(rename = "IHEFHHHMMAA")]
-    pub ihefhhhmmaa: i64,
+    #[serde(rename = "GOAKKENJPJO")]
+    pub goakkenjpjo: i64,
 
-    #[serde(rename = "DFLFJGEOAGO")]
-    pub dflfjgeoago: i64,
+    #[serde(rename = "FIHLPNNLKAG")]
+    pub fihlpnnlkag: i64,
 
-    #[serde(rename = "PFHCNOKCBDA")]
-    pub pfhcnokcbda: String,
+    #[serde(rename = "PLJDNGEEPBK")]
+    pub pljdngeepbk: String,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -33,17 +33,17 @@ pub struct GcgCharExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MGLOIGHBILB")]
-    pub mgloighbilb: Vec<String>,
+    #[serde(rename = "LKIILDFIPKC")]
+    pub lkiildfipkc: Vec<String>,
 
     #[serde(rename = "skillList")]
     pub skill_list: Vec<i64>,
 
-    #[serde(rename = "NDABJBGMHPF")]
-    pub ndabjbgmhpf: Option<bool>,
+    #[serde(rename = "IGBHFMOKLDO")]
+    pub igbhfmokldo: Option<bool>,
 
-    #[serde(rename = "JAGIAHELDOD")]
-    pub jagiaheldod: Option<bool>,
+    #[serde(rename = "DBNHFOFHBHA")]
+    pub dbnhfofhbha: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

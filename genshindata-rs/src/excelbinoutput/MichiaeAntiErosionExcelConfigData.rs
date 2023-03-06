@@ -9,20 +9,20 @@ pub type MichiaeAntiErosionExcelConfigData = Vec<MichiaeAntiErosionExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MichiaeAntiErosionExcelConfigDatum {
-    #[serde(rename = "EKDPKBAAIAK")]
-    pub ekdpkbaaiak: f64,
+    #[serde(rename = "AKECPLMNLDF")]
+    pub akecplmnldf: f64,
 
-    #[serde(rename = "HFJBPHGJDJG")]
-    pub hfjbphgjdjg: Option<i64>,
+    #[serde(rename = "ECJAPEOMPJF")]
+    pub ecjapeompjf: Option<i64>,
 
-    #[serde(rename = "FLGPCDOFECF")]
-    pub flgpcdofecf: Option<f64>,
+    #[serde(rename = "JBGPBEGGGKF")]
+    pub jbgpbegggkf: Option<f64>,
 
-    #[serde(rename = "EBAFLPOEIBF")]
-    pub ebaflpoeibf: Option<f64>,
+    #[serde(rename = "KCAKIKMAIFD")]
+    pub kcakikmaifd: Option<f64>,
 
-    #[serde(rename = "ILGHLPAALPA")]
-    pub ilghlpaalpa: Option<f64>,
+    #[serde(rename = "JLHFDAKKOCO")]
+    pub jlhfdakkoco: Option<f64>,
 }
 
 pub fn load() -> Result<MichiaeAntiErosionExcelConfigData, crate::json::JsonError> {

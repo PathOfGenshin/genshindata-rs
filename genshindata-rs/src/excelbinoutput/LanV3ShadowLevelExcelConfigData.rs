@@ -15,8 +15,8 @@ pub struct LanV3ShadowLevelExcelConfigDatum {
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
 
-    #[serde(rename = "BGKCNDHGMBF")]
-    pub bgkcndhgmbf: String,
+    #[serde(rename = "MANHFECAAEG")]
+    pub manhfecaaeg: String,
 
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
@@ -27,17 +27,17 @@ pub struct LanV3ShadowLevelExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "JDLBLCFOIIA")]
-    pub jdlblcfoiia: i64,
+    #[serde(rename = "EBFCFLEHJEJ")]
+    pub ebfcflehjej: i64,
 
-    #[serde(rename = "KHBFPNEBEIA")]
-    pub khbfpnebeia: i64,
+    #[serde(rename = "KNOAOCPBEBJ")]
+    pub knoaocpbebj: i64,
 
-    #[serde(rename = "GBMPGCHBKFG")]
-    pub gbmpgchbkfg: i64,
+    #[serde(rename = "HLAOHLAPHCE")]
+    pub hlaohlaphce: i64,
 
-    #[serde(rename = "DEPOMDCDPEG")]
-    pub depomdcdpeg: Option<i64>,
+    #[serde(rename = "AJHNBGBFCCG")]
+    pub ajhnbgbfccg: Option<i64>,
 }
 
 pub fn load() -> Result<LanV3ShadowLevelExcelConfigData, crate::json::JsonError> {

@@ -12,20 +12,20 @@ pub struct BartenderTaskExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
     #[serde(rename = "parentQuestId")]
     pub parent_quest_id: i64,
 
-    #[serde(rename = "DIFGGJCDJFN")]
-    pub difggjcdjfn: i64,
+    #[serde(rename = "EBGBOKDELFH")]
+    pub ebgbokdelfh: i64,
 
-    #[serde(rename = "LDGAIKMNFGO")]
-    pub ldgaikmnfgo: i64,
+    #[serde(rename = "PNAFFOKBOAC")]
+    pub pnaffokboac: i64,
 
-    #[serde(rename = "CAOKGLCIBPB")]
-    pub caokglcibpb: Option<i64>,
+    #[serde(rename = "GKGPMMPBPNH")]
+    pub gkgpmmpbpnh: Option<i64>,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,

@@ -12,11 +12,11 @@ pub struct CustomLevelTagSortConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "BHFCCPHCMJI")]
-    pub bhfccphcmji: String,
+    #[serde(rename = "ALKMFKMLCMP")]
+    pub alkmfkmlcmp: String,
 
-    #[serde(rename = "JLANMBFGBLG")]
-    pub jlanmbfgblg: String,
+    #[serde(rename = "GBGGBAICLJB")]
+    pub gbggbaicljb: String,
 }
 
 pub fn load() -> Result<CustomLevelTagSortConfigData, crate::json::JsonError> {

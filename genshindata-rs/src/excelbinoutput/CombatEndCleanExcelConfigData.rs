@@ -12,32 +12,32 @@ pub struct CombatEndCleanExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "OHDKCCOMHBL")]
-    pub ohdkccomhbl: String,
+    #[serde(rename = "JAEKFJHJNFI")]
+    pub jaekfjhjnfi: String,
 
-    #[serde(rename = "GJOHPMDMMPN")]
-    pub gjohpmdmmpn: Vec<Gjohpmdmmpn>,
+    #[serde(rename = "NMMMNMIMJJI")]
+    pub nmmmnmimjji: Vec<Nmmmnmimjji>,
 
-    #[serde(rename = "JAOBMGJBALN")]
-    pub jaobmgjbaln: Vec<Jaobmgjbaln>,
+    #[serde(rename = "FBMIBDKGEKN")]
+    pub fbmibdkgekn: Vec<Fbmibdkgekn>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Gjohpmdmmpn {
-    #[serde(rename = "Corruption")]
-    Corruption,
-
-    #[serde(rename = "None")]
-    None,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Jaobmgjbaln {
+pub enum Fbmibdkgekn {
     #[serde(rename = "")]
     Empty,
 
     #[serde(rename = "LevelEntity_ClearLocalGadgets")]
     LevelEntityClearLocalGadgets,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Nmmmnmimjji {
+    #[serde(rename = "Corruption")]
+    Corruption,
+
+    #[serde(rename = "None")]
+    None,
 }
 
 pub fn load() -> Result<CombatEndCleanExcelConfigData, crate::json::JsonError> {

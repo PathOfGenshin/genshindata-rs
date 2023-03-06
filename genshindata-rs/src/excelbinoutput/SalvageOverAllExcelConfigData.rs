@@ -15,8 +15,8 @@ pub struct SalvageOverAllExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "FOMKBGFMENE")]
-    pub fomkbgfmene: i64,
+    #[serde(rename = "MLBMAKKDIFA")]
+    pub mlbmakkdifa: i64,
 
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
@@ -36,23 +36,23 @@ pub struct SalvageOverAllExcelConfigDatum {
     #[serde(rename = "regionRadius")]
     pub region_radius: i64,
 
-    #[serde(rename = "PEDPIPFGDKO")]
-    pub pedpipfgdko: i64,
+    #[serde(rename = "GCAFBPCCCNG")]
+    pub gcafbpcccng: i64,
 
     #[serde(rename = "reminderId")]
     pub reminder_id: i64,
 
-    #[serde(rename = "FEEMPDOALCH")]
-    pub feempdoalch: i64,
+    #[serde(rename = "JIMNJNFCMLA")]
+    pub jimnjnfcmla: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "HEFEMKPEGGK")]
-    pub hefemkpeggk: i64,
+    #[serde(rename = "FLHNLEIEJBL")]
+    pub flhnleiejbl: i64,
 
-    #[serde(rename = "BIOIONBELAN")]
-    pub bioionbelan: i64,
+    #[serde(rename = "MIJLEDHDOLI")]
+    pub mijledhdoli: i64,
 }
 
 pub fn load() -> Result<SalvageOverAllExcelConfigData, crate::json::JsonError> {

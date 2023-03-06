@@ -12,36 +12,36 @@ pub struct GcgDeckCardExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "AIJMMGMHBEH")]
-    pub aijmmgmhbeh: Vec<Aijmmgmhbeh>,
+    #[serde(rename = "HIKCAGMEGPF")]
+    pub hikcagmegpf: Vec<Hikcagmegpf>,
 
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,
 
-    #[serde(rename = "ACNAAGEANPJ")]
-    pub acnaageanpj: Vec<i64>,
+    #[serde(rename = "BKOAFKCFOBJ")]
+    pub bkoafkcfobj: Vec<i64>,
 
     #[serde(rename = "storyTitleTextMapHash")]
     pub story_title_text_map_hash: i64,
 
-    #[serde(rename = "HFMCLIKAFHA")]
-    pub hfmclikafha: i64,
+    #[serde(rename = "IMOKOJHANNO")]
+    pub imokojhanno: i64,
 
-    #[serde(rename = "PDPJICMIPCL")]
-    pub pdpjicmipcl: i64,
+    #[serde(rename = "BHKFMJPIAEK")]
+    pub bhkfmjpiaek: i64,
 
     #[serde(rename = "itemID")]
     pub item_id: i64,
 
-    #[serde(rename = "IMCOKIPAFJO")]
-    pub imcokipafjo: Option<i64>,
+    #[serde(rename = "JGDEIDMBEBH")]
+    pub jgdeidmbebh: Option<i64>,
 
-    #[serde(rename = "OCCOFKOKCHH")]
-    pub occofkokchh: Option<i64>,
+    #[serde(rename = "HGBBMHLNELB")]
+    pub hgbbmhlnelb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Aijmmgmhbeh {
+pub enum Hikcagmegpf {
     #[serde(rename = "GCG_TAG_CAMP_MONSTER")]
     GcgTagCampMonster,
 

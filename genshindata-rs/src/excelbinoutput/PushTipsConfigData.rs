@@ -42,14 +42,14 @@ pub struct PushTipsConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: Option<i64>,
 
-    #[serde(rename = "LMILFJOKNJA")]
-    pub lmilfjoknja: Option<bool>,
+    #[serde(rename = "AHOLPEAECNE")]
+    pub aholpeaecne: Option<bool>,
 
-    #[serde(rename = "CMFBKLBOCGH")]
-    pub cmfbklbocgh: Option<bool>,
+    #[serde(rename = "EDFCOMIKAHJ")]
+    pub edfcomikahj: Option<bool>,
 
-    #[serde(rename = "ONBFNJEEBEA")]
-    pub onbfnjeebea: Option<bool>,
+    #[serde(rename = "FBMMPLBMGOA")]
+    pub fbmmplbmgoa: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

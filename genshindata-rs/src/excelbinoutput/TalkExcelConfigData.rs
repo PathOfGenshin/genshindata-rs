@@ -270,6 +270,9 @@ pub enum Type {
     #[serde(rename = "QUEST_COND_OPEN_STATE_EQUAL")]
     QuestCondOpenStateEqual,
 
+    #[serde(rename = "QUEST_COND_PACK_HAVE_ANY_ITEM")]
+    QuestCondPackHaveAnyItem,
+
     #[serde(rename = "QUEST_COND_PACK_HAVE_ITEM")]
     QuestCondPackHaveItem,
 

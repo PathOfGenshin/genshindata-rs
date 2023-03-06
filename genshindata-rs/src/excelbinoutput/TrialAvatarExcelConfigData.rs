@@ -21,8 +21,8 @@ pub struct TrialAvatarExcelConfigDatum {
     #[serde(rename = "trialWeaponParamList")]
     pub trial_weapon_param_list: Option<i64>,
 
-    #[serde(rename = "LCCMECPPIPA")]
-    pub lccmecppipa: Option<bool>,
+    #[serde(rename = "AJDDCMLKBLI")]
+    pub ajddcmlkbli: Option<bool>,
 
     #[serde(rename = "trialSkillDepotId")]
     pub trial_skill_depot_id: Option<i64>,

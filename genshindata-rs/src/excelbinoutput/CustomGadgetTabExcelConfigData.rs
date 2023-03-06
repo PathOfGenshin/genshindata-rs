@@ -9,33 +9,45 @@ pub type CustomGadgetTabExcelConfigData = Vec<CustomGadgetTabExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomGadgetTabExcelConfigDatum {
-    #[serde(rename = "JDIKEENBMCD")]
-    pub jdikeenbmcd: i64,
+    #[serde(rename = "DGNNMDNKNML")]
+    pub dgnnmdnknml: i64,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
 
-    #[serde(rename = "GMADAOIOIEK")]
-    pub gmadaoioiek: Vec<String>,
+    #[serde(rename = "CKJNONAKPBB")]
+    pub ckjnonakpbb: Vec<String>,
 
-    #[serde(rename = "FGFJDBKDAEB")]
-    pub fgfjdbkdaeb: Fgfjdbkdaeb,
+    #[serde(rename = "HMAEDIOONHH")]
+    pub hmaedioonhh: Hmaedioonhh,
 
-    #[serde(rename = "PBDCHOGKANI")]
-    pub pbdchogkani: Pbdchogkani,
+    #[serde(rename = "DHJOPPJBKCK")]
+    pub dhjoppjbkck: Dhjoppjbkck,
 
-    #[serde(rename = "DOOCIBFFKIK")]
-    pub doocibffkik: i64,
+    #[serde(rename = "MOFLFMFEHOC")]
+    pub moflfmfehoc: i64,
 
-    #[serde(rename = "CBKBAEANHGL")]
-    pub cbkbaeanhgl: i64,
+    #[serde(rename = "BOJCKLLHAGD")]
+    pub bojckllhagd: i64,
 
-    #[serde(rename = "IPIELILAKPH")]
-    pub ipielilakph: Option<i64>,
+    #[serde(rename = "OAPHCABJJDF")]
+    pub oaphcabjjdf: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Fgfjdbkdaeb {
+pub enum Dhjoppjbkck {
+    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
+    EffSceneObjFlowerShlefSwitch,
+
+    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
+    EffSceneObjFlowerSwitch,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Hmaedioonhh {
     #[serde(rename = "Eff_SceneObj_FlowerPot_Selected")]
     EffSceneObjFlowerPotSelected,
 
@@ -44,18 +56,6 @@ pub enum Fgfjdbkdaeb {
 
     #[serde(rename = "Eff_SceneObj_Irodori_Flower_Selected")]
     EffSceneObjIrodoriFlowerSelected,
-
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Pbdchogkani {
-    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
-    EffSceneObjFlowerShlefSwitch,
-
-    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
-    EffSceneObjFlowerSwitch,
 
     #[serde(rename = "")]
     Empty,

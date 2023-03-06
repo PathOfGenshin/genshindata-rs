@@ -15,42 +15,42 @@ pub struct RogueDungeonCellExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "JLEMJMDGOBC")]
-    pub jlemjmdgobc: i64,
+    #[serde(rename = "PFDAIGJCKJK")]
+    pub pfdaigjckjk: i64,
 
-    #[serde(rename = "HDNMALKIKNM")]
-    pub hdnmalkiknm: Vec<f64>,
+    #[serde(rename = "LPMHHEINGNM")]
+    pub lpmhheingnm: Vec<f64>,
 
-    #[serde(rename = "EMMGKDDJMJM")]
-    pub emmgkddjmjm: Vec<i64>,
+    #[serde(rename = "JPLILPBLAAH")]
+    pub jplilpblaah: Vec<i64>,
 
-    #[serde(rename = "CAKMHOOEHDG")]
-    pub cakmhooehdg: Vec<i64>,
+    #[serde(rename = "ELNLIDBICAE")]
+    pub elnlidbicae: Vec<i64>,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
 
-    #[serde(rename = "EKDKDJNJEDP")]
-    pub ekdkdjnjedp: i64,
+    #[serde(rename = "PGKNNLNJKKC")]
+    pub pgknnlnjkkc: i64,
 
-    #[serde(rename = "LMDOOPLCCBF")]
-    pub lmdooplccbf: Option<f64>,
+    #[serde(rename = "ABKBHAIGDFD")]
+    pub abkbhaigdfd: Option<f64>,
 
-    #[serde(rename = "FAOMDDBMPIF")]
-    pub faomddbmpif: f64,
+    #[serde(rename = "JCJDJGPFDGM")]
+    pub jcjdjgpfdgm: f64,
 
-    #[serde(rename = "HHNAPHDLAPF")]
-    pub hhnaphdlapf: f64,
+    #[serde(rename = "EHAMKBDLNFA")]
+    pub ehamkbdlnfa: f64,
 
-    #[serde(rename = "OKLPLMJOPPC")]
-    pub oklplmjoppc: Option<Oklplmjoppc>,
+    #[serde(rename = "BJLOOCFPOPC")]
+    pub bjloocfpopc: Option<Bjloocfpopc>,
 
-    #[serde(rename = "PDPPHLLOBEE")]
-    pub pdpphllobee: Option<bool>,
+    #[serde(rename = "APOOAILJILC")]
+    pub apooailjilc: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Oklplmjoppc {
+pub enum Bjloocfpopc {
     #[serde(rename = "ROGUE_CELL_TYPE_BOSS")]
     RogueCellTypeBoss,
 

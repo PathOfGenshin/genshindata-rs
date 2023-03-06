@@ -21,11 +21,11 @@ pub struct ActivityArenaChallengePreviewExcelConfigDatum {
     #[serde(rename = "guideQuestId1")]
     pub guide_quest_id1: i64,
 
-    #[serde(rename = "MOBHHJLJFPJ")]
-    pub mobhhjljfpj: Option<i64>,
+    #[serde(rename = "KBCFMILEPPB")]
+    pub kbcfmileppb: Option<i64>,
 
-    #[serde(rename = "GCAJPNPCOGH")]
-    pub gcajpnpcogh: Option<i64>,
+    #[serde(rename = "GFOCALMJAGF")]
+    pub gfocalmjagf: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityArenaChallengePreviewExcelConfigData, crate::json::JsonError> {

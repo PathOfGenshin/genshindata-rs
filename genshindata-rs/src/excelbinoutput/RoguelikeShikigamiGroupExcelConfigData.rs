@@ -12,20 +12,20 @@ pub struct RoguelikeShikigamiGroupExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KIKGLNIKGFG")]
-    pub kikglnikgfg: Kikglnikgfg,
+    #[serde(rename = "NGLCNDEDFPP")]
+    pub nglcndedfpp: Nglcndedfpp,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Kikglnikgfg {
+pub struct Nglcndedfpp {
     #[serde(rename = "effectType")]
     pub effect_type: String,
 
-    #[serde(rename = "BHCHCKJGHGG")]
-    pub bhchckjghgg: String,
+    #[serde(rename = "OMAMMMMEEGI")]
+    pub omammmmeegi: String,
 
-    #[serde(rename = "KMMOMGBGEGO")]
-    pub kmmomgbgego: String,
+    #[serde(rename = "HDBJHKKLDIE")]
+    pub hdbjhkkldie: String,
 }
 
 pub fn load() -> Result<RoguelikeShikigamiGroupExcelConfigData, crate::json::JsonError> {

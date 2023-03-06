@@ -24,20 +24,20 @@ pub struct SummerTimeV2BoatStageExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "KKAAOAGIFEF")]
-    pub kkaaoagifef: i64,
+    #[serde(rename = "OGODALFELJP")]
+    pub ogodalfeljp: i64,
 
     #[serde(rename = "conditionType")]
     pub condition_type: Vec<ConditionType>,
 
-    #[serde(rename = "DKKMFEBEPPJ")]
-    pub dkkmfebeppj: Vec<i64>,
+    #[serde(rename = "KNMIMLIPAAA")]
+    pub knmimlipaaa: Vec<i64>,
 
-    #[serde(rename = "DHFOGJMCHOO")]
-    pub dhfogjmchoo: Vec<i64>,
+    #[serde(rename = "KIHLHGIGPDF")]
+    pub kihlhgigpdf: Vec<i64>,
 
-    #[serde(rename = "FDIFBEFDLEC")]
-    pub fdifbefdlec: Vec<i64>,
+    #[serde(rename = "GGBNJNFEGHG")]
+    pub ggbnjnfeghg: Vec<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

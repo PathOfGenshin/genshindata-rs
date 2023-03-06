@@ -24,8 +24,8 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "groupId")]
     pub group_id: Vec<i64>,
 
-    #[serde(rename = "MCNADAAENOE")]
-    pub mcnadaaenoe: Option<i64>,
+    #[serde(rename = "DJMGFNGIHKE")]
+    pub djmgfngihke: Option<i64>,
 
     #[serde(rename = "abilityGroup")]
     pub ability_group: AbilityGroup,
@@ -69,14 +69,14 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "selectableAbilityGroups")]
     pub selectable_ability_groups: Vec<String>,
 
-    #[serde(rename = "DIANDBGAGNA")]
-    pub diandbgagna: Vec<String>,
+    #[serde(rename = "HHIPHKLJKEL")]
+    pub hhiphkljkel: Vec<String>,
 
-    #[serde(rename = "COJKOHNNAJI")]
-    pub cojkohnnaji: Vec<String>,
+    #[serde(rename = "AOHDBDMFJBG")]
+    pub aohdbdmfjbg: Vec<String>,
 
-    #[serde(rename = "HDFGEOABFCF")]
-    pub hdfgeoabfcf: Vec<f64>,
+    #[serde(rename = "HGOGONKJMJM")]
+    pub hgogonkjmjm: Vec<f64>,
 
     #[serde(rename = "isEnableSinglePrepare")]
     pub is_enable_single_prepare: Option<bool>,
@@ -99,26 +99,26 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "centerRadius")]
     pub center_radius: Option<i64>,
 
-    #[serde(rename = "LAIMOJHEAAK")]
-    pub laimojheaak: Option<bool>,
+    #[serde(rename = "PMAFEMFJGPK")]
+    pub pmafemfjgpk: Option<bool>,
 
-    #[serde(rename = "FDDNBNPECEJ")]
-    pub fddnbnpecej: Option<i64>,
+    #[serde(rename = "BFKJFJOOAJH")]
+    pub bfkjfjooajh: Option<i64>,
 
-    #[serde(rename = "EOCMCAJJALB")]
-    pub eocmcajjalb: Option<bool>,
+    #[serde(rename = "LNNMGAEHIND")]
+    pub lnnmgaehind: Option<bool>,
 
-    #[serde(rename = "GGMBHNOHKGH")]
-    pub ggmbhnohkgh: Option<i64>,
+    #[serde(rename = "NOEGCIBMBBA")]
+    pub noegcibmbba: Option<i64>,
 
     #[serde(rename = "isEnableMpPrepare")]
     pub is_enable_mp_prepare: Option<bool>,
 
-    #[serde(rename = "MIKHOLJCAFI")]
-    pub mikholjcafi: Option<bool>,
+    #[serde(rename = "JDCNPFIGHDG")]
+    pub jdcnpfighdg: Option<bool>,
 
-    #[serde(rename = "JHALLNEDHIO")]
-    pub jhallnedhio: Option<f64>,
+    #[serde(rename = "LOMFJCAIHAP")]
+    pub lomfjcaihap: Option<f64>,
 
     #[serde(rename = "mpPrepareTime")]
     pub mp_prepare_time: Option<bool>,

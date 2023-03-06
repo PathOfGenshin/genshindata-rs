@@ -12,32 +12,32 @@ pub struct ActivityVintageMarketStageExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
 
-    #[serde(rename = "DKKCADEFAHL")]
-    pub dkkcadefahl: i64,
+    #[serde(rename = "PKBOOCABOOL")]
+    pub pkboocabool: i64,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "EDCKBJHPJKJ")]
-    pub edckbjhpjkj: i64,
+    #[serde(rename = "EFIOCIIFCCP")]
+    pub efiociifccp: i64,
 
-    #[serde(rename = "NMOMEFMKMBL")]
-    pub nmomefmkmbl: i64,
+    #[serde(rename = "GICILDMLHPO")]
+    pub gicildmlhpo: i64,
 
-    #[serde(rename = "GJJCMCKDPJK")]
-    pub gjjcmckdpjk: i64,
+    #[serde(rename = "IDMDCLHFLDE")]
+    pub idmdclhflde: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "FHNGAAFKLBB")]
-    pub fhngaafklbb: i64,
+    #[serde(rename = "OANPKOHDBLE")]
+    pub oanpkohdble: i64,
 
-    #[serde(rename = "ABCBOPFHNNH")]
-    pub abcbopfhnnh: i64,
+    #[serde(rename = "DIKFKDCMOEN")]
+    pub dikfkdcmoen: i64,
 
-    #[serde(rename = "PNKCOGHFMDJ")]
-    pub pnkcoghfmdj: Option<i64>,
+    #[serde(rename = "DMEPJNCHFNH")]
+    pub dmepjnchfnh: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityVintageMarketStageExcelConfigData, crate::json::JsonError> {

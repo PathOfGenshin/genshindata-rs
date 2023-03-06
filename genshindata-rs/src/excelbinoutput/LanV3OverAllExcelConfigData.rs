@@ -15,38 +15,38 @@ pub struct LanV3OverAllExcelConfigDatum {
     #[serde(rename = "openTime")]
     pub open_time: Vec<i64>,
 
-    #[serde(rename = "AMKALDDNMDP")]
-    pub amkalddnmdp: Vec<i64>,
+    #[serde(rename = "AEOGEGEAPOP")]
+    pub aeogegeapop: Vec<i64>,
 
-    #[serde(rename = "NBHCEOKBPHM")]
-    pub nbhceokbphm: i64,
+    #[serde(rename = "FCKPEOHDBHL")]
+    pub fckpeohdbhl: i64,
 
-    #[serde(rename = "BNANOGALCBN")]
-    pub bnanogalcbn: i64,
+    #[serde(rename = "KCKPEACIFOB")]
+    pub kckpeacifob: i64,
 
-    #[serde(rename = "EIFANFKFNHO")]
-    pub eifanfkfnho: i64,
+    #[serde(rename = "APAEDFHINAJ")]
+    pub apaedfhinaj: i64,
 
-    #[serde(rename = "MELGDHAGHAM")]
-    pub melgdhagham: i64,
+    #[serde(rename = "LIBALEBPONH")]
+    pub libalebponh: i64,
 
-    #[serde(rename = "DBPODKCLNFG")]
-    pub dbpodkclnfg: i64,
+    #[serde(rename = "PINIAMEPKKI")]
+    pub piniamepkki: i64,
 
-    #[serde(rename = "NGNKOBMEDNM")]
-    pub ngnkobmednm: i64,
+    #[serde(rename = "IBHDFINKLCN")]
+    pub ibhdfinklcn: i64,
 
-    #[serde(rename = "IAAFJBOAAJI")]
-    pub iaafjboaaji: i64,
+    #[serde(rename = "GCNNCNIPKBC")]
+    pub gcnncnipkbc: i64,
 
-    #[serde(rename = "JNGOIIFOPFJ")]
-    pub jngoiifopfj: i64,
+    #[serde(rename = "EPJHPPMHJED")]
+    pub epjhppmhjed: i64,
 
-    #[serde(rename = "FHINMEKJBCF")]
-    pub fhinmekjbcf: i64,
+    #[serde(rename = "GALOLPKNJIF")]
+    pub galolpknjif: i64,
 
-    #[serde(rename = "CMODICJOCPN")]
-    pub cmodicjocpn: i64,
+    #[serde(rename = "LEMENNMAFPL")]
+    pub lemennmafpl: i64,
 }
 
 pub fn load() -> Result<LanV3OverAllExcelConfigData, crate::json::JsonError> {

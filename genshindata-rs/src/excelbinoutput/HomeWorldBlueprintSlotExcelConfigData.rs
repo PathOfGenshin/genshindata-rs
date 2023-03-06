@@ -9,8 +9,8 @@ pub type HomeWorldBlueprintSlotExcelConfigData = Vec<HomeWorldBlueprintSlotExcel
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldBlueprintSlotExcelConfigDatum {
-    #[serde(rename = "HIPGLNHJCIL")]
-    pub hipglnhjcil: i64,
+    #[serde(rename = "LKBCPFFNNMD")]
+    pub lkbcpffnnmd: i64,
 }
 
 pub fn load() -> Result<HomeWorldBlueprintSlotExcelConfigData, crate::json::JsonError> {

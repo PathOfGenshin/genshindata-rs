@@ -18,14 +18,14 @@ pub struct WidgetCameraScanExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
 
-    #[serde(rename = "CBBIHAGHMDI")]
-    pub cbbihaghmdi: Vec<i64>,
+    #[serde(rename = "ALCKPGDGBHG")]
+    pub alckpgdgbhg: Vec<i64>,
 
-    #[serde(rename = "BCOBBPEMKBB")]
-    pub bcobbpemkbb: bool,
+    #[serde(rename = "KFGIJEMBKPK")]
+    pub kfgijembkpk: bool,
 
-    #[serde(rename = "EBAAEONKGGO")]
-    pub ebaaeonkggo: String,
+    #[serde(rename = "LMKLIJDCNBO")]
+    pub lmklijdcnbo: String,
 }
 
 pub fn load() -> Result<WidgetCameraScanExcelConfigData, crate::json::JsonError> {

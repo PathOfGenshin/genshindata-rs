@@ -12,53 +12,53 @@ pub struct GcgRuleExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "FIPJDCAAPMN")]
-    pub fipjdcaapmn: i64,
+    #[serde(rename = "PMCDECHLKGO")]
+    pub pmcdechlkgo: i64,
 
-    #[serde(rename = "AIINDDJJDHK")]
-    pub aiinddjjdhk: i64,
+    #[serde(rename = "LLMEHFHEGAA")]
+    pub llmehfhegaa: i64,
 
-    #[serde(rename = "ABJPBHJALIA")]
-    pub abjpbhjalia: i64,
+    #[serde(rename = "CLDOFBNIPAD")]
+    pub cldofbnipad: i64,
 
-    #[serde(rename = "JIDJDPLHEDH")]
-    pub jidjdplhedh: Vec<i64>,
+    #[serde(rename = "CLLHBNIPOLB")]
+    pub cllhbnipolb: Vec<i64>,
 
-    #[serde(rename = "KPCPGJMMOLP")]
-    pub kpcpgjmmolp: i64,
+    #[serde(rename = "OMODCOPMBCN")]
+    pub omodcopmbcn: i64,
 
-    #[serde(rename = "AEPPNIMGLOH")]
-    pub aeppnimgloh: Option<i64>,
+    #[serde(rename = "IAHMDLEIACL")]
+    pub iahmdleiacl: Option<i64>,
 
-    #[serde(rename = "GHJMLCGJKGF")]
-    pub ghjmlcgjkgf: Option<i64>,
+    #[serde(rename = "FLDGCKGCBDA")]
+    pub fldgckgcbda: Option<i64>,
 
-    #[serde(rename = "IOHAGFNNJPA")]
-    pub iohagfnnjpa: Option<i64>,
+    #[serde(rename = "JFBDJPIHFKB")]
+    pub jfbdjpihfkb: Option<i64>,
 
-    #[serde(rename = "FJILGLBGIGN")]
-    pub fjilglbgign: Option<i64>,
+    #[serde(rename = "EAKGNELEOKA")]
+    pub eakgneleoka: Option<i64>,
 
-    #[serde(rename = "JECPPPIKEJA")]
-    pub jecpppikeja: Option<i64>,
+    #[serde(rename = "COCOCAGHKCA")]
+    pub cococaghkca: Option<i64>,
 
-    #[serde(rename = "NOOHONBCOPJ")]
-    pub noohonbcopj: Option<i64>,
+    #[serde(rename = "FJAMOAFGGNE")]
+    pub fjamoafggne: Option<i64>,
 
-    #[serde(rename = "GBCCFKIEOHF")]
-    pub gbccfkieohf: Option<i64>,
+    #[serde(rename = "OEGAFAKDBJP")]
+    pub oegafakdbjp: Option<i64>,
 
-    #[serde(rename = "BOLIKCKOAMN")]
-    pub bolikckoamn: Option<i64>,
+    #[serde(rename = "HJBAJKOKAGL")]
+    pub hjbajkokagl: Option<i64>,
 
-    #[serde(rename = "LIJAHDLDMIJ")]
-    pub lijahdldmij: Option<i64>,
+    #[serde(rename = "HKJGELFHCLG")]
+    pub hkjgelfhclg: Option<i64>,
 
-    #[serde(rename = "GKMPFCHGILN")]
-    pub gkmpfchgiln: Option<i64>,
+    #[serde(rename = "PGEAPEHEADM")]
+    pub pgeapeheadm: Option<i64>,
 
-    #[serde(rename = "GKNJABFKJKD")]
-    pub gknjabfkjkd: Option<f64>,
+    #[serde(rename = "OHINJJDDOIF")]
+    pub ohinjjddoif: Option<f64>,
 }
 
 pub fn load() -> Result<GcgRuleExcelConfigData, crate::json::JsonError> {

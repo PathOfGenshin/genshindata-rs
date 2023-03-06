@@ -33,11 +33,11 @@ pub struct HomeWorldLimitShopExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Cond {
-    #[serde(rename = "DKKMFEBEPPJ")]
-    pub dkkmfebeppj: Vec<i64>,
+    #[serde(rename = "KNMIMLIPAAA")]
+    pub knmimlipaaa: Vec<i64>,
 
-    #[serde(rename = "HAOPDLPPAIH")]
-    pub haopdlppaih: Option<Haopdlppaih>,
+    #[serde(rename = "ECDOIBLAICO")]
+    pub ecdoiblaico: Option<Ecdoiblaico>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -50,7 +50,7 @@ pub struct CostItem {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Haopdlppaih {
+pub enum Ecdoiblaico {
     #[serde(rename = "HOMEWORLD_LIMIT_SHOP_COND_TYPE_QUEST_FINISH")]
     HomeworldLimitShopCondTypeQuestFinish,
 }

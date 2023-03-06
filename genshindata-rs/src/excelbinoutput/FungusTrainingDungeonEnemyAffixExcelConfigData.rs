@@ -12,8 +12,8 @@ pub struct FungusTrainingDungeonEnemyAffixExcelConfigDatum {
     #[serde(rename = "affixId")]
     pub affix_id: i64,
 
-    #[serde(rename = "JDPCOEKBOFI")]
-    pub jdpcoekbofi: i64,
+    #[serde(rename = "EMPABJPBNCI")]
+    pub empabjpbnci: i64,
 }
 
 pub fn load() -> Result<FungusTrainingDungeonEnemyAffixExcelConfigData, crate::json::JsonError> {

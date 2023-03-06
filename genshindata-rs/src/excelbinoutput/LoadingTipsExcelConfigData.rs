@@ -33,14 +33,14 @@ pub struct LoadingTipsExcelConfigDatum {
     #[serde(rename = "preMainQuestIds")]
     pub pre_main_quest_ids: String,
 
-    #[serde(rename = "GEJKLECBJIF")]
-    pub gejklecbjif: Vec<i64>,
+    #[serde(rename = "FEMJBJMFDFG")]
+    pub femjbjmfdfg: Vec<i64>,
 
-    #[serde(rename = "MPJBHIBJAMN")]
-    pub mpjbhibjamn: Vec<i64>,
+    #[serde(rename = "JIHDCIPNHKJ")]
+    pub jihdcipnhkj: Vec<i64>,
 
-    #[serde(rename = "HBPEGBEADJJ")]
-    pub hbpegbeadjj: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LABNINHPMHF")]
+    pub labninhpmhf: Vec<Option<serde_json::Value>>,
 
     #[serde(rename = "weight")]
     pub weight: i64,

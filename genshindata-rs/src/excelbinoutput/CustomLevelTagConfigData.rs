@@ -12,8 +12,8 @@ pub struct CustomLevelTagConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "DHGIDBJIJOB")]
-    pub dhgidbjijob: i64,
+    #[serde(rename = "MLBBABFPFDI")]
+    pub mlbbabfpfdi: i64,
 
     #[serde(rename = "sortId")]
     pub sort_id: i64,

@@ -27,35 +27,35 @@ pub struct HomeWorldAreaComfortExcelConfigDatum {
     #[serde(rename = "maxComfort")]
     pub max_comfort: i64,
 
-    #[serde(rename = "KHKEFNJPIEI")]
-    pub khkefnjpiei: String,
+    #[serde(rename = "EJIDKEPCFPI")]
+    pub ejidkepcfpi: String,
 
-    #[serde(rename = "HBGEFCAHKGM")]
-    pub hbgefcahkgm: Hbgefcahkgm,
+    #[serde(rename = "GOFCCGEBOOE")]
+    pub gofccgebooe: Gofccgebooe,
 
-    #[serde(rename = "PINLJFJNDMP")]
-    pub pinljfjndmp: i64,
+    #[serde(rename = "AIBGCCIFDBP")]
+    pub aibgccifdbp: i64,
 
-    #[serde(rename = "PGMKHDCOCDP")]
-    pub pgmkhdcocdp: i64,
+    #[serde(rename = "EGIHOGKDAAB")]
+    pub egihogkdaab: i64,
 
-    #[serde(rename = "KHLDEHPOKAD")]
-    pub khldehpokad: i64,
+    #[serde(rename = "CLGDIAEJFNF")]
+    pub clgdiaejfnf: i64,
 
-    #[serde(rename = "AMKONIDGGLF")]
-    pub amkonidgglf: Vec<f64>,
+    #[serde(rename = "EHFGCFAIIDB")]
+    pub ehfgcfaiidb: Vec<f64>,
 
-    #[serde(rename = "ADILKJAAIGH")]
-    pub adilkjaaigh: Vec<f64>,
+    #[serde(rename = "HPEIMMOAPIA")]
+    pub hpeimmoapia: Vec<f64>,
 
-    #[serde(rename = "BOLLFLLAAAJ")]
-    pub bollfllaaaj: String,
+    #[serde(rename = "HKGJEJPGPCC")]
+    pub hkgjejpgpcc: String,
 
-    #[serde(rename = "ELKPCFFLJMO")]
-    pub elkpcffljmo: i64,
+    #[serde(rename = "DKKCEJNDPLH")]
+    pub dkkcejndplh: i64,
 
-    #[serde(rename = "CKOIKPKHIBN")]
-    pub ckoikpkhibn: String,
+    #[serde(rename = "EACIPPKGPCL")]
+    pub eacippkgpcl: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -65,7 +65,7 @@ pub enum AreaType {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hbgefcahkgm {
+pub enum Gofccgebooe {
     #[serde(rename = "")]
     Empty,
 

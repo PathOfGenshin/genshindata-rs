@@ -15,8 +15,8 @@ pub struct LanV3ShadowStageExcelConfigDatum {
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
 
-    #[serde(rename = "FHJAEHOAEKP")]
-    pub fhjaehoaekp: Vec<i64>,
+    #[serde(rename = "AENACLDJBPH")]
+    pub aenacldjbph: Vec<i64>,
 }
 
 pub fn load() -> Result<LanV3ShadowStageExcelConfigData, crate::json::JsonError> {

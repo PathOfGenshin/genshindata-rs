@@ -12,14 +12,14 @@ pub struct BartenderFormulaExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "EFJMHKBEMHC")]
-    pub efjmhkbemhc: Vec<Aalhijeojma>,
+    #[serde(rename = "NIBPGIPPALH")]
+    pub nibpgippalh: Vec<Dopapfgemhj>,
 
-    #[serde(rename = "AALHIJEOJMA")]
-    pub aalhijeojma: Vec<Aalhijeojma>,
+    #[serde(rename = "DOPAPFGEMHJ")]
+    pub dopapfgemhj: Vec<Dopapfgemhj>,
 
-    #[serde(rename = "LDKPJHKIGEA")]
-    pub ldkpjhkigea: Vec<i64>,
+    #[serde(rename = "OCLJBLAKEGC")]
+    pub ocljblakegc: Vec<i64>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -27,21 +27,21 @@ pub struct BartenderFormulaExcelConfigDatum {
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
 
-    #[serde(rename = "NJNCANOCNJC")]
-    pub njncanocnjc: Option<i64>,
+    #[serde(rename = "OEJBJHCJLEO")]
+    pub oejbjhcjleo: Option<i64>,
 
-    #[serde(rename = "BJBNONNHKCI")]
-    pub bjbnonnhkci: Option<i64>,
+    #[serde(rename = "JICEKLFMFJJ")]
+    pub jiceklfmfjj: Option<i64>,
 
-    #[serde(rename = "MFFNEEMBPDJ")]
-    pub mffneembpdj: i64,
+    #[serde(rename = "MFKAFLLHJJC")]
+    pub mfkafllhjjc: i64,
 
-    #[serde(rename = "PMCGMCNLADC")]
-    pub pmcgmcnladc: Option<Pmcgmcnladc>,
+    #[serde(rename = "NAJCIDLEJND")]
+    pub najcidlejnd: Option<Najcidlejnd>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Aalhijeojma {
+pub struct Dopapfgemhj {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 
@@ -50,7 +50,7 @@ pub struct Aalhijeojma {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pmcgmcnladc {
+pub enum Najcidlejnd {
     #[serde(rename = "HEAVY")]
     Heavy,
 

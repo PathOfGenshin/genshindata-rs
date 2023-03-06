@@ -15,11 +15,11 @@ pub struct LunaRitePreviewExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
 
-    #[serde(rename = "CLNKBPHAIPI")]
-    pub clnkbphaipi: i64,
+    #[serde(rename = "BDEIPNAAAIN")]
+    pub bdeipnaaain: i64,
 
-    #[serde(rename = "EDOJMKHGEAM")]
-    pub edojmkhgeam: i64,
+    #[serde(rename = "DNGLCJHFLBC")]
+    pub dnglcjhflbc: i64,
 
     #[serde(rename = "unlockPlayerLevel")]
     pub unlock_player_level: i64,
@@ -27,23 +27,23 @@ pub struct LunaRitePreviewExcelConfigDatum {
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
 
-    #[serde(rename = "JNEDOAGFHFE")]
-    pub jnedoagfhfe: i64,
+    #[serde(rename = "IIHJAPDINJP")]
+    pub iihjapdinjp: i64,
 
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
 
-    #[serde(rename = "OELIKOAGHJB")]
-    pub oelikoaghjb: i64,
+    #[serde(rename = "PHPEGFBIDIK")]
+    pub phpegfbidik: i64,
 
-    #[serde(rename = "NANOCFEHOFA")]
-    pub nanocfehofa: i64,
+    #[serde(rename = "CMJCMDCHPKO")]
+    pub cmjcmdchpko: i64,
 
-    #[serde(rename = "JIKIPKKDEGA")]
-    pub jikipkkdega: i64,
+    #[serde(rename = "BPFGBFCCDMC")]
+    pub bpfgbfccdmc: i64,
 
-    #[serde(rename = "OHKOPEEHGKC")]
-    pub ohkopeehgkc: i64,
+    #[serde(rename = "CNACNPIBMMJ")]
+    pub cnacnpibmmj: i64,
 }
 
 pub fn load() -> Result<LunaRitePreviewExcelConfigData, crate::json::JsonError> {

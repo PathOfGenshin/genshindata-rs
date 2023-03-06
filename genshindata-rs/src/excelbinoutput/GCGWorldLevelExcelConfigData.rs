@@ -21,20 +21,20 @@ pub struct GcgWorldLevelExcelConfigDatum {
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
 
-    #[serde(rename = "OMLGKBNCHEA")]
-    pub omlgkbnchea: i64,
+    #[serde(rename = "LCDFHLPBNFF")]
+    pub lcdfhlpbnff: i64,
 
     #[serde(rename = "talkId")]
     pub talk_id: i64,
 
-    #[serde(rename = "EOOFFECPACA")]
-    pub eooffecpaca: Option<i64>,
+    #[serde(rename = "CHONPGNANHB")]
+    pub chonpgnanhb: Option<i64>,
 
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Option<UnlockCond>,
 
-    #[serde(rename = "GEPDGCLJHDF")]
-    pub gepdgcljhdf: Option<i64>,
+    #[serde(rename = "DBELNLMBANE")]
+    pub dbelnlmbane: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

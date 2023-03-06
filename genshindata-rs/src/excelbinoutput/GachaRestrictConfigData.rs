@@ -9,17 +9,17 @@ pub type GachaRestrictConfigData = Vec<GachaRestrictConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GachaRestrictConfigDatum {
-    #[serde(rename = "PPELPPMNDPK")]
-    pub ppelppmndpk: i64,
+    #[serde(rename = "OFEOFPMKMCB")]
+    pub ofeofpmkmcb: i64,
 
-    #[serde(rename = "DEHFCCOGHBG")]
-    pub dehfccoghbg: i64,
+    #[serde(rename = "OKCLEKFJNIG")]
+    pub okclekfjnig: i64,
 
-    #[serde(rename = "PBFBAIPPJCC")]
-    pub pbfbaippjcc: i64,
+    #[serde(rename = "ONNFBNHOHPP")]
+    pub onnfbnhohpp: i64,
 
-    #[serde(rename = "IGCCNDBPBLF")]
-    pub igccndbpblf: i64,
+    #[serde(rename = "OBJEAJJPNOF")]
+    pub objeajjpnof: i64,
 }
 
 pub fn load() -> Result<GachaRestrictConfigData, crate::json::JsonError> {

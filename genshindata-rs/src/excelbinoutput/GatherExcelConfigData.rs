@@ -9,9 +9,6 @@ pub type GatherExcelConfigData = Vec<GatherExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GatherExcelConfigDatum {
-    #[serde(rename = "id")]
-    pub id: i64,
-
     #[serde(rename = "areaId")]
     pub area_id: Option<i64>,
 
@@ -24,29 +21,20 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "extraItemIdVec")]
-    pub extra_item_id_vec: Vec<i64>,
-
-    #[serde(rename = "cd")]
-    pub cd: i64,
-
-    #[serde(rename = "priority")]
-    pub priority: i64,
+    #[serde(rename = "blockLimits")]
+    pub block_limits: Vec<i64>,
 
     #[serde(rename = "refreshId")]
     pub refresh_id: Option<i64>,
 
-    #[serde(rename = "blockLimits")]
-    pub block_limits: Vec<BlockLimit>,
-
     #[serde(rename = "initDisableInteract")]
     pub init_disable_interact: Option<bool>,
 
-    #[serde(rename = "BMLFKEOHKGI")]
-    pub bmlfkeohkgi: Option<Bmlfkeohkgi>,
+    #[serde(rename = "extraItemIdVec")]
+    pub extra_item_id_vec: Option<ExtraItemIdVec>,
 
-    #[serde(rename = "DHJMOIMEFDC")]
-    pub dhjmoimefdc: Option<bool>,
+    #[serde(rename = "cd")]
+    pub cd: Option<bool>,
 
     #[serde(rename = "pointLocation")]
     pub point_location: Option<PointLocation>,
@@ -54,21 +42,12 @@ pub struct GatherExcelConfigDatum {
     #[serde(rename = "isForbidGuest")]
     pub is_forbid_guest: Option<bool>,
 
-    #[serde(rename = "BMJFGLFCODC")]
-    pub bmjfglfcodc: Option<bool>,
+    #[serde(rename = "JDGJKFIPDEC")]
+    pub jdgjkfipdec: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct BlockLimit {
-    #[serde(rename = "blockId")]
-    pub block_id: i64,
-
-    #[serde(rename = "count")]
-    pub count: i64,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Bmlfkeohkgi {
+pub enum ExtraItemIdVec {
     #[serde(rename = "GATHER_SAVE_TYPE_HIGH")]
     GatherSaveTypeHigh,
 

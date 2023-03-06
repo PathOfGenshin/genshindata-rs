@@ -12,59 +12,59 @@ pub struct GcgCardViewExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DDPJEDECAAL")]
-    pub ddpjedecaal: String,
+    #[serde(rename = "PGEPLDHMPLO")]
+    pub pgepldhmplo: String,
 
-    #[serde(rename = "DMMGBMKBMIA")]
-    pub dmmgbmkbmia: Vec<String>,
+    #[serde(rename = "HMPJPKLCMKP")]
+    pub hmpjpklcmkp: Vec<String>,
 
-    #[serde(rename = "KCPLNHHMCDF")]
-    pub kcplnhhmcdf: String,
+    #[serde(rename = "HNEFNBPCOBH")]
+    pub hnefnbpcobh: String,
 
-    #[serde(rename = "FPELAEOLIIE")]
-    pub fpelaeoliie: String,
+    #[serde(rename = "HADIODKOHNK")]
+    pub hadiodkohnk: String,
 
-    #[serde(rename = "NIIKEPJJFHJ")]
-    pub niikepjjfhj: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "JBHOCOPIIEM")]
+    pub jbhocopiiem: Vec<Option<serde_json::Value>>,
 
-    #[serde(rename = "EDOJEOMIFCK")]
-    pub edojeomifck: String,
+    #[serde(rename = "LLBDPGLCHBJ")]
+    pub llbdpglchbj: String,
 
-    #[serde(rename = "LFCDCIGMFND")]
-    pub lfcdcigmfnd: Lfcdcigmfnd,
+    #[serde(rename = "APODPMNGBBG")]
+    pub apodpmngbbg: Apodpmngbbg,
 
-    #[serde(rename = "DFMKHGPDKFO")]
-    pub dfmkhgpdkfo: Vec<String>,
+    #[serde(rename = "KMPGBPDNAFF")]
+    pub kmpgbpdnaff: Vec<String>,
 
-    #[serde(rename = "GOJDIBEIEJP")]
-    pub gojdibeiejp: Gojdibeiejp,
+    #[serde(rename = "BIFAGBJMBAH")]
+    pub bifagbjmbah: Bifagbjmbah,
 
-    #[serde(rename = "NBIPJPBMABC")]
-    pub nbipjpbmabc: Option<i64>,
+    #[serde(rename = "HDBBJIGKIMP")]
+    pub hdbbjigkimp: Option<i64>,
 
-    #[serde(rename = "MINCENHBDMG")]
-    pub mincenhbdmg: Option<i64>,
+    #[serde(rename = "CELPODAOIKD")]
+    pub celpodaoikd: Option<i64>,
 
-    #[serde(rename = "LKBFALNMKFC")]
-    pub lkbfalnmkfc: Option<i64>,
+    #[serde(rename = "MAKFNPNEFDE")]
+    pub makfnpnefde: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Gojdibeiejp {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
-    SkinEffectConfigCharacterCyno2,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Lfcdcigmfnd {
+pub enum Apodpmngbbg {
     #[serde(rename = "")]
     Empty,
 
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Cyno")]
     GcgCardFaceCharAvatarCyno,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Bifagbjmbah {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
+    SkinEffectConfigCharacterCyno2,
 }
 
 pub fn load() -> Result<GcgCardViewExcelConfigData, crate::json::JsonError> {

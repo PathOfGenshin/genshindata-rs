@@ -30,47 +30,53 @@ pub struct SceneExcelConfigDatum {
     #[serde(rename = "comment")]
     pub comment: Comment,
 
-    #[serde(rename = "LFFMIOLMPLC")]
-    pub lffmiolmplc: Vec<f64>,
+    #[serde(rename = "CDPLABHHLPO")]
+    pub cdplabhhlpo: Vec<f64>,
 
-    #[serde(rename = "JFNODLLJGJF")]
-    pub jfnodlljgjf: Vec<i64>,
+    #[serde(rename = "PGPLNHJBIOL")]
+    pub pgplnhjbiol: Vec<i64>,
 
-    #[serde(rename = "MAEGJOKJLHO")]
-    pub maegjokjlho: Option<bool>,
+    #[serde(rename = "AKKHOKJODCC")]
+    pub akkhokjodcc: Option<bool>,
 
     #[serde(rename = "maxSpecifiedAvatarNum")]
     pub max_specified_avatar_num: Option<i64>,
 
-    #[serde(rename = "KPILJJNBNCP")]
-    pub kpiljjnbncp: Option<String>,
+    #[serde(rename = "ILFDBEIPOKN")]
+    pub ilfdbeipokn: Option<String>,
 
-    #[serde(rename = "DIICEBHNNBO")]
-    pub diicebhnnbo: Option<bool>,
+    #[serde(rename = "JHFFDCDGNKF")]
+    pub jhffdcdgnkf: Option<bool>,
 
-    #[serde(rename = "KEJHBMCPLNF")]
-    pub kejhbmcplnf: Option<i64>,
+    #[serde(rename = "CNINBEMIGHL")]
+    pub cninbemighl: Option<String>,
 
-    #[serde(rename = "ODAGMCBMAKA")]
-    pub odagmcbmaka: Option<bool>,
+    #[serde(rename = "DDECOHPHDOI")]
+    pub ddecohphdoi: Option<i64>,
 
-    #[serde(rename = "ACGFBBHHNDB")]
-    pub acgfbbhhndb: Option<bool>,
+    #[serde(rename = "EGBGAGMMGHG")]
+    pub egbgagmmghg: Option<bool>,
 
-    #[serde(rename = "KKDCOIONAEA")]
-    pub kkdcoionaea: Option<f64>,
+    #[serde(rename = "PGIFGELOJMP")]
+    pub pgifgelojmp: Option<bool>,
 
-    #[serde(rename = "AJPJFHBLFFB")]
-    pub ajpjfhblffb: Option<String>,
+    #[serde(rename = "BPOBNMGIAPL")]
+    pub bpobnmgiapl: Option<f64>,
 
     #[serde(rename = "entityAppearSorted")]
     pub entity_appear_sorted: Option<i64>,
 
-    #[serde(rename = "IKEJHONFFGD")]
-    pub ikejhonffgd: Option<Ikejhonffgd>,
+    #[serde(rename = "BAOEGMHOHGD")]
+    pub baoegmhohgd: Option<Baoegmhohgd>,
 
-    #[serde(rename = "OMFNIOEDJPB")]
-    pub omfnioedjpb: Option<i64>,
+    #[serde(rename = "BEOHEDEKLCI")]
+    pub beohedeklci: Option<i64>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Baoegmhohgd {
+    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
+    SceneSubTypePersistentDungeon,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -80,12 +86,6 @@ pub enum Comment {
 
     #[serde(rename = "测试")]
     Empty,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Ikejhonffgd {
-    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
-    SceneSubTypePersistentDungeon,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

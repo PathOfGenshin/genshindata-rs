@@ -18,26 +18,26 @@ pub struct CustomLevelDungeonConfigDatum {
     #[serde(rename = "jsonPath")]
     pub json_path: String,
 
-    #[serde(rename = "MOLCKEEBLCE")]
-    pub molckeeblce: String,
+    #[serde(rename = "MNMFBKABPPD")]
+    pub mnmfbkabppd: String,
 
-    #[serde(rename = "CEINNEGPJDK")]
-    pub ceinnegpjdk: i64,
+    #[serde(rename = "FLKMJNPMKDO")]
+    pub flkmjnpmkdo: i64,
 
-    #[serde(rename = "DMAFAFGNMCE")]
-    pub dmafafgnmce: i64,
+    #[serde(rename = "ALBABBELJGN")]
+    pub albabbeljgn: i64,
 
-    #[serde(rename = "FPJEBLLPNDN")]
-    pub fpjebllpndn: i64,
+    #[serde(rename = "IJEBCEPJAJI")]
+    pub ijebcepjaji: i64,
 
-    #[serde(rename = "DDNADHNGCDN")]
-    pub ddnadhngcdn: i64,
+    #[serde(rename = "JHJMMAJCJKA")]
+    pub jhjmmajcjka: i64,
 
-    #[serde(rename = "MBCHCOKDGCO")]
-    pub mbchcokdgco: String,
+    #[serde(rename = "MBFEKMJBAJJ")]
+    pub mbfekmjbajj: String,
 
-    #[serde(rename = "BFHHJOPIBCO")]
-    pub bfhhjopibco: Vec<i64>,
+    #[serde(rename = "DBIFFMOAIED")]
+    pub dbiffmoaied: Vec<i64>,
 }
 
 pub fn load() -> Result<CustomLevelDungeonConfigData, crate::json::JsonError> {

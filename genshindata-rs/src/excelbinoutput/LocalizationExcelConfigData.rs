@@ -57,11 +57,11 @@ pub struct LocalizationExcelConfigDatum {
     #[serde(rename = "dePath")]
     pub de_path: String,
 
-    #[serde(rename = "KAKHBDNGOAG")]
-    pub kakhbdngoag: String,
+    #[serde(rename = "DGNHADCPHNI")]
+    pub dgnhadcphni: String,
 
-    #[serde(rename = "JPOENIMNGGE")]
-    pub jpoenimngge: String,
+    #[serde(rename = "IPKDIMDJGID")]
+    pub ipkdimdjgid: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

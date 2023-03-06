@@ -18,14 +18,14 @@ pub struct ActivityGearGadgetShaftExcelConfigDatum {
     #[serde(rename = "radius")]
     pub radius: f64,
 
-    #[serde(rename = "GGIBAOCHPFO")]
-    pub ggibaochpfo: Vec<f64>,
+    #[serde(rename = "ODBKHFNPEFL")]
+    pub odbkhfnpefl: Vec<f64>,
 
-    #[serde(rename = "NMMAKFONDNH")]
-    pub nmmakfondnh: f64,
+    #[serde(rename = "OCFFGOMFFNC")]
+    pub ocffgomffnc: f64,
 
-    #[serde(rename = "OBFFJKPANNH")]
-    pub obffjkpannh: Vec<f64>,
+    #[serde(rename = "HCONDFDNJIK")]
+    pub hcondfdnjik: Vec<f64>,
 }
 
 pub fn load() -> Result<ActivityGearGadgetShaftExcelConfigData, crate::json::JsonError> {

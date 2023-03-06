@@ -15,8 +15,8 @@ pub struct RogueDiaryQuestExcelConfigDatum {
     #[serde(rename = "questIdList")]
     pub quest_id_list: Vec<String>,
 
-    #[serde(rename = "HCIPPCLFOFB")]
-    pub hcippclfofb: Vec<i64>,
+    #[serde(rename = "NFJINAPKCKC")]
+    pub nfjinapkckc: Vec<i64>,
 
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,

@@ -15,17 +15,17 @@ pub struct GcgCardFaceExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
 
-    #[serde(rename = "BAHNBAOENOB")]
-    pub bahnbaoenob: i64,
+    #[serde(rename = "LCONEMCLIOA")]
+    pub lconemclioa: i64,
 
-    #[serde(rename = "JLCPJOOCJAC")]
-    pub jlcpjoocjac: Jlcpjoocjac,
+    #[serde(rename = "PHGIDJKDECA")]
+    pub phgidjkdeca: Phgidjkdeca,
 
-    #[serde(rename = "OCCOFKOKCHH")]
-    pub occofkokchh: Option<i64>,
+    #[serde(rename = "HGBBMHLNELB")]
+    pub hgbbmhlnelb: Option<i64>,
 
-    #[serde(rename = "PBPMPBJICND")]
-    pub pbpmpbjicnd: Vec<i64>,
+    #[serde(rename = "BILAHNAJNDH")]
+    pub bilahnajndh: Vec<i64>,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -33,18 +33,18 @@ pub struct GcgCardFaceExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "EHOCLIBNFEO")]
-    pub ehoclibnfeo: Option<Ehoclibnfeo>,
+    #[serde(rename = "OMMLHDECHBG")]
+    pub ommlhdechbg: Option<Ommlhdechbg>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ehoclibnfeo {
+pub enum Ommlhdechbg {
     #[serde(rename = "GCG_PROFICIENCY_REWARD")]
     GcgProficiencyReward,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jlcpjoocjac {
+pub enum Phgidjkdeca {
     #[serde(rename = "GCG_CARD_FACE_GOLD")]
     GcgCardFaceGold,
 }

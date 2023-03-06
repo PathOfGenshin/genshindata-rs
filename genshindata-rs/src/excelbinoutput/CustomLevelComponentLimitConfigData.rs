@@ -9,14 +9,14 @@ pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConf
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CustomLevelComponentLimitConfigDatum {
-    #[serde(rename = "EBBPJKKKJHM")]
-    pub ebbpjkkkjhm: i64,
+    #[serde(rename = "BMKNCNPOEFO")]
+    pub bmkncnpoefo: i64,
 
-    #[serde(rename = "LPHEJMNCJDF")]
-    pub lphejmncjdf: i64,
+    #[serde(rename = "PABJLGJLKJF")]
+    pub pabjlgjlkjf: i64,
 
-    #[serde(rename = "BJCCPILLOOB")]
-    pub bjccpilloob: i64,
+    #[serde(rename = "OJLPEBLFIHA")]
+    pub ojlpeblfiha: i64,
 }
 
 pub fn load() -> Result<CustomLevelComponentLimitConfigData, crate::json::JsonError> {

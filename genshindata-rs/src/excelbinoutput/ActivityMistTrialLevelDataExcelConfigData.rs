@@ -27,8 +27,8 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "monsterPreviewIdList")]
     pub monster_preview_id_list: Vec<i64>,
 
-    #[serde(rename = "JGBMEDDFJII")]
-    pub jgbmeddfjii: Vec<i64>,
+    #[serde(rename = "DOJFGBDFLPF")]
+    pub dojfgbdflpf: Vec<i64>,
 
     #[serde(rename = "openDay")]
     pub open_day: i64,
@@ -39,8 +39,8 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "statisticsIdList")]
     pub statistics_id_list: Vec<i64>,
 
-    #[serde(rename = "APGKLBCLENA")]
-    pub apgklbclena: i64,
+    #[serde(rename = "ACKKIGAFCHA")]
+    pub ackkigafcha: i64,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
@@ -51,24 +51,24 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     #[serde(rename = "failTips")]
     pub fail_tips: Vec<String>,
 
-    #[serde(rename = "MPFGCGGNLGA")]
-    pub mpfgcggnlga: Vec<i64>,
+    #[serde(rename = "IPDEINDKDBC")]
+    pub ipdeindkdbc: Vec<i64>,
 
-    #[serde(rename = "NBBIHDIFODO")]
-    pub nbbihdifodo: Nbbihdifodo,
+    #[serde(rename = "PPMLFMHLJJO")]
+    pub ppmlfmhljjo: Ppmlfmhljjo,
 
-    #[serde(rename = "KPJKNNNAKOM")]
-    pub kpjknnnakom: Vec<i64>,
+    #[serde(rename = "HLEOIPGIAOC")]
+    pub hleoipgiaoc: Vec<i64>,
 
-    #[serde(rename = "FPADMNNIMGC")]
-    pub fpadmnnimgc: Vec<i64>,
+    #[serde(rename = "ELMCIAEKMAO")]
+    pub elmciaekmao: Vec<i64>,
 
     #[serde(rename = "bgIconHash")]
     pub bg_icon_hash: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Nbbihdifodo {
+pub enum Ppmlfmhljjo {
     #[serde(rename = "")]
     Empty,
 

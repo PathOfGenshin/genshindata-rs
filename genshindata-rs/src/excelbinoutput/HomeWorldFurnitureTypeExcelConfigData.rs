@@ -12,8 +12,8 @@ pub struct HomeWorldFurnitureTypeExcelConfigDatum {
     #[serde(rename = "typeID")]
     pub type_id: i64,
 
-    #[serde(rename = "GGGPEBNNCHP")]
-    pub gggpebnnchp: i64,
+    #[serde(rename = "CGAPLAPOMEB")]
+    pub cgaplapomeb: i64,
 
     #[serde(rename = "typeNameTextMapHash")]
     pub type_name_text_map_hash: i64,
@@ -30,8 +30,8 @@ pub struct HomeWorldFurnitureTypeExcelConfigDatum {
     #[serde(rename = "sceneType")]
     pub scene_type: Option<SceneType>,
 
-    #[serde(rename = "OCDOEKFLNJG")]
-    pub ocdoekflnjg: Option<i64>,
+    #[serde(rename = "JDIIIMCKLOH")]
+    pub jdiiimckloh: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

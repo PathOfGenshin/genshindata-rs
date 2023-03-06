@@ -9,29 +9,29 @@ pub type MusicRiddleConfigData = Vec<MusicRiddleConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MusicRiddleConfigDatum {
-    #[serde(rename = "BOEBGMLOCKE")]
-    pub boebgmlocke: i64,
+    #[serde(rename = "HPHDCGHCKAB")]
+    pub hphdcghckab: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MDPPNDLHBCN")]
-    pub mdppndlhbcn: i64,
+    #[serde(rename = "MMCCJJPOEOB")]
+    pub mmccjjpoeob: i64,
 
-    #[serde(rename = "ACENCCAAEGN")]
-    pub acenccaaegn: Vec<i64>,
+    #[serde(rename = "DOKNAKOCBAJ")]
+    pub doknakocbaj: Vec<i64>,
 
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 
-    #[serde(rename = "MDLLGELPOFD")]
-    pub mdllgelpofd: Option<i64>,
+    #[serde(rename = "LCABBNIBFAO")]
+    pub lcabbnibfao: Option<i64>,
 
-    #[serde(rename = "FOKCNELLLJK")]
-    pub fokcnellljk: Option<i64>,
+    #[serde(rename = "FKDMLPCLJKJ")]
+    pub fkdmlpcljkj: Option<i64>,
 
-    #[serde(rename = "KJAPALIIAJL")]
-    pub kjapaliiajl: Option<bool>,
+    #[serde(rename = "KAFCGGNKNMA")]
+    pub kafcggnknma: Option<bool>,
 }
 
 pub fn load() -> Result<MusicRiddleConfigData, crate::json::JsonError> {

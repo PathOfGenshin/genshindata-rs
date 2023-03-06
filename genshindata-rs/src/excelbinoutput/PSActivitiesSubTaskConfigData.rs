@@ -18,15 +18,15 @@ pub struct PsActivitiesSubTaskConfigDatum {
     #[serde(rename = "objectID")]
     pub object_id: String,
 
-    #[serde(rename = "IBMHEFDMDJC")]
-    pub ibmhefdmdjc: Ibmhefdmdjc,
+    #[serde(rename = "IBOOHHBGJAH")]
+    pub iboohhbgjah: Iboohhbgjah,
 
     #[serde(rename = "hidden")]
     pub hidden: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Ibmhefdmdjc {
+pub enum Iboohhbgjah {
     #[serde(rename = "1.5.0")]
     The150,
 
@@ -50,6 +50,9 @@ pub enum Ibmhefdmdjc {
 
     #[serde(rename = "3.2.0")]
     The320,
+
+    #[serde(rename = "3.5.0")]
+    The350,
 }
 
 pub fn load() -> Result<PsActivitiesSubTaskConfigData, crate::json::JsonError> {

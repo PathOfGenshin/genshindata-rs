@@ -15,17 +15,17 @@ pub struct InstableSprayLevelExcelConfigDatum {
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
 
-    #[serde(rename = "HGHDONCFIMD")]
-    pub hghdoncfimd: Vec<i64>,
+    #[serde(rename = "KJCGMBDFEJC")]
+    pub kjcgmbdfejc: Vec<i64>,
 
-    #[serde(rename = "ADKNIIAKNGO")]
-    pub adkniiakngo: Vec<i64>,
+    #[serde(rename = "PAPAAJILANE")]
+    pub papaajilane: Vec<i64>,
 
-    #[serde(rename = "HCMOOOJOFLO")]
-    pub hcmooojoflo: Vec<i64>,
+    #[serde(rename = "JNJGJJJPNEG")]
+    pub jnjgjjjpneg: Vec<i64>,
 
-    #[serde(rename = "KDJOHGJOJHB")]
-    pub kdjohgjojhb: String,
+    #[serde(rename = "NLICGPCOFLL")]
+    pub nlicgpcofll: String,
 }
 
 pub fn load() -> Result<InstableSprayLevelExcelConfigData, crate::json::JsonError> {

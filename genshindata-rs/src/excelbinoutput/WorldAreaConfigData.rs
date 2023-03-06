@@ -33,14 +33,14 @@ pub struct WorldAreaConfigDatum {
     #[serde(rename = "showTips")]
     pub show_tips: Option<bool>,
 
-    #[serde(rename = "IMFAFEGJMAN")]
-    pub imfafegjman: Vec<i64>,
+    #[serde(rename = "MPMDFIMAMNC")]
+    pub mpmdfimamnc: Vec<i64>,
 
-    #[serde(rename = "BIIDMOCNDEL")]
-    pub biidmocndel: Vec<f64>,
+    #[serde(rename = "NANPEBNFIDA")]
+    pub nanpebnfida: Vec<f64>,
 
-    #[serde(rename = "HBLACDGEBND")]
-    pub hblacdgebnd: Vec<f64>,
+    #[serde(rename = "HKBBAFJCDLC")]
+    pub hkbbafjcdlc: Vec<f64>,
 
     #[serde(rename = "minimapScale")]
     pub minimap_scale: f64,

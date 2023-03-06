@@ -15,8 +15,8 @@ pub struct CityTaskOpenExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "LJNIOMEKKLD")]
-    pub ljniomekkld: Vec<i64>,
+    #[serde(rename = "MHICGGPGPLA")]
+    pub mhicggpgpla: Vec<i64>,
 }
 
 pub fn load() -> Result<CityTaskOpenExcelConfigData, crate::json::JsonError> {

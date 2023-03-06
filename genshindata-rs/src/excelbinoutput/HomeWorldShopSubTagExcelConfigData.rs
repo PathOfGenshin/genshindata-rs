@@ -15,11 +15,11 @@ pub struct HomeWorldShopSubTagExcelConfigDatum {
     #[serde(rename = "subTagTextMapHash")]
     pub sub_tag_text_map_hash: i64,
 
-    #[serde(rename = "EEAMAPMEIPJ")]
-    pub eeamapmeipj: Option<bool>,
+    #[serde(rename = "BFEOEJANPPI")]
+    pub bfeoejanppi: Option<bool>,
 
-    #[serde(rename = "FLAKNBKADNJ")]
-    pub flaknbkadnj: Option<bool>,
+    #[serde(rename = "MEIDOLPNOPC")]
+    pub meidolpnopc: Option<bool>,
 }
 
 pub fn load() -> Result<HomeWorldShopSubTagExcelConfigData, crate::json::JsonError> {

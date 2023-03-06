@@ -18,8 +18,8 @@ pub struct VintageMarketEnvEventExcelConfigDatum {
     #[serde(rename = "effectList")]
     pub effect_list: Vec<EffectList>,
 
-    #[serde(rename = "CPMHGHJEOGA")]
-    pub cpmhghjeoga: i64,
+    #[serde(rename = "EBMKMIGKGCB")]
+    pub ebmkmigkgcb: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

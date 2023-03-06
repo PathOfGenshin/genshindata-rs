@@ -15,86 +15,86 @@ pub struct AudioSceneConfigDatum {
     #[serde(rename = "sceneID")]
     pub scene_id: i64,
 
-    #[serde(rename = "KFHCOACIGGK")]
-    pub kfhcoaciggk: f64,
+    #[serde(rename = "BCMINLHMEIE")]
+    pub bcminlhmeie: f64,
 
-    #[serde(rename = "NDJJDOJABIE")]
-    pub ndjjdojabie: i64,
+    #[serde(rename = "OKIGPAHAAMG")]
+    pub okigpahaamg: i64,
 
-    #[serde(rename = "LKPBBDGOMBK")]
-    pub lkpbbdgombk: f64,
+    #[serde(rename = "LCOEHBIKMIJ")]
+    pub lcoehbikmij: f64,
 
-    #[serde(rename = "HIMOKOHMCGF")]
-    pub himokohmcgf: f64,
+    #[serde(rename = "CBCGJFOJGCP")]
+    pub cbcgjfojgcp: f64,
 
-    #[serde(rename = "CHEAGKMLEJO")]
-    pub cheagkmlejo: f64,
+    #[serde(rename = "OFCBBNLGFDB")]
+    pub ofcbbnlgfdb: f64,
 
-    #[serde(rename = "ILENEDCJNJO")]
-    pub ilenedcjnjo: f64,
+    #[serde(rename = "GNDKDCINLOD")]
+    pub gndkdcinlod: f64,
 
-    #[serde(rename = "DLBEFINMGLK")]
-    pub dlbefinmglk: f64,
+    #[serde(rename = "PLMPKHGLAKF")]
+    pub plmpkhglakf: f64,
 
-    #[serde(rename = "IFIOHKHBBGG")]
-    pub ifiohkhbbgg: f64,
+    #[serde(rename = "DEBLOHLHHMA")]
+    pub deblohlhhma: f64,
 
-    #[serde(rename = "NLAIBBEKLNC")]
-    pub nlaibbeklnc: f64,
+    #[serde(rename = "CNLFBBKPDPC")]
+    pub cnlfbbkpdpc: f64,
 
-    #[serde(rename = "EGHHHFIECCM")]
-    pub eghhhfieccm: f64,
+    #[serde(rename = "OJEKFIEBODK")]
+    pub ojekfiebodk: f64,
 
-    #[serde(rename = "PDMLKEOFJAE")]
-    pub pdmlkeofjae: f64,
+    #[serde(rename = "NCNILGJJEMH")]
+    pub ncnilgjjemh: f64,
 
-    #[serde(rename = "IEIFPAOIELG")]
-    pub ieifpaoielg: f64,
+    #[serde(rename = "LAAJGKIDJJD")]
+    pub laajgkidjjd: f64,
 
-    #[serde(rename = "ECNMJCKDFHJ")]
-    pub ecnmjckdfhj: f64,
+    #[serde(rename = "PELLPGGOILI")]
+    pub pellpggoili: f64,
 
-    #[serde(rename = "GBPLEFNJHBH")]
-    pub gbplefnjhbh: f64,
+    #[serde(rename = "BIIHDKLNBNA")]
+    pub biihdklnbna: f64,
 
-    #[serde(rename = "AMOALKHFKLA")]
-    pub amoalkhfkla: f64,
+    #[serde(rename = "DMJOKPJPHID")]
+    pub dmjokpjphid: f64,
 
-    #[serde(rename = "AMDNCDDOMCM")]
-    pub amdncddomcm: f64,
+    #[serde(rename = "ACCCGJDJIEM")]
+    pub acccgjdjiem: f64,
 
-    #[serde(rename = "MGNJLCFMOMH")]
-    pub mgnjlcfmomh: f64,
+    #[serde(rename = "FNDBODCJHBC")]
+    pub fndbodcjhbc: f64,
 
-    #[serde(rename = "BEBCCIBAIPJ")]
-    pub bebccibaipj: f64,
+    #[serde(rename = "LGGEGKHCCHD")]
+    pub lggegkhcchd: f64,
 
-    #[serde(rename = "EKNMBCFMCIA")]
-    pub eknmbcfmcia: f64,
+    #[serde(rename = "ODOPOOJGBDJ")]
+    pub odopoojgbdj: f64,
 
-    #[serde(rename = "LCEDCMANBCG")]
-    pub lcedcmanbcg: f64,
+    #[serde(rename = "LPJCPPPEJJF")]
+    pub lpjcpppejjf: f64,
 
-    #[serde(rename = "EPLAALOCOCF")]
-    pub eplaalococf: f64,
+    #[serde(rename = "DOACGMJOOHL")]
+    pub doacgmjoohl: f64,
 
-    #[serde(rename = "EMJLLHJIGOC")]
-    pub emjllhjigoc: f64,
+    #[serde(rename = "BEGMDFCGHNI")]
+    pub begmdfcghni: f64,
 
-    #[serde(rename = "FCELPAHONIO")]
-    pub fcelpahonio: f64,
+    #[serde(rename = "NNLPEHDOEGJ")]
+    pub nnlpehdoegj: f64,
 
-    #[serde(rename = "GIBPBILOKBJ")]
-    pub gibpbilokbj: f64,
+    #[serde(rename = "AJBLLDJKFFF")]
+    pub ajblldjkfff: f64,
 
-    #[serde(rename = "NJFIEDOGLOO")]
-    pub njfiedogloo: Option<i64>,
+    #[serde(rename = "JBKLDCFABFB")]
+    pub jbkldcfabfb: Option<i64>,
 
-    #[serde(rename = "FHFEFHGJOAE")]
-    pub fhfefhgjoae: Option<i64>,
+    #[serde(rename = "LONHOBNGAJN")]
+    pub lonhobngajn: Option<i64>,
 
-    #[serde(rename = "OJIPLBEEJLO")]
-    pub ojiplbeejlo: Option<f64>,
+    #[serde(rename = "KLFBOFIDGDI")]
+    pub klfbofidgdi: Option<f64>,
 }
 
 pub fn load() -> Result<AudioSceneConfigData, crate::json::JsonError> {

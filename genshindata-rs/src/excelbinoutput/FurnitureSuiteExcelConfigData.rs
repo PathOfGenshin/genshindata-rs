@@ -18,14 +18,14 @@ pub struct FurnitureSuiteExcelConfigDatum {
     #[serde(rename = "suiteNameTextMapHash")]
     pub suite_name_text_map_hash: i64,
 
-    #[serde(rename = "MNBGIGLFPOO")]
-    pub mnbgiglfpoo: i64,
+    #[serde(rename = "HEJAJGDKDOP")]
+    pub hejajgdkdop: i64,
 
     #[serde(rename = "favoriteNpcExcelIdVec")]
     pub favorite_npc_excel_id_vec: Vec<i64>,
 
-    #[serde(rename = "NIHFDPFNOJC")]
-    pub nihfdpfnojc: String,
+    #[serde(rename = "CGLHDFKDLGI")]
+    pub cglhdfkdlgi: String,
 
     #[serde(rename = "furnType")]
     pub furn_type: Vec<i64>,
@@ -36,8 +36,8 @@ pub struct FurnitureSuiteExcelConfigDatum {
     #[serde(rename = "mapIcon")]
     pub map_icon: MapIcon,
 
-    #[serde(rename = "LFIHDHIJOAG")]
-    pub lfihdhijoag: Option<f64>,
+    #[serde(rename = "NPGIBPEFENC")]
+    pub npgibpefenc: Option<f64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

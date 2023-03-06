@@ -12,17 +12,17 @@ pub struct ActivityDuelHeartLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
     #[serde(rename = "preQuest")]
     pub pre_quest: i64,
 
-    #[serde(rename = "NKEIDLGMAGJ")]
-    pub nkeidlgmagj: i64,
+    #[serde(rename = "FFNBPFJPEFJ")]
+    pub ffnbpfjpefj: i64,
 
-    #[serde(rename = "DOPBKKCENHI")]
-    pub dopbkkcenhi: String,
+    #[serde(rename = "IHDKKKPPJHA")]
+    pub ihdkkkppjha: String,
 
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
@@ -30,29 +30,29 @@ pub struct ActivityDuelHeartLevelExcelConfigDatum {
     #[serde(rename = "challengeNameTextMapHash")]
     pub challenge_name_text_map_hash: i64,
 
-    #[serde(rename = "IJKNGJFOHDJ")]
-    pub ijkngjfohdj: i64,
+    #[serde(rename = "NLJMPLAEAAL")]
+    pub nljmplaeaal: i64,
 
-    #[serde(rename = "JBDAEPHNOFD")]
-    pub jbdaephnofd: String,
+    #[serde(rename = "PKPNGCOONJL")]
+    pub pkpngcoonjl: String,
 
-    #[serde(rename = "NINDJMHJIIO")]
-    pub nindjmhjiio: i64,
+    #[serde(rename = "CPBLLINEICH")]
+    pub cpbllineich: i64,
 
-    #[serde(rename = "DOGPGPCANEG")]
-    pub dogpgpcaneg: i64,
+    #[serde(rename = "CAODKGGHADH")]
+    pub caodkgghadh: i64,
 
-    #[serde(rename = "CHAKBJKAOOC")]
-    pub chakbjkaooc: String,
+    #[serde(rename = "FHPJOKCGJNK")]
+    pub fhpjokcgjnk: String,
 
-    #[serde(rename = "AFKDIPMPBJE")]
-    pub afkdipmpbje: Vec<i64>,
+    #[serde(rename = "ONPCJINOADH")]
+    pub onpcjinoadh: Vec<i64>,
 
-    #[serde(rename = "HGOFCOPDGNP")]
-    pub hgofcopdgnp: String,
+    #[serde(rename = "DKNHBPPBEDH")]
+    pub dknhbppbedh: String,
 
-    #[serde(rename = "DJFKFDDNEBE")]
-    pub djfkfddnebe: Option<i64>,
+    #[serde(rename = "DBEJPHNPAKI")]
+    pub dbejphnpaki: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityDuelHeartLevelExcelConfigData, crate::json::JsonError> {

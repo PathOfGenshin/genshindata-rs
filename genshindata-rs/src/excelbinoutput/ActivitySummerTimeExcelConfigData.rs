@@ -21,11 +21,11 @@ pub struct ActivitySummerTimeExcelConfigDatum {
     #[serde(rename = "unlockPlayerLevel")]
     pub unlock_player_level: i64,
 
-    #[serde(rename = "DPILFDHOCMP")]
-    pub dpilfdhocmp: i64,
+    #[serde(rename = "NJAHJNNCEJJ")]
+    pub njahjnncejj: i64,
 
-    #[serde(rename = "MKBDPICHJCC")]
-    pub mkbdpichjcc: Vec<i64>,
+    #[serde(rename = "BFHFJLCNDMN")]
+    pub bfhfjlcndmn: Vec<i64>,
 
     #[serde(rename = "rewardPreview")]
     pub reward_preview: i64,

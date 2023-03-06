@@ -12,29 +12,29 @@ pub struct QuestAcceptionMarkExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
 
-    #[serde(rename = "GBNPLPHINNH")]
-    pub gbnplphinnh: i64,
+    #[serde(rename = "FIIAJFFHHAE")]
+    pub fiiajffhhae: i64,
 
     #[serde(rename = "npcId")]
     pub npc_id: Option<i64>,
 
-    #[serde(rename = "FJNPCNNPHBD")]
-    pub fjnpcnnphbd: Option<bool>,
+    #[serde(rename = "LHJBPCCBDFK")]
+    pub lhjbpccbdfk: Option<bool>,
 
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "FANMNGLOBOA")]
-    pub fanmngloboa: Vec<f64>,
+    #[serde(rename = "FDKNOPBOFKN")]
+    pub fdknopbofkn: Vec<f64>,
 
-    #[serde(rename = "LKIKFIOGEHJ")]
-    pub lkikfiogehj: Option<bool>,
+    #[serde(rename = "IOFPKCGANEN")]
+    pub iofpkcganen: Option<bool>,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "MNMMHLOMFEB")]
-    pub mnmmhlomfeb: i64,
+    #[serde(rename = "AAMLNIMHOGG")]
+    pub aamlnimhogg: i64,
 }
 
 pub fn load() -> Result<QuestAcceptionMarkExcelConfigData, crate::json::JsonError> {

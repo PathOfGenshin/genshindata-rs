@@ -9,11 +9,11 @@ pub type CaptureTagsExcelConfigData = Vec<CaptureTagsExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CaptureTagsExcelConfigDatum {
-    #[serde(rename = "CNAAIMFPGCD")]
-    pub cnaaimfpgcd: i64,
+    #[serde(rename = "JKLFKOPINOA")]
+    pub jklfkopinoa: i64,
 
-    #[serde(rename = "MPIFJMNPLAO")]
-    pub mpifjmnplao: String,
+    #[serde(rename = "HCDEBIEEKLN")]
+    pub hcdebieekln: String,
 
     #[serde(rename = "itemLimitType")]
     pub item_limit_type: String,

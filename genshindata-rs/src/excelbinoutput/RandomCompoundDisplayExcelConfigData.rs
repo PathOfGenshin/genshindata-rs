@@ -12,12 +12,12 @@ pub struct RandomCompoundDisplayExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "KKJGPFNCGFA")]
-    pub kkjgpfncgfa: Vec<Kkjgpfncgfa>,
+    #[serde(rename = "LMABHCFBPDJ")]
+    pub lmabhcfbpdj: Vec<Lmabhcfbpdj>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Kkjgpfncgfa {
+pub struct Lmabhcfbpdj {
     #[serde(rename = "id")]
     pub id: Option<i64>,
 

@@ -12,23 +12,23 @@ pub struct RogueGadgetExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "NMCIAOMLNBH")]
-    pub nmciaomlnbh: String,
+    #[serde(rename = "KDCBIIFPCHE")]
+    pub kdcbiifpche: String,
 
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
 
-    #[serde(rename = "GOLJAJLANPL")]
-    pub goljajlanpl: Vec<Goljajlanpl>,
+    #[serde(rename = "GCGKJOLLPGL")]
+    pub gcgkjollpgl: Vec<Gcgkjollpgl>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Goljajlanpl {
-    #[serde(rename = "IHDHIBKDDJN")]
-    pub ihdhibkddjn: Option<String>,
+pub struct Gcgkjollpgl {
+    #[serde(rename = "LBJDHPLCFCC")]
+    pub lbjdhplcfcc: Option<String>,
 
-    #[serde(rename = "JGPBPJNOENJ")]
-    pub jgpbpjnoenj: Option<i64>,
+    #[serde(rename = "IKFAHDPIOJI")]
+    pub ikfahdpioji: Option<i64>,
 }
 
 pub fn load() -> Result<RogueGadgetExcelConfigData, crate::json::JsonError> {

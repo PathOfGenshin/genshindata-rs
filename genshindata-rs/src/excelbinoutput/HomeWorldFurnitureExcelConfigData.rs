@@ -30,8 +30,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "cost")]
     pub cost: Option<i64>,
 
-    #[serde(rename = "JCNHMPNPAGK")]
-    pub jcnhmpnpagk: Option<i64>,
+    #[serde(rename = "CJCEHKNHCJC")]
+    pub cjcehknhcjc: Option<i64>,
 
     #[serde(rename = "itemIcon")]
     pub item_icon: String,
@@ -39,8 +39,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "effectIcon")]
     pub effect_icon: EffectIcon,
 
-    #[serde(rename = "NNMAFILLDKD")]
-    pub nnmafilldkd: Option<f64>,
+    #[serde(rename = "EMGJGLDCELM")]
+    pub emgjgldcelm: Option<f64>,
 
     #[serde(rename = "rankLevel")]
     pub rank_level: i64,
@@ -48,8 +48,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "jsonName")]
     pub json_name: JsonName,
 
-    #[serde(rename = "IMMMCMKDBPK")]
-    pub immmcmkdbpk: Vec<i64>,
+    #[serde(rename = "PMMICDFFIID")]
+    pub pmmicdffiid: Vec<i64>,
 
     #[serde(rename = "id")]
     pub id: i64,
@@ -69,8 +69,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "rank")]
     pub rank: Option<i64>,
 
-    #[serde(rename = "KPDGOCHDLHI")]
-    pub kpdgochdlhi: Option<Kpdgochdlhi>,
+    #[serde(rename = "GCMNEKAGNAD")]
+    pub gcmnekagnad: Option<Gcmnekagnad>,
 
     #[serde(rename = "isUnique")]
     pub is_unique: Option<i64>,
@@ -81,17 +81,17 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "height")]
     pub height: Option<f64>,
 
-    #[serde(rename = "CFCONCFFOFL")]
-    pub cfconcffofl: Option<i64>,
+    #[serde(rename = "PHBJFLPINEG")]
+    pub phbjflpineg: Option<i64>,
 
-    #[serde(rename = "GDNDDAJPJNJ")]
-    pub gdnddajpjnj: Option<i64>,
+    #[serde(rename = "IKGBOHOAOLG")]
+    pub ikgbohoaolg: Option<i64>,
 
-    #[serde(rename = "GCIKBHNEAKP")]
-    pub gcikbhneakp: Option<i64>,
+    #[serde(rename = "NMCCBNPEAIK")]
+    pub nmccbnpeaik: Option<i64>,
 
-    #[serde(rename = "PEFFHINKOCE")]
-    pub peffhinkoce: Option<i64>,
+    #[serde(rename = "ELBJBPHNDNM")]
+    pub elbjbphndnm: Option<i64>,
 
     #[serde(rename = "roomSceneID")]
     pub room_scene_id: Option<i64>,
@@ -99,11 +99,11 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
 
-    #[serde(rename = "GEPNMEPLEMN")]
-    pub gepnmeplemn: Option<String>,
+    #[serde(rename = "EPAOHGPLBAM")]
+    pub epaohgplbam: Option<String>,
 
-    #[serde(rename = "MHBBPCHKCFP")]
-    pub mhbbpchkcfp: Option<i64>,
+    #[serde(rename = "GBEAMJKJNPK")]
+    pub gbeamjkjnpk: Option<i64>,
 
     #[serde(rename = "furnitureNameTextMapHash")]
     pub furniture_name_text_map_hash: Option<bool>,
@@ -119,43 +119,7 @@ pub enum EffectIcon {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum ItemType {
-    #[serde(rename = "ITEM_FURNITURE")]
-    ItemFurniture,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum JsonName {
-    #[serde(rename = "")]
-    Empty,
-
-    #[serde(rename = "HomeworldGroup_0001")]
-    HomeworldGroup0001,
-
-    #[serde(rename = "HomeworldGroup_0002")]
-    HomeworldGroup0002,
-
-    #[serde(rename = "HomeworldGroup_0003")]
-    HomeworldGroup0003,
-
-    #[serde(rename = "HomeworldGroup_0004")]
-    HomeworldGroup0004,
-
-    #[serde(rename = "HomeworldGroup_0005")]
-    HomeworldGroup0005,
-
-    #[serde(rename = "HomeworldGroup_0006")]
-    HomeworldGroup0006,
-
-    #[serde(rename = "HomeworldGroup_0007")]
-    HomeworldGroup0007,
-
-    #[serde(rename = "HomeworldGroup_0008")]
-    HomeworldGroup0008,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Kpdgochdlhi {
+pub enum Gcmnekagnad {
     #[serde(rename = "Apartment")]
     Apartment,
 
@@ -206,6 +170,42 @@ pub enum Kpdgochdlhi {
 
     #[serde(rename = "VirtualFurnitrue")]
     VirtualFurnitrue,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum ItemType {
+    #[serde(rename = "ITEM_FURNITURE")]
+    ItemFurniture,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum JsonName {
+    #[serde(rename = "")]
+    Empty,
+
+    #[serde(rename = "HomeworldGroup_0001")]
+    HomeworldGroup0001,
+
+    #[serde(rename = "HomeworldGroup_0002")]
+    HomeworldGroup0002,
+
+    #[serde(rename = "HomeworldGroup_0003")]
+    HomeworldGroup0003,
+
+    #[serde(rename = "HomeworldGroup_0004")]
+    HomeworldGroup0004,
+
+    #[serde(rename = "HomeworldGroup_0005")]
+    HomeworldGroup0005,
+
+    #[serde(rename = "HomeworldGroup_0006")]
+    HomeworldGroup0006,
+
+    #[serde(rename = "HomeworldGroup_0007")]
+    HomeworldGroup0007,
+
+    #[serde(rename = "HomeworldGroup_0008")]
+    HomeworldGroup0008,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

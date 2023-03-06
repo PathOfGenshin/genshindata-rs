@@ -18,23 +18,23 @@ pub struct ActivityVintageDataExcelConfigDatum {
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
 
-    #[serde(rename = "AGFJECOLNIK")]
-    pub agfjecolnik: i64,
+    #[serde(rename = "JNADFPMBGDF")]
+    pub jnadfpmbgdf: i64,
 
-    #[serde(rename = "NNEPIPPPOEI")]
-    pub nnepipppoei: i64,
+    #[serde(rename = "OOAPHHNEJJB")]
+    pub ooaphhnejjb: i64,
 
-    #[serde(rename = "CJFPEHLFDNF")]
-    pub cjfpehlfdnf: Vec<i64>,
+    #[serde(rename = "CIHPNHENBGC")]
+    pub cihpnhenbgc: Vec<i64>,
 
-    #[serde(rename = "HPLEMOLGEMD")]
-    pub hplemolgemd: i64,
+    #[serde(rename = "EKFBGEOEOLC")]
+    pub ekfbgeoeolc: i64,
 
-    #[serde(rename = "MHBBBDAIOJI")]
-    pub mhbbbdaioji: i64,
+    #[serde(rename = "MJKKDEEKECF")]
+    pub mjkkdeekecf: i64,
 
-    #[serde(rename = "NCGIILIKHAO")]
-    pub ncgiilikhao: i64,
+    #[serde(rename = "FNNEOFPKFDF")]
+    pub fnneofpkfdf: i64,
 }
 
 pub fn load() -> Result<ActivityVintageDataExcelConfigData, crate::json::JsonError> {

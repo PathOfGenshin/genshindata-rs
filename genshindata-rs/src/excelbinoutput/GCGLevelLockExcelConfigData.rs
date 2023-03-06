@@ -21,11 +21,11 @@ pub struct GcgLevelLockExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "CJPKFALNMDO")]
-    pub cjpkfalnmdo: i64,
+    #[serde(rename = "EHDEMGOKAML")]
+    pub ehdemgokaml: i64,
 
-    #[serde(rename = "OOBFELNJHLI")]
-    pub oobfelnjhli: i64,
+    #[serde(rename = "JDFEPFFJNCO")]
+    pub jdfepffjnco: i64,
 }
 
 pub fn load() -> Result<GcgLevelLockExcelConfigData, crate::json::JsonError> {

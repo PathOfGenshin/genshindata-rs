@@ -9,8 +9,8 @@ pub type GcgShopSubTabExcelConfigData = Vec<GcgShopSubTabExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GcgShopSubTabExcelConfigDatum {
-    #[serde(rename = "BJNDAPIEABN")]
-    pub bjndapieabn: Vec<i64>,
+    #[serde(rename = "FNNCIFOCICB")]
+    pub fnncifocicb: Vec<i64>,
 
     #[serde(rename = "ID")]
     pub id: i64,

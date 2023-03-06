@@ -21,11 +21,11 @@ pub struct NewActivityEntryConfigDatum {
     #[serde(rename = "tabIcon")]
     pub tab_icon: String,
 
-    #[serde(rename = "JIHHKBNPHHE")]
-    pub jihhkbnphhe: Jihhkbnphhe,
+    #[serde(rename = "IKMMLADGINI")]
+    pub ikmmladgini: Ikmmladgini,
 
-    #[serde(rename = "NPLHPPDBGLM")]
-    pub nplhppdbglm: Nplhppdbglm,
+    #[serde(rename = "HKKACCADBOH")]
+    pub hkkaccadboh: Hkkaccadboh,
 
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
@@ -35,45 +35,12 @@ pub struct NewActivityEntryConfigDatum {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Jihhkbnphhe {
-    #[serde(rename = "ART/UI/Menus/Activity/BrickBreaker/BrickBreaker_PushDialog")]
-    ArtUiMenusActivityBrickBreakerBrickBreakerPushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/FungusFighter/FungusFighter_PushDialog")]
-    ArtUiMenusActivityFungusFighterFungusFighterPushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/GravenInnocence/GravenInnocence_PushDialog")]
-    ArtUiMenusActivityGravenInnocenceGravenInnocencePushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/Irodori/Irodori_PushDialog")]
-    ArtUiMenusActivityIrodoriIrodoriPushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV2/LanternRiteV2_PushDialog")]
-    ArtUiMenusActivityLanternRiteV2LanternRiteV2PushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV3/LanternRiteV3_PushDialog")]
-    ArtUiMenusActivityLanternRiteV3LanternRiteV3PushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/MichiaeMatsuri/MichiaeMatsuri_PushDialog")]
-    ArtUiMenusActivityMichiaeMatsuriMichiaeMatsuriPushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/RogueDiary/RogueDiary_PushDialog")]
-    ArtUiMenusActivityRogueDiaryRogueDiaryPushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/SummerTimeV2/SummerTimeV2_PushDialog")]
-    ArtUiMenusActivitySummerTimeV2SummerTimeV2PushDialog,
-
-    #[serde(rename = "ART/UI/Menus/Activity/Vintage/Vintage_PushDialog")]
-    ArtUiMenusActivityVintageVintagePushDialog,
-
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub enum Nplhppdbglm {
+pub enum Hkkaccadboh {
     #[serde(rename = "Eff_UI_BrickBreaker_PushDialog_Unlock")]
     EffUiBrickBreakerPushDialogUnlock,
+
+    #[serde(rename = "Eff_UI_FleurFairV2_PushDialog_Unlock")]
+    EffUiFleurFairV2PushDialogUnlock,
 
     #[serde(rename = "Eff_UI_FungusFighter_PushDialog_Unlock")]
     EffUiFungusFighterPushDialogUnlock,
@@ -101,6 +68,45 @@ pub enum Nplhppdbglm {
 
     #[serde(rename = "Eff_UI_Vintage_PushDialog_Unlock")]
     EffUiVintagePushDialogUnlock,
+
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+pub enum Ikmmladgini {
+    #[serde(rename = "ART/UI/Menus/Activity/BrickBreaker/BrickBreaker_PushDialog")]
+    ArtUiMenusActivityBrickBreakerBrickBreakerPushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/FleurFairV2/FleurFairV2_PushDialog")]
+    ArtUiMenusActivityFleurFairV2FleurFairV2PushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/FungusFighter/FungusFighter_PushDialog")]
+    ArtUiMenusActivityFungusFighterFungusFighterPushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/GravenInnocence/GravenInnocence_PushDialog")]
+    ArtUiMenusActivityGravenInnocenceGravenInnocencePushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/Irodori/Irodori_PushDialog")]
+    ArtUiMenusActivityIrodoriIrodoriPushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV2/LanternRiteV2_PushDialog")]
+    ArtUiMenusActivityLanternRiteV2LanternRiteV2PushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/LanternRiteV3/LanternRiteV3_PushDialog")]
+    ArtUiMenusActivityLanternRiteV3LanternRiteV3PushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/MichiaeMatsuri/MichiaeMatsuri_PushDialog")]
+    ArtUiMenusActivityMichiaeMatsuriMichiaeMatsuriPushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/RogueDiary/RogueDiary_PushDialog")]
+    ArtUiMenusActivityRogueDiaryRogueDiaryPushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/SummerTimeV2/SummerTimeV2_PushDialog")]
+    ArtUiMenusActivitySummerTimeV2SummerTimeV2PushDialog,
+
+    #[serde(rename = "ART/UI/Menus/Activity/Vintage/Vintage_PushDialog")]
+    ArtUiMenusActivityVintageVintagePushDialog,
 
     #[serde(rename = "")]
     Empty,

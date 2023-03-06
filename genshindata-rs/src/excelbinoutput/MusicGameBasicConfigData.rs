@@ -21,8 +21,8 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "jsonPath")]
     pub json_path: String,
 
-    #[serde(rename = "BBGLIGAMPDM")]
-    pub bbgligampdm: i64,
+    #[serde(rename = "AIACKEGADHP")]
+    pub aiackegadhp: i64,
 
     #[serde(rename = "successLatePoint")]
     pub success_late_point: i64,
@@ -33,17 +33,17 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scoreOneKey")]
     pub score_one_key: i64,
 
-    #[serde(rename = "AJIADKFDMGK")]
-    pub ajiadkfdmgk: i64,
+    #[serde(rename = "GOGHCPMCDJI")]
+    pub goghcpmcdji: i64,
 
-    #[serde(rename = "CNBKGMKMMCE")]
-    pub cnbkgmkmmce: i64,
+    #[serde(rename = "BGNHLFCJBGJ")]
+    pub bgnhlfcjbgj: i64,
 
-    #[serde(rename = "DONIBIFFNAI")]
-    pub donibiffnai: f64,
+    #[serde(rename = "NDJKBPHONCP")]
+    pub ndjkbphoncp: Option<f64>,
 
-    #[serde(rename = "JHMKJHMFOKF")]
-    pub jhmkjhmfokf: Jhmkjhmfokf,
+    #[serde(rename = "HHAFDJBPHCH")]
+    pub hhafdjbphch: Hhafdjbphch,
 
     #[serde(rename = "comboConfig")]
     pub combo_config: Vec<i64>,
@@ -51,31 +51,31 @@ pub struct MusicGameBasicConfigDatum {
     #[serde(rename = "scaleRange")]
     pub scale_range: i64,
 
-    #[serde(rename = "OLMGBALMLNA")]
-    pub olmgbalmlna: String,
+    #[serde(rename = "HOKHDNCHBPI")]
+    pub hokhdnchbpi: String,
 
-    #[serde(rename = "JCPDHCIEKJG")]
-    pub jcpdhciekjg: String,
+    #[serde(rename = "AMMCAMMMABL")]
+    pub ammcammmabl: String,
 
-    #[serde(rename = "OIDBLAODKGD")]
-    pub oidblaodkgd: i64,
+    #[serde(rename = "HJLBNILPAJG")]
+    pub hjlbnilpajg: i64,
 
-    #[serde(rename = "PFJBEJJKCDB")]
-    pub pfjbejjkcdb: Vec<Giikbkobgkb>,
+    #[serde(rename = "GLFBDMCCKAL")]
+    pub glfbdmcckal: Vec<Glfbdmcckal>,
 
     #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
 
-    #[serde(rename = "GIIKBKOBGKB")]
-    pub giikbkobgkb: Vec<Giikbkobgkb>,
+    #[serde(rename = "INJGDDILAMK")]
+    pub injgddilamk: Vec<Glfbdmcckal>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Giikbkobgkb {
+pub struct Glfbdmcckal {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Jhmkjhmfokf {
+pub struct Hhafdjbphch {
     #[serde(rename = "0")]
     pub the_0: f64,
 
@@ -105,6 +105,69 @@ pub struct Jhmkjhmfokf {
 
     #[serde(rename = "84358")]
     pub the_84358: Option<f64>,
+
+    #[serde(rename = "1989")]
+    pub the_1989: Option<f64>,
+
+    #[serde(rename = "1750")]
+    pub the_1750: Option<f64>,
+
+    #[serde(rename = "28267")]
+    pub the_28267: Option<f64>,
+
+    #[serde(rename = "79380")]
+    pub the_79380: Option<f64>,
+
+    #[serde(rename = "82485")]
+    pub the_82485: Option<f64>,
+
+    #[serde(rename = "97973")]
+    pub the_97973: Option<f64>,
+
+    #[serde(rename = "86400")]
+    pub the_86400: Option<f64>,
+
+    #[serde(rename = "34787")]
+    pub the_34787: Option<f64>,
+
+    #[serde(rename = "96383")]
+    pub the_96383: Option<f64>,
+
+    #[serde(rename = "100532")]
+    pub the_100532: Option<f64>,
+
+    #[serde(rename = "104681")]
+    pub the_104681: Option<f64>,
+
+    #[serde(rename = "108830")]
+    pub the_108830: Option<f64>,
+
+    #[serde(rename = "110745")]
+    pub the_110745: Option<f64>,
+
+    #[serde(rename = "114894")]
+    pub the_114894: Option<f64>,
+
+    #[serde(rename = "2462")]
+    pub the_2462: Option<f64>,
+
+    #[serde(rename = "106019")]
+    pub the_106019: Option<f64>,
+
+    #[serde(rename = "107282")]
+    pub the_107282: Option<f64>,
+
+    #[serde(rename = "1023")]
+    pub the_1023: Option<f64>,
+
+    #[serde(rename = "19532")]
+    pub the_19532: Option<f64>,
+
+    #[serde(rename = "21707")]
+    pub the_21707: Option<f64>,
+
+    #[serde(rename = "38251")]
+    pub the_38251: Option<f64>,
 }
 
 pub fn load() -> Result<MusicGameBasicConfigData, crate::json::JsonError> {

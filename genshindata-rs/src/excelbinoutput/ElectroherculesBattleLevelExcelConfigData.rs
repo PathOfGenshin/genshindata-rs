@@ -12,8 +12,8 @@ pub struct ElectroherculesBattleLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "PKDKLDFDEMO")]
-    pub pkdkldfdemo: Pkdkldfdemo,
+    #[serde(rename = "NKGKPAKOJCN")]
+    pub nkgkpakojcn: Nkgkpakojcn,
 
     #[serde(rename = "groupId")]
     pub group_id: i64,
@@ -24,18 +24,18 @@ pub struct ElectroherculesBattleLevelExcelConfigDatum {
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
 
-    #[serde(rename = "KMJBNNBFBML")]
-    pub kmjbnnbfbml: Kmjbnnbfbml,
+    #[serde(rename = "LLJKOKNFJNL")]
+    pub lljkoknfjnl: Lljkoknfjnl,
 
-    #[serde(rename = "EBLCOIIAHAL")]
-    pub eblcoiiahal: i64,
+    #[serde(rename = "DLCMFMJLGKG")]
+    pub dlcmfmjlgkg: i64,
 
-    #[serde(rename = "JKILDDHHLMN")]
-    pub jkilddhhlmn: i64,
+    #[serde(rename = "FKLHNCKMMGF")]
+    pub fklhnckmmgf: i64,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kmjbnnbfbml {
+pub enum Lljkoknfjnl {
     #[serde(rename = "ELECTROHERCULES_BATTLE_LEVEL_TYPE_CHALLENGE")]
     ElectroherculesBattleLevelTypeChallenge,
 
@@ -44,7 +44,7 @@ pub enum Kmjbnnbfbml {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Pkdkldfdemo {
+pub enum Nkgkpakojcn {
     #[serde(rename = "ELECTROHERCULES_BATTLE_DIFFICULTY_HARD")]
     ElectroherculesBattleDifficultyHard,
 

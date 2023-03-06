@@ -9,23 +9,23 @@ pub type CusmtomGadgetSlotExcelConfigData = Vec<CusmtomGadgetSlotExcelConfigDatu
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CusmtomGadgetSlotExcelConfigDatum {
-    #[serde(rename = "BLHOLCDFDGB")]
-    pub blholcdfdgb: i64,
+    #[serde(rename = "PGGCMGMPMGM")]
+    pub pggcmgmpmgm: i64,
 
-    #[serde(rename = "FFDPFAECAJG")]
-    pub ffdpfaecajg: Vec<i64>,
+    #[serde(rename = "KDMHJBOONFO")]
+    pub kdmhjboonfo: Vec<i64>,
 
-    #[serde(rename = "GGPMKCCPJKD")]
-    pub ggpmkccpjkd: Option<bool>,
+    #[serde(rename = "OCAPFCLGOHG")]
+    pub ocapfclgohg: Option<bool>,
 
-    #[serde(rename = "HNPNIAAGHOA")]
-    pub hnpniaaghoa: Vec<i64>,
+    #[serde(rename = "DEDGCDDHEMD")]
+    pub dedgcddhemd: Vec<i64>,
 
-    #[serde(rename = "CNPAGDNPPAC")]
-    pub cnpagdnppac: Vec<i64>,
+    #[serde(rename = "EJKEFALJHPG")]
+    pub ejkefaljhpg: Vec<i64>,
 
-    #[serde(rename = "LHEFMKDFAAB")]
-    pub lhefmkdfaab: Option<i64>,
+    #[serde(rename = "CLGMIJIANHI")]
+    pub clgmijianhi: Option<i64>,
 }
 
 pub fn load() -> Result<CusmtomGadgetSlotExcelConfigData, crate::json::JsonError> {

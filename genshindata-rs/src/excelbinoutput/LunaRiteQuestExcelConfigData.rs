@@ -21,8 +21,8 @@ pub struct LunaRiteQuestExcelConfigDatum {
     #[serde(rename = "chapterIcon")]
     pub chapter_icon: String,
 
-    #[serde(rename = "MFGDPCGDBOL")]
-    pub mfgdpcgdbol: i64,
+    #[serde(rename = "AHNHCIGKAJG")]
+    pub ahnhcigkajg: i64,
 
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
@@ -33,11 +33,11 @@ pub struct LunaRiteQuestExcelConfigDatum {
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
 
-    #[serde(rename = "AMKJPLIALEM")]
-    pub amkjplialem: Option<i64>,
+    #[serde(rename = "DNAJIDJNHNB")]
+    pub dnajidjnhnb: Option<i64>,
 
-    #[serde(rename = "IBEBPNDNJHK")]
-    pub ibebpndnjhk: Option<String>,
+    #[serde(rename = "GFIJPMCJODC")]
+    pub gfijpmcjodc: Option<String>,
 }
 
 pub fn load() -> Result<LunaRiteQuestExcelConfigData, crate::json::JsonError> {

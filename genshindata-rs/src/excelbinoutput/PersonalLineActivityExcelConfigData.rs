@@ -21,8 +21,8 @@ pub struct PersonalLineActivityExcelConfigDatum {
     #[serde(rename = "perfabPath")]
     pub perfab_path: String,
 
-    #[serde(rename = "LPPOMODNGOK")]
-    pub lppomodngok: Option<String>,
+    #[serde(rename = "LKPGKGHLPGA")]
+    pub lkpgkghlpga: Option<String>,
 }
 
 pub fn load() -> Result<PersonalLineActivityExcelConfigData, crate::json::JsonError> {

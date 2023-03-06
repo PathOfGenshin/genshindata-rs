@@ -9,11 +9,11 @@ pub type HomeWorldServerGadgetExcelConfigData = Vec<HomeWorldServerGadgetExcelCo
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct HomeWorldServerGadgetExcelConfigDatum {
-    #[serde(rename = "GOHAIPPNPCI")]
-    pub gohaippnpci: i64,
+    #[serde(rename = "IBKGOOODANA")]
+    pub ibkgooodana: i64,
 
-    #[serde(rename = "IONADLOECKM")]
-    pub ionadloeckm: i64,
+    #[serde(rename = "CKJMMBEPNHC")]
+    pub ckjmmbepnhc: i64,
 }
 
 pub fn load() -> Result<HomeWorldServerGadgetExcelConfigData, crate::json::JsonError> {

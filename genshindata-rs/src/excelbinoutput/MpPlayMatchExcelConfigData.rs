@@ -48,11 +48,11 @@ pub struct MpPlayMatchExcelConfigDatum {
     #[serde(rename = "bgImage")]
     pub bg_image: String,
 
-    #[serde(rename = "AJNBOHCIHCH")]
-    pub ajnbohcihch: Option<bool>,
+    #[serde(rename = "NFNCIDOMDIN")]
+    pub nfncidomdin: Option<bool>,
 
-    #[serde(rename = "KIDBEFKHLDB")]
-    pub kidbefkhldb: Option<i64>,
+    #[serde(rename = "KPNNBPACKOA")]
+    pub kpnnbpackoa: Option<i64>,
 }
 
 pub fn load() -> Result<MpPlayMatchExcelConfigData, crate::json::JsonError> {

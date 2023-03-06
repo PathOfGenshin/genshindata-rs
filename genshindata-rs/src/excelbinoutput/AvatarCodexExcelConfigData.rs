@@ -21,8 +21,8 @@ pub struct AvatarCodexExcelConfigDatum {
     #[serde(rename = "beginTime")]
     pub begin_time: String,
 
-    #[serde(rename = "KLEKCDJAOLB")]
-    pub klekcdjaolb: Option<bool>,
+    #[serde(rename = "JFDABIAOIPE")]
+    pub jfdabiaoipe: Option<bool>,
 }
 
 pub fn load() -> Result<AvatarCodexExcelConfigData, crate::json::JsonError> {

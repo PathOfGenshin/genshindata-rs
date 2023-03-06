@@ -36,17 +36,17 @@ pub struct MainQuestExcelConfigDatum {
     #[serde(rename = "showType")]
     pub show_type: Option<ShowType>,
 
-    #[serde(rename = "DILGABLJOGB")]
-    pub dilgabljogb: Vec<i64>,
+    #[serde(rename = "FJEGOIGKACF")]
+    pub fjegoigkacf: Vec<i64>,
 
-    #[serde(rename = "DDBHEIFMLAB")]
-    pub ddbheifmlab: Vec<i64>,
+    #[serde(rename = "LMILHHFKOJJ")]
+    pub lmilhhfkojj: Vec<i64>,
 
     #[serde(rename = "repeatable")]
     pub repeatable: Option<bool>,
 
-    #[serde(rename = "DIBLOOLECDO")]
-    pub dibloolecdo: Option<i64>,
+    #[serde(rename = "ELEPLNPCHAA")]
+    pub eleplnpchaa: Option<i64>,
 
     #[serde(rename = "series")]
     pub series: Option<i64>,
@@ -63,8 +63,8 @@ pub struct MainQuestExcelConfigDatum {
     #[serde(rename = "mainQuestTag")]
     pub main_quest_tag: Option<MainQuestTag>,
 
-    #[serde(rename = "OHNIFFHFOEP")]
-    pub ohniffhfoep: Option<i64>,
+    #[serde(rename = "HBPBFHKEDLF")]
+    pub hbpbfhkedlf: Option<i64>,
 
     #[serde(rename = "suggestTrackOutOfOrder")]
     pub suggest_track_out_of_order: Option<bool>,

@@ -15,42 +15,42 @@ pub struct IrodoriMasterExcelConfigDatum {
     #[serde(rename = "levelID")]
     pub level_id: i64,
 
-    #[serde(rename = "KMJBNNBFBML")]
-    pub kmjbnnbfbml: Kmjbnnbfbml,
+    #[serde(rename = "LLJKOKNFJNL")]
+    pub lljkoknfjnl: Lljkoknfjnl,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 
-    #[serde(rename = "PHDLOLBLDGN")]
-    pub phdlolbldgn: i64,
+    #[serde(rename = "JMJCNBFIBEJ")]
+    pub jmjcnbfibej: i64,
 
-    #[serde(rename = "EAELJOAOALF")]
-    pub eaeljoaoalf: i64,
+    #[serde(rename = "KGFDEAHLIKI")]
+    pub kgfdeahliki: i64,
 
     #[serde(rename = "condID")]
     pub cond_id: i64,
 
-    #[serde(rename = "LMHNMCOJDJD")]
-    pub lmhnmcojdjd: i64,
+    #[serde(rename = "APGHDBEADCG")]
+    pub apghdbeadcg: i64,
 
-    #[serde(rename = "PMLGMPFDGHN")]
-    pub pmlgmpfdghn: i64,
+    #[serde(rename = "EGNBHPHNCLP")]
+    pub egnbhphnclp: i64,
 
-    #[serde(rename = "BJIHGHEJKEG")]
-    pub bjihghejkeg: i64,
+    #[serde(rename = "HGNEDOCNCOP")]
+    pub hgnedocncop: i64,
 
-    #[serde(rename = "LOPAMMNHOLJ")]
-    pub lopammnholj: i64,
+    #[serde(rename = "LICAPOJBHOI")]
+    pub licapojbhoi: i64,
 
-    #[serde(rename = "DEOCHEPLIHO")]
-    pub deochepliho: Option<i64>,
+    #[serde(rename = "ANDEOGGLBGB")]
+    pub andeogglbgb: Option<i64>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Kmjbnnbfbml {
+pub enum Lljkoknfjnl {
     #[serde(rename = "IRODORI_MASTER_LEVEL_HARD")]
     IrodoriMasterLevelHard,
 

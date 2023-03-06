@@ -15,20 +15,20 @@ pub struct WidgetGeneralExcelConfigDatum {
     #[serde(rename = "canUseInOtherWorld")]
     pub can_use_in_other_world: Option<bool>,
 
-    #[serde(rename = "OGHPDIKKPGK")]
-    pub oghpdikkpgk: Vec<i64>,
+    #[serde(rename = "FAMLHOJIMBN")]
+    pub famlhojimbn: Vec<i64>,
 
     #[serde(rename = "forbiddenDungeonList")]
     pub forbidden_dungeon_list: Vec<i64>,
 
-    #[serde(rename = "BMJAMBDPKBF")]
-    pub bmjambdpkbf: Vec<i64>,
+    #[serde(rename = "EHDCFBJGLAG")]
+    pub ehdcfbjglag: Vec<i64>,
 
-    #[serde(rename = "CBJEAMMEIEM")]
-    pub cbjeammeiem: Vec<i64>,
+    #[serde(rename = "BJINGCHMLID")]
+    pub bjingchmlid: Vec<i64>,
 
-    #[serde(rename = "GLEJBMNEHDN")]
-    pub glejbmnehdn: Option<bool>,
+    #[serde(rename = "KBLBDIAJDOE")]
+    pub kblbdiajdoe: Option<bool>,
 
     #[serde(rename = "canUseInDungeon")]
     pub can_use_in_dungeon: Option<bool>,
@@ -54,11 +54,11 @@ pub struct WidgetGeneralExcelConfigDatum {
     #[serde(rename = "canUseWhenCurrentAvatarDead")]
     pub can_use_when_current_avatar_dead: Option<bool>,
 
-    #[serde(rename = "DKHMJCKFNOO")]
-    pub dkhmjckfnoo: Option<String>,
+    #[serde(rename = "IDHLJJPKBDC")]
+    pub idhljjpkbdc: Option<String>,
 
-    #[serde(rename = "LHPKJFPLFMM")]
-    pub lhpkjfplfmm: Option<bool>,
+    #[serde(rename = "FCDHLDGBBCA")]
+    pub fcdhldgbbca: Option<bool>,
 }
 
 pub fn load() -> Result<WidgetGeneralExcelConfigData, crate::json::JsonError> {

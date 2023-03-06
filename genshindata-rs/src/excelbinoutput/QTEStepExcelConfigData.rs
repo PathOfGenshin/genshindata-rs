@@ -12,11 +12,11 @@ pub struct QteStepExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "LADJCPNDHPC")]
-    pub ladjcpndhpc: String,
+    #[serde(rename = "LHOKDACBBHF")]
+    pub lhokdacbbhf: String,
 
-    #[serde(rename = "HEDPOBFJJDP")]
-    pub hedpobfjjdp: Option<i64>,
+    #[serde(rename = "KKNHJJMKKAM")]
+    pub kknhjjmkkam: Option<i64>,
 }
 
 pub fn load() -> Result<QteStepExcelConfigData, crate::json::JsonError> {

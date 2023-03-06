@@ -9,17 +9,17 @@ pub type InferencePageExcelConfigData = Vec<InferencePageExcelConfigDatum>;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct InferencePageExcelConfigDatum {
-    #[serde(rename = "ABJJEFNJDIO")]
-    pub abjjefnjdio: i64,
+    #[serde(rename = "INPDDAGAPKG")]
+    pub inpddagapkg: i64,
 
     #[serde(rename = "parentQuestId")]
     pub parent_quest_id: i64,
 
-    #[serde(rename = "BMNDMBOKKDN")]
-    pub bmndmbokkdn: Vec<i64>,
+    #[serde(rename = "IBJIIENOCMK")]
+    pub ibjiienocmk: Vec<i64>,
 
-    #[serde(rename = "ILCCNENCBAD")]
-    pub ilccnencbad: i64,
+    #[serde(rename = "KLMLOHEMBMF")]
+    pub klmlohembmf: i64,
 }
 
 pub fn load() -> Result<InferencePageExcelConfigData, crate::json::JsonError> {

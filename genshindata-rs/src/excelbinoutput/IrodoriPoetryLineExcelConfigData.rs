@@ -15,8 +15,8 @@ pub struct IrodoriPoetryLineExcelConfigDatum {
     #[serde(rename = "contentTextMapHash")]
     pub content_text_map_hash: i64,
 
-    #[serde(rename = "CNHGFNOKPOE")]
-    pub cnhgfnokpoe: Option<i64>,
+    #[serde(rename = "HGBEDCABGDF")]
+    pub hgbedcabgdf: Option<i64>,
 }
 
 pub fn load() -> Result<IrodoriPoetryLineExcelConfigData, crate::json::JsonError> {

@@ -9,23 +9,23 @@ pub type ActivityGachaRobotExcelConfigData = Vec<ActivityGachaRobotExcelConfigDa
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityGachaRobotExcelConfigDatum {
-    #[serde(rename = "PGDKPKMOOOF")]
-    pub pgdkpkmooof: i64,
+    #[serde(rename = "BMPEPAJOMID")]
+    pub bmpepajomid: i64,
 
-    #[serde(rename = "NBJNFIHLCEH")]
-    pub nbjnfihlceh: Vec<i64>,
+    #[serde(rename = "JCJEDLODLAD")]
+    pub jcjedlodlad: Vec<i64>,
 
-    #[serde(rename = "MNAPLMKMIBE")]
-    pub mnaplmkmibe: Vec<i64>,
+    #[serde(rename = "GIPCKFBNJBE")]
+    pub gipckfbnjbe: Vec<i64>,
 
-    #[serde(rename = "FNKIDIBBNGL")]
-    pub fnkidibbngl: Vec<i64>,
+    #[serde(rename = "LPLHBEJOLMO")]
+    pub lplhbejolmo: Vec<i64>,
 
     #[serde(rename = "type")]
     pub activity_gacha_robot_excel_config_datum_type: Type,
 
-    #[serde(rename = "GOHAIPPNPCI")]
-    pub gohaippnpci: i64,
+    #[serde(rename = "IBKGOOODANA")]
+    pub ibkgooodana: i64,
 
     #[serde(rename = "materialId")]
     pub material_id: i64,
@@ -33,17 +33,17 @@ pub struct ActivityGachaRobotExcelConfigDatum {
     #[serde(rename = "modelPath")]
     pub model_path: String,
 
-    #[serde(rename = "PHAFNHAACHF")]
-    pub phafnhaachf: i64,
+    #[serde(rename = "ACMGNHMCAAP")]
+    pub acmgnhmcaap: i64,
 
-    #[serde(rename = "FDNNCODPFEK")]
-    pub fdnncodpfek: i64,
+    #[serde(rename = "AKLEKAPPACC")]
+    pub aklekappacc: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "LFCECAAEIEO")]
-    pub lfcecaaeieo: String,
+    #[serde(rename = "MIONEBLJLMI")]
+    pub mionebljlmi: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]

@@ -12,14 +12,14 @@ pub struct LanV3CampLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
 
-    #[serde(rename = "IAEDJIKKJDH")]
-    pub iaedjikkjdh: i64,
+    #[serde(rename = "EMMJMEPDEJO")]
+    pub emmjmepdejo: i64,
 
-    #[serde(rename = "KKAAOAGIFEF")]
-    pub kkaaoagifef: i64,
+    #[serde(rename = "OGODALFELJP")]
+    pub ogodalfeljp: i64,
 
-    #[serde(rename = "AJFJEMAOJHJ")]
-    pub ajfjemaojhj: String,
+    #[serde(rename = "PKOFNGDFPKM")]
+    pub pkofngdfpkm: String,
 }
 
 pub fn load() -> Result<LanV3CampLevelExcelConfigData, crate::json::JsonError> {

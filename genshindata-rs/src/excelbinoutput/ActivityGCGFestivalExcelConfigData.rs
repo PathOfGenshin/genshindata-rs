@@ -18,8 +18,8 @@ pub struct ActivityGcgFestivalExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "EOKDDNCPBJF")]
-    pub eokddncpbjf: String,
+    #[serde(rename = "FHBFDECLGEC")]
+    pub fhbfdeclgec: String,
 
     #[serde(rename = "matchId")]
     pub match_id: i64,
@@ -27,8 +27,8 @@ pub struct ActivityGcgFestivalExcelConfigDatum {
     #[serde(rename = "openDay")]
     pub open_day: i64,
 
-    #[serde(rename = "ALHFCOFBOJI")]
-    pub alhfcofboji: i64,
+    #[serde(rename = "PDOOHIBAPLC")]
+    pub pdoohibaplc: i64,
 }
 
 pub fn load() -> Result<ActivityGcgFestivalExcelConfigData, crate::json::JsonError> {

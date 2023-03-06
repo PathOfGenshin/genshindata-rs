@@ -12,17 +12,26 @@ pub struct MusicGamePreviewConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
 
-    #[serde(rename = "OCGCMJJNCKG")]
-    pub ocgcmjjnckg: Vec<i64>,
+    #[serde(rename = "CJPINNGBIPB")]
+    pub cjpinngbipb: Vec<i64>,
 
-    #[serde(rename = "OOGIBEMDKGB")]
-    pub oogibemdkgb: i64,
+    #[serde(rename = "PBGAEBLHBBL")]
+    pub pbgaeblhbbl: Vec<i64>,
 
-    #[serde(rename = "FHNGAAFKLBB")]
-    pub fhngaafklbb: i64,
+    #[serde(rename = "MPNJJMPHPJB")]
+    pub mpnjjmphpjb: Option<i64>,
 
-    #[serde(rename = "NJLMCLNOEAJ")]
-    pub njlmclnoeaj: i64,
+    #[serde(rename = "OANPKOHDBLE")]
+    pub oanpkohdble: i64,
+
+    #[serde(rename = "AGGHNPBLEJB")]
+    pub agghnpblejb: i64,
+
+    #[serde(rename = "IMIGAFEKJDM")]
+    pub imigafekjdm: Vec<f64>,
+
+    #[serde(rename = "BMNCFPKHDOG")]
+    pub bmncfpkhdog: Vec<f64>,
 }
 
 pub fn load() -> Result<MusicGamePreviewConfigData, crate::json::JsonError> {

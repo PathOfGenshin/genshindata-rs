@@ -12,17 +12,17 @@ pub struct SubSpriteTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "DINGMDJGJAE")]
-    pub dingmdjgjae: String,
+    #[serde(rename = "PEEPELHOKDM")]
+    pub peepelhokdm: String,
 
-    #[serde(rename = "EFNHJFCOFMN")]
-    pub efnhjfcofmn: f64,
+    #[serde(rename = "CMIDBDHFJHN")]
+    pub cmidbdhfjhn: f64,
 
-    #[serde(rename = "INABGHKOCJK")]
-    pub inabghkocjk: Option<f64>,
+    #[serde(rename = "OBOMPNOMJDJ")]
+    pub obompnomjdj: Option<f64>,
 
-    #[serde(rename = "AGJOBEENLAB")]
-    pub agjobeenlab: Option<f64>,
+    #[serde(rename = "DLNJIDMBHBH")]
+    pub dlnjidmbhbh: Option<f64>,
 }
 
 pub fn load() -> Result<SubSpriteTagExcelConfigData, crate::json::JsonError> {

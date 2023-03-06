@@ -12,14 +12,14 @@ pub struct PerceptionTemplateExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "ODKAKILKFLD")]
-    pub odkakilkfld: f64,
+    #[serde(rename = "CMOIKCGEKEB")]
+    pub cmoikcgekeb: f64,
 
-    #[serde(rename = "PCABPCIMKHC")]
-    pub pcabpcimkhc: Option<f64>,
+    #[serde(rename = "EAMPEPBIBDO")]
+    pub eampepbibdo: Option<f64>,
 
-    #[serde(rename = "COCFOFNJDHB")]
-    pub cocfofnjdhb: Option<f64>,
+    #[serde(rename = "HJJCGIFLGNF")]
+    pub hjjcgiflgnf: Option<f64>,
 }
 
 pub fn load() -> Result<PerceptionTemplateExcelConfigData, crate::json::JsonError> {

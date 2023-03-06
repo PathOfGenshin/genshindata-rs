@@ -9,8 +9,8 @@ pub type ActivityChessMapExcelConfigData = Vec<ActivityChessMapExcelConfigDatum>
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityChessMapExcelConfigDatum {
-    #[serde(rename = "OEKFDENHBKH")]
-    pub oekfdenhbkh: i64,
+    #[serde(rename = "HDLKHPNGPIK")]
+    pub hdlkhpngpik: i64,
 
     #[serde(rename = "mapNameTextMapHash")]
     pub map_name_text_map_hash: i64,
@@ -30,26 +30,26 @@ pub struct ActivityChessMapExcelConfigDatum {
     #[serde(rename = "dungeonID")]
     pub dungeon_id: i64,
 
-    #[serde(rename = "DIBNPBCMAJA")]
-    pub dibnpbcmaja: i64,
+    #[serde(rename = "GECAHEODJAD")]
+    pub gecaheodjad: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
-    #[serde(rename = "MCHDJKCLPCI")]
-    pub mchdjkclpci: Option<bool>,
+    #[serde(rename = "GBNOBAFFDFI")]
+    pub gbnobaffdfi: Option<bool>,
 
     #[serde(rename = "show")]
     pub show: Option<bool>,
 
-    #[serde(rename = "LGPIGLNLKJH")]
-    pub lgpiglnlkjh: Vec<i64>,
+    #[serde(rename = "CGJEMJNKNPF")]
+    pub cgjemjnknpf: Vec<i64>,
 
-    #[serde(rename = "HMHJHPKBNJL")]
-    pub hmhjhpkbnjl: Vec<i64>,
+    #[serde(rename = "BPOBHIKILFM")]
+    pub bpobhikilfm: Vec<i64>,
 
-    #[serde(rename = "OFNIFNDGKCC")]
-    pub ofnifndgkcc: Option<i64>,
+    #[serde(rename = "CCLFDNMIOGL")]
+    pub cclfdnmiogl: Option<i64>,
 }
 
 pub fn load() -> Result<ActivityChessMapExcelConfigData, crate::json::JsonError> {

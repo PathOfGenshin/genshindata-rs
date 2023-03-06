@@ -12,14 +12,14 @@ pub struct BartenderMaterialUnlockConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "BDHGNMNHEFG")]
-    pub bdhgnmnhefg: i64,
+    #[serde(rename = "LABNOEGPADP")]
+    pub labnoegpadp: i64,
 
     #[serde(rename = "weight")]
     pub weight: i64,
 
-    #[serde(rename = "KANKEHBILAJ")]
-    pub kankehbilaj: i64,
+    #[serde(rename = "MLMHAKLBCEL")]
+    pub mlmhaklbcel: i64,
 }
 
 pub fn load() -> Result<BartenderMaterialUnlockConfigData, crate::json::JsonError> {

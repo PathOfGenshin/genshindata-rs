@@ -9,17 +9,17 @@ pub type VintageMarketBargainExcelConfigData = Vec<VintageMarketBargainExcelConf
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct VintageMarketBargainExcelConfigDatum {
-    #[serde(rename = "LJGCDPABPAL")]
-    pub ljgcdpabpal: i64,
+    #[serde(rename = "OEOGFELFNOD")]
+    pub oeogfelfnod: i64,
 
     #[serde(rename = "questId")]
     pub quest_id: i64,
 
-    #[serde(rename = "EPLLPJHLDPN")]
-    pub epllpjhldpn: i64,
+    #[serde(rename = "HEIFLGOBHPF")]
+    pub heiflgobhpf: i64,
 
-    #[serde(rename = "NEKGCEMKLLG")]
-    pub nekgcemkllg: i64,
+    #[serde(rename = "HMAMKCBOLJC")]
+    pub hmamkcboljc: i64,
 }
 
 pub fn load() -> Result<VintageMarketBargainExcelConfigData, crate::json::JsonError> {

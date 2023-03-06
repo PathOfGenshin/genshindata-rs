@@ -21,14 +21,14 @@ pub struct InvestigationMonsterConfigDatum {
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
 
-    #[serde(rename = "CDOANJFAFFF")]
-    pub cdoanjfafff: Vec<i64>,
+    #[serde(rename = "BLHKMKDMKFM")]
+    pub blhkmkdmkfm: Vec<i64>,
 
-    #[serde(rename = "NABCAMPKMFF")]
-    pub nabcampkmff: Vec<i64>,
+    #[serde(rename = "OPDFNKAFBEL")]
+    pub opdfnkafbel: Vec<i64>,
 
-    #[serde(rename = "MDGNJMIHHLK")]
-    pub mdgnjmihhlk: i64,
+    #[serde(rename = "GIHJEMIFLPC")]
+    pub gihjemiflpc: i64,
 
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,

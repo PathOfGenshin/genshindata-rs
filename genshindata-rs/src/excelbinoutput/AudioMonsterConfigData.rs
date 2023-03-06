@@ -15,20 +15,20 @@ pub struct AudioMonsterConfigDatum {
     #[serde(rename = "score")]
     pub score: f64,
 
-    #[serde(rename = "HBHFANALJJB")]
-    pub hbhfanaljjb: f64,
+    #[serde(rename = "PNFOGOODGKB")]
+    pub pnfogoodgkb: f64,
 
-    #[serde(rename = "GCDBIKKDILN")]
-    pub gcdbikkdiln: f64,
+    #[serde(rename = "HLKIMOBDEKD")]
+    pub hlkimobdekd: f64,
 
-    #[serde(rename = "LDHICFAOLFH")]
-    pub ldhicfaolfh: f64,
+    #[serde(rename = "KLPAMCGBGJM")]
+    pub klpamcgbgjm: f64,
 
-    #[serde(rename = "PKBOBKKPEHI")]
-    pub pkbobkkpehi: f64,
+    #[serde(rename = "IIEMJEJEPGP")]
+    pub iiemjejepgp: f64,
 
-    #[serde(rename = "LGOJGHODONJ")]
-    pub lgojghodonj: Option<f64>,
+    #[serde(rename = "GFJDGFAHKAG")]
+    pub gfjdgfahkag: Option<f64>,
 }
 
 pub fn load() -> Result<AudioMonsterConfigData, crate::json::JsonError> {

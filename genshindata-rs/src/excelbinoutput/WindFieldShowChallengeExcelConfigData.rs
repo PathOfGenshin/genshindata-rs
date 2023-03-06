@@ -9,29 +9,29 @@ pub type WindFieldShowChallengeExcelConfigData = Vec<WindFieldShowChallengeExcel
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WindFieldShowChallengeExcelConfigDatum {
-    #[serde(rename = "LPFJMKFMDBA")]
-    pub lpfjmkfmdba: i64,
+    #[serde(rename = "CEDHMGMHGEK")]
+    pub cedhmgmhgek: i64,
 
-    #[serde(rename = "BNHPJBGHGOP")]
-    pub bnhpjbghgop: Option<i64>,
+    #[serde(rename = "PIFOKBKPEEL")]
+    pub pifokbkpeel: Option<i64>,
 
     #[serde(rename = "showType")]
     pub show_type: String,
 
-    #[serde(rename = "JJOAKAFCLBH")]
-    pub jjoakafclbh: Vec<i64>,
+    #[serde(rename = "MKECNAIOPBP")]
+    pub mkecnaiopbp: Vec<i64>,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
 
-    #[serde(rename = "NDPHNBNGAKE")]
-    pub ndphnbngake: i64,
+    #[serde(rename = "ONEABMEMOBG")]
+    pub oneabmemobg: i64,
 
-    #[serde(rename = "HJLLEFLCHBI")]
-    pub hjlleflchbi: i64,
+    #[serde(rename = "GCADIIFMMEB")]
+    pub gcadiifmmeb: i64,
 
-    #[serde(rename = "FBEFPOLJDCP")]
-    pub fbefpoljdcp: Option<i64>,
+    #[serde(rename = "FOJHAGOCJEB")]
+    pub fojhagocjeb: Option<i64>,
 }
 
 pub fn load() -> Result<WindFieldShowChallengeExcelConfigData, crate::json::JsonError> {

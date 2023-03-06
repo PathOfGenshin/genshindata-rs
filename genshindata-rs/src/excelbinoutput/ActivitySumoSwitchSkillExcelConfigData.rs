@@ -12,8 +12,8 @@ pub struct ActivitySumoSwitchSkillExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
 
-    #[serde(rename = "BHCJKANDNPF")]
-    pub bhcjkandnpf: String,
+    #[serde(rename = "LADKLKNNEKD")]
+    pub ladklknnekd: String,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -24,8 +24,8 @@ pub struct ActivitySumoSwitchSkillExcelConfigDatum {
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 
-    #[serde(rename = "ONGLICJMKEB")]
-    pub onglicjmkeb: i64,
+    #[serde(rename = "KKHHICCNGGI")]
+    pub kkhhiccnggi: i64,
 }
 
 pub fn load() -> Result<ActivitySumoSwitchSkillExcelConfigData, crate::json::JsonError> {

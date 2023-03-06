@@ -36,8 +36,8 @@ pub struct ChatExcelConfigDatum {
     #[serde(rename = "channel")]
     pub channel: Option<i64>,
 
-    #[serde(rename = "IBGFCALEPDP")]
-    pub ibgfcalepdp: Option<bool>,
+    #[serde(rename = "LFIOFMPJFDI")]
+    pub lfiofmpjfdi: Option<bool>,
 }
 
 pub fn load() -> Result<ChatExcelConfigData, crate::json::JsonError> {

@@ -15,14 +15,14 @@ pub struct VintageMarketHelpSkillExcelConfigDatum {
     #[serde(rename = "effectDescTextMapHash")]
     pub effect_desc_text_map_hash: i64,
 
-    #[serde(rename = "DJMHGOMGKDJ")]
-    pub djmhgomgkdj: Djmhgomgkdj,
+    #[serde(rename = "JFAIINEEPPJ")]
+    pub jfaiineeppj: Jfaiineeppj,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Djmhgomgkdj {
+pub struct Jfaiineeppj {
     #[serde(rename = "type")]
-    pub djmhgomgkdj_type: String,
+    pub jfaiineeppj_type: String,
 
     #[serde(rename = "param")]
     pub param: String,

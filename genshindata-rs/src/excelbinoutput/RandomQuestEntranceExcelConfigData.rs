@@ -27,18 +27,18 @@ pub struct RandomQuestEntranceExcelConfigDatum {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct FilterList {
-    #[serde(rename = "HHONEAJNKGB")]
-    pub hhoneajnkgb: Hhoneajnkgb,
+    #[serde(rename = "DIDEGDKGONM")]
+    pub didegdkgonm: Didegdkgonm,
 
-    #[serde(rename = "MNKNCLCABJF")]
-    pub mnknclcabjf: Vec<i64>,
+    #[serde(rename = "NEBMMPNGPJG")]
+    pub nebmmpngpjg: Vec<i64>,
 
-    #[serde(rename = "ICFAINOJCNG")]
-    pub icfainojcng: Option<Icfainojcng>,
+    #[serde(rename = "NJEPLOJHBCE")]
+    pub njeplojhbce: Option<Njeplojhbce>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Hhoneajnkgb {
+pub enum Didegdkgonm {
     #[serde(rename = "")]
     Empty,
 
@@ -59,7 +59,7 @@ pub enum Hhoneajnkgb {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub enum Icfainojcng {
+pub enum Njeplojhbce {
     #[serde(rename = "RQ_FILTER_NPC")]
     RqFilterNpc,
 

@@ -9,8 +9,8 @@ pub type ActivityPotionModeChoiceExcelConfigData = Vec<ActivityPotionModeChoiceE
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityPotionModeChoiceExcelConfigDatum {
-    #[serde(rename = "IDCOHBEBPOK")]
-    pub idcohbebpok: i64,
+    #[serde(rename = "LBLJFFFINOE")]
+    pub lbljfffinoe: i64,
 
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
@@ -18,8 +18,8 @@ pub struct ActivityPotionModeChoiceExcelConfigDatum {
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
 
-    #[serde(rename = "IIGCOLKJKHN")]
-    pub iigcolkjkhn: i64,
+    #[serde(rename = "MKOBJIKDAKK")]
+    pub mkobjikdakk: i64,
 }
 
 pub fn load() -> Result<ActivityPotionModeChoiceExcelConfigData, crate::json::JsonError> {

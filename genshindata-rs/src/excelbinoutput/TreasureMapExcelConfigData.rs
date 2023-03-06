@@ -69,8 +69,8 @@ pub struct TreasureMapExcelConfigDatum {
     #[serde(rename = "guideChildQuestId")]
     pub guide_child_quest_id: i64,
 
-    #[serde(rename = "FKCJLDJONKA")]
-    pub fkcjldjonka: Option<i64>,
+    #[serde(rename = "BBAPBMEFGII")]
+    pub bbapbmefgii: Option<i64>,
 }
 
 pub fn load() -> Result<TreasureMapExcelConfigData, crate::json::JsonError> {

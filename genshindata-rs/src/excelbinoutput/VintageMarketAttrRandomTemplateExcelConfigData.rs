@@ -12,11 +12,11 @@ pub struct VintageMarketAttrRandomTemplateExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
 
-    #[serde(rename = "OMGHOGDKJLF")]
-    pub omghogdkjlf: i64,
+    #[serde(rename = "ILHLPLCGKPH")]
+    pub ilhlplcgkph: i64,
 
-    #[serde(rename = "AKFJALHIHIK")]
-    pub akfjalhihik: Vec<i64>,
+    #[serde(rename = "EPDODKCPCPH")]
+    pub epdodkcpcph: Vec<i64>,
 }
 
 pub fn load() -> Result<VintageMarketAttrRandomTemplateExcelConfigData, crate::json::JsonError> {

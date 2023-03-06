@@ -15,8 +15,8 @@ pub struct KeywordEasterEggGroupExcelConfigDatum {
     #[serde(rename = "logicType")]
     pub logic_type: String,
 
-    #[serde(rename = "DMKCKMJADLM")]
-    pub dmkckmjadlm: Vec<i64>,
+    #[serde(rename = "DHBDEELCGAP")]
+    pub dhbdeelcgap: Vec<i64>,
 }
 
 pub fn load() -> Result<KeywordEasterEggGroupExcelConfigData, crate::json::JsonError> {

@@ -9,8 +9,8 @@ pub type ActivityGcgFestivalTextExcelConfigData = Vec<ActivityGcgFestivalTextExc
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ActivityGcgFestivalTextExcelConfigDatum {
-    #[serde(rename = "EOKDDNCPBJF")]
-    pub eokddncpbjf: String,
+    #[serde(rename = "FHBFDECLGEC")]
+    pub fhbfdeclgec: String,
 
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
@@ -18,8 +18,8 @@ pub struct ActivityGcgFestivalTextExcelConfigDatum {
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 
-    #[serde(rename = "EGKFNPPDOBG")]
-    pub egkfnppdobg: i64,
+    #[serde(rename = "NFOCLAEBBAK")]
+    pub nfoclaebbak: i64,
 }
 
 pub fn load() -> Result<ActivityGcgFestivalTextExcelConfigData, crate::json::JsonError> {

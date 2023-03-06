@@ -15,8 +15,8 @@ pub struct VintageMarketAttrFactorExcelConfigDatum {
     #[serde(rename = "factor")]
     pub factor: f64,
 
-    #[serde(rename = "PDFKNODICGI")]
-    pub pdfknodicgi: Option<i64>,
+    #[serde(rename = "PNMPILIKCEH")]
+    pub pnmpilikceh: Option<i64>,
 }
 
 pub fn load() -> Result<VintageMarketAttrFactorExcelConfigData, crate::json::JsonError> {

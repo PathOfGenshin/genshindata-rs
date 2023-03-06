@@ -18,8 +18,8 @@ pub struct SceneTagConfigDatum {
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
 
-    #[serde(rename = "EEGPBJOAJCJ")]
-    pub eegpbjoajcj: Option<bool>,
+    #[serde(rename = "EOGEIGHKLIM")]
+    pub eogeighklim: Option<bool>,
 
     #[serde(rename = "cond")]
     pub cond: Vec<Cond>,
@@ -27,8 +27,8 @@ pub struct SceneTagConfigDatum {
     #[serde(rename = "isDefaultValid")]
     pub is_default_valid: Option<bool>,
 
-    #[serde(rename = "CLKECAFHPFF")]
-    pub clkecafhpff: Option<bool>,
+    #[serde(rename = "OOABNCNNJOH")]
+    pub ooabncnnjoh: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
