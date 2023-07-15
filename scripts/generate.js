@@ -2,9 +2,9 @@ import * as fs from "fs/promises";
 import * as path from "path";
 import { InputData, jsonInputForTargetLanguage, quicktype } from "quicktype-core";
 
-const EXCEL_BIN_OUTPUT_FOLDER =
-  process.env.EXCEL_BIN_OUTPUT_FOLDER ||
-  path.join(process.cwd(), "..", "AnimeGameData", "ExcelBinOutput");
+const GAME_DATA_FOLDER =
+  process.env.GAME_DATA_FOLDER || path.join(process.cwd(), "..", "AnimeGameData");
+const EXCEL_BIN_OUTPUT_FOLDER = path.join(GAME_DATA_FOLDER, "ExcelBinOutput");
 
 const RUST_OUTPUT_FOLDER = path.join(
   process.cwd(),
@@ -64,7 +64,7 @@ async function generateExcelBinOutputStructs(filesNoExt) {
       rustFile.join("\n"),
     ].join("\n");
     const outputFilePath = path.join(RUST_OUTPUT_FOLDER, `${fileNameNoExt}.rs`);
-    console.log(`Generating file ${outputFilePath}`);
+    console.log(`Generating file ${path.relative(process.cwd(), outputFilePath)}`);
     return fs.writeFile(outputFilePath, content);
   });
   await Promise.all(generateStructs);
@@ -81,7 +81,7 @@ async function generateExcelBinOutputModFile(filesNoExt) {
     pubMods,
   ].join("\n")}\n`;
   const modFilePath = path.join(RUST_OUTPUT_FOLDER, "mod.rs");
-  console.log(`Generating file ${modFilePath}`);
+  console.log(`Generating file ${path.relative(process.cwd(), modFilePath)}`);
   await fs.writeFile(modFilePath, modFileContents);
 }
 
