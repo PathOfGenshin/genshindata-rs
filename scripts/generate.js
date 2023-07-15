@@ -100,6 +100,7 @@ async function main() {
   await Promise.all([generateSerdeStructs()]);
   console.log("Done!");
   // TODO: generate language enums
+  // TODO: generate BinOutput Avatar/ConfigAvatar_*.json structs
 }
 
 main();
