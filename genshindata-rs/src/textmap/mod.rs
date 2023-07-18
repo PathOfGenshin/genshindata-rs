@@ -1,12 +1,8 @@
-use std::env;
-use std::{collections::HashMap, path::PathBuf};
+use std::collections::HashMap;
 
 use strum::IntoEnumIterator;
 
-use crate::{
-    json::{load_json, JsonError},
-    language::Language,
-};
+use crate::{json::load_textmap, json::JsonError, language::Language};
 
 pub struct TextMap {
     pub language: Language,
@@ -15,17 +11,8 @@ pub struct TextMap {
 
 impl TextMap {
     pub fn load(language: Language) -> Result<Self, JsonError> {
-        let game_resources_path = env::var("GAME_DATA_PATH").unwrap();
-        let language_file = format!("TextMap{}.json", language);
-        let path: PathBuf = [
-            game_resources_path.as_str(),
-            "TextMap",
-            language_file.as_str(),
-        ]
-        .iter()
-        .collect();
-        let data = load_json(path)?;
-        println!("Loaded {} TextMap!", language);
+        let textmap_file = format!("TextMap{}.json", language);
+        let data = load_textmap(&textmap_file)?;
         Ok(Self { data, language })
     }
 
@@ -42,8 +29,9 @@ impl AllTextMaps {
         Self(HashMap::from_iter(Language::iter().map(|lang| {
             (
                 lang,
-                TextMap::load(lang)
-                    .unwrap_or_else(|_| panic!("Failed to load TextMap{}.json!", lang)),
+                TextMap::load(lang).unwrap_or_else(|e| {
+                    panic!("Failed to load TextMap{}.json! Error: {}", lang, e)
+                }),
             )
         })))
     }

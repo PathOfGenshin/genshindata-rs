@@ -12,5 +12,4 @@ fn main() {
     println!("{:?}", result.data);
     let en_translations = result.translations.get_pack(Language::EN);
     println!("{:?}", en_translations);
-    let a = br#"test"#.to_vec();
 }

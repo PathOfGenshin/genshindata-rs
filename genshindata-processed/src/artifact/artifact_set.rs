@@ -5,7 +5,7 @@ use genshindata_rs::{
         EquipAffixExcelConfigData::{self, EquipAffixExcelConfigDatum},
         ReliquarySetExcelConfigData::{self, ReliquarySetExcelConfigDatum},
     },
-    json::JsonError,
+    json::{load_excelbinoutput, JsonError},
     language::Language,
     textmap::AllTextMaps,
 };
@@ -25,8 +25,8 @@ pub struct ArtifactSetProcessor {
 
 impl ArtifactSetProcessor {
     pub fn new() -> Result<Self, JsonError> {
-        let reliquary_set_data = ReliquarySetExcelConfigData::load()?;
-        let equip_affix_data = EquipAffixExcelConfigData::load()?;
+        let reliquary_set_data = load_excelbinoutput("ReliquarySetExcelConfigData.json")?;
+        let equip_affix_data = load_excelbinoutput("EquipAffixExcelConfigData.json")?;
         Ok(Self {
             reliquary_set_data,
             equip_affix_data,
