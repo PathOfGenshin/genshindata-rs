@@ -3,9 +3,8 @@
   "version": "3.8.0",
   "description": "A strongly-typed Rust based library wrapper for game resource JSON files.",
   "scripts": {
-    "generate": "node ./scripts/generate.js"
+    "generate": "node ./scripts/main.mjs"
   },
-  "type": "module",
   "author": "Kevin Xiao",
   "license": "MIT",
   "dependencies": {
