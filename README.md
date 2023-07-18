@@ -17,9 +17,16 @@ Ensure that `pnpm` and a `node` environment is installed (tested on `node v20.4.
    the game's JSON `ExcelBinOutput` resource folder (we don't provide that here, you'll
    have to get that yourself).
    If not set, this defaults to `../AnimeGameData/`
-3. `pnpm generate` to generate the Rust `serde` structs code.
-4. Double-check generated `.rs` files in `genshindata-rs/src/excelbinoutput/`
+3. `pnpm generate` to generate Rust source code in the `genshindata-rs` package.
+4. Double-check generated `.rs` files in `genshindata-rs` package
+
+#### List of generated code
+
+Currently generates code in:
+
+- `genshindata-rs/src/excelbinoutput`
+- `genshindata-rs/src/language`
 
 ---
 
-Currently updated for game version: **3.8.0**
+Currently updated for game version: **OSRELWin3.8.0_R15939604_S15665320_D15939604**
