@@ -18,8 +18,8 @@ pub struct GadgetExcelConfigDatum {
     pub interact_name_text_map_hash: i64,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "NOLCALJMBOB")]
-    pub nolcaljmbob: Option<f64>,
+    #[serde(rename = "KCANMNBNNED")]
+    pub kcanmnbnned: Option<f64>,
     #[serde(rename = "campID")]
     pub camp_id: Option<i64>,
     #[serde(rename = "LODPatternName")]
@@ -31,16 +31,18 @@ pub struct GadgetExcelConfigDatum {
     #[serde(rename = "mpPropID")]
     pub mp_prop_id: Option<i64>,
     pub is_equip: Option<bool>,
-    #[serde(rename = "LEOGCEJBFLO")]
-    pub leogcejbflo: Option<f64>,
+    pub item_prefab_path_hash: Option<f64>,
     #[serde(rename = "landSoundID")]
     pub land_sound_id: Option<i64>,
     pub client_script_hash: Option<f64>,
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
-    #[serde(rename = "CENEMKKJNFL")]
-    pub cenemkkjnfl: Option<bool>,
-    pub item_prefab_path_hash: Option<i64>,
+    #[serde(rename = "AFKJHEAOEDH")]
+    pub afkjheaoedh: Option<bool>,
+    #[serde(rename = "JHOGPIMOFCF")]
+    pub jhogpimofcf: Option<i64>,
+    #[serde(rename = "ENCFOAAJBEO")]
+    pub encfoaajbeo: Option<String>,
     pub prefab_path_remote_hash: Option<f64>,
     pub controller_path_hash: Option<f64>,
 }
@@ -59,6 +61,8 @@ pub enum Type {
     Chest,
     #[serde(rename = "CoinCollectLevelGadget")]
     CoinCollectLevelGadget,
+    #[serde(rename = "CurveMoveGadget")]
+    CurveMoveGadget,
     #[serde(rename = "CustomGadget")]
     CustomGadget,
     #[serde(rename = "CustomTile")]
@@ -179,6 +183,8 @@ pub enum InteeIconName {
     UiIconInteeTreasureBox,
     #[serde(rename = "UI_Icon_Intee_Vasara")]
     UiIconInteeVasara,
+    #[serde(rename = "UI_Icon_Intee_WishingPond")]
+    UiIconInteeWishingPond,
     #[serde(rename = "UI_Icon_Quest_Once")]
     UiIconQuestOnce,
     #[serde(rename = "UI_NPCTopIcon_Activity_BrickBreaker")]
@@ -205,6 +211,8 @@ pub enum LodPatternName {
     GadgetVehicleSkiff,
     #[serde(rename = "MonsterEquip_Default_01")]
     MonsterEquipDefault01,
+    #[serde(rename = "Monster_Regisvine_Electric_01")]
+    MonsterRegisvineElectric01,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

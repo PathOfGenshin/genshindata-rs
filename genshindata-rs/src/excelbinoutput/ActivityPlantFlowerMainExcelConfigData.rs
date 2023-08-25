@@ -11,16 +11,16 @@ pub type ActivityPlantFlowerMainExcelConfigData = Vec<ActivityPlantFlowerMainExc
 pub struct ActivityPlantFlowerMainExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub abeakpkjdkp: Vec<i64>,
-    pub hiejaoooiae: Vec<i64>,
-    pub lecfibbokaj: i64,
+    pub bfohblencpn: Vec<i64>,
+    pub nalpelmhkpm: Vec<i64>,
+    pub edeieggniai: i64,
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
-    pub jjhobplbhgn: i64,
-    pub efohheobhfi: Vec<i64>,
+    pub okmdiamkofi: i64,
+    pub jjilhhpghhk: Vec<i64>,
     #[serde(rename = "openQuestId")]
     pub open_quest_id: i64,
-    pub bgboncgdbgf: i64,
+    pub gcmockaoehe: i64,
     #[serde(rename = "dailyConfigIdList")]
     pub daily_config_id_list: Vec<i64>,
 }

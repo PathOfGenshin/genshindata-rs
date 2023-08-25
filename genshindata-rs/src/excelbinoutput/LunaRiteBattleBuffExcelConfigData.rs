@@ -10,12 +10,12 @@ pub type LunaRiteBattleBuffExcelConfigData = Vec<LunaRiteBattleBuffExcelConfigDa
 #[serde(rename_all = "PascalCase")]
 pub struct LunaRiteBattleBuffExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "BNJBJMDJADE")]
-    pub bnjbjmdjade: String,
-    #[serde(rename = "MCHFDPOHFOP")]
-    pub mchfdpohfop: i64,
-    #[serde(rename = "FPJLBJECBMA")]
-    pub fpjlbjecbma: i64,
+    #[serde(rename = "EOEIOLGBMGM")]
+    pub eoeiolgbmgm: String,
+    #[serde(rename = "MGMKCENCEEG")]
+    pub mgmkcenceeg: i64,
+    #[serde(rename = "JMAMOBDKECP")]
+    pub jmamobdkecp: i64,
     #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,
 }

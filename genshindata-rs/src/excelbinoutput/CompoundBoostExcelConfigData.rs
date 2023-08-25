@@ -9,6 +9,6 @@ pub type CompoundBoostExcelConfigData = Vec<CompoundBoostExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct CompoundBoostExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "PKAIDHJLLAF")]
-    pub pkaidhjllaf: i64,
+    #[serde(rename = "NOKHMLKAIAK")]
+    pub nokhmlkaiak: i64,
 }

@@ -13,30 +13,30 @@ pub struct GcgWeekLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "npcId")]
     pub npc_id: i64,
-    pub idjodbbckfm: Idjodbbckfm,
-    pub fhiimkamdga: Vec<Fhiimkamdga>,
-    pub mdkgnkafmbi: Vec<Option<serde_json::Value>>,
+    pub jgjgllhnjho: Jgjgllhnjho,
+    pub kmnlnlocbll: Vec<Kmnlnlocbll>,
+    pub mpmipjeboam: Vec<Option<serde_json::Value>>,
     #[serde(rename = "iconName")]
     pub icon_name: String,
-    pub nlmiaghejok: Option<bool>,
+    pub pmaoimemppo: Option<bool>,
     #[serde(rename = "openQuestId")]
     pub open_quest_id: Option<i64>,
-    pub hnjmhdpkhcp: Option<i64>,
+    pub kikppmodflm: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Fhiimkamdga {
-    #[serde(rename = "levelId")]
-    pub level_id: Option<i64>,
-    pub hmgohbikodj: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Idjodbbckfm {
+pub enum Jgjgllhnjho {
     #[serde(rename = "WEEK_NPC_CHARACTER")]
     WeekNpcCharacter,
     #[serde(rename = "WEEK_NPC_NORMAL")]
     WeekNpcNormal,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct Kmnlnlocbll {
+    #[serde(rename = "levelId")]
+    pub level_id: Option<i64>,
+    pub jcjjdockmgh: Option<i64>,
 }

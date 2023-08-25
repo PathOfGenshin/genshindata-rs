@@ -11,16 +11,16 @@ pub type RoguelikeRuneExcelConfigData = Vec<RoguelikeRuneExcelConfigDatum>;
 pub struct RoguelikeRuneExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub onlpmhkdkgf: bool,
+    pub bgbdiojamol: bool,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ffbaccnjinc: String,
-    pub keoiahgggon: String,
-    pub kigdefnkcfj: String,
-    pub fbgfkgmbnam: String,
-    pub fppnggnllbi: i64,
+    pub befmgmfnmag: String,
+    pub bmdfpedgeki: String,
+    pub ofjnplaoknp: String,
+    pub lgobkpgpadp: String,
+    pub agkekdpohgh: i64,
     #[serde(rename = "elementType")]
     pub element_type: i64,
     #[serde(rename = "abilityName")]

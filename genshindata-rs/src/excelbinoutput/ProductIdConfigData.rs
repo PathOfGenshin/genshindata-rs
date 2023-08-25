@@ -13,15 +13,15 @@ pub struct ProductIdConfigDatum {
     pub config_id: i64,
     pub is_internal: Option<bool>,
     pub entitlement_id: String,
-    #[serde(rename = "OPLCEFDDCKM")]
-    pub oplcefddckm: String,
-    #[serde(rename = "MKIKDGJKOFI")]
-    pub mkikdgjkofi: Vec<Mkikdgjkofi>,
+    #[serde(rename = "OBFCKHALANI")]
+    pub obfckhalani: String,
+    #[serde(rename = "NJECJLNHBBH")]
+    pub njecjlnhbbh: Vec<Njecjlnhbbh>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mkikdgjkofi {
+pub enum Njecjlnhbbh {
     #[serde(rename = "CLOUD_ANDROID")]
     CloudAndroid,
     #[serde(rename = "CLOUD_IOS")]
@@ -30,4 +30,16 @@ pub enum Mkikdgjkofi {
     CloudMac,
     #[serde(rename = "CLOUD_PC")]
     CloudPc,
+    #[serde(rename = "CLOUD_WEB_ANDROID")]
+    CloudWebAndroid,
+    #[serde(rename = "CLOUD_WEB_IOS")]
+    CloudWebIos,
+    #[serde(rename = "CLOUD_WEB_KEYBOARD")]
+    CloudWebKeyboard,
+    #[serde(rename = "CLOUD_WEB_MAC")]
+    CloudWebMac,
+    #[serde(rename = "CLOUD_WEB_PC")]
+    CloudWebPc,
+    #[serde(rename = "CLOUD_WEB_TOUCH")]
+    CloudWebTouch,
 }

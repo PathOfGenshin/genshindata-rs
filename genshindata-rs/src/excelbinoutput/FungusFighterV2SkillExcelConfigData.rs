@@ -9,32 +9,32 @@ pub type FungusFighterV2SkillExcelConfigData = Vec<FungusFighterV2SkillExcelConf
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusFighterV2SkillExcelConfigDatum {
-    pub homjnkcmhdh: i64,
+    pub fjaoijahepp: i64,
     #[serde(rename = "iconPath")]
     pub icon_path: String,
-    pub dbkhhciejid: String,
+    pub poalamfiheo: String,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descriptionTextMapHash")]
     pub description_text_map_hash: i64,
     #[serde(rename = "tags")]
     pub tags: Vec<i64>,
-    pub aeoghagmfio: Option<i64>,
+    pub nmgmadbfpjp: Option<i64>,
     #[serde(rename = "cost")]
     pub cost: Option<i64>,
-    pub godhebflobl: Option<Godhebflobl>,
-    pub lcgpfckdegg: Option<Lcgpfckdegg>,
-    pub kfbklkkadbk: Option<i64>,
+    pub gnebbdnjlpg: Option<Gnebbdnjlpg>,
+    pub coghcnlidlo: Option<Coghcnlidlo>,
+    pub mndlaejcalo: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Godhebflobl {
-    Auto,
-    Manual,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Lcgpfckdegg {
+pub enum Coghcnlidlo {
     Enemy,
     Partner,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Gnebbdnjlpg {
+    Auto,
+    Manual,
 }

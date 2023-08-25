@@ -11,6 +11,6 @@ pub type CustomLevelTagSortConfigData = Vec<CustomLevelTagSortConfigDatum>;
 pub struct CustomLevelTagSortConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
-    pub inbngmfedpe: String,
-    pub iaoacipcljn: String,
+    pub ppbfdjdjdcd: String,
+    pub flgdghcegac: String,
 }

@@ -11,19 +11,19 @@ pub type ActivityGachaStageExcelConfigData = Vec<ActivityGachaStageExcelConfigDa
 pub struct ActivityGachaStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub najelkcppll: i64,
-    pub jhcpohmdfhi: Option<bool>,
+    pub jkodlmdlljp: i64,
+    pub cbbanejbflf: Option<bool>,
     #[serde(rename = "type")]
     pub activity_gacha_stage_excel_config_datum_type: String,
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub dofaiihhepp: Vec<i64>,
-    pub mfafadjolne: Vec<i64>,
-    pub chfadibncjh: Vec<i64>,
+    pub ealemlbhidc: Vec<i64>,
+    pub pbpdgmkepca: Vec<i64>,
+    pub igmlknffhlk: Vec<i64>,
     #[serde(rename = "condID")]
     pub cond_id: Option<i64>,
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
-    pub iahdjagimci: Option<i64>,
-    pub ijnhnadgkji: Option<bool>,
+    pub kkkenochkmn: Option<i64>,
+    pub bkepmlihpdl: Option<bool>,
 }

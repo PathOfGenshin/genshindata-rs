@@ -9,6 +9,6 @@ pub type MichiaeRadarExcelConfigData = Vec<MichiaeRadarExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct MichiaeRadarExcelConfigDatum {
-    pub hoifkdmibhh: String,
-    pub jncmflpmefl: Vec<i64>,
+    pub ekfhgafhcli: String,
+    pub bfjglfbbpbj: Vec<i64>,
 }

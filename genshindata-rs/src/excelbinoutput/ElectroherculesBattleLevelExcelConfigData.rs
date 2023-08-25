@@ -11,21 +11,21 @@ pub type ElectroherculesBattleLevelExcelConfigData = Vec<ElectroherculesBattleLe
 pub struct ElectroherculesBattleLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub geegineglmc: Geegineglmc,
+    pub pambeijgdlo: Pambeijgdlo,
     #[serde(rename = "groupId")]
     pub group_id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub fpecffpfibi: Fpecffpfibi,
-    pub pepbnbkglld: i64,
-    pub dnehjclhfjp: i64,
+    pub amidlbbfihh: Amidlbbfihh,
+    pub ihlmjlffbbd: i64,
+    pub bfaijfbopeo: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fpecffpfibi {
+pub enum Amidlbbfihh {
     #[serde(rename = "ELECTROHERCULES_BATTLE_LEVEL_TYPE_CHALLENGE")]
     ElectroherculesBattleLevelTypeChallenge,
     #[serde(rename = "ELECTROHERCULES_BATTLE_LEVEL_TYPE_GUIDE")]
@@ -34,7 +34,7 @@ pub enum Fpecffpfibi {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Geegineglmc {
+pub enum Pambeijgdlo {
     #[serde(rename = "ELECTROHERCULES_BATTLE_DIFFICULTY_HARD")]
     ElectroherculesBattleDifficultyHard,
     #[serde(rename = "ELECTROHERCULES_BATTLE_DIFFICULTY_MASTER")]

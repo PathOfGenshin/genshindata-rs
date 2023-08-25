@@ -13,14 +13,14 @@ pub struct GcgWorldLevelExcelConfigDatum {
     pub npc_id: i64,
     pub level_id: i64,
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "JLODMIGHFFJ")]
-    pub jlodmighffj: i64,
+    #[serde(rename = "KHFPELDKIHD")]
+    pub khfpeldkihd: i64,
     pub talk_id: i64,
-    #[serde(rename = "NHAHOAMKEGK")]
-    pub nhahoamkegk: Option<i64>,
+    #[serde(rename = "JGBLCHDBDKH")]
+    pub jgblchdbdkh: Option<i64>,
     pub unlock_cond: Option<UnlockCond>,
-    #[serde(rename = "NELAFDDCBIC")]
-    pub nelafddcbic: Option<i64>,
+    #[serde(rename = "FBPFEDBPMPD")]
+    pub fbpfedbpmpd: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -9,38 +9,54 @@ pub type UgcMonsterExcelConfigData = Vec<UgcMonsterExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcMonsterExcelConfigDatum {
-    pub kblngjdlhnk: Kblngjdlhnk,
+    pub mbbcbclefbi: Mbbcbclefbi,
     #[serde(rename = "monsterId")]
     pub monster_id: i64,
-    pub cbhcodjgack: f64,
-    pub cfalidjemdc: String,
-    pub ebiadlddnmf: i64,
-    pub lngmdcleocg: i64,
-    pub melmkipbbak: i64,
-    pub lcajbpoojen: i64,
-    pub dgfdndnaoof: Vec<Dgfdndnaoof>,
-    pub oajdpdimhjl: i64,
+    pub mhogfpmoogd: f64,
+    pub cgdnonkgpeg: String,
+    pub ckccmpgodjd: i64,
+    pub fammpnodddg: i64,
+    pub amamfpjbcgc: i64,
+    pub pcgmloafoja: i64,
+    pub ojbhchnmjng: Vec<Ojbhchnmjng>,
+    pub gcniacledei: i64,
     #[serde(rename = "id")]
     pub id: i64,
-    pub ficmiagcdop: Vec<Option<serde_json::Value>>,
+    pub medchnbcfhd: Vec<Option<serde_json::Value>>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "cost")]
     pub cost: i64,
-    pub pcmlaogfgco: Pcmlaogfgco,
-    pub lnacdklielo: i64,
-    pub goahokimloh: Option<bool>,
-    pub mjaoabnbdpa: Option<f64>,
+    pub lbfegjaoofo: Lbfegjaoofo,
+    pub hakmbnjkiid: i64,
+    pub pnaojnfihgi: Option<bool>,
+    pub kilpfejjcjn: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Dgfdndnaoof {
-    pub adnglmhmdpk: i64,
+pub enum Lbfegjaoofo {
+    #[serde(rename = "MonsterModelL1W1H2")]
+    MonsterModelL1W1H2,
+    #[serde(rename = "MonsterModelL2W2H2")]
+    MonsterModelL2W2H2,
+    #[serde(rename = "MonsterModelL2W2H3")]
+    MonsterModelL2W2H3,
+    #[serde(rename = "MonsterModelL2W4H3")]
+    MonsterModelL2W4H3,
+    #[serde(rename = "MonsterModelL3W3H3")]
+    MonsterModelL3W3H3,
+    #[serde(rename = "MonsterModelL50W50H15")]
+    MonsterModelL50W50H15,
+    #[serde(rename = "MonsterModelL5W10H10")]
+    MonsterModelL5W10H10,
+    #[serde(rename = "MonsterModelL5W5H5")]
+    MonsterModelL5W5H5,
+    #[serde(rename = "MonsterModelL7W7H8")]
+    MonsterModelL7W7H8,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Kblngjdlhnk {
+pub enum Mbbcbclefbi {
     #[serde(rename = "MonsterSkill10W10H10")]
     MonsterSkill10W10H10,
     #[serde(rename = "MonsterSkillL1W1H2")]
@@ -62,23 +78,7 @@ pub enum Kblngjdlhnk {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Pcmlaogfgco {
-    #[serde(rename = "MonsterModelL1W1H2")]
-    MonsterModelL1W1H2,
-    #[serde(rename = "MonsterModelL2W2H2")]
-    MonsterModelL2W2H2,
-    #[serde(rename = "MonsterModelL2W2H3")]
-    MonsterModelL2W2H3,
-    #[serde(rename = "MonsterModelL2W4H3")]
-    MonsterModelL2W4H3,
-    #[serde(rename = "MonsterModelL3W3H3")]
-    MonsterModelL3W3H3,
-    #[serde(rename = "MonsterModelL50W50H15")]
-    MonsterModelL50W50H15,
-    #[serde(rename = "MonsterModelL5W10H10")]
-    MonsterModelL5W10H10,
-    #[serde(rename = "MonsterModelL5W5H5")]
-    MonsterModelL5W5H5,
-    #[serde(rename = "MonsterModelL7W7H8")]
-    MonsterModelL7W7H8,
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct Ojbhchnmjng {
+    pub mgdnpilabnd: i64,
 }

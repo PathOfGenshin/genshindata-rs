@@ -13,6 +13,6 @@ pub struct ActivityJourneyDifficultyExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "scoreRatio")]
     pub score_ratio: i64,
-    pub ffmejamlejf: i64,
-    pub nlcijmpjabg: i64,
+    pub hgmikjloefa: i64,
+    pub lmodjhlhcnp: i64,
 }

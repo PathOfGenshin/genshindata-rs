@@ -11,37 +11,37 @@ pub type FungusTrainingDungeonExcelConfigData = Vec<FungusTrainingDungeonExcelCo
 pub struct FungusTrainingDungeonExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub lcajbgblpfi: i64,
-    pub jffpgmhjhop: Jffpgmhjhop,
-    pub gkgnfpbafjh: i64,
-    pub ieabfhhcoee: i64,
+    pub fplmdjldemh: i64,
+    pub fnhemmpbdmh: Fnhemmpbdmh,
+    pub ldiadlienfh: i64,
+    pub eadkginnapb: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub pmhnlgaamfi: Vec<i64>,
-    pub aafmbkjonil: Vec<i64>,
-    pub niafihigobk: i64,
-    pub adepodjnipj: i64,
-    pub lgoaijhdogi: Vec<i64>,
+    pub hmgciidoajo: Vec<i64>,
+    pub bjmfjalelfh: Vec<i64>,
+    pub jkpndjipjdh: i64,
+    pub mbmjdokphnl: i64,
+    pub ngkccgdgeel: Vec<i64>,
     #[serde(rename = "baseScore")]
     pub base_score: i64,
-    pub hfhmmckdhml: Option<i64>,
-    pub lkfpeicnjii: Option<i64>,
-    pub kcbnnnhhaoa: i64,
-    pub bmhcnehhepm: Vec<i64>,
-    pub lbmhjkkgcnh: i64,
-    pub iececkbpfji: i64,
-    pub emckfjhoack: i64,
-    pub hjcnoioknlm: i64,
-    pub cmmoadlgkaa: Vec<i64>,
-    pub fbjgkamfnhm: Option<i64>,
-    pub oihememjcha: Option<i64>,
-    pub acgdcmbfceg: Option<i64>,
-    pub hmafjoimdma: Option<i64>,
+    pub idfkcogafbp: Option<i64>,
+    pub pjbleegnbof: Option<i64>,
+    pub beghbbhijap: i64,
+    pub hgibpaonamp: Vec<i64>,
+    pub kpldgpiligo: i64,
+    pub pdbjaagjfnj: i64,
+    pub focecilikcd: i64,
+    pub ggdoggmlkjj: i64,
+    pub nejdmnhbjgg: Vec<i64>,
+    pub ciokaofbeon: Option<i64>,
+    pub ibfjbaalanj: Option<i64>,
+    pub nobnmgigfkc: Option<i64>,
+    pub hijebjofbho: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jffpgmhjhop {
+pub enum Fnhemmpbdmh {
     #[serde(rename = "FUNGUS_TRAINING_DUNGEON_ATTACK")]
     FungusTrainingDungeonAttack,
     #[serde(rename = "FUNGUS_TRAINING_DUNGEON_DEFEND")]

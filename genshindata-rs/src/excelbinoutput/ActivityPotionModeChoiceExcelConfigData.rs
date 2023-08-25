@@ -9,10 +9,10 @@ pub type ActivityPotionModeChoiceExcelConfigData = Vec<ActivityPotionModeChoiceE
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityPotionModeChoiceExcelConfigDatum {
-    pub dojkfjhonhm: i64,
+    pub gkdogphcdao: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
-    pub bpabepgibmb: i64,
+    pub dcljmhklldp: i64,
 }

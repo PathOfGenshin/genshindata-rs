@@ -10,6 +10,6 @@ pub type ActivityMapTypeExcelConfigData = Vec<ActivityMapTypeExcelConfigDatum>;
 pub struct ActivityMapTypeExcelConfigDatum {
     #[serde(rename = "type")]
     pub activity_map_type_excel_config_datum_type: String,
-    #[serde(rename = "JBBMNPACDLM")]
-    pub jbbmnpacdlm: String,
+    #[serde(rename = "CPOCKPEENDC")]
+    pub cpockpeendc: String,
 }

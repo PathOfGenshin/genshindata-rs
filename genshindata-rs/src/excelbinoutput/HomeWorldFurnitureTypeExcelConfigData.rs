@@ -11,15 +11,15 @@ pub type HomeWorldFurnitureTypeExcelConfigData = Vec<HomeWorldFurnitureTypeExcel
 pub struct HomeWorldFurnitureTypeExcelConfigDatum {
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    #[serde(rename = "FECBGNMOGHK")]
-    pub fecbgnmoghk: i64,
+    #[serde(rename = "CABJOOLKNDP")]
+    pub cabjoolkndp: i64,
     pub type_name_text_map_hash: i64,
     pub type_name2_text_map_hash: i64,
     pub tab_icon: String,
     pub is_show_in_bag: Option<bool>,
     pub scene_type: Option<SceneType>,
-    #[serde(rename = "NJLKPJLJHOD")]
-    pub njlkpjljhod: Option<i64>,
+    #[serde(rename = "ONCLEELJCCF")]
+    pub oncleeljccf: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

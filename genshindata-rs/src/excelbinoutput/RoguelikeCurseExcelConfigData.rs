@@ -13,20 +13,20 @@ pub struct RoguelikeCurseExcelConfigDatum {
     pub level: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub fcfiajfcegn: i64,
+    pub mkbmenfhjpd: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nldidbdimok: Nldidbdimok,
-    pub cbdkofcelhi: Option<bool>,
+    pub pfcemconjlj: Pfcemconjlj,
+    pub kkkedpcacml: Option<bool>,
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<i64>,
-    pub bkeehbloimk: Vec<bool>,
+    pub gpajopcblje: Vec<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Nldidbdimok {
-    pub cjckhiibanb: String,
-    pub kkfijcdccik: String,
-    pub bmcopcphdjk: String,
+pub struct Pfcemconjlj {
+    pub ddnblgemfki: String,
+    pub jfkglgfglgl: String,
+    pub pmllaiokhjo: String,
 }

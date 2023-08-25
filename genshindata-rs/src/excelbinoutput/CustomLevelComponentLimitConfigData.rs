@@ -3,13 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
+use std::collections::HashMap;
 
-pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConfigDatum>;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct CustomLevelComponentLimitConfigDatum {
-    pub pidgbpknofh: i64,
-    pub bnelilenndm: i64,
-    pub gmaeecjmege: i64,
-}
+pub type CustomLevelComponentLimitConfigData = Vec<HashMap<String, i64>>;

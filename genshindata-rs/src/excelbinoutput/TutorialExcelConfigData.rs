@@ -13,9 +13,9 @@ pub struct TutorialExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "detailIdList")]
     pub detail_id_list: Vec<i64>,
-    pub nemdedikhfk: Vec<i64>,
-    pub mecjjkinbpf: Vec<i64>,
+    pub lhbepjonakf: Vec<i64>,
+    pub fpmncgfdakd: Vec<i64>,
     #[serde(rename = "pauseGame")]
     pub pause_game: Option<bool>,
-    pub foljhobcoka: Option<bool>,
+    pub lpgbdcgccel: Option<bool>,
 }

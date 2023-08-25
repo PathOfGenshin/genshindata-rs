@@ -38,8 +38,10 @@ pub struct AvatarSkillExcelConfigDatum {
     pub need_store: Option<bool>,
     pub cd_slot: Option<i64>,
     pub energy_min: Option<i64>,
-    #[serde(rename = "MLFGKCAAJKL")]
-    pub mlfgkcaajkl: Option<i64>,
+    #[serde(rename = "ALIGPOFANKF")]
+    pub aligpofankf: Option<i64>,
+    #[serde(rename = "DLJIGLNHHKP")]
+    pub dljiglnhhkp: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -77,6 +79,8 @@ pub enum GlobalValueKey {
     AvatarBlockingEnergy,
     #[serde(rename = "AVATAR_BREAKOUT_ENERGY")]
     AvatarBreakoutEnergy,
+    #[serde(rename = "AVATAR_DIVE_ENERGY")]
+    AvatarDiveEnergy,
     #[serde(rename = "AVATAR_GLIDING_ENERGY")]
     AvatarGlidingEnergy,
     #[serde(rename = "AVATAR_LANV3RACE_ENERGY")]
@@ -87,6 +91,8 @@ pub enum GlobalValueKey {
     Empty,
     #[serde(rename = "TEAM_ANTI_KILL_ENERGY")]
     TeamAntiKillEnergy,
+    #[serde(rename = "TEAM_SPRAY_GUN_ENERGY")]
+    TeamSprayGunEnergy,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

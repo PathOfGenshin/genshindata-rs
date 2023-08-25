@@ -9,11 +9,11 @@ pub type MusicGamePositionConfigData = Vec<MusicGamePositionConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct MusicGamePositionConfigDatum {
-    pub kgeoghmmidh: i64,
-    pub gjbjdgipcmh: Vec<i64>,
-    pub ajlcfeniamc: Option<i64>,
-    pub bidibkdgbga: Option<i64>,
-    pub cleijckhjae: Option<i64>,
-    pub laceifnolki: Option<i64>,
-    pub iiaddjldfjp: String,
+    pub gfpjhdfhppb: i64,
+    pub bkdmfldgcie: Vec<i64>,
+    pub nfcndolfjnb: Option<i64>,
+    pub hdljmoghicl: Option<i64>,
+    pub famneefmonm: Option<i64>,
+    pub jgfpidjdkke: Option<i64>,
+    pub hkkjkikeiec: String,
 }

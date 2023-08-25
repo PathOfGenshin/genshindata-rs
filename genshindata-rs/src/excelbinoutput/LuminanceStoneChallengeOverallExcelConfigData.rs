@@ -13,10 +13,10 @@ pub struct LuminanceStoneChallengeOverallExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub leeadapldgh: i64,
-    pub jekghkfcmco: i64,
-    pub cbeloihahig: Vec<i64>,
+    pub phehdancdme: i64,
+    pub aefdlpogmjc: i64,
+    pub gkjankigjek: Vec<i64>,
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
-    pub elokhljcele: i64,
+    pub bnelfjlcbcj: i64,
 }

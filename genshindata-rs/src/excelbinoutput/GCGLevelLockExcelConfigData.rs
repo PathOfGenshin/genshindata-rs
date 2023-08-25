@@ -13,8 +13,8 @@ pub struct GcgLevelLockExcelConfigDatum {
     pub unlock_main_quest_id: i64,
     pub unlock_desc_text_map_hash: i64,
     pub level_id: i64,
-    #[serde(rename = "EEEAIOEAEDC")]
-    pub eeeaioeaedc: i64,
-    #[serde(rename = "IJCEHGBANBF")]
-    pub ijcehgbanbf: i64,
+    #[serde(rename = "ACIMFILFKLK")]
+    pub acimfilfklk: i64,
+    #[serde(rename = "MBMGLHGMPOL")]
+    pub mbmglhgmpol: i64,
 }

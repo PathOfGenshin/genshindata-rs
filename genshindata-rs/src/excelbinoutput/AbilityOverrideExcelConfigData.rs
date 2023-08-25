@@ -13,14 +13,14 @@ pub struct AbilityOverrideExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "abilityName")]
     pub ability_name: String,
-    pub jokfboipmmi: Vec<Jokfboipmmi>,
-    pub jfmjccnedkp: Vec<String>,
-    pub gioifflhdge: Vec<f64>,
+    pub lminngcbnpd: Vec<Lminngcbnpd>,
+    pub bodbllopbic: Vec<String>,
+    pub ikpcbmlbebj: Vec<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Jokfboipmmi {
-    pub njlofdbapkh: String,
-    pub gelhpbemnme: Option<f64>,
+pub struct Lminngcbnpd {
+    pub kekfnbacfif: String,
+    pub jpagfhodbnb: Option<f64>,
 }

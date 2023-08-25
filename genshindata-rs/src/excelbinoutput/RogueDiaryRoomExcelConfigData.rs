@@ -11,12 +11,12 @@ pub type RogueDiaryRoomExcelConfigData = Vec<RogueDiaryRoomExcelConfigDatum>;
 pub struct RogueDiaryRoomExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub imlpkbkllbm: i64,
+    pub ledbiilafkm: i64,
     #[serde(rename = "challengeId")]
     pub challenge_id: Option<i64>,
-    pub ffhckdlchfd: Option<i64>,
-    pub ilkkjchbifa: Option<i64>,
-    pub nhaoonalipf: i64,
-    pub djjfejidnen: Option<i64>,
-    pub nhkebgjnchk: Option<bool>,
+    pub noljcenpnpa: Option<i64>,
+    pub lmbhaihkida: Option<i64>,
+    pub hkbeppheenc: i64,
+    pub lbneffialgc: Option<i64>,
+    pub bgojkmbjlij: Option<bool>,
 }

@@ -9,17 +9,17 @@ pub type CustomGadgetRootExcelConfigData = Vec<CustomGadgetRootExcelConfigDatum>
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomGadgetRootExcelConfigDatum {
-    pub aaboeaheemc: i64,
-    pub dpdconflhaj: String,
-    pub bobllhhgbmh: Bobllhhgbmh,
-    pub fcodcabcpof: String,
-    pub jpmdcaponii: Vec<i64>,
-    pub jnmagejdppb: Vec<i64>,
+    pub jcojnologen: i64,
+    pub nhbgplfcokc: String,
+    pub dfdpjecjjmd: Dfdpjecjjmd,
+    pub libbkofocmo: String,
+    pub kcefchlpdki: Vec<i64>,
+    pub pnibelikljo: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bobllhhgbmh {
+pub enum Dfdpjecjjmd {
     #[serde(rename = "UI_HOMEWORLD_CHANGE_MOUNTAIN_BUTTON")]
     UiHomeworldChangeMountainButton,
     #[serde(rename = "UI_HOMEWORLD_CUSTOM_BUTTON")]

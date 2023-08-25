@@ -10,12 +10,12 @@ pub type ActivitySumoDifficultyExcelConfigData = Vec<ActivitySumoDifficultyExcel
 #[serde(rename_all = "PascalCase")]
 pub struct ActivitySumoDifficultyExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NDPCJPIMPKH")]
-    pub ndpcjpimpkh: i64,
-    #[serde(rename = "BPABEPGIBMB")]
-    pub bpabepgibmb: i64,
-    #[serde(rename = "NKDPNMBBHDK")]
-    pub nkdpnmbbhdk: i64,
+    #[serde(rename = "FBDAGDPMAJG")]
+    pub fbdagdpmajg: i64,
+    #[serde(rename = "DCLJMHKLLDP")]
+    pub dcljmhklldp: i64,
+    #[serde(rename = "JLEOEHNJHLI")]
+    pub jleoehnjhli: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "difficulty")]

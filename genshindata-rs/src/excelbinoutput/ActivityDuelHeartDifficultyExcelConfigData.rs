@@ -12,8 +12,8 @@ pub struct ActivityDuelHeartDifficultyExcelConfigDatum {
     pub id: i64,
     pub level_id: i64,
     pub difficulty: Difficulty,
-    #[serde(rename = "BNHCCPGLKCO")]
-    pub bnhccpglkco: Option<i64>,
+    #[serde(rename = "AMHICGNNMKA")]
+    pub amhicgnnmka: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

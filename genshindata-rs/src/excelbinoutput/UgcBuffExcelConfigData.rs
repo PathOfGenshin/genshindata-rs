@@ -11,8 +11,8 @@ pub type UgcBuffExcelConfigData = Vec<UgcBuffExcelConfigDatum>;
 pub struct UgcBuffExcelConfigDatum {
     pub buff_id: i64,
     pub buff_name_text_map_hash: i64,
-    #[serde(rename = "BHPHILEGLNA")]
-    pub bhphileglna: i64,
+    #[serde(rename = "LMHCBKDDKHM")]
+    pub lmhcbkddkhm: i64,
     pub desc_param: Vec<String>,
     pub ability_name: String,
 }

@@ -9,11 +9,11 @@ pub type AkaFesReasoningWordExcelConfigData = Vec<AkaFesReasoningWordExcelConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AkaFesReasoningWordExcelConfigDatum {
-    pub hngjljmhhma: i64,
+    pub bbeigemamlb: i64,
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub acdoolnbjin: Option<bool>,
+    pub jhdmnifapdp: Option<bool>,
     #[serde(rename = "sortId")]
     pub sort_id: i64,
-    pub nbogaedkfkm: i64,
+    pub llalmpldcag: i64,
 }

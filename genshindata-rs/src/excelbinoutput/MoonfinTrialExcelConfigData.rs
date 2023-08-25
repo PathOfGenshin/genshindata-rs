@@ -13,13 +13,13 @@ pub struct MoonfinTrialExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub emopnigcgge: Vec<i64>,
-    pub imnhfihgpie: i64,
-    pub nidijhnnjnc: i64,
-    pub adfmnjjgell: i64,
-    pub honfakijijj: i64,
+    pub gikgnblpbcm: Vec<i64>,
+    pub anlflidgike: i64,
+    pub oofkhcmkkng: i64,
+    pub flekblkjjdk: i64,
+    pub fmakjgppjgc: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub gghdmgkdbnb: Vec<i64>,
-    pub epgekcehild: Vec<i64>,
+    pub bkiefojdjkc: Vec<i64>,
+    pub obmklajgblf: Vec<i64>,
 }

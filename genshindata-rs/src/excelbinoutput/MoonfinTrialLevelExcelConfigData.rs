@@ -11,23 +11,23 @@ pub type MoonfinTrialLevelExcelConfigData = Vec<MoonfinTrialLevelExcelConfigDatu
 pub struct MoonfinTrialLevelExcelConfigDatum {
     pub level_id: i64,
     pub open_day: i64,
-    #[serde(rename = "KEINMIIBEKA")]
-    pub keinmiibeka: Vec<i64>,
+    #[serde(rename = "IGDMJFDNPJG")]
+    pub igdmjfdnpjg: Vec<i64>,
     pub main_quest: Option<i64>,
-    #[serde(rename = "LFICALBMJJB")]
-    pub lficalbmjjb: Vec<f64>,
+    #[serde(rename = "PDJIGEJHDNA")]
+    pub pdjigejhdna: Vec<f64>,
     pub level_name_text_map_hash: i64,
     pub description_text_map_hash: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "FPECFFPFIBI")]
-    pub fpecffpfibi: Option<String>,
-    #[serde(rename = "FCJAJMFHPNK")]
-    pub fcjajmfhpnk: Option<i64>,
+    #[serde(rename = "AMIDLBBFIHH")]
+    pub amidlbbfihh: Option<String>,
+    #[serde(rename = "EMNJIBLMPPB")]
+    pub emnjiblmppb: Option<i64>,
     pub gallery_id: Option<i64>,
     pub challenge_id: Option<i64>,
-    #[serde(rename = "PCBDEHCGLGF")]
-    pub pcbdehcglgf: Option<i64>,
-    #[serde(rename = "BOLKKCJIBND")]
-    pub bolkkcjibnd: Option<i64>,
+    #[serde(rename = "CNHFONLNNEG")]
+    pub cnhfonlnneg: Option<i64>,
+    #[serde(rename = "FDDDHJJGEOD")]
+    pub fdddhjjgeod: Option<i64>,
     pub reward_preview_id: Option<i64>,
 }

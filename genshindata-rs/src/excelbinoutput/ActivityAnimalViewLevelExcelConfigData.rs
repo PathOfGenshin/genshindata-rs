@@ -13,16 +13,16 @@ pub struct ActivityAnimalViewLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub gkejagfnkdj: Vec<i64>,
-    pub annoodapmjd: i64,
-    pub hjiihckkihn: i64,
-    pub lfnanpnplam: i64,
-    pub bmjeapnpipl: i64,
+    pub eapafipgiha: Vec<i64>,
+    pub migfkpgidpm: i64,
+    pub cfelapchmek: i64,
+    pub lifflgdkekm: i64,
+    pub fdbpcnioggi: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub edbebnbgaam: i64,
+    pub ggoogblflgh: i64,
 }

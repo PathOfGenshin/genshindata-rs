@@ -15,10 +15,10 @@ pub struct ActivitySpiceExcelConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub lipbeailpdm: i64,
+    pub ijhhaafcmlf: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub gakjhlnmkmi: i64,
-    pub jmdcnpedbdf: i64,
-    pub oadaokpaama: i64,
+    pub kfcakngblhe: i64,
+    pub ieidgmmhple: i64,
+    pub hjmmkfilclg: i64,
 }

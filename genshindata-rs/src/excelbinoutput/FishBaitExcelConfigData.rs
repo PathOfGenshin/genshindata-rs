@@ -11,16 +11,16 @@ pub type FishBaitExcelConfigData = Vec<FishBaitExcelConfigDatum>;
 pub struct FishBaitExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub lminncpohia: Vec<Lminncpohia>,
-    pub mcckdobgjhh: i64,
-    pub bebihionojf: Vec<i64>,
+    pub pafmamkcfno: Vec<Pafmamkcfno>,
+    pub egceeeopdch: i64,
+    pub cdklnphaifa: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Lminncpohia {
-    pub mnmpdmoacfm: Option<i64>,
+pub struct Pafmamkcfno {
+    pub hkdfmnfmhjh: Option<i64>,
     #[serde(rename = "weight")]
     pub weight: Option<i64>,
-    pub icldlifdcka: Option<i64>,
+    pub fghnhpdohbo: Option<i64>,
 }

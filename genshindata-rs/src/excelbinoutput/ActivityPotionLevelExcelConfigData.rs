@@ -17,9 +17,9 @@ pub struct ActivityPotionLevelExcelConfigDatum {
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ppnlpjfhabo: i64,
-    pub ihcbbhckone: Vec<i64>,
-    pub ielagdkndgc: Vec<i64>,
-    pub coibfodpmdk: Vec<i64>,
-    pub cbihahneemo: Vec<i64>,
+    pub melpakibkic: i64,
+    pub anbhpedhofb: Vec<i64>,
+    pub dmbolkjlklh: Vec<i64>,
+    pub jgiejmggcbg: Vec<i64>,
+    pub ooobfblnljb: Vec<i64>,
 }

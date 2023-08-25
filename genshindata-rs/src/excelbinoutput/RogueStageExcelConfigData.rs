@@ -13,23 +13,23 @@ pub struct RogueStageExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "firstPassRewardId")]
     pub first_pass_reward_id: Option<i64>,
-    pub hlnggpfddbo: Option<i64>,
-    pub naamgmamdpf: i64,
-    pub hdafhoanben: Option<i64>,
+    pub ejpdmlbknam: Option<i64>,
+    pub nckommfglpn: i64,
+    pub hmkldcjiook: Option<i64>,
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
     #[serde(rename = "reviseLevelId")]
     pub revise_level_id: i64,
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
-    pub ggecdfkamji: i64,
-    pub mmfbceofgca: Vec<i64>,
+    pub dpndllomale: i64,
+    pub kannbnlppca: Vec<i64>,
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: Vec<Vec<i64>>,
-    pub fjiongmmcdn: Vec<Vec<i64>>,
+    pub lljnjcejbnf: Vec<Vec<i64>>,
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: i64,
-    pub dfhifgdicol: i64,
-    pub ffpldhbekil: Vec<Option<serde_json::Value>>,
-    pub ilcohjahaba: Option<bool>,
+    pub mfnnlolgpkb: i64,
+    pub hdeaomjeoeh: Vec<Option<serde_json::Value>>,
+    pub nkklhjjdgoc: Option<bool>,
 }

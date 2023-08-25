@@ -22,8 +22,8 @@ pub struct MpPlayMatchExcelConfigDatum {
     pub buff_list: Vec<i64>,
     pub push_tips_id: Option<i64>,
     pub bg_image: String,
-    #[serde(rename = "ECKIHHGEJIF")]
-    pub eckihhgejif: Option<bool>,
-    #[serde(rename = "IAEEAGFOLPM")]
-    pub iaeeagfolpm: Option<i64>,
+    #[serde(rename = "IINCMPHPJIE")]
+    pub iincmphpjie: Option<bool>,
+    #[serde(rename = "OEFPNLMCDHC")]
+    pub oefpnlmcdhc: Option<i64>,
 }

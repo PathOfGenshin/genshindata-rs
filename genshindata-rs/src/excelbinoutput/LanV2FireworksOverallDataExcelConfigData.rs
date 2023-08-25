@@ -11,17 +11,17 @@ pub type LanV2FireworksOverallDataExcelConfigData = Vec<LanV2FireworksOverallDat
 pub struct LanV2FireworksOverallDataExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub ekoniheopnh: i64,
-    pub dmbknalojhg: Vec<Dmbknalojhg>,
-    pub elfbgindodj: f64,
-    pub dedccfahojo: i64,
+    pub kchjogmehjj: i64,
+    pub nmomjeeolda: Vec<Nmomjeeolda>,
+    pub bnlhknkbplf: f64,
+    pub hgljnhjnifl: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Dmbknalojhg {
-    pub kfmdbdgnkok: Vec<i64>,
-    pub nkdpnmbbhdk: Option<i64>,
+pub struct Nmomjeeolda {
+    pub momenefcenl: Vec<i64>,
+    pub jleoehnjhli: Option<i64>,
 }

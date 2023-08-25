@@ -11,8 +11,8 @@ pub type UgcScorePatternExcelConfigData = Vec<UgcScorePatternExcelConfigDatum>;
 pub struct UgcScorePatternExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub gmafmoecmga: Vec<String>,
-    pub oaeabdmgmjb: i64,
-    pub fgnkipchonp: String,
-    pub ijkeogipiin: Vec<i64>,
+    pub bfcgomfgpmo: Vec<String>,
+    pub bjainaboeio: i64,
+    pub fbldglncklc: String,
+    pub oglmdkblnhi: Vec<i64>,
 }

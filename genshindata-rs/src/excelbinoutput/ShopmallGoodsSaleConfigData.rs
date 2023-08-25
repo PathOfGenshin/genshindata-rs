@@ -12,12 +12,12 @@ pub struct ShopmallGoodsSaleConfigDatum {
     pub id: i64,
     #[serde(rename = "goodsId")]
     pub goods_id: i64,
-    #[serde(rename = "IJEIODPCNBG")]
-    pub ijeiodpcnbg: i64,
+    #[serde(rename = "IPPMBKMPBKO")]
+    pub ippmbkmpbko: i64,
     #[serde(rename = "discountRate")]
     pub discount_rate: f64,
-    #[serde(rename = "KPPCFIJBMBJ")]
-    pub kppcfijbmbj: String,
-    #[serde(rename = "LHGBIJBHEFE")]
-    pub lhgbijbhefe: String,
+    #[serde(rename = "DJMPLOPABOD")]
+    pub djmplopabod: String,
+    #[serde(rename = "CONAMEHEINO")]
+    pub conameheino: String,
 }

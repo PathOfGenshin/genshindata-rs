@@ -9,14 +9,14 @@ pub type UgcMonsterDropExcelConfigData = Vec<UgcMonsterDropExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct UgcMonsterDropExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "LECABODONIC")]
-    pub lecabodonic: Vec<Lecabodonic>,
+    #[serde(rename = "JLBOGHDCPCH")]
+    pub jlboghdcpch: Vec<Jlboghdcpch>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Lecabodonic {
+pub struct Jlboghdcpch {
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub cjoffggdjkl: i64,
+    pub cmaighbogff: i64,
 }

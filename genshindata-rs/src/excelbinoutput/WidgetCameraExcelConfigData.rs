@@ -11,9 +11,9 @@ pub type WidgetCameraExcelConfigData = Vec<WidgetCameraExcelConfigDatum>;
 pub struct WidgetCameraExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub epnpgejomdc: i64,
-    pub okapejmddnl: String,
-    pub mbbdojiddkl: i64,
-    pub dnhjhkbjede: i64,
-    pub hdcndihiine: i64,
+    pub mjeafnemfbh: i64,
+    pub ogofghbafja: String,
+    pub pelpiokdhje: i64,
+    pub gaaeilihmom: i64,
+    pub odmcfbdobch: i64,
 }

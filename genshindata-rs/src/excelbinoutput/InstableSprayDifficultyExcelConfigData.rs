@@ -3,6 +3,15 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type InstableSprayDifficultyExcelConfigData = Vec<HashMap<String, i64>>;
+pub type InstableSprayDifficultyExcelConfigData = Vec<InstableSprayDifficultyExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct InstableSprayDifficultyExcelConfigDatum {
+    pub iielfnjlddo: i64,
+    pub eaohhngldco: i64,
+    #[serde(rename = "scoreRatio")]
+    pub score_ratio: i64,
+    pub nbpmhciffmp: i64,
+}

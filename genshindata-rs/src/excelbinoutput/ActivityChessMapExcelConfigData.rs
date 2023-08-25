@@ -9,7 +9,7 @@ pub type ActivityChessMapExcelConfigData = Vec<ActivityChessMapExcelConfigDatum>
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityChessMapExcelConfigDatum {
-    pub mainpobeakc: i64,
+    pub pahffkjfdki: i64,
     #[serde(rename = "mapNameTextMapHash")]
     pub map_name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
@@ -22,12 +22,12 @@ pub struct ActivityChessMapExcelConfigDatum {
     pub build_gear_limit: i64,
     #[serde(rename = "dungeonID")]
     pub dungeon_id: i64,
-    pub pbaajgjemne: i64,
-    pub gkgnfpbafjh: i64,
-    pub jahbfniieik: Option<bool>,
+    pub fjkpfcmadaf: i64,
+    pub ldiadlienfh: i64,
+    pub kkcijgemiim: Option<bool>,
     #[serde(rename = "show")]
     pub show: Option<bool>,
-    pub bopbclpgpii: Vec<i64>,
-    pub clfkiocchhm: Vec<i64>,
-    pub ienmbgdlmop: Option<i64>,
+    pub hjnffpiogdg: Vec<i64>,
+    pub dmanidepeph: Vec<i64>,
+    pub migklbkhebo: Option<i64>,
 }

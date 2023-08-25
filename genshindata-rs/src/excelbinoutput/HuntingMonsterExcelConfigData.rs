@@ -18,27 +18,32 @@ pub struct HuntingMonsterExcelConfigDatum {
     pub city_list: Vec<i64>,
     pub limit_time: i64,
     pub search_point_num: Option<i64>,
-    #[serde(rename = "EFPBAIPJKAM")]
-    pub efpbaipjkam: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DGOBHPMGJJK")]
+    pub dgobhpmgjjk: Vec<Dgobhpmgjjk>,
     pub clue_text_id_list: Vec<i64>,
     pub news_text_text_map_hash: i64,
     pub trait_text_text_map_hash: i64,
-    #[serde(rename = "LDMNPIOHDJN")]
-    pub ldmnpiohdjn: i64,
-    #[serde(rename = "DOFNOJKDIDN")]
-    pub dofnojkdidn: i64,
-    #[serde(rename = "OEFJHGCCAAD")]
-    pub oefjhgccaad: i64,
-    #[serde(rename = "PPAJDFLDPDG")]
-    pub ppajdfldpdg: i64,
+    #[serde(rename = "PIFILONOKAH")]
+    pub pifilonokah: i64,
+    #[serde(rename = "BFBMKCJFDLD")]
+    pub bfbmkcjfdld: i64,
+    #[serde(rename = "OFOALGHDGGN")]
+    pub ofoalghdggn: i64,
+    #[serde(rename = "LKDHACGMBAF")]
+    pub lkdhacgmbaf: i64,
     pub refresh_cond: Vec<i64>,
     pub create_pos_type: Option<String>,
-    #[serde(rename = "PONGJEDMGNL")]
-    pub pongjedmgnl: Option<bool>,
-    #[serde(rename = "CHNGNAIBPGG")]
-    pub chngnaibpgg: Option<i64>,
+    #[serde(rename = "DBFIICOKGPI")]
+    pub dbfiicokgpi: Option<bool>,
+    #[serde(rename = "LBAPLIBGPNH")]
+    pub lbaplibgpnh: Option<i64>,
     pub difficulty: Option<Difficulty>,
     pub initial_pose: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Dgobhpmgjjk {
+    pub param: Vec<Option<serde_json::Value>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

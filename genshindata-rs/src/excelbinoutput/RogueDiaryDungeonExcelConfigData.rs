@@ -11,14 +11,14 @@ pub type RogueDiaryDungeonExcelConfigData = Vec<RogueDiaryDungeonExcelConfigDatu
 pub struct RogueDiaryDungeonExcelConfigDatum {
     pub dungeon_id: i64,
     pub group_list: Vec<i64>,
-    #[serde(rename = "KLMGOKLBENC")]
-    pub klmgoklbenc: Vec<Klmgoklbenc>,
+    #[serde(rename = "LAILCPHAIKP")]
+    pub lailcphaikp: Vec<Lailcphaikp>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Klmgoklbenc {
-    pub pfagkogkaha: Option<i64>,
-    pub keignnbbnpi: Vec<i64>,
-    pub ikagadhilph: Option<i64>,
+pub struct Lailcphaikp {
+    pub aheocjaocfa: Option<i64>,
+    pub cmfidkjfkki: Vec<i64>,
+    pub plheneoflnm: Option<i64>,
 }

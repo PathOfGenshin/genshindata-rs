@@ -13,15 +13,15 @@ pub struct ShuffleBoardChequerExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
-    pub pojaipnojbo: String,
-    pub bnlfpgkjkoj: String,
+    pub innnkdpeklj: String,
+    pub ablhjgpenog: String,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lklfeakhegp: i64,
+    pub lfmncmmknnd: i64,
     #[serde(rename = "iconPath")]
     pub icon_path: String,
-    pub epfhecdcbhl: String,
-    pub gepfehjmalb: Option<bool>,
+    pub fhpkggfdbae: String,
+    pub jmlbgbgbnkl: Option<bool>,
 }

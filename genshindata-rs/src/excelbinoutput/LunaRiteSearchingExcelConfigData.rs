@@ -10,26 +10,26 @@ pub type LunaRiteSearchingExcelConfigData = Vec<LunaRiteSearchingExcelConfigDatu
 #[serde(rename_all = "PascalCase")]
 pub struct LunaRiteSearchingExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "BNJBJMDJADE")]
-    pub bnjbjmdjade: String,
+    #[serde(rename = "EOEIOLGBMGM")]
+    pub eoeiolgbmgm: String,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "OPEJBENHDNM")]
-    pub opejbenhdnm: i64,
-    #[serde(rename = "KEINMIIBEKA")]
-    pub keinmiibeka: Vec<i64>,
+    #[serde(rename = "FOGDEHMMGBB")]
+    pub fogdehmmgbb: i64,
+    #[serde(rename = "IGDMJFDNPJG")]
+    pub igdmjfdnpjg: Vec<i64>,
     #[serde(rename = "regionCenter")]
     pub region_center: Vec<i64>,
-    #[serde(rename = "JNOLHBINHMF")]
-    pub jnolhbinhmf: f64,
+    #[serde(rename = "NPLLCAEOMBO")]
+    pub npllcaeombo: f64,
     #[serde(rename = "regionRadius")]
     pub region_radius: i64,
-    #[serde(rename = "BKLMIKGJHCI")]
-    pub bklmikgjhci: i64,
-    #[serde(rename = "EPNIEDMIMMJ")]
-    pub epniedmimmj: i64,
-    #[serde(rename = "DOGEFHFIGBA")]
-    pub dogefhfigba: i64,
-    #[serde(rename = "MBLEENGMIEC")]
-    pub mbleengmiec: i64,
+    #[serde(rename = "ADGCAMBHGDP")]
+    pub adgcambhgdp: i64,
+    #[serde(rename = "DJFPHFNAGLI")]
+    pub djfphfnagli: i64,
+    #[serde(rename = "MNCDFLKACOM")]
+    pub mncdflkacom: i64,
+    #[serde(rename = "ABIHOGHAFDC")]
+    pub abihoghafdc: i64,
 }

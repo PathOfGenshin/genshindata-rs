@@ -16,39 +16,41 @@ pub struct NpcExcelConfigDatum {
     pub dye_part: String,
     pub billboard_icon: BillboardIcon,
     pub template_emotion_path: TemplateEmotionPath,
-    #[serde(rename = "INFBOAFDCPN")]
-    pub infboafdcpn: Vec<i64>,
-    #[serde(rename = "EKNGPDBAILC")]
-    pub ekngpdbailc: i64,
+    #[serde(rename = "LPNAHEMCGJJ")]
+    pub lpnahemcgjj: Vec<i64>,
+    #[serde(rename = "IOBIAPCOEFK")]
+    pub iobiapcoefk: i64,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "NOLCALJMBOB")]
-    pub nolcaljmbob: f64,
+    #[serde(rename = "KCANMNBNNED")]
+    pub kcanmnbnned: f64,
     #[serde(rename = "campID")]
     pub camp_id: i64,
     #[serde(rename = "LODPatternName")]
     pub lod_pattern_name: String,
     pub has_move: Option<bool>,
     pub has_audio: Option<bool>,
-    #[serde(rename = "GENJJIFPJFD")]
-    pub genjjifpjfd: Option<f64>,
+    #[serde(rename = "AEOBMIKIBAF")]
+    pub aeobmikibaf: Option<f64>,
     pub is_daily: Option<bool>,
     pub gacha_image_name_hash: Option<f64>,
     pub invisiable: Option<bool>,
     pub disable_show_name: Option<bool>,
     pub body_type: Option<BodyType>,
     pub first_met_id: Option<i64>,
-    #[serde(rename = "INFLFIENHDM")]
-    pub inflfienhdm: Option<bool>,
+    #[serde(rename = "MFBCDEHGMOI")]
+    pub mfbcdehgmoi: Option<bool>,
     pub billboard_type: Option<BillboardType>,
-    #[serde(rename = "IBMCBKDHADH")]
-    pub ibmcbkdhadh: Option<i64>,
+    pub json_path_hash: Option<bool>,
+    #[serde(rename = "CPDBDOJBJIL")]
+    pub cpdbdojbjil: Option<i64>,
     pub prefab_path_hash: Option<f64>,
     pub lua_data_index: Option<i64>,
-    pub json_path_hash: Option<bool>,
     pub animator_config_path_hash: Option<bool>,
-    #[serde(rename = "ILOGOFGOGEM")]
-    pub ilogofgogem: Option<Ilogofgogem>,
+    #[serde(rename = "FLFIABCCNOM")]
+    pub flfiabccnom: Option<bool>,
+    #[serde(rename = "DNLDKCEGLNE")]
+    pub dnldkceglne: Option<Dnldkceglne>,
     pub has_combat: Option<bool>,
 }
 
@@ -90,6 +92,8 @@ pub enum BillboardIcon {
     UiNpcTopIconActivityProps,
     #[serde(rename = "UI_NPCTopIcon_Activity_RobotGacha")]
     UiNpcTopIconActivityRobotGacha,
+    #[serde(rename = "UI_NPCTopIcon_Activity_ToyBattleQTE")]
+    UiNpcTopIconActivityToyBattleQte,
     #[serde(rename = "UI_NPCTopIcon_Activity_Vintage_01")]
     UiNpcTopIconActivityVintage01,
     #[serde(rename = "UI_NPCTopIcon_Activity_Vintage_03")]
@@ -199,7 +203,7 @@ pub enum BodyType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ilogofgogem {
+pub enum Dnldkceglne {
     #[serde(rename = "NPC_SPECIAL_ARANARA")]
     NpcSpecialAranara,
 }

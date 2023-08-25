@@ -11,7 +11,7 @@ pub type RogueDiaryQuestExcelConfigData = Vec<RogueDiaryQuestExcelConfigDatum>;
 pub struct RogueDiaryQuestExcelConfigDatum {
     pub activity_id: i64,
     pub quest_id_list: Vec<String>,
-    #[serde(rename = "OINHCHPNDCL")]
-    pub oinhchpndcl: Vec<i64>,
+    #[serde(rename = "FNCFPECMMCP")]
+    pub fncfpecmmcp: Vec<i64>,
     pub watcher_id_list: Vec<i64>,
 }

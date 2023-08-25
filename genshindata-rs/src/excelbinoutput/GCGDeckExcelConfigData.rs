@@ -11,19 +11,19 @@ pub type GcgDeckExcelConfigData = Vec<GcgDeckExcelConfigDatum>;
 pub struct GcgDeckExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub llkladaihgj: i64,
-    pub lflghkkgnfm: Vec<i64>,
-    pub pelmlacjnea: Vec<i64>,
-    pub fnjojlbanda: Vec<Option<serde_json::Value>>,
-    pub lakljnplhgm: Vec<Option<serde_json::Value>>,
-    pub kgcajncahgj: Vec<Kgcajncahgj>,
-    pub hneebphkoif: Vec<bool>,
-    pub kghbjiilfie: Option<bool>,
+    pub nonckoebeai: i64,
+    pub mbdjimpakld: Vec<i64>,
+    pub allldmincmc: Vec<i64>,
+    pub dnpddpmllfi: Vec<Option<serde_json::Value>>,
+    pub hkialneoian: Vec<Option<serde_json::Value>>,
+    pub alifjcclfek: Vec<Alifjcclfek>,
+    pub fnjliaggkcd: Vec<bool>,
+    pub cehmmhlidmo: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Kgcajncahgj {
+pub struct Alifjcclfek {
     pub id: Option<i64>,
-    #[serde(rename = "IBBLAOCNBNG")]
-    pub ibblaocnbng: Option<i64>,
+    #[serde(rename = "GLKMBJLELDO")]
+    pub glkmbjleldo: Option<i64>,
 }

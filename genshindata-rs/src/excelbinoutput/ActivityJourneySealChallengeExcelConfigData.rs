@@ -11,5 +11,5 @@ pub type ActivityJourneySealChallengeExcelConfigData = Vec<ActivityJourneySealCh
 pub struct ActivityJourneySealChallengeExcelConfigDatum {
     #[serde(rename = "challengeID")]
     pub challenge_id: i64,
-    pub pggijcdncam: i64,
+    pub dgjnhbgfbak: i64,
 }

@@ -11,6 +11,6 @@ pub type EffigyChallengeV2TagExcelConfigData = Vec<EffigyChallengeV2TagExcelConf
 pub struct EffigyChallengeV2TagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub edododeoena: i64,
-    pub pmgfhbfjkee: Vec<Vec<i64>>,
+    pub ehjblihonci: i64,
+    pub fcaplodidgg: Vec<Vec<i64>>,
 }

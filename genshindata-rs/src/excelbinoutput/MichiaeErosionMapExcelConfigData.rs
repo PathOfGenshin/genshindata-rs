@@ -11,7 +11,7 @@ pub type MichiaeErosionMapExcelConfigData = Vec<MichiaeErosionMapExcelConfigDatu
 pub struct MichiaeErosionMapExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub haaechhladi: Vec<i64>,
-    pub llgfpiddkba: i64,
-    pub ihnhnbehifl: i64,
+    pub jdcjocajfin: Vec<i64>,
+    pub fpgbfcfpmpm: i64,
+    pub aekkcniggnc: i64,
 }

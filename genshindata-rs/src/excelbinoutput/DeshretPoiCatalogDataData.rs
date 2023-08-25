@@ -11,14 +11,14 @@ pub type DeshretPoiCatalogDataData = Vec<DeshretPoiCatalogDataDatum>;
 pub struct DeshretPoiCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub nbohnlalddf: i64,
+    pub hlgkjdhifej: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "icon")]
     pub icon: String,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ehmkenbhlkm: i64,
-    pub lbhmebkefkd: i64,
-    pub omclengbkfo: i64,
+    pub akfopejiidm: i64,
+    pub bnhibapfkgo: i64,
+    pub acahkjdnjbl: i64,
 }

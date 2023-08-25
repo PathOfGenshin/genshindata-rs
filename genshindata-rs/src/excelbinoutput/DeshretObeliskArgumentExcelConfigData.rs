@@ -9,20 +9,20 @@ pub type DeshretObeliskArgumentExcelConfigData = Vec<DeshretObeliskArgumentExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct DeshretObeliskArgumentExcelConfigDatum {
-    pub dbcnfhgnmme: i64,
+    pub mfjocdilbgg: i64,
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub jncmflpmefl: Vec<i64>,
+    pub bfjglfbbpbj: Vec<i64>,
     #[serde(rename = "effectName")]
     pub effect_name: EffectName,
-    pub lbnogfaclcf: Vec<i64>,
-    pub dlikindkbdj: i64,
-    pub imjilbncpim: i64,
-    pub hgpbfkcbibd: Vec<i64>,
-    pub dapaofkkhae: Vec<i64>,
-    pub eifgcdcbamp: i64,
-    pub kanomkppbim: i64,
-    pub fifpmfepejg: f64,
+    pub jdhalabaomm: Vec<i64>,
+    pub najnoamokci: i64,
+    pub hfmjnclgfhp: i64,
+    pub odngianehak: Vec<i64>,
+    pub kcfepcnjnko: Vec<i64>,
+    pub pdlgefmajfl: i64,
+    pub mdajolpkmne: i64,
+    pub gemofegpnod: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

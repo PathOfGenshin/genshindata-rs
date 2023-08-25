@@ -10,7 +10,7 @@ pub type LanV2ProjectionSwitchButtonConfigData = Vec<LanV2ProjectionSwitchButton
 #[serde(rename_all = "camelCase")]
 pub struct LanV2ProjectionSwitchButtonConfigDatum {
     pub id: i64,
-    #[serde(rename = "ELJDPHMDALB")]
-    pub eljdphmdalb: String,
+    #[serde(rename = "IMCKJLDHHKJ")]
+    pub imckjldhhkj: String,
     pub icon_path: String,
 }

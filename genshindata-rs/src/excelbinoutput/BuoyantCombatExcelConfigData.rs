@@ -13,6 +13,6 @@ pub struct BuoyantCombatExcelConfigDatum {
     pub activity_id: i64,
     pub reward_preview_id: i64,
     pub push_tips_id: i64,
-    #[serde(rename = "EMOPNIGCGGE")]
-    pub emopnigcgge: Vec<i64>,
+    #[serde(rename = "GIKGNBLPBCM")]
+    pub gikgnblpbcm: Vec<i64>,
 }

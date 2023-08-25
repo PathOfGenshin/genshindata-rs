@@ -9,31 +9,31 @@ pub type CustomLevelComponentConfigData = Vec<CustomLevelComponentConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomLevelComponentConfigDatum {
-    pub bnelilenndm: i64,
+    pub ankmllnkfkf: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub jkmglpbncfb: i64,
-    pub edododeoena: i64,
-    pub iagabmblbpb: Option<f64>,
-    pub pbaemnmakoo: String,
-    pub lnacdklielo: i64,
-    pub hckcnldlemk: i64,
-    pub eapicgogalj: i64,
-    pub apdkfmioiak: Option<Apdkfmioiak>,
-    pub monlajnncnk: Option<i64>,
-    pub ennkaafmgkc: Option<bool>,
-    pub mhabpifdmcc: Option<String>,
-    pub jcdmmennfim: i64,
-    pub maidokjphfd: i64,
-    pub jplpkmilikl: i64,
-    pub ganaalggcep: Option<i64>,
-    pub ojkoofkhnlp: Option<bool>,
-    pub dhdgcgncdnp: Option<i64>,
+    pub febelgfkhfh: i64,
+    pub ehjblihonci: i64,
+    pub nfdgfgoimmc: Option<f64>,
+    pub bhckkjkaonh: String,
+    pub hakmbnjkiid: i64,
+    pub ehhmeeoncpp: i64,
+    pub pphjcghafgb: i64,
+    pub bpbggpcdked: Option<Bpbggpcdked>,
+    pub fbpjkmdpdca: Option<i64>,
+    pub njoedhkffej: Option<bool>,
+    pub kmdcgcfmldj: Option<String>,
+    pub iglmopnnjip: i64,
+    pub kpjaponfiga: i64,
+    pub okfeappljjc: i64,
+    pub jjkflagognm: Option<i64>,
+    pub iefnpknhnjf: Option<bool>,
+    pub khdnjnjdmec: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Apdkfmioiak {
+pub enum Bpbggpcdked {
     #[serde(rename = "BRICK_ROTATE_45")]
     BrickRotate45,
     #[serde(rename = "BRICK_ROTATE_90")]

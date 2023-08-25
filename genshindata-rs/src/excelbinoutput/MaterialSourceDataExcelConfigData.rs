@@ -13,10 +13,10 @@ pub struct MaterialSourceDataExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
-    pub pbjlengjpao: Vec<Pbjlengjpao>,
-    pub jnbeobpdnnd: Vec<i64>,
-    pub keeonlhhnla: Vec<Keeonlhhnla>,
-    pub ioebjlniiec: Vec<i64>,
+    pub epkihkgakjj: Vec<Epkihkgakjj>,
+    pub ankcgephfdp: Vec<i64>,
+    pub cmnnlmadppg: Vec<Cmnnlmadppg>,
+    pub kkbdmejbaeg: Vec<i64>,
     #[serde(rename = "jumpList")]
     pub jump_list: Vec<i64>,
     #[serde(rename = "textList")]
@@ -25,7 +25,7 @@ pub struct MaterialSourceDataExcelConfigDatum {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Keeonlhhnla {
+pub enum Cmnnlmadppg {
     #[serde(rename = "JUMP_INVESTIGATION")]
     JumpInvestigation,
     #[serde(rename = "JUMP_MALL")]
@@ -33,5 +33,5 @@ pub enum Keeonlhhnla {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Pbjlengjpao {
+pub struct Epkihkgakjj {
 }

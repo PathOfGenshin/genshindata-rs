@@ -10,13 +10,13 @@ pub type EffigyV4LimitingConditionExcelConfigData = Vec<EffigyV4LimitingConditio
 #[serde(rename_all = "camelCase")]
 pub struct EffigyV4LimitingConditionExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "GJCIHNLAAKJ")]
-    pub gjcihnlaakj: i64,
+    #[serde(rename = "CFCGOKJBNNF")]
+    pub cfcgokjbnnf: i64,
     pub condition_type: ConditionType,
-    #[serde(rename = "LNDAOBEJIGM")]
-    pub lndaobejigm: String,
-    #[serde(rename = "PEIBFAMCLOG")]
-    pub peibfamclog: i64,
+    #[serde(rename = "BHGKCOADCCM")]
+    pub bhgkcoadccm: String,
+    #[serde(rename = "EFFFIEJFLCM")]
+    pub efffiejflcm: i64,
     pub exclusive_id: Option<i64>,
     pub score: Option<i64>,
 }

@@ -13,7 +13,7 @@ pub struct EchoShellPreviewExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub eikpjjogmho: i64,
-    pub bbgdhmiggmk: Option<i64>,
-    pub bdamghhpjgp: Option<i64>,
+    pub nieehpldibe: i64,
+    pub epobhdkebao: Option<i64>,
+    pub ocecnfejdmi: Option<i64>,
 }

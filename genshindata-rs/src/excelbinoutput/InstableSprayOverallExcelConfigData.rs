@@ -13,8 +13,8 @@ pub struct InstableSprayOverallExcelConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub hchipnfdokg: Vec<i64>,
-    pub aglaojkglji: i64,
-    pub aomielolbba: i64,
-    pub ckdabdhadlp: i64,
+    pub foadlakbmlm: Vec<i64>,
+    pub bhbafolbnae: i64,
+    pub cbfpdedbdgh: i64,
+    pub gkbckhfmhma: i64,
 }

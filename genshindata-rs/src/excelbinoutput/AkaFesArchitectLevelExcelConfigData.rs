@@ -12,13 +12,13 @@ pub struct AkaFesArchitectLevelExcelConfigDatum {
     pub id: i64,
     pub open_day: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "IEKIOBAOGDI")]
-    pub iekiobaogdi: Vec<String>,
+    #[serde(rename = "DHGJGPHBLHF")]
+    pub dhgjgphblhf: Vec<String>,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "PCLPJACFDJI")]
-    pub pclpjacfdji: Vec<i64>,
-    #[serde(rename = "JKECMMPGDNG")]
-    pub jkecmmpgdng: Vec<String>,
+    #[serde(rename = "GKMIMBNMMDE")]
+    pub gkmimbnmmde: Vec<i64>,
+    #[serde(rename = "HANFNGHMBHM")]
+    pub hanfnghmbhm: Vec<String>,
     pub dungeon_id: i64,
     pub watcher_list: Vec<i64>,
 }

@@ -13,6 +13,6 @@ pub struct ActivityIslandPartyOverallExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub gbglcmkppnl: i64,
-    pub fmonilccgjf: i64,
+    pub ijkglbhpjbb: i64,
+    pub bkiafphehdc: i64,
 }

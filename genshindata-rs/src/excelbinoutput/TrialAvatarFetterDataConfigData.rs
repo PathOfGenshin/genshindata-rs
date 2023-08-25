@@ -11,13 +11,13 @@ pub type TrialAvatarFetterDataConfigData = Vec<TrialAvatarFetterDataConfigDatum>
 pub struct TrialAvatarFetterDataConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub gcnlmojjfkb: i64,
-    pub jchnhphnfpp: Jchnhphnfpp,
+    pub bgfgppiebgd: i64,
+    pub pdjmbdddhhf: Pdjmbdddhhf,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Jchnhphnfpp {
+pub struct Pdjmbdddhhf {
     pub param_list: Vec<i64>,
     pub cond_type: Option<String>,
 }

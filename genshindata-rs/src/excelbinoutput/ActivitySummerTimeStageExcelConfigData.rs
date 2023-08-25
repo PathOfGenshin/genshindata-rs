@@ -18,18 +18,18 @@ pub struct ActivitySummerTimeStageExcelConfigDatum {
     pub watcher_id_list: Vec<i64>,
     #[serde(rename = "mainQuest")]
     pub main_quest: i64,
-    #[serde(rename = "PMCONGLKBCP")]
-    pub pmconglkbcp: Option<i64>,
-    #[serde(rename = "NFANGANNMDL")]
-    pub nfangannmdl: Option<i64>,
-    #[serde(rename = "EEEAIOEAEDC")]
-    pub eeeaioeaedc: i64,
-    #[serde(rename = "IJCEHGBANBF")]
-    pub ijcehgbanbf: i64,
-    #[serde(rename = "IHHHPKPCEGL")]
-    pub ihhhpkpcegl: i64,
-    #[serde(rename = "HPFGKPNELFO")]
-    pub hpfgkpnelfo: i64,
+    #[serde(rename = "JJIHEHNPDMI")]
+    pub jjihehnpdmi: Option<i64>,
+    #[serde(rename = "FHHIJMMBKHP")]
+    pub fhhijmmbkhp: Option<i64>,
+    #[serde(rename = "ACIMFILFKLK")]
+    pub acimfilfklk: i64,
+    #[serde(rename = "MBMGLHGMPOL")]
+    pub mbmglhgmpol: i64,
+    #[serde(rename = "GLKGNELDFPA")]
+    pub glkgneldfpa: i64,
+    #[serde(rename = "HKGHMKOFJIG")]
+    pub hkghmkofjig: i64,
     #[serde(rename = "preQuest")]
     pub pre_quest: Option<i64>,
 }

@@ -26,8 +26,8 @@ pub struct FetterInfoExcelConfigDatum {
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "PPPLDLPKPFA")]
-    pub pppldlpkpfa: Vec<Pppldlpkpfa>,
+    #[serde(rename = "DLPFLPGMMNA")]
+    pub dlpflpgmmna: Vec<Dlpflpgmmna>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -35,6 +35,8 @@ pub struct FetterInfoExcelConfigDatum {
 pub enum AvatarAssocType {
     #[serde(rename = "ASSOC_TYPE_FATUI")]
     AssocTypeFatui,
+    #[serde(rename = "ASSOC_TYPE_FONTAINE")]
+    AssocTypeFontaine,
     #[serde(rename = "ASSOC_TYPE_INAZUMA")]
     AssocTypeInazuma,
     #[serde(rename = "ASSOC_TYPE_LIYUE")]
@@ -51,7 +53,7 @@ pub enum AvatarAssocType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Pppldlpkpfa {
+pub struct Dlpflpgmmna {
     pub cond_type: CondType,
     pub param_list: Vec<i64>,
 }

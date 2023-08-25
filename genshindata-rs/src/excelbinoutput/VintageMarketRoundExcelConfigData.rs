@@ -9,16 +9,16 @@ pub type VintageMarketRoundExcelConfigData = Vec<VintageMarketRoundExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct VintageMarketRoundExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "CIBHCCCEIOD")]
-    pub cibhccceiod: Vec<Cibhccceiod>,
+    #[serde(rename = "LMGCFOBCFAE")]
+    pub lmgcfobcfae: Vec<Lmgcfobcfae>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Cibhccceiod {
-    pub annbodfikbh: Vec<f64>,
-    pub ljndfnnifdk: i64,
-    pub gjkfcchhbec: f64,
-    pub mofcogodifl: Option<i64>,
-    pub bbljlfkmlod: f64,
+pub struct Lmgcfobcfae {
+    pub imodcoekpmj: Vec<f64>,
+    pub mhohkcbjpkb: i64,
+    pub alackimgbhb: f64,
+    pub hljkfceggpf: Option<i64>,
+    pub gjeegnnhale: f64,
 }

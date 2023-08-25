@@ -15,12 +15,12 @@ pub struct AvatarExcelConfigDatum {
     pub side_icon_name: String,
     pub quality_type: QualityType,
     pub charge_efficiency: i64,
-    #[serde(rename = "LBODGAEPDMJ")]
-    pub lbodgaepdmj: f64,
+    #[serde(rename = "CDNKLDCGHFM")]
+    pub cdnkldcghfm: f64,
     pub initial_weapon: i64,
     pub weapon_type: WeaponType,
-    #[serde(rename = "NIPILHLOMDG")]
-    pub nipilhlomdg: f64,
+    #[serde(rename = "GFJFGJPCNAI")]
+    pub gfjfgjpcnai: f64,
     pub image_name: String,
     pub gacha_card_name_hash: Option<f64>,
     pub manekin_path_hash: Option<f64>,
@@ -44,13 +44,13 @@ pub struct AvatarExcelConfigDatum {
     pub critical: f64,
     pub critical_hurt: f64,
     pub prop_grow_curves: Vec<PropGrowCurve>,
-    #[serde(rename = "BCAGNCKHFOF")]
-    pub bcagnckhfof: f64,
+    #[serde(rename = "FAOCLDIEFHD")]
+    pub faocldiefhd: f64,
     pub prefab_path_hash: f64,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "NOLCALJMBOB")]
-    pub nolcaljmbob: f64,
+    #[serde(rename = "KCANMNBNNED")]
+    pub kcanmnbnned: f64,
     pub prefab_path_remote_hash: f64,
     pub controller_path_hash: f64,
     pub controller_path_remote_hash: f64,

@@ -9,8 +9,8 @@ pub type ActivityPotionDifficultyExcelConfigData = Vec<ActivityPotionDifficultyE
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityPotionDifficultyExcelConfigDatum {
-    pub ojjhcjjfiag: i64,
+    pub iielfnjlddo: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ppllacdegbf: Option<i64>,
+    pub fbigbgjekmd: Option<i64>,
 }

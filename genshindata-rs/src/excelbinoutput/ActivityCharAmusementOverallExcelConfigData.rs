@@ -11,9 +11,9 @@ pub type ActivityCharAmusementOverallExcelConfigData = Vec<ActivityCharAmusement
 pub struct ActivityCharAmusementOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub kecppblmnph: i64,
+    pub kellikadlgi: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub mkfjcodjmfi: i64,
-    pub cofgahkamcb: Vec<i64>,
+    pub mmalandcolp: i64,
+    pub fhhmkckgekj: Vec<i64>,
 }

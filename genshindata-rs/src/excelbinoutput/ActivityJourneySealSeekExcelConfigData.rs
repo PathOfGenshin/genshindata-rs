@@ -9,13 +9,13 @@ pub type ActivityJourneySealSeekExcelConfigData = Vec<ActivityJourneySealSeekExc
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ActivityJourneySealSeekExcelConfigDatum {
-    #[serde(rename = "BNGMFMGMPKD")]
-    pub bngmfmgmpkd: i64,
+    #[serde(rename = "OGPKPOGPFLO")]
+    pub ogpkpogpflo: i64,
     #[serde(rename = "groupID")]
     pub group_id: i64,
     pub pos: Vec<f64>,
     pub radius: i64,
     pub icon_name: String,
-    #[serde(rename = "DLMHILJCCEG")]
-    pub dlmhiljcceg: i64,
+    #[serde(rename = "JOEJFCCONPM")]
+    pub joejfcconpm: i64,
 }

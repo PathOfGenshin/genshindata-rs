@@ -18,6 +18,10 @@ pub struct ReminderExcelConfigDatum {
     pub has_audio: Option<bool>,
     pub delay: Option<f64>,
     pub style: Option<Style>,
+    #[serde(rename = "MMEGJDOBIGN")]
+    pub mmegjdobign: Option<i64>,
+    #[serde(rename = "HDHGPHAMBNN")]
+    pub hdhgphambnn: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -7,26 +7,27 @@ use serde::{Serialize, Deserialize};
 pub type WidgetUseableExcelConfigData = Vec<WidgetUseableExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct WidgetUseableExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
+    #[serde(rename = "canUseInOtherWorld")]
     pub can_use_in_other_world: Option<bool>,
-    #[serde(rename = "ECMPLLDAMJI")]
-    pub ecmplldamji: Vec<i64>,
-    #[serde(rename = "DCHNLEHGMMI")]
-    pub dchnlehgmmi: Option<bool>,
-    pub forbidden_dungeon_list: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "CJJKNOIELFL")]
-    pub cjjknoielfl: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "EPKFLBBGLBG")]
-    pub epkflbbglbg: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "DECBDMLCAKK")]
-    pub decbdmlcakk: Option<bool>,
+    pub ogcedffbpib: Vec<i64>,
+    pub kbonjjajpbk: Option<bool>,
+    #[serde(rename = "forbiddenDungeonList")]
+    pub forbidden_dungeon_list: Vec<i64>,
+    pub pdbndpjecoe: Vec<i64>,
+    pub neegnobdfpi: Vec<i64>,
+    pub dklcinbacdd: Option<bool>,
+    #[serde(rename = "canUseInDungeon")]
     pub can_use_in_dungeon: Option<bool>,
+    #[serde(rename = "canUseInHomeworld")]
     pub can_use_in_homeworld: Option<bool>,
+    pub jphhgnaiimh: Option<bool>,
+    #[serde(rename = "canUseInRoom")]
     pub can_use_in_room: Option<bool>,
+    #[serde(rename = "canUseInLimitRegion")]
     pub can_use_in_limit_region: Option<bool>,
-    #[serde(rename = "AGIHOBIIGKH")]
-    pub agihobiigkh: Option<String>,
+    pub nlgfkdihlen: Option<String>,
 }

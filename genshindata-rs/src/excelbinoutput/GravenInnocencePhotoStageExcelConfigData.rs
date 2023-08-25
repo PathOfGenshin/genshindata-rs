@@ -15,17 +15,17 @@ pub struct GravenInnocencePhotoStageExcelConfigDatum {
     pub open_day: i64,
     #[serde(rename = "icon")]
     pub icon: String,
-    pub mdibpleecal: i64,
+    pub kdobmmdadph: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ahfbahdhnpk: i64,
+    pub gebnlkehndo: i64,
     #[serde(rename = "infoDescTextMapHash")]
     pub info_desc_text_map_hash: i64,
-    pub ngpnagdjdkn: Vec<i64>,
-    pub peapclgpnkk: i64,
+    pub kggkimjkjbf: Vec<i64>,
+    pub feaaomhahno: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub nhcbahpmpol: i64,
-    pub lmhpdiomgel: Vec<i64>,
-    pub ohcodfhlbka: Option<i64>,
+    pub lgcnchlpokp: i64,
+    pub dpcoghopokg: Vec<i64>,
+    pub gifimclakje: Option<i64>,
 }

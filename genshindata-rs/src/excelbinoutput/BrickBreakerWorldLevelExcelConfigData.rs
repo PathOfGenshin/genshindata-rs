@@ -11,12 +11,12 @@ pub type BrickBreakerWorldLevelExcelConfigData = Vec<BrickBreakerWorldLevelExcel
 pub struct BrickBreakerWorldLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub hfghoggplaf: Option<i64>,
+    pub dnglkbnfijn: Option<i64>,
     #[serde(rename = "draftId")]
     pub draft_id: Option<i64>,
     #[serde(rename = "limitTime")]
     pub limit_time: i64,
-    pub obhfnppkbfc: i64,
+    pub oaeogmbcffh: i64,
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
     #[serde(rename = "groupId")]
@@ -29,20 +29,20 @@ pub struct BrickBreakerWorldLevelExcelConfigDatum {
     pub gallery_id: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub gnccbmdajeh: i64,
+    pub ccbidoojhac: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub dojcogajmoe: f64,
-    pub ladmpjogfbn: Vec<i64>,
-    pub hhgobabckgc: Vec<Hhgobabckgc>,
-    pub eopjmaidfgm: Vec<i64>,
-    pub bebgejeapie: Option<bool>,
-    pub hecdjdodobc: Option<i64>,
-    pub babpggfffop: Option<bool>,
+    pub fcofegcoofh: f64,
+    pub dphepgjdfkn: Vec<i64>,
+    pub neaobdejcfm: Vec<Neaobdejcfm>,
+    pub ahlikhafhje: Vec<i64>,
+    pub bfmmhnanibe: Option<bool>,
+    pub hljfdgfigmg: Option<i64>,
+    pub fojgiagmgcc: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hhgobabckgc {
+pub enum Neaobdejcfm {
     Fire,
     None,
     Water,

@@ -14,6 +14,6 @@ pub struct DungeonLevelEntityConfigDatum {
     pub show: Option<bool>,
     pub level_config_name: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "FNINDNLGGCJ")]
-    pub fnindnlggcj: i64,
+    #[serde(rename = "MOOJOOMKILO")]
+    pub moojoomkilo: i64,
 }

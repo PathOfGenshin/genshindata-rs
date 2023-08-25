@@ -12,5 +12,5 @@ pub struct IrodoriPoetryLineExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "contentTextMapHash")]
     pub content_text_map_hash: i64,
-    pub pnaiknnkdco: Option<i64>,
+    pub npagcfkcodm: Option<i64>,
 }

@@ -11,10 +11,10 @@ pub type WinterCampSnowmanDetailExcelConfigData = Vec<WinterCampSnowmanDetailExc
 pub struct WinterCampSnowmanDetailExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub dilgekoeplm: i64,
-    pub iokidfibfpg: i64,
-    pub fhagjgldmfg: i64,
-    pub cakjjcodidh: i64,
+    pub iphoglbffnd: i64,
+    pub cfpggpldpif: i64,
+    pub mmhomcfkmki: i64,
+    pub oijofolgjlp: i64,
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
 }

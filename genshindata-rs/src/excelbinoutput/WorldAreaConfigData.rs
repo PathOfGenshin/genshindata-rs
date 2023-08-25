@@ -23,20 +23,24 @@ pub struct WorldAreaConfigDatum {
     pub element_type: Option<ElementType>,
     #[serde(rename = "showTips")]
     pub show_tips: Option<bool>,
-    #[serde(rename = "AFJBGJMOEJM")]
-    pub afjbgjmoejm: Vec<i64>,
-    #[serde(rename = "OPBKHJAJDFE")]
-    pub opbkhjajdfe: Vec<f64>,
-    #[serde(rename = "FNBNGCDONIC")]
-    pub fnbngcdonic: Vec<f64>,
+    #[serde(rename = "BCHDNPOFNNB")]
+    pub bchdnpofnnb: Vec<i64>,
+    #[serde(rename = "JANDOCEJMFG")]
+    pub jandocejmfg: Vec<f64>,
+    #[serde(rename = "KMGPEHBILAP")]
+    pub kmgpehbilap: Vec<f64>,
     #[serde(rename = "minimapScale")]
     pub minimap_scale: i64,
+    #[serde(rename = "NDLKELOMMOF")]
+    pub ndlkelommof: Ndlkelommof,
+    pub grey_level: GreyLevel,
     #[serde(rename = "AreaID2")]
     pub area_id2: Option<i64>,
     #[serde(rename = "terrainType")]
     pub terrain_type: Option<TerrainType>,
     pub area_default_lock: Option<bool>,
-    pub grey_level: Option<bool>,
+    #[serde(rename = "FOHIFHLKFCL")]
+    pub fohifhlkfcl: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -53,7 +57,24 @@ pub enum ElementType {
     Electric,
     Grass,
     Rock,
+    Water,
     Wind,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum GreyLevel {
+    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Team")]
+    DynamicAbilityFondanieAreaAbilityTeam,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Ndlkelommof {
+    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Avatar")]
+    DynamicAbilityFondanieAreaAbilityAvatar,
+    #[serde(rename = "")]
+    Empty,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

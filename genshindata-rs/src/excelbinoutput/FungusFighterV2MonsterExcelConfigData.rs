@@ -10,20 +10,20 @@ pub type FungusFighterV2MonsterExcelConfigData = Vec<FungusFighterV2MonsterExcel
 #[serde(rename_all = "camelCase")]
 pub struct FungusFighterV2MonsterExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "DIKBJNCBKLF")]
-    pub dikbjncbklf: i64,
+    #[serde(rename = "JOMJCDEIGBB")]
+    pub jomjcdeigbb: i64,
     pub unlock_level: i64,
     pub monster_id: i64,
     pub config_id: i64,
     pub icon_path: String,
     pub name_text_map_hash: i64,
     pub description_text_map_hash: i64,
-    #[serde(rename = "CKNOGGLEBLE")]
-    pub cknoggleble: i64,
-    #[serde(rename = "FDCNFDJMFPM")]
-    pub fdcnfdjmfpm: String,
-    #[serde(rename = "OHHIKCFJAOC")]
-    pub ohhikcfjaoc: i64,
-    #[serde(rename = "KDGLIIAJLAB")]
-    pub kdgliiajlab: Vec<i64>,
+    #[serde(rename = "FNMAOBGLNBN")]
+    pub fnmaobglnbn: i64,
+    #[serde(rename = "MOHDHDIIKHP")]
+    pub mohdhdiikhp: String,
+    #[serde(rename = "KIIFAMPNAKH")]
+    pub kiifampnakh: i64,
+    #[serde(rename = "JKOEEMLGKIN")]
+    pub jkoeemlgkin: Vec<i64>,
 }

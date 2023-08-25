@@ -14,13 +14,13 @@ pub struct LunaRiteQuestExcelConfigDatum {
     pub quest_id: i64,
     pub open_day: i64,
     pub chapter_icon: String,
-    #[serde(rename = "HDHDAMLEDBM")]
-    pub hdhdamledbm: i64,
+    #[serde(rename = "GEKPAFLOEBG")]
+    pub gekpafloebg: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub pre_quest_id: Option<i64>,
-    #[serde(rename = "LJEGIECPPAM")]
-    pub ljegiecppam: Option<i64>,
-    #[serde(rename = "BMBFLKCJBFI")]
-    pub bmbflkcjbfi: Option<String>,
+    #[serde(rename = "AGDKGDPJKKB")]
+    pub agdkgdpjkkb: Option<i64>,
+    #[serde(rename = "AJILIDLNLDL")]
+    pub ajilidlnldl: Option<String>,
 }

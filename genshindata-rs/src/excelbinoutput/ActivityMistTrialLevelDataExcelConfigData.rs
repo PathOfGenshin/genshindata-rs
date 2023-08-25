@@ -16,29 +16,28 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     pub level_title_text_map_hash: i64,
     pub level_desc_text_map_hash: i64,
     pub monster_preview_id_list: Vec<i64>,
-    #[serde(rename = "BGMBEFCOIMD")]
-    pub bgmbefcoimd: Vec<i64>,
+    #[serde(rename = "DMBHIHNKJDJ")]
+    pub dmbhihnkjdj: Vec<i64>,
     pub open_day: i64,
     pub challenge_mission_watcher_list: Vec<i64>,
     pub statistics_id_list: Vec<i64>,
-    #[serde(rename = "FKEHFMFENIE")]
-    pub fkehfmfenie: f64,
+    #[serde(rename = "HGJLGBPIJFB")]
+    pub hgjlgbpijfb: f64,
     pub dungeon_id: i64,
     pub dungeon_factor_id_list: Vec<i64>,
     pub fail_tips: Vec<String>,
-    #[serde(rename = "MCIALNEMCAI")]
-    pub mcialnemcai: Vec<i64>,
-    #[serde(rename = "CMCCKDCCMBH")]
-    pub cmcckdccmbh: Cmcckdccmbh,
-    #[serde(rename = "HONJOJCBKMM")]
-    pub honjojcbkmm: Vec<i64>,
-    #[serde(rename = "KLKEEIKJEGH")]
-    pub klkeeikjegh: Vec<i64>,
+    pub cost_item_num: Vec<i64>,
+    #[serde(rename = "CHHPAMIBLAM")]
+    pub chhpamiblam: Chhpamiblam,
+    #[serde(rename = "BDDDJDNPPNL")]
+    pub bdddjdnppnl: Vec<i64>,
+    #[serde(rename = "ALFDOMFPPLP")]
+    pub alfdomfpplp: Vec<i64>,
     pub bg_icon_hash: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Cmcckdccmbh {
+pub enum Chhpamiblam {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "SGV_ABILITY_Mist_Level")]

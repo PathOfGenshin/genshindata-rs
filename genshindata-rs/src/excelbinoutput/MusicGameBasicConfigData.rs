@@ -18,30 +18,30 @@ pub struct MusicGameBasicConfigDatum {
     pub music_level: i64,
     #[serde(rename = "jsonPath")]
     pub json_path: String,
-    pub nbepaeephke: i64,
+    pub gmonlppajmc: i64,
     #[serde(rename = "successLatePoint")]
     pub success_late_point: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
     #[serde(rename = "scoreOneKey")]
     pub score_one_key: i64,
-    pub ljoebdghikk: i64,
-    pub flgdcfggabn: i64,
-    pub gfbnhabokob: Option<i64>,
-    pub fjllpblhfhb: HashMap<String, f64>,
+    pub enefjlnmmcd: i64,
+    pub mghkbemkdio: i64,
+    pub fejkajljikd: Option<i64>,
+    pub glbmnfbajfd: HashMap<String, f64>,
     #[serde(rename = "comboConfig")]
     pub combo_config: Vec<i64>,
     #[serde(rename = "scaleRange")]
     pub scale_range: i64,
-    pub cpfjfcamoch: String,
-    pub jhkcfekiipm: String,
-    pub jaicgoohmnc: i64,
-    pub llmmelhmkfa: Vec<Elfmhfkhiel>,
+    pub lihldodcmai: String,
+    pub lkjnkcnlacg: String,
+    pub lnoccpjphhc: i64,
+    pub keloiaomelb: Vec<Keagepdfkck>,
     #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
-    pub elfmhfkhiel: Vec<Elfmhfkhiel>,
+    pub keagepdfkck: Vec<Keagepdfkck>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Elfmhfkhiel {
+pub struct Keagepdfkck {
 }

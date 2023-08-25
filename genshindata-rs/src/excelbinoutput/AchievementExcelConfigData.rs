@@ -42,6 +42,8 @@ pub enum Icon {
     UiAchievementIconA001Part2,
     #[serde(rename = "UI_AchievementIcon_A001_Part3")]
     UiAchievementIconA001Part3,
+    #[serde(rename = "UI_AchievementIcon_A001_Part4")]
+    UiAchievementIconA001Part4,
     #[serde(rename = "UI_AchievementIcon_A003")]
     UiAchievementIconA003,
     #[serde(rename = "UI_AchievementIcon_A004")]
@@ -56,6 +58,8 @@ pub enum Icon {
     UiAchievementIconA012,
     #[serde(rename = "UI_AchievementIcon_A013")]
     UiAchievementIconA013,
+    #[serde(rename = "UI_AchievementIcon_A016")]
+    UiAchievementIconA016,
     #[serde(rename = "UI_AchievementIcon_B002")]
     UiAchievementIconB002,
     #[serde(rename = "UI_AchievementIcon_B005")]

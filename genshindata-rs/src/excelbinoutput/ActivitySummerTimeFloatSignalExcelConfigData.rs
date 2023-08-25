@@ -14,12 +14,12 @@ pub struct ActivitySummerTimeFloatSignalExcelConfigDatum {
     pub group_id: i64,
     #[serde(rename = "configId")]
     pub config_id: i64,
-    #[serde(rename = "EEHPJACBKFE")]
-    pub eehpjacbkfe: Option<i64>,
-    #[serde(rename = "KOHDDANKMHL")]
-    pub kohddankmhl: i64,
-    #[serde(rename = "OKFKOMEADBB")]
-    pub okfkomeadbb: i64,
-    #[serde(rename = "CLLDAHJMDED")]
-    pub clldahjmded: Option<bool>,
+    #[serde(rename = "AEGJCDFNMBE")]
+    pub aegjcdfnmbe: Option<i64>,
+    #[serde(rename = "HBKJIBALHOO")]
+    pub hbkjibalhoo: i64,
+    #[serde(rename = "HHDDDCCNGJJ")]
+    pub hhdddccngjj: i64,
+    #[serde(rename = "DDCLAEIOEIP")]
+    pub ddclaeioeip: Option<bool>,
 }

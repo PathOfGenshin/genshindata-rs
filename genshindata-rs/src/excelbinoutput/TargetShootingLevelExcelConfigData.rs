@@ -11,20 +11,20 @@ pub type TargetShootingLevelExcelConfigData = Vec<TargetShootingLevelExcelConfig
 pub struct TargetShootingLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub mabbeekjgkk: i64,
-    pub ncelmebligc: Vec<i64>,
+    pub ecchphppcff: i64,
+    pub cmifgoippki: Vec<i64>,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub kfmkjhokeok: i64,
-    pub bcdmbjpclfj: i64,
-    pub jhcfjpompfo: i64,
-    pub ijmmmhbkoem: i64,
-    pub mafdhikiccp: Vec<i64>,
-    pub ljbccdngnbj: Vec<i64>,
-    pub dfbbokpnmbg: i64,
-    pub eaadlhfphpb: i64,
+    pub jhphhepbeid: i64,
+    pub hphellacjfb: i64,
+    pub kdikiiimbfg: i64,
+    pub idkniniiolk: i64,
+    pub kdbeajomfji: Vec<i64>,
+    pub hcbnbmfmgdk: Vec<i64>,
+    pub kcgpcidbife: i64,
+    pub ekkehohlhpd: i64,
     #[serde(rename = "draftId")]
     pub draft_id: i64,
     #[serde(rename = "titleTextMapHash")]
@@ -33,12 +33,12 @@ pub struct TargetShootingLevelExcelConfigDatum {
     pub desc_text_map_hash: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub fmbidcegibl: i64,
+    pub glkjkbgaokh: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
-    pub pbmcgoknkae: Option<i64>,
-    pub ehkfcobkmca: i64,
-    pub npgiagghigl: i64,
-    pub mmggpbnkcke: i64,
-    pub aaeehdiemja: Option<i64>,
+    pub cmefalnbdpe: Option<i64>,
+    pub ajabgjhplbo: i64,
+    pub lcjpgaelhho: i64,
+    pub njgnpaldinl: i64,
+    pub memoldoodgk: Option<i64>,
 }

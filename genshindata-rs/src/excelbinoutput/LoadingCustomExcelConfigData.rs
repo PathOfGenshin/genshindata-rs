@@ -14,5 +14,5 @@ pub struct LoadingCustomExcelConfigDatum {
     pub dungeon_id: Option<i64>,
     #[serde(rename = "perfabPath")]
     pub perfab_path: String,
-    pub immdcocfmee: Option<i64>,
+    pub nklbljkcobc: Option<i64>,
 }

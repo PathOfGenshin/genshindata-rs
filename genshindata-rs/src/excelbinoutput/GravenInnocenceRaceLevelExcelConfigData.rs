@@ -15,14 +15,14 @@ pub struct GravenInnocenceRaceLevelExcelConfigDatum {
     pub open_day: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub pggijcdncam: i64,
-    pub giecdioimeb: Vec<i64>,
-    pub gmafmoecmga: Vec<i64>,
+    pub dgjnhbgfbak: i64,
+    pub ccldficfmeb: Vec<i64>,
+    pub bfcgomfgpmo: Vec<i64>,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub oknmnapnkpg: i64,
-    pub dkkoefhekoi: i64,
-    pub ckldgfifmkg: i64,
+    pub epccdifjiil: i64,
+    pub pabmlaffdal: i64,
+    pub beahefgkljl: i64,
 }

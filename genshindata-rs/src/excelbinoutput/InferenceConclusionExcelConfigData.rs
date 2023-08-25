@@ -9,8 +9,8 @@ pub type InferenceConclusionExcelConfigData = Vec<InferenceConclusionExcelConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct InferenceConclusionExcelConfigDatum {
-    pub cafdkffbejd: i64,
-    pub hmkkobkoihn: Vec<i64>,
-    pub lpdipalfhee: i64,
-    pub biincnocdca: Option<i64>,
+    pub lopnjkccnoa: i64,
+    pub kgdmhgboppi: Vec<i64>,
+    pub kmaagdelefj: i64,
+    pub alfimgloenn: Option<i64>,
 }

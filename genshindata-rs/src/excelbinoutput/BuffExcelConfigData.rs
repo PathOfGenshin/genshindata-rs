@@ -18,8 +18,8 @@ pub struct BuffExcelConfigDatum {
     pub server_buff_type: ServerBuffType,
     pub ability_name: String,
     pub modifier_name: String,
-    #[serde(rename = "LDGOIPOCLCA")]
-    pub ldgoipoclca: Option<bool>,
+    #[serde(rename = "CDKMINGFENN")]
+    pub cdkmingfenn: Option<bool>,
     pub stack_type: Option<StackType>,
 }
 

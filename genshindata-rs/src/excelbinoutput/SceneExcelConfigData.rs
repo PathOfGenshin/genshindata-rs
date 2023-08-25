@@ -23,25 +23,34 @@ pub struct SceneExcelConfigDatum {
     pub specified_avatar_list: Vec<i64>,
     #[serde(rename = "comment")]
     pub comment: Comment,
-    pub ianmjnhkncn: Vec<f64>,
-    pub ddaamcmbnlp: Vec<i64>,
+    pub pgpdapngiap: Vec<f64>,
+    pub cjfdbmebjnp: Vec<i64>,
     #[serde(rename = "maxSpecifiedAvatarNum")]
     pub max_specified_avatar_num: Option<i64>,
-    pub hlmdbmgbddm: Option<bool>,
+    pub pecjaahodpe: Option<bool>,
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: Option<i64>,
-    pub ckaoagpokeb: Option<String>,
-    pub fkkpgonlgbn: Option<bool>,
-    pub kcbmhpdondj: Option<String>,
-    pub pilpghopccd: Option<i64>,
-    pub alldodibogn: Option<bool>,
-    pub afnlkmacacb: Option<bool>,
-    pub oliblndllkd: Option<f64>,
+    pub ifdbdjbenik: Option<String>,
+    pub bplmfaobaha: Option<bool>,
+    pub epomnhdhgob: Option<String>,
+    pub lnlpbolhnba: Option<i64>,
+    pub pchpdgcefkh: Option<bool>,
+    pub ljlllmdjegg: Option<bool>,
+    pub hfilninkmfj: Option<f64>,
     #[serde(rename = "entityAppearSorted")]
     pub entity_appear_sorted: Option<i64>,
-    pub nbgjkagjcmm: Option<Nbgjkagjcmm>,
-    pub mendncpcame: Option<i64>,
-    pub akcnafpafhf: Option<String>,
+    pub bdbdlhcnfpc: Option<Bdbdlhcnfpc>,
+    pub aonfgkacnhg: Option<i64>,
+    pub hcnbpgknilm: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Bdbdlhcnfpc {
+    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
+    SceneSubTypePersistentDungeon,
+    #[serde(rename = "SCENE_SUB_TYPE_UGC_PLAY")]
+    SceneSubTypeUgcPlay,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -50,15 +59,6 @@ pub enum Comment {
     Comment,
     #[serde(rename = "测试")]
     Empty,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Nbgjkagjcmm {
-    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
-    SceneSubTypePersistentDungeon,
-    #[serde(rename = "SCENE_SUB_TYPE_UGC_PLAY")]
-    SceneSubTypeUgcPlay,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -16,10 +16,10 @@ pub struct ActivityMistTrialWatcherListDataExcelConfigDatum {
     pub dungeon_show_content_type: DungeonShowContentType,
     pub show_param: Vec<String>,
     pub progress_format_text_map_hash: i64,
-    #[serde(rename = "PFOBMCKMKPJ")]
-    pub pfobmckmkpj: i64,
-    #[serde(rename = "LMOJKGLKCOE")]
-    pub lmojkglkcoe: Option<bool>,
+    #[serde(rename = "HFBGPMPCAPN")]
+    pub hfbgpmpcapn: i64,
+    #[serde(rename = "NMOBCGHAIEL")]
+    pub nmobcghaiel: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

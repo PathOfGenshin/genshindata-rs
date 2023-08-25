@@ -11,15 +11,15 @@ pub type UgcOfficialLevelExcelConfigData = Vec<UgcOfficialLevelExcelConfigDatum>
 pub struct UgcOfficialLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mnajjdekigh: i64,
-    pub gkgnfpbafjh: i64,
+    pub plpidbllbef: i64,
+    pub ldiadlienfh: i64,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
     #[serde(rename = "previewPath")]
     pub preview_path: String,
-    pub odognddemni: Vec<i64>,
-    pub koajmfpjngk: i64,
-    pub cekpfkdkpao: f64,
+    pub fonklmebajj: Vec<i64>,
+    pub kpolfopbgjp: i64,
+    pub okedgeoghep: f64,
 }

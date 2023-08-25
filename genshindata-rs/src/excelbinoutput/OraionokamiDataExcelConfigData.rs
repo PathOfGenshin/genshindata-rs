@@ -11,17 +11,17 @@ pub type OraionokamiDataExcelConfigData = Vec<OraionokamiDataExcelConfigDatum>;
 pub struct OraionokamiDataExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
-    pub gcofdnmjlhg: i64,
-    pub iljikhhkjij: i64,
+    pub lhlpbjblhcg: i64,
+    pub clbkoejgcid: i64,
     #[serde(rename = "serverBuffId")]
     pub server_buff_id: i64,
-    pub flekpbfgbpc: Vec<i64>,
-    pub jonkjnmkkhc: i64,
-    pub dhaiejlmkeb: i64,
-    pub mhehonlgehp: i64,
+    pub cadikkbokaa: Vec<i64>,
+    pub hgbodichcff: i64,
+    pub gccmhehbffi: i64,
+    pub hjjgnbjoodf: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub fmlcojfndgn: i64,
+    pub oebeekdjnmc: i64,
     #[serde(rename = "iconPath")]
     pub icon_path: String,
 }

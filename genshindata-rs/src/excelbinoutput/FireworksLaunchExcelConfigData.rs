@@ -9,10 +9,10 @@ pub type FireworksLaunchExcelConfigData = Vec<FireworksLaunchExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FireworksLaunchExcelConfigDatum {
-    pub hflngjppfol: String,
+    pub plfkflcbkgf: String,
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
-    pub ldbiinhoiek: Vec<i64>,
-    pub jgeokjmcdhl: i64,
-    pub imapfinfbcb: i64,
+    pub iagnoimhfhi: Vec<i64>,
+    pub odhhepacmen: i64,
+    pub lfimjiecamh: i64,
 }

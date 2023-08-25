@@ -13,28 +13,28 @@ pub struct GcgCardFaceExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "itemId")]
     pub item_id: i64,
-    pub agfpklanpln: i64,
-    pub ifcbmcaeoca: Ifcbmcaeoca,
-    pub fdjglbabfcc: Option<i64>,
-    pub affgcbegkoh: Vec<i64>,
+    pub dikkdjcenfg: i64,
+    pub ahkkjmpcihc: Ahkkjmpcihc,
+    pub kmlnmjbdjpp: Option<i64>,
+    pub lojbhmobkeo: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub blgmdmknjnb: i64,
-    pub leppoaolggf: Option<Leppoaolggf>,
+    pub iepmbpekhmn: i64,
+    pub kppnmdkkjng: Option<Kppnmdkkjng>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ifcbmcaeoca {
+pub enum Ahkkjmpcihc {
     #[serde(rename = "GCG_CARD_FACE_GOLD")]
     GcgCardFaceGold,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Leppoaolggf {
+pub enum Kppnmdkkjng {
     #[serde(rename = "GCG_PROFICIENCY_REWARD")]
     GcgProficiencyReward,
 }

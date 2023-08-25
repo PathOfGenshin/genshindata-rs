@@ -11,8 +11,8 @@ pub type BartenderAffixExcelConfigData = Vec<BartenderAffixExcelConfigDatum>;
 pub struct BartenderAffixExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub hinffaanpgb: String,
+    pub ofbccijipjh: String,
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub jmokolnpgfb: i64,
+    pub ahcehipjjcc: i64,
 }

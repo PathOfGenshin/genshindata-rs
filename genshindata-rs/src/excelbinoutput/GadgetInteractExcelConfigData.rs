@@ -15,8 +15,8 @@ pub struct GadgetInteractExcelConfigDatum {
     pub consume_item_id: Vec<ConsumeItemId>,
     pub cost_items: Vec<CostItem>,
     pub ui_desc_text_map_hash: i64,
-    #[serde(rename = "OGBJGDDKMAE")]
-    pub ogbjgddkmae: Vec<Ogbjgddkmae>,
+    #[serde(rename = "OKMCFOBHBKI")]
+    pub okmcfobhbki: Vec<Okmcfobhbki>,
     pub consume_item_num: Option<bool>,
     pub ui_title_text_map_hash: Option<bool>,
 }
@@ -49,7 +49,7 @@ pub struct CostItem {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Ogbjgddkmae {
+pub struct Okmcfobhbki {
     pub param: Vec<String>,
     pub cond_type: Option<CondType>,
 }

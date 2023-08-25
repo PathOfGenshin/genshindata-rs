@@ -11,14 +11,14 @@ pub type PhotographCheckAnimatorDataData = Vec<PhotographCheckAnimatorDataDatum>
 pub struct PhotographCheckAnimatorDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ipfkebfpaff: i64,
-    pub ekhchecdifl: Vec<String>,
-    pub fcndaakajpf: Vec<Fcndaakajpf>,
+    pub faiiagijegn: i64,
+    pub aljhbhbkihc: Vec<String>,
+    pub mjmgdjldmha: Vec<Mjmgdjldmha>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fcndaakajpf {
+pub enum Mjmgdjldmha {
     #[serde(rename = "AVATAR_JUMP")]
     AvatarJump,
     #[serde(rename = "AVATAR_RUN")]

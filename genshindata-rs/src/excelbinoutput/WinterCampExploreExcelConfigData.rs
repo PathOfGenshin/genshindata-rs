@@ -14,16 +14,16 @@ pub struct WinterCampExploreExcelConfigDatum {
     pub priority: i64,
     #[serde(rename = "groupID")]
     pub group_id: i64,
-    #[serde(rename = "PGGIJCDNCAM")]
-    pub pggijcdncam: i64,
+    #[serde(rename = "DGJNHBGFBAK")]
+    pub dgjnhbgfbak: i64,
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
-    #[serde(rename = "EALHMLABOPA")]
-    pub ealhmlabopa: Vec<Ealhmlabopa>,
+    #[serde(rename = "ENLPJCOPMOK")]
+    pub enlpjcopmok: Vec<Enlpjcopmok>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Ealhmlabopa {
-    pub geddcdajgdo: Vec<i64>,
+pub struct Enlpjcopmok {
+    pub bcgmgohldhl: Vec<i64>,
 }

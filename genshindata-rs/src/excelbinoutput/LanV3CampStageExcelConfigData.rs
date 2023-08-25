@@ -11,8 +11,8 @@ pub type LanV3CampStageExcelConfigData = Vec<LanV3CampStageExcelConfigDatum>;
 pub struct LanV3CampStageExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub emopnigcgge: Vec<i64>,
+    pub gikgnblpbcm: Vec<i64>,
     #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
-    pub oaikmflgjbd: Vec<i64>,
+    pub hakheohhjch: Vec<i64>,
 }

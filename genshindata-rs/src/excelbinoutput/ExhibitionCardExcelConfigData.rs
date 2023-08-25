@@ -14,13 +14,13 @@ pub struct ExhibitionCardExcelConfigDatum {
     pub desc_text_map_hash: i64,
     pub style_text_map_hash: i64,
     pub priority: i64,
-    #[serde(rename = "HINFFAANPGB")]
-    pub hinffaanpgb: Option<Hinffaanpgb>,
+    #[serde(rename = "OFBCCIJIPJH")]
+    pub ofbccijipjh: Option<Ofbccijipjh>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Hinffaanpgb {
+pub enum Ofbccijipjh {
     #[serde(rename = "EXHIBITION_CARD_ORDER_GREATER_BETTER")]
     ExhibitionCardOrderGreaterBetter,
     #[serde(rename = "EXHIBITION_CARD_ORDER_LESS_BETTER")]

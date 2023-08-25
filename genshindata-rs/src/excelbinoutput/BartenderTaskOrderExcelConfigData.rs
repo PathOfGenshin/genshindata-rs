@@ -11,10 +11,10 @@ pub type BartenderTaskOrderExcelConfigData = Vec<BartenderTaskOrderExcelConfigDa
 pub struct BartenderTaskOrderExcelConfigDatum {
     #[serde(rename = "questId")]
     pub quest_id: i64,
-    pub blacopdkjpi: Vec<i64>,
-    pub ifaceianfgk: i64,
-    pub cocpaiooobg: i64,
-    pub dkkeanigfoo: i64,
-    pub gjifkpbhgdn: Option<i64>,
-    pub anplddlkbpm: Option<bool>,
+    pub kkklpldfcfd: Vec<i64>,
+    pub jhgboihmhgb: i64,
+    pub oifeakncgae: i64,
+    pub hebcdfdaidi: i64,
+    pub mjnkhojabde: Option<i64>,
+    pub jkpfjolhmli: Option<bool>,
 }

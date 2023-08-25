@@ -9,17 +9,17 @@ pub type RoguelikeShikigamiExcelConfigData = Vec<RoguelikeShikigamiExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct RoguelikeShikigamiExcelConfigDatum {
-    pub dbhdjgpgfef: i64,
+    pub cijppkbbnha: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Vec<UnlockCond>,
-    pub fbijklipmcl: i64,
-    pub ofclkgdelli: i64,
+    pub elhdnelaokl: i64,
+    pub eehpbbediek: i64,
     #[serde(rename = "level")]
     pub level: Option<i64>,
-    pub ckhoejbaafa: Option<i64>,
-    pub keoihfalnlg: Option<i64>,
+    pub bcglceofbmc: Option<i64>,
+    pub cdjbhdkopbk: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -10,22 +10,22 @@ pub type ActivitySummerTimeRaceExcelConfigData = Vec<ActivitySummerTimeRaceExcel
 #[serde(rename_all = "PascalCase")]
 pub struct ActivitySummerTimeRaceExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "DGDMNNCBFDE")]
-    pub dgdmnncbfde: Vec<i64>,
-    #[serde(rename = "KAKEEHCLGLL")]
-    pub kakeehclgll: Vec<i64>,
-    #[serde(rename = "GPDPEBCKKOI")]
-    pub gpdpebckkoi: Vec<i64>,
+    #[serde(rename = "EHOPPOGGFII")]
+    pub ehoppoggfii: Vec<i64>,
+    #[serde(rename = "IKJHOCNGFNK")]
+    pub ikjhocngfnk: Vec<i64>,
+    #[serde(rename = "DBPDNALGCLJ")]
+    pub dbpdnalgclj: Vec<i64>,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "DKKOEFHEKOI")]
-    pub dkkoefhekoi: i64,
-    #[serde(rename = "CKLDGFIFMKG")]
-    pub ckldgfifmkg: i64,
-    #[serde(rename = "PFAPACEPMNF")]
-    pub pfapacepmnf: i64,
-    #[serde(rename = "JAFGEILPDGM")]
-    pub jafgeilpdgm: i64,
-    #[serde(rename = "LLHIOKEEHJO")]
-    pub llhiokeehjo: i64,
+    #[serde(rename = "PABMLAFFDAL")]
+    pub pabmlaffdal: i64,
+    #[serde(rename = "BEAHEFGKLJL")]
+    pub beahefgkljl: i64,
+    #[serde(rename = "DDCJAFDLGKJ")]
+    pub ddcjafdlgkj: i64,
+    #[serde(rename = "HLGHMBFIDKI")]
+    pub hlghmbfidki: i64,
+    #[serde(rename = "IFKGOHBCMMF")]
+    pub ifkgohbcmmf: i64,
 }

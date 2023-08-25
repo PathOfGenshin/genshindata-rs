@@ -11,10 +11,10 @@ pub type DynamicInteractionExcelConfigData = Vec<DynamicInteractionExcelConfigDa
 pub struct DynamicInteractionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub igeafcbfiao: i64,
-    pub eobacbjbnaf: i64,
-    pub hhohmicmbmj: String,
-    pub faenjpdbijh: i64,
-    pub nihiopfgbhc: String,
-    pub cdgcdoaopff: bool,
+    pub fglcacdoank: i64,
+    pub hfajhmliach: i64,
+    pub lmmgifkaoln: String,
+    pub ajmgdloajca: i64,
+    pub hfjhdnnpepd: String,
+    pub eglfghfefcf: bool,
 }

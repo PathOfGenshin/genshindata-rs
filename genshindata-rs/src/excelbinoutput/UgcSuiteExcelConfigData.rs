@@ -9,20 +9,20 @@ pub type UgcSuiteExcelConfigData = Vec<UgcSuiteExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcSuiteExcelConfigDatum {
-    pub mpdfdlffepa: String,
+    pub igndpgeihnp: String,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub ficmiagcdop: Vec<i64>,
+    pub medchnbcfhd: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub dhpfhpjbpdk: f64,
+    pub bolaiphnedl: f64,
     #[serde(rename = "cost")]
     pub cost: i64,
-    pub apdkfmioiak: String,
-    pub pcmlaogfgco: String,
-    pub jkeldijkbfh: i64,
-    pub cgamgmgfjik: bool,
-    pub obbpofdkkmf: bool,
+    pub bpbggpcdked: String,
+    pub lbfegjaoofo: String,
+    pub dijajobbebg: i64,
+    pub dinghbehgbk: bool,
+    pub hleadidpcbb: bool,
 }

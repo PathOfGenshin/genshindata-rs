@@ -11,10 +11,10 @@ pub type MichiaeOfferingDataExcelConfigData = Vec<MichiaeOfferingDataExcelConfig
 pub struct MichiaeOfferingDataExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
-    pub jcabokoemkf: i64,
-    pub dmdkhicciba: Vec<String>,
-    pub dpmhkaamleo: i64,
-    pub ocfckohlihg: Vec<String>,
+    pub djjkeeafckc: i64,
+    pub hngpbcflbbf: Vec<String>,
+    pub lphplepfpce: i64,
+    pub eckmbmnbphl: Vec<String>,
     #[serde(rename = "level")]
     pub level: Option<i64>,
 }

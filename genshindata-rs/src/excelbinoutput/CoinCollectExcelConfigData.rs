@@ -13,26 +13,26 @@ pub struct CoinCollectExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
-    pub dflmckghbif: i64,
-    pub ilfmnlgbein: i64,
+    pub nblhlgbehdp: i64,
+    pub kngmcomccml: i64,
     #[serde(rename = "draftId")]
     pub draft_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub ejafaojpkgp: i64,
+    pub anaclnfjlje: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub bpafmpejjmj: i64,
-    pub lohhofkfdfi: Vec<i64>,
+    pub deciifhpchm: i64,
+    pub emidioklemf: Vec<i64>,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub epjodhnhbna: i64,
-    pub ianmnfpmejj: i64,
+    pub agibjockeio: i64,
+    pub ifgkcegcgfd: i64,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub mhdlhcnjoee: i64,
-    pub highjpbnmai: Vec<i64>,
-    pub clhpmhcjple: String,
+    pub dligjkmdmah: i64,
+    pub jkjjhoidccf: Vec<i64>,
+    pub aamnfbcgllg: String,
 }

@@ -11,6 +11,6 @@ pub type GcgPickGroupExcelConfigData = Vec<GcgPickGroupExcelConfigDatum>;
 pub struct GcgPickGroupExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub pijicpmebip: i64,
-    pub pjhdfglglfj: Vec<i64>,
+    pub mkomcpomhdo: i64,
+    pub jbjlfjbmlcd: Vec<i64>,
 }

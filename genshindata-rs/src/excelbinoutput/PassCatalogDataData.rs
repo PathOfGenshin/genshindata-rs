@@ -11,18 +11,18 @@ pub type PassCatalogDataData = Vec<PassCatalogDataDatum>;
 pub struct PassCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub dhflidfmpmo: i64,
-    pub gbfipoalnka: i64,
-    pub iahhoibejba: String,
-    pub bnjbjmdjade: Bnjbjmdjade,
-    pub andjdngfggn: String,
-    pub kfajhhdahpd: Vec<Kfajhhdahpd>,
-    pub kcboefbcfod: Option<bool>,
-    pub homolehnlaf: Option<i64>,
+    pub ifpjahdefad: i64,
+    pub mmbakcjjjaf: i64,
+    pub fehkboljioo: String,
+    pub eoeiolgbmgm: Eoeiolgbmgm,
+    pub fmcjoihifkl: String,
+    pub ificadbiglj: Vec<Ificadbiglj>,
+    pub heiimkfpeef: Option<bool>,
+    pub pebpmgfhgno: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bnjbjmdjade {
+pub enum Eoeiolgbmgm {
     #[serde(rename = "BIGWORLD")]
     Bigworld,
     #[serde(rename = "POLYGON")]
@@ -32,17 +32,17 @@ pub enum Bnjbjmdjade {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Kfajhhdahpd {
+pub struct Ificadbiglj {
     pub id: Option<i64>,
-    #[serde(rename = "GIHFHEEEBDC")]
-    pub gihfheeebdc: Gihfheeebdc,
-    #[serde(rename = "HOMOLEHNLAF")]
-    pub homolehnlaf: Option<i64>,
+    #[serde(rename = "AHEAGNHLFNL")]
+    pub aheagnhlfnl: Aheagnhlfnl,
+    #[serde(rename = "PEBPMGFHGNO")]
+    pub pebpmgfhgno: Option<i64>,
     pub weight: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Gihfheeebdc {
+pub enum Aheagnhlfnl {
     #[serde(rename = "DeshretPoint_jinruzhiyin01")]
     DeshretPointJinruzhiyin01,
     #[serde(rename = "DeshretPoint_jinruzhiyin02")]

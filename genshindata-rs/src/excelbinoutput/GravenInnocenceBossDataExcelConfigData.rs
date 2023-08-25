@@ -11,8 +11,8 @@ pub type GravenInnocenceBossDataExcelConfigData = Vec<GravenInnocenceBossDataExc
 pub struct GravenInnocenceBossDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub idmhldkdfbj: i64,
+    pub ibbjpjemmhj: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub kbmgnmaollb: i64,
+    pub khdaccnmmcg: i64,
 }

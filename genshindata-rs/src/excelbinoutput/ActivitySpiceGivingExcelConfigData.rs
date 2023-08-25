@@ -9,6 +9,6 @@ pub type ActivitySpiceGivingExcelConfigData = Vec<ActivitySpiceGivingExcelConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivitySpiceGivingExcelConfigDatum {
-    pub cjellccbmkh: i64,
-    pub pijicpmebip: Option<i64>,
+    pub emonmjldgha: i64,
+    pub mkomcpomhdo: Option<i64>,
 }

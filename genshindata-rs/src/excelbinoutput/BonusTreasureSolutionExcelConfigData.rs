@@ -11,6 +11,6 @@ pub type BonusTreasureSolutionExcelConfigData = Vec<BonusTreasureSolutionExcelCo
 pub struct BonusTreasureSolutionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub iifjfkcopaj: f64,
-    pub nhnkpdekljf: Vec<i64>,
+    pub bgihiiphfpf: f64,
+    pub jckclijnhhn: Vec<i64>,
 }

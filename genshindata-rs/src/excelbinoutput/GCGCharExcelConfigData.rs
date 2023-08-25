@@ -11,10 +11,10 @@ pub type GcgCharExcelConfigData = Vec<GcgCharExcelConfigDatum>;
 pub struct GcgCharExcelConfigDatum {
     #[serde(rename = "hp")]
     pub hp: i64,
-    pub nnfbbclipmf: i64,
-    pub mpgejbeahgj: f64,
-    pub dggbpblhcih: String,
-    pub ogdnaheaaff: Vec<Mikgmleamfn>,
+    pub djojlhapkmk: i64,
+    pub ecgopccjmnm: f64,
+    pub cbaklcofnkc: String,
+    pub dgihdkmkaak: Vec<Dgihdkmkaak>,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "cardType")]
@@ -23,11 +23,11 @@ pub struct GcgCharExcelConfigDatum {
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub mikgmleamfn: Vec<Mikgmleamfn>,
+    pub fbpaellgcnl: Vec<Dgihdkmkaak>,
     #[serde(rename = "skillList")]
     pub skill_list: Vec<i64>,
-    pub fhgamohcmhm: Option<bool>,
-    pub agnpkjcoodb: Option<bool>,
+    pub ggkjidhgnmn: Option<bool>,
+    pub ljcfpljkpof: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -39,7 +39,7 @@ pub enum CardType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mikgmleamfn {
+pub enum Dgihdkmkaak {
     #[serde(rename = "GCG_TAG_CAMP_FATUI")]
     GcgTagCampFatui,
     #[serde(rename = "GCG_TAG_CAMP_HILICHURL")]

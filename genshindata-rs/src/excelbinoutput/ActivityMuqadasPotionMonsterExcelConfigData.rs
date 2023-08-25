@@ -11,13 +11,13 @@ pub type ActivityMuqadasPotionMonsterExcelConfigData = Vec<ActivityMuqadasPotion
 pub struct ActivityMuqadasPotionMonsterExcelConfigDatum {
     #[serde(rename = "describeId")]
     pub describe_id: i64,
-    pub behjdcgagim: f64,
-    pub cnenhofdnbf: Vec<i64>,
-    pub cichejjdnoo: Vec<Cichejjdnoo>,
+    pub pfkdmmjnpdd: f64,
+    pub eogmipflggf: Vec<i64>,
+    pub mjbcfoioecd: Vec<Mjbcfoioecd>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Cichejjdnoo {
-    pub gpfinmapbah: Vec<f64>,
+pub struct Mjbcfoioecd {
+    pub pbhpmoghmek: Vec<f64>,
 }

@@ -17,6 +17,6 @@ pub struct InvestigationConfigDatum {
     pub title_text_map_hash: i64,
     pub investigation_type: Option<String>,
     pub unlock_level: Option<i64>,
-    #[serde(rename = "CKHHADJLNGE")]
-    pub ckhhadjlnge: Option<bool>,
+    #[serde(rename = "JKOGKJOMHCJ")]
+    pub jkogkjomhcj: Option<bool>,
 }

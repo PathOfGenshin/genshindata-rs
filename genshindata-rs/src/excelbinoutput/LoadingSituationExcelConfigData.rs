@@ -11,17 +11,17 @@ pub type LoadingSituationExcelConfigData = Vec<LoadingSituationExcelConfigDatum>
 pub struct LoadingSituationExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
-    pub dmdejcokacp: String,
-    pub adlgekigikg: Vec<i64>,
-    pub ppmnjjnlpef: Vec<i64>,
-    pub jgfenljmoab: Option<Jgfenljmoab>,
+    pub eehglbncpek: String,
+    pub kdcnniggohp: Vec<i64>,
+    pub fehepgbpdph: Vec<i64>,
+    pub ioakcdpichn: Option<Ioakcdpichn>,
     #[serde(rename = "picPath")]
     pub pic_path: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jgfenljmoab {
+pub enum Ioakcdpichn {
     #[serde(rename = "LOADING_AREA_CITY")]
     LoadingAreaCity,
     #[serde(rename = "LOADING_AREA_OUTDOOR")]

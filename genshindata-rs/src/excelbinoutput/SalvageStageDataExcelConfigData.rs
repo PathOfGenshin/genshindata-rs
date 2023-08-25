@@ -11,10 +11,10 @@ pub type SalvageStageDataExcelConfigData = Vec<SalvageStageDataExcelConfigDatum>
 pub struct SalvageStageDataExcelConfigDatum {
     #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub hnkccolhbmb: i64,
-    pub fhagjgldmfg: i64,
-    pub gonbjbfodpi: Vec<i64>,
-    pub jgamjihkpgc: Vec<i64>,
-    pub aglhogdncmf: Vec<Option<serde_json::Value>>,
-    pub okkcndlcmgp: Vec<i64>,
+    pub flhmbapfnmd: i64,
+    pub mmhomcfkmki: i64,
+    pub ffimcbagbhf: Vec<i64>,
+    pub plpkfnooign: Vec<i64>,
+    pub obihafdicai: Vec<Option<serde_json::Value>>,
+    pub eagapioncca: Vec<i64>,
 }

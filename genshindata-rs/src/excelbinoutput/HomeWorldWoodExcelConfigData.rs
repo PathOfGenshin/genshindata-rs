@@ -9,7 +9,7 @@ pub type HomeWorldWoodExcelConfigData = Vec<HomeWorldWoodExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HomeWorldWoodExcelConfigDatum {
-    pub ieoenmfhjfd: i64,
-    pub ncckfekadlm: i64,
-    pub ejiplhhpjob: Vec<Vec<i64>>,
+    pub kcglcpnmhho: i64,
+    pub dgdoegmnhnk: i64,
+    pub ocekiafkkng: Vec<Vec<i64>>,
 }

@@ -9,26 +9,26 @@ pub type InferenceWordExcelConfigData = Vec<InferenceWordExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct InferenceWordExcelConfigDatum {
-    pub hngjljmhhma: i64,
-    pub jgokehgfghp: i64,
-    pub cbhdfnefagf: Option<bool>,
-    pub dmnonjlacif: Option<bool>,
-    pub jdlpbjmcbpc: Vec<Jdlpbjmcbpc>,
-    pub fjaclhefnch: Option<bool>,
-    pub oofmenklofi: Option<i64>,
-    pub kjeojppdhhg: Vec<Jdlpbjmcbpc>,
-    pub leiejlgolpc: i64,
-    pub ddifjkaooid: Option<i64>,
-    pub blhebndkjgb: Option<i64>,
-    pub eophcglheik: Option<i64>,
-    pub gpcplcldaeh: Option<bool>,
+    pub bbeigemamlb: i64,
+    pub kfigniogmfh: i64,
+    pub pdgjhnopejl: Option<bool>,
+    pub afpfgdclnaj: Option<bool>,
+    pub ipdbnmeeiec: Vec<Ddpbdfeeakd>,
+    pub mcfpncinlih: Option<bool>,
+    pub eodhompnkbb: Option<i64>,
+    pub ddpbdfeeakd: Vec<Ddpbdfeeakd>,
+    pub ikdokfoidlp: i64,
+    pub kkehglclagn: Option<i64>,
+    pub cfgcdlodddj: Option<i64>,
+    pub bnjgdobmgab: Option<i64>,
+    pub kpjnmpdbefb: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Jdlpbjmcbpc {
-    pub param: String,
+pub struct Ddpbdfeeakd {
     #[serde(rename = "type")]
-    pub jdlpbjmcbpc_type: Option<Type>,
+    pub ddpbdfeeakd_type: Option<Type>,
+    pub param: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

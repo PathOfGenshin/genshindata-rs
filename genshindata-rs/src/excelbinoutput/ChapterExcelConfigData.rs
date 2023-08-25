@@ -16,8 +16,8 @@ pub struct ChapterExcelConfigDatum {
     pub chapter_num_text_map_hash: i64,
     pub chapter_title_text_map_hash: i64,
     pub chapter_icon: String,
-    #[serde(rename = "JHJMHNOOELP")]
-    pub jhjmhnooelp: Option<f64>,
+    #[serde(rename = "LLFDLAPCIBG")]
+    pub llfdlapcibg: Option<f64>,
     pub chapter_image_title_text_map_hash: i64,
     pub chapter_serial_number_icon: ChapterSerialNumberIcon,
     pub need_player_level: Option<i64>,
@@ -25,8 +25,8 @@ pub struct ChapterExcelConfigDatum {
     pub in_activity_need_player_level: Option<i64>,
     pub city_id: Option<i64>,
     pub chapter_image_hash: Option<i64>,
-    #[serde(rename = "OGMNHMEOFBM")]
-    pub ogmnhmeofbm: Option<Ogmnhmeofbm>,
+    #[serde(rename = "MIPIIDHAGIE")]
+    pub mipiidhagie: Option<Mipiidhagie>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -49,7 +49,7 @@ pub enum ChapterSerialNumberIcon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ogmnhmeofbm {
+pub enum Mipiidhagie {
     #[serde(rename = "CHAPTER_STYLE_TYPE_WORLD_QUEST_RANK_ZERO")]
     ChapterStyleTypeWorldQuestRankZero,
 }

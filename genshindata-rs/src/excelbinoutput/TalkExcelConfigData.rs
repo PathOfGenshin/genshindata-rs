@@ -17,6 +17,7 @@ pub struct TalkExcelConfigDatum {
     pub next_talks: Vec<i64>,
     pub init_dialog: Option<i64>,
     pub next_random_talks: Vec<i64>,
+    pub random_talk_priority_list: Vec<i64>,
     pub npc_id: Vec<i64>,
     pub participant_id: Vec<i64>,
     pub perform_cfg: String,
@@ -39,6 +40,8 @@ pub struct TalkExcelConfigDatum {
     pub check_action_after: Option<bool>,
     pub enable_camera_displacement: Option<bool>,
     pub quest_idle_talk: Option<bool>,
+    pub random_talk_pos: Option<i64>,
+    pub remove_duplicated_random_talk: Option<bool>,
     pub force_npc_not_destroy: Option<bool>,
     #[serde(rename = "decoratorID")]
     pub decorator_id: Option<i64>,
@@ -77,6 +80,10 @@ pub enum Type {
     QuestCondActivityGcgPveInfiniteRefresh,
     #[serde(rename = "QUEST_COND_ACTIVITY_GCG_PVE_INFINITE_REWARD_CAN_TAKE")]
     QuestCondActivityGcgPveInfiniteRewardCanTake,
+    #[serde(rename = "QUEST_COND_ACTIVITY_GCG_PVE_PUZZLE_REFRESH")]
+    QuestCondActivityGcgPvePuzzleRefresh,
+    #[serde(rename = "QUEST_COND_ACTIVITY_GCG_PVE_PUZZLE_REWARD_CAN_TAKE")]
+    QuestCondActivityGcgPvePuzzleRewardCanTake,
     #[serde(rename = "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ")]
     QuestCondActivityJourneyGcgPickStageStateEq,
     #[serde(rename = "QUEST_COND_ACTIVITY_NEW_FUNGUS_CAPTURE")]
@@ -111,6 +118,10 @@ pub enum Type {
     QuestCondDailyTaskVarGt,
     #[serde(rename = "QUEST_COND_DAILY_TASK_VAR_LT")]
     QuestCondDailyTaskVarLt,
+    #[serde(rename = "QUEST_COND_EVENT_ITEM_LOCK_STATE_EQUAL")]
+    QuestCondEventItemLockStateEqual,
+    #[serde(rename = "QUEST_COND_EVENT_ITEM_SUBMIT_STATE_EQUAL")]
+    QuestCondEventItemSubmitStateEqual,
     #[serde(rename = "QUEST_COND_EXPLORATION_REWARD_CAN_GET")]
     QuestCondExplorationRewardCanGet,
     #[serde(rename = "QUEST_COND_FORGE_HAVE_FINISH")]
@@ -235,6 +246,8 @@ pub enum Type {
     TalkExecSetQuestVar,
     #[serde(rename = "TALK_EXEC_TRANS_SCENE_DUMMY_POINT")]
     TalkExecTransSceneDummyPoint,
+    #[serde(rename = "TALK_EXEC_UNLOCK_EVENTS_ITEM")]
+    TalkExecUnlockEventsItem,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

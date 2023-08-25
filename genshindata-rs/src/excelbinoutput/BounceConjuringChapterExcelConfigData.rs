@@ -13,18 +13,18 @@ pub struct BounceConjuringChapterExcelConfigDatum {
     pub chapter_id: i64,
     pub open_day: i64,
     pub gallery_id: i64,
-    #[serde(rename = "KGDELEFMLLM")]
-    pub kgdelefmllm: i64,
+    #[serde(rename = "COIMBKDKEFH")]
+    pub coimbkdkefh: i64,
     pub watcher_id_list: Vec<i64>,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "NINHLCLDOBL")]
-    pub ninhlcldobl: Vec<i64>,
-    #[serde(rename = "ODPLBLMAEDI")]
-    pub odplblmaedi: Vec<i64>,
-    #[serde(rename = "NDOMPGBBIKB")]
-    pub ndompgbbikb: Vec<i64>,
-    #[serde(rename = "KEPIHAHMFGI")]
-    pub kepihahmfgi: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "BEPDHONBMIK")]
+    pub bepdhonbmik: Vec<i64>,
+    #[serde(rename = "MMEIGBIBEKF")]
+    pub mmeigbibekf: Vec<i64>,
+    #[serde(rename = "AKGPEGGMEMF")]
+    pub akgpeggmemf: Vec<i64>,
+    #[serde(rename = "FCDLLIHIBJH")]
+    pub fcdllihibjh: Vec<Option<serde_json::Value>>,
     pub pos: Vec<f64>,
 }

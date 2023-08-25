@@ -19,21 +19,21 @@ pub struct MainQuestExcelConfigDatum {
     pub suggest_track_main_quest_list: Vec<i64>,
     pub reward_id_list: Vec<i64>,
     pub show_type: Option<ShowType>,
-    #[serde(rename = "LNBGPHLCEFI")]
-    pub lnbgphlcefi: Vec<i64>,
-    #[serde(rename = "OKFAEJFCMGB")]
-    pub okfaejfcmgb: Vec<i64>,
+    #[serde(rename = "HDNEAJNPLOF")]
+    pub hdneajnplof: Vec<i64>,
+    #[serde(rename = "MONJCGHLFFN")]
+    pub monjcghlffn: Vec<i64>,
     pub repeatable: Option<bool>,
-    #[serde(rename = "BOLHKDOCBNM")]
-    pub bolhkdocbnm: Option<i64>,
+    #[serde(rename = "KHGONCANKFN")]
+    pub khgoncankfn: Option<i64>,
     pub series: Option<i64>,
     pub chapter_id: Option<i64>,
     pub show_red_point: Option<bool>,
     #[serde(rename = "taskID")]
     pub task_id: Option<i64>,
     pub main_quest_tag: Option<MainQuestTag>,
-    #[serde(rename = "BPHDPNDDBPO")]
-    pub bphdpnddbpo: Option<i64>,
+    #[serde(rename = "BLKGKDFNPGB")]
+    pub blkgkdfnpgb: Option<i64>,
     pub suggest_track_out_of_order: Option<bool>,
     pub activity_id: Option<i64>,
     pub recommend_level: Option<i64>,

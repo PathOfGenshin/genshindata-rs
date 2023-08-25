@@ -11,11 +11,11 @@ pub type MusicGamePreviewConfigData = Vec<MusicGamePreviewConfigDatum>;
 pub struct MusicGamePreviewConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
-    pub fbmboaiekdm: Vec<i64>,
-    pub bdgcljphhbp: Vec<i64>,
-    pub gjcgafpbedl: Option<i64>,
-    pub dngaogbecoa: i64,
-    pub aagmgbieoci: i64,
-    pub haodenmakbd: Vec<i64>,
-    pub ecfclfegena: Vec<f64>,
+    pub cefcdakjgda: Vec<i64>,
+    pub kcbegfdegmn: Vec<i64>,
+    pub dimkndfbkan: Option<i64>,
+    pub lhkpnophcon: i64,
+    pub dmhkjimfndl: i64,
+    pub ohngcipnljc: Vec<i64>,
+    pub lijjebbemnc: Vec<f64>,
 }

@@ -13,8 +13,10 @@ pub struct NewActivityAvatarSelectionExcelConfigDatum {
     pub cond_id: i64,
     pub watcher_id_list: Vec<i64>,
     pub avatar_reward_list: Vec<i64>,
-    pub desc_text_map_hash: i64,
     pub cost_item_num: Vec<i64>,
-    #[serde(rename = "AOFCAHGHIEL")]
-    pub aofcahghiel: Vec<i64>,
+    pub desc_text_map_hash: i64,
+    #[serde(rename = "CPKMCIIFMPN")]
+    pub cpkmciifmpn: Vec<i64>,
+    #[serde(rename = "KMKBIIPINDK")]
+    pub kmkbiipindk: Vec<i64>,
 }

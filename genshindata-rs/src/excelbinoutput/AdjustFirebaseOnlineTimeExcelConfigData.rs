@@ -10,6 +10,6 @@ pub type AdjustFirebaseOnlineTimeExcelConfigData = Vec<AdjustFirebaseOnlineTimeE
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AdjustFirebaseOnlineTimeExcelConfigDatum {
     pub id: i64,
-    pub gmkcipomiif: i64,
-    pub jllkbngplml: String,
+    pub eppkijnnfmf: i64,
+    pub ahimpldnccn: String,
 }

@@ -13,11 +13,11 @@ pub struct BrickBreakerDungeonLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub hdblobecbfc: i64,
+    pub ahjlnopmgcb: i64,
     #[serde(rename = "limitTime")]
     pub limit_time: i64,
-    pub hecdjdodobc: i64,
-    pub obhfnppkbfc: i64,
+    pub hljfdgfigmg: i64,
+    pub oaeogmbcffh: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
@@ -26,9 +26,9 @@ pub struct BrickBreakerDungeonLevelExcelConfigDatum {
     pub level_title_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub dojcogajmoe: f64,
-    pub dopoigkmhfg: f64,
-    pub ladmpjogfbn: Vec<i64>,
-    pub hhgobabckgc: Vec<String>,
-    pub eopjmaidfgm: Vec<i64>,
+    pub fcofegcoofh: f64,
+    pub liieadiieao: f64,
+    pub dphepgjdfkn: Vec<i64>,
+    pub neaobdejcfm: Vec<String>,
+    pub ahlikhafhje: Vec<i64>,
 }

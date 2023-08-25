@@ -12,27 +12,27 @@ pub struct IrodoriPoetryExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "condID")]
     pub cond_id: i64,
-    pub fkjgeaoffmo: i64,
-    pub gkgnfpbafjh: i64,
+    pub hfiepamcfdb: i64,
+    pub ldiadlienfh: i64,
     #[serde(rename = "entityType")]
     pub entity_type: String,
-    pub flceihnadel: Vec<Flceihnadel>,
-    pub beljclfjofj: i64,
-    pub kclenjconif: i64,
-    pub ppaabcmmpnh: i64,
-    pub ldbbldapdil: Vec<i64>,
+    pub pmpabepomgp: Vec<Pmpabepomgp>,
+    pub oohibemhhok: i64,
+    pub najelolhbjb: i64,
+    pub oloihlebdpa: i64,
+    pub mjjobheiidd: Vec<i64>,
     #[serde(rename = "watcherID")]
     pub watcher_id: i64,
-    pub ddabjmkemab: i64,
-    pub dhjlfnnigmh: i64,
-    pub lihaokdpiel: i64,
-    pub kfpfchpdkfc: i64,
-    pub iigmojenoed: Vec<i64>,
+    pub abhpknjmloc: i64,
+    pub ndcdkhcjohb: i64,
+    pub leplmfejaic: i64,
+    pub ccopjcbhkfl: i64,
+    pub epdmgmbjfkc: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Flceihnadel {
-    pub jdnbhgdaaie: Vec<i64>,
-    pub nmneeaaapmd: Option<i64>,
+pub struct Pmpabepomgp {
+    pub bcmafkjlmid: Vec<i64>,
+    pub jmkoheagckc: Option<i64>,
 }

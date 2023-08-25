@@ -11,27 +11,18 @@ pub type SubQuestCatalogExcelConfigData = Vec<SubQuestCatalogExcelConfigDatum>;
 pub struct SubQuestCatalogExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub blnfpehbnnd: Blnfpehbnnd,
-    pub ghjogdiopha: Vec<Ghjogdiopha>,
-    pub glplnlldlbd: Vec<Ghjogdiopha>,
+    pub biihnnpmgbk: Biihnnpmgbk,
+    pub belfkedfphg: Vec<Belfkedfphg>,
+    pub plolhifajik: Vec<Belfkedfphg>,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nhkpjccoekl: Option<Blnfpehbnnd>,
+    pub mcemmbakgkn: Option<Biihnnpmgbk>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Blnfpehbnnd {
-    #[serde(rename = "LOGIC_AND")]
-    LogicAnd,
-    #[serde(rename = "LOGIC_OR")]
-    LogicOr,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Ghjogdiopha {
+pub struct Belfkedfphg {
     #[serde(rename = "type")]
-    pub ghjogdiopha_type: Option<Type>,
+    pub belfkedfphg_type: Option<Type>,
     pub param: Option<i64>,
 }
 
@@ -40,4 +31,13 @@ pub struct Ghjogdiopha {
 pub enum Type {
     #[serde(rename = "QUEST_CATALOG_COND_TYPE_QUEST")]
     QuestCatalogCondTypeQuest,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Biihnnpmgbk {
+    #[serde(rename = "LOGIC_AND")]
+    LogicAnd,
+    #[serde(rename = "LOGIC_OR")]
+    LogicOr,
 }

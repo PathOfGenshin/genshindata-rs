@@ -9,16 +9,16 @@ pub type LanV2FireworksSkillDataExcelConfigData = Vec<LanV2FireworksSkillDataExc
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct LanV2FireworksSkillDataExcelConfigDatum {
-    pub homjnkcmhdh: i64,
-    pub hcadbfndjae: String,
-    pub eoligjnfdnp: i64,
-    pub jnkinljkmke: i64,
-    pub hpghpoapkme: Option<i64>,
-    pub epfebmboena: Option<i64>,
-    pub nohfnhkiceo: Option<i64>,
-    pub jokfblifaah: Vec<i64>,
-    pub cipnhgijikp: i64,
-    pub ddikjbhmkda: i64,
-    pub nkkkfgljcbi: Vec<i64>,
-    pub iaoepgidkdd: Option<i64>,
+    pub fjaoijahepp: i64,
+    pub ejponiiehpp: String,
+    pub ejeljjojopo: i64,
+    pub nbhoemidijd: i64,
+    pub mkpljbnhhnf: Option<i64>,
+    pub hokndmehlce: Option<i64>,
+    pub angpdgelmcp: Option<i64>,
+    pub eocfdbneikn: Vec<i64>,
+    pub ieneodaohnb: i64,
+    pub kpkhpjmelnk: i64,
+    pub goegceilhhj: Vec<i64>,
+    pub eipabiaalop: Option<i64>,
 }

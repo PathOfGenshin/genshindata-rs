@@ -9,20 +9,20 @@ pub type SorushTrialPhotoMatchGalleryExcelConfigData = Vec<SorushTrialPhotoMatch
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct SorushTrialPhotoMatchGalleryExcelConfigDatum {
-    pub ljgnogokmcf: Vec<f64>,
-    pub hgpbfkcbibd: Vec<f64>,
-    pub himdiokbakk: i64,
+    pub gmckomdikgd: Vec<f64>,
+    pub odngianehak: Vec<f64>,
+    pub gcphcelpejo: i64,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub dehhfkbjiic: i64,
-    pub efebbibcahk: i64,
+    pub jecdinocjce: i64,
+    pub mldlpcafjid: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub pggijcdncam: i64,
+    pub dgjnhbgfbak: i64,
     #[serde(rename = "groupID")]
     pub group_id: i64,
     #[serde(rename = "watcherList")]

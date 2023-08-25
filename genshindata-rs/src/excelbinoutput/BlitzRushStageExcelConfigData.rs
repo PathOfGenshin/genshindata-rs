@@ -15,10 +15,10 @@ pub struct BlitzRushStageExcelConfigDatum {
     pub open_day: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub gpfalnjhlca: i64,
-    pub bolbnelfhkd: i64,
-    pub ffmdioiahll: i64,
-    pub ibcfmhemodk: i64,
+    pub klpbplkedkm: i64,
+    pub cbacpmbpicg: i64,
+    pub fpcjpenlilb: i64,
+    pub jeadjlieaen: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
 }

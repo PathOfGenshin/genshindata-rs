@@ -23,8 +23,8 @@ pub struct CompoundExcelConfigDatum {
     pub output_vec: Vec<PutVec>,
     pub icon: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "EGOHBNGODDE")]
-    pub egohbngodde: i64,
+    #[serde(rename = "DNMPCCODLOM")]
+    pub dnmpccodlom: i64,
     pub drop_id: Option<i64>,
 }
 

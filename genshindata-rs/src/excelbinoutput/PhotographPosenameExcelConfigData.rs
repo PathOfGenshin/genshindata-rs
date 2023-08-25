@@ -16,8 +16,8 @@ pub struct PhotographPosenameExcelConfigDatum {
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<OpenCond>,
-    #[serde(rename = "PPPLDLPKPFA")]
-    pub pppldlpkpfa: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DLPFLPGMMNA")]
+    pub dlpflpgmmna: Vec<Option<serde_json::Value>>,
     pub animatorstate_id: Option<i64>,
 }
 

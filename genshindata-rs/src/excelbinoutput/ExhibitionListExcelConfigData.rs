@@ -11,10 +11,10 @@ pub type ExhibitionListExcelConfigData = Vec<ExhibitionListExcelConfigDatum>;
 pub struct ExhibitionListExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub kpbbhjejkcc: i64,
-    pub lknjephddmo: i64,
-    pub edcnjigpjkc: i64,
-    pub odcfgednpbp: i64,
+    pub bkpoeldegld: i64,
+    pub nfhpnideipc: i64,
+    pub impcjafcgjj: i64,
+    pub cpkbceibkfc: i64,
     #[serde(rename = "displayType")]
     pub display_type: DisplayType,
 }

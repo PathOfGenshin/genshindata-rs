@@ -11,7 +11,7 @@ pub type PerceptionTemplateExcelConfigData = Vec<PerceptionTemplateExcelConfigDa
 pub struct PerceptionTemplateExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub olfjfmdbcem: i64,
-    pub fekpebpifpg: Option<f64>,
-    pub nggpjjbofkk: Option<f64>,
+    pub eknjdmjeonn: i64,
+    pub nokblhgblii: Option<f64>,
+    pub beijlogggnk: Option<f64>,
 }

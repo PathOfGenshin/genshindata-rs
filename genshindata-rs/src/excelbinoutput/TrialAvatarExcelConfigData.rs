@@ -13,7 +13,7 @@ pub struct TrialAvatarExcelConfigDatum {
     pub trial_avatar_param_list: Vec<i64>,
     pub is_dynamic_level: Option<bool>,
     pub trial_weapon_param_list: Option<i64>,
-    #[serde(rename = "HOODBBGGJOB")]
-    pub hoodbbggjob: Option<bool>,
+    #[serde(rename = "OKEGDALOILF")]
+    pub okegdaloilf: Option<bool>,
     pub trial_skill_depot_id: Option<i64>,
 }

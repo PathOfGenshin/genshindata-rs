@@ -9,10 +9,10 @@ pub type FettersExcelConfigData = Vec<FettersExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct FettersExcelConfigDatum {
-    #[serde(rename = "JDJHGLGFHMC")]
-    pub jdjhglgfhmc: i64,
-    #[serde(rename = "BAICEOBBPNO")]
-    pub baiceobbpno: Vec<i64>,
+    #[serde(rename = "KJMDNPFIHGC")]
+    pub kjmdnpfihgc: i64,
+    #[serde(rename = "OFGMLMBBEAK")]
+    pub ofgmlmbbeak: Vec<i64>,
     pub finish_conds: Vec<i64>,
     pub tips: Vec<i64>,
     pub voice_title_text_map_hash: i64,
@@ -22,8 +22,8 @@ pub struct FettersExcelConfigDatum {
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<OpenCond>,
-    #[serde(rename = "PPPLDLPKPFA")]
-    pub pppldlpkpfa: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "DLPFLPGMMNA")]
+    pub dlpflpgmmna: Vec<Option<serde_json::Value>>,
     pub is_hiden: Option<bool>,
 }
 
@@ -45,6 +45,8 @@ pub enum CondType {
     FetterCondFinishParentQuest,
     #[serde(rename = "FETTER_COND_FINISH_QUEST")]
     FetterCondFinishQuest,
+    #[serde(rename = "FETTER_COND_NOT_OPEN")]
+    FetterCondNotOpen,
     #[serde(rename = "FETTER_COND_PLAYER_BIRTHDAY")]
     FetterCondPlayerBirthday,
     #[serde(rename = "FETTER_COND_UNLOCK_TRANS_POINT")]

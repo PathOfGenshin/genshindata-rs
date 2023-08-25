@@ -10,6 +10,6 @@ pub type AdjustFirebaseGachaExcelConfigData = Vec<AdjustFirebaseGachaExcelConfig
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AdjustFirebaseGachaExcelConfigDatum {
     pub id: i64,
-    pub cdfegnlakce: i64,
-    pub jllkbngplml: String,
+    pub eoabgkafkfb: i64,
+    pub ahimpldnccn: String,
 }

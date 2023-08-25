@@ -11,19 +11,19 @@ pub type ActivitySpiceStageDataExcelConfigData = Vec<ActivitySpiceStageDataExcel
 pub struct ActivitySpiceStageDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jnbcjpjjfpf: i64,
-    pub pgndhejhgoj: i64,
-    pub mdfmcpldlkb: Vec<i64>,
-    pub oadldjamihk: Vec<i64>,
-    pub ljaomjcmpnk: Vec<i64>,
+    pub ofmpckbpkpi: i64,
+    pub lfaifkfemfb: i64,
+    pub kpbcnfcolad: Vec<i64>,
+    pub hpeghjkjofi: Vec<i64>,
+    pub pcjpifilcme: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nfmgaiiefng: i64,
-    pub dopglcaehod: i64,
-    pub lneompmbiak: i64,
-    pub idlfbmnpmji: Vec<i64>,
+    pub nofdpfhmfnm: i64,
+    pub gdpdigodlpi: i64,
+    pub peedccnpjod: i64,
+    pub fhkfpgbnahp: Vec<i64>,
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
 }

@@ -13,26 +13,26 @@ pub struct GcgCharacterLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "npcId")]
     pub npc_id: i64,
-    pub aojnmjcampo: i64,
+    pub kgghjdlkpoe: i64,
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub dipkfkokpop: Vec<Dipkfkokpop>,
-    pub celfklkhdgc: i64,
-    pub kbappicbpng: i64,
-    pub diceiopnpon: Option<bool>,
-    pub ckhoejbaafa: Option<i64>,
-    pub gaojofbppah: Option<i64>,
-    pub mdkgnkafmbi: Vec<Option<serde_json::Value>>,
-    pub dgghehoiegg: i64,
-    pub jgkdjkpmljl: i64,
-    pub fkjnofjefje: i64,
-    pub pieknnbbdje: i64,
-    pub ceabifhhikh: f64,
+    pub obdlnlpednb: Vec<Obdlnlpednb>,
+    pub lkbkfhcdapl: i64,
+    pub gpgpihceebi: i64,
+    pub opnigjdbgbl: Option<bool>,
+    pub bcglceofbmc: Option<i64>,
+    pub bbcdpfkngdd: Option<i64>,
+    pub mpmipjeboam: Vec<Option<serde_json::Value>>,
+    pub igppeoklnlp: i64,
+    pub jkkdkpphhif: i64,
+    pub jpilngameln: i64,
+    pub nibhpimcebj: i64,
+    pub plgloeljpba: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Dipkfkokpop {
-    pub akcihjokmni: i64,
-    pub eideklfiocm: i64,
+pub struct Obdlnlpednb {
+    pub hmedbajhgld: i64,
+    pub genfhdchned: i64,
 }

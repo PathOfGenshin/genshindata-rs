@@ -17,4 +17,6 @@ pub struct BonusActivityClientExcelConfigDatum {
     pub perfab_path: String,
     pub unlock_tips_text_map_hash: i64,
     pub quest_id: Option<i64>,
+    #[serde(rename = "DBKHGBLNPCD")]
+    pub dbkhgblnpcd: Option<i64>,
 }

@@ -11,14 +11,14 @@ pub type SorushTrialRaceGalleryExcelConfigData = Vec<SorushTrialRaceGalleryExcel
 pub struct SorushTrialRaceGalleryExcelConfigDatum {
     pub id: i64,
     pub gallery_id: i64,
-    #[serde(rename = "DEHHFKBJIIC")]
-    pub dehhfkbjiic: i64,
-    #[serde(rename = "EFEBBIBCAHK")]
-    pub efebbibcahk: i64,
+    #[serde(rename = "JECDINOCJCE")]
+    pub jecdinocjce: i64,
+    #[serde(rename = "MLDLPCAFJID")]
+    pub mldlpcafjid: i64,
     pub level_title_text_map_hash: i64,
     pub level_desc_text_map_hash: i64,
-    #[serde(rename = "PGGIJCDNCAM")]
-    pub pggijcdncam: i64,
+    #[serde(rename = "DGJNHBGFBAK")]
+    pub dgjnhbgfbak: i64,
     #[serde(rename = "groupID")]
     pub group_id: i64,
     pub watcher_list: Vec<i64>,

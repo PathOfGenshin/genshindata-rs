@@ -15,24 +15,24 @@ pub struct ActivitySandwormCannonLevelExcelConfigDatum {
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub mlpcbhbifil: i64,
-    pub jlkcjmjbdmh: i64,
-    pub hfoibpbnedd: i64,
-    pub hlncdaioejk: Vec<i64>,
+    pub nogibfdglhc: i64,
+    pub ccmdclpbfpf: i64,
+    pub ngefehegdhh: i64,
+    pub ndeidnbljoc: Vec<i64>,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub oadaokpaama: i64,
-    pub dmoljjanell: Option<i64>,
-    pub naamgmamdpf: i64,
+    pub hjmmkfilclg: i64,
+    pub ahpffbgmgdj: Option<i64>,
+    pub nckommfglpn: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub cioakckejlj: String,
-    pub poipfonioeb: i64,
-    pub bkjmjpbnahg: String,
-    pub joladaefndh: String,
+    pub cobbhjlfmfd: String,
+    pub ljkehdinokm: i64,
+    pub admkkjehgnf: String,
+    pub jiolelclahm: String,
     #[serde(rename = "buffIcon")]
     pub buff_icon: String,
-    pub lbgkdeagakn: Option<bool>,
+    pub jnkafblakij: Option<bool>,
 }

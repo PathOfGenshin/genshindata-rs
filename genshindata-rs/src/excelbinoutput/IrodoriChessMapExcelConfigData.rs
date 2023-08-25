@@ -10,26 +10,26 @@ pub type IrodoriChessMapExcelConfigData = Vec<IrodoriChessMapExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct IrodoriChessMapExcelConfigDatum {
-    pub aljdgmnmfah: i64,
+    pub ajjpaiijkgd: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub pbaajgjemne: i64,
+    pub fjkpfcmadaf: i64,
     #[serde(rename = "show")]
     pub show: bool,
-    pub mfgheikfkia: Vec<i64>,
-    pub eohijdjhceb: i64,
-    pub codlojbphbg: HashMap<String, i64>,
-    pub holkdkahcfo: Vec<i64>,
-    pub pbnannkjfjl: Vec<i64>,
-    pub injnjokjobm: Vec<i64>,
-    pub mgfjphfgkcf: Vec<i64>,
-    pub lpdijndhcbb: i64,
+    pub gcgoagmphbc: Vec<i64>,
+    pub ajcalcfhjmd: i64,
+    pub cfmdjpdcald: HashMap<String, i64>,
+    pub bakfoojjbhg: Vec<i64>,
+    pub oojchckpmjg: Vec<i64>,
+    pub aoaiefnmbco: Vec<i64>,
+    pub pkaipnhghcd: Vec<i64>,
+    pub opieganedna: i64,
     #[serde(rename = "mapNameTextMapHash")]
     pub map_name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
-    pub hlapnhlpmag: HashMap<String, i64>,
-    pub hciddimonof: Option<i64>,
+    pub dhekaeaebgi: HashMap<String, i64>,
+    pub kfhdeaebmjg: Option<i64>,
 }

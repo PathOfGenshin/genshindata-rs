@@ -11,18 +11,18 @@ pub type ReunionGuideExcelConfigData = Vec<ReunionGuideExcelConfigDatum>;
 pub struct ReunionGuideExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jfhkloaikfi: i64,
-    pub ckaocfnhiop: i64,
-    pub gnfhaoigjdj: f64,
-    pub gcleoclclha: String,
-    pub ghjogdiopha: Vec<Ghjogdiopha>,
-    pub jefgmfkgeod: String,
-    pub ebnnnelkcdg: Option<String>,
+    pub faccokglobo: i64,
+    pub jmhfiaiekkc: i64,
+    pub hcjhlcoipcp: f64,
+    pub lhhnbkbhlea: String,
+    pub belfkedfphg: Vec<Belfkedfphg>,
+    pub oldpmiidbem: String,
+    pub lbambmnbbem: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Ghjogdiopha {
+pub struct Belfkedfphg {
     pub param: Vec<i64>,
     #[serde(rename = "type")]
-    pub ghjogdiopha_type: Option<String>,
+    pub belfkedfphg_type: Option<String>,
 }

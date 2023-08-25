@@ -13,12 +13,12 @@ pub struct InvestigationMonsterConfigDatum {
     pub city_id: i64,
     pub monster_id_list: Vec<i64>,
     pub group_id_list: Vec<i64>,
-    #[serde(rename = "DEBODAICJCA")]
-    pub debodaicjca: Vec<i64>,
-    #[serde(rename = "IAFPDGBKEJH")]
-    pub iafpdgbkejh: Vec<i64>,
-    #[serde(rename = "JMMJPKONHEA")]
-    pub jmmjpkonhea: i64,
+    #[serde(rename = "HNPBLNJAGGD")]
+    pub hnpblnjaggd: Vec<i64>,
+    #[serde(rename = "EPGDNIKGNBN")]
+    pub epgdnikgnbn: Vec<i64>,
+    #[serde(rename = "JPBADOODAMI")]
+    pub jpbadoodami: i64,
     pub reward_preview_id: i64,
     pub map_mark_create_type: Option<MapMarkCreateType>,
     pub map_mark_create_condition: MapMarkCreateCondition,

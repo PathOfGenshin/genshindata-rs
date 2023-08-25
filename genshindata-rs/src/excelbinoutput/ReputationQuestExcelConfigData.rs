@@ -20,6 +20,8 @@ pub struct ReputationQuestExcelConfigDatum {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum IconName {
+    #[serde(rename = "UI_ChapterIcon_Fontaine")]
+    UiChapterIconFontaine,
     #[serde(rename = "UI_ChapterIcon_Inazuma")]
     UiChapterIconInazuma,
     #[serde(rename = "UI_ChapterIcon_Liyue")]

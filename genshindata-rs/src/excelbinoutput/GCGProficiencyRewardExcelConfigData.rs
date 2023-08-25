@@ -9,14 +9,14 @@ pub type GcgProficiencyRewardExcelConfigData = Vec<GcgProficiencyRewardExcelConf
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgProficiencyRewardExcelConfigDatum {
-    pub agfpklanpln: i64,
-    pub oagoheojolo: Vec<Oagoheojolo>,
+    pub dikkdjcenfg: i64,
+    pub mfdplplkahl: Vec<Mfdplplkahl>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Oagoheojolo {
-    pub ebmoeiobnih: Option<i64>,
+pub struct Mfdplplkahl {
+    pub fodadpjnhen: Option<i64>,
     #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,
 }

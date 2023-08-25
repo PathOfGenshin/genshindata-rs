@@ -11,13 +11,13 @@ pub type VintageMarketHelpSkillExcelConfigData = Vec<VintageMarketHelpSkillExcel
 pub struct VintageMarketHelpSkillExcelConfigDatum {
     pub id: i64,
     pub effect_desc_text_map_hash: i64,
-    #[serde(rename = "AIHOPGFMNIF")]
-    pub aihopgfmnif: Aihopgfmnif,
+    #[serde(rename = "FKOMJDOHDJG")]
+    pub fkomjdohdjg: Fkomjdohdjg,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Aihopgfmnif {
+pub struct Fkomjdohdjg {
     #[serde(rename = "type")]
-    pub aihopgfmnif_type: String,
+    pub fkomjdohdjg_type: String,
     pub param: String,
 }

@@ -14,13 +14,16 @@ pub struct CombineExcelConfigDatum {
     pub is_default_show: Option<bool>,
     pub combine_type: i64,
     pub sub_combine_type: i64,
-    pub result_item_id: i64,
+    pub result_item_id: Option<i64>,
+    #[serde(rename = "DFNHCCOCLPM")]
+    pub dfnhccoclpm: Option<i64>,
     pub result_item_count: i64,
     pub scoin_cost: Option<i64>,
     pub random_items: Vec<RandomItem>,
     pub material_items: Vec<MaterialItem>,
     pub effect_desc_text_map_hash: i64,
     pub recipe_type: RecipeType,
+    pub drop_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
