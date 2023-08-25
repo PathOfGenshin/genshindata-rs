@@ -13,7 +13,7 @@ pub struct GravenInnocenceCarveOverallExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub ceeijcknfon: Vec<i64>,
-    pub kdgjbdlpjfb: Vec<i64>,
-    pub fkpmnfmddji: i64,
+    pub pbpnpklfgha: Vec<i64>,
+    pub ldpmhjghefa: Vec<i64>,
+    pub ophikjnaebo: i64,
 }

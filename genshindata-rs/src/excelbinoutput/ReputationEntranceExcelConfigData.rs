@@ -10,7 +10,7 @@ pub type ReputationEntranceExcelConfigData = Vec<ReputationEntranceExcelConfigDa
 #[serde(rename_all = "camelCase")]
 pub struct ReputationEntranceExcelConfigDatum {
     pub text_id: i64,
-    pub entrance_id: String,
+    pub entrance_id: EntranceId,
     pub city_id: i64,
     pub goods_id_vec: Vec<GoodsIdVec>,
     pub cond_name_vec: Vec<i64>,
@@ -20,6 +20,19 @@ pub struct ReputationEntranceExcelConfigDatum {
     pub desc_text_map_hash: i64,
     pub icon_name: String,
     pub order: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum EntranceId {
+    #[serde(rename = "REPUTATION_ENTRANCE_EXPLORE")]
+    ReputationEntranceExplore,
+    #[serde(rename = "REPUTATION_ENTRANCE_HUNTER")]
+    ReputationEntranceHunter,
+    #[serde(rename = "REPUTATION_ENTRANCE_QUEST")]
+    ReputationEntranceQuest,
+    #[serde(rename = "REPUTATION_ENTRANCE_REQUEST")]
+    ReputationEntranceRequest,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

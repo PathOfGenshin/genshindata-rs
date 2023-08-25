@@ -13,24 +13,24 @@ pub struct FishSkillExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "skillCategory")]
     pub skill_category: SkillCategory,
-    pub hcadbfndjae: Hcadbfndjae,
+    pub ejponiiehpp: Ejponiiehpp,
     #[serde(rename = "param")]
     pub param: Vec<f64>,
-    pub bccihnfneko: Option<f64>,
-    pub meimkphpipg: Vec<f64>,
-    pub ipofbiedgng: Vec<f64>,
-    pub jfcjnfodplp: Vec<i64>,
-    pub eheokfpcdnh: Vec<i64>,
+    pub hbjdenajmdn: Option<f64>,
+    pub hfmjappfemm: Vec<f64>,
+    pub jnnngagoodi: Vec<f64>,
+    pub dponlbnkhla: Vec<i64>,
+    pub oaiknngifca: Vec<i64>,
     #[serde(rename = "duration")]
     pub duration: f64,
     #[serde(rename = "priority")]
     pub priority: i64,
-    pub endipiilgjh: Option<i64>,
+    pub plnlnahkonc: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Hcadbfndjae {
+pub enum Ejponiiehpp {
     #[serde(rename = "FISH_SKILL_HP")]
     FishSkillHp,
     #[serde(rename = "FISH_SKILL_TIME")]

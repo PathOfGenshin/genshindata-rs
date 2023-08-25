@@ -12,10 +12,10 @@ pub struct ActivityMistTrialLevelFactorExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "param")]
     pub param: Vec<String>,
-    #[serde(rename = "PDEOFJAHJBC")]
-    pub pdeofjahjbc: i64,
-    #[serde(rename = "ENNNFOHLBBF")]
-    pub ennnfohlbbf: i64,
-    #[serde(rename = "HPLPFDLPIJM")]
-    pub hplpfdlpijm: i64,
+    #[serde(rename = "MMNJOAMCPLJ")]
+    pub mmnjoamcplj: i64,
+    #[serde(rename = "BKCIEOHACMA")]
+    pub bkcieohacma: i64,
+    #[serde(rename = "FJBLDEICHGE")]
+    pub fjbldeichge: i64,
 }

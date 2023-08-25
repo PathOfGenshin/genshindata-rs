@@ -11,24 +11,25 @@ pub type GcgGameExcelConfigData = Vec<GcgGameExcelConfigDatum>;
 pub struct GcgGameExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub pdfldogonkp: i64,
-    pub ahhhgnffkdg: i64,
-    pub cfhpgcejjli: Option<i64>,
-    pub ojmbjlfglgm: Option<i64>,
+    pub jijadkmkodd: i64,
+    pub hcllgfdahcn: i64,
+    pub bddhacgkdbe: Option<i64>,
+    pub fblcecdfoba: Option<i64>,
     #[serde(rename = "guideName")]
     pub guide_name: GuideName,
-    pub hcpbbpcmjki: Option<Hcpbbpcmjki>,
-    pub gdlkgoemmka: Option<Gdlkgoemmka>,
-    pub ojoeecdldlk: Option<bool>,
-    pub npbebgohpko: Option<i64>,
-    pub ppknpogmddo: Option<String>,
-    pub fblleimggpj: Option<bool>,
+    pub mchfcpecjai: Option<Mchfcpecjai>,
+    pub fnalhpiabjo: Option<Fnalhpiabjo>,
+    pub cbklhnhdcni: Option<bool>,
+    pub ilhlaldamfh: Option<i64>,
+    pub oiebnboaamb: Option<String>,
+    pub cmomkepaafa: Option<bool>,
+    pub jekcdifikna: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Gdlkgoemmka {
+pub enum Fnalhpiabjo {
     #[serde(rename = "SELF")]
-    GdlkgoemmkaSelf,
+    FnalhpiabjoSelf,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -54,7 +55,7 @@ pub enum GuideName {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hcpbbpcmjki {
+pub enum Mchfcpecjai {
     #[serde(rename = "AI")]
     Ai,
     #[serde(rename = "PVE")]

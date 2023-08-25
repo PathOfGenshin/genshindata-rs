@@ -23,19 +23,19 @@ pub struct PhotographTaskDatum {
     pub finish_tips_text_map_hash: i64,
     pub start_tips_text_map_hash: i64,
     pub start_time: Option<i64>,
-    #[serde(rename = "LMPCJAMCJLN")]
-    pub lmpcjamcjln: Option<Lmpcjamcjln>,
-    #[serde(rename = "HOODMEOEGGC")]
-    pub hoodmeoeggc: Option<i64>,
-    #[serde(rename = "DDLKLHJPDEH")]
-    pub ddlklhjpdeh: Option<i64>,
-    #[serde(rename = "OCKLFJCKDIJ")]
-    pub ocklfjckdij: Option<i64>,
+    #[serde(rename = "AGDPACKMEPB")]
+    pub agdpackmepb: Option<Agdpackmepb>,
+    #[serde(rename = "DOGCGCNEENE")]
+    pub dogcgcneene: Option<i64>,
+    #[serde(rename = "HEHEIDNOCDH")]
+    pub heheidnocdh: Option<i64>,
+    #[serde(rename = "AMFIAHKMCHP")]
+    pub amfiahkmchp: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Lmpcjamcjln {
+pub enum Agdpackmepb {
     #[serde(rename = "PHOTOGRAPH_TASK_TYPE_INTERACTION")]
     PhotographTaskTypeInteraction,
 }

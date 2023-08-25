@@ -10,23 +10,23 @@ pub type RadarHintExcelConfigData = Vec<RadarHintExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct RadarHintExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "DNICBBDPLDD")]
-    pub dnicbbdpldd: String,
+    #[serde(rename = "PANDJCKODNJ")]
+    pub pandjckodnj: String,
     pub name: String,
     pub radius: i64,
     pub effect_name: EffectName,
     pub icon_name: String,
     pub audio_name: AudioName,
-    #[serde(rename = "HKBFCEBFNLE")]
-    pub hkbfcebfnle: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HFPBHIIBPIC")]
+    pub hfpbhiibpic: Vec<Option<serde_json::Value>>,
     pub offset_radius: Option<i64>,
     pub area_radius: Option<i64>,
-    #[serde(rename = "HPFPABOEAFL")]
-    pub hpfpaboeafl: Option<bool>,
-    #[serde(rename = "MCJGEGLHLNE")]
-    pub mcjgeglhlne: Option<bool>,
-    #[serde(rename = "NHPKALEJIJI")]
-    pub nhpkalejiji: Option<bool>,
+    #[serde(rename = "KGLBEMNEHGJ")]
+    pub kglbemnehgj: Option<bool>,
+    #[serde(rename = "NAHOBKMAEKF")]
+    pub nahobkmaekf: Option<bool>,
+    #[serde(rename = "EIFDOHOMPHJ")]
+    pub eifdohomphj: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

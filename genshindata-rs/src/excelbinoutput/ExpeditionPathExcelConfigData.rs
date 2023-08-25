@@ -16,7 +16,7 @@ pub struct ExpeditionPathExcelConfigDatum {
     pub bonus_reward_id: i64,
     pub path_name_text_map_hash: i64,
     pub path_desc_text_map_hash: i64,
-    #[serde(rename = "ODCBBDIEHJE")]
-    pub odcbbdiehje: Vec<i64>,
+    #[serde(rename = "AEFKKGMGBHD")]
+    pub aefkkgmgbhd: Vec<i64>,
     pub reward_preview_id: i64,
 }

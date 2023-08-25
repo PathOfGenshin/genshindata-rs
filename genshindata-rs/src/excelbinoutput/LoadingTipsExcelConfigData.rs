@@ -18,12 +18,12 @@ pub struct LoadingTipsExcelConfigDatum {
     pub end_time: String,
     pub limit_open_state: LimitOpenState,
     pub pre_main_quest_ids: String,
-    #[serde(rename = "EFOHHEOBHFI")]
-    pub efohheobhfi: Vec<i64>,
-    #[serde(rename = "PPLHOLDLILA")]
-    pub pplholdlila: Vec<i64>,
-    #[serde(rename = "HFIDDGMLDBN")]
-    pub hfiddgmldbn: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "JJILHHPGHHK")]
+    pub jjilhhpghhk: Vec<i64>,
+    #[serde(rename = "HOBLJBCCKGB")]
+    pub hobljbcckgb: Vec<i64>,
+    #[serde(rename = "ENBBKNDOMAN")]
+    pub enbbkndoman: Vec<Option<serde_json::Value>>,
     pub weight: i64,
     pub min_level: Option<i64>,
 }

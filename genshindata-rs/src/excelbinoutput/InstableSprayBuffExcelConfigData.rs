@@ -11,14 +11,14 @@ pub type InstableSprayBuffExcelConfigData = Vec<InstableSprayBuffExcelConfigDatu
 pub struct InstableSprayBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub beijhjhdkjd: String,
-    pub jocikgaoeen: String,
-    pub ajbflbfipdg: f64,
+    pub behhcchceho: String,
+    pub cgkmjldannc: String,
+    pub mmddpggccec: f64,
     #[serde(rename = "elementType")]
     pub element_type: Option<i64>,
-    pub npgiagghigl: i64,
+    pub lcjpgaelhho: i64,
     #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
-    pub bhphileglna: i64,
-    pub nglgbnhaedb: Vec<String>,
+    pub lmhcbkddkhm: i64,
+    pub noekhckmdap: Vec<String>,
 }

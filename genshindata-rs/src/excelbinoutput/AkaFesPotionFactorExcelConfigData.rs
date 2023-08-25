@@ -11,19 +11,19 @@ pub type AkaFesPotionFactorExcelConfigData = Vec<AkaFesPotionFactorExcelConfigDa
 pub struct AkaFesPotionFactorExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mmlafpbolkn: Mmlafpbolkn,
+    pub oedgdilpnch: Oedgdilpnch,
     #[serde(rename = "abilityGroup")]
     pub ability_group: String,
-    pub foflbnjpglo: i64,
-    pub peapgbnkbda: i64,
+    pub cibaobmhaon: i64,
+    pub oijfbmlnfbf: i64,
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
-    pub lpoghebfngd: Option<i64>,
-    pub bdopjibmmfg: Option<String>,
+    pub kpoflikmkdk: Option<i64>,
+    pub mihehhjmabj: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Mmlafpbolkn {
+pub enum Oedgdilpnch {
     #[serde(rename = "NEGATIVE")]
     Negative,
     #[serde(rename = "POSITIVE")]

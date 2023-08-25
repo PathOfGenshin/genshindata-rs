@@ -23,13 +23,13 @@ pub struct HomeWorldLimitShopExcelConfigDatum {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct Cond {
-    pub lpoibdhemkb: Vec<i64>,
-    pub oapcjdgdokm: Option<Oapcjdgdokm>,
+    pub cjpgffddbmb: Vec<i64>,
+    pub egjmgehldol: Option<Egjmgehldol>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Oapcjdgdokm {
+pub enum Egjmgehldol {
     #[serde(rename = "HOMEWORLD_LIMIT_SHOP_COND_TYPE_QUEST_FINISH")]
     HomeworldLimitShopCondTypeQuestFinish,
 }

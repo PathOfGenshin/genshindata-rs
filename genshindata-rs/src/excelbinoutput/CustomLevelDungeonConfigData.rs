@@ -15,11 +15,11 @@ pub struct CustomLevelDungeonConfigDatum {
     pub order: i64,
     #[serde(rename = "jsonPath")]
     pub json_path: String,
-    pub jdpcngpcljc: String,
-    pub ljjoiofdfei: Option<f64>,
-    pub fpgpeeijhpc: Option<f64>,
-    pub hfegnechenf: i64,
-    pub kpljphpmgpf: i64,
-    pub lfknlhfjkcn: String,
-    pub cccinldbfdl: Vec<i64>,
+    pub cjbkmebagda: String,
+    pub oijaibeejdh: Option<f64>,
+    pub liaiahmlcll: Option<f64>,
+    pub hfgloeanole: i64,
+    pub jhoajpkclci: i64,
+    pub kpiiaienekl: String,
+    pub gmgdpcjjjgh: Vec<i64>,
 }

@@ -9,26 +9,26 @@ pub type NightCrowArgumentExcelConfigData = Vec<NightCrowArgumentExcelConfigDatu
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct NightCrowArgumentExcelConfigDatum {
-    pub dbcnfhgnmme: i64,
-    pub cmfkojpjaop: Vec<i64>,
-    pub fffeofgfhol: Fffeofgfhol,
-    pub nlngddklbah: String,
-    pub hfcfcihmneo: String,
-    pub iohjcdnnfjc: String,
-    pub oljpikghcpe: String,
-    pub mlancklaeam: Mlancklaeam,
-    pub jhmfjlacfkh: Jhmfjlacfkh,
-    pub iadcfmjpfjj: String,
+    pub mfjocdilbgg: i64,
+    pub ocnmoabegoo: Vec<i64>,
+    pub ajleocmeibb: Ajleocmeibb,
+    pub imgdameceen: String,
+    pub cblhmpeknko: String,
+    pub dlgpppihdnd: String,
+    pub admnohnafmi: String,
+    pub igbbabahpik: Igbbabahpik,
+    pub bcokjcndalg: Bcokjcndalg,
+    pub oongcickdfl: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Fffeofgfhol {
+pub enum Ajleocmeibb {
     #[serde(rename = "0,1.5,0")]
     The0150,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Jhmfjlacfkh {
+pub enum Bcokjcndalg {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "-14.89,86.69,160.33")]
@@ -38,7 +38,7 @@ pub enum Jhmfjlacfkh {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Mlancklaeam {
+pub enum Igbbabahpik {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "-1,1,-0.01,1,-2,2")]

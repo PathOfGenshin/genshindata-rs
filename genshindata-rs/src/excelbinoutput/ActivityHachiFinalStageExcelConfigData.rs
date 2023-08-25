@@ -14,22 +14,22 @@ pub struct ActivityHachiFinalStageExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
-    #[serde(rename = "EEEAIOEAEDC")]
-    pub eeeaioeaedc: i64,
-    #[serde(rename = "IJCEHGBANBF")]
-    pub ijcehgbanbf: i64,
-    #[serde(rename = "IDMHLDKDFBJ")]
-    pub idmhldkdfbj: i64,
-    #[serde(rename = "JMOAEBINIMO")]
-    pub jmoaebinimo: i64,
+    #[serde(rename = "ACIMFILFKLK")]
+    pub acimfilfklk: i64,
+    #[serde(rename = "MBMGLHGMPOL")]
+    pub mbmglhgmpol: i64,
+    #[serde(rename = "IBBJPJEMMHJ")]
+    pub ibbjpjemmhj: i64,
+    #[serde(rename = "LNNAOLFCDJE")]
+    pub lnnaolfcdje: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "JCDOCEIEHOK")]
-    pub jcdoceiehok: Vec<i64>,
-    #[serde(rename = "AGLAOJKGLJI")]
-    pub aglaojkglji: i64,
+    #[serde(rename = "GCKBFCBDGGN")]
+    pub gckbfcbdggn: Vec<i64>,
+    #[serde(rename = "BHBAFOLBNAE")]
+    pub bhbafolbnae: i64,
 }

@@ -17,16 +17,16 @@ pub struct MaterialCodexExcelConfigDatum {
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub icon: String,
-    #[serde(rename = "DNPOBNNBADK")]
-    pub dnpobnnbadk: i64,
-    #[serde(rename = "KJALEOLMGOL")]
-    pub kjaleolmgol: i64,
-    #[serde(rename = "IHDKFJECCJO")]
-    pub ihdkfjeccjo: i64,
-    #[serde(rename = "GBHPOMMJONO")]
-    pub gbhpommjono: i64,
-    #[serde(rename = "AHJBLMDGJND")]
-    pub ahjblmdgjnd: Option<i64>,
+    #[serde(rename = "ODKALNAADBK")]
+    pub odkalnaadbk: i64,
+    #[serde(rename = "EOIJLMAELMA")]
+    pub eoijlmaelma: i64,
+    #[serde(rename = "FGJCLHCNHMK")]
+    pub fgjclhcnhmk: i64,
+    #[serde(rename = "JILMBPKOJJL")]
+    pub jilmbpkojjl: i64,
+    #[serde(rename = "NMHNCOPJGAN")]
+    pub nmhncopjgan: Option<i64>,
     pub is_disuse: Option<bool>,
     pub show_only_unlocked: Option<bool>,
     #[serde(rename = "type")]

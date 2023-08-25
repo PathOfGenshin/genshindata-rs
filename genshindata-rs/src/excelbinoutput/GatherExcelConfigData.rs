@@ -20,8 +20,8 @@ pub struct GatherExcelConfigDatum {
     pub cd: Option<bool>,
     pub point_location: Option<PointLocation>,
     pub is_forbid_guest: Option<bool>,
-    #[serde(rename = "GABFDHEFJCD")]
-    pub gabfdhefjcd: Option<bool>,
+    #[serde(rename = "LIIHKBMKFGD")]
+    pub liihkbmkfgd: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

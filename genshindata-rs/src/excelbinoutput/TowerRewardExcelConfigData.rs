@@ -9,10 +9,10 @@ pub type TowerRewardExcelConfigData = Vec<TowerRewardExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct TowerRewardExcelConfigDatum {
-    pub ihihoedjobi: i64,
-    pub fopbdhldcjm: i64,
-    pub ddbkpimaimm: i64,
-    pub knmdhpaaloc: i64,
-    pub admfcahghao: i64,
-    pub akbhebembid: Vec<i64>,
+    pub aekebpckbpp: i64,
+    pub bobdeadmohm: i64,
+    pub ppfdbhjhgdh: i64,
+    pub ledbfekbkgn: i64,
+    pub dabekilholn: i64,
+    pub ledjlaaimpm: Vec<i64>,
 }

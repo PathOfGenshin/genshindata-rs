@@ -10,29 +10,29 @@ pub type VehicleSkillExcelConfigData = Vec<VehicleSkillExcelConfigDatum>;
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct VehicleSkillExcelConfigDatum {
     pub id: i64,
-    pub ieahmphafjj: i64,
-    pub ddikjbhmkda: i64,
+    pub dlehbdcbheh: i64,
+    pub kpkhpjmelnk: i64,
     #[serde(rename = "abilityName")]
     pub ability_name: String,
     #[serde(rename = "skillIcon")]
     pub skill_icon: String,
-    pub cjmgphmnmfd: i64,
-    pub nilpeioaion: i64,
+    pub fbmmklhjcob: i64,
+    pub enefocefmgj: i64,
     #[serde(rename = "lockShape")]
     pub lock_shape: LockShape,
     #[serde(rename = "lockWeightParams")]
     pub lock_weight_params: Vec<f64>,
     #[serde(rename = "globalValueKey")]
     pub global_value_key: String,
-    pub khjbiefkmei: Option<i64>,
-    pub eifgmnelhdn: Option<i64>,
-    pub hdimheiodkf: Option<String>,
+    pub gmecaomjjhf: Option<i64>,
+    pub eehcdojfdlc: Option<i64>,
+    pub dppkgebmoah: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum LockShape {
-    #[serde(rename = "CircleLockEnemyR50H30HC")]
-    CircleLockEnemyR50H30Hc,
+    #[serde(rename = "CircleLockEnemyR50H15BC")]
+    CircleLockEnemyR50H15Bc,
     #[serde(rename = "CircleLockEnemyR5H6HC")]
     CircleLockEnemyR5H6Hc,
 }

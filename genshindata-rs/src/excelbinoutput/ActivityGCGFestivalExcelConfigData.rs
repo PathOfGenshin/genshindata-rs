@@ -12,12 +12,12 @@ pub struct ActivityGcgFestivalExcelConfigDatum {
     pub id: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "PPKNPOGMDDO")]
-    pub ppknpogmddo: String,
+    #[serde(rename = "OIEBNBOAAMB")]
+    pub oiebnboaamb: String,
     pub match_id: i64,
     pub open_day: i64,
-    #[serde(rename = "KDPFOMENJAA")]
-    pub kdpfomenjaa: i64,
-    #[serde(rename = "IAIEIPLIGDC")]
-    pub iaieipligdc: Option<i64>,
+    #[serde(rename = "CDDMLEDPJAF")]
+    pub cddmledpjaf: i64,
+    #[serde(rename = "FADOJLNAHLH")]
+    pub fadojlnahlh: Option<i64>,
 }

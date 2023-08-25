@@ -11,7 +11,7 @@ pub type GravenInnocenceCampStageExcelConfigData = Vec<GravenInnocenceCampStageE
 pub struct GravenInnocenceCampStageExcelConfigDatum {
     pub id: i64,
     pub open_day: i64,
-    #[serde(rename = "EMOPNIGCGGE")]
-    pub emopnigcgge: Vec<i64>,
+    #[serde(rename = "GIKGNBLPBCM")]
+    pub gikgnblpbcm: Vec<i64>,
     pub title_text_map_hash: i64,
 }

@@ -11,15 +11,15 @@ pub type QuestAcceptionMarkExcelConfigData = Vec<QuestAcceptionMarkExcelConfigDa
 pub struct QuestAcceptionMarkExcelConfigDatum {
     #[serde(rename = "configId")]
     pub config_id: i64,
-    pub cahkfbdbmjg: i64,
+    pub dllhfcgbcjk: i64,
     #[serde(rename = "npcId")]
     pub npc_id: Option<i64>,
-    pub bmheenncjcg: Option<bool>,
+    pub ogjfalanoje: Option<bool>,
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
-    pub lnieodcdebm: Vec<f64>,
-    pub fcholofgcii: Option<bool>,
+    pub medgobcpddd: Vec<f64>,
+    pub pleogbdbpec: Option<bool>,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lbpegoicmem: i64,
+    pub najobfbemgo: i64,
 }

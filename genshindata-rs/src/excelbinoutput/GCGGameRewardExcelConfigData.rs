@@ -11,35 +11,35 @@ pub type GcgGameRewardExcelConfigData = Vec<GcgGameRewardExcelConfigDatum>;
 pub struct GcgGameRewardExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub pajppcaihdo: Vec<Pajppcaihdo>,
+    pub epbokflckmo: Vec<Epbokflckmo>,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
-    pub jlodmighffj: i64,
-    pub nanpjkaknkb: Vec<i64>,
-    pub gcopcphkfmc: Vec<i64>,
-    pub apolcbmljib: Vec<i64>,
+    pub khfpeldkihd: i64,
+    pub mpdjadhecfi: Vec<i64>,
+    pub koojhmffpin: Vec<i64>,
+    pub fodjbogcmml: Vec<i64>,
     #[serde(rename = "failTips")]
     pub fail_tips: Vec<i64>,
-    pub fpecffpfibi: Option<Fpecffpfibi>,
-    pub bhbhbekhjcj: i64,
-    pub apaclcnlnkm: Option<String>,
-    pub ogbjgddkmae: Vec<Ogbjgddkmae>,
-    pub mkcooppmnck: Mkcooppmnck,
-    pub ddlpepbaigd: Option<bool>,
+    pub amidlbbfihh: Option<Amidlbbfihh>,
+    pub fidipckcchh: i64,
+    pub jhipjpipabl: Option<String>,
+    pub okmcfobhbki: Vec<Okmcfobhbki>,
+    pub dnjbmaajmij: Dnjbmaajmij,
+    pub gcablbiijgj: Option<bool>,
     #[serde(rename = "groupId")]
     pub group_id: Option<i64>,
-    pub pikfbhgmhbh: Option<bool>,
+    pub mmlmeogoblj: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fpecffpfibi {
+pub enum Amidlbbfihh {
     #[serde(rename = "PVE_MONSTER")]
     PveMonster,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Mkcooppmnck {
+pub enum Dnjbmaajmij {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "Gcg_Loading_Bg2")]
@@ -54,10 +54,17 @@ pub enum Mkcooppmnck {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Ogbjgddkmae {
+pub struct Epbokflckmo {
+    pub challenge_id: Option<i64>,
+    pub reward_id: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Okmcfobhbki {
     pub param_list: Vec<i64>,
     #[serde(rename = "type")]
-    pub ogbjgddkmae_type: Option<Type>,
+    pub okmcfobhbki_type: Option<Type>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -67,11 +74,4 @@ pub enum Type {
     FinishLevelChallenge,
     #[serde(rename = "GCG_LEVEL")]
     GcgLevel,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct Pajppcaihdo {
-    pub challenge_id: Option<i64>,
-    pub reward_id: Option<i64>,
 }

@@ -11,13 +11,13 @@ pub type RogueDiaryPreviewExcelConfigData = Vec<RogueDiaryPreviewExcelConfigDatu
 pub struct RogueDiaryPreviewExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub aglaojkglji: i64,
-    pub knbfalhgjln: i64,
-    pub bbfhbcnedhp: Vec<i64>,
-    pub lpadopbkejf: Vec<i64>,
-    pub efohheobhfi: Vec<i64>,
-    pub niehangcjhj: i64,
-    pub fklngdgjleo: i64,
+    pub bhbafolbnae: i64,
+    pub nnmdhlgjbhe: i64,
+    pub kedfjggdpjo: Vec<i64>,
+    pub pcmfpadhogj: Vec<i64>,
+    pub jjilhhpghhk: Vec<i64>,
+    pub aippnkemnin: i64,
+    pub ebbllhpgcgp: i64,
     #[serde(rename = "worldSceneId")]
     pub world_scene_id: i64,
 }

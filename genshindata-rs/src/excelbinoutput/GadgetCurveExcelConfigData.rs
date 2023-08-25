@@ -43,6 +43,8 @@ pub enum Type {
     GrowCurveHp,
     #[serde(rename = "GROW_CURVE_HP_2")]
     GrowCurveHp2,
+    #[serde(rename = "GROW_CURVE_HP_ENVIRONMENT")]
+    GrowCurveHpEnvironment,
     #[serde(rename = "GROW_CURVE_PROGRESSION")]
     GrowCurveProgression,
     #[serde(rename = "GROW_CURVE_TOWERATK")]

@@ -13,14 +13,14 @@ pub struct BrickBreakerSkillExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "maxLevel")]
     pub max_level: i64,
-    pub cipnhgijikp: i64,
-    pub ddikjbhmkda: i64,
+    pub ieneodaohnb: i64,
+    pub kpkhpjmelnk: i64,
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
-    pub aiidgclobdh: f64,
+    pub dbdffeobdep: f64,
     #[serde(rename = "unlockWorldLevel")]
     pub unlock_world_level: Option<i64>,
-    pub kbpchiaknbn: Vec<i64>,
-    pub hcadbfndjae: String,
-    pub lgenegpncok: Option<i64>,
+    pub llipjiafmhe: Vec<i64>,
+    pub ejponiiehpp: String,
+    pub ddkmioniolc: Option<i64>,
 }

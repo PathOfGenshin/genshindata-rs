@@ -11,10 +11,10 @@ pub type SorushTrialQuestExcelConfigData = Vec<SorushTrialQuestExcelConfigDatum>
 pub struct SorushTrialQuestExcelConfigDatum {
     pub id: i64,
     pub quest_id: i64,
-    #[serde(rename = "LHFMGCMKPLH")]
-    pub lhfmgcmkplh: i64,
-    #[serde(rename = "IJCEHGBANBF")]
-    pub ijcehgbanbf: i64,
+    #[serde(rename = "GMBBKOIAECK")]
+    pub gmbbkoiaeck: i64,
+    #[serde(rename = "MBMGLHGMPOL")]
+    pub mbmglhgmpol: i64,
     #[serde(rename = "condID")]
     pub cond_id: i64,
 }

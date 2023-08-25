@@ -11,15 +11,15 @@ pub type GcgTagExcelConfigData = Vec<GcgTagExcelConfigDatum>;
 pub struct GcgTagExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_tag_excel_config_datum_type: String,
-    pub eieibcdfepj: Vec<Eieibcdfepj>,
+    pub dopcgbfeedl: Vec<Dopcgbfeedl>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub giabelgokde: f64,
+    pub lbdhchdkgeg: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Eieibcdfepj {
+pub enum Dopcgbfeedl {
     #[serde(rename = "GCG_TAG_IDENTIFIER_ASSIST")]
     GcgTagIdentifierAssist,
     #[serde(rename = "GCG_TAG_IDENTIFIER_CHAR")]

@@ -13,6 +13,6 @@ pub struct EchoShellRewardExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
-    pub eiobkgcagli: i64,
-    pub ackaabacbmk: Option<bool>,
+    pub kkhkedidinb: i64,
+    pub cmkdfcfnhkm: Option<bool>,
 }

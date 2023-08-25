@@ -9,9 +9,9 @@ pub type AttackAttenuationExcelConfigData = Vec<AttackAttenuationExcelConfigDatu
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AttackAttenuationExcelConfigDatum {
-    pub micabcidfcd: String,
-    pub ogmcknnkjac: f64,
-    pub iccodcekecg: Vec<f64>,
-    pub pebkgjpaklk: Vec<f64>,
-    pub nieinhladfl: Vec<f64>,
+    pub kgjcbkcpocm: String,
+    pub fdjgmmpkmea: f64,
+    pub ijinbfmchpm: Vec<f64>,
+    pub neefinkmlog: Vec<f64>,
+    pub bbcbkieiihe: Vec<f64>,
 }

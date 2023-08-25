@@ -17,12 +17,12 @@ pub struct Ffv2PacmanStageExcelConfigDatum {
     pub watcher_list: Vec<i64>,
     #[serde(rename = "galleryID")]
     pub gallery_id: i64,
-    #[serde(rename = "LJOIDCHEEDH")]
-    pub ljoidcheedh: i64,
-    #[serde(rename = "HDAFHOANBEN")]
-    pub hdafhoanben: i64,
+    #[serde(rename = "LCDKIDOKJPJ")]
+    pub lcdkidokjpj: i64,
+    #[serde(rename = "HMKLDCJIOOK")]
+    pub hmkldcjiook: i64,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "LMDAMJLCPHM")]
-    pub lmdamjlcphm: f64,
+    #[serde(rename = "DKLMHADMOGM")]
+    pub dklmhadmogm: f64,
 }

@@ -9,12 +9,12 @@ pub type RandomCompoundDisplayExcelConfigData = Vec<RandomCompoundDisplayExcelCo
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RandomCompoundDisplayExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "PMFDMNPHDBL")]
-    pub pmfdmnphdbl: Vec<Pmfdmnphdbl>,
+    #[serde(rename = "GKDPGHFDGCB")]
+    pub gkdpghfdgcb: Vec<Gkdpghfdgcb>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Pmfdmnphdbl {
+pub struct Gkdpghfdgcb {
     pub id: Option<i64>,
     pub count: Option<i64>,
 }

@@ -3,6 +3,14 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type ActivitySpiceFoodExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ActivitySpiceFoodExcelConfigData = Vec<ActivitySpiceFoodExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct ActivitySpiceFoodExcelConfigDatum {
+    pub lfiflmpaipo: i64,
+    pub ocfcpdlpfin: i64,
+    pub meedendeidd: i64,
+    pub knbneagkido: i64,
+}

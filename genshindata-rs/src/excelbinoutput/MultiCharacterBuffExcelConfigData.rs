@@ -13,6 +13,6 @@ pub struct MultiCharacterBuffExcelConfigDatum {
     pub ability_name: String,
     pub icon_name: String,
     pub buff_name_text_map_hash: i64,
-    #[serde(rename = "BHPHILEGLNA")]
-    pub bhphileglna: i64,
+    #[serde(rename = "LMHCBKDDKHM")]
+    pub lmhcbkddkhm: i64,
 }

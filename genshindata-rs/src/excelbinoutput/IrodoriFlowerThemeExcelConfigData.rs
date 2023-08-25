@@ -9,18 +9,18 @@ pub type IrodoriFlowerThemeExcelConfigData = Vec<IrodoriFlowerThemeExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct IrodoriFlowerThemeExcelConfigDatum {
-    pub indfbjcipne: i64,
+    pub paampcojlmp: i64,
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
-    pub gkgnfpbafjh: i64,
-    pub dhjlfnnigmh: i64,
-    pub lihaokdpiel: i64,
-    pub pkbphicpoid: i64,
-    pub lcmdgocbmmi: f64,
-    pub aljdjleiipp: i64,
-    pub mbokedebeoh: Vec<i64>,
-    pub fpflbgkgcmi: i64,
-    pub aficiionmme: i64,
+    pub ldiadlienfh: i64,
+    pub ndcdkhcjohb: i64,
+    pub leplmfejaic: i64,
+    pub gocclikcmko: i64,
+    pub bhpidojmogd: f64,
+    pub pdnjjndlnhh: i64,
+    pub chefecgjfpi: Vec<i64>,
+    pub icmplboiibc: i64,
+    pub ljnmlbhaegn: i64,
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
     #[serde(rename = "questId")]

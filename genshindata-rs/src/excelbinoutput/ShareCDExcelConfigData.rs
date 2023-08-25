@@ -8,8 +8,10 @@ use std::collections::HashMap;
 pub type ShareCdExcelConfigData = Vec<ShareCdExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ShareCdExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "AMGHLGIMHFK")]
-    pub amghlgimhfk: Vec<HashMap<String, i64>>,
+    pub max_charge_num: i64,
+    #[serde(rename = "JGPANFENBNC")]
+    pub jgpanfenbnc: Vec<HashMap<String, i64>>,
 }

@@ -9,35 +9,24 @@ pub type HomeWorldPlantExcelConfigData = Vec<HomeWorldPlantExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HomeWorldPlantExcelConfigDatum {
-    pub njnobmkjfpb: i64,
-    pub hnnaiefnnll: Vec<i64>,
-    pub dnkldcgaogg: Option<i64>,
-    pub bjcccnfpkko: Option<i64>,
+    pub bopkdigahpa: i64,
+    pub pbdohjpdomp: Vec<i64>,
+    pub mjhblgbpcfi: Option<i64>,
+    pub depnplmcijm: Option<i64>,
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,
-    pub dgpdmojjbdl: Vec<Dgpdmojjbdl>,
-    pub obfekmepaen: i64,
+    pub khgakmknpbj: Vec<Khgakmknpbj>,
+    pub janeicbikhj: i64,
     #[serde(rename = "time")]
     pub time: i64,
-    pub leilioplaad: i64,
-    pub maklfhbajph: i64,
-    pub nenkaafjhnh: i64,
+    pub bpepdbkmehi: i64,
+    pub cjblockdflk: i64,
+    pub lfmjoepdbfk: i64,
     #[serde(rename = "order")]
     pub order: i64,
     #[serde(rename = "inteeIconName")]
     pub intee_icon_name: InteeIconName,
-    pub nfdgamenmai: i64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Dgpdmojjbdl {
-    pub dnkldcgaogg: Option<i64>,
-    pub bjcccnfpkko: Option<i64>,
-    #[serde(rename = "dropID")]
-    pub drop_id: Option<i64>,
-    #[serde(rename = "weight")]
-    pub weight: Option<i64>,
+    pub mlbdhmaompd: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -46,4 +35,15 @@ pub enum InteeIconName {
     Empty,
     #[serde(rename = "UI_Icon_Item_GrowFlowers")]
     UiIconItemGrowFlowers,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct Khgakmknpbj {
+    pub mjhblgbpcfi: Option<i64>,
+    pub depnplmcijm: Option<i64>,
+    #[serde(rename = "dropID")]
+    pub drop_id: Option<i64>,
+    #[serde(rename = "weight")]
+    pub weight: Option<i64>,
 }

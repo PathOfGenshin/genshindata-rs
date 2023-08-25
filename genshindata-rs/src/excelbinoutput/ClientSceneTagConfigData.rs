@@ -12,6 +12,6 @@ pub struct ClientSceneTagConfigDatum {
     pub id: i64,
     pub scene_tag_name: String,
     pub scene_id: i64,
-    #[serde(rename = "OEIIKKFEBNC")]
-    pub oeiikkfebnc: String,
+    #[serde(rename = "OEKHMOHLDJL")]
+    pub oekhmohldjl: String,
 }

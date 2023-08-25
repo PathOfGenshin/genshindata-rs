@@ -13,18 +13,18 @@ pub struct RogueDiaryBuffDataExcelConfigDatum {
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub desc_param: Vec<String>,
-    #[serde(rename = "NMGBGGFJBIA")]
-    pub nmgbggfjbia: i64,
+    #[serde(rename = "BNONBMHOPLJ")]
+    pub bnonbmhoplj: i64,
     pub icon: String,
     #[serde(rename = "type")]
     pub rogue_diary_buff_data_excel_config_datum_type: Type,
-    #[serde(rename = "CJCKHIIBANB")]
-    pub cjckhiibanb: Cjckhiibanb,
+    #[serde(rename = "DDNBLGEMFKI")]
+    pub ddnblgemfki: Ddnblgemfki,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Cjckhiibanb {
+pub enum Ddnblgemfki {
     #[serde(rename = "ROGUE_DIARY_BUFF_EFFECT_ABILITY")]
     RogueDiaryBuffEffectAbility,
 }

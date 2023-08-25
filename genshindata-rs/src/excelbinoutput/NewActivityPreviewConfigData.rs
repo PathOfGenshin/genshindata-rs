@@ -13,27 +13,27 @@ pub struct NewActivityPreviewConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub kimildkpgka: i64,
-    pub ldoogpmccpk: i64,
+    pub nllhilhhjpl: i64,
+    pub eciippbheoj: i64,
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: Option<i64>,
-    pub oadaokpaama: Option<i64>,
-    pub cgkcjplojip: Vec<i64>,
-    pub menkhbgfhmm: Vec<i64>,
-    pub iahdjagimci: Option<i64>,
+    pub hjmmkfilclg: Option<i64>,
+    pub akifghekdmo: Vec<i64>,
+    pub cadjdgmdenf: Vec<i64>,
+    pub kkkenochkmn: Option<i64>,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: Option<i64>,
-    pub aahhgnmhhmf: Vec<i64>,
-    pub ddhlgefpkmb: Vec<i64>,
-    pub piokphhbbmh: Vec<i64>,
-    pub opmcjfdpdcp: Vec<Opmcjfdpdcp>,
+    pub cpjalgenffj: Vec<i64>,
+    pub ignpmijllpf: Vec<i64>,
+    pub hnhofolcmcb: Vec<i64>,
+    pub mekoipojncf: Vec<Mekoipojncf>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Opmcjfdpdcp {
+pub struct Mekoipojncf {
     pub desc: Desc,
-    #[serde(rename = "DCFGEHHLAMN")]
-    pub dcfgehhlamn: Option<i64>,
+    #[serde(rename = "MHEFAJHODHL")]
+    pub mhefajhodhl: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

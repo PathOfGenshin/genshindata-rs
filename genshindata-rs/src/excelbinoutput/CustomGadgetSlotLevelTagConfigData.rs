@@ -10,21 +10,21 @@ pub type CustomGadgetSlotLevelTagConfigData = Vec<CustomGadgetSlotLevelTagConfig
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomGadgetSlotLevelTagConfigDatum {
     pub id: i64,
-    pub dpdconflhaj: String,
-    pub ejpnkkfeibk: Vec<Ejpnkkfeibk>,
-    pub mkidkgefgec: i64,
-    pub ajkaacacpkc: i64,
+    pub nhbgplfcokc: String,
+    pub goddknodbgh: Vec<Goddknodbgh>,
+    pub gafienjblkh: i64,
+    pub bpjciadohpc: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Ejpnkkfeibk {
-    pub ogpbfgpmmlf: Ogpbfgpmmlf,
-    pub mlbocneiijk: Vec<i64>,
+pub struct Goddknodbgh {
+    pub fpnmekipfke: Fpnmekipfke,
+    pub kcpniopmhka: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ogpbfgpmmlf {
+pub enum Fpnmekipfke {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "LeftHill")]

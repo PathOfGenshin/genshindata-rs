@@ -23,16 +23,16 @@ pub struct ShopGoodsExcelConfigDatum {
     pub min_player_level: i64,
     pub max_player_level: i64,
     pub sort_level: i64,
-    #[serde(rename = "CPPENNBEINH")]
-    pub cppennbeinh: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "LIDDBMNKFEI")]
+    pub liddbmnkfei: Vec<Option<serde_json::Value>>,
     pub buy_limit: Option<i64>,
     pub is_buy_once: Option<bool>,
     pub precondition: Option<Precondition>,
     pub cost_scoin: Option<i64>,
     pub refresh_type: Option<RefreshType>,
     pub refresh_param: Option<i64>,
-    #[serde(rename = "OEOKNLKICLJ")]
-    pub oeoknlkiclj: Option<bool>,
+    #[serde(rename = "GEICLCJLHEG")]
+    pub geiclcjlheg: Option<bool>,
     pub secondary_sheet_id: Option<i64>,
     pub sub_tab_id: Option<i64>,
     pub cost_hcoin: Option<i64>,
@@ -54,9 +54,9 @@ pub struct CostItem {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct PlatformTypeList {
-    pub jggfnbmpgek: Option<Precondition>,
-    pub fggdbegdopj: Option<i64>,
-    pub bpnnjeekfif: Option<i64>,
+    pub lpbmlfpmimo: Option<Precondition>,
+    pub iakjhpljaai: Option<i64>,
+    pub leejnlipfhf: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -13,11 +13,11 @@ pub struct BartenderLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
-    pub gkgnfpbafjh: i64,
-    pub ihhnjmfnhde: i64,
-    pub oaohbgpcaln: Vec<i64>,
-    pub mmehhajdhhj: i64,
+    pub ldiadlienfh: i64,
+    pub fanehjpdglp: i64,
+    pub nckijpppphk: Vec<i64>,
+    pub dehjpbnmbjm: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub alpfifhdbhc: i64,
+    pub ohjemdfcgdf: i64,
 }

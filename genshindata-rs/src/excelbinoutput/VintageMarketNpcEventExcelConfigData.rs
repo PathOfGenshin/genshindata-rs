@@ -13,17 +13,17 @@ pub struct VintageMarketNpcEventExcelConfigDatum {
     pub talk_id: i64,
     pub npc_id: i64,
     pub duration: i64,
-    #[serde(rename = "NDDHBLLCFGB")]
-    pub nddhbllcfgb: Vec<i64>,
-    #[serde(rename = "IFDPONPJMJJ")]
-    pub ifdponpjmjj: Vec<Ifdponpjmjj>,
-    #[serde(rename = "CAFOKIBJGGO")]
-    pub cafokibjggo: i64,
+    #[serde(rename = "HEABNLGAPEJ")]
+    pub heabnlgapej: Vec<i64>,
+    #[serde(rename = "EKAININCBOC")]
+    pub ekainincboc: Vec<Ekainincboc>,
+    #[serde(rename = "GMFFPNBICMI")]
+    pub gmffpnbicmi: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Ifdponpjmjj {
+pub struct Ekainincboc {
     pub talk_id: Option<i64>,
     pub reward_id: Option<i64>,
 }

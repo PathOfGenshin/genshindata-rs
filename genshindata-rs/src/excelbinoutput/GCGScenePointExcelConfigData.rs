@@ -13,14 +13,14 @@ pub struct GcgScenePointExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "pos")]
     pub pos: Vec<f64>,
-    pub fekbajeokcd: f64,
-    pub icaegnihhil: Option<Icaegnihhil>,
-    pub phamnjpgbgb: Vec<Phamnjpgbgb>,
+    pub helfobnflhl: f64,
+    pub edidohgkbid: Option<Edidohgkbid>,
+    pub lnlhoanlcjh: Vec<Lnlhoanlcjh>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Icaegnihhil {
+pub enum Edidohgkbid {
     #[serde(rename = "POINT_MOTION_SIT")]
     PointMotionSit,
     #[serde(rename = "POINT_MOTION_STAND")]
@@ -29,7 +29,7 @@ pub enum Icaegnihhil {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Phamnjpgbgb {
+pub enum Lnlhoanlcjh {
     #[serde(rename = "SUPPORT_CALL")]
     SupportCall,
     #[serde(rename = "SUPPORT_NONE")]

@@ -11,11 +11,11 @@ pub type ActivityJourneyDungeonBuffExcelConfigData = Vec<ActivityJourneyDungeonB
 pub struct ActivityJourneyDungeonBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub heagllkeoki: Option<bool>,
-    pub jocikgaoeen: String,
-    pub dhpfhpjbpdk: f64,
-    pub ppfihoemjop: i64,
-    pub bhphileglna: i64,
+    pub mjikpiepooo: Option<bool>,
+    pub cgkmjldannc: String,
+    pub bolaiphnedl: f64,
+    pub jkdfoaoddin: i64,
+    pub lmhcbkddkhm: i64,
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
 }

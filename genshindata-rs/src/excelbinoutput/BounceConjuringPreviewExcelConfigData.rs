@@ -13,8 +13,8 @@ pub struct BounceConjuringPreviewExcelConfigDatum {
     pub activity_id: i64,
     pub activity_stay_time: i64,
     pub pre_quest_id: i64,
-    #[serde(rename = "FODFKKHDMFB")]
-    pub fodfkkhdmfb: i64,
+    #[serde(rename = "FMCMBJPGLNL")]
+    pub fmcmbjpglnl: i64,
     pub reward_preview_id: i64,
     #[serde(rename = "matchID")]
     pub match_id: i64,

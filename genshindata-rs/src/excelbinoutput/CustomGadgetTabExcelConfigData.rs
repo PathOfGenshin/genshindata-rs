@@ -9,35 +9,35 @@ pub type CustomGadgetTabExcelConfigData = Vec<CustomGadgetTabExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomGadgetTabExcelConfigDatum {
-    pub lblbekbmikd: i64,
+    pub klgheafjeke: i64,
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
-    pub fklogdebcpd: Vec<String>,
-    pub haclapkgmgl: Haclapkgmgl,
-    pub ekholhnhhjb: Ekholhnhhjb,
-    pub ajgkkjalnlb: i64,
-    pub bcnhlfpkcen: i64,
-    pub kgmafgalbnc: Option<i64>,
+    pub oonoepgaeie: Vec<String>,
+    pub hoampeiggcp: Hoampeiggcp,
+    pub lndoncmmmmk: Lndoncmmmmk,
+    pub afikbngpcoc: i64,
+    pub okgfioecnhe: i64,
+    pub kajfghpipea: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ekholhnhhjb {
-    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
-    EffSceneObjFlowerShlefSwitch,
-    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
-    EffSceneObjFlowerSwitch,
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Haclapkgmgl {
+pub enum Hoampeiggcp {
     #[serde(rename = "Eff_SceneObj_FlowerPot_Selected")]
     EffSceneObjFlowerPotSelected,
     #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
     EffSceneObjFlowerShlefSwitch,
     #[serde(rename = "Eff_SceneObj_Irodori_Flower_Selected")]
     EffSceneObjIrodoriFlowerSelected,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Lndoncmmmmk {
+    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
+    EffSceneObjFlowerShlefSwitch,
+    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
+    EffSceneObjFlowerSwitch,
     #[serde(rename = "")]
     Empty,
 }

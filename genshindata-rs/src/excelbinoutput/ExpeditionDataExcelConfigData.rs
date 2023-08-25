@@ -26,8 +26,8 @@ pub struct OpenConditionVec {
     pub para: Option<i64>,
     #[serde(rename = "type")]
     pub open_condition_vec_type: Option<Type>,
-    #[serde(rename = "PPBEHKKOPGF")]
-    pub ppbehkkopgf: Option<i64>,
+    #[serde(rename = "JNFMBJFHAJP")]
+    pub jnfmbjfhajp: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

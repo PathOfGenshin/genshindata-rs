@@ -15,9 +15,9 @@ pub struct RoutineDetailExcelConfigDatum {
     pub is_backup: Option<bool>,
     pub reward_id: i64,
     pub finish_content: FinishContent,
-    pub goods_id_vec: Vec<Lcacpohammd>,
-    #[serde(rename = "LCACPOHAMMD")]
-    pub lcacpohammd: Vec<Lcacpohammd>,
+    pub goods_id_vec: Vec<Pndfichghpd>,
+    #[serde(rename = "PNDFICHGHPD")]
+    pub pndfichghpd: Vec<Pndfichghpd>,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub goal_text_map_hash: i64,
@@ -45,7 +45,7 @@ pub enum FinishType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Lcacpohammd {
+pub struct Pndfichghpd {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

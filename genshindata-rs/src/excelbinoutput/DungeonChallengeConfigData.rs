@@ -16,8 +16,8 @@ pub struct DungeonChallengeConfigDatum {
     pub sub_progress_text_template_text_map_hash: i64,
     pub icon_path: String,
     pub challenge_type: ChallengeType,
-    #[serde(rename = "JPEIPIHLFIA")]
-    pub jpeipihlfia: Vec<String>,
+    #[serde(rename = "BIONHLEICLJ")]
+    pub bionhleiclj: Vec<String>,
     pub no_success_hint: Option<bool>,
     pub interrupt_button_type: Option<InterruptButtonType>,
     pub no_fail_hint: Option<bool>,
@@ -25,25 +25,25 @@ pub struct DungeonChallengeConfigDatum {
     pub sub_challenge_fade_out_rule: Option<SubChallengeFadeOutRule>,
     pub sub_challenge_fade_out_delay_time: Option<i64>,
     pub sub_challenge_banner_rule: Option<SubChallengeBannerRule>,
-    #[serde(rename = "FNMIECCEHGF")]
-    pub fnmieccehgf: Option<bool>,
+    #[serde(rename = "EAGPFHLALDH")]
+    pub eagpfhlaldh: Option<bool>,
     pub record_type: Option<String>,
-    #[serde(rename = "GFDCDJDPGPO")]
-    pub gfdcdjdpgpo: Option<bool>,
+    #[serde(rename = "ELCLLHGEBFN")]
+    pub elcllhgebfn: Option<bool>,
     pub is_success_when_not_settled: Option<bool>,
     #[serde(rename = "activitySkillID")]
     pub activity_skill_id: Option<i64>,
     pub is_forward_timing: Option<bool>,
-    #[serde(rename = "GGMOEDNOKPE")]
-    pub ggmoednokpe: Option<bool>,
-    #[serde(rename = "JNJPDHOCPBO")]
-    pub jnjpdhocpbo: Option<String>,
-    #[serde(rename = "BIMJBKKFCFG")]
-    pub bimjbkkfcfg: Option<String>,
-    #[serde(rename = "KEJBNFLNAMN")]
-    pub kejbnflnamn: Option<String>,
-    #[serde(rename = "LAAAMLACEEA")]
-    pub laaamlaceea: Option<String>,
+    #[serde(rename = "CHJLDBIPBEL")]
+    pub chjldbipbel: Option<bool>,
+    #[serde(rename = "FNOKAJLMOAM")]
+    pub fnokajlmoam: Option<String>,
+    #[serde(rename = "LPHLNFNLFFI")]
+    pub lphlnfnlffi: Option<String>,
+    #[serde(rename = "KPIIAJGNMFF")]
+    pub kpiiajgnmff: Option<String>,
+    #[serde(rename = "AFDPFJKJMBP")]
+    pub afdpfjkjmbp: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -73,6 +73,8 @@ pub enum ChallengeType {
     ChallengeKillCountInTime,
     #[serde(rename = "CHALLENGE_KILL_MONSTER_IN_TIME")]
     ChallengeKillMonsterInTime,
+    #[serde(rename = "CHALLENGE_LUA_COUNT")]
+    ChallengeLuaCount,
     #[serde(rename = "CHALLENGE_LUA_IN_TIME")]
     ChallengeLuaInTime,
     #[serde(rename = "CHALLENGE_MONSTER_DAMAGE_COUNT")]

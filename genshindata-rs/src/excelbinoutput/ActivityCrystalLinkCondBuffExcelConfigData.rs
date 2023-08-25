@@ -11,11 +11,11 @@ pub type ActivityCrystalLinkCondBuffExcelConfigData = Vec<ActivityCrystalLinkCon
 pub struct ActivityCrystalLinkCondBuffExcelConfigDatum {
     #[serde(rename = "buffId")]
     pub buff_id: i64,
-    pub beijhjhdkjd: String,
+    pub behhcchceho: String,
     #[serde(rename = "abilityName")]
     pub ability_name: String,
-    pub habfbjodndm: i64,
-    pub ekgheojhnci: i64,
-    pub ajbflbfipdg: f64,
-    pub mapehmdkibd: Vec<String>,
+    pub befgkdjhfgp: i64,
+    pub fllogobfcgc: i64,
+    pub mmddpggccec: f64,
+    pub kknnhfkfnom: Vec<String>,
 }

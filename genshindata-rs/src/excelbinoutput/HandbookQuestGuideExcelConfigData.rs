@@ -9,28 +9,44 @@ pub type HandbookQuestGuideExcelConfigData = Vec<HandbookQuestGuideExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HandbookQuestGuideExcelConfigDatum {
-    pub hajilihibgl: i64,
+    pub gejjgnpimmb: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub dadalkalgbd: i64,
-    pub odnpaadklij: Option<i64>,
-    pub bmbflkcjbfi: Bmbflkcjbfi,
+    pub ggnedpgegfa: i64,
+    pub bongoggmkfj: Option<i64>,
+    pub ajilidlnldl: Ajilidlnldl,
     #[serde(rename = "order")]
     pub order: i64,
     #[serde(rename = "icon")]
     pub icon: Icon,
-    pub cijacjhgcfg: Option<bool>,
-    pub ldmneomlkjp: Vec<Ldmneomlkjp>,
-    pub beljclfjofj: Option<i64>,
-    pub hjlpnamobgf: Option<i64>,
+    pub cchcdpjelok: Option<bool>,
+    pub bkgkbdeomlo: Vec<Bkgkbdeomlo>,
+    pub oohibemhhok: Option<i64>,
+    pub jjbgahbiike: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bmbflkcjbfi {
+pub enum Ajilidlnldl {
     #[serde(rename = "LQ")]
     Lq,
     #[serde(rename = "WQ")]
     Wq,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Bkgkbdeomlo {
+    pub param: Vec<i64>,
+    #[serde(rename = "type")]
+    pub bkgkbdeomlo_type: Option<Type>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Type {
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
+    QuestGuideShowCondLevelGtOrEq,
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
+    QuestGuideShowCondPrequestFinished,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -49,20 +65,4 @@ pub enum Icon {
     ArtUiAtlasHandbookGuideIconUiGuideIconPlayMethod,
     #[serde(rename = "ART/UI/Atlas/HandbookGuideIcon/UI_GuideIcon_PlotUnlock")]
     ArtUiAtlasHandbookGuideIconUiGuideIconPlotUnlock,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Ldmneomlkjp {
-    pub param: Vec<i64>,
-    #[serde(rename = "type")]
-    pub ldmneomlkjp_type: Option<Type>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Type {
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
-    QuestGuideShowCondLevelGtOrEq,
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
-    QuestGuideShowCondPrequestFinished,
 }

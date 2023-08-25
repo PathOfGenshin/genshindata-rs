@@ -38,4 +38,6 @@ pub enum Curve {
     GrowCurveDefense,
     #[serde(rename = "GROW_CURVE_HP")]
     GrowCurveHp,
+    #[serde(rename = "GROW_CURVE_HP_ENVIRONMENT")]
+    GrowCurveHpEnvironment,
 }

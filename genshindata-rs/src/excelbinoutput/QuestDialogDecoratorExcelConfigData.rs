@@ -9,6 +9,6 @@ pub type QuestDialogDecoratorExcelConfigData = Vec<QuestDialogDecoratorExcelConf
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct QuestDialogDecoratorExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "OIFPBEGIMNM")]
-    pub oifpbegimnm: String,
+    #[serde(rename = "HJGGBKDFEOD")]
+    pub hjggbkdfeod: String,
 }

@@ -10,16 +10,16 @@ pub type UgcMaterialExcelConfigData = Vec<UgcMaterialExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct UgcMaterialExcelConfigDatum {
     pub material_id: i64,
-    #[serde(rename = "KEOFJCCGCAG")]
-    pub keofjccgcag: i64,
-    #[serde(rename = "PDDJPIFCFIH")]
-    pub pddjpifcfih: i64,
-    #[serde(rename = "JGNBNOMCCIJ")]
-    pub jgnbnomccij: i64,
-    #[serde(rename = "KAPKBBCNMOL")]
-    pub kapkbbcnmol: f64,
-    #[serde(rename = "JOONMGLKPOB")]
-    pub joonmglkpob: i64,
+    #[serde(rename = "EOKHLEKGELI")]
+    pub eokhlekgeli: i64,
+    #[serde(rename = "KFMJAPCOFOI")]
+    pub kfmjapcofoi: i64,
+    #[serde(rename = "EEELNIEDCOH")]
+    pub eeelniedcoh: i64,
+    #[serde(rename = "JLGLJOAJCBP")]
+    pub jlgljoajcbp: f64,
+    #[serde(rename = "LFLBLIANEAL")]
+    pub lflblianeal: i64,
     #[serde(rename = "type")]
     pub ugc_material_excel_config_datum_type: Option<Type>,
     pub tag: Option<i64>,

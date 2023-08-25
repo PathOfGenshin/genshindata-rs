@@ -12,10 +12,10 @@ pub struct GroupLinksBundleExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "groupList")]
     pub group_list: Vec<i64>,
-    #[serde(rename = "JLNIBLDALDK")]
-    pub jlnibldaldk: i64,
-    #[serde(rename = "NOAEEBNFCOP")]
-    pub noaeebnfcop: Option<i64>,
+    #[serde(rename = "GFNJCGLBCAB")]
+    pub gfnjcglbcab: i64,
+    #[serde(rename = "ILCBJKFLDKK")]
+    pub ilcbjkfldkk: Option<i64>,
     #[serde(rename = "rewardType")]
     pub reward_type: Option<RewardType>,
     #[serde(rename = "rewardId")]
@@ -26,26 +26,26 @@ pub struct GroupLinksBundleExcelConfigDatum {
     pub icon: String,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    #[serde(rename = "MBBDOJIDDKL")]
-    pub mbbdojiddkl: i64,
-    #[serde(rename = "MIBKIGCJNON")]
-    pub mibkigcjnon: Option<i64>,
-    #[serde(rename = "NELDPDPJLFB")]
-    pub neldpdpjlfb: Option<bool>,
-    #[serde(rename = "ADNDPEMHHBA")]
-    pub adndpemhhba: Option<bool>,
-    #[serde(rename = "BHJHCMDJDFC")]
-    pub bhjhcmdjdfc: Option<i64>,
+    #[serde(rename = "PELPIOKDHJE")]
+    pub pelpiokdhje: i64,
+    #[serde(rename = "LDCPMBGLJII")]
+    pub ldcpmbgljii: Option<i64>,
+    #[serde(rename = "IIFJFKGPBGK")]
+    pub iifjfkgpbgk: Option<bool>,
+    #[serde(rename = "MMHNCFMHOPG")]
+    pub mmhncfmhopg: Option<bool>,
+    #[serde(rename = "DGHGFDNOMCA")]
+    pub dghgfdnomca: Option<i64>,
     #[serde(rename = "playType")]
     pub play_type: Option<String>,
-    #[serde(rename = "CJKGCCBELNO")]
-    pub cjkgccbelno: Option<bool>,
-    #[serde(rename = "EFBEPFHAAKK")]
-    pub efbepfhaakk: Option<i64>,
-    #[serde(rename = "LAOPFGGCPCG")]
-    pub laopfggcpcg: Option<bool>,
-    #[serde(rename = "CGMOENFPBMD")]
-    pub cgmoenfpbmd: Option<bool>,
+    #[serde(rename = "ENJKDLBAHPH")]
+    pub enjkdlbahph: Option<bool>,
+    #[serde(rename = "LCOFEACNJLB")]
+    pub lcofeacnjlb: Option<i64>,
+    #[serde(rename = "AFFAHLCOIJK")]
+    pub affahlcoijk: Option<bool>,
+    #[serde(rename = "MGGBAKLCFIP")]
+    pub mggbaklcfip: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

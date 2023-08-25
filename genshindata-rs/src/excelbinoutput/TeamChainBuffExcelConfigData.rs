@@ -11,11 +11,11 @@ pub type TeamChainBuffExcelConfigData = Vec<TeamChainBuffExcelConfigDatum>;
 pub struct TeamChainBuffExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub beijhjhdkjd: String,
+    pub behhcchceho: String,
     #[serde(rename = "icon")]
     pub icon: String,
     #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
-    pub bhphileglna: i64,
-    pub nglgbnhaedb: Vec<String>,
+    pub lmhcbkddkhm: i64,
+    pub noekhckmdap: Vec<String>,
 }

@@ -15,18 +15,18 @@ pub struct ActivityChessPreviewExcelConfigDatum {
     pub desc_text_map_hash: i64,
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
-    pub ogjplgonjdb: i64,
-    pub googijklhpg: i64,
+    pub pcbbhnmmfjn: i64,
+    pub plcakbcahab: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
     #[serde(rename = "matchPlayerLimit")]
     pub match_player_limit: i64,
-    pub ckdmdobjoen: bool,
-    pub ccgmaeibfbg: i64,
-    pub hgjnckdbfpe: i64,
+    pub cnpmajefbfe: bool,
+    pub afjcabppple: i64,
+    pub abibkejplmg: i64,
     #[serde(rename = "punishTime")]
     pub punish_time: i64,
-    pub giiighlpmpp: i64,
-    pub lknjephddmo: i64,
-    pub aonnmmlnihi: Vec<i64>,
+    pub nnjinbfcilb: i64,
+    pub nfhpnideipc: i64,
+    pub bmbehbkgfpk: Vec<i64>,
 }

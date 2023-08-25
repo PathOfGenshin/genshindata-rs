@@ -3,6 +3,19 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type ReliquaryDecomposeExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ReliquaryDecomposeExcelConfigData = Vec<ReliquaryDecomposeExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct ReliquaryDecomposeExcelConfigDatum {
+    #[serde(rename = "id")]
+    pub id: i64,
+    pub hnnceaepajb: i64,
+    pub acgeimmnpji: i64,
+    #[serde(rename = "rewardPreviewId")]
+    pub reward_preview_id: i64,
+    pub ogiehpjgpee: i64,
+    #[serde(rename = "effectDescTextMapHash")]
+    pub effect_desc_text_map_hash: i64,
+}

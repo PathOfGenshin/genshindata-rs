@@ -9,10 +9,10 @@ pub type GcgElementExcelConfigData = Vec<GcgElementExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgElementExcelConfigDatum {
-    pub napbkcgpfmi: i64,
-    pub ndkdfnmjbpk: i64,
+    pub cahgehbpeek: i64,
+    pub hnehcfokaed: i64,
     #[serde(rename = "type")]
     pub gcg_element_excel_config_datum_type: Option<String>,
-    pub oihojgmiddf: Option<i64>,
-    pub ibkbhaapdkp: Option<i64>,
+    pub peckefcdfdm: Option<i64>,
+    pub dkflbfjeado: Option<i64>,
 }

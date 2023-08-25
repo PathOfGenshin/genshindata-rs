@@ -11,15 +11,15 @@ pub type ActivityVintageMarketPrepareExcelConfigData = Vec<ActivityVintageMarket
 pub struct ActivityVintageMarketPrepareExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
-    pub gelgnkdpcki: i64,
-    pub jnkefgaddie: Option<String>,
-    pub cppdhnpikag: String,
+    pub jgglonlbhbo: i64,
+    pub maoidcmanbh: Option<String>,
+    pub eikhpncgboe: String,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ccofkkdnjej: i64,
-    pub cleijckhjae: i64,
-    pub noiodapmeei: Option<i64>,
-    pub fjhhgamamai: Option<i64>,
-    pub gnjdknldfep: i64,
-    pub johheeckank: i64,
+    pub jndceaeljdg: i64,
+    pub famneefmonm: i64,
+    pub dmmlmehlljk: Option<i64>,
+    pub neddhljbdol: Option<i64>,
+    pub kknefohdgfi: i64,
+    pub fgpgighpjch: i64,
 }

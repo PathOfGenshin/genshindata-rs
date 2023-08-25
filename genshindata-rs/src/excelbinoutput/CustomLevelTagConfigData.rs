@@ -10,8 +10,8 @@ pub type CustomLevelTagConfigData = Vec<CustomLevelTagConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct CustomLevelTagConfigDatum {
     pub config_id: i64,
-    #[serde(rename = "BKKDMCBHFCD")]
-    pub bkkdmcbhfcd: i64,
+    #[serde(rename = "HOFBPAKAFHB")]
+    pub hofbpakafhb: i64,
     pub sort_id: i64,
     pub is_default: Option<bool>,
 }

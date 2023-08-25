@@ -21,16 +21,16 @@ pub struct GivingExcelConfigDatum {
     pub highlight: Option<bool>,
     pub icon: Icon,
     pub is_remove_item: Option<bool>,
-    #[serde(rename = "JDJPBNJKBPI")]
-    pub jdjpbnjkbpi: Jdjpbnjkbpi,
+    #[serde(rename = "IDHICMEHKOL")]
+    pub idhicmehkol: Idhicmehkol,
     pub is_repeatable: Option<bool>,
     pub giving_group_count: Option<i64>,
-    #[serde(rename = "PDGDIIJPAPH")]
-    pub pdgdiijpaph: Option<bool>,
-    #[serde(rename = "PBKBLLCMNON")]
-    pub pbkbllcmnon: Option<bool>,
-    #[serde(rename = "DKOKNPMLMBD")]
-    pub dkoknpmlmbd: Option<bool>,
+    #[serde(rename = "JHIBLALPMJA")]
+    pub jhiblalpmja: Option<bool>,
+    #[serde(rename = "HGFJGFBEKMA")]
+    pub hgfjgfbekma: Option<bool>,
+    #[serde(rename = "GABHCMMOHNI")]
+    pub gabhcmmohni: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -60,7 +60,7 @@ pub enum Icon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jdjpbnjkbpi {
+pub enum Idhicmehkol {
     #[serde(rename = "GIVING_TYPE_GADGET")]
     GivingTypeGadget,
     #[serde(rename = "GIVING_TYPE_QUEST")]

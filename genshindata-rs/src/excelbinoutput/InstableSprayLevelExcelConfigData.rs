@@ -13,8 +13,8 @@ pub struct InstableSprayLevelExcelConfigDatum {
     pub level_id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub ighafhmigol: Vec<i64>,
-    pub jlnmaocahga: Vec<i64>,
-    pub cebklpdhfck: Vec<i64>,
-    pub ihcbbhckone: String,
+    pub neiaekploib: Vec<i64>,
+    pub aljlnkocbpi: Vec<i64>,
+    pub gngkggmkegl: Vec<i64>,
+    pub anbhpedhofb: String,
 }

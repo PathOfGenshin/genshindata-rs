@@ -13,13 +13,13 @@ pub struct OfferingLevelUpExcelConfigDatum {
     pub level: Option<i64>,
     pub action_vec: Vec<ActionVec>,
     pub reward_id: Option<i64>,
-    #[serde(rename = "LCACPOHAMMD")]
-    pub lcacpohammd: Vec<Lcacpohammd>,
-    #[serde(rename = "EOFLHJBEINE")]
-    pub eoflhjbeine: Option<i64>,
+    #[serde(rename = "PNDFICHGHPD")]
+    pub pndfichghpd: Vec<Pndfichghpd>,
+    #[serde(rename = "JECNLGNONEK")]
+    pub jecnlgnonek: Option<i64>,
     pub cut_scene_id: Option<bool>,
-    #[serde(rename = "KEBAKFLAFKD")]
-    pub kebakflafkd: Option<bool>,
+    #[serde(rename = "NPDJPFIHCHL")]
+    pub npdjpfihchl: Option<bool>,
     pub consume_item_config: Option<i64>,
 }
 
@@ -31,7 +31,7 @@ pub struct ActionVec {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Lcacpohammd {
+pub struct Pndfichghpd {
     pub param: String,
     pub action_type: Option<ActionType>,
 }

@@ -17,15 +17,15 @@ pub struct EffigyV4ChallengeExcelConfigDatum {
     pub dungeon_type: String,
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
-    pub pffoekbheog: Vec<String>,
-    pub cmgljmnkbgb: String,
+    pub cbggpdkacik: Vec<String>,
+    pub lajenfmdeaf: String,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
-    pub ebiadlddnmf: i64,
+    pub ckccmpgodjd: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub adoigjpcafj: Vec<i64>,
-    pub faejopbpinm: Vec<i64>,
-    pub kjfhjpfaigl: Vec<i64>,
-    pub bhdcncagmod: Vec<i64>,
+    pub aekhnbfldgf: Vec<i64>,
+    pub bbeldjfnipn: Vec<i64>,
+    pub inbhglpgdgh: Vec<i64>,
+    pub gdkdbomljdn: Vec<i64>,
 }

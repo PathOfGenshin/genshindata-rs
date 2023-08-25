@@ -21,7 +21,16 @@ pub struct CityConfigDatum {
     pub expedition_map: String,
     #[serde(rename = "ExpeditionWaterMark")]
     pub expedition_water_mark: String,
-    pub open_state: String,
+    pub open_state: OpenState,
     pub city_goddness_name_text_map_hash: i64,
     pub city_goddness_desc_text_map_hash: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum OpenState {
+    #[serde(rename = "OPEN_ADVENTURE_MANUAL_CITY_LIYUE")]
+    OpenAdventureManualCityLiyue,
+    #[serde(rename = "OPEN_ADVENTURE_MANUAL_CITY_MENGDE")]
+    OpenAdventureManualCityMengde,
 }

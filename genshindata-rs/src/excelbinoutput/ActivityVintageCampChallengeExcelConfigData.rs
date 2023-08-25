@@ -11,17 +11,17 @@ pub type ActivityVintageCampChallengeExcelConfigData = Vec<ActivityVintageCampCh
 pub struct ActivityVintageCampChallengeExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ihhcmmklokm: i64,
+    pub plhfnmodhkh: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub gmleonpgjhe: i64,
-    pub odhhmmppcmk: i64,
+    pub eilpnfhcpdh: i64,
+    pub fkcbddlmhck: i64,
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
-    pub fcaheoiacee: Vec<String>,
-    pub bmhcnehhepm: Vec<i64>,
-    pub ophjgcnaohp: String,
-    pub enlkihognmj: Vec<i64>,
-    pub dadhfcocnnp: i64,
-    pub bhphileglna: i64,
+    pub noaiaophdha: Vec<String>,
+    pub hgibpaonamp: Vec<i64>,
+    pub ejgajlknchl: String,
+    pub ccclieidamo: Vec<i64>,
+    pub aebipgiahkd: i64,
+    pub lmhcbkddkhm: i64,
 }

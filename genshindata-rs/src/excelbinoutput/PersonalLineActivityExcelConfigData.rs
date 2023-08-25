@@ -13,6 +13,6 @@ pub struct PersonalLineActivityExcelConfigDatum {
     pub chapter_id: i64,
     pub desc_text_map_hash: i64,
     pub perfab_path: String,
-    #[serde(rename = "MIALLPDNPCI")]
-    pub miallpdnpci: Option<String>,
+    #[serde(rename = "DIGIEAHCJHF")]
+    pub digieahcjhf: Option<String>,
 }

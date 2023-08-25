@@ -17,8 +17,8 @@ pub struct ReunionMissionExcelConfigDatum {
     pub target_score: Option<i64>,
     #[serde(rename = "finishRewardId")]
     pub finish_reward_id: Option<i64>,
-    pub bfiklaldamm: Vec<i64>,
-    pub afjlljaahfc: Vec<i64>,
-    pub fiohaibdndg: Vec<i64>,
-    pub llgmlnlbpem: f64,
+    pub ghopegcbhkn: Vec<i64>,
+    pub hbmebigdfab: Vec<i64>,
+    pub ekgiaapnnpg: Vec<i64>,
+    pub pglgkjgdmin: f64,
 }

@@ -10,29 +10,29 @@ pub type LunaRiteBattleExcelConfigData = Vec<LunaRiteBattleExcelConfigDatum>;
 #[serde(rename_all = "PascalCase")]
 pub struct LunaRiteBattleExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "BNJBJMDJADE")]
-    pub bnjbjmdjade: Bnjbjmdjade,
-    #[serde(rename = "HLGELMHAJHG")]
-    pub hlgelmhajhg: Option<i64>,
-    #[serde(rename = "ODHHMMPPCMK")]
-    pub odhhmmppcmk: i64,
+    #[serde(rename = "EOEIOLGBMGM")]
+    pub eoeiolgbmgm: Eoeiolgbmgm,
+    #[serde(rename = "MAJLIBIPINM")]
+    pub majlibipinm: Option<i64>,
+    #[serde(rename = "FKCBDDLMHCK")]
+    pub fkcbddlmhck: i64,
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
-    #[serde(rename = "HPBBFKOAOMH")]
-    pub hpbbfkoaomh: String,
-    #[serde(rename = "OPHJGCNAOHP")]
-    pub ophjgcnaohp: String,
-    #[serde(rename = "ENLKIHOGNMJ")]
-    pub enlkihognmj: String,
-    #[serde(rename = "BDGALMLIHAB")]
-    pub bdgalmlihab: i64,
-    #[serde(rename = "PKGEHHBCDDC")]
-    pub pkgehhbcddc: i64,
+    #[serde(rename = "DGHFJKGOMHE")]
+    pub dghfjkgomhe: String,
+    #[serde(rename = "EJGAJLKNCHL")]
+    pub ejgajlknchl: String,
+    #[serde(rename = "CCCLIEIDAMO")]
+    pub ccclieidamo: String,
+    #[serde(rename = "MEOFAOEFKKG")]
+    pub meofaoefkkg: i64,
+    #[serde(rename = "HHDBECPDNGD")]
+    pub hhdbecpdngd: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bnjbjmdjade {
+pub enum Eoeiolgbmgm {
     #[serde(rename = "LUNA_RITE_REGION_TYPE_DRAGONSPINE")]
     LunaRiteRegionTypeDragonspine,
     #[serde(rename = "LUNA_RITE_REGION_TYPE_LIYUE")]

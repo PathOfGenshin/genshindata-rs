@@ -11,5 +11,5 @@ pub type AvatarReplaceCostumeExcelConfigData = Vec<AvatarReplaceCostumeExcelConf
 pub struct AvatarReplaceCostumeExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub oklabgajhkm: i64,
+    pub gnbkbihmhce: i64,
 }

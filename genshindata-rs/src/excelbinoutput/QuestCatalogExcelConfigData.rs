@@ -10,13 +10,13 @@ pub type QuestCatalogExcelConfigData = Vec<QuestCatalogExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct QuestCatalogExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "LBMMEAEFEPN")]
-    pub lbmmeaefepn: Vec<i64>,
+    #[serde(rename = "BFJPEAPFICI")]
+    pub bfjpeapfici: Vec<i64>,
     pub quest_id: Vec<i64>,
-    #[serde(rename = "AOIODFGHFJG")]
-    pub aoiodfghfjg: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "EPFIDNGJLEB")]
-    pub epfidngjleb: Vec<i64>,
+    #[serde(rename = "LAPGHEHOKLH")]
+    pub lapghehoklh: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "BDFEGJCLNKA")]
+    pub bdfegjclnka: Vec<i64>,
     pub title_text_map_hash: i64,
     pub pic: String,
 }

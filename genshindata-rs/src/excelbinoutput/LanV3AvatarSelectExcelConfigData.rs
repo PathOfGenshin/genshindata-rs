@@ -11,5 +11,5 @@ pub type LanV3AvatarSelectExcelConfigData = Vec<LanV3AvatarSelectExcelConfigDatu
 pub struct LanV3AvatarSelectExcelConfigDatum {
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub pbpgbfgmoii: f64,
+    pub ppomdhopgif: f64,
 }

@@ -9,7 +9,7 @@ pub type IrodoriChessDisorderExcelConfigData = Vec<IrodoriChessDisorderExcelConf
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct IrodoriChessDisorderExcelConfigDatum {
-    pub aiikcjanghp: i64,
+    pub cgbmdfedffn: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 }

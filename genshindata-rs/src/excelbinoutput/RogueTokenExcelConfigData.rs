@@ -15,15 +15,15 @@ pub struct RogueTokenExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "level")]
     pub level: i64,
-    pub gcnajekckio: Vec<i64>,
-    pub ddjhgnhbogm: Vec<i64>,
-    pub alkdfedidld: Vec<i64>,
-    pub plmjllbcipm: Option<Plmjllbcipm>,
+    pub dkfpdmfcjph: Vec<i64>,
+    pub lnnmhncmoch: Vec<i64>,
+    pub mfdepnogncd: Vec<i64>,
+    pub mdncieejild: Option<Mdncieejild>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Plmjllbcipm {
+pub enum Mdncieejild {
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_BOSS")]
     RogueMonsterDifficultyBoss,
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_ELITE_EASY")]

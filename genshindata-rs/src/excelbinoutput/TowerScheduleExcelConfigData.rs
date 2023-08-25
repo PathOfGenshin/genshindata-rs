@@ -13,8 +13,8 @@ pub struct TowerScheduleExcelConfigDatum {
     pub entrance_floor_id: Vec<i64>,
     pub schedules: Vec<Schedule>,
     pub close_time: String,
-    #[serde(rename = "IHIHOEDJOBI")]
-    pub ihihoedjobi: i64,
+    #[serde(rename = "AEKEBPCKBPP")]
+    pub aekebpckbpp: i64,
     pub schedule_rewards: Vec<ScheduleReward>,
     pub monthly_level_config_id: i64,
     pub desc_text_map_hash: i64,

@@ -11,21 +11,21 @@ pub type CombatEndCleanExcelConfigData = Vec<CombatEndCleanExcelConfigDatum>;
 pub struct CombatEndCleanExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub nebgdlbielo: String,
-    pub mnecbflahmm: Vec<Mnecbflahmm>,
-    pub kljcihahcjm: Vec<Kljcihahcjm>,
+    pub ccppcpkmmkp: String,
+    pub idppmicchai: Vec<Idppmicchai>,
+    pub kgoaffhifkk: Vec<Kgoaffhifkk>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Kljcihahcjm {
+pub enum Idppmicchai {
+    Corruption,
+    None,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Kgoaffhifkk {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "LevelEntity_ClearLocalGadgets")]
     LevelEntityClearLocalGadgets,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Mnecbflahmm {
-    Corruption,
-    None,
 }

@@ -10,18 +10,18 @@ pub type PlaceNameConfigData = Vec<PlaceNameConfigDatum>;
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct PlaceNameConfigDatum {
     pub id: i64,
-    pub khpjmlkaldl: Option<Khpjmlkaldl>,
-    pub dmhlghljmko: String,
+    pub fngegjgnkbp: Option<Fngegjgnkbp>,
+    pub lkceiobbpmg: String,
     #[serde(rename = "conditionType")]
     pub condition_type: ConditionType,
-    pub fmoapdkieno: String,
-    pub ackmolcbfio: String,
+    pub hhefnicdojj: String,
+    pub aocpdifcbde: String,
     #[serde(rename = "actionType")]
     pub action_type: ActionType,
-    pub njoaoeeihbe: i64,
+    pub dhjgdenggen: i64,
     #[serde(rename = "type")]
     pub place_name_config_datum_type: Option<Type>,
-    pub edokmpliloa: Option<i64>,
+    pub mejikaoboeg: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -42,7 +42,7 @@ pub enum ConditionType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Khpjmlkaldl {
+pub enum Fngegjgnkbp {
     Abyssalisle,
     #[serde(rename = "MichiaeMatsuri")]
     MichiaeMatsuri,

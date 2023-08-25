@@ -11,13 +11,13 @@ pub type BartenderEventExcelConfigData = Vec<BartenderEventExcelConfigDatum>;
 pub struct BartenderEventExcelConfigDatum {
     #[serde(rename = "effectName")]
     pub effect_name: String,
-    pub cjckhiibanb: Option<Cjckhiibanb>,
-    pub bgdjgcpaoan: Option<i64>,
+    pub ddnblgemfki: Option<Ddnblgemfki>,
+    pub pepcncnbpmf: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Cjckhiibanb {
+pub enum Ddnblgemfki {
     #[serde(rename = "BARTENDER_FINISH_CUP_EFF")]
     BartenderFinishCupEff,
     #[serde(rename = "BARTENDER_FINISH_CUP_ONHAND")]

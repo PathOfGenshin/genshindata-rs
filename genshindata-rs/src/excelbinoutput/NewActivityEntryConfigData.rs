@@ -13,10 +13,10 @@ pub struct NewActivityEntryConfigDatum {
     pub activity_type: String,
     pub sort_priority: i64,
     pub tab_icon: String,
-    #[serde(rename = "KKJKCBILGFH")]
-    pub kkjkcbilgfh: String,
-    #[serde(rename = "ELKCGEJBFFA")]
-    pub elkcgejbffa: String,
+    #[serde(rename = "KDFPDICHHKG")]
+    pub kdfpdichhkg: String,
+    #[serde(rename = "GOJNFMEGJEI")]
+    pub gojnfmegjei: String,
     pub tab_name_text_map_hash: i64,
     pub duration: Option<i64>,
 }

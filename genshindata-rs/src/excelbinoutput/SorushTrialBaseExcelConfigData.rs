@@ -11,8 +11,8 @@ pub type SorushTrialBaseExcelConfigData = Vec<SorushTrialBaseExcelConfigDatum>;
 pub struct SorushTrialBaseExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub kjbkgobmdbp: i64,
-    pub mnnjpmhofmm: i64,
-    pub gbbpodofjfn: i64,
-    pub fkkhmcpabhk: String,
+    pub ncdnalmhahp: i64,
+    pub famgidfmplf: i64,
+    pub clfognnllkc: i64,
+    pub gedglopngim: String,
 }

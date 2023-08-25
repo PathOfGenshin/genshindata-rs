@@ -12,8 +12,8 @@ pub struct MainCoopExcelConfigDatum {
     pub id: i64,
     pub main_coop_cfg: String,
     pub main_quest_series: i64,
-    #[serde(rename = "KFDPBMEKEAM")]
-    pub kfdpbmekeam: Option<String>,
-    #[serde(rename = "GNDPDCPBKFD")]
-    pub gndpdcpbkfd: Option<i64>,
+    #[serde(rename = "AKPEOFKDIDG")]
+    pub akpeofkdidg: Option<String>,
+    #[serde(rename = "DLKDJDHGMPA")]
+    pub dlkdjdhgmpa: Option<i64>,
 }

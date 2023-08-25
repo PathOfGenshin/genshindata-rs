@@ -10,12 +10,12 @@ pub type LevelTagExcelConfigData = Vec<LevelTagExcelConfigDatum>;
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct LevelTagExcelConfigDatum {
     pub id: i64,
-    pub cbgffaiegee: String,
+    pub dlgniidbhnp: String,
     #[serde(rename = "sceneId")]
     pub scene_id: i64,
-    pub hipkmpknlmd: Vec<i64>,
-    pub klfnpncmhgd: Vec<i64>,
-    pub okbioljojda: Option<bool>,
-    pub mkkdjjbkgfo: Option<i64>,
-    pub dbbehhachkc: Vec<i64>,
+    pub jhegeckomip: Vec<i64>,
+    pub bjdilblkkhi: Vec<i64>,
+    pub belbjlfflbb: Option<bool>,
+    pub dceilaloada: Option<i64>,
+    pub ggnaphlcbje: Vec<i64>,
 }

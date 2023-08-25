@@ -13,23 +13,23 @@ pub struct ActivityCharAmusementLevelExcelConfigDatum {
     pub level_id: i64,
     #[serde(rename = "weight")]
     pub weight: i64,
-    pub fpecffpfibi: Fpecffpfibi,
+    pub amidlbbfihh: Amidlbbfihh,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub gpdnecpcfeg: i64,
-    pub dcecedofgci: i64,
-    pub echjpfnpimk: Vec<i64>,
-    pub mhjiinpadff: String,
+    pub penfodfehao: i64,
+    pub ggmmfcnepce: i64,
+    pub okaomegbhbi: Vec<i64>,
+    pub mflpieodicp: String,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub aiepbmfakkj: i64,
+    pub ppphgocafna: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fpecffpfibi {
+pub enum Amidlbbfihh {
     #[serde(rename = "LEVEL_TYPE_AMUSEMENT")]
     LevelTypeAmusement,
     #[serde(rename = "LEVEL_TYPE_FIGHT")]

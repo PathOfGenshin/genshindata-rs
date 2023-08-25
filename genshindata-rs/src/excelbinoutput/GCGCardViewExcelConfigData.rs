@@ -11,34 +11,22 @@ pub type GcgCardViewExcelConfigData = Vec<GcgCardViewExcelConfigDatum>;
 pub struct GcgCardViewExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub icleekkkbfe: String,
-    pub piadnamonhp: Vec<String>,
-    pub jbkllgfcbgl: String,
-    pub pinmjabaooi: String,
-    pub ihbdlibphop: Vec<Option<serde_json::Value>>,
-    pub lmcgdcdeekb: String,
-    pub iljolocifcj: Iljolocifcj,
-    pub ffanddimnne: Vec<String>,
-    pub lfncjgofkak: Lfncjgofkak,
-    pub nljfgodinod: Option<f64>,
-    pub fpnpabbcofh: Option<f64>,
-    pub dkmgjnilong: Option<f64>,
+    pub kaaffkfmldb: String,
+    pub blibpooebmm: Vec<String>,
+    pub lfjiobbbaki: String,
+    pub copehbbfpmk: String,
+    pub jaefajgmccl: Vec<Option<serde_json::Value>>,
+    pub jfjckmdenop: String,
+    pub indncaniglj: Indncaniglj,
+    pub ebmeibcjloj: Vec<String>,
+    pub ahjpbmiankc: Ahjpbmiankc,
+    pub oailjajbpan: Option<f64>,
+    pub okkdgkggbje: Option<f64>,
+    pub biablmeebfc: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Iljolocifcj {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "Gcg_CardFace_Char_Avatar_Cyno")]
-    GcgCardFaceCharAvatarCyno,
-    #[serde(rename = "Gcg_CardFace_Char_Avatar_Tartaglia_02")]
-    GcgCardFaceCharAvatarTartaglia02,
-    #[serde(rename = "Gcg_CardFace_Char_Avatar_Xiao")]
-    GcgCardFaceCharAvatarXiao,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Lfncjgofkak {
+pub enum Ahjpbmiankc {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
@@ -47,4 +35,16 @@ pub enum Lfncjgofkak {
     SkinEffectConfigCharacterTartaglia02,
     #[serde(rename = "SkinEffectConfig_Character_Xiao2")]
     SkinEffectConfigCharacterXiao2,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Indncaniglj {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "Gcg_CardFace_Char_Avatar_Cyno")]
+    GcgCardFaceCharAvatarCyno,
+    #[serde(rename = "Gcg_CardFace_Char_Avatar_Tartaglia_02")]
+    GcgCardFaceCharAvatarTartaglia02,
+    #[serde(rename = "Gcg_CardFace_Char_Avatar_Xiao")]
+    GcgCardFaceCharAvatarXiao,
 }

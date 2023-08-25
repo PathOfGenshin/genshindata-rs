@@ -15,12 +15,11 @@ pub struct TeamChainExcelConfigDatum {
     pub dungeon_id: i64,
     pub gallery_id: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "MCIALNEMCAI")]
-    pub mcialnemcai: Vec<i64>,
-    #[serde(rename = "IMNMGLLFCCF")]
-    pub imnmgllfccf: Vec<Vec<i64>>,
-    #[serde(rename = "GOMJMEIPMIH")]
-    pub gomjmeipmih: Vec<i64>,
-    #[serde(rename = "OLALNLHNNPG")]
-    pub olalnlhnnpg: Vec<Vec<i64>>,
+    pub cost_item_num: Vec<i64>,
+    #[serde(rename = "APFMDMNOGEE")]
+    pub apfmdmnogee: Vec<Vec<i64>>,
+    #[serde(rename = "BGIIOGONBHO")]
+    pub bgiiogonbho: Vec<i64>,
+    #[serde(rename = "NKKLKEDJHBN")]
+    pub nkklkedjhbn: Vec<Vec<i64>>,
 }

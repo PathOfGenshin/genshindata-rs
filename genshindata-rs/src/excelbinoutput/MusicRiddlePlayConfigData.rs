@@ -13,8 +13,8 @@ pub struct MusicRiddlePlayConfigDatum {
     pub play_id: i64,
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub ddcbflpljom: String,
-    pub nfciokjojhj: i64,
-    pub dmlhpchjmph: Vec<i64>,
-    pub bfbemcfnajh: i64,
+    pub gmlkmpibgen: String,
+    pub ejjeafmdjnl: i64,
+    pub nbcieopkeoe: Vec<i64>,
+    pub feibhjppadj: i64,
 }

@@ -9,9 +9,9 @@ pub type BartenderMaterialUnlockConfigData = Vec<BartenderMaterialUnlockConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct BartenderMaterialUnlockConfigDatum {
     pub id: i64,
-    #[serde(rename = "GKGNFPBAFJH")]
-    pub gkgnfpbafjh: i64,
+    #[serde(rename = "LDIADLIENFH")]
+    pub ldiadlienfh: i64,
     pub weight: i64,
-    #[serde(rename = "GFOLOFIAPCI")]
-    pub gfolofiapci: i64,
+    #[serde(rename = "OJJJIIEHGNO")]
+    pub ojjjiiehgno: i64,
 }

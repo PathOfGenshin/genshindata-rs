@@ -11,9 +11,9 @@ pub type SorushTrialStageExcelConfigData = Vec<SorushTrialStageExcelConfigDatum>
 pub struct SorushTrialStageExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub neooohbmcfh: i64,
-    pub dkneahcdfeo: Vec<i64>,
+    pub bpljiacgehk: i64,
+    pub cpbpffblhbo: Vec<i64>,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub aaeehdiemja: Option<i64>,
+    pub memoldoodgk: Option<i64>,
 }

@@ -9,14 +9,14 @@ pub type MichiaeBattleSkillExcelConfigData = Vec<MichiaeBattleSkillExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct MichiaeBattleSkillExcelConfigDatum {
-    pub homjnkcmhdh: i64,
-    pub ieahmphafjj: i64,
-    pub ddikjbhmkda: i64,
-    pub nkkkfgljcbi: Vec<String>,
+    pub fjaoijahepp: i64,
+    pub dlehbdcbheh: i64,
+    pub kpkhpjmelnk: i64,
+    pub goegceilhhj: Vec<String>,
     #[serde(rename = "iconPath")]
     pub icon_path: String,
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub cjoffggdjkl: i64,
-    pub nnngiieijjo: String,
+    pub cmaighbogff: i64,
+    pub boijflbbljd: String,
 }

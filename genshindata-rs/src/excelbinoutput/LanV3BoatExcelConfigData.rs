@@ -9,7 +9,7 @@ pub type LanV3BoatExcelConfigData = Vec<LanV3BoatExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct LanV3BoatExcelConfigDatum {
-    pub aljdgmnmfah: i64,
+    pub ajjpaiijkgd: i64,
     #[serde(rename = "type")]
     pub lan_v3_boat_excel_config_datum_type: String,
     #[serde(rename = "galleryId")]
@@ -18,15 +18,15 @@ pub struct LanV3BoatExcelConfigDatum {
     pub control_group_id: i64,
     #[serde(rename = "prepareTime")]
     pub prepare_time: i64,
-    pub bcdmbjpclfj: i64,
-    pub iiiaddndpla: i64,
-    pub iahhbcoaija: i64,
-    pub phkgofpogaa: i64,
-    pub ffcoophhiem: f64,
+    pub hphellacjfb: i64,
+    pub pioiieoodfp: i64,
+    pub mmhhkaibfgk: i64,
+    pub oognoffdjcj: i64,
+    pub ncnkgdgmjpf: f64,
     #[serde(rename = "limitRegion")]
     pub limit_region: String,
-    pub ebmpfanopdi: Vec<i64>,
-    pub hicjklhlpfb: Vec<i64>,
-    pub kimlkgohija: Vec<f64>,
-    pub ehkfcobkmca: Option<i64>,
+    pub hfgclmefedj: Vec<i64>,
+    pub geeglbnkidc: Vec<i64>,
+    pub aocejimoceh: Vec<f64>,
+    pub ajabgjhplbo: Option<i64>,
 }

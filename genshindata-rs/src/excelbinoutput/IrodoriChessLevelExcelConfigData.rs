@@ -13,7 +13,7 @@ pub struct IrodoriChessLevelExcelConfigDatum {
     pub level_id: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub dnlhblldlem: i64,
-    pub lglobaahikh: i64,
-    pub fpkdknjpeep: i64,
+    pub nbphfhjmcki: i64,
+    pub cficnekpach: i64,
+    pub bifbnkpadgl: i64,
 }

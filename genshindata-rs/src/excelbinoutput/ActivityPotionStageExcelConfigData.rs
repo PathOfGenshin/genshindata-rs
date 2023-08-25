@@ -13,13 +13,13 @@ pub struct ActivityPotionStageExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub emopnigcgge: Vec<i64>,
-    pub filheliocfp: i64,
+    pub gikgnblpbcm: Vec<i64>,
+    pub nfgcgpiniim: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub echjpfnpimk: Vec<i64>,
-    pub ighafhmigol: Vec<i64>,
+    pub okaomegbhbi: Vec<i64>,
+    pub neiaekploib: Vec<i64>,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
-    pub lgkmhbfbpab: i64,
+    pub clekkeiplne: i64,
 }

@@ -15,7 +15,7 @@ pub struct WidgetCameraScanExcelConfigDatum {
     pub camera_id: i64,
     #[serde(rename = "configID")]
     pub config_id: i64,
-    pub nhcociohnjo: Vec<i64>,
-    pub fjfjgpjnoof: bool,
-    pub picmcbfalgb: String,
+    pub nmnobkfnidk: Vec<i64>,
+    pub klnmkfplgpm: bool,
+    pub aonchneohih: String,
 }

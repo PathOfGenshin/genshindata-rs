@@ -3,6 +3,7 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
+use std::collections::HashMap;
 
 pub type CatalogExcelConfigData = Vec<CatalogExcelConfigDatum>;
 
@@ -13,14 +14,7 @@ pub struct CatalogExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "type")]
     pub catalog_excel_config_datum_type: String,
-    pub jpmdcaponii: Vec<Vec<i64>>,
-    pub hjeaabfimdl: Vec<Hjeaabfimdl>,
-    pub hjgaahigjgm: Vec<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Hjeaabfimdl {
-    pub dpjgppggnod: Option<i64>,
-    pub oananclicne: Option<i64>,
+    pub kcefchlpdki: Vec<Vec<i64>>,
+    pub dkjhicngloi: Vec<HashMap<String, i64>>,
+    pub dpfelnkefmn: Vec<i64>,
 }

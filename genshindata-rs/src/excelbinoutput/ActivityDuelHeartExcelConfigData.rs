@@ -11,7 +11,7 @@ pub type ActivityDuelHeartExcelConfigData = Vec<ActivityDuelHeartExcelConfigDatu
 pub struct ActivityDuelHeartExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub gjpmnhabmjd: i64,
-    pub ngmoacknhmi: i64,
-    pub opdbjgcohii: i64,
+    pub hoghkabjoef: i64,
+    pub lfjbhgaoljk: i64,
+    pub jpmmdjeegeo: i64,
 }

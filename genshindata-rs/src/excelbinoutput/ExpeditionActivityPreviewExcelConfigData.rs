@@ -13,6 +13,6 @@ pub struct ExpeditionActivityPreviewExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "questId")]
     pub quest_id: i64,
-    pub jhabdjgbmgl: i64,
-    pub mdpfjaecnaj: i64,
+    pub hnehiamabnm: i64,
+    pub hnmdkoingpf: i64,
 }

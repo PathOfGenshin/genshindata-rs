@@ -15,21 +15,21 @@ pub struct ActivityChessGearExcelConfigDatum {
     pub gear_short_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub gear_icon_path: String,
-    #[serde(rename = "PCKNDBFHAEI")]
-    pub pckndbfhaei: String,
+    #[serde(rename = "KAIPPGJNHGP")]
+    pub kaippgjnhgp: String,
     pub attack: i64,
     pub attack_speed: i64,
     pub attack_range: i64,
     pub build_cost: i64,
     pub demolition_refund: i64,
     pub gadget_id: i64,
-    #[serde(rename = "MAFOHAMMECB")]
-    pub mafohammecb: Vec<i64>,
-    #[serde(rename = "GPKEBHPNFHC")]
-    pub gpkebhpnfhc: i64,
-    #[serde(rename = "DGBPBCHPODN")]
-    pub dgbpbchpodn: i64,
+    #[serde(rename = "FEMCBPOILEM")]
+    pub femcbpoilem: Vec<i64>,
+    #[serde(rename = "KNAEPFOBLGP")]
+    pub knaepfoblgp: i64,
+    #[serde(rename = "EAOHFLDMBCA")]
+    pub eaohfldmbca: i64,
     pub is_enable_rotate: Option<bool>,
-    #[serde(rename = "EOABCJIDKKJ")]
-    pub eoabcjidkkj: Option<i64>,
+    #[serde(rename = "DJCHHHBPBGE")]
+    pub djchhhbpbge: Option<i64>,
 }

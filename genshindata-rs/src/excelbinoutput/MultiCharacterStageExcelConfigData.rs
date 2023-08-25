@@ -13,25 +13,25 @@ pub struct MultiCharacterStageExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub hcnbioebnkk: Vec<Hcnbioebnkk>,
+    pub mccolajkecm: Vec<Mccolajkecm>,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub obeaglnbgea: Vec<Obeaglnbgea>,
-    pub hmpbnhfbjch: Vec<Hmpbnhfbjch>,
-    pub gpfalnjhlca: i64,
-    pub ggecdfkamji: i64,
-    pub midllleidai: Vec<i64>,
+    pub adalnnodeib: Vec<Adalnnodeib>,
+    pub cbiepcicmcm: Vec<Cbiepcicmcm>,
+    pub klpbplkedkm: i64,
+    pub dpndllomale: i64,
+    pub cligdoeahac: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Hcnbioebnkk {
-    pub dungeon_id: i64,
+pub struct Adalnnodeib {
+    pub buff_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Hmpbnhfbjch {
+pub struct Cbiepcicmcm {
     pub group_id: i64,
     pub hell_group_id: i64,
     pub gallery_id: i64,
@@ -40,6 +40,6 @@ pub struct Hmpbnhfbjch {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Obeaglnbgea {
-    pub buff_id: i64,
+pub struct Mccolajkecm {
+    pub dungeon_id: i64,
 }

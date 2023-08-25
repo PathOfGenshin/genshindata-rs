@@ -13,18 +13,18 @@ pub struct MapAreaConfigDatum {
     #[serde(rename = "sceneID")]
     pub scene_id: i64,
     pub name: String,
-    #[serde(rename = "DLFJAHLJPDB")]
-    pub dlfjahljpdb: Vec<i64>,
-    #[serde(rename = "ACHABMCJPPL")]
-    pub achabmcjppl: Option<i64>,
-    #[serde(rename = "JBPHEEHEDFE")]
-    pub jbpheehedfe: Option<Jbpheehedfe>,
+    #[serde(rename = "DDANDGPHAID")]
+    pub ddandgphaid: Vec<i64>,
+    #[serde(rename = "DHAMPAMMFKK")]
+    pub dhampammfkk: Option<i64>,
+    #[serde(rename = "DBLFBDOCHHB")]
+    pub dblfbdochhb: Option<Dblfbdochhb>,
     #[serde(rename = "type")]
     pub map_area_config_datum_type: Option<Type>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Jbpheehedfe {
+pub enum Dblfbdochhb {
     #[serde(rename = "MistOpen")]
     MistOpen,
 }

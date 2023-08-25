@@ -11,25 +11,26 @@ pub type ActivityVintageHuntingExcelConfigData = Vec<ActivityVintageHuntingExcel
 pub struct ActivityVintageHuntingExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ihhcmmklokm: i64,
+    pub plhfnmodhkh: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub enmcpnjcfim: i64,
+    pub fhgkhgohlhg: i64,
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub mlpcbhbifil: i64,
-    pub mcialnemcai: Vec<i64>,
-    pub hlncdaioejk: Vec<i64>,
-    pub bmhcnehhepm: Vec<i64>,
+    pub nogibfdglhc: i64,
+    #[serde(rename = "costItemNum")]
+    pub cost_item_num: Vec<i64>,
+    pub ndeidnbljoc: Vec<i64>,
+    pub hgibpaonamp: Vec<i64>,
     #[serde(rename = "tutorialId")]
     pub tutorial_id: i64,
-    pub abmcibannmf: i64,
-    pub illjkgffehb: i64,
-    pub oinljmhphob: Vec<i64>,
-    pub kakmngaipcm: i64,
-    pub pdlcimapjcp: i64,
+    pub ncjpacabgpa: i64,
+    pub nilgpfpncid: i64,
+    pub jpfpojhckjm: Vec<i64>,
+    pub mndcgobeoge: i64,
+    pub gnngkofjoch: i64,
 }

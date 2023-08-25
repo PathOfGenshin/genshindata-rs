@@ -10,5 +10,5 @@ pub type VehicleSkillDepotExcelConfigData = Vec<VehicleSkillDepotExcelConfigDatu
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct VehicleSkillDepotExcelConfigDatum {
     pub id: i64,
-    pub biefpoggcnn: Vec<i64>,
+    pub ijmegdnalck: Vec<i64>,
 }

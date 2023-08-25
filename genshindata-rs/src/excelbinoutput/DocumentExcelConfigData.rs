@@ -14,17 +14,24 @@ pub struct DocumentExcelConfigDatum {
     pub content_localized_id: Option<i64>,
     pub preview_path: String,
     pub video_path: VideoPath,
-    #[serde(rename = "DPHMKJNCHAD")]
-    pub dphmkjnchad: Dphmkjnchad,
-    #[serde(rename = "KKCGPGJAOCB")]
-    pub kkcgpgjaocb: Vec<i64>,
-    #[serde(rename = "EBNPAGMDGBJ")]
-    pub ebnpagmdgbj: Vec<i64>,
-    #[serde(rename = "MNAOLPGPJHH")]
-    pub mnaolpgpjhh: Option<Mnaolpgpjhh>,
+    #[serde(rename = "LAKHLHAHHMD")]
+    pub lakhlhahhmd: Lakhlhahhmd,
+    #[serde(rename = "BIMPBEDOEPE")]
+    pub bimpbedoepe: Vec<i64>,
+    #[serde(rename = "FPJMCNLIBDJ")]
+    pub fpjmcnlibdj: Vec<i64>,
+    #[serde(rename = "COELMDEHPLD")]
+    pub coelmdehpld: Option<Coelmdehpld>,
     pub document_type: Option<DocumentType>,
     #[serde(rename = "subtitleID")]
     pub subtitle_id: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Coelmdehpld {
+    #[serde(rename = "DOCUMENT_SPLIT_TYPE_BY_LINE")]
+    DocumentSplitTypeByLine,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -34,20 +41,13 @@ pub enum DocumentType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dphmkjnchad {
+pub enum Lakhlhahhmd {
     #[serde(rename = "ART/UI/Menus/Widget/Letter/Common_ReadDialog_Special_Bg")]
     ArtUiMenusWidgetLetterCommonReadDialogSpecialBg,
     #[serde(rename = "ART/UI/Menus/Widget/Letter/FleurFairV2_ReadDialog_Special_Bg")]
     ArtUiMenusWidgetLetterFleurFairV2ReadDialogSpecialBg,
     #[serde(rename = "")]
     Empty,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mnaolpgpjhh {
-    #[serde(rename = "DOCUMENT_SPLIT_TYPE_BY_LINE")]
-    DocumentSplitTypeByLine,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

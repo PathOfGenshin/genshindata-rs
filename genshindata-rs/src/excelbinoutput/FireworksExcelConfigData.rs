@@ -11,21 +11,21 @@ pub type FireworksExcelConfigData = Vec<FireworksExcelConfigDatum>;
 pub struct FireworksExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
-    pub dhpgogcjlkh: Vec<Dhpgogcjlkh>,
-    pub nnlpmmeejim: Nnlpmmeejim,
-    pub nfmbkmoihpc: Nfmbkmoihpc,
-    pub apifpbgephh: Vec<String>,
-    pub nefpkbiojnj: i64,
+    pub aiibfcembae: Vec<Aiibfcembae>,
+    pub ddkacbnlpoi: Ddkacbnlpoi,
+    pub dflpbdfpeip: Dflpbdfpeip,
+    pub piehnmofpdh: Vec<String>,
+    pub dicoooofpll: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Dhpgogcjlkh {
+pub struct Aiibfcembae {
     #[serde(rename = "type")]
-    pub dhpgogcjlkh_type: Type,
-    pub bdkpokjilmp: i64,
-    pub pgpipoemihf: Option<bool>,
-    pub lhbcagkbckh: Vec<i64>,
+    pub aiibfcembae_type: Type,
+    pub apjnkjkjcic: i64,
+    pub ngphjohnhmj: Option<bool>,
+    pub efhokidkpae: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -44,15 +44,15 @@ pub enum Type {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Nfmbkmoihpc {
-    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
-    EffSceneObjFireworksBullet,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Nnlpmmeejim {
+pub enum Ddkacbnlpoi {
     #[serde(rename = "PatternShapeFireworks")]
     PatternShapeFireworks,
     #[serde(rename = "SphericalFireworks")]
     SphericalFireworks,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Dflpbdfpeip {
+    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
+    EffSceneObjFireworksBullet,
 }

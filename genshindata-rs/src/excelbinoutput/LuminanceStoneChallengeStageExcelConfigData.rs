@@ -13,15 +13,15 @@ pub struct LuminanceStoneChallengeStageExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "dayIndex")]
     pub day_index: i64,
-    pub gpfalnjhlca: i64,
-    pub ggecdfkamji: i64,
-    pub fpkahnlmplg: i64,
-    pub ellhnfjfkan: i64,
-    pub gpglfopjkbh: Vec<i64>,
+    pub klpbplkedkm: i64,
+    pub dpndllomale: i64,
+    pub hjcfombkpkd: i64,
+    pub lagfamnbden: i64,
+    pub ppinjhgfjpf: Vec<i64>,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub ndjdbinocpd: Vec<i64>,
-    pub ljajmkjgkam: i64,
+    pub oojhnnjmcbg: Vec<i64>,
+    pub poibigjclle: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }

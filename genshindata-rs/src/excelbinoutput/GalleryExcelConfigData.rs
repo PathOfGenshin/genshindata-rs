@@ -13,11 +13,13 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "type")]
     pub gallery_excel_config_datum_type: String,
     pub param: Vec<String>,
+    #[serde(rename = "LDMLEKHGKPH")]
+    pub ldmlekhgkph: Vec<i64>,
     pub can_interrupt_by_client: Option<bool>,
-    #[serde(rename = "JCFGGIACLFH")]
-    pub jcfggiaclfh: Vec<i64>,
-    #[serde(rename = "AOOCFJKELGL")]
-    pub aoocfjkelgl: Option<i64>,
+    #[serde(rename = "PANKCKDNDPO")]
+    pub pankckdndpo: Vec<i64>,
+    #[serde(rename = "PABOJJEICBL")]
+    pub pabojjeicbl: Option<i64>,
     pub ability_group: AbilityGroup,
     pub ability_group_list: Vec<String>,
     pub limit_region: String,
@@ -30,38 +32,42 @@ pub struct GalleryExcelConfigDatum {
     pub gallery_msg_text_map_hash: i64,
     pub pic: Pic,
     pub target_text_map_hash: i64,
-    #[serde(rename = "KNCNJLECGAP")]
-    pub kncnjlecgap: String,
+    #[serde(rename = "HFLFPNJAHME")]
+    pub hflfpnjahme: String,
     pub start_audio_values: String,
     pub end_audio_values: String,
     pub selectable_ability_groups: Vec<String>,
-    #[serde(rename = "JPEIPIHLFIA")]
-    pub jpeipihlfia: Vec<String>,
-    #[serde(rename = "NFLOHDPNOCN")]
-    pub nflohdpnocn: Vec<String>,
-    #[serde(rename = "PAKCLFBJCIH")]
-    pub pakclfbjcih: Vec<f64>,
+    #[serde(rename = "BIONHLEICLJ")]
+    pub bionhleiclj: Vec<String>,
+    #[serde(rename = "PPGPJFDJOHE")]
+    pub ppgpjfdjohe: Vec<String>,
+    #[serde(rename = "IBGAGMDGEOC")]
+    pub ibgagmdgeoc: Vec<f64>,
     pub is_enable_single_prepare: Option<bool>,
     pub single_prepare_time: Option<i64>,
-    #[serde(rename = "EOKLHEJCCEM")]
-    pub eoklhejccem: Option<bool>,
-    #[serde(rename = "JFIJLIDLDKI")]
-    pub jfijlidldki: Option<i64>,
+    #[serde(rename = "PLNIDOAKJGG")]
+    pub plnidoakjgg: Option<bool>,
+    #[serde(rename = "CGDMEKIEEOP")]
+    pub cgdmekieeop: Option<i64>,
     pub is_enable_mp_prepare: Option<bool>,
     pub scene_id: Option<i64>,
     pub control_group_id: Option<i64>,
     pub revive_point_group_id: Option<i64>,
     pub revive_point_config_id: Option<i64>,
     pub center_radius: Option<i64>,
-    #[serde(rename = "KEOJPPBFINA")]
-    pub keojppbfina: Option<bool>,
-    #[serde(rename = "EMBFICJJNOM")]
-    pub embficjjnom: Option<i64>,
-    #[serde(rename = "BGKDHGMEGNH")]
-    pub bgkdhgmegnh: Option<bool>,
-    #[serde(rename = "EKNMFBIKNBH")]
-    pub eknmfbiknbh: Option<i64>,
+    #[serde(rename = "FJHLECAMOBO")]
+    pub fjhlecamobo: Option<bool>,
+    #[serde(rename = "LKHDPDKEGLG")]
+    pub lkhdpdkeglg: Option<i64>,
+    #[serde(rename = "MBMKFBOPBJM")]
+    pub mbmkfbopbjm: Option<bool>,
+    #[serde(rename = "MPAEJGNDCLD")]
+    pub mpaejgndcld: Option<i64>,
     pub mp_prepare_time: Option<bool>,
+    #[serde(rename = "KGKFDDIBIBN")]
+    pub kgkfddibibn: Option<String>,
+    #[serde(rename = "GJHHLGBMEKC")]
+    pub gjhhlgbmekc: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

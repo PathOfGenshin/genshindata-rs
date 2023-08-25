@@ -11,7 +11,7 @@ pub type ActivityPotionOverallExcelConfigData = Vec<ActivityPotionOverallExcelCo
 pub struct ActivityPotionOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub cadbnimiohc: f64,
-    pub hgkilcibmip: f64,
-    pub idmliaglajp: f64,
+    pub gcfbnpegllm: f64,
+    pub ihnjficfcfb: f64,
+    pub monlkdipoia: f64,
 }

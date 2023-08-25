@@ -12,24 +12,24 @@ pub struct IrodoriMasterExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "levelID")]
     pub level_id: i64,
-    pub fpecffpfibi: Fpecffpfibi,
-    pub gkgnfpbafjh: i64,
+    pub amidlbbfihh: Amidlbbfihh,
+    pub ldiadlienfh: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub mmfjhpahgcn: i64,
-    pub gifdffpilge: i64,
+    pub megjppdhaeh: i64,
+    pub plgoipgmbci: i64,
     #[serde(rename = "condID")]
     pub cond_id: i64,
-    pub bfddpphkgce: i64,
-    pub ibcfmhemodk: i64,
-    pub oilkkpolheh: i64,
-    pub jaejpolkhlo: i64,
-    pub dfmcgbnjcka: Option<i64>,
+    pub gegjjibkigl: i64,
+    pub jeadjlieaen: i64,
+    pub kafdhmmiebj: i64,
+    pub emodlhglmkg: i64,
+    pub lacaabdbkfk: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fpecffpfibi {
+pub enum Amidlbbfihh {
     #[serde(rename = "IRODORI_MASTER_LEVEL_HARD")]
     IrodoriMasterLevelHard,
     #[serde(rename = "IRODORI_MASTER_LEVEL_MASTER")]

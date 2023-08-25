@@ -15,8 +15,8 @@ pub struct ActivitySkillExcelConfigDatum {
     pub global_value_key: String,
     pub energy_min: Option<i64>,
     pub energy_max: i64,
-    #[serde(rename = "DPMGMNBFOFF")]
-    pub dpmgmnbfoff: Vec<i64>,
+    #[serde(rename = "PCCCLDFKNHM")]
+    pub pcccldfknhm: Vec<i64>,
     pub cd_time: i64,
     pub guide_time: Option<i64>,
     pub skill_icon: String,
@@ -25,14 +25,14 @@ pub struct ActivitySkillExcelConfigDatum {
     pub unable_text_text_map_hash: i64,
     pub channel_text_text_map_hash: i64,
     pub interrupt_text_text_map_hash: i64,
-    #[serde(rename = "PFAHKGOHPDF")]
-    pub pfahkgohpdf: Option<i64>,
-    #[serde(rename = "JAKGKDKPHLF")]
-    pub jakgkdkphlf: Option<bool>,
-    #[serde(rename = "ANHCBKAIGIG")]
-    pub anhcbkaigig: Option<bool>,
-    #[serde(rename = "GGNJDEEPKFD")]
-    pub ggnjdeepkfd: Option<bool>,
+    #[serde(rename = "JNPEJEMOABI")]
+    pub jnpejemoabi: Option<i64>,
+    #[serde(rename = "HGDLCKIKFBB")]
+    pub hgdlckikfbb: Option<bool>,
+    #[serde(rename = "IMIKDGDIMLE")]
+    pub imikdgdimle: Option<bool>,
+    #[serde(rename = "PHBGHDABBPH")]
+    pub phbghdabbph: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

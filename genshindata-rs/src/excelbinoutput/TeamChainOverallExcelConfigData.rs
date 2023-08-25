@@ -11,17 +11,17 @@ pub type TeamChainOverallExcelConfigData = Vec<TeamChainOverallExcelConfigDatum>
 pub struct TeamChainOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub odhejnjjmbi: Vec<i64>,
-    pub aglaojkglji: i64,
+    pub kjgmpfbhfoe: Vec<i64>,
+    pub bhbafolbnae: i64,
     #[serde(rename = "baseScore")]
     pub base_score: i64,
-    pub ifmpinfaacl: f64,
-    pub mplflbehnao: i64,
-    pub ablcfcnmjjc: i64,
-    pub hfegnechenf: i64,
-    pub mjljibgpaoi: i64,
-    pub jojdnkcnpej: String,
-    pub ajdilbpigjp: i64,
-    pub epgbbjeebij: i64,
-    pub fbbljceilkd: Vec<i64>,
+    pub kfmejfbjdmi: f64,
+    pub falfehkeoej: i64,
+    pub bdholjfnmin: i64,
+    pub hfgloeanole: i64,
+    pub doklehpaidc: i64,
+    pub olhbpgkgdjl: String,
+    pub cnjpchdefgh: i64,
+    pub deidmgknomd: i64,
+    pub effnmbminfd: Vec<i64>,
 }

@@ -9,14 +9,14 @@ pub type FungusCampExcelConfigData = Vec<FungusCampExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusCampExcelConfigDatum {
-    pub icnmmohddah: i64,
+    pub fdpclonceig: i64,
     #[serde(rename = "campNameTextMapHash")]
     pub camp_name_text_map_hash: i64,
-    pub gkgnfpbafjh: i64,
-    pub hjiihckkihn: i64,
+    pub ldiadlienfh: i64,
+    pub cfelapchmek: i64,
     #[serde(rename = "questId")]
     pub quest_id: Option<i64>,
-    pub kldmcnfhoka: Option<i64>,
-    pub bmhcnehhepm: Vec<i64>,
-    pub pgbgbakgigm: Option<i64>,
+    pub hbhbfjinndc: Option<i64>,
+    pub hgibpaonamp: Vec<i64>,
+    pub effjflkaopl: Option<i64>,
 }

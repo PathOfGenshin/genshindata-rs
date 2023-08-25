@@ -10,43 +10,43 @@ pub type ActivitySumoStageExcelConfigData = Vec<ActivitySumoStageExcelConfigDatu
 #[serde(rename_all = "PascalCase")]
 pub struct ActivitySumoStageExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NDPCJPIMPKH")]
-    pub ndpcjpimpkh: i64,
+    #[serde(rename = "FBDAGDPMAJG")]
+    pub fbdagdpmajg: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "MKLCKIOGFJK")]
-    pub mklckiogfjk: Vec<i64>,
-    #[serde(rename = "KAPGOLDLOPO")]
-    pub kapgoldlopo: Vec<i64>,
-    #[serde(rename = "GLALHAEBGPG")]
-    pub glalhaebgpg: Vec<i64>,
+    #[serde(rename = "PIIAHBEGEMK")]
+    pub piiahbegemk: Vec<i64>,
+    #[serde(rename = "KONLBPNBKOM")]
+    pub konlbpnbkom: Vec<i64>,
+    #[serde(rename = "JIJEAJJPPEA")]
+    pub jijeajjppea: Vec<i64>,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    #[serde(rename = "JFOMIHEIPCC")]
-    pub jfomiheipcc: Vec<i64>,
+    #[serde(rename = "OCBNMNNFMHI")]
+    pub ocbnmnnfmhi: Vec<i64>,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "HCHIPNFDOKG")]
-    pub hchipnfdokg: Vec<i64>,
-    #[serde(rename = "PKPDEHMFPAK")]
-    pub pkpdehmfpak: Vec<Pkpdehmfpak>,
-    #[serde(rename = "LAIHPPNFPKI")]
-    pub laihppnfpki: Vec<i64>,
-    #[serde(rename = "NIHJMNJAOAI")]
-    pub nihjmnjaoai: Vec<i64>,
-    #[serde(rename = "NLDCJKNOAIA")]
-    pub nldcjknoaia: Option<String>,
+    #[serde(rename = "FOADLAKBMLM")]
+    pub foadlakbmlm: Vec<i64>,
+    #[serde(rename = "NDAIDMODEBN")]
+    pub ndaidmodebn: Vec<Ndaidmodebn>,
+    #[serde(rename = "AHMMPGACBDC")]
+    pub ahmmpgacbdc: Vec<i64>,
+    #[serde(rename = "KDCMNNFNABK")]
+    pub kdcmnnfnabk: Vec<i64>,
+    #[serde(rename = "NGJEGPMONJM")]
+    pub ngjegpmonjm: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Pkpdehmfpak {
-    pub bdibjepknam: String,
-    pub dcjhhhckccd: String,
+pub struct Ndaidmodebn {
+    pub oopacmmkejm: String,
+    pub mjknoolomle: String,
 }

@@ -11,11 +11,11 @@ pub type DigGroupLinkExcelConfigData = Vec<DigGroupLinkExcelConfigDatum>;
 pub struct DigGroupLinkExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mabbeekjgkk: i64,
-    pub jlidiidgneg: i64,
-    pub kaokoenoojp: i64,
-    pub keinmiibeka: Vec<i64>,
-    pub nnfbenembpd: String,
-    pub apoebfdkccn: Option<i64>,
-    pub khbhmfnkogk: Option<i64>,
+    pub ecchphppcff: i64,
+    pub djllnmilmdp: i64,
+    pub offbmjkmfod: i64,
+    pub igdmjfdnpjg: Vec<i64>,
+    pub fkblmkgcghm: String,
+    pub mohllmhdmlc: Option<i64>,
+    pub bcgliokelcb: Option<i64>,
 }

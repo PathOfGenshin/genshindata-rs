@@ -11,15 +11,15 @@ pub type NewActivityMainQuestDataExcelConfigData = Vec<NewActivityMainQuestDataE
 pub struct NewActivityMainQuestDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub iencjoldppo: i64,
+    pub fgcfglfdbpg: i64,
     #[serde(rename = "questIdList")]
     pub quest_id_list: Vec<i64>,
-    pub jmodnhkoehj: i64,
+    pub lepapijjmdl: i64,
     #[serde(rename = "chapterTitleTextMapHash")]
     pub chapter_title_text_map_hash: i64,
-    pub eeeaioeaedc: i64,
-    pub ijcehgbanbf: i64,
+    pub acimfilfklk: i64,
+    pub mbmglhgmpol: i64,
     #[serde(rename = "preQuestId")]
     pub pre_quest_id: Option<i64>,
-    pub djpiddmphpo: Option<i64>,
+    pub epkikbnhkol: Option<i64>,
 }

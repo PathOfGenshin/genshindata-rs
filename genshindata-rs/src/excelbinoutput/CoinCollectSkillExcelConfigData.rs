@@ -13,9 +13,9 @@ pub struct CoinCollectSkillExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "abilityName")]
     pub ability_name: Vec<String>,
-    pub egebljpdgcm: Option<bool>,
-    pub llgcfkoeaia: String,
-    pub ieahmphafjj: i64,
-    pub ddikjbhmkda: i64,
-    pub mldmgalcoph: Option<bool>,
+    pub lgnlpcmdhef: Option<bool>,
+    pub eekmahjahag: String,
+    pub dlehbdcbheh: i64,
+    pub kpkhpjmelnk: i64,
+    pub jbmlphdnhdc: Option<bool>,
 }

@@ -11,36 +11,36 @@ pub type UgcMonsterGroupExcelConfigData = Vec<UgcMonsterGroupExcelConfigDatum>;
 pub struct UgcMonsterGroupExcelConfigDatum {
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: String,
-    pub dmgadackahl: String,
-    pub chdgpejdjda: i64,
-    pub pmkdgefhdke: String,
+    pub innmbiaeaob: String,
+    pub hoeodlcmece: i64,
+    pub kekcjcjkdbl: String,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub ficmiagcdop: Vec<i64>,
+    pub medchnbcfhd: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub dhpfhpjbpdk: f64,
+    pub bolaiphnedl: f64,
     #[serde(rename = "cost")]
     pub cost: i64,
-    pub apdkfmioiak: Apdkfmioiak,
-    pub pcmlaogfgco: Pcmlaogfgco,
-    pub ojkoofkhnlp: bool,
-    pub jkeldijkbfh: i64,
-    pub gjncadhoing: Option<i64>,
-    pub pgomneecamf: Option<i64>,
+    pub bpbggpcdked: Bpbggpcdked,
+    pub lbfegjaoofo: Lbfegjaoofo,
+    pub iefnpknhnjf: bool,
+    pub dijajobbebg: i64,
+    pub lonjjmhffcg: Option<i64>,
+    pub eaobnfiffkj: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Apdkfmioiak {
+pub enum Bpbggpcdked {
     #[serde(rename = "UGC_ROTATE_90")]
     UgcRotate90,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Pcmlaogfgco {
+pub enum Lbfegjaoofo {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "MonsterSkillL50W50H15")]

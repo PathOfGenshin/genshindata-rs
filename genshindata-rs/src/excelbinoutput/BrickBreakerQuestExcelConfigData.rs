@@ -15,11 +15,11 @@ pub struct BrickBreakerQuestExcelConfigDatum {
     pub stage_id: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub fpecffpfibi: String,
+    pub amidlbbfihh: String,
     #[serde(rename = "levelID")]
     pub level_id: i64,
-    pub iihijmoiamp: i64,
-    pub ijlpbnnjlcd: i64,
-    pub eeeaioeaedc: i64,
-    pub ijcehgbanbf: i64,
+    pub ngmkdjfldfc: i64,
+    pub ehdecclfahb: i64,
+    pub acimfilfklk: i64,
+    pub mbmglhgmpol: i64,
 }

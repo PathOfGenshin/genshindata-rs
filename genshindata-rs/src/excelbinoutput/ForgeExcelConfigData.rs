@@ -15,8 +15,8 @@ pub struct ForgeExcelConfigDatum {
     pub effective_world_levels: Vec<i64>,
     pub forge_type: i64,
     pub show_item_id: i64,
-    #[serde(rename = "DGIDLPHPDIP")]
-    pub dgidlphpdip: Option<i64>,
+    #[serde(rename = "BJDGEOOHIJH")]
+    pub bjdgeoohijh: Option<i64>,
     pub result_item_id: Option<i64>,
     pub result_item_count: i64,
     pub forge_time: i64,
@@ -28,6 +28,8 @@ pub struct ForgeExcelConfigDatum {
     pub forge_point: Option<i64>,
     pub forge_point_notice_text_map_hash: i64,
     pub main_random_drop_id: Option<i64>,
+    #[serde(rename = "KKABPMOKCGM")]
+    pub kkabpmokcgm: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

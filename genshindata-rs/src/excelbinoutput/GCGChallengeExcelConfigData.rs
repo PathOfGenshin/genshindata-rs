@@ -13,9 +13,9 @@ pub struct GcgChallengeExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_challenge_excel_config_datum_type: String,
     pub param_list: Vec<String>,
-    #[serde(rename = "BPMJAKOIKIC")]
-    pub bpmjakoikic: i64,
+    #[serde(rename = "FPHJNGLMLPB")]
+    pub fphjnglmlpb: i64,
     pub progress: i64,
-    #[serde(rename = "EDHIOHFDNPA")]
-    pub edhiohfdnpa: Option<bool>,
+    #[serde(rename = "MCBKBLMNFAE")]
+    pub mcbkblmnfae: Option<bool>,
 }

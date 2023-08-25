@@ -11,6 +11,6 @@ pub type UgcTutorialExcelConfigData = Vec<UgcTutorialExcelConfigDatum>;
 pub struct UgcTutorialExcelConfigDatum {
     pub id: i64,
     pub type_name_text_map_hash: i64,
-    #[serde(rename = "HLPPJNHHLID")]
-    pub hlppjnhhlid: Vec<i64>,
+    #[serde(rename = "HOOCGDDODNN")]
+    pub hoocgddodnn: Vec<i64>,
 }

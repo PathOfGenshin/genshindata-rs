@@ -9,10 +9,10 @@ pub type LanV2FireworksFactorDataExcelConfigData = Vec<LanV2FireworksFactorDataE
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct LanV2FireworksFactorDataExcelConfigDatum {
-    pub ddmmgadglmp: i64,
-    pub kfgdhbffemb: Vec<i64>,
-    pub oalmieagmem: i64,
+    pub bogaikehpne: i64,
+    pub blidflmonhf: Vec<i64>,
+    pub ckhfiekgeco: i64,
     #[serde(rename = "type")]
     pub lan_v2_fireworks_factor_data_excel_config_datum_type: String,
-    pub afheeadpnoe: Vec<i64>,
+    pub klmoghbmppd: Vec<i64>,
 }

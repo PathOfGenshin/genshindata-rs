@@ -11,5 +11,5 @@ pub type MichiaeWatcherExcelConfigData = Vec<MichiaeWatcherExcelConfigDatum>;
 pub struct MichiaeWatcherExcelConfigDatum {
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
-    pub ajbflbfipdg: f64,
+    pub mmddpggccec: f64,
 }

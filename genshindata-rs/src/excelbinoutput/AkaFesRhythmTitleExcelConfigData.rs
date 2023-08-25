@@ -14,11 +14,11 @@ pub struct AkaFesRhythmTitleExcelConfigDatum {
     pub aka_fes_rhythm_title_excel_config_datum_type: Option<Type>,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "ONHCNGOCBMP")]
-    pub onhcngocbmp: String,
+    #[serde(rename = "CJPMKKOHGDL")]
+    pub cjpmkkohgdl: String,
     pub score: Option<i64>,
-    #[serde(rename = "HLDLJAIFNEM")]
-    pub hldljaifnem: Option<i64>,
+    #[serde(rename = "LJJONBDPPPJ")]
+    pub ljjonbdpppj: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

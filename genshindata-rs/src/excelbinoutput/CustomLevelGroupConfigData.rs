@@ -13,11 +13,11 @@ pub struct CustomLevelGroupConfigDatum {
     pub group_id: i64,
     #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
-    pub nimmpidpnhe: Vec<i64>,
-    pub nknhbdipioc: i64,
-    pub ebmijejmigb: i64,
-    pub cpfiihicadf: i64,
-    pub faemoleegof: i64,
-    pub bkadljdicim: i64,
-    pub bfeiecaoobe: i64,
+    pub dfaallomppl: Vec<i64>,
+    pub kbgighagcml: i64,
+    pub olgmdcpobbk: i64,
+    pub mciokdjegin: i64,
+    pub aohleddfkkj: i64,
+    pub bimlhnajhhp: i64,
+    pub mgocfloalim: i64,
 }

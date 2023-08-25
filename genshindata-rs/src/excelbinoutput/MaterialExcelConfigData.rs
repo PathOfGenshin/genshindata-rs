@@ -45,8 +45,8 @@ pub struct MaterialExcelConfigDatum {
     pub set_id: Option<i64>,
     pub close_bag_after_used: Option<bool>,
     pub food_quality: Option<FoodQuality>,
-    #[serde(rename = "NPJCFDAEDBI")]
-    pub npjcfdaedbi: Option<Npjcfdaedbi>,
+    #[serde(rename = "LOKEKHBJABG")]
+    pub lokekhbjabg: Option<Lokekhbjabg>,
     pub global_item_limit: Option<i64>,
     pub cd_time: Option<i64>,
     pub cd_group: Option<i64>,
@@ -127,6 +127,8 @@ pub enum EffectName {
     EffSceneObjElectricCrystalAbsorb,
     #[serde(rename = "Eff_SceneObj_EssenceTreasure_01_Absorb")]
     EffSceneObjEssenceTreasure01_Absorb,
+    #[serde(rename = "Eff_SceneObj_FontaineCrystal_Absorb")]
+    EffSceneObjFontaineCrystalAbsorb,
     #[serde(rename = "Eff_SceneObj_LuminousEnergy_01_Absorb")]
     EffSceneObjLuminousEnergy01_Absorb,
     #[serde(rename = "Eff_SceneObj_MoonlitSigil_01_Absorb")]
@@ -257,6 +259,47 @@ pub enum UseOp {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Lokekhbjabg {
+    #[serde(rename = "ATK_UP")]
+    AtkUp,
+    #[serde(rename = "Cold_Resist")]
+    ColdResist,
+    #[serde(rename = "CRIT_UP")]
+    CritUp,
+    #[serde(rename = "DEF_UP")]
+    DefUp,
+    #[serde(rename = "Happy_Water")]
+    HappyWater,
+    #[serde(rename = "Heal_Overtime")]
+    HealOvertime,
+    #[serde(rename = "Healing_UP")]
+    HealingUp,
+    #[serde(rename = "Holy_Water")]
+    HolyWater,
+    #[serde(rename = "MAX_HP_UP")]
+    MaxHpUp,
+    #[serde(rename = "Physical_DMG_UP")]
+    PhysicalDmgUp,
+    #[serde(rename = "Random_Reconvery")]
+    RandomReconvery,
+    #[serde(rename = "Recovery")]
+    Recovery,
+    #[serde(rename = "Revive")]
+    Revive,
+    #[serde(rename = "Shield_Strength")]
+    ShieldStrength,
+    #[serde(rename = "STA_Climb_Reduce")]
+    StaClimbReduce,
+    #[serde(rename = "STA_Fly_Reduce")]
+    StaFlyReduce,
+    #[serde(rename = "STA_Recovery")]
+    StaRecovery,
+    #[serde(rename = "STA_Sprint_Reduce")]
+    StaSprintReduce,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum MaterialType {
     #[serde(rename = "MATERIAL_ACTIVITY_GEAR")]
     MaterialActivityGear,
@@ -330,6 +373,8 @@ pub enum MaterialType {
     MaterialNoticeAddHp,
     #[serde(rename = "MATERIAL_QUEST")]
     MaterialQuest,
+    #[serde(rename = "MATERIAL_QUEST_EVENT_BOOK")]
+    MaterialQuestEventBook,
     #[serde(rename = "MATERIAL_RELIQUARY_MATERIAL")]
     MaterialReliquaryMaterial,
     #[serde(rename = "MATERIAL_RENAME_ITEM")]
@@ -348,45 +393,6 @@ pub enum MaterialType {
     MaterialWidget,
     #[serde(rename = "MATERIAL_WOOD")]
     MaterialWood,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Npjcfdaedbi {
-    #[serde(rename = "ATK_UP")]
-    AtkUp,
-    #[serde(rename = "Cold_Resist")]
-    ColdResist,
-    #[serde(rename = "CRIT_UP")]
-    CritUp,
-    #[serde(rename = "DEF_UP")]
-    DefUp,
-    #[serde(rename = "Heal_Overtime")]
-    HealOvertime,
-    #[serde(rename = "Healing_UP")]
-    HealingUp,
-    #[serde(rename = "Holy_Water")]
-    HolyWater,
-    #[serde(rename = "MAX_HP_UP")]
-    MaxHpUp,
-    #[serde(rename = "Physical_DMG_UP")]
-    PhysicalDmgUp,
-    #[serde(rename = "Random_Reconvery")]
-    RandomReconvery,
-    #[serde(rename = "Recovery")]
-    Recovery,
-    #[serde(rename = "Revive")]
-    Revive,
-    #[serde(rename = "Shield_Strength")]
-    ShieldStrength,
-    #[serde(rename = "STA_Climb_Reduce")]
-    StaClimbReduce,
-    #[serde(rename = "STA_Fly_Reduce")]
-    StaFlyReduce,
-    #[serde(rename = "STA_Recovery")]
-    StaRecovery,
-    #[serde(rename = "STA_Sprint_Reduce")]
-    StaSprintReduce,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

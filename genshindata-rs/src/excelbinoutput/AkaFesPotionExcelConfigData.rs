@@ -11,7 +11,7 @@ pub type AkaFesPotionExcelConfigData = Vec<AkaFesPotionExcelConfigDatum>;
 pub struct AkaFesPotionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub aglaojkglji: i64,
-    pub igomcdihmel: i64,
-    pub lnbnnnihjbf: i64,
+    pub bhbafolbnae: i64,
+    pub ppflaibiljh: i64,
+    pub njcdkikjgfc: i64,
 }

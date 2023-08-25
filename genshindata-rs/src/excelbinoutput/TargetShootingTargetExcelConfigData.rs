@@ -14,12 +14,12 @@ pub struct TargetShootingTargetExcelConfigDatum {
     pub target_score: Option<i64>,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "GGIIKFJNJNI")]
-    pub ggiikfjnjni: Option<bool>,
-    #[serde(rename = "DNNGNNGEENN")]
-    pub dnngnngeenn: Option<f64>,
-    #[serde(rename = "MODCHACLLPH")]
-    pub modchacllph: Option<bool>,
-    #[serde(rename = "DGJHAIJKGBC")]
-    pub dgjhaijkgbc: Option<bool>,
+    #[serde(rename = "IFKMAANOOBH")]
+    pub ifkmaanoobh: Option<bool>,
+    #[serde(rename = "IABJJLNINPN")]
+    pub iabjjlninpn: Option<f64>,
+    #[serde(rename = "OIFJBDGOJHB")]
+    pub oifjbdgojhb: Option<bool>,
+    #[serde(rename = "LHKFJNFGMFN")]
+    pub lhkfjnfgmfn: Option<bool>,
 }

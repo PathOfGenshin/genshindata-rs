@@ -11,6 +11,6 @@ pub type ReunionCommercialExcelConfigData = Vec<ReunionCommercialExcelConfigDatu
 pub struct ReunionCommercialExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub nkfnihppfal: String,
-    pub klclnmlemhk: String,
+    pub imcochkpiim: String,
+    pub ojpfaajfkmn: String,
 }

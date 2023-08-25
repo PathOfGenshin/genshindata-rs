@@ -15,6 +15,6 @@ pub struct GivingGroupExcelConfigDatum {
     pub finish_talk_id: Option<i64>,
     #[serde(rename = "mistakeTalkId")]
     pub mistake_talk_id: Option<i64>,
-    #[serde(rename = "DPFEHMCJJLL")]
-    pub dpfehmcjjll: Option<i64>,
+    #[serde(rename = "AFNALCMIHGI")]
+    pub afnalcmihgi: Option<i64>,
 }

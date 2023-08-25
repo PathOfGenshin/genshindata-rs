@@ -13,20 +13,20 @@ pub struct HomeWorldNpcExcelConfigDatum {
     pub furniture_id: i64,
     #[serde(rename = "avatarID")]
     pub avatar_id: Option<i64>,
-    pub bidibkdgbga: i64,
-    pub ojbgfoehojg: Vec<i64>,
-    pub clangeogpfm: Clangeogpfm,
-    pub phgfnlobnbo: Phgfnlobnbo,
-    pub lnedggejkjb: Clangeogpfm,
-    pub plckdhcgbke: i64,
+    pub hdljmoghicl: i64,
+    pub ckmclcnibld: Vec<i64>,
+    pub bahbbcjnhge: Bahbbcjnhge,
+    pub epfgblnbphc: Epfgblnbphc,
+    pub fiooffkfedp: Bahbbcjnhge,
+    pub gnmaiegcfpo: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lalegboddbp: Option<bool>,
-    pub kadpcicijip: Option<String>,
+    pub hpjmmebnmai: Option<bool>,
+    pub bhjoikfhibd: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Clangeogpfm {
+pub enum Bahbbcjnhge {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
@@ -34,7 +34,7 @@ pub enum Clangeogpfm {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Phgfnlobnbo {
+pub enum Epfgblnbphc {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "UI_AvatarIcon_Paimon")]

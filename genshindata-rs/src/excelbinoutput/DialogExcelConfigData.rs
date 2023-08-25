@@ -85,6 +85,12 @@ pub enum ActionBefore {
     DialogActionD721510701BeforeJson,
     #[serde(rename = "DialogAction/D736890105_Before")]
     DialogActionD736890105Before,
+    #[serde(rename = "DialogAction/D746680101_Before")]
+    DialogActionD746680101Before,
+    #[serde(rename = "DialogAction/Nutcracker_LerpIn")]
+    DialogActionNutcrackerLerpIn,
+    #[serde(rename = "DialogAction/Nutcracker_LerpIn_Paimon")]
+    DialogActionNutcrackerLerpInPaimon,
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "GCG/ClearWorldChallengeTalk")]
@@ -115,6 +121,8 @@ pub enum ActionBefore {
     GcgOpenGcgPveInfinitePage,
     #[serde(rename = "GCG/open_GcgPvePage")]
     GcgOpenGcgPvePage,
+    #[serde(rename = "GCG/open_GcgPVEPuzzlePage")]
+    GcgOpenGcgPvePuzzlePage,
     #[serde(rename = "GCG/open_GcgReplayPage")]
     GcgOpenGcgReplayPage,
     #[serde(rename = "GCG/open_GcgShopPage")]
@@ -163,10 +171,14 @@ pub enum ActionBefore {
     SimpleTalkNodHead,
     #[serde(rename = "SimpleTalk/PaimonInTalk_Start")]
     SimpleTalkPaimonInTalkStart,
+    #[serde(rename = "SimpleTalk/PaimonTalkPlus_Start")]
+    SimpleTalkPaimonTalkPlusStart,
     #[serde(rename = "SimpleTalk/PutHand")]
     SimpleTalkPutHand,
     #[serde(rename = "SimpleTalk/RandomTalk")]
     SimpleTalkRandomTalk,
+    #[serde(rename = "SimpleTalk/RandomTalkHold")]
+    SimpleTalkRandomTalkHold,
     #[serde(rename = "SimpleTalk/RandomTalkHold_Start")]
     SimpleTalkRandomTalkHoldStart,
     #[serde(rename = "SimpleTalk/RandomTalk_Start")]
@@ -183,6 +195,8 @@ pub enum ActionBefore {
     SimpleTalkShy,
     #[serde(rename = "SimpleTalk/Standby")]
     SimpleTalkStandby,
+    #[serde(rename = "SimpleTalk/SteerOnly")]
+    SimpleTalkSteerOnly,
     #[serde(rename = "SimpleTalk/StrikeChest")]
     SimpleTalkStrikeChest,
     #[serde(rename = "SimpleTalk/StrikeChest_Start")]
@@ -326,8 +340,22 @@ pub enum ActionWhile {
     DialogActionD400900414While,
     #[serde(rename = "DialogAction/D400900512_While")]
     DialogActionD400900512While,
+    #[serde(rename = "DialogAction/D680180801_While")]
+    DialogActionD680180801While,
+    #[serde(rename = "DialogAction/D680180902_While")]
+    DialogActionD680180902While,
+    #[serde(rename = "DialogAction/D680181102_While")]
+    DialogActionD680181102While,
+    #[serde(rename = "DialogAction/D680181202_While")]
+    DialogActionD680181202While,
     #[serde(rename = "DialogAction/D727290101_While")]
     DialogActionD727290101While,
+    #[serde(rename = "DialogAction/D746680113_While")]
+    DialogActionD746680113While,
+    #[serde(rename = "DialogAction/D746680117_While")]
+    DialogActionD746680117While,
+    #[serde(rename = "DialogAction/D746680121_While")]
+    DialogActionD746680121While,
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "GCG/Prince_Continue")]
@@ -445,6 +473,12 @@ pub enum ActionWhile {
     SimpleTalkThink,
     #[serde(rename = "SimpleTalk/Think_Start")]
     SimpleTalkThinkStart,
+    #[serde(rename = "SimpleTalk/VapourBird_Show02")]
+    SimpleTalkVapourBirdShow02,
+    #[serde(rename = "SimpleTalk/VapourBird_Show03")]
+    SimpleTalkVapourBirdShow03,
+    #[serde(rename = "SimpleTalk/VapourBird_Talk01_Start")]
+    SimpleTalkVapourBirdTalk01Start,
     #[serde(rename = "TEST/BodyLang_Guard")]
     TestBodyLangGuard,
     #[serde(rename = "TEST/BodyLang_Standby")]
@@ -727,6 +761,10 @@ pub enum OptionIcon {
     UiIconInteeMiscsmarvs,
     #[serde(rename = "UI_Icon_Intee_Music")]
     UiIconInteeMusic,
+    #[serde(rename = "UI_Icon_Intee_Nutcracker01")]
+    UiIconInteeNutcracker01,
+    #[serde(rename = "UI_Icon_Intee_Nutcracker02")]
+    UiIconInteeNutcracker02,
     #[serde(rename = "UI_Icon_Intee_Pacman")]
     UiIconInteePacman,
     #[serde(rename = "UI_Icon_Intee_PenAdvShuffleBoard")]
@@ -735,6 +773,10 @@ pub enum OptionIcon {
     UiIconInteePenAdvTargetShooting,
     #[serde(rename = "UI_Icon_Intee_PlayerLevel_0")]
     UiIconInteePlayerLevel0,
+    #[serde(rename = "UI_Icon_Intee_Questevents")]
+    UiIconInteeQuestevents,
+    #[serde(rename = "UI_Icon_Intee_Questinference")]
+    UiIconInteeQuestinference,
     #[serde(rename = "UI_Icon_Intee_Reputation")]
     UiIconInteeReputation,
     #[serde(rename = "UI_Icon_Intee_Restaurant")]
@@ -751,6 +793,8 @@ pub enum OptionIcon {
     UiIconInteeTalkSpecial,
     #[serde(rename = "UI_Icon_Intee_TheatreMechanicus")]
     UiIconInteeTheatreMechanicus,
+    #[serde(rename = "UI_Icon_Intee_ToyBattleQTE")]
+    UiIconInteeToyBattleQte,
     #[serde(rename = "UI_Icon_Intee_TreasureBox")]
     UiIconInteeTreasureBox,
     #[serde(rename = "UI_Icon_Intee_TreasureGift")]

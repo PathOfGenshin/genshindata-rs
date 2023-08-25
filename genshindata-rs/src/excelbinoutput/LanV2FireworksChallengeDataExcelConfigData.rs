@@ -15,12 +15,12 @@ pub struct LanV2FireworksChallengeDataExcelConfigDatum {
     pub title_text_map_hash: i64,
     #[serde(rename = "icon")]
     pub icon: String,
-    pub knimbpjhbgf: Vec<i64>,
-    pub fcafkahdjic: i64,
-    pub capbgphknio: i64,
-    pub eecliffhlcf: i64,
-    pub fgpkhemiamc: i64,
+    pub hkhimffdmng: Vec<i64>,
+    pub iddmfipfcio: i64,
+    pub mhpinkbblgg: i64,
+    pub fmecpihgchl: i64,
+    pub eojkagcjfap: i64,
     #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub cafiolboeba: i64,
+    pub kpdplnogjjf: i64,
 }

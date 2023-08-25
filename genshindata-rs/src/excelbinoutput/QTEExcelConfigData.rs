@@ -11,21 +11,21 @@ pub type QteExcelConfigData = Vec<QteExcelConfigDatum>;
 pub struct QteExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub legeohefemg: i64,
-    pub eofcbnlpmih: String,
-    pub fffookipela: Vec<Fffookipela>,
-    pub bcjfkflljob: Vec<Bcjfkflljob>,
-    pub kioeechonog: Vec<Fffookipela>,
+    pub pejkeboekgp: i64,
+    pub dmocaceedcb: String,
+    pub pojkgdldebe: Vec<Hgckpdnocmo>,
+    pub mpkocmoodkl: Vec<Mpkocmoodkl>,
+    pub hgckpdnocmo: Vec<Hgckpdnocmo>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Bcjfkflljob {
-    #[serde(rename = "type")]
-    pub bcjfkflljob_type: Option<String>,
+pub struct Hgckpdnocmo {
     pub param: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Fffookipela {
+pub struct Mpkocmoodkl {
+    #[serde(rename = "type")]
+    pub mpkocmoodkl_type: Option<String>,
     pub param: Vec<i64>,
 }

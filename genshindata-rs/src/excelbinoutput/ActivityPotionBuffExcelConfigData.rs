@@ -11,14 +11,14 @@ pub type ActivityPotionBuffExcelConfigData = Vec<ActivityPotionBuffExcelConfigDa
 pub struct ActivityPotionBuffExcelConfigDatum {
     #[serde(rename = "buffId")]
     pub buff_id: i64,
-    pub beijhjhdkjd: String,
-    pub nmgbggfjbia: i64,
+    pub behhcchceho: String,
+    pub bnonbmhoplj: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
-    pub dhpfhpjbpdk: f64,
-    pub bdffgbchefk: String,
+    pub bolaiphnedl: f64,
+    pub iiecealjnnj: String,
 }

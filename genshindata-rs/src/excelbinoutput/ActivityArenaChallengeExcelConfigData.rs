@@ -18,38 +18,18 @@ pub struct ActivityArenaChallengeExcelConfigDatum {
     pub challenge_target_text_map_hash: i64,
     pub challenge_target1_text_map_hash: i64,
     pub challenge_target2_text_map_hash: i64,
-    #[serde(rename = "JHGAJBAHMNI")]
-    pub jhgajbahmni: Jhgajbahmni,
-    #[serde(rename = "FPJACEKKNLD")]
-    pub fpjacekknld: Fpjacekknld,
-    #[serde(rename = "HAMBCDBBBDH")]
-    pub hambcdbbbdh: Hambcdbbbdh,
-    #[serde(rename = "ABFPFLOMIEL")]
-    pub abfpflomiel: Option<bool>,
+    #[serde(rename = "LNICJFJKDAK")]
+    pub lnicjfjkdak: Lnicjfjkdak,
+    #[serde(rename = "BMJIOALJOAK")]
+    pub bmjioaljoak: String,
+    #[serde(rename = "AJDDBKGPHML")]
+    pub ajddbkgphml: Ajddbkgphml,
+    #[serde(rename = "BCNBCPCOFLG")]
+    pub bcnbcpcoflg: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Fpjacekknld {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "2010038;6")]
-    The20100386,
-    #[serde(rename = "2010039;12")]
-    The201003912,
-    #[serde(rename = "2010040;20")]
-    The201004020,
-    #[serde(rename = "2010041;15")]
-    The201004115,
-    #[serde(rename = "2010042;15")]
-    The201004215,
-    #[serde(rename = "2010043;20")]
-    The201004320,
-    #[serde(rename = "2010044;15")]
-    The201004415,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hambcdbbbdh {
+pub enum Ajddbkgphml {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "2010035;1")]
@@ -67,11 +47,15 @@ pub enum Hambcdbbbdh {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Jhgajbahmni {
+pub enum Lnicjfjkdak {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "2010036;180")]
     The2010036180,
     #[serde(rename = "2010069;150")]
     The2010069150,
+    #[serde(rename = "4002003;180")]
+    The4002003180,
+    #[serde(rename = "4002004;150")]
+    The4002004150,
 }

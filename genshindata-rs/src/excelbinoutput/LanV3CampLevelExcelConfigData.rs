@@ -11,7 +11,7 @@ pub type LanV3CampLevelExcelConfigData = Vec<LanV3CampLevelExcelConfigDatum>;
 pub struct LanV3CampLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub kaliipbjgeb: i64,
-    pub pggijcdncam: i64,
-    pub ophjgcnaohp: String,
+    pub kepjmjenlgo: i64,
+    pub dgjnhbgfbak: i64,
+    pub ejgajlknchl: String,
 }

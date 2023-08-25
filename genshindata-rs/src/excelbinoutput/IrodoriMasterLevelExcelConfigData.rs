@@ -13,12 +13,12 @@ pub struct IrodoriMasterLevelExcelConfigDatum {
     pub id: i64,
     pub scene_id: i64,
     pub group_id: i64,
-    #[serde(rename = "MLPCBHBIFIL")]
-    pub mlpcbhbifil: i64,
+    #[serde(rename = "NOGIBFDGLHC")]
+    pub nogibfdglhc: i64,
     pub gallery_id: i64,
-    #[serde(rename = "GBBOMGPOLKI")]
-    pub gbbomgpolki: String,
-    #[serde(rename = "ECHJPFNPIMK")]
-    pub echjpfnpimk: Vec<i64>,
+    #[serde(rename = "BMNHLFBDCCF")]
+    pub bmnhlfbdccf: String,
+    #[serde(rename = "OKAOMEGBHBI")]
+    pub okaomegbhbi: Vec<i64>,
     pub watcher_list: Vec<i64>,
 }

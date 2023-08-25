@@ -21,6 +21,6 @@ pub struct MatchingTextDataExcelConfigDatum {
     pub match_start_desc: String,
     pub match_title_text_map_hash: i64,
     pub match_success_desc_text_map_hash: i64,
-    #[serde(rename = "NAOFOHNANJL")]
-    pub naofohnanjl: i64,
+    #[serde(rename = "GIJNIHADLHK")]
+    pub gijnihadlhk: i64,
 }

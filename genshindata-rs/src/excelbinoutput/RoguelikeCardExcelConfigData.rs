@@ -15,24 +15,24 @@ pub struct RoguelikeCardExcelConfigDatum {
     pub sort_order: i64,
     #[serde(rename = "type")]
     pub roguelike_card_excel_config_datum_type: Type,
-    pub lgfincdeaoi: Vec<i64>,
-    pub miiafggbbli: Vec<String>,
-    pub nldidbdimok: Nldidbdimok,
-    pub nodephijbho: i64,
+    pub mpmhbidbgok: Vec<i64>,
+    pub bcjhmknbjjn: Vec<String>,
+    pub pfcemconjlj: Pfcemconjlj,
+    pub cmkddmdpajj: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub iolagofgkmi: i64,
+    pub eoobhiegahd: i64,
     #[serde(rename = "descParamList")]
     pub desc_param_list: Vec<f64>,
-    pub bkeehbloimk: Vec<bool>,
-    pub acmbjmedcib: Vec<i64>,
-    pub lbnagffapli: Option<Lbnagffapli>,
-    pub cbdkofcelhi: Option<bool>,
+    pub gpajopcblje: Vec<bool>,
+    pub jcaecldkgko: Vec<i64>,
+    pub beojjljaahp: Option<Beojjljaahp>,
+    pub kkkedpcacml: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Lbnagffapli {
+pub enum Beojjljaahp {
     #[serde(rename = "ROGUELIKE_CARD_LABEL_EQUIPMENT")]
     RoguelikeCardLabelEquipment,
     #[serde(rename = "ROGUELIKE_CARD_LABEL_LEVEL")]
@@ -43,11 +43,11 @@ pub enum Lbnagffapli {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Nldidbdimok {
-    pub cjckhiibanb: String,
-    pub kkfijcdccik: String,
-    pub bmcopcphdjk: String,
-    pub fhnciifpbni: Option<i64>,
+pub struct Pfcemconjlj {
+    pub ddnblgemfki: String,
+    pub jfkglgfglgl: String,
+    pub pmllaiokhjo: String,
+    pub omhcdpojfae: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

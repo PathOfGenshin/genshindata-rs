@@ -9,14 +9,14 @@ pub type HomeWorldBgmExcelConfigData = Vec<HomeWorldBgmExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HomeWorldBgmExcelConfigDatum {
-    pub dkpbeodeaki: i64,
-    pub anddpdhohja: bool,
-    pub afabmilpmmd: bool,
+    pub giklghimnie: i64,
+    pub jcgklgefjlg: bool,
+    pub nlmaaonedbo: bool,
     #[serde(rename = "cityId")]
     pub city_id: i64,
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,
-    pub kkkbjoedlmj: String,
-    pub mjdnfnlbmak: i64,
-    pub onlpmhkdkgf: Option<bool>,
+    pub amnhnjkcpom: String,
+    pub eahdjafbldo: i64,
+    pub bgbdiojamol: Option<bool>,
 }

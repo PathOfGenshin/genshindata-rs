@@ -34,14 +34,14 @@ pub enum AbilityGroup {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct StockLimitList {
-    pub oliipilfaed: Option<Oliipilfaed>,
-    pub kldlbgbacof: Option<i64>,
-    pub fhhcjpipnen: Option<i64>,
+    pub jlkgbopmiij: Option<Jlkgbopmiij>,
+    pub mmgpglodobh: Option<i64>,
+    pub ecehbmgglno: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Oliipilfaed {
+pub enum Jlkgbopmiij {
     #[serde(rename = "FISH_STOCK_TYPE_ANY")]
     FishStockTypeAny,
     #[serde(rename = "FISH_STOCK_TYPE_DAY")]

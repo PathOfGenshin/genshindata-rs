@@ -9,25 +9,25 @@ pub type UgcMonsterWaveExcelConfigData = Vec<UgcMonsterWaveExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcMonsterWaveExcelConfigDatum {
-    pub hdmjjhhoiep: f64,
-    pub fcicoiamcid: Vec<i64>,
-    pub degbmfclgfg: Vec<i64>,
-    pub bkjnpfbdgol: Vec<i64>,
-    pub knligdikamf: Vec<i64>,
-    pub iajnbeibied: String,
+    pub ladleojjnik: f64,
+    pub clkfabbjjem: Vec<i64>,
+    pub elhngpenlko: Vec<i64>,
+    pub jingbocfcib: Vec<i64>,
+    pub ffibelfnalo: Vec<i64>,
+    pub abffcegjnmc: String,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub ficmiagcdop: Vec<i64>,
+    pub medchnbcfhd: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub dhpfhpjbpdk: f64,
+    pub bolaiphnedl: f64,
     #[serde(rename = "cost")]
     pub cost: i64,
-    pub apdkfmioiak: String,
-    pub pcmlaogfgco: String,
-    pub ojkoofkhnlp: bool,
-    pub jkeldijkbfh: i64,
-    pub lnacdklielo: i64,
+    pub bpbggpcdked: String,
+    pub lbfegjaoofo: String,
+    pub iefnpknhnjf: bool,
+    pub dijajobbebg: i64,
+    pub hakmbnjkiid: i64,
 }

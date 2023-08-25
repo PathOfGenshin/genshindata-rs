@@ -11,6 +11,6 @@ pub type QteStepExcelConfigData = Vec<QteStepExcelConfigDatum>;
 pub struct QteStepExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ekhlmimeenj: String,
-    pub jfnnjjakhen: Option<i64>,
+    pub noajblmhbhi: String,
+    pub omcepahalgo: Option<i64>,
 }

@@ -10,17 +10,17 @@ pub type ActivityCharAmusementStageExcelConfigData = Vec<ActivityCharAmusementSt
 #[serde(rename_all = "camelCase")]
 pub struct ActivityCharAmusementStageExcelConfigDatum {
     pub stage_id: i64,
-    #[serde(rename = "AHHFLDHGNPJ")]
-    pub ahhfldhgnpj: Ahhfldhgnpj,
-    #[serde(rename = "NHHMLPFDKGA")]
-    pub nhhmlpfdkga: Vec<i64>,
+    #[serde(rename = "CNAMGFLGNPF")]
+    pub cnamgflgnpf: Cnamgflgnpf,
+    #[serde(rename = "KAOGLOCCGNM")]
+    pub kaogloccgnm: Vec<i64>,
     pub day_index: i64,
     pub stage_name_text_map_hash: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ahhfldhgnpj {
+pub enum Cnamgflgnpf {
     #[serde(rename = "STAGE_TYPE_NORMAL")]
     StageTypeNormal,
     #[serde(rename = "STAGE_TYPE_RANDOM")]

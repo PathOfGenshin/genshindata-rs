@@ -9,9 +9,9 @@ pub type HomeWorldFarmFieldExcelConfigData = Vec<HomeWorldFarmFieldExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HomeWorldFarmFieldExcelConfigDatum {
-    pub mkaepgooami: i64,
-    pub ebplehdgajo: String,
-    pub cbmianhphcj: i64,
-    pub khikbbcnofa: i64,
-    pub fbkpifcffeb: Vec<i64>,
+    pub hidmljhnebh: i64,
+    pub noflipfdjlm: String,
+    pub pmaiikfmehd: i64,
+    pub hpdkbnncpee: i64,
+    pub najnpmedofo: Vec<i64>,
 }

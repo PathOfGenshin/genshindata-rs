@@ -9,10 +9,10 @@ pub type CusmtomGadgetSlotExcelConfigData = Vec<CusmtomGadgetSlotExcelConfigDatu
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CusmtomGadgetSlotExcelConfigDatum {
-    pub codkiojmkba: i64,
-    pub hfchbbggljf: Vec<i64>,
-    pub fhjafbmbecm: Option<bool>,
-    pub mnndolijbhg: Vec<i64>,
-    pub pillhiahpbk: Vec<i64>,
-    pub eabbjobpmnj: Option<i64>,
+    pub lcaionfplcb: i64,
+    pub pfmbpffckha: Vec<i64>,
+    pub likpinjhcma: Option<bool>,
+    pub icjcfjepffd: Vec<i64>,
+    pub eacfdibeafi: Vec<i64>,
+    pub dkkoggoohlm: Option<i64>,
 }

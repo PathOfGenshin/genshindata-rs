@@ -13,11 +13,11 @@ pub struct SalvageChallengeDataExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "playType")]
     pub play_type: String,
-    pub hjiihckkihn: i64,
+    pub cfelapchmek: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: Option<i64>,
-    pub gfamoconjcn: Vec<i64>,
-    pub aiohfeeoogn: Vec<i64>,
-    pub okfkomeadbb: Option<i64>,
-    pub bmhcnehhepm: Vec<i64>,
+    pub ophkjpefbca: Vec<i64>,
+    pub pkecliimgbd: Vec<i64>,
+    pub hhdddccngjj: Option<i64>,
+    pub hgibpaonamp: Vec<i64>,
 }

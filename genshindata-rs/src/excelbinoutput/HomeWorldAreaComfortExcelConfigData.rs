@@ -21,16 +21,16 @@ pub struct HomeWorldAreaComfortExcelConfigDatum {
     pub name_text_map_hash: i64,
     #[serde(rename = "maxComfort")]
     pub max_comfort: i64,
-    pub abmcljklmod: String,
-    pub dlibbhnllaf: Dlibbhnllaf,
-    pub maaegajombd: i64,
-    pub eokmdbbekgo: i64,
-    pub aodcibmcmed: i64,
-    pub djlgjmajjmo: Vec<f64>,
-    pub akbbfnfeico: Vec<i64>,
-    pub beokgkbfmae: String,
-    pub claiblogddi: i64,
-    pub jimgdgbjadi: String,
+    pub dohaimgmace: String,
+    pub ecgppihjkdm: Ecgppihjkdm,
+    pub pamgjaojbdi: i64,
+    pub fakeadneajd: i64,
+    pub aifhkfifbmn: i64,
+    pub lceobdddbhk: Vec<f64>,
+    pub kgkocfilabh: Vec<i64>,
+    pub kokpfbcipfj: String,
+    pub opkmpanemnc: i64,
+    pub lnjjiikcgei: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -40,7 +40,7 @@ pub enum AreaType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dlibbhnllaf {
+pub enum Ecgppihjkdm {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "11.325,3.819,13.572")]

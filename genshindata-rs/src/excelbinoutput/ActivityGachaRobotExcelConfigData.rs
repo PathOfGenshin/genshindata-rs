@@ -9,23 +9,23 @@ pub type ActivityGachaRobotExcelConfigData = Vec<ActivityGachaRobotExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityGachaRobotExcelConfigDatum {
-    pub mpbjcadackd: i64,
-    pub anjjkbokcdh: Vec<i64>,
-    pub bofkfcfndjf: Vec<i64>,
+    pub aafifjbcegl: i64,
+    pub pnicingggca: Vec<i64>,
+    pub mlaoicfkgce: Vec<i64>,
     #[serde(rename = "consumeItemId")]
     pub consume_item_id: Vec<i64>,
     #[serde(rename = "type")]
     pub activity_gacha_robot_excel_config_datum_type: Type,
-    pub fflcgfgggnd: i64,
+    pub hbdjjofogjb: i64,
     #[serde(rename = "materialId")]
     pub material_id: i64,
     #[serde(rename = "modelPath")]
     pub model_path: String,
-    pub bdkgdlocpbk: i64,
-    pub ikcjagbkfho: i64,
+    pub jmpbiojajjk: i64,
+    pub flfnnlhnffp: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub iofapedipmo: String,
+    pub kpejejieiag: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -11,14 +11,14 @@ pub type VintageMarketDealExcelConfigData = Vec<VintageMarketDealExcelConfigDatu
 pub struct VintageMarketDealExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
-    pub nefbhpdoonn: Vec<Nefbhpdoonn>,
+    pub ojggefcdpkl: Vec<Ojggefcdpkl>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Nefbhpdoonn {
+pub struct Ojggefcdpkl {
     #[serde(rename = "id")]
     pub id: Option<i64>,
-    pub lhhaddhdlcn: Option<i64>,
-    pub epakeacleei: Option<i64>,
+    pub nhbbkklofaa: Option<i64>,
+    pub oimeinfcabn: Option<i64>,
 }

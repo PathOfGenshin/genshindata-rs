@@ -10,8 +10,8 @@ pub type TravelCatalogExcelConfigData = Vec<TravelCatalogExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct TravelCatalogExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "DGILIHBNGDO")]
-    pub dgilihbngdo: i64,
+    #[serde(rename = "FHFKJBJHDCC")]
+    pub fhfkjbjhdcc: i64,
     pub quest_id: i64,
     pub group_id: Option<i64>,
     pub title_text_map_hash: i64,

@@ -9,11 +9,11 @@ pub type MusicInstrumentConfigData = Vec<MusicInstrumentConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct MusicInstrumentConfigDatum {
-    pub goomhejcdba: i64,
-    pub paoenkakggj: i64,
-    pub gelmmnopjcp: i64,
-    pub miafhlpnafo: String,
-    pub mpincfnffgh: String,
-    pub ddmjnejdopc: String,
-    pub nmfbhjhaamb: String,
+    pub kemeelfnmif: i64,
+    pub gfonmjdoopo: i64,
+    pub lkeaifahdip: i64,
+    pub focpicniigo: String,
+    pub bohaojpkloa: String,
+    pub kcjpcfoknfh: String,
+    pub nhiikgkpnak: String,
 }

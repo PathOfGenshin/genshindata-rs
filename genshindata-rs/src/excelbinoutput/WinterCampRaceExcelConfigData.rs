@@ -15,11 +15,11 @@ pub struct WinterCampRaceExcelConfigDatum {
     pub open_day: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub pggijcdncam: i64,
-    pub jaocggiolan: Vec<i64>,
-    pub gmafmoecmga: Vec<i64>,
-    pub dkkoefhekoi: i64,
-    pub ckldgfifmkg: i64,
-    pub ahbfablemjn: i64,
-    pub nglfpdckikb: Vec<i64>,
+    pub dgjnhbgfbak: i64,
+    pub ggcfdfanmhh: Vec<i64>,
+    pub bfcgomfgpmo: Vec<i64>,
+    pub pabmlaffdal: i64,
+    pub beahefgkljl: i64,
+    pub oheepgnccop: i64,
+    pub eajajlpnopa: Vec<i64>,
 }

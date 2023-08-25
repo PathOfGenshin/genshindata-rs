@@ -11,12 +11,12 @@ pub type GravenInnocenceObjectDataExcelConfigData = Vec<GravenInnocenceObjectDat
 pub struct GravenInnocenceObjectDataExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub nmllicmafmn: Option<i64>,
-    pub khgcobopioa: i64,
-    pub dgnooheekkj: i64,
+    pub oaphojddjob: Option<i64>,
+    pub kpnakofalek: i64,
+    pub elaclonipnd: i64,
     #[serde(rename = "picture")]
     pub picture: String,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lkcjbgcikoh: i64,
+    pub fmembhdffgn: i64,
 }

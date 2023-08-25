@@ -25,8 +25,8 @@ pub struct BlossomRefreshExcelConfigDatum {
     pub client_show_type: ClientShowType,
     pub item_limit_type: Option<String>,
     pub reward_type: Option<String>,
-    #[serde(rename = "DALCFMOLJEC")]
-    pub dalcfmoljec: Option<bool>,
+    #[serde(rename = "PAIOGEFEABG")]
+    pub paiogefeabg: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

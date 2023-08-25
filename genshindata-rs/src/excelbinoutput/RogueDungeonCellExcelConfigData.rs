@@ -13,23 +13,23 @@ pub struct RogueDungeonCellExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub dnblkmnbpjg: i64,
-    pub kdencceeebc: Vec<i64>,
-    pub cnolgaionma: Vec<i64>,
-    pub peedhdmmgii: Vec<i64>,
+    pub cnhmegafnhm: i64,
+    pub pibbgkoemkh: Vec<i64>,
+    pub hahodgekplh: Vec<i64>,
+    pub hfofjgppdfi: Vec<i64>,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub cpachbafool: i64,
-    pub hbhkeoebjmn: Option<f64>,
-    pub jamckoegobi: i64,
-    pub cjcgdpkjdib: f64,
-    pub ilogofgogem: Option<Ilogofgogem>,
-    pub edmdjfdgajn: Option<bool>,
+    pub oniilfgbbfh: i64,
+    pub iplgmopddok: Option<f64>,
+    pub eleembkhkjk: i64,
+    pub dllcghclfli: f64,
+    pub dnldkceglne: Option<Dnldkceglne>,
+    pub femcobeknif: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ilogofgogem {
+pub enum Dnldkceglne {
     #[serde(rename = "ROGUE_CELL_TYPE_BOSS")]
     RogueCellTypeBoss,
     #[serde(rename = "ROGUE_CELL_TYPE_CHEST")]

@@ -11,8 +11,8 @@ pub type ActivityCrystalLinkDifficultyExcelConfigData = Vec<ActivityCrystalLinkD
 pub struct ActivityCrystalLinkDifficultyExcelConfigDatum {
     pub difficulty_id: i64,
     pub schedule_id: i64,
-    #[serde(rename = "BPABEPGIBMB")]
-    pub bpabepgibmb: i64,
+    #[serde(rename = "DCLJMHKLLDP")]
+    pub dcljmhklldp: i64,
     pub score_ratio: i64,
     pub desc_text_map_hash: i64,
     pub difficulty: Option<String>,

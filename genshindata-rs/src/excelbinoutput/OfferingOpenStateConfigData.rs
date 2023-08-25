@@ -15,10 +15,11 @@ pub struct OfferingOpenStateConfigDatum {
     pub open_state: String,
     #[serde(rename = "itemLimit")]
     pub item_limit: String,
-    pub mdnloehnkne: String,
-    pub dcbnghhbjgk: Option<bool>,
-    pub emddncelned: Option<bool>,
+    pub jglhihannof: String,
+    pub jjmboeehjfp: Option<bool>,
+    pub enmpmpjodco: Option<bool>,
     #[serde(rename = "activityId")]
     pub activity_id: Option<i64>,
-    pub ajmaefgfdmm: Option<i64>,
+    pub nomighopijm: Option<i64>,
+    pub dhampammfkk: Option<i64>,
 }
