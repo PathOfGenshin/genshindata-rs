@@ -8,6 +8,6 @@
   "author": "Kevin Xiao",
   "license": "MIT",
   "dependencies": {
-    "quicktype-core": "^23.0.71"
+    "quicktype-core": "^23.0.75"
   }
 }
