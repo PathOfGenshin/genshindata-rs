@@ -7,23 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type RogueTokenExcelConfigData = Vec<RogueTokenExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RogueTokenExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "level")]
     pub level: i64,
-    pub dkfpdmfcjph: Vec<i64>,
-    pub lnnmhncmoch: Vec<i64>,
-    pub mfdepnogncd: Vec<i64>,
-    pub mdncieejild: Option<Mdncieejild>,
+    pub coin_a_num: Vec<i64>,
+    pub coin_b_num: Vec<i64>,
+    pub coin_c_num: Vec<i64>,
+    pub cell_type: Option<CellType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mdncieejild {
+pub enum CellType {
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_BOSS")]
     RogueMonsterDifficultyBoss,
     #[serde(rename = "ROGUE_MONSTER_DIFFICULTY_ELITE_EASY")]

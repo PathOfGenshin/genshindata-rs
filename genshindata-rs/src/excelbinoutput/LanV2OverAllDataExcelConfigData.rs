@@ -7,19 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type LanV2OverAllDataExcelConfigData = Vec<LanV2OverAllDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2OverAllDataExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub jpenljlhdbb: i64,
-    pub fghcocojfgc: i64,
-    pub fepaedoogjc: Vec<i64>,
-    pub lakobfecano: Vec<i64>,
-    pub aflfclnmnhm: i64,
-    pub mkojbpfaoca: Vec<i64>,
-    pub pchjppmhblk: i64,
-    pub daddfolilma: Vec<i64>,
-    pub cagpeiibmji: i64,
+    pub boss_dungeon_id: i64,
+    pub boss_start_day: i64,
+    pub boss_watcher_id_list: Vec<i64>,
+    pub boss_exhibition_id_list: Vec<i64>,
+    pub boss_push_tips_id: i64,
+    pub clothes_watcher_id_list: Vec<i64>,
+    pub clothes_reward_id: i64,
+    pub boss_card_id_list: Vec<i64>,
+    pub activity_play_duration: i64,
 }

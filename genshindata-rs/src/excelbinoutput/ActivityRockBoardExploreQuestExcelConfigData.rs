@@ -7,15 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type ActivityRockBoardExploreQuestExcelConfigData = Vec<ActivityRockBoardExploreQuestExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
-    pub lcmohnbolfb: i64,
+    #[serde(rename = "OJELHOHDOAN")]
+    pub ojelhohdoan: i64,
     #[serde(rename = "questID")]
     pub quest_id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "iconName")]
     pub icon_name: String,
-    pub acimfilfklk: i64,
-    pub mbmglhgmpol: i64,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
 }

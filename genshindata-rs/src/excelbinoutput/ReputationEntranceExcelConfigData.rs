@@ -12,7 +12,7 @@ pub struct ReputationEntranceExcelConfigDatum {
     pub text_id: i64,
     pub entrance_id: EntranceId,
     pub city_id: i64,
-    pub goods_id_vec: Vec<GoodsIdVec>,
+    pub cond_vec: Vec<CondVec>,
     pub cond_name_vec: Vec<i64>,
     pub name_text_map_hash: i64,
     pub title_text_map_hash: i64,
@@ -20,6 +20,22 @@ pub struct ReputationEntranceExcelConfigDatum {
     pub desc_text_map_hash: i64,
     pub icon_name: String,
     pub order: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CondVec {
+    #[serde(rename = "type")]
+    pub cond_vec_type: Option<Type>,
+    pub param1: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Type {
+    #[serde(rename = "REPUTATION_ENTRANCE_COND_QUEST")]
+    ReputationEntranceCondQuest,
+    #[serde(rename = "REPUTATION_ENTRANCE_COND_REPUTATION_LEVEL")]
+    ReputationEntranceCondReputationLevel,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -33,20 +49,4 @@ pub enum EntranceId {
     ReputationEntranceQuest,
     #[serde(rename = "REPUTATION_ENTRANCE_REQUEST")]
     ReputationEntranceRequest,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct GoodsIdVec {
-    #[serde(rename = "type")]
-    pub goods_id_vec_type: Option<Type>,
-    pub param1: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Type {
-    #[serde(rename = "REPUTATION_ENTRANCE_COND_QUEST")]
-    ReputationEntranceCondQuest,
-    #[serde(rename = "REPUTATION_ENTRANCE_COND_REPUTATION_LEVEL")]
-    ReputationEntranceCondReputationLevel,
 }

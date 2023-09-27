@@ -14,15 +14,11 @@ pub struct BuoyantCombatLevelExcelConfigDatum {
     pub group_id: i64,
     pub day_index: i64,
     pub reward_preview: i64,
-    #[serde(rename = "PPPHGOCAFNA")]
-    pub ppphgocafna: i64,
-    #[serde(rename = "PPEDFIFIOGB")]
-    pub ppedfifiogb: i64,
-    #[serde(rename = "IGDMJFDNPJG")]
-    pub igdmjfdnpjg: Vec<i64>,
-    #[serde(rename = "KGOBMBCCAFN")]
-    pub kgobmbccafn: Vec<i64>,
+    pub level_rule_text_map_hash: i64,
+    pub level_rule_brief_text_map_hash: i64,
+    #[serde(rename = "watcherID")]
+    pub watcher_id: Vec<i64>,
+    pub watcher_score: Vec<i64>,
     pub recommend_level: Vec<i64>,
-    #[serde(rename = "KKKEKAEFMKO")]
-    pub kkkekaefmko: Vec<f64>,
+    pub icon_position: Vec<f64>,
 }

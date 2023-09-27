@@ -1,5 +1,7 @@
 use std::collections::HashMap;
 
+use strum::IntoEnumIterator;
+
 use genshindata_rs::{
     excelbinoutput::{
         EquipAffixExcelConfigData::{self, EquipAffixExcelConfigDatum},
@@ -9,13 +11,12 @@ use genshindata_rs::{
     language::Language,
     textmap::AllTextMaps,
 };
-use strum::IntoEnumIterator;
 
 use crate::models::{
     artifact::{ArtifactSet, ArtifactSetTkeys},
     traits::{Processable, Translatable},
-    translatable::{TranslatableData, Translations},
 };
+use crate::translation::translatable::{AllTranslations, Translated};
 
 #[derive(Debug)]
 pub struct ArtifactSetProcessor {
@@ -33,15 +34,15 @@ impl ArtifactSetProcessor {
         })
     }
 
-    fn translation_keys(&self, reliquary_set: &ReliquarySetExcelConfigDatum) -> ArtifactSetTkeys {
+    fn translation_keys(&self, artifact_set: &ReliquarySetExcelConfigDatum) -> ArtifactSetTkeys {
         ArtifactSetTkeys {
-            set_name: format!("ArtifactSet:{}:setName", reliquary_set.set_id),
+            set_name: format!("{}:setName", artifact_set.set_id),
         }
     }
 }
 
 impl Processable<Vec<ArtifactSet>> for ArtifactSetProcessor {
-    fn process(&self, all_textmaps: &AllTextMaps) -> TranslatableData<Vec<ArtifactSet>> {
+    fn process(&self, all_textmaps: &AllTextMaps) -> Translated<Vec<ArtifactSet>> {
         let artifact_sets: Vec<ArtifactSet> = self
             .reliquary_set_data
             .iter()
@@ -55,7 +56,7 @@ impl Processable<Vec<ArtifactSet>> for ArtifactSetProcessor {
                 tkeys: self.translation_keys(r),
             })
             .collect();
-        TranslatableData {
+        Translated {
             translations: self.translations(&artifact_sets, all_textmaps),
             data: artifact_sets,
         }
@@ -63,10 +64,10 @@ impl Processable<Vec<ArtifactSet>> for ArtifactSetProcessor {
 }
 
 impl Translatable<Vec<ArtifactSet>> for ArtifactSetProcessor {
-    fn translations(&self, data: &Vec<ArtifactSet>, all_textmaps: &AllTextMaps) -> Translations {
+    fn translations(&self, data: &Vec<ArtifactSet>, all_textmaps: &AllTextMaps) -> AllTranslations {
         let equip_affix_by_id: HashMap<i64, &EquipAffixExcelConfigDatum> =
             HashMap::from_iter(self.equip_affix_data.iter().map(|affix| (affix.id, affix)));
-        let mut translations = Translations::default();
+        let mut translations = AllTranslations::new();
         for artifact_set in data.iter() {
             for language in Language::iter() {
                 let artifact_equip_affix_name = equip_affix_by_id
@@ -77,8 +78,8 @@ impl Translatable<Vec<ArtifactSet>> for ArtifactSetProcessor {
                 // Save artifact set translation keys
                 translations.put(
                     language,
-                    artifact_set.tkeys.set_name.clone(),
-                    artifact_equip_affix_name.unwrap_or_default(),
+                    &artifact_set.tkeys.set_name,
+                    &artifact_equip_affix_name.unwrap_or_default(),
                 );
             }
         }

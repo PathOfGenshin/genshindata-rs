@@ -28,8 +28,7 @@ pub struct ProudSkillExcelConfigDatum {
     pub life_effect_type: Option<String>,
     pub coin_cost: Option<i64>,
     pub effective_for_team: Option<i64>,
-    #[serde(rename = "IICOEMMMGCI")]
-    pub iicoemmmgci: Option<bool>,
+    pub is_hide_life_proud_skill: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

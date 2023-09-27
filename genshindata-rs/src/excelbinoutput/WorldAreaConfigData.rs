@@ -14,7 +14,7 @@ pub struct WorldAreaConfigDatum {
     #[serde(rename = "SceneID")]
     pub scene_id: i64,
     pub area_type: AreaType,
-    #[serde(rename = "AreaID1")]
+    #[serde(rename = "areaID1")]
     pub area_id1: i64,
     pub area_name_text_map_hash: i64,
     #[serde(rename = "towerPointId")]
@@ -23,24 +23,25 @@ pub struct WorldAreaConfigDatum {
     pub element_type: Option<ElementType>,
     #[serde(rename = "showTips")]
     pub show_tips: Option<bool>,
-    #[serde(rename = "BCHDNPOFNNB")]
-    pub bchdnpofnnb: Vec<i64>,
-    #[serde(rename = "JANDOCEJMFG")]
-    pub jandocejmfg: Vec<f64>,
-    #[serde(rename = "KMGPEHBILAP")]
-    pub kmgpehbilap: Vec<f64>,
+    #[serde(rename = "KMGBNPLBOGI")]
+    pub kmgbnplbogi: Vec<i64>,
+    #[serde(rename = "JACAEMBFMMH")]
+    pub jacaembfmmh: Vec<f64>,
+    #[serde(rename = "HANKKEPEKFE")]
+    pub hankkepekfe: Vec<f64>,
     #[serde(rename = "minimapScale")]
     pub minimap_scale: i64,
-    #[serde(rename = "NDLKELOMMOF")]
-    pub ndlkelommof: Ndlkelommof,
-    pub grey_level: GreyLevel,
-    #[serde(rename = "AreaID2")]
+    #[serde(rename = "HOFCONFMPBE")]
+    pub hofconfmpbe: Hofconfmpbe,
+    #[serde(rename = "DGCEBDPJDJI")]
+    pub dgcebdpjdji: Dgcebdpjdji,
+    #[serde(rename = "areaID2")]
     pub area_id2: Option<i64>,
     #[serde(rename = "terrainType")]
     pub terrain_type: Option<TerrainType>,
     pub area_default_lock: Option<bool>,
-    #[serde(rename = "FOHIFHLKFCL")]
-    pub fohifhlkfcl: Option<bool>,
+    #[serde(rename = "EMKALHLFOJB")]
+    pub emkalhlfojb: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -53,6 +54,14 @@ pub enum AreaType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Dgcebdpjdji {
+    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Team")]
+    DynamicAbilityFondanieAreaAbilityTeam,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum ElementType {
     Electric,
     Grass,
@@ -62,15 +71,7 @@ pub enum ElementType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum GreyLevel {
-    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Team")]
-    DynamicAbilityFondanieAreaAbilityTeam,
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ndlkelommof {
+pub enum Hofconfmpbe {
     #[serde(rename = "DynamicAbility_FondanieAreaAbility_Avatar")]
     DynamicAbilityFondanieAreaAbilityAvatar,
     #[serde(rename = "")]

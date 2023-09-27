@@ -7,25 +7,39 @@ use serde::{Serialize, Deserialize};
 pub type FireworksExcelConfigData = Vec<FireworksExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FireworksExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
-    pub aiibfcembae: Vec<Aiibfcembae>,
-    pub ddkacbnlpoi: Ddkacbnlpoi,
-    pub dflpbdfpeip: Dflpbdfpeip,
-    pub piehnmofpdh: Vec<String>,
-    pub dicoooofpll: i64,
+    pub reform_param_list: Vec<ReformParamList>,
+    pub fireworks_type: FireworksType,
+    pub lift_off_effect_name: LiftOffEffectName,
+    pub explode_effect_name: Vec<String>,
+    pub detailed_desc_text_map_hash: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Aiibfcembae {
+pub enum FireworksType {
+    #[serde(rename = "PatternShapeFireworks")]
+    PatternShapeFireworks,
+    #[serde(rename = "SphericalFireworks")]
+    SphericalFireworks,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum LiftOffEffectName {
+    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
+    EffSceneObjFireworksBullet,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ReformParamList {
     #[serde(rename = "type")]
-    pub aiibfcembae_type: Type,
-    pub apjnkjkjcic: i64,
-    pub ngphjohnhmj: Option<bool>,
-    pub efhokidkpae: Vec<i64>,
+    pub reform_param_list_type: Type,
+    pub standard_value: i64,
+    pub is_can_reform: Option<bool>,
+    pub value_range: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -41,18 +55,4 @@ pub enum Type {
     FireworksReformParamRotation,
     #[serde(rename = "FIREWORKS_REFORM_PARAM_SIZE")]
     FireworksReformParamSize,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ddkacbnlpoi {
-    #[serde(rename = "PatternShapeFireworks")]
-    PatternShapeFireworks,
-    #[serde(rename = "SphericalFireworks")]
-    SphericalFireworks,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dflpbdfpeip {
-    #[serde(rename = "Eff_SceneObj_Fireworks_Bullet")]
-    EffSceneObjFireworksBullet,
 }

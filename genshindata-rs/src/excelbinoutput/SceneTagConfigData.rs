@@ -12,12 +12,12 @@ pub struct SceneTagConfigDatum {
     pub id: i64,
     pub scene_tag_name: String,
     pub scene_id: i64,
-    #[serde(rename = "DJCOAOBDIHP")]
-    pub djcoaobdihp: Option<bool>,
+    pub is_independent: Option<bool>,
     pub cond: Vec<Cond>,
     pub is_default_valid: Option<bool>,
-    #[serde(rename = "LOLNNMPKHIB")]
-    pub lolnnmpkhib: Option<bool>,
+    pub is_skip_loading: Option<bool>,
+    #[serde(rename = "OBABLPKEPLK")]
+    pub obablpkeplk: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

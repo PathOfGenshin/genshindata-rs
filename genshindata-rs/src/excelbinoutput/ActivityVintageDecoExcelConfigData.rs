@@ -11,11 +11,14 @@ pub type ActivityVintageDecoExcelConfigData = Vec<ActivityVintageDecoExcelConfig
 pub struct ActivityVintageDecoExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub hjcneadffpf: Vec<i64>,
-    pub hgibpaonamp: Vec<i64>,
-    pub bnjabcodocd: Vec<i64>,
-    pub hkkjkikeiec: String,
-    pub gpnalojbape: i64,
-    pub jfmhfcflfjc: i64,
-    pub kkkenochkmn: i64,
+    pub afknoagokkd: Vec<i64>,
+    #[serde(rename = "watcherIds")]
+    pub watcher_ids: Vec<i64>,
+    pub lkepodbjjib: Vec<i64>,
+    #[serde(rename = "banConfig")]
+    pub ban_config: String,
+    pub minnloccmpc: i64,
+    pub eikanionpoe: i64,
+    #[serde(rename = "openQuestID")]
+    pub open_quest_id: i64,
 }

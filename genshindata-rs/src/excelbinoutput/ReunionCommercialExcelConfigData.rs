@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type ReunionCommercialExcelConfigData = Vec<ReunionCommercialExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ReunionCommercialExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub imcochkpiim: String,
-    pub ojpfaajfkmn: String,
+    pub domestic_link: String,
+    pub oversea_link: String,
 }

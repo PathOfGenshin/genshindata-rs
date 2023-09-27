@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type QteStepExcelConfigData = Vec<QteStepExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct QteStepExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub noajblmhbhi: String,
-    pub omcepahalgo: Option<i64>,
+    pub config_path: String,
+    pub next_step: Option<i64>,
 }

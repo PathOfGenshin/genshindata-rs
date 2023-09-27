@@ -7,24 +7,25 @@ use serde::{Serialize, Deserialize};
 pub type SorushTrialPhotoMatchGalleryExcelConfigData = Vec<SorushTrialPhotoMatchGalleryExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct SorushTrialPhotoMatchGalleryExcelConfigDatum {
-    pub gmckomdikgd: Vec<f64>,
-    pub odngianehak: Vec<f64>,
-    pub gcphcelpejo: i64,
-    #[serde(rename = "id")]
+    #[serde(rename = "KKDJCLJNEHG")]
+    pub kkdjcljnehg: Vec<f64>,
+    #[serde(rename = "KHOLKIBCNAG")]
+    pub kholkibcnag: Vec<f64>,
+    #[serde(rename = "PAMGKNNFHKL")]
+    pub pamgknnfhkl: i64,
     pub id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub jecdinocjce: i64,
-    pub mldlpcafjid: i64,
-    #[serde(rename = "levelTitleTextMapHash")]
+    #[serde(rename = "GELFLJLKCAK")]
+    pub gelfljlkcak: i64,
+    #[serde(rename = "CLAMIMGKEBJ")]
+    pub clamimgkebj: i64,
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub dgjnhbgfbak: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
     #[serde(rename = "groupID")]
     pub group_id: i64,
-    #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
 }

@@ -11,37 +11,39 @@ pub type FungusTrainingDungeonExcelConfigData = Vec<FungusTrainingDungeonExcelCo
 pub struct FungusTrainingDungeonExcelConfigDatum {
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub fplmdjldemh: i64,
-    pub fnhemmpbdmh: Fnhemmpbdmh,
-    pub ldiadlienfh: i64,
-    pub eadkginnapb: i64,
+    pub hbeeipkgnkg: i64,
+    pub dooiifjfgop: Dooiifjfgop,
+    #[serde(rename = "unlockDay")]
+    pub unlock_day: i64,
+    pub lnpjpegemml: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub hmgciidoajo: Vec<i64>,
-    pub bjmfjalelfh: Vec<i64>,
-    pub jkpndjipjdh: i64,
-    pub mbmjdokphnl: i64,
-    pub ngkccgdgeel: Vec<i64>,
+    pub daedblkdlcc: Vec<i64>,
+    pub ecofodmhbhm: Vec<i64>,
+    pub jleklckbjnh: i64,
+    pub dgimlfkiffi: i64,
+    pub cdlddchaenf: Vec<i64>,
     #[serde(rename = "baseScore")]
     pub base_score: i64,
-    pub idfkcogafbp: Option<i64>,
-    pub pjbleegnbof: Option<i64>,
-    pub beghbbhijap: i64,
-    pub hgibpaonamp: Vec<i64>,
-    pub kpldgpiligo: i64,
-    pub pdbjaagjfnj: i64,
-    pub focecilikcd: i64,
-    pub ggdoggmlkjj: i64,
-    pub nejdmnhbjgg: Vec<i64>,
-    pub ciokaofbeon: Option<i64>,
-    pub ibfjbaalanj: Option<i64>,
-    pub nobnmgigfkc: Option<i64>,
-    pub hijebjofbho: Option<i64>,
+    pub dekiemoponb: Option<i64>,
+    pub kcnpnhjjjlk: Option<i64>,
+    pub oenhhflpbli: i64,
+    #[serde(rename = "watcherIds")]
+    pub watcher_ids: Vec<i64>,
+    pub ecoegdhajmf: i64,
+    pub ogomblnkeok: i64,
+    pub bmhleikmgie: i64,
+    pub onkpcchcmlo: i64,
+    pub ocgkfieibie: Vec<i64>,
+    pub ojiofldoefd: Option<i64>,
+    pub bflgimnmckp: Option<i64>,
+    pub ealeneogncm: Option<i64>,
+    pub imclklileij: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fnhemmpbdmh {
+pub enum Dooiifjfgop {
     #[serde(rename = "FUNGUS_TRAINING_DUNGEON_ATTACK")]
     FungusTrainingDungeonAttack,
     #[serde(rename = "FUNGUS_TRAINING_DUNGEON_DEFEND")]

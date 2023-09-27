@@ -11,10 +11,11 @@ pub type PersonalLineGuideExcelConfigData = Vec<PersonalLineGuideExcelConfigDatu
 pub struct PersonalLineGuideExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub kmflhfaeeml: bool,
-    pub dllhfcgbcjk: i64,
-    pub ikdnhmknogi: Vec<i64>,
-    pub eamondckkgl: i64,
-    pub cmolopgmjnn: i64,
-    pub gceecdhpaoa: i64,
+    pub oleedghhjef: bool,
+    #[serde(rename = "subQuestId")]
+    pub sub_quest_id: i64,
+    pub kmdnokiepdn: Vec<i64>,
+    pub beoacfpgkoo: i64,
+    pub koakdifnpom: i64,
+    pub mpeeindcboo: i64,
 }

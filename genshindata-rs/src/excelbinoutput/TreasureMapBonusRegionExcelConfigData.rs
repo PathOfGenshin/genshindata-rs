@@ -12,14 +12,12 @@ pub struct TreasureMapBonusRegionExcelConfigDatum {
     pub id: i64,
     pub group_id: i64,
     pub reward_id: i64,
-    #[serde(rename = "PALECIDKIIE")]
-    pub palecidkiie: i64,
+    pub reward_preview_id: i64,
     pub revise_level: i64,
     pub map_title_text_map_hash: i64,
     pub map_desc_text_map_hash: i64,
     pub show_image: String,
-    #[serde(rename = "KAHDFBEINOA")]
-    pub kahdfbeinoa: i64,
+    pub fragment_num: i64,
     pub region_center: Vec<f64>,
     pub region_radius: i64,
     pub unlock_region_id: Option<i64>,

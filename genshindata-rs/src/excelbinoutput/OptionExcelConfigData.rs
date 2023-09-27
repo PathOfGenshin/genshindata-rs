@@ -13,8 +13,7 @@ pub struct OptionExcelConfigDatum {
     pub content_text_map_hash: i64,
     pub intee_icon_name: InteeIconName,
     pub guset_intee_button_show: Option<bool>,
-    #[serde(rename = "PBJAOFHEFNK")]
-    pub pbjaofhefnk: Option<i64>,
+    pub disable_change_avatar_time: Option<i64>,
     pub cancel_online_match: Option<bool>,
 }
 

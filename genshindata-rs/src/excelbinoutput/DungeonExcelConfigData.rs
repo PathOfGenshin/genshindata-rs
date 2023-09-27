@@ -24,8 +24,7 @@ pub struct DungeonExcelConfigDatum {
     pub pass_cond: Option<i64>,
     pub revive_max_count: Option<i64>,
     pub day_enter_count: Option<i64>,
-    #[serde(rename = "LBJNPCIKIDH")]
-    pub lbjnpcikidh: Vec<Lbjnpcikidh>,
+    pub enter_cost_items: Vec<EnterCostItem>,
     #[serde(rename = "passRewardPreviewID")]
     pub pass_reward_preview_id: Option<i64>,
     pub settle_countdown_time: Option<i64>,
@@ -36,70 +35,74 @@ pub struct DungeonExcelConfigDatum {
     #[serde(rename = "settleUIType")]
     pub settle_ui_type: Option<SettleUiType>,
     pub recommend_element_types: Vec<RecommendElementType>,
-    #[serde(rename = "GELGGJHFGOA")]
-    pub gelggjhfgoa: Vec<String>,
+    pub recommend_tips: Vec<String>,
     pub level_config_map: HashMap<String, i64>,
-    pub enter_cost_items: Vec<i64>,
-    #[serde(rename = "MFNFDFNIDJP")]
-    pub mfnfdfnidjp: i64,
+    pub preview_monster_list: Vec<i64>,
+    pub gear_desc_text_map_hash: i64,
     #[serde(rename = "cityID")]
     pub city_id: i64,
     pub entry_pic_path: String,
     pub state_type: StateType,
-    #[serde(rename = "KHOFAKDJHFL")]
-    pub khofakdjhfl: Khofakdjhfl,
-    #[serde(rename = "ODPBOGEFPEE")]
-    pub odpbogefpee: Odpbogefpee,
-    #[serde(rename = "GIIFAHHIKFI")]
-    pub giifahhikfi: i64,
-    #[serde(rename = "CKNPCMHOGGH")]
-    pub cknpcmhoggh: i64,
+    pub factor_pic: FactorPic,
+    pub factor_icon: FactorIcon,
+    #[serde(rename = "BIDMAJHGFGJ")]
+    pub bidmajhgfgj: i64,
+    #[serde(rename = "EGLHMJJKJBG")]
+    pub eglhmjjkjbg: i64,
     pub avatar_limit_type: Option<i64>,
     pub is_dynamic_level: Option<bool>,
     pub sub_type: Option<SubType>,
     pub serial_id: Option<i64>,
-    #[serde(rename = "EMLABKEGMJE")]
-    pub emlabkegmje: Option<bool>,
-    #[serde(rename = "NHKHKBEOFHK")]
-    pub nhkhkbeofhk: Option<bool>,
+    #[serde(rename = "KGFBDNKEDIH")]
+    pub kgfbdnkedih: Option<bool>,
+    pub enable_quest_guide: Option<bool>,
     #[serde(rename = "firstPassRewardPreviewID")]
     pub first_pass_reward_preview_id: Option<i64>,
-    #[serde(rename = "ABJMNLFCMJH")]
-    pub abjmnlfcmjh: Option<bool>,
+    #[serde(rename = "MNOGKEDOGFI")]
+    pub mnogkedogfi: Option<bool>,
     pub pass_jump_dungeon: Option<i64>,
-    #[serde(rename = "CAOOMAGACEA")]
-    pub caoomagacea: Option<String>,
-    #[serde(rename = "EEACPKCEIAB")]
-    pub eeacpkceiab: Option<bool>,
+    #[serde(rename = "DHKGBAGFECO")]
+    pub dhkgbagfeco: Option<String>,
+    #[serde(rename = "PLNCACFNLNE")]
+    pub plncacfnlne: Option<bool>,
     pub dont_show_push_tips: Option<bool>,
     pub play_type: Option<PlayType>,
     pub event_interval: Option<i64>,
+    #[serde(rename = "ANIFFHCALNP")]
+    pub aniffhcalnp: Option<i64>,
     pub revive_interval_time: Option<i64>,
-    #[serde(rename = "AKHIFLEDFCL")]
-    pub akhifledfcl: Option<bool>,
+    #[serde(rename = "DGACNDAOAKK")]
+    pub dgacndaoakk: Option<bool>,
     #[serde(rename = "statueCostID")]
     pub statue_cost_id: Option<i64>,
     pub statue_cost_count: Option<i64>,
     pub statue_drop: Option<i64>,
-    #[serde(rename = "CLPIFBIJLMP")]
-    pub clpifbijlmp: Option<bool>,
-    #[serde(rename = "ICFJOBALNJM")]
-    pub icfjobalnjm: Option<bool>,
+    #[serde(rename = "EAKIHHNIGEC")]
+    pub eakihhnigec: Option<bool>,
+    #[serde(rename = "LHLEHFLNDGP")]
+    pub lhlehflndgp: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum InvolveType {
-    #[serde(rename = "INVOLVE_ONLY_SINGLE")]
-    InvolveOnlySingle,
-    #[serde(rename = "INVOLVE_SINGLE_MULTIPLE")]
-    InvolveSingleMultiple,
+pub struct EnterCostItem {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Khofakdjhfl {
+pub enum FactorIcon {
+    #[serde(rename = "ART/UI/Atlas/DungeonTypeIcon/UI_Icon_TeamChain")]
+    ArtUiAtlasDungeonTypeIconUiIconTeamChain,
+    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
+    ArtUiAtlasElementIconsUiIconClimateLaSignora,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum FactorPic {
     #[serde(rename = "ART/UI/Atlas/ClimatePic/UI_Img_Climate_LaSignora")]
     ArtUiAtlasClimatePicUiImgClimateLaSignora,
+    #[serde(rename = "ART/UI/Atlas/DungeonPic/UI_DungeonPic_InspirationSpurt")]
+    ArtUiAtlasDungeonPicUiDungeonPicInspirationSpurt,
     #[serde(rename = "ART/UI/Atlas/DungeonPic/UI_DungeonPic_MultiCharacter")]
     ArtUiAtlasDungeonPicUiDungeonPicMultiCharacter,
     #[serde(rename = "ART/UI/Atlas/DungeonPic/UI_DungeonPic_TeamChain")]
@@ -109,17 +112,12 @@ pub enum Khofakdjhfl {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Lbjnpcikidh {
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Odpbogefpee {
-    #[serde(rename = "ART/UI/Atlas/DungeonTypeIcon/UI_Icon_TeamChain")]
-    ArtUiAtlasDungeonTypeIconUiIconTeamChain,
-    #[serde(rename = "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_LaSignora")]
-    ArtUiAtlasElementIconsUiIconClimateLaSignora,
-    #[serde(rename = "")]
-    Empty,
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum InvolveType {
+    #[serde(rename = "INVOLVE_ONLY_SINGLE")]
+    InvolveOnlySingle,
+    #[serde(rename = "INVOLVE_SINGLE_MULTIPLE")]
+    InvolveSingleMultiple,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

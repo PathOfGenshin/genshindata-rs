@@ -7,10 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type LevelTagMapAreaConfigData = Vec<LevelTagMapAreaConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "PascalCase")]
 pub struct LevelTagMapAreaConfigDatum {
-    pub nbgekiafnbl: i64,
-    pub pljgjhdjnpo: i64,
+    #[serde(rename = "LevelTagID")]
+    pub level_tag_id: i64,
+    #[serde(rename = "MapAreaID")]
+    pub map_area_id: i64,
     #[serde(rename = "index")]
     pub index: Option<i64>,
 }

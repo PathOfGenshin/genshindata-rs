@@ -10,7 +10,6 @@ pub type AvatarHeroEntityExcelConfigData = Vec<AvatarHeroEntityExcelConfigDatum>
 #[serde(rename_all = "camelCase")]
 pub struct AvatarHeroEntityExcelConfigDatum {
     pub avatar_id: i64,
-    #[serde(rename = "KCANMNBNNED")]
-    pub kcanmnbnned: f64,
-    pub gacha_image_name_hash: f64,
+    pub prefab_path_hash: f64,
+    pub animator_config_path_hash: f64,
 }

@@ -7,18 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type BlitzRushStageExcelConfigData = Vec<BlitzRushStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BlitzRushStageExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub klpbplkedkm: i64,
-    pub cbacpmbpicg: i64,
-    pub fpcjpenlilb: i64,
-    pub jeadjlieaen: i64,
-    #[serde(rename = "pushTipsId")]
+    pub stage_title_text_map_hash: i64,
+    pub game_play_desc_text_map_hash: i64,
+    pub guidetask_desc_text_map_hash: i64,
+    #[serde(rename = "guideQuestID")]
+    pub guide_quest_id: i64,
     pub push_tips_id: i64,
 }

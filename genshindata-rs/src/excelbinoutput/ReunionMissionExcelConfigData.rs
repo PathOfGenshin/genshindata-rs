@@ -7,18 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type ReunionMissionExcelConfigData = Vec<ReunionMissionExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ReunionMissionExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "watcherGroupId")]
     pub watcher_group_id: i64,
-    #[serde(rename = "targetScore")]
     pub target_score: Option<i64>,
-    #[serde(rename = "finishRewardId")]
     pub finish_reward_id: Option<i64>,
-    pub ghopegcbhkn: Vec<i64>,
-    pub hbmebigdfab: Vec<i64>,
-    pub ekgiaapnnpg: Vec<i64>,
-    pub pglgkjgdmin: f64,
+    pub target_score_list: Vec<i64>,
+    pub finish_reward_id_list: Vec<i64>,
+    pub show_reward_id_list: Vec<i64>,
+    #[serde(rename = "BEBBGMENMCH")]
+    pub bebbgmenmch: f64,
 }

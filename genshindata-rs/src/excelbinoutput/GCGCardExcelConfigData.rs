@@ -9,13 +9,13 @@ pub type GcgCardExcelConfigData = Vec<GcgCardExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgCardExcelConfigDatum {
-    pub abocobjehkc: i64,
-    pub aahlpacfahm: String,
-    pub eibcjmkfbda: Vec<i64>,
-    pub gcihbpaopan: Vec<Gcihbpaopan>,
-    pub dkfpcpmemeo: Option<f64>,
-    pub kdphhfiiajp: Vec<i64>,
-    pub jomfklkloij: Vec<String>,
+    pub eegjhpfcloj: i64,
+    pub bkadedjdppo: String,
+    pub phdgiemaobo: Vec<i64>,
+    pub boofipibfjh: Vec<Boofipibfjh>,
+    pub fodpnmfpjgb: Option<f64>,
+    pub agcblddibjh: Vec<i64>,
+    pub ikjecaohnbj: Vec<String>,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "cardType")]
@@ -24,24 +24,59 @@ pub struct GcgCardExcelConfigDatum {
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub fbpaellgcnl: Vec<Fbpaellgcnl>,
+    pub pkofoagdgib: Vec<Pkofoagdgib>,
     #[serde(rename = "skillList")]
     pub skill_list: Vec<i64>,
-    pub ngbfpdfekle: Option<Ngbfpdfekle>,
-    pub enckdilhhcn: Option<Enckdilhhcn>,
-    pub jmklgfnfmpn: Option<Hgadaoahhjn>,
-    pub nbgjgllplmo: Option<i64>,
-    pub pgailhcfcmb: Option<Pgailhcfcmb>,
-    pub hgadaoahhjn: Option<Hgadaoahhjn>,
-    pub miohmenppaa: Option<String>,
+    pub pmoaaombmif: Option<Pmoaaombmif>,
+    pub ogppgijfcde: Option<Ogppgijfcde>,
+    pub cknbpollncn: Option<Cknbpollncn>,
+    pub cbncogiaakc: Option<i64>,
+    pub mgkbgpjpfca: Option<Mgkbgpjpfca>,
+    pub mmhdhkehidl: Option<Cknbpollncn>,
+    pub honajmeoofg: Option<String>,
     #[serde(rename = "isHidden")]
     pub is_hidden: Option<bool>,
-    pub ljcfpljkpof: Option<bool>,
-    pub bmdcjklblco: Option<i64>,
-    pub kmajejcefei: Option<i64>,
-    pub majceojanem: Option<Hgadaoahhjn>,
-    pub ichgcnikmpj: Option<i64>,
-    pub lpoecnffikf: Option<String>,
+    pub kcokmgbemjb: Option<bool>,
+    pub ciacbdcnhah: Option<i64>,
+    pub faiolfdbadm: Option<i64>,
+    pub bgdfobcgdja: Option<i64>,
+    pub ibhlfdidopp: Option<Cknbpollncn>,
+    pub giennbagnoi: Option<i64>,
+    pub jdhhmapackc: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Boofipibfjh {
+    #[serde(rename = "OECLFAFNMMA")]
+    pub oeclfafnmma: Option<Oeclfafnmma>,
+    pub count: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Oeclfafnmma {
+    #[serde(rename = "GCG_COST_DICE_ANEMO")]
+    GcgCostDiceAnemo,
+    #[serde(rename = "GCG_COST_DICE_CRYO")]
+    GcgCostDiceCryo,
+    #[serde(rename = "GCG_COST_DICE_DENDRO")]
+    GcgCostDiceDendro,
+    #[serde(rename = "GCG_COST_DICE_ELECTRO")]
+    GcgCostDiceElectro,
+    #[serde(rename = "GCG_COST_DICE_GEO")]
+    GcgCostDiceGeo,
+    #[serde(rename = "GCG_COST_DICE_HYDRO")]
+    GcgCostDiceHydro,
+    #[serde(rename = "GCG_COST_DICE_PYRO")]
+    GcgCostDicePyro,
+    #[serde(rename = "GCG_COST_DICE_SAME")]
+    GcgCostDiceSame,
+    #[serde(rename = "GCG_COST_DICE_VOID")]
+    GcgCostDiceVoid,
+    #[serde(rename = "GCG_COST_ENERGY")]
+    GcgCostEnergy,
+    #[serde(rename = "GCG_COST_LEGEND")]
+    GcgCostLegend,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -63,7 +98,33 @@ pub enum CardType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Enckdilhhcn {
+pub enum Cknbpollncn {
+    #[serde(rename = "GCG_TOKEN_COUNTER")]
+    GcgTokenCounter,
+    #[serde(rename = "GCG_TOKEN_LIFE")]
+    GcgTokenLife,
+    #[serde(rename = "GCG_TOKEN_ROUND_COUNT")]
+    GcgTokenRoundCount,
+    #[serde(rename = "GCG_TOKEN_SHIELD")]
+    GcgTokenShield,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Mgkbgpjpfca {
+    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
+    GcgTokenIconBarrierShield,
+    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
+    GcgTokenIconClock,
+    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
+    GcgTokenIconHourglass,
+    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
+    GcgTokenIconNormalShield,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Ogppgijfcde {
     #[serde(rename = "GCG_PERSIST_EFFECT_EXPECTO_PATRONUM")]
     GcgPersistEffectExpectoPatronum,
     #[serde(rename = "GCG_PERSIST_EFFECT_IMPERTURBABLE_CHARM")]
@@ -78,7 +139,7 @@ pub enum Enckdilhhcn {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fbpaellgcnl {
+pub enum Pkofoagdgib {
     #[serde(rename = "GCG_TAG_ALLY")]
     GcgTagAlly,
     #[serde(rename = "GCG_TAG_ARTIFACT")]
@@ -124,55 +185,8 @@ pub enum Fbpaellgcnl {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Gcihbpaopan {
-    #[serde(rename = "NNPOIFOHFNM")]
-    pub nnpoifohfnm: Option<Nnpoifohfnm>,
-    pub count: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Nnpoifohfnm {
-    #[serde(rename = "GCG_COST_DICE_ANEMO")]
-    GcgCostDiceAnemo,
-    #[serde(rename = "GCG_COST_DICE_CRYO")]
-    GcgCostDiceCryo,
-    #[serde(rename = "GCG_COST_DICE_DENDRO")]
-    GcgCostDiceDendro,
-    #[serde(rename = "GCG_COST_DICE_ELECTRO")]
-    GcgCostDiceElectro,
-    #[serde(rename = "GCG_COST_DICE_GEO")]
-    GcgCostDiceGeo,
-    #[serde(rename = "GCG_COST_DICE_HYDRO")]
-    GcgCostDiceHydro,
-    #[serde(rename = "GCG_COST_DICE_PYRO")]
-    GcgCostDicePyro,
-    #[serde(rename = "GCG_COST_DICE_SAME")]
-    GcgCostDiceSame,
-    #[serde(rename = "GCG_COST_DICE_VOID")]
-    GcgCostDiceVoid,
-    #[serde(rename = "GCG_COST_ENERGY")]
-    GcgCostEnergy,
-    #[serde(rename = "GCG_COST_LEGEND")]
-    GcgCostLegend,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Hgadaoahhjn {
-    #[serde(rename = "GCG_TOKEN_COUNTER")]
-    GcgTokenCounter,
-    #[serde(rename = "GCG_TOKEN_LIFE")]
-    GcgTokenLife,
-    #[serde(rename = "GCG_TOKEN_ROUND_COUNT")]
-    GcgTokenRoundCount,
-    #[serde(rename = "GCG_TOKEN_SHIELD")]
-    GcgTokenShield,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ngbfpdfekle {
+pub enum Pmoaaombmif {
     #[serde(rename = "GCG_STATE_BUFF_ANEMO")]
     GcgStateBuffAnemo,
     #[serde(rename = "GCG_STATE_BUFF_CRYO")]
@@ -187,17 +201,4 @@ pub enum Ngbfpdfekle {
     GcgStateBuffNegative,
     #[serde(rename = "GCG_STATE_BUFF_PYRO")]
     GcgStateBuffPyro,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pgailhcfcmb {
-    #[serde(rename = "GCG_TOKEN_ICON_BARRIER_SHIELD")]
-    GcgTokenIconBarrierShield,
-    #[serde(rename = "GCG_TOKEN_ICON_CLOCK")]
-    GcgTokenIconClock,
-    #[serde(rename = "GCG_TOKEN_ICON_HOURGLASS")]
-    GcgTokenIconHourglass,
-    #[serde(rename = "GCG_TOKEN_ICON_NORMAL_SHIELD")]
-    GcgTokenIconNormalShield,
 }

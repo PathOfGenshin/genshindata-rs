@@ -12,6 +12,6 @@ pub struct AkaFesAstrolabeExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub fpgoklcilel: i64,
-    pub mnfpnialnhj: i64,
+    pub jchhngkjgje: i64,
+    pub njbclmaaphi: i64,
 }

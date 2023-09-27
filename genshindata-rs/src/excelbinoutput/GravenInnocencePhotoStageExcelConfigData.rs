@@ -7,25 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type GravenInnocencePhotoStageExcelConfigData = Vec<GravenInnocencePhotoStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GravenInnocencePhotoStageExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "icon")]
     pub icon: String,
-    pub kdobmmdadph: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub theme_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    pub gebnlkehndo: i64,
-    #[serde(rename = "infoDescTextMapHash")]
+    pub info_title_text_map_hash: i64,
     pub info_desc_text_map_hash: i64,
-    pub kggkimjkjbf: Vec<i64>,
-    pub feaaomhahno: i64,
-    #[serde(rename = "watcherList")]
+    pub object_id_list: Vec<i64>,
+    pub object_limit_num: i64,
     pub watcher_list: Vec<i64>,
-    pub lgcnchlpokp: i64,
-    pub dpcoghopokg: Vec<i64>,
-    pub gifimclakje: Option<i64>,
+    pub tips: i64,
+    #[serde(rename = "preQuestID")]
+    pub pre_quest_id: Vec<i64>,
+    pub quest_mark: Option<i64>,
 }

@@ -7,8 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type QuestDialogDecoratorExcelConfigData = Vec<QuestDialogDecoratorExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct QuestDialogDecoratorExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "HJGGBKDFEOD")]
-    pub hjggbkdfeod: String,
+    pub decorator_content: String,
 }

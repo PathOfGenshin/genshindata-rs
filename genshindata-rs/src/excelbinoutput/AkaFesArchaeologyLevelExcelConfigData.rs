@@ -10,15 +10,14 @@ pub type AkaFesArchaeologyLevelExcelConfigData = Vec<AkaFesArchaeologyLevelExcel
 #[serde(rename_all = "camelCase")]
 pub struct AkaFesArchaeologyLevelExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "MDACDNMMMDM")]
-    pub mdacdnmmmdm: i64,
-    #[serde(rename = "GEADIGPKOJD")]
-    pub geadigpkojd: String,
+    #[serde(rename = "KGOELBKFKAK")]
+    pub kgoelbkfkak: i64,
+    #[serde(rename = "ELNPFJFKGNJ")]
+    pub elnpfjfkgnj: String,
     pub level_name_text_map_hash: i64,
     pub group_id: i64,
     pub gallery_id: i64,
-    #[serde(rename = "CFELAPCHMEK")]
-    pub cfelapchmek: i64,
+    pub group_link_id: i64,
     pub watcher_id: i64,
     pub region_id: i64,
 }

@@ -7,17 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type CustomLevelGroupConfigData = Vec<CustomLevelGroupConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomLevelGroupConfigDatum {
-    #[serde(rename = "groupId")]
     pub group_id: i64,
-    #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
-    pub dfaallomppl: Vec<i64>,
-    pub kbgighagcml: i64,
-    pub olgmdcpobbk: i64,
-    pub mciokdjegin: i64,
-    pub aohleddfkkj: i64,
-    pub bimlhnajhhp: i64,
-    pub mgocfloalim: i64,
+    pub activity_dungeon_list: Vec<i64>,
+    pub max_edit_count: i64,
+    pub store_max_count: i64,
+    pub coin_challenge_id: i64,
+    pub coin_exhibition_id: i64,
+    pub finish_exhibition_id: i64,
+    pub cost_alert: i64,
 }

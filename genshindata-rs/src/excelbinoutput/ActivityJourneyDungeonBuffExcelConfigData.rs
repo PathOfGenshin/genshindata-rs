@@ -7,15 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type ActivityJourneyDungeonBuffExcelConfigData = Vec<ActivityJourneyDungeonBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityJourneyDungeonBuffExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub mjikpiepooo: Option<bool>,
-    pub cgkmjldannc: String,
-    pub bolaiphnedl: f64,
-    pub jkdfoaoddin: i64,
-    pub lmhcbkddkhm: i64,
-    #[serde(rename = "descParam")]
+    #[serde(rename = "MHDLFGOOIJB")]
+    pub mhdlfgooijb: Option<bool>,
+    pub sgv: String,
+    pub icon_hash: f64,
+    #[serde(rename = "EJGHLCKENCG")]
+    pub ejghlckencg: i64,
+    pub buff_desc_text_map_hash: i64,
     pub desc_param: Vec<String>,
 }

@@ -7,9 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type ActivityJourneySealChallengeExcelConfigData = Vec<ActivityJourneySealChallengeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityJourneySealChallengeExcelConfigDatum {
     #[serde(rename = "challengeID")]
     pub challenge_id: i64,
-    pub dgjnhbgfbak: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
 }

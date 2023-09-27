@@ -11,5 +11,5 @@ pub type WispCageExcelConfigData = Vec<WispCageExcelConfigDatum>;
 pub struct WispCageExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
-    pub bmpapcbdagj: i64,
+    pub hfaohdppohc: i64,
 }

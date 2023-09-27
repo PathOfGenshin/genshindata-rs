@@ -11,12 +11,10 @@ pub type ActivityVintagePlayTypeExcelConfigData = Vec<ActivityVintagePlayTypeExc
 pub struct ActivityVintagePlayTypeExcelConfigDatum {
     pub id: i64,
     pub open_day: i64,
-    #[serde(rename = "ACIMFILFKLK")]
-    pub acimfilfklk: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "APFOLDJFMCG")]
-    pub apfoldjfmcg: Option<i64>,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
+    #[serde(rename = "MJFBGMKGCJM")]
+    pub mjfbgmkgcjm: Option<i64>,
     pub guide_quest_id: Option<i64>,
     pub tutorial_id: Option<i64>,
 }

@@ -10,10 +10,8 @@ pub type OfferingLumenStoneExcelConfigData = Vec<OfferingLumenStoneExcelConfigDa
 #[serde(rename_all = "camelCase")]
 pub struct OfferingLumenStoneExcelConfigDatum {
     pub config_id: i64,
-    #[serde(rename = "HJJGNBJOODF")]
-    pub hjjgnbjoodf: i64,
-    #[serde(rename = "HJKKCMKNDCM")]
-    pub hjkkcmkndcm: i64,
+    pub desc_skill_text_map_hash: i64,
+    pub desc_detail_text_map_hash: i64,
     pub icon_path: IconPath,
     pub level: Option<i64>,
 }

@@ -7,20 +7,18 @@ use serde::{Serialize, Deserialize};
 pub type AbilityOverrideExcelConfigData = Vec<AbilityOverrideExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AbilityOverrideExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "abilityName")]
     pub ability_name: String,
-    pub lminngcbnpd: Vec<Lminngcbnpd>,
-    pub bodbllopbic: Vec<String>,
-    pub ikpcbmlbebj: Vec<f64>,
+    pub ability_special_param_config: Vec<AbilitySpecialParamConfig>,
+    pub param_name_list: Vec<String>,
+    pub param_value_list: Vec<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Lminngcbnpd {
-    pub kekfnbacfif: String,
-    pub jpagfhodbnb: Option<f64>,
+#[serde(rename_all = "camelCase")]
+pub struct AbilitySpecialParamConfig {
+    pub param_name: String,
+    pub param_value: Option<f64>,
 }

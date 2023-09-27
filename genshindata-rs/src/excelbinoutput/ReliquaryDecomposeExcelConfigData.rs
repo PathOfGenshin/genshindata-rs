@@ -7,15 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type ReliquaryDecomposeExcelConfigData = Vec<ReliquaryDecomposeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ReliquaryDecomposeExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub hnnceaepajb: i64,
-    pub acgeimmnpji: i64,
-    #[serde(rename = "rewardPreviewId")]
+    pub need_reliquary_count: i64,
+    pub need_reliquary_rank_level: i64,
     pub reward_preview_id: i64,
-    pub ogiehpjgpee: i64,
-    #[serde(rename = "effectDescTextMapHash")]
+    pub max_reliquary_num: i64,
     pub effect_desc_text_map_hash: i64,
 }

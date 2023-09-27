@@ -12,9 +12,7 @@ pub struct MichiaeStageExcelConfigDatum {
     pub stage_id: i64,
     pub open_day: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "MICIPEBELEP")]
-    pub micipebelep: i64,
-    #[serde(rename = "MHHGCHAOGNA")]
-    pub mhhgchaogna: i64,
+    pub max_offering_level: i64,
+    pub max_crystal_exp: i64,
     pub tab_name_text_map_hash: i64,
 }

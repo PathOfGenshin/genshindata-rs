@@ -7,10 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type InferenceConclusionExcelConfigData = Vec<InferenceConclusionExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InferenceConclusionExcelConfigDatum {
-    pub lopnjkccnoa: i64,
-    pub kgdmhgboppi: Vec<i64>,
-    pub kmaagdelefj: i64,
-    pub alfimgloenn: Option<i64>,
+    pub conclusion_id: i64,
+    pub word_list: Vec<i64>,
+    pub submit_error_dialog_id: i64,
+    pub submit_success_talk_id: Option<i64>,
 }

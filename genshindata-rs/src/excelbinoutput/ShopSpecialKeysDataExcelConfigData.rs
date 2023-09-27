@@ -11,5 +11,16 @@ pub type ShopSpecialKeysDataExcelConfigData = Vec<ShopSpecialKeysDataExcelConfig
 pub struct ShopSpecialKeysDataExcelConfigDatum {
     #[serde(rename = "goodsId")]
     pub goods_id: i64,
-    pub mpbmokapoij: i64,
+    #[serde(rename = "singleLimit")]
+    pub single_limit: i64,
+    pub oobhfkhljlb: Oobhfkhljlb,
+    pub lmadbaihbdg: Option<bool>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Oobhfkhljlb {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "QUEST_SmugglerShopLimit")]
+    QuestSmugglerShopLimit,
 }

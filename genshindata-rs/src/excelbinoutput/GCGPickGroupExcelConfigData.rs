@@ -7,10 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type GcgPickGroupExcelConfigData = Vec<GcgPickGroupExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GcgPickGroupExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub mkomcpomhdo: i64,
-    pub jbjlfjbmlcd: Vec<i64>,
+    pub character_id: i64,
+    #[serde(rename = "JOEBKKKMMGE")]
+    pub joebkkkmmge: Vec<i64>,
 }

@@ -11,9 +11,9 @@ pub type LanV3ShadowCameraExcelConfigData = Vec<LanV3ShadowCameraExcelConfigDatu
 pub struct LanV3ShadowCameraExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub pfmdhmidegm: i64,
-    pub oimfpbgffbm: i64,
-    pub acmnefojmpa: f64,
-    pub ffkkggmfcdp: f64,
-    pub coialpgelji: Vec<f64>,
+    pub mcablkcapbd: i64,
+    pub pkealjjniof: i64,
+    pub gklneabjjpi: f64,
+    pub hjpngidifha: f64,
+    pub ndnniblfmlm: Vec<f64>,
 }

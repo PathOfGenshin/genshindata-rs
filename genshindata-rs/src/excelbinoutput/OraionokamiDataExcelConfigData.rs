@@ -7,21 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type OraionokamiDataExcelConfigData = Vec<OraionokamiDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct OraionokamiDataExcelConfigDatum {
-    #[serde(rename = "configId")]
     pub config_id: i64,
-    pub lhlpbjblhcg: i64,
-    pub clbkoejgcid: i64,
-    #[serde(rename = "serverBuffId")]
+    pub gadget_chain_id: i64,
+    pub gadget_chain_level: i64,
     pub server_buff_id: i64,
-    pub cadikkbokaa: Vec<i64>,
-    pub hgbodichcff: i64,
-    pub gccmhehbffi: i64,
-    pub hjjgnbjoodf: i64,
-    #[serde(rename = "groupId")]
+    pub desc_id_list: Vec<i64>,
+    pub desc_title_text_map_hash: i64,
+    pub desc_content_text_map_hash: i64,
+    pub desc_skill_text_map_hash: i64,
     pub group_id: i64,
-    pub oebeekdjnmc: i64,
-    #[serde(rename = "iconPath")]
+    pub type_level: i64,
     pub icon_path: String,
 }

@@ -7,19 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySummerTimeFloatSignalExcelConfigData = Vec<ActivitySummerTimeFloatSignalExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySummerTimeFloatSignalExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "groupId")]
     pub group_id: i64,
-    #[serde(rename = "configId")]
     pub config_id: i64,
-    #[serde(rename = "AEGJCDFNMBE")]
-    pub aegjcdfnmbe: Option<i64>,
-    #[serde(rename = "HBKJIBALHOO")]
-    pub hbkjibalhoo: i64,
-    #[serde(rename = "HHDDDCCNGJJ")]
-    pub hhdddccngjj: i64,
-    #[serde(rename = "DDCLAEIOEIP")]
-    pub ddclaeioeip: Option<bool>,
+    pub mist_zone_id: Option<i64>,
+    pub vehicle_config_id: i64,
+    pub vehicle_gadget_id: i64,
+    pub is_transfer_anchor: Option<bool>,
 }

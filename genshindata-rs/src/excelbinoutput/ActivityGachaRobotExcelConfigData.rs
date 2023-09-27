@@ -7,25 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type ActivityGachaRobotExcelConfigData = Vec<ActivityGachaRobotExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityGachaRobotExcelConfigDatum {
-    pub aafifjbcegl: i64,
-    pub pnicingggca: Vec<i64>,
-    pub mlaoicfkgce: Vec<i64>,
-    #[serde(rename = "consumeItemId")]
-    pub consume_item_id: Vec<i64>,
+    pub robot_id: i64,
+    pub shape_list: Vec<i64>,
+    pub color_list: Vec<i64>,
+    pub action_list: Vec<i64>,
     #[serde(rename = "type")]
     pub activity_gacha_robot_excel_config_datum_type: Type,
-    pub hbdjjofogjb: i64,
-    #[serde(rename = "materialId")]
+    pub furniture_id: i64,
     pub material_id: i64,
-    #[serde(rename = "modelPath")]
     pub model_path: String,
-    pub jmpbiojajjk: i64,
-    pub flfnnlhnffp: i64,
-    #[serde(rename = "descTextMapHash")]
+    #[serde(rename = "animatorID")]
+    pub animator_id: i64,
+    pub play_interval: i64,
     pub desc_text_map_hash: i64,
-    pub kpejejieiag: String,
+    pub audio: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

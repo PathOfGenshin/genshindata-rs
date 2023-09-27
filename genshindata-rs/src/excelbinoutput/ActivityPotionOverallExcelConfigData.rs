@@ -7,11 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPotionOverallExcelConfigData = Vec<ActivityPotionOverallExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPotionOverallExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub gcfbnpegllm: f64,
-    pub ihnjficfcfb: f64,
-    pub monlkdipoia: f64,
+    pub score_param_a: f64,
+    pub score_param_b: f64,
+    pub score_param_c: f64,
 }

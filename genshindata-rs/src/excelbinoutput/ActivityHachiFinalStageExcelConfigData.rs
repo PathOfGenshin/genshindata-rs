@@ -7,29 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type ActivityHachiFinalStageExcelConfigData = Vec<ActivityHachiFinalStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityHachiFinalStageExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
-    #[serde(rename = "ACIMFILFKLK")]
-    pub acimfilfklk: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "IBBJPJEMMHJ")]
-    pub ibbjpjemmhj: i64,
-    #[serde(rename = "LNNAOLFCDJE")]
-    pub lnnaolfcdje: i64,
-    #[serde(rename = "dungeonId")]
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
+    pub boss_title_text_map_hash: i64,
+    pub boss_desc_text_map_hash: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "GCKBFCBDGGN")]
-    pub gckbfcbdggn: Vec<i64>,
-    #[serde(rename = "BHBAFOLBNAE")]
-    pub bhbafolbnae: i64,
+    #[serde(rename = "finalQuestID")]
+    pub final_quest_id: Vec<i64>,
+    pub dungeon_entry_id: i64,
 }

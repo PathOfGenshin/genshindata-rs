@@ -7,36 +7,37 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldNpcExcelConfigData = Vec<HomeWorldNpcExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldNpcExcelConfigDatum {
     #[serde(rename = "furnitureID")]
     pub furniture_id: i64,
     #[serde(rename = "avatarID")]
     pub avatar_id: Option<i64>,
-    pub hdljmoghicl: i64,
-    pub ckmclcnibld: Vec<i64>,
-    pub bahbbcjnhge: Bahbbcjnhge,
-    pub epfgblnbphc: Epfgblnbphc,
-    pub fiooffkfedp: Bahbbcjnhge,
-    pub gnmaiegcfpo: i64,
-    #[serde(rename = "descTextMapHash")]
+    #[serde(rename = "npcID")]
+    pub npc_id: i64,
+    pub talk_i_ds: Vec<i64>,
+    pub head_icon: Icon,
+    pub front_icon: FrontIcon,
+    pub side_icon: Icon,
+    pub show_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    pub hpjmmebnmai: Option<bool>,
-    pub bhjoikfhibd: Option<String>,
+    #[serde(rename = "isNPC")]
+    pub is_npc: Option<bool>,
+    pub quality: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bahbbcjnhge {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
-    UiAvatarIconSidePaimon,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Epfgblnbphc {
+pub enum FrontIcon {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "UI_AvatarIcon_Paimon")]
     UiAvatarIconPaimon,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Icon {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "UI_AvatarIcon_Side_Paimon")]
+    UiAvatarIconSidePaimon,
 }

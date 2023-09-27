@@ -9,6 +9,6 @@ pub type UgcGadgetAffectRangExcelConfigData = Vec<UgcGadgetAffectRangExcelConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct UgcGadgetAffectRangExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NLNOPNKPGHM")]
-    pub nlnopnkpghm: String,
+    #[serde(rename = "NHILCEOPIOG")]
+    pub nhilceopiog: String,
 }

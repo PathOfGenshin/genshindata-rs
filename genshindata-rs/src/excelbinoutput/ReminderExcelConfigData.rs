@@ -16,17 +16,21 @@ pub struct ReminderExcelConfigDatum {
     pub next_reminder_id: Option<i64>,
     pub sound_effect: String,
     pub has_audio: Option<bool>,
+    #[serde(rename = "IIPODMBIKJH")]
+    pub iipodmbikjh: String,
     pub delay: Option<f64>,
     pub style: Option<Style>,
-    #[serde(rename = "MMEGJDOBIGN")]
-    pub mmegjdobign: Option<i64>,
-    #[serde(rename = "HDHGPHAMBNN")]
-    pub hdhgphambnn: Option<bool>,
+    #[serde(rename = "BPOBAPILOEE")]
+    pub bpobapiloee: Option<i64>,
+    #[serde(rename = "GPCJCBLIGHJ")]
+    pub gpcjcblighj: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum Style {
     Banner,
+    #[serde(rename = "DialogueWithPortrait")]
+    DialogueWithPortrait,
     #[serde(rename = "EventPromptDown")]
     EventPromptDown,
     #[serde(rename = "InfoTextDialog")]

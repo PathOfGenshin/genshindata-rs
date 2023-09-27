@@ -23,14 +23,10 @@ pub struct TreasureMapRegionExcelConfigDatum {
     pub misc_drop_id: i64,
     pub backup_group_list: Vec<i64>,
     pub mp_token_threshold: i64,
-    #[serde(rename = "GMPGPEMCEDL")]
-    pub gmpgpemcedl: Vec<f64>,
-    #[serde(rename = "BDKNPJLMLDH")]
-    pub bdknpjlmldh: i64,
-    #[serde(rename = "BAALLEOLIFI")]
-    pub baalleolifi: Option<i64>,
+    pub mp_position: Vec<f64>,
+    pub mp_desc_text_map_hash: i64,
+    pub fragment_bonus_id: Option<i64>,
     pub mp_group_id: Option<i64>,
     pub mp_type_id: Option<i64>,
-    #[serde(rename = "FOAMLONFACL")]
-    pub foamlonfacl: Option<i64>,
+    pub mp_reward_preview_id: Option<i64>,
 }

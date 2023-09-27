@@ -7,31 +7,27 @@ use serde::{Serialize, Deserialize};
 pub type MaterialSourceDataExcelConfigData = Vec<MaterialSourceDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MaterialSourceDataExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "dungeonList")]
     pub dungeon_list: Vec<i64>,
-    pub epkihkgakjj: Vec<Epkihkgakjj>,
-    pub ankcgephfdp: Vec<i64>,
-    pub cmnnlmadppg: Vec<Cmnnlmadppg>,
-    pub kkbdmejbaeg: Vec<i64>,
-    #[serde(rename = "jumpList")]
-    pub jump_list: Vec<i64>,
-    #[serde(rename = "textList")]
+    pub jump_list: Vec<JumpList>,
+    pub dungeon_group: Vec<i64>,
+    pub jump_targets: Vec<JumpTarget>,
+    pub jump_params: Vec<i64>,
+    pub jump_descs: Vec<i64>,
     pub text_list: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct JumpList {
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Cmnnlmadppg {
+pub enum JumpTarget {
     #[serde(rename = "JUMP_INVESTIGATION")]
     JumpInvestigation,
     #[serde(rename = "JUMP_MALL")]
     JumpMall,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Epkihkgakjj {
 }

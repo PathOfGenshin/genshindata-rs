@@ -7,25 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type QteExcelConfigData = Vec<QteExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct QteExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub pejkeboekgp: i64,
-    pub dmocaceedcb: String,
-    pub pojkgdldebe: Vec<Hgckpdnocmo>,
-    pub mpkocmoodkl: Vec<Mpkocmoodkl>,
-    pub hgckpdnocmo: Vec<Hgckpdnocmo>,
+    pub start_step_id: i64,
+    pub qte_type: String,
+    pub start_exec: Vec<Exec>,
+    pub success_exec: Vec<SuccessExec>,
+    pub fail_exec: Vec<Exec>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Hgckpdnocmo {
+pub struct Exec {
     pub param: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Mpkocmoodkl {
+pub struct SuccessExec {
     #[serde(rename = "type")]
-    pub mpkocmoodkl_type: Option<String>,
+    pub success_exec_type: Option<String>,
     pub param: Vec<i64>,
 }

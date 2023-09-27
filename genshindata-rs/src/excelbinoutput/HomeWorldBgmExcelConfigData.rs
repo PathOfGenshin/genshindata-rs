@@ -7,16 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldBgmExcelConfigData = Vec<HomeWorldBgmExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldBgmExcelConfigDatum {
-    pub giklghimnie: i64,
-    pub jcgklgefjlg: bool,
-    pub nlmaaonedbo: bool,
-    #[serde(rename = "cityId")]
+    #[serde(rename = "bgmID")]
+    pub bgm_id: i64,
+    pub is_room_scene_usable: bool,
+    pub is_world_scene_usable: bool,
     pub city_id: i64,
-    #[serde(rename = "sortOrder")]
     pub sort_order: i64,
-    pub amnhnjkcpom: String,
-    pub eahdjafbldo: i64,
-    pub bgbdiojamol: Option<bool>,
+    pub bgm_path: String,
+    pub bgm_name_text_map_hash: i64,
+    pub is_default_unlock: Option<bool>,
 }

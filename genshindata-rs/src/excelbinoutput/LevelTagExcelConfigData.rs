@@ -7,15 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type LevelTagExcelConfigData = Vec<LevelTagExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LevelTagExcelConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    pub dlgniidbhnp: String,
-    #[serde(rename = "sceneId")]
+    pub level_tag_name: String,
     pub scene_id: i64,
-    pub jhegeckomip: Vec<i64>,
-    pub bjdilblkkhi: Vec<i64>,
-    pub belbjlfflbb: Option<bool>,
-    pub dceilaloada: Option<i64>,
-    pub ggnaphlcbje: Vec<i64>,
+    pub add_scene_tag_id_list: Vec<i64>,
+    pub remove_scene_tag_id_list: Vec<i64>,
+    pub level_tag_can_fix_time: Option<bool>,
+    pub level_tag_fixed_enviro_time: Option<i64>,
+    pub load_dynamic_group_list: Vec<i64>,
 }

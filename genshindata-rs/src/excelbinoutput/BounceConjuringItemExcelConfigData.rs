@@ -12,6 +12,5 @@ pub struct BounceConjuringItemExcelConfigDatum {
     pub id: i64,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "HGJLGBPIJFB")]
-    pub hgjlgbpijfb: f64,
+    pub bg_icon_hash: f64,
 }

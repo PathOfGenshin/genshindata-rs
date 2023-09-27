@@ -7,13 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type IrodoriChessLevelExcelConfigData = Vec<IrodoriChessLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriChessLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub nbphfhjmcki: i64,
-    pub cficnekpach: i64,
-    pub bifbnkpadgl: i64,
+    pub normal_map_id: i64,
+    pub hard_map_id: i64,
+    pub unlock_hard_score: i64,
 }

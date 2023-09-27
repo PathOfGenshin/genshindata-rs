@@ -18,8 +18,7 @@ pub struct GadgetExcelConfigDatum {
     pub interact_name_text_map_hash: i64,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "KCANMNBNNED")]
-    pub kcanmnbnned: Option<f64>,
+    pub prefab_path_hash: Option<f64>,
     #[serde(rename = "campID")]
     pub camp_id: Option<i64>,
     #[serde(rename = "LODPatternName")]
@@ -37,12 +36,10 @@ pub struct GadgetExcelConfigDatum {
     pub client_script_hash: Option<f64>,
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
-    #[serde(rename = "AFKJHEAOEDH")]
-    pub afkjheaoedh: Option<bool>,
-    #[serde(rename = "JHOGPIMOFCF")]
-    pub jhogpimofcf: Option<i64>,
-    #[serde(rename = "ENCFOAAJBEO")]
-    pub encfoaajbeo: Option<String>,
+    pub has_dynamic_barrier: Option<bool>,
+    pub chain_id: Option<i64>,
+    #[serde(rename = "DBFCAIOHNJL")]
+    pub dbfcaiohnjl: Option<String>,
     pub prefab_path_remote_hash: Option<f64>,
     pub controller_path_hash: Option<f64>,
 }
@@ -167,6 +164,8 @@ pub enum InteeIconName {
     UiIconInteeOfferingPari,
     #[serde(rename = "UI_Icon_Intee_Oraionokami")]
     UiIconInteeOraionokami,
+    #[serde(rename = "UI_Icon_Intee_PaintingRepair")]
+    UiIconInteePaintingRepair,
     #[serde(rename = "UI_Icon_Intee_PickUp")]
     UiIconInteePickUp,
     #[serde(rename = "UI_Icon_Intee_Projection")]

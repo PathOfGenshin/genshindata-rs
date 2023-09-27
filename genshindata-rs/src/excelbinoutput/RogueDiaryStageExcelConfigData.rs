@@ -7,26 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type RogueDiaryStageExcelConfigData = Vec<RogueDiaryStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RogueDiaryStageExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "condId")]
     pub cond_id: i64,
-    pub ohnhdiocjef: Vec<i64>,
-    pub aeaoeficnjn: Vec<i64>,
-    pub cljlppgjfbc: Vec<i64>,
-    pub fbogoaoeigk: i64,
-    pub pgmcfghingm: i64,
-    pub lbgebmfifnn: String,
-    pub ddeepbbnogp: Option<i64>,
-    pub okaomegbhbi: Vec<i64>,
-    pub njlfodllihb: Vec<i64>,
-    #[serde(rename = "watcherIdList")]
+    pub normal_dungeon_id_list: Vec<i64>,
+    pub hard_dungeon_id_list: Vec<i64>,
+    pub insane_dungeon_id_list: Vec<i64>,
+    pub optional_card_count: i64,
+    pub chosen_card_count: i64,
+    pub tired_type: String,
+    pub tired_reserve_avatar_count: Option<i64>,
+    pub trial_avatar_list: Vec<i64>,
+    pub time_level_list: Vec<i64>,
     pub watcher_id_list: Vec<i64>,
-    #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub ndakobnhedj: i64,
-    pub ieillcodgge: i64,
-    pub dhekicdlglk: Option<i64>,
+    pub dungeon_name_text_map_hash: i64,
+    pub dungeon_desc_text_map_hash: i64,
+    pub tired_round_count: Option<i64>,
 }

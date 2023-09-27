@@ -7,23 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type ActivityGachaStageExcelConfigData = Vec<ActivityGachaStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityGachaStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub jkodlmdlljp: i64,
-    pub cbbanejbflf: Option<bool>,
+    pub next_stage_id: i64,
+    pub is_tech: Option<bool>,
     #[serde(rename = "type")]
     pub activity_gacha_stage_excel_config_datum_type: String,
-    #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub ealemlbhidc: Vec<i64>,
-    pub pbpdgmkepca: Vec<i64>,
-    pub igmlknffhlk: Vec<i64>,
+    pub group_num_list: Vec<i64>,
+    pub stage_group_id_list: Vec<i64>,
+    pub task_content_list: Vec<i64>,
     #[serde(rename = "condID")]
     pub cond_id: Option<i64>,
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
-    pub kkkenochkmn: Option<i64>,
-    pub bkepmlihpdl: Option<bool>,
+    #[serde(rename = "openQuestID")]
+    pub open_quest_id: Option<i64>,
+    pub is_need_finish: Option<bool>,
 }

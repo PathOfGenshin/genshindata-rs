@@ -7,13 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type GadgetChainExcelConfigData = Vec<GadgetChainExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GadgetChainExcelConfigDatum {
-    pub jhogpimofcf: i64,
-    pub knaepfoblgp: Option<i64>,
-    #[serde(rename = "maxLevel")]
+    pub chain_id: i64,
+    pub init_level: Option<i64>,
     pub max_level: i64,
-    #[serde(rename = "buffList")]
     pub buff_list: Vec<i64>,
-    pub ioebfplpbif: Option<bool>,
+    #[serde(rename = "NPAMCIFIHHB")]
+    pub npamcifihhb: Option<bool>,
 }

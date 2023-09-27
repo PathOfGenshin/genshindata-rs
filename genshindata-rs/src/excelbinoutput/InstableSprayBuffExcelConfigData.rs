@@ -7,18 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type InstableSprayBuffExcelConfigData = Vec<InstableSprayBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InstableSprayBuffExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub behhcchceho: String,
-    pub cgkmjldannc: String,
-    pub mmddpggccec: f64,
-    #[serde(rename = "elementType")]
+    pub ability_group_name: String,
+    pub sgv: String,
+    pub icon_name_hash: f64,
     pub element_type: Option<i64>,
-    pub lcjpgaelhho: i64,
-    #[serde(rename = "buffNameTextMapHash")]
+    #[serde(rename = "EGPNLELNGOA")]
+    pub egpnlelngoa: i64,
     pub buff_name_text_map_hash: i64,
-    pub lmhcbkddkhm: i64,
-    pub noekhckmdap: Vec<String>,
+    pub buff_desc_text_map_hash: i64,
+    pub desc_params: Vec<String>,
 }

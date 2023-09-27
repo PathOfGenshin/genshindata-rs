@@ -9,25 +9,25 @@ pub type ActivityVintagePresentExcelConfigData = Vec<ActivityVintagePresentExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityVintagePresentExcelConfigDatum {
-    pub kimcfdnnjbf: i64,
-    pub plhfnmodhkh: i64,
+    pub dgleboajogn: i64,
+    pub bgjalccmplp: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
     #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub lfeldhhmhdi: Vec<i64>,
-    pub jbbidnjddng: i64,
+    pub gkedocpfcbj: Vec<i64>,
+    pub fljbicgenak: i64,
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
-    pub ahphpkijkpc: Ahphpkijkpc,
-    pub nfgapiacich: String,
-    pub lnkfjjpjnaj: i64,
-    pub gplgenilfgd: i64,
+    pub bocphmlfoee: Bocphmlfoee,
+    pub ldkefjepbmn: String,
+    pub bemjbnenlhb: i64,
+    pub niogejakjmf: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ahphpkijkpc {
+pub enum Bocphmlfoee {
     #[serde(rename = "PRESENT_TYPE_NORMAL")]
     PresentTypeNormal,
     #[serde(rename = "PRESENT_TYPE_SPECIAL")]

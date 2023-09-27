@@ -9,5 +9,5 @@ pub type HomeWorldBlueprintSlotExcelConfigData = Vec<HomeWorldBlueprintSlotExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HomeWorldBlueprintSlotExcelConfigDatum {
-    pub mmenklnfaji: i64,
+    pub cccnfdnajme: i64,
 }

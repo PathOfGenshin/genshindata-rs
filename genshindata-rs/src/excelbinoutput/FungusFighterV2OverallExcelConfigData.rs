@@ -11,20 +11,20 @@ pub type FungusFighterV2OverallExcelConfigData = Vec<FungusFighterV2OverallExcel
 pub struct FungusFighterV2OverallExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub odlmnllellb: i64,
-    pub glkjkbgaokh: i64,
-    pub decgkgghccb: i64,
-    pub bfbfmbekpkf: Vec<String>,
-    pub ipepejnddnc: String,
-    pub igadnbkjfio: i64,
-    pub ahpffbgmgdj: i64,
+    pub jcfkcbgncgb: i64,
+    pub cjliilicgkp: i64,
+    pub elpnfaeaaai: i64,
+    pub jeojkeghnnp: Vec<String>,
+    pub honaddhilin: String,
+    pub fjmbpdhchji: i64,
+    pub hfafnhfikpm: i64,
     #[serde(rename = "trialAvatarId")]
     pub trial_avatar_id: i64,
-    pub lkdgamkdhgf: i64,
-    pub mkmhnmafhcd: i64,
-    pub pmfheekhlmb: i64,
-    pub pjmmafjcjpc: i64,
+    pub hfpjcjdeknb: i64,
+    pub dnkbimcmlom: i64,
+    pub boanpmckojj: i64,
+    pub gdgloibfopp: i64,
     #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
-    pub ijhbneooono: String,
+    pub ndgnmacbooe: String,
 }

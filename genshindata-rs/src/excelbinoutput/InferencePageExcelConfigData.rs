@@ -7,14 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type InferencePageExcelConfigData = Vec<InferencePageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InferencePageExcelConfigDatum {
-    pub kfigniogmfh: i64,
-    #[serde(rename = "parentQuestId")]
+    pub page_id: i64,
     pub parent_quest_id: i64,
-    pub elopogjlogm: Vec<i64>,
-    pub ngbcmiflooj: i64,
-    #[serde(rename = "titleTextMapHash")]
+    pub conclusion_list: Vec<i64>,
+    pub dialog_group_id: i64,
     pub title_text_map_hash: i64,
-    pub mophpafnibc: Option<bool>,
+    #[serde(rename = "FHINJBHPKLF")]
+    pub fhinjbhpklf: Option<bool>,
 }

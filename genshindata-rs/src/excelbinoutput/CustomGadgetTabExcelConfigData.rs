@@ -7,37 +7,36 @@ use serde::{Serialize, Deserialize};
 pub type CustomGadgetTabExcelConfigData = Vec<CustomGadgetTabExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomGadgetTabExcelConfigDatum {
-    pub klgheafjeke: i64,
-    #[serde(rename = "tabNameTextMapHash")]
+    pub tab_id: i64,
     pub tab_name_text_map_hash: i64,
-    pub oonoepgaeie: Vec<String>,
-    pub hoampeiggcp: Hoampeiggcp,
-    pub lndoncmmmmk: Lndoncmmmmk,
-    pub afikbngpcoc: i64,
-    pub okgfioecnhe: i64,
-    pub kajfghpipea: Option<i64>,
+    pub slot_identifier_path_list: Vec<String>,
+    pub effect_slot_select: EffectSlotSelect,
+    pub effect_parts_setup: EffectPartsSetup,
+    pub no_parts_tips_text_map_hash: i64,
+    pub get_parts_tips_text_map_hash: i64,
+    pub dependent_tab_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hoampeiggcp {
+pub enum EffectPartsSetup {
+    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
+    EffSceneObjFlowerShlefSwitch,
+    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
+    EffSceneObjFlowerSwitch,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum EffectSlotSelect {
     #[serde(rename = "Eff_SceneObj_FlowerPot_Selected")]
     EffSceneObjFlowerPotSelected,
     #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
     EffSceneObjFlowerShlefSwitch,
     #[serde(rename = "Eff_SceneObj_Irodori_Flower_Selected")]
     EffSceneObjIrodoriFlowerSelected,
-    #[serde(rename = "")]
-    Empty,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Lndoncmmmmk {
-    #[serde(rename = "Eff_SceneObj_FlowerShlef_Switch")]
-    EffSceneObjFlowerShlefSwitch,
-    #[serde(rename = "Eff_SceneObj_Flower_Switch")]
-    EffSceneObjFlowerSwitch,
     #[serde(rename = "")]
     Empty,
 }

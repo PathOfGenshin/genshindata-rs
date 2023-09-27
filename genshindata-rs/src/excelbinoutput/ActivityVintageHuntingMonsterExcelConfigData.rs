@@ -10,7 +10,7 @@ pub type ActivityVintageHuntingMonsterExcelConfigData = Vec<ActivityVintageHunti
 #[serde(rename_all = "camelCase")]
 pub struct ActivityVintageHuntingMonsterExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "CKCCMPGODJD")]
-    pub ckccmpgodjd: i64,
+    #[serde(rename = "LHMAADIJJOI")]
+    pub lhmaadijjoi: i64,
     pub monster_id_list: Vec<i64>,
 }

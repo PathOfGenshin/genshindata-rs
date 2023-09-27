@@ -12,13 +12,19 @@ pub struct GadgetInteractExcelConfigDatum {
     pub interact_id: i64,
     pub action_type: Option<ActionType>,
     pub param1: Option<i64>,
-    pub consume_item_id: Vec<ConsumeItemId>,
+    pub action_list: Vec<ActionList>,
     pub cost_items: Vec<CostItem>,
     pub ui_desc_text_map_hash: i64,
-    #[serde(rename = "OKMCFOBHBKI")]
-    pub okmcfobhbki: Vec<Okmcfobhbki>,
-    pub consume_item_num: Option<bool>,
-    pub ui_title_text_map_hash: Option<bool>,
+    pub cond_list: Vec<CondList>,
+    pub is_mp_mode_interact: Option<bool>,
+    pub is_guest_interact: Option<bool>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ActionList {
+    pub action_type: Option<ActionType>,
+    pub param: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -36,20 +42,7 @@ pub enum ActionType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct ConsumeItemId {
-    pub action_type: Option<ActionType>,
-    pub param: Vec<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct CostItem {
-    pub id: Option<i64>,
-    pub count: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct Okmcfobhbki {
+pub struct CondList {
     pub param: Vec<String>,
     pub cond_type: Option<CondType>,
 }
@@ -63,4 +56,10 @@ pub enum CondType {
     InteractCondRegionalPlayVarGreaterThan,
     #[serde(rename = "INTERACT_COND_WIDGET_ON")]
     InteractCondWidgetOn,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CostItem {
+    pub id: Option<i64>,
+    pub count: Option<i64>,
 }

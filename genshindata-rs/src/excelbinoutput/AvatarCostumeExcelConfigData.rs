@@ -7,36 +7,29 @@ use serde::{Serialize, Deserialize};
 pub type AvatarCostumeExcelConfigData = Vec<AvatarCostumeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AvatarCostumeExcelConfigDatum {
-    pub hdndablhjnc: i64,
-    pub baeoibgnbbj: Option<i64>,
-    #[serde(rename = "nameTextMapHash")]
+    pub skin_id: i64,
+    #[serde(rename = "indexID")]
+    pub index_id: Option<i64>,
     pub name_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "itemId")]
     pub item_id: Option<i64>,
-    pub mkomcpomhdo: i64,
-    #[serde(rename = "jsonName")]
+    pub character_id: i64,
     pub json_name: String,
-    pub lodlahefmll: Option<f64>,
-    pub ojhdmmjjpak: Option<f64>,
-    pub ibdpphcedan: Option<f64>,
-    pub fkdbdgcpedm: Option<f64>,
-    pub bnonbmhoplj: Option<i64>,
-    pub fmjnmimfbon: String,
-    #[serde(rename = "sideIconName")]
+    pub prefab_path_hash: Option<f64>,
+    pub prefab_remote_path_hash: Option<f64>,
+    pub prefab_npc_path_hash: Option<f64>,
+    pub prefab_manekin_path_hash: Option<f64>,
+    pub quality: Option<i64>,
+    pub front_icon_name: String,
     pub side_icon_name: String,
-    pub plgloeljpba: Option<f64>,
-    pub bgbdiojamol: Option<bool>,
-    #[serde(rename = "hide")]
+    pub image_name_hash: Option<f64>,
+    pub is_default_unlock: Option<bool>,
     pub hide: Option<bool>,
-    #[serde(rename = "gachaImageNameHash")]
-    pub gacha_image_name_hash: Option<f64>,
-    pub lcidkdemkjh: Option<f64>,
-    pub aacndfidpao: Option<f64>,
-    #[serde(rename = "isDefault")]
+    pub animator_config_path_hash: Option<f64>,
+    pub controller_path_hash: Option<f64>,
+    pub controller_remote_path_hash: Option<f64>,
     pub is_default: Option<bool>,
-    pub mcobeaoofma: Option<bool>,
+    pub domestic_hide_in_art_preview: Option<bool>,
 }

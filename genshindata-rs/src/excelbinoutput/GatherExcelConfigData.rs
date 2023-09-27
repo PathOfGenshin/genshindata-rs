@@ -13,20 +13,26 @@ pub struct GatherExcelConfigDatum {
     pub point_type: i64,
     pub gadget_id: i64,
     pub item_id: i64,
-    pub block_limits: Vec<i64>,
+    pub extra_item_id_vec: Vec<i64>,
     pub refresh_id: Option<i64>,
     pub init_disable_interact: Option<bool>,
-    pub extra_item_id_vec: Option<ExtraItemIdVec>,
+    pub save_type: Option<SaveType>,
     pub cd: Option<bool>,
     pub point_location: Option<PointLocation>,
     pub is_forbid_guest: Option<bool>,
-    #[serde(rename = "LIIHKBMKFGD")]
-    pub liihkbmkfgd: Option<bool>,
+    pub is_multi_state: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum ExtraItemIdVec {
+pub enum PointLocation {
+    #[serde(rename = "POINT_AIR")]
+    PointAir,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum SaveType {
     #[serde(rename = "GATHER_SAVE_TYPE_HIGH")]
     GatherSaveTypeHigh,
     #[serde(rename = "GATHER_SAVE_TYPE_LOW")]
@@ -35,11 +41,4 @@ pub enum ExtraItemIdVec {
     GatherSaveTypeMid,
     #[serde(rename = "GATHER_SAVE_TYPE_OWN")]
     GatherSaveTypeOwn,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum PointLocation {
-    #[serde(rename = "POINT_AIR")]
-    PointAir,
 }

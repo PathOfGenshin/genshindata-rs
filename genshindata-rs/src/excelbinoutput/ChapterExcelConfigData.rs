@@ -16,17 +16,17 @@ pub struct ChapterExcelConfigDatum {
     pub chapter_num_text_map_hash: i64,
     pub chapter_title_text_map_hash: i64,
     pub chapter_icon: String,
-    #[serde(rename = "LLFDLAPCIBG")]
-    pub llfdlapcibg: Option<f64>,
+    pub chapter_image_hash: Option<f64>,
     pub chapter_image_title_text_map_hash: i64,
     pub chapter_serial_number_icon: ChapterSerialNumberIcon,
     pub need_player_level: Option<i64>,
     pub activity_id: Option<i64>,
     pub in_activity_need_player_level: Option<i64>,
     pub city_id: Option<i64>,
-    pub chapter_image_hash: Option<i64>,
-    #[serde(rename = "MIPIIDHAGIE")]
-    pub mipiidhagie: Option<Mipiidhagie>,
+    #[serde(rename = "ACJBBPLENDF")]
+    pub acjbbplendf: Option<i64>,
+    #[serde(rename = "JAOCMIKGMBF")]
+    pub jaocmikgmbf: Option<Jaocmikgmbf>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -49,7 +49,7 @@ pub enum ChapterSerialNumberIcon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mipiidhagie {
+pub enum Jaocmikgmbf {
     #[serde(rename = "CHAPTER_STYLE_TYPE_WORLD_QUEST_RANK_ZERO")]
     ChapterStyleTypeWorldQuestRankZero,
 }

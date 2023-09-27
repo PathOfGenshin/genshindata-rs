@@ -11,23 +11,24 @@ pub type ShuffleBoardLevelExcelConfigData = Vec<ShuffleBoardLevelExcelConfigDatu
 pub struct ShuffleBoardLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ecchphppcff: i64,
-    pub doimebpiknf: i64,
-    pub nkobjocgfeo: i64,
-    pub hjhfafgogji: i64,
-    pub iagaehanlde: i64,
+    #[serde(rename = "stage")]
+    pub stage: i64,
+    pub dbmpokoegbm: i64,
+    pub nmfngmkclko: i64,
+    pub hakmeijdafd: i64,
+    pub okmnkjbdibf: i64,
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
-    pub amjkmcfcldo: i64,
+    pub ekbpajiilfk: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "previewItems")]
     pub preview_items: Vec<i64>,
-    pub ihkinjdamgi: String,
+    pub hpgkbiojfeg: String,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub bnpikdnkccf: Option<i64>,
-    pub ochljhfofna: Option<i64>,
+    pub elpijedpjgm: Option<i64>,
+    pub okbiikhjlkf: Option<i64>,
 }

@@ -7,34 +7,34 @@ use serde::{Serialize, Deserialize};
 pub type FungusFighterV2SkillExcelConfigData = Vec<FungusFighterV2SkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FungusFighterV2SkillExcelConfigDatum {
-    pub fjaoijahepp: i64,
-    #[serde(rename = "iconPath")]
+    pub skill_id: i64,
     pub icon_path: String,
-    pub poalamfiheo: String,
-    #[serde(rename = "nameTextMapHash")]
+    #[serde(rename = "DALBANHMDJN")]
+    pub dalbanhmdjn: String,
     pub name_text_map_hash: i64,
-    #[serde(rename = "descriptionTextMapHash")]
     pub description_text_map_hash: i64,
-    #[serde(rename = "tags")]
     pub tags: Vec<i64>,
-    pub nmgmadbfpjp: Option<i64>,
-    #[serde(rename = "cost")]
+    #[serde(rename = "KFIMJDDOEKF")]
+    pub kfimjddoekf: Option<i64>,
     pub cost: Option<i64>,
-    pub gnebbdnjlpg: Option<Gnebbdnjlpg>,
-    pub coghcnlidlo: Option<Coghcnlidlo>,
-    pub mndlaejcalo: Option<i64>,
+    #[serde(rename = "JIPFDJAKEJJ")]
+    pub jipfdjakejj: Option<Jipfdjakejj>,
+    #[serde(rename = "COOHLIMBLCF")]
+    pub coohlimblcf: Option<Coohlimblcf>,
+    #[serde(rename = "BEAGMKBFNFN")]
+    pub beagmkbfnfn: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Coghcnlidlo {
+pub enum Coohlimblcf {
     Enemy,
     Partner,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Gnebbdnjlpg {
+pub enum Jipfdjakejj {
     Auto,
     Manual,
 }

@@ -9,20 +9,21 @@ pub type FungusPlotDungeonExcelConfigData = Vec<FungusPlotDungeonExcelConfigDatu
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusPlotDungeonExcelConfigDatum {
-    pub pnjhofnnioa: i64,
+    pub clffcjbodjf: i64,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub hmgciidoajo: Vec<i64>,
-    pub mfigimacdip: Vec<i64>,
-    pub bjmfjalelfh: Vec<Option<serde_json::Value>>,
-    pub ldiadlienfh: i64,
-    pub ofkbgecnihe: i64,
-    pub ohcfghegdpo: String,
-    pub linbaihgbmm: Vec<i64>,
-    pub mpmgenggcfc: i64,
-    pub ohpehgohlkf: i64,
-    pub dajocopocjk: i64,
-    pub cjclcchefgh: i64,
-    pub fiahldfmfgl: i64,
-    pub amopldcgomb: i64,
+    pub daedblkdlcc: Vec<i64>,
+    pub kgbmneojlfj: Vec<i64>,
+    pub ecofodmhbhm: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "unlockDay")]
+    pub unlock_day: i64,
+    pub beiajccgecl: i64,
+    pub liopeedknmb: String,
+    pub idgkekdibai: Vec<i64>,
+    pub idcdnnhlkel: i64,
+    pub hdmobeaefnn: i64,
+    pub ddacjckhced: i64,
+    pub ioaipbfimeb: i64,
+    pub gbnaioddjbn: i64,
+    pub odikkbjdnpo: i64,
 }

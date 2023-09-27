@@ -15,10 +15,8 @@ pub struct ActivitySummerTimeExcelConfigDatum {
     pub unlock_quest_id: i64,
     pub content_duration: i64,
     pub unlock_player_level: i64,
-    #[serde(rename = "CHDGHKEAHHC")]
-    pub chdghkeahhc: i64,
-    #[serde(rename = "DOBDPGLNGDD")]
-    pub dobdpglngdd: Vec<i64>,
+    pub personal_pre_quest: i64,
+    pub pre_quest_of_pre_quest: Vec<i64>,
     pub reward_preview: i64,
     pub quest_id_list: Vec<i64>,
 }

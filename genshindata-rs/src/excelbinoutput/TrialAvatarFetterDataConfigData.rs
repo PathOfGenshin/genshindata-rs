@@ -7,17 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type TrialAvatarFetterDataConfigData = Vec<TrialAvatarFetterDataConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct TrialAvatarFetterDataConfigDatum {
-    #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub bgfgppiebgd: i64,
-    pub pdjmbdddhhf: Pdjmbdddhhf,
+    pub fetter_id: i64,
+    pub finish_cond: FinishCond,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Pdjmbdddhhf {
+pub struct FinishCond {
     pub param_list: Vec<i64>,
     pub cond_type: Option<String>,
 }

@@ -9,16 +9,16 @@ pub type GcgTalkDetailExcelConfigData = Vec<GcgTalkDetailExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgTalkDetailExcelConfigDatum {
-    pub pefcaaolpok: i64,
-    pub jfmmnoiilbi: Vec<i64>,
-    pub baamjilnpml: Vec<i64>,
-    pub ccbildofahm: Vec<i64>,
-    pub oiihdnfnlbf: Vec<Oiihdnfnlbf>,
+    pub hbjlgcbepcl: i64,
+    pub hjlkamfmbie: Vec<i64>,
+    pub eokemlbbmio: Vec<i64>,
+    pub jnpgaabkfmh: Vec<i64>,
+    pub bcblpcncema: Vec<Bcblpcncema>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Oiihdnfnlbf {
+pub enum Bcblpcncema {
     #[serde(rename = "GCG_TALK_EMOJI_AWKWARD")]
     GcgTalkEmojiAwkward,
     #[serde(rename = "GCG_TALK_EMOJI_ELATION")]

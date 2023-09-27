@@ -7,27 +7,30 @@ use serde::{Serialize, Deserialize};
 pub type ToyBattleCurrentLevelExcelConfigData = Vec<ToyBattleCurrentLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ToyBattleCurrentLevelExcelConfigDatum {
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
     #[serde(rename = "galleryID")]
     pub gallery_id: i64,
-    pub dgjnhbgfbak: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
     #[serde(rename = "levelID")]
     pub level_id: i64,
     #[serde(rename = "activityID")]
     pub activity_id: i64,
-    #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub oojhnnjmcbg: Vec<i64>,
-    pub edfolnhpcmi: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "watcherList")]
+    pub quest_list: Vec<i64>,
+    #[serde(rename = "FDJIDNOMABG")]
+    pub fdjidnomabg: Vec<Option<serde_json::Value>>,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub gibkoamhcmi: Vec<String>,
-    pub onmlkccgffh: Vec<String>,
-    pub cjpjholhbbl: Vec<String>,
-    pub eijpkegkggf: Option<String>,
+    #[serde(rename = "MFBNBANHGAI")]
+    pub mfbnbanhgai: Vec<String>,
+    #[serde(rename = "NPKOCCIIEGK")]
+    pub npkocciiegk: Vec<String>,
+    #[serde(rename = "HHHJNCLIGDH")]
+    pub hhhjncligdh: Vec<String>,
+    #[serde(rename = "ECOLPFMGMKP")]
+    pub ecolpfmgmkp: Option<String>,
 }

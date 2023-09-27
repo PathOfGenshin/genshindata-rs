@@ -7,9 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type AvatarReplaceCostumeExcelConfigData = Vec<AvatarReplaceCostumeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AvatarReplaceCostumeExcelConfigDatum {
-    #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub gnbkbihmhce: i64,
+    pub replace_costume_id: i64,
 }

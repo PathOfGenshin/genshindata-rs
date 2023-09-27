@@ -15,15 +15,13 @@ pub struct MusicInfoConfigDatum {
     pub level_id: Vec<i64>,
     pub music_name_text_map_hash: i64,
     pub music_desc_text_map_hash: i64,
-    #[serde(rename = "DGNIHLFLDKG")]
-    pub dgnihlfldkg: i64,
-    #[serde(rename = "ACAHKJDNJBL")]
-    pub acahkjdnjbl: i64,
+    pub mark_name_text_map_hash: i64,
+    pub mark_desc_text_map_hash: i64,
     #[serde(rename = "condID")]
     pub cond_id: i64,
     pub watcher_list: Vec<i64>,
     #[serde(rename = "pointID")]
     pub point_id: i64,
-    #[serde(rename = "KEMEELFNMIF")]
-    pub kemeelfnmif: i64,
+    #[serde(rename = "instrumentID")]
+    pub instrument_id: i64,
 }

@@ -7,12 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type TowerRewardExcelConfigData = Vec<TowerRewardExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct TowerRewardExcelConfigDatum {
-    pub aekebpckbpp: i64,
-    pub bobdeadmohm: i64,
-    pub ppfdbhjhgdh: i64,
-    pub ledbfekbkgn: i64,
-    pub dabekilholn: i64,
-    pub ledjlaaimpm: Vec<i64>,
+    pub reward_group: i64,
+    pub floor: i64,
+    pub reward_id3_stars: i64,
+    pub reward_id6_stars: i64,
+    pub reward_id9_stars: i64,
+    pub reward_id_room: Vec<i64>,
 }

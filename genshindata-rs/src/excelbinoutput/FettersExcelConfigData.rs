@@ -9,11 +9,10 @@ pub type FettersExcelConfigData = Vec<FettersExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct FettersExcelConfigDatum {
-    #[serde(rename = "KJMDNPFIHGC")]
-    pub kjmdnpfihgc: i64,
-    #[serde(rename = "OFGMLMBBEAK")]
-    pub ofgmlmbbeak: Vec<i64>,
-    pub finish_conds: Vec<i64>,
+    #[serde(rename = "type")]
+    pub fetters_excel_config_datum_type: i64,
+    pub hide_costume_list: Vec<i64>,
+    pub show_costume_list: Vec<i64>,
     pub tips: Vec<i64>,
     pub voice_title_text_map_hash: i64,
     pub voice_file: String,
@@ -22,8 +21,7 @@ pub struct FettersExcelConfigDatum {
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<OpenCond>,
-    #[serde(rename = "DLPFLPGMMNA")]
-    pub dlpflpgmmna: Vec<Option<serde_json::Value>>,
+    pub finish_conds: Vec<Option<serde_json::Value>>,
     pub is_hiden: Option<bool>,
 }
 

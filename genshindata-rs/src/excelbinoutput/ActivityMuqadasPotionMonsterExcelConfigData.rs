@@ -7,17 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type ActivityMuqadasPotionMonsterExcelConfigData = Vec<ActivityMuqadasPotionMonsterExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityMuqadasPotionMonsterExcelConfigDatum {
-    #[serde(rename = "describeId")]
     pub describe_id: i64,
-    pub pfkdmmjnpdd: f64,
-    pub eogmipflggf: Vec<i64>,
-    pub mjbcfoioecd: Vec<Mjbcfoioecd>,
+    pub scaling_ratio: f64,
+    pub special_point_index_list: Vec<i64>,
+    pub ball_config_list: Vec<BallConfigList>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Mjbcfoioecd {
-    pub pbhpmoghmek: Vec<f64>,
+pub struct BallConfigList {
+    pub position: Vec<f64>,
 }

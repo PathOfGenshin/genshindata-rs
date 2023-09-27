@@ -16,15 +16,14 @@ pub struct AnimalCodexExcelConfigDatum {
     pub describe_id: i64,
     #[serde(rename = "SortOrder")]
     pub sort_order: i64,
-    #[serde(rename = "MMKOJJEKKBD")]
-    pub mmkojjekkbd: Option<Mmkojjekkbd>,
+    pub count_type: Option<CountType>,
     pub desc_text_map_hash: i64,
     pub model_path: String,
     pub push_tips_codex_id: Option<i64>,
     pub sub_type: Option<SubType>,
     pub is_disuse: Option<bool>,
-    #[serde(rename = "EBCHGEGGNGE")]
-    pub ebchgeggnge: Option<f64>,
+    #[serde(rename = "LGCPHNKLBOE")]
+    pub lgcphnklboe: Option<f64>,
     pub is_seen_active: Option<bool>,
     pub show_only_unlocked: Option<bool>,
 }
@@ -38,7 +37,7 @@ pub enum Type {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mmkojjekkbd {
+pub enum CountType {
     #[serde(rename = "CODEX_COUNT_TYPE_CAPTURE")]
     CodexCountTypeCapture,
     #[serde(rename = "CODEX_COUNT_TYPE_FISH")]

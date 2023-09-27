@@ -7,11 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type InstableSprayDifficultyExcelConfigData = Vec<InstableSprayDifficultyExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InstableSprayDifficultyExcelConfigDatum {
-    pub iielfnjlddo: i64,
-    pub eaohhngldco: i64,
-    #[serde(rename = "scoreRatio")]
+    pub difficulty_level: i64,
+    pub difficulty_desc_text_map_hash: i64,
     pub score_ratio: i64,
-    pub nbpmhciffmp: i64,
+    pub initial_dungeon_level: i64,
 }

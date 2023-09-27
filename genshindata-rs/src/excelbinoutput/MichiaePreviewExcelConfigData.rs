@@ -8,25 +8,24 @@ use std::collections::HashMap;
 pub type MichiaePreviewExcelConfigData = Vec<MichiaePreviewExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MichiaePreviewExcelConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nllhilhhjpl: i64,
-    pub eciippbheoj: i64,
+    pub intro_title_text_map_hash: i64,
+    pub intro_content_text_map_hash: i64,
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
-    pub golhooaebgk: i64,
-    pub ljnhlimdehn: i64,
-    pub begjidjbman: i64,
-    pub pjpjiaehpdk: i64,
-    pub michiemnbcj: i64,
-    pub bjalkholpha: i64,
-    pub mchegnmkail: i64,
-    pub nnaondbiode: HashMap<String, i64>,
-    pub jjilhhpghhk: Vec<i64>,
+    pub boss_group_bundle_id: i64,
+    pub radar_search_radius: i64,
+    pub radar_remove_radius: i64,
+    pub all_radar_show_limit: i64,
+    pub pre_sub_quest_id: i64,
+    pub pre_activity_quest_id: i64,
+    pub activity_quest_id: i64,
+    pub pre_quest_id_map: HashMap<String, i64>,
+    pub pre_quest_id_list: Vec<i64>,
 }

@@ -9,6 +9,6 @@ pub type AudioBattleFervorWeatherConfigData = Vec<AudioBattleFervorWeatherConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AudioBattleFervorWeatherConfigDatum {
     pub id: i64,
-    #[serde(rename = "APMBBCAIFDN")]
-    pub apmbbcaifdn: i64,
+    #[serde(rename = "GJFCEMICLPJ")]
+    pub gjfcemiclpj: i64,
 }

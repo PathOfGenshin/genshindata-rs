@@ -7,23 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type ActivityTanukiTravelDataExcelConfigData = Vec<ActivityTanukiTravelDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityTanukiTravelDataExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    #[serde(rename = "guideQuestId")]
     pub guide_quest_id: i64,
-    #[serde(rename = "KHDDIMHBHKM")]
-    pub khddimhbhkm: Vec<i64>,
-    #[serde(rename = "rewardPreviewId")]
+    pub activity_open_list: Vec<i64>,
     pub reward_preview_id: i64,
-    #[serde(rename = "GMGNOCJNKJN")]
-    pub gmgnocjnkjn: i64,
-    #[serde(rename = "PGOCMBIAMPK")]
-    pub pgocmbiampk: i64,
-    #[serde(rename = "GODNNOJOHPO")]
-    pub godnnojohpo: Vec<i64>,
-    #[serde(rename = "pushTipsId")]
+    pub inazuma_quest_id: i64,
+    pub sakura_quest_id: i64,
+    pub pre_order_quest_id_list: Vec<i64>,
     pub push_tips_id: i64,
 }

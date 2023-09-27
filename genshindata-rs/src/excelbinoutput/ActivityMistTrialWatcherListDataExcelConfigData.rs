@@ -16,10 +16,8 @@ pub struct ActivityMistTrialWatcherListDataExcelConfigDatum {
     pub dungeon_show_content_type: DungeonShowContentType,
     pub show_param: Vec<String>,
     pub progress_format_text_map_hash: i64,
-    #[serde(rename = "HFBGPMPCAPN")]
-    pub hfbgpmpcapn: i64,
-    #[serde(rename = "NMOBCGHAIEL")]
-    pub nmobcghaiel: Option<bool>,
+    pub hint_format_text_map_hash: i64,
+    pub is_need_show_progress: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

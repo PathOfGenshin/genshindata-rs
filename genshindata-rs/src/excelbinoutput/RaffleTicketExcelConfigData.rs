@@ -13,8 +13,8 @@ pub struct RaffleTicketExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "rewardId")]
     pub reward_id: i64,
-    pub gbhdehphgjn: i64,
-    pub kgameghdmik: i64,
-    pub gcjmbmfccgk: Option<i64>,
-    pub igkgiannfab: Option<i64>,
+    pub joopobmpbba: i64,
+    pub nkfkinkpdmf: i64,
+    pub gbhanmendnc: Option<i64>,
+    pub enfhndndafm: Option<i64>,
 }

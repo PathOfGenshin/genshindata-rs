@@ -7,25 +7,25 @@ use serde::{Serialize, Deserialize};
 pub type CombatEndCleanExcelConfigData = Vec<CombatEndCleanExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CombatEndCleanExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub ccppcpkmmkp: String,
-    pub idppmicchai: Vec<Idppmicchai>,
-    pub kgoaffhifkk: Vec<Kgoaffhifkk>,
+    pub combat_end_type: String,
+    pub modifier_tags: Vec<ModifierTag>,
+    #[serde(rename = "GOONAEDEPOE")]
+    pub goonaedepoe: Vec<Goonaedepoe>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Idppmicchai {
-    Corruption,
-    None,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Kgoaffhifkk {
+pub enum Goonaedepoe {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "LevelEntity_ClearLocalGadgets")]
     LevelEntityClearLocalGadgets,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum ModifierTag {
+    Corruption,
+    None,
 }

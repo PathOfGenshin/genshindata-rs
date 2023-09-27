@@ -11,9 +11,9 @@ pub type QuestEventsConfigData = Vec<QuestEventsConfigDatum>;
 pub struct QuestEventsConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mbnnlfamhfb: Vec<i64>,
+    pub oklpmgkagoa: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub bhlccgkbbom: Option<f64>,
-    pub omnkhllnlad: i64,
+    pub dnbjeejeanf: Option<f64>,
+    pub pnlopmpbjfe: i64,
 }

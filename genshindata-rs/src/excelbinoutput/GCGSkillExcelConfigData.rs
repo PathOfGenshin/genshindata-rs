@@ -14,81 +14,54 @@ pub struct GcgSkillExcelConfigDatum {
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "HHHMJFBFAKD")]
-    pub hhhmjfbfakd: String,
-    #[serde(rename = "ECMKHGAKLKG")]
-    pub ecmkhgaklkg: String,
-    #[serde(rename = "FLMGNEKGPLG")]
-    pub flmgnekgplg: String,
-    #[serde(rename = "GCIHBPAOPAN")]
-    pub gcihbpaopan: Vec<Gcihbpaopan>,
-    #[serde(rename = "BHFFINOFADA")]
-    pub bhffinofada: Vec<Bhffinofada>,
-    #[serde(rename = "CJGDMKEFDHN")]
-    pub cjgdmkefdhn: Option<Cjgdmkefdhn>,
-    #[serde(rename = "EOPBDEHKBGD")]
-    pub eopbdehkbgd: Vec<i64>,
-    #[serde(rename = "LAFICGPFHOC")]
-    pub laficgpfhoc: Vec<i64>,
-    #[serde(rename = "DBDFFEOBDEP")]
-    pub dbdffeobdep: Option<f64>,
-    #[serde(rename = "DFJPBIKLOHJ")]
-    pub dfjpbiklohj: Option<i64>,
-    #[serde(rename = "LJHBINILLMN")]
-    pub ljhbinillmn: Option<i64>,
-    #[serde(rename = "JFKHBLDNCLG")]
-    pub jfkhbldnclg: Option<f64>,
-    #[serde(rename = "PLHNAAPMNEF")]
-    pub plhnaapmnef: Option<bool>,
-    #[serde(rename = "NCKAAIOMOMJ")]
-    pub nckaaiomomj: Option<Nckaaiomomj>,
+    #[serde(rename = "PMMNFCHEICF")]
+    pub pmmnfcheicf: String,
+    #[serde(rename = "GGPJMODHOFN")]
+    pub ggpjmodhofn: String,
+    #[serde(rename = "MKOIMDJEHEC")]
+    pub mkoimdjehec: String,
+    #[serde(rename = "BOOFIPIBFJH")]
+    pub boofipibfjh: Vec<Boofipibfjh>,
+    #[serde(rename = "CKKHHLMNAEP")]
+    pub ckkhhlmnaep: Vec<Ckkhhlmnaep>,
+    #[serde(rename = "OAJKHDNGCML")]
+    pub oajkhdngcml: Option<Oajkhdngcml>,
+    #[serde(rename = "KJAFFEDHEEK")]
+    pub kjaffedheek: Vec<i64>,
+    #[serde(rename = "FNNDOGJDJPN")]
+    pub fnndogjdjpn: Vec<i64>,
+    #[serde(rename = "LJNCJGABMEP")]
+    pub ljncjgabmep: Option<f64>,
+    #[serde(rename = "LOMOEPPFIDC")]
+    pub lomoeppfidc: Option<i64>,
+    #[serde(rename = "HLAHJLDEHMO")]
+    pub hlahjldehmo: Option<i64>,
+    #[serde(rename = "OKFIKKJKEOC")]
+    pub okfikkjkeoc: Option<f64>,
+    #[serde(rename = "CDDIDLMFPEG")]
+    pub cddidlmfpeg: Option<bool>,
+    #[serde(rename = "CENBLCALLDM")]
+    pub cenblcalldm: Option<Cenblcalldm>,
     #[serde(rename = "isHidden")]
     pub is_hidden: Option<bool>,
-    #[serde(rename = "DOEENMDENPL")]
-    pub doeenmdenpl: Option<bool>,
-    #[serde(rename = "BCANDJAFMMK")]
-    pub bcandjafmmk: Option<bool>,
-    #[serde(rename = "GDADPLPEPGM")]
-    pub gdadplpepgm: Option<bool>,
+    #[serde(rename = "EMJJPDFHGAD")]
+    pub emjjpdfhgad: Option<bool>,
+    #[serde(rename = "EPFFCGLDNAO")]
+    pub epffcgldnao: Option<bool>,
+    #[serde(rename = "CJKKKPIGGOF")]
+    pub cjkkkpiggof: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bhffinofada {
-    #[serde(rename = "GCG_SKILL_TAG_A")]
-    GcgSkillTagA,
-    #[serde(rename = "GCG_SKILL_TAG_E")]
-    GcgSkillTagE,
-    #[serde(rename = "GCG_SKILL_TAG_NONE")]
-    GcgSkillTagNone,
-    #[serde(rename = "GCG_SKILL_TAG_PASSIVE")]
-    GcgSkillTagPassive,
-    #[serde(rename = "GCG_SKILL_TAG_Q")]
-    GcgSkillTagQ,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Cjgdmkefdhn {
-    #[serde(rename = "OnBannerShow")]
-    OnBannerShow,
-    #[serde(rename = "OnBehaviorStart")]
-    OnBehaviorStart,
-    #[serde(rename = "OnCostReviseReceived")]
-    OnCostReviseReceived,
-    #[serde(rename = "OnHitLanded")]
-    OnHitLanded,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Gcihbpaopan {
-    #[serde(rename = "NNPOIFOHFNM")]
-    pub nnpoifohfnm: Option<Nnpoifohfnm>,
+pub struct Boofipibfjh {
+    #[serde(rename = "OECLFAFNMMA")]
+    pub oeclfafnmma: Option<Oeclfafnmma>,
     pub count: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Nnpoifohfnm {
+pub enum Oeclfafnmma {
     #[serde(rename = "GCG_COST_DICE_ANEMO")]
     GcgCostDiceAnemo,
     #[serde(rename = "GCG_COST_DICE_CRYO")]
@@ -112,7 +85,36 @@ pub enum Nnpoifohfnm {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Nckaaiomomj {
+pub enum Cenblcalldm {
     #[serde(rename = "Self")]
-    NckaaiomomjSelf,
+    CenblcalldmSelf,
+    #[serde(rename = "FirstPreviewTarget")]
+    FirstPreviewTarget,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Ckkhhlmnaep {
+    #[serde(rename = "GCG_SKILL_TAG_A")]
+    GcgSkillTagA,
+    #[serde(rename = "GCG_SKILL_TAG_E")]
+    GcgSkillTagE,
+    #[serde(rename = "GCG_SKILL_TAG_NONE")]
+    GcgSkillTagNone,
+    #[serde(rename = "GCG_SKILL_TAG_PASSIVE")]
+    GcgSkillTagPassive,
+    #[serde(rename = "GCG_SKILL_TAG_Q")]
+    GcgSkillTagQ,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Oajkhdngcml {
+    #[serde(rename = "OnBannerShow")]
+    OnBannerShow,
+    #[serde(rename = "OnBehaviorStart")]
+    OnBehaviorStart,
+    #[serde(rename = "OnCostReviseReceived")]
+    OnCostReviseReceived,
+    #[serde(rename = "OnHitLanded")]
+    OnHitLanded,
 }

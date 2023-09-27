@@ -36,12 +36,10 @@ pub struct MpPlayGroupExcelConfigDatum {
     pub safe_config_id: Option<i64>,
     pub general_reward_config_id: Option<i64>,
     pub client_show_type: Option<String>,
-    #[serde(rename = "FNAHCDIGLEI")]
-    pub fnahcdiglei: Option<bool>,
+    pub is_disabled: Option<bool>,
     pub material_cost_id: Option<i64>,
     pub material_cost_num: Option<i64>,
-    #[serde(rename = "BDDNAMCOLKN")]
-    pub bddnamcolkn: Option<bool>,
+    pub is_direct_to_bag: Option<bool>,
     pub single_prepare_time: Option<i64>,
 }
 

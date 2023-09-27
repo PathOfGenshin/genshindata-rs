@@ -8,28 +8,23 @@ use std::collections::HashMap;
 pub type IrodoriChessMapExcelConfigData = Vec<IrodoriChessMapExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriChessMapExcelConfigDatum {
-    pub ajjpaiijkgd: i64,
-    #[serde(rename = "dungeonId")]
+    pub map_id: i64,
     pub dungeon_id: i64,
-    pub fjkpfcmadaf: i64,
-    #[serde(rename = "show")]
+    pub entry_point_id: i64,
     pub show: bool,
-    pub gcgoagmphbc: Vec<i64>,
-    pub ajcalcfhjmd: i64,
-    pub cfmdjpdcald: HashMap<String, i64>,
-    pub bakfoojjbhg: Vec<i64>,
-    pub oojchckpmjg: Vec<i64>,
-    pub aoaiefnmbco: Vec<i64>,
-    pub pkaipnhghcd: Vec<i64>,
-    pub opieganedna: i64,
-    #[serde(rename = "mapNameTextMapHash")]
+    pub card_pool: Vec<i64>,
+    pub total_card_points: i64,
+    pub single_gear_limits: HashMap<String, i64>,
+    pub entrance_point_list: Vec<i64>,
+    pub exit_point_list: Vec<i64>,
+    pub disorder_list: Vec<i64>,
+    pub entry_page_disorder_list: Vec<i64>,
+    pub init_building_points: i64,
     pub map_name_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
-    pub dhekaeaebgi: HashMap<String, i64>,
-    pub kfhdeaebmjg: Option<i64>,
+    pub preset_gear_map: HashMap<String, i64>,
+    pub difficulty: Option<i64>,
 }

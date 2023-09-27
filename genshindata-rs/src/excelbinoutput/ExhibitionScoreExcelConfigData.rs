@@ -10,13 +10,12 @@ pub type ExhibitionScoreExcelConfigData = Vec<ExhibitionScoreExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct ExhibitionScoreExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NFHPNIDEIPC")]
-    pub nfhpnideipc: i64,
+    #[serde(rename = "seriesID")]
+    pub series_id: i64,
     pub score_type: ScoreType,
     pub score: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "ACIOLPEEJKK")]
-    pub aciolpeejkk: Option<bool>,
+    pub show_out: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -11,6 +11,6 @@ pub type UgcTriggerActionExcelConfigData = Vec<UgcTriggerActionExcelConfigDatum>
 pub struct UgcTriggerActionExcelConfigDatum {
     pub id: i64,
     pub action_type: String,
-    #[serde(rename = "ONFOFBOEAOP")]
-    pub onfofboeaop: i64,
+    #[serde(rename = "KFKBNMNDOMJ")]
+    pub kfkbnmndomj: i64,
 }

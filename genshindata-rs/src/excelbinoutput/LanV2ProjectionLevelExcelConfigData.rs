@@ -7,46 +7,41 @@ use serde::{Serialize, Deserialize};
 pub type LanV2ProjectionLevelExcelConfigData = Vec<LanV2ProjectionLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2ProjectionLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "watcherId")]
     pub watcher_id: i64,
-    #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
-    pub bobfheonbec: String,
-    pub ikokgbfjccm: String,
-    pub bplgkiddjjd: Option<f64>,
-    pub cdafmpedcio: f64,
-    pub comcmefeplp: f64,
-    pub nkkgnfobedf: i64,
-    pub emnfdpnfkdm: Vec<f64>,
-    pub foccfjcpjnn: Vec<f64>,
-    pub fgiklaacini: Vec<Option<serde_json::Value>>,
-    pub hjigahhbjoo: Vec<i64>,
-    pub lmlpifaikoa: Vec<i64>,
-    pub ammebdhaicp: Vec<Vec<i64>>,
-    pub jpaogipnhnd: Vec<Jpaogipnhnd>,
-    pub nekhibipbac: Option<i64>,
-    pub nopgcbmdlhf: Option<String>,
-    pub chcicoilhnk: Option<i64>,
+    pub icon_silhouette: String,
+    pub icon_normal: String,
+    pub end_dialog_icon_offset_x: Option<f64>,
+    pub end_dialog_icon_offset_y: f64,
+    pub end_dialog_icon_scale: f64,
+    pub scene_suite_id: i64,
+    pub root_point_correct_pose: Vec<f64>,
+    pub root_point_initial_pose: Vec<f64>,
+    pub root_point_free_rotation_tolerance: Vec<Option<serde_json::Value>>,
+    pub root_point_single_axis_rotation_axis: Vec<i64>,
+    pub root_point_single_axis_rotation_limit: Vec<i64>,
+    pub hierarchy: Vec<Vec<i64>>,
+    pub element_configs: Vec<ElementConfig>,
+    pub root_point_switch_button_config_id: Option<i64>,
+    pub root_point_motion_type: Option<String>,
+    pub root_point_single_axis_rotation_tolerance: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Jpaogipnhnd {
-    #[serde(rename = "prefabPath")]
+#[serde(rename_all = "camelCase")]
+pub struct ElementConfig {
     pub prefab_path: String,
-    pub ilabgifkdda: String,
-    pub ndioncoponc: Vec<f64>,
-    pub pnklopgkjgf: Vec<f64>,
-    pub enidlfclihf: Vec<i64>,
-    pub amdehlohnpp: Vec<f64>,
-    pub iphpgfeanki: Vec<f64>,
-    pub gakhooppgcj: Option<i64>,
-    pub edidohgkbid: Option<String>,
-    pub bcliafdimlf: Option<f64>,
+    pub shadow_prefab_path: String,
+    pub correct_pose: Vec<f64>,
+    pub initial_pose: Vec<f64>,
+    pub free_rotation_tolerance: Vec<i64>,
+    pub single_axis_motion_axis: Vec<f64>,
+    pub single_axis_motion_limit: Vec<f64>,
+    pub switch_button_config_id: Option<i64>,
+    pub motion_type: Option<String>,
+    pub single_axis_motion_tolerance: Option<f64>,
 }

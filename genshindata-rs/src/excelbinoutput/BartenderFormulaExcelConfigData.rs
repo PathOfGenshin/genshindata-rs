@@ -7,31 +7,32 @@ use serde::{Serialize, Deserialize};
 pub type BartenderFormulaExcelConfigData = Vec<BartenderFormulaExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderFormulaExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub lbjhmmamcoh: Vec<Cflopncegni>,
-    pub cflopncegni: Vec<Cflopncegni>,
-    pub fpkaaeechla: Vec<i64>,
-    #[serde(rename = "descTextMapHash")]
+    #[serde(rename = "BaseMaterial")]
+    pub base_material: Vec<Material>,
+    #[serde(rename = "ExtraMaterial")]
+    pub extra_material: Vec<Material>,
+    #[serde(rename = "AvailableAffixList")]
+    pub available_affix_list: Vec<i64>,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub kjmdnpfihgc: Option<i64>,
-    pub lpphpgajocl: Option<i64>,
-    pub imcjbladaka: i64,
-    pub gmodnnlaolf: Option<Gmodnnlaolf>,
+    #[serde(rename = "type")]
+    pub bartender_formula_excel_config_datum_type: Option<i64>,
+    pub lock_type: Option<i64>,
+    pub blurred_desc_text_map_hash: i64,
+    pub mixing_state: Option<MixingState>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Cflopncegni {
+pub struct Material {
     pub id: Option<i64>,
     pub count: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Gmodnnlaolf {
+pub enum MixingState {
     #[serde(rename = "HEAVY")]
     Heavy,
     #[serde(rename = "MIDDLE")]

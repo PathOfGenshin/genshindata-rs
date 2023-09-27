@@ -9,14 +9,13 @@ pub type FishProficientExcelConfigData = Vec<FishProficientExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct FishProficientExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "MBCCKAODCDE")]
-    pub mbcckaodcde: Vec<Mbcckaodcde>,
+    pub gear: Vec<Gear>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Mbcckaodcde {
-    pub oimeinfcabn: i64,
-    pub nbihojfgadf: i64,
-    pub omjdmoflgja: i64,
+#[serde(rename_all = "camelCase")]
+pub struct Gear {
+    pub num: i64,
+    pub in_speed: i64,
+    pub out_speed: i64,
 }

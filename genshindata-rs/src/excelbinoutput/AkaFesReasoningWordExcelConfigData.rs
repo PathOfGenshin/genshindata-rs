@@ -7,13 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type AkaFesReasoningWordExcelConfigData = Vec<AkaFesReasoningWordExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AkaFesReasoningWordExcelConfigDatum {
-    pub bbeigemamlb: i64,
-    #[serde(rename = "levelId")]
+    pub word_id: i64,
     pub level_id: i64,
-    pub jhdmnifapdp: Option<bool>,
-    #[serde(rename = "sortId")]
+    #[serde(rename = "CLLJANLEDPM")]
+    pub clljanledpm: Option<bool>,
     pub sort_id: i64,
-    pub llalmpldcag: i64,
+    #[serde(rename = "EOKCGAFLJDC")]
+    pub eokcgafljdc: i64,
 }

@@ -11,6 +11,6 @@ pub type UgcAvatarExcelConfigData = Vec<UgcAvatarExcelConfigDatum>;
 pub struct UgcAvatarExcelConfigDatum {
     pub avatar_id: i64,
     pub trial_avatar_id: i64,
-    #[serde(rename = "OMCGAFOOOKO")]
-    pub omcgafoooko: f64,
+    #[serde(rename = "MHBEHLMPEEH")]
+    pub mhbehlmpeeh: f64,
 }

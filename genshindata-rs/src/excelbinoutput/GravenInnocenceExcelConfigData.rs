@@ -7,20 +7,23 @@ use serde::{Serialize, Deserialize};
 pub type GravenInnocenceExcelConfigData = Vec<GravenInnocenceExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GravenInnocenceExcelConfigDatum {
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub fghaplngplk: i64,
-    pub jbbjkeddfbc: i64,
-    pub calalhhohfi: i64,
-    pub ppnmolicnnp: i64,
-    pub hcblhnpinjp: i64,
-    pub lfdefdelkgd: i64,
-    pub ghnadbkheej: i64,
-    pub clfmikflhii: i64,
-    pub fhooadhjhng: i64,
-    pub dgmhaefkhep: Vec<i64>,
-    pub kcgmpndmekm: i64,
-    pub hhfjogmbehi: i64,
+    pub story_main_quest_id: i64,
+    pub story_open_day: i64,
+    pub item_id_avatar_card: i64,
+    #[serde(rename = "campTutorialID")]
+    pub camp_tutorial_id: i64,
+    #[serde(rename = "bossTutorialID")]
+    pub boss_tutorial_id: i64,
+    #[serde(rename = "raceTutorialID")]
+    pub race_tutorial_id: i64,
+    #[serde(rename = "photographTutorialID")]
+    pub photograph_tutorial_id: i64,
+    pub photo_succ_reminder_id: i64,
+    pub photo_fail_reminder_id: i64,
+    pub activity_coin_list: Vec<i64>,
+    pub specific_tips_level_source: i64,
+    pub specific_tips_quest_name_source: i64,
 }

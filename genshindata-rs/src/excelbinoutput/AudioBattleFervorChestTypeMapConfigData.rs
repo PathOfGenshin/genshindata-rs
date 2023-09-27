@@ -9,12 +9,12 @@ pub type AudioBattleFervorChestTypeMapConfigData = Vec<AudioBattleFervorChestTyp
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AudioBattleFervorChestTypeMapConfigDatum {
-    pub gfjbfoaomlo: i64,
-    pub ehfibmmngok: Option<Ehfibmmngok>,
+    pub pmncigfpgne: i64,
+    pub jjingdknkal: Option<Jjingdknkal>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ehfibmmngok {
+pub enum Jjingdknkal {
     Hi,
     Mid,
     Top,

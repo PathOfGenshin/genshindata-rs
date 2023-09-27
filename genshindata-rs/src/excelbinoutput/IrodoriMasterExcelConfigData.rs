@@ -7,29 +7,33 @@ use serde::{Serialize, Deserialize};
 pub type IrodoriMasterExcelConfigData = Vec<IrodoriMasterExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriMasterExcelConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
     #[serde(rename = "levelID")]
     pub level_id: i64,
-    pub amidlbbfihh: Amidlbbfihh,
-    pub ldiadlienfh: i64,
-    #[serde(rename = "watcherList")]
+    pub level_type: LevelType,
+    pub unlock_day: i64,
     pub watcher_list: Vec<i64>,
-    pub megjppdhaeh: i64,
-    pub plgoipgmbci: i64,
+    #[serde(rename = "sliverChallengeID")]
+    pub sliver_challenge_id: i64,
+    #[serde(rename = "goldChallengeID")]
+    pub gold_challenge_id: i64,
     #[serde(rename = "condID")]
     pub cond_id: i64,
-    pub gegjjibkigl: i64,
-    pub jeadjlieaen: i64,
-    pub kafdhmmiebj: i64,
-    pub emodlhglmkg: i64,
-    pub lacaabdbkfk: Option<i64>,
+    #[serde(rename = "guideCondID")]
+    pub guide_cond_id: i64,
+    #[serde(rename = "guideQuestID")]
+    pub guide_quest_id: i64,
+    pub battle_desc_text_map_hash: i64,
+    pub battle_name_text_map_hash: i64,
+    pub gold_challenge_time: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Amidlbbfihh {
+pub enum LevelType {
     #[serde(rename = "IRODORI_MASTER_LEVEL_HARD")]
     IrodoriMasterLevelHard,
     #[serde(rename = "IRODORI_MASTER_LEVEL_MASTER")]

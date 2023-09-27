@@ -11,12 +11,9 @@ pub type InstableSprayStageExcelConfigData = Vec<InstableSprayStageExcelConfigDa
 pub struct InstableSprayStageExcelConfigDatum {
     pub stage_id: i64,
     pub open_day: i64,
-    #[serde(rename = "KLPBPLKEDKM")]
-    pub klpbplkedkm: i64,
-    #[serde(rename = "DPNDLLOMALE")]
-    pub dpndllomale: i64,
+    pub stage_title_text_map_hash: i64,
+    pub stage_desc_text_map_hash: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "GIKGNBLPBCM")]
-    pub gikgnblpbcm: Vec<i64>,
+    pub level_id_list: Vec<i64>,
     pub watcher_list: Vec<i64>,
 }

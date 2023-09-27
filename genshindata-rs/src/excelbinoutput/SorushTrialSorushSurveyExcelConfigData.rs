@@ -9,8 +9,8 @@ pub type SorushTrialSorushSurveyExcelConfigData = Vec<SorushTrialSorushSurveyExc
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct SorushTrialSorushSurveyExcelConfigDatum {
-    pub pnpiocojhon: i64,
+    pub lefnegigpld: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nlgfanbkjig: String,
+    pub gicpkignjjg: String,
 }

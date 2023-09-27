@@ -7,14 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type BartenderTaskOrderExcelConfigData = Vec<BartenderTaskOrderExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderTaskOrderExcelConfigDatum {
-    #[serde(rename = "questId")]
     pub quest_id: i64,
-    pub kkklpldfcfd: Vec<i64>,
-    pub jhgboihmhgb: i64,
-    pub oifeakncgae: i64,
-    pub hebcdfdaidi: i64,
-    pub mjnkhojabde: Option<i64>,
-    pub jkpfjolhmli: Option<bool>,
+    pub order_id: Vec<i64>,
+    pub content_param: i64,
+    pub dialog_id_succ: i64,
+    pub dialog_id_fail: i64,
+    pub next_quest_id: Option<i64>,
+    pub is_guide_quest: Option<bool>,
 }

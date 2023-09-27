@@ -11,16 +11,37 @@ pub type MatchingTextDataExcelConfigData = Vec<MatchingTextDataExcelConfigDatum>
 pub struct MatchingTextDataExcelConfigDatum {
     pub match_id: i64,
     pub match_icon_hash: f64,
-    pub match_btn_name: String,
-    pub match_btn_tips: String,
+    pub match_btn_name: MatchBtnName,
+    pub match_btn_tips: MatchBtnTips,
     pub requirement_desc_text_map_hash: i64,
     pub match_limit_reason_desc_text_map_hash: i64,
     pub limit_warning_desc_text_map_hash: i64,
     pub invite_guest_desc_text_map_hash: i64,
     pub invite_host_desc_text_map_hash: i64,
-    pub match_start_desc: String,
+    pub match_start_desc: MatchStartDesc,
     pub match_title_text_map_hash: i64,
     pub match_success_desc_text_map_hash: i64,
-    #[serde(rename = "GIJNIHADLHK")]
-    pub gijnihadlhk: i64,
+    #[serde(rename = "HNDHEGAADKJ")]
+    pub hndhegaadkj: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum MatchBtnName {
+    #[serde(rename = "UI_ONLINE_MATCH_BUTTON_SINGLE")]
+    UiOnlineMatchButtonSingle,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum MatchBtnTips {
+    #[serde(rename = "UI_ONLINE_AUTOMATCH_SINGLE")]
+    UiOnlineAutomatchSingle,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum MatchStartDesc {
+    #[serde(rename = "UI_ONLINE_MATCH_TIP")]
+    UiOnlineMatchTip,
 }

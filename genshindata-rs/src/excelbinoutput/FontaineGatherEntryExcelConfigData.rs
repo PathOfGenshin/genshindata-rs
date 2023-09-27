@@ -11,25 +11,27 @@ pub type FontaineGatherEntryExcelConfigData = Vec<FontaineGatherEntryExcelConfig
 pub struct FontaineGatherEntryExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub baeoibgnbbj: i64,
-    pub adpjeimhnnl: Adpjeimhnnl,
-    pub bnmajgobdbk: Vec<i64>,
-    pub fkaedmejemg: i64,
-    pub bongjcckdcg: i64,
-    pub fifobeooedi: Option<f64>,
-    pub gogjgphljih: Option<f64>,
+    #[serde(rename = "indexID")]
+    pub index_id: i64,
+    pub jfoalpkgeig: Jfoalpkgeig,
+    pub icbblakfmog: Vec<i64>,
+    pub ocdddffohmp: i64,
+    pub aplnnkmamln: i64,
+    pub dhjcphfkcni: Option<f64>,
+    pub dhpoepkmmao: Option<f64>,
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
-    pub oaphojddjob: Option<i64>,
-    pub gkjabiohclm: Option<i64>,
-    pub eeocajlgmjg: Option<i64>,
-    pub cijapecdibm: Option<i64>,
-    pub haebgdobknb: Option<bool>,
+    #[serde(rename = "groupBundleID")]
+    pub group_bundle_id: Option<i64>,
+    pub bjogcgehpln: Option<i64>,
+    pub mfijjhnimco: Option<i64>,
+    pub amlcbecbokm: Option<i64>,
+    pub amofpofaadk: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Adpjeimhnnl {
+pub enum Jfoalpkgeig {
     #[serde(rename = "FONTAINE_ADVENTURE_TYPE_BOSS")]
     FontaineAdventureTypeBoss,
     #[serde(rename = "FONTAINE_ADVENTURE_TYPE_GATHER")]

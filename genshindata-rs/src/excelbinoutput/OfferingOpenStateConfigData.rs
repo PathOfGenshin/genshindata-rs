@@ -7,19 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type OfferingOpenStateConfigData = Vec<OfferingOpenStateConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct OfferingOpenStateConfigDatum {
-    #[serde(rename = "offeringId")]
     pub offering_id: i64,
-    #[serde(rename = "openState")]
     pub open_state: String,
-    #[serde(rename = "itemLimit")]
     pub item_limit: String,
-    pub jglhihannof: String,
-    pub jjmboeehjfp: Option<bool>,
-    pub enmpmpjodco: Option<bool>,
-    #[serde(rename = "activityId")]
+    pub max_level_limit_type: String,
+    pub is_continuous_level_up: Option<bool>,
+    pub is_allow_host_in_mp_mode: Option<bool>,
     pub activity_id: Option<i64>,
-    pub nomighopijm: Option<i64>,
-    pub dhampammfkk: Option<i64>,
+    #[serde(rename = "DCDBNIINDOI")]
+    pub dcdbniindoi: Option<i64>,
+    #[serde(rename = "scenePointID")]
+    pub scene_point_id: Option<i64>,
 }

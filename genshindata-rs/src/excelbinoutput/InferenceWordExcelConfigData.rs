@@ -7,27 +7,28 @@ use serde::{Serialize, Deserialize};
 pub type InferenceWordExcelConfigData = Vec<InferenceWordExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InferenceWordExcelConfigDatum {
-    pub bbeigemamlb: i64,
-    pub kfigniogmfh: i64,
-    pub pdgjhnopejl: Option<bool>,
-    pub afpfgdclnaj: Option<bool>,
-    pub ipdbnmeeiec: Vec<Ddpbdfeeakd>,
-    pub mcfpncinlih: Option<bool>,
-    pub eodhompnkbb: Option<i64>,
-    pub ddpbdfeeakd: Vec<Ddpbdfeeakd>,
-    pub ikdokfoidlp: i64,
-    pub kkehglclagn: Option<i64>,
-    pub cfgcdlodddj: Option<i64>,
-    pub bnjgdobmgab: Option<i64>,
-    pub kpjnmpdbefb: Option<bool>,
+    pub word_id: i64,
+    pub page_id: i64,
+    pub default_unlock: Option<bool>,
+    pub is_can_interpret: Option<bool>,
+    pub interpret_action: Vec<Action>,
+    pub is_can_associate: Option<bool>,
+    pub associate_word_id: Option<i64>,
+    pub associate_action: Vec<Action>,
+    pub word_name_text_map_hash: i64,
+    pub interpret_dialog_id: Option<i64>,
+    pub associate_error_dialog_id: Option<i64>,
+    pub freestyle_id: Option<i64>,
+    #[serde(rename = "IBKHBIIMHFK")]
+    pub ibkhbiimhfk: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Ddpbdfeeakd {
+pub struct Action {
     #[serde(rename = "type")]
-    pub ddpbdfeeakd_type: Option<Type>,
+    pub action_type: Option<Type>,
     pub param: String,
 }
 

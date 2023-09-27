@@ -7,33 +7,37 @@ use serde::{Serialize, Deserialize};
 pub type CustomLevelComponentConfigData = Vec<CustomLevelComponentConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomLevelComponentConfigDatum {
-    pub ankmllnkfkf: i64,
+    #[serde(rename = "componentID")]
+    pub component_id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub febelgfkhfh: i64,
-    pub ehjblihonci: i64,
-    pub nfdgfgoimmc: Option<f64>,
-    pub bhckkjkaonh: String,
-    pub hakmbnjkiid: i64,
-    pub ehhmeeoncpp: i64,
-    pub pphjcghafgb: i64,
-    pub bpbggpcdked: Option<Bpbggpcdked>,
-    pub fbpjkmdpdca: Option<i64>,
-    pub njoedhkffej: Option<bool>,
-    pub kmdcgcfmldj: Option<String>,
-    pub iglmopnnjip: i64,
-    pub kpjaponfiga: i64,
-    pub okfeappljjc: i64,
-    pub jjkflagognm: Option<i64>,
-    pub iefnpknhnjf: Option<bool>,
-    pub khdnjnjdmec: Option<i64>,
+    pub component_name_text_map_hash: i64,
+    pub tag_desc_text_map_hash: i64,
+    pub component_icon_hash: Option<f64>,
+    pub brick_name: String,
+    #[serde(rename = "deployGadgetID")]
+    pub deploy_gadget_id: i64,
+    #[serde(rename = "serverGadgetID")]
+    pub server_gadget_id: i64,
+    pub config_level: i64,
+    pub rotate_type: Option<RotateType>,
+    pub max_deploy_count: Option<i64>,
+    pub is_visable: Option<bool>,
+    pub brick_type: Option<String>,
+    pub component_desc_text_map_hash: i64,
+    pub component_size_text_map_hash: i64,
+    pub component_deploy_text_map_hash: i64,
+    pub component_cost: Option<i64>,
+    pub can_copy: Option<bool>,
+    #[serde(rename = "HGLFMGMGKPD")]
+    pub hglfmgmgkpd: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bpbggpcdked {
+pub enum RotateType {
     #[serde(rename = "BRICK_ROTATE_45")]
     BrickRotate45,
     #[serde(rename = "BRICK_ROTATE_90")]

@@ -7,19 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type RoguelikeShikigamiExcelConfigData = Vec<RoguelikeShikigamiExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RoguelikeShikigamiExcelConfigDatum {
-    pub cijppkbbnha: i64,
-    #[serde(rename = "groupId")]
+    pub sequence_id: i64,
     pub group_id: i64,
-    #[serde(rename = "unlockCond")]
     pub unlock_cond: Vec<UnlockCond>,
-    pub elhdnelaokl: i64,
-    pub eehpbbediek: i64,
-    #[serde(rename = "level")]
+    pub shiki_skill_name_text_map_hash: i64,
+    pub shiki_skill_desc_text_map_hash: i64,
     pub level: Option<i64>,
-    pub bcglceofbmc: Option<i64>,
-    pub cdjbhdkopbk: Option<i64>,
+    pub cost_item_id: Option<i64>,
+    pub cost_item_count: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

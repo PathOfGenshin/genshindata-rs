@@ -7,14 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type SalvageStageDataExcelConfigData = Vec<SalvageStageDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct SalvageStageDataExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub flhmbapfnmd: i64,
-    pub mmhomcfkmki: i64,
-    pub ffimcbagbhf: Vec<i64>,
-    pub plpkfnooign: Vec<i64>,
-    pub obihafdicai: Vec<Option<serde_json::Value>>,
-    pub eagapioncca: Vec<i64>,
+    pub start_day: i64,
+    pub unlock_cond_id: i64,
+    pub land_group_link_list: Vec<i64>,
+    pub sea_group_link_list: Vec<i64>,
+    pub unlock_challenge_group_link_list: Vec<Option<serde_json::Value>>,
+    pub salvage_challenge_id_list: Vec<i64>,
 }

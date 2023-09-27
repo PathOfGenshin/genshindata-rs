@@ -3,6 +3,20 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type ActivityDuelHeartTaskExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ActivityDuelHeartTaskExcelConfigData = Vec<ActivityDuelHeartTaskExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ActivityDuelHeartTaskExcelConfigDatum {
+    pub id: i64,
+    pub quest_id: i64,
+    pub unlock_day: i64,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
+    #[serde(rename = "LJJDJMAJBIH")]
+    pub ljjdjmajbih: i64,
+    pub unlock_cond_id: i64,
+    #[serde(rename = "NFCNFAJIGJF")]
+    pub nfcnfajigjf: Option<i64>,
+}

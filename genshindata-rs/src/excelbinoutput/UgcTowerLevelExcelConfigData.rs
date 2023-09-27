@@ -13,12 +13,12 @@ pub struct UgcTowerLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
-    pub njkfcdpemjd: i64,
+    pub ocneiinjhnh: i64,
     #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
     #[serde(rename = "level")]
     pub level: Option<i64>,
-    pub pfpninmngmg: Option<i64>,
-    pub hcddnkplaae: Option<i64>,
-    pub plmheinabpd: Option<i64>,
+    pub ncnhoahooln: Option<i64>,
+    pub godpmhannng: Option<i64>,
+    pub nbeedbgkbhp: Option<i64>,
 }

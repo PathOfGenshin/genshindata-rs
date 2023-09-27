@@ -11,6 +11,6 @@ pub type GcgTutorialTextExcelConfigData = Vec<GcgTutorialTextExcelConfigDatum>;
 pub struct GcgTutorialTextExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub gkgoffhlmbj: i64,
-    pub ljhbinillmn: Option<i64>,
+    pub hknhngaogml: i64,
+    pub hlahjldehmo: Option<i64>,
 }

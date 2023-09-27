@@ -20,12 +20,11 @@ pub struct PushTipsConfigDatum {
     pub codex_type: Option<CodexType>,
     pub show_immediately: Option<bool>,
     pub group_id: Option<i64>,
-    #[serde(rename = "PJPKJDPBOAD")]
-    pub pjpkjdpboad: Option<bool>,
-    #[serde(rename = "ONPGHBLONNA")]
-    pub onpghblonna: Option<bool>,
-    #[serde(rename = "KFPKAGFLJDN")]
-    pub kfpkagfljdn: Option<bool>,
+    pub disable_show_g: Option<bool>,
+    #[serde(rename = "HAPDCAOCHKD")]
+    pub hapdcaochkd: Option<bool>,
+    #[serde(rename = "AKNHOLDPCME")]
+    pub aknholdpcme: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

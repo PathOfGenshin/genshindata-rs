@@ -7,18 +7,18 @@ use serde::{Serialize, Deserialize};
 pub type PhotographCheckAnimatorDataData = Vec<PhotographCheckAnimatorDataDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct PhotographCheckAnimatorDataDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub faiiagijegn: i64,
-    pub aljhbhbkihc: Vec<String>,
-    pub mjmgdjldmha: Vec<Mjmgdjldmha>,
+    #[serde(rename = "entityConfigID")]
+    pub entity_config_id: i64,
+    pub animator_list: Vec<String>,
+    pub animator_tag_list: Vec<AnimatorTagList>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mjmgdjldmha {
+pub enum AnimatorTagList {
     #[serde(rename = "AVATAR_JUMP")]
     AvatarJump,
     #[serde(rename = "AVATAR_RUN")]

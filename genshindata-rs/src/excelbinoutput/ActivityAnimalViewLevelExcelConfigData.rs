@@ -7,22 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type ActivityAnimalViewLevelExcelConfigData = Vec<ActivityAnimalViewLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityAnimalViewLevelExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub eapafipgiha: Vec<i64>,
-    pub migfkpgidpm: i64,
-    pub cfelapchmek: i64,
-    pub lifflgdkekm: i64,
-    pub fdbpcnioggi: i64,
-    #[serde(rename = "openDay")]
+    #[serde(rename = "ENLDHMLALCJ")]
+    pub enldhmlalcj: Vec<i64>,
+    #[serde(rename = "JCIOCCDKGGA")]
+    pub jcioccdkgga: i64,
+    pub group_link_id: i64,
+    #[serde(rename = "GHDIHDLKBIC")]
+    pub ghdihdlkbic: i64,
+    #[serde(rename = "OHEBHPGMGLF")]
+    pub ohebhpgmglf: i64,
     pub open_day: i64,
-    #[serde(rename = "watcherId")]
     pub watcher_id: i64,
-    #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub ggoogblflgh: i64,
+    #[serde(rename = "GNPKAFKOGLG")]
+    pub gnpkafkoglg: i64,
 }

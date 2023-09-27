@@ -7,16 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type ActivityCrystalLinkEffectBuffExcelConfigData = Vec<ActivityCrystalLinkEffectBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityCrystalLinkEffectBuffExcelConfigDatum {
-    #[serde(rename = "buffId")]
     pub buff_id: i64,
-    pub behhcchceho: String,
-    #[serde(rename = "abilityName")]
+    pub ability_group_name: String,
     pub ability_name: String,
-    pub cmgohkdnafa: String,
-    pub befgkdjhfgp: i64,
-    pub fllogobfcgc: i64,
-    pub mmddpggccec: f64,
-    pub kknnhfkfnom: Vec<String>,
+    #[serde(rename = "AHICAHBDPJK")]
+    pub ahicahbdpjk: String,
+    #[serde(rename = "AbilityTitleTextMapHash")]
+    pub ability_title_text_map_hash: i64,
+    #[serde(rename = "AbilityDescTextMapHash")]
+    pub ability_desc_text_map_hash: i64,
+    pub icon_name_hash: f64,
+    pub des_param: Vec<String>,
 }

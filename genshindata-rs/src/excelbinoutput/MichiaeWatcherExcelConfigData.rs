@@ -7,9 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type MichiaeWatcherExcelConfigData = Vec<MichiaeWatcherExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MichiaeWatcherExcelConfigDatum {
-    #[serde(rename = "watcherId")]
     pub watcher_id: i64,
-    pub mmddpggccec: f64,
+    pub icon_name_hash: f64,
 }

@@ -11,8 +11,8 @@ pub type GcgDeckStorageExcelConfigData = Vec<GcgDeckStorageExcelConfigDatum>;
 pub struct GcgDeckStorageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub dnoennadfio: i64,
+    pub adoaffbkehm: i64,
     #[serde(rename = "unlockCond")]
     pub unlock_cond: Option<String>,
-    pub fbpfedbpmpd: Option<i64>,
+    pub cbkkabadbbk: Option<i64>,
 }

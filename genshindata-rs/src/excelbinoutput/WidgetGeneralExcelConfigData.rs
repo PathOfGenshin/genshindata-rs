@@ -12,31 +12,28 @@ pub struct WidgetGeneralExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
     pub can_use_in_other_world: Option<bool>,
-    #[serde(rename = "OGCEDFFBPIB")]
-    pub ogcedffbpib: Vec<i64>,
-    #[serde(rename = "KBONJJAJPBK")]
-    pub kbonjjajpbk: Option<bool>,
-    pub forbidden_dungeon_list: Vec<i64>,
-    #[serde(rename = "PDBNDPJECOE")]
-    pub pdbndpjecoe: Vec<i64>,
-    #[serde(rename = "NEEGNOBDFPI")]
-    pub neegnobdfpi: Vec<i64>,
-    #[serde(rename = "DKLCINBACDD")]
-    pub dklcinbacdd: Option<bool>,
+    pub forbidden_scene_id_list: Vec<i64>,
+    #[serde(rename = "PINAGECHOKP")]
+    pub pinagechokp: Option<bool>,
+    pub forbidden_dungeon_type_list: Vec<i64>,
+    pub forbidden_dungeon_play_type_list: Vec<i64>,
+    #[serde(rename = "DAGABBDADIA")]
+    pub dagabbdadia: Vec<i64>,
+    #[serde(rename = "NCIBBPCAGJO")]
+    pub ncibbpcagjo: Option<bool>,
     pub can_use_in_dungeon: Option<bool>,
     pub can_use_in_homeworld: Option<bool>,
-    #[serde(rename = "JPHHGNAIIMH")]
-    pub jphhgnaiimh: Option<bool>,
+    #[serde(rename = "BMAHNNLIHCN")]
+    pub bmahnnlihcn: Option<bool>,
     pub can_use_in_room: Option<bool>,
     pub can_use_in_limit_region: Option<bool>,
     pub can_use_when_fight: Option<bool>,
-    pub can_use_in_avatar_focus: Option<bool>,
     pub can_use_in_un_normal_move_state: Option<bool>,
+    pub can_use_in_avatar_focus: Option<bool>,
     pub can_use_when_current_avatar_dead: Option<bool>,
-    #[serde(rename = "NLGFKDIHLEN")]
-    pub nlgfkdihlen: Option<String>,
-    #[serde(rename = "AIMPLDIDOIP")]
-    pub aimpldidoip: Option<bool>,
-    #[serde(rename = "JKHABLEJHAD")]
-    pub jkhablejhad: Option<bool>,
+    pub vehicle_limit: Option<String>,
+    #[serde(rename = "KNBIGELHDGA")]
+    pub knbigelhdga: Option<bool>,
+    #[serde(rename = "EMAOLEMHKAG")]
+    pub emaolemhkag: Option<bool>,
 }

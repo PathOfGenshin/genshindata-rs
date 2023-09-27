@@ -15,10 +15,8 @@ pub struct ReliquarySetExcelConfigDatum {
     #[serde(rename = "EquipAffixId")]
     pub equip_affix_id: Option<i64>,
     pub contains_list: Vec<i64>,
-    #[serde(rename = "GNJDNOMGEHE")]
-    pub gnjdnomgehe: Option<i64>,
-    #[serde(rename = "ANKCGEPHFDP")]
-    pub ankcgephfdp: Vec<i64>,
+    pub bag_sort_value: Option<i64>,
+    pub dungeon_group: Vec<i64>,
     pub text_list: Vec<i64>,
     #[serde(rename = "DisableFilter")]
     pub disable_filter: Option<i64>,

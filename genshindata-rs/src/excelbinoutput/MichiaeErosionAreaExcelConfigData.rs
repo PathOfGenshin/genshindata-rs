@@ -9,8 +9,9 @@ pub type MichiaeErosionAreaExcelConfigData = Vec<MichiaeErosionAreaExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct MichiaeErosionAreaExcelConfigDatum {
-    pub eachoabiffl: Option<i64>,
-    pub cdpommhflme: Option<i64>,
-    pub hpedckjcenh: Option<f64>,
-    pub mbepdjbbiae: Option<f64>,
+    #[serde(rename = "areaId")]
+    pub area_id: Option<i64>,
+    pub a1: Option<i64>,
+    pub a2: Option<f64>,
+    pub a3: Option<f64>,
 }

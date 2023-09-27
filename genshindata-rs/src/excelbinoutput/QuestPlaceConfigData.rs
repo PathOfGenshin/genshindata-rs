@@ -7,7 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type QuestPlaceConfigData = Vec<QuestPlaceConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct QuestPlaceConfigDatum {
+    #[serde(rename = "placeId")]
     pub place_id: i64,
+    pub jhnbfbjodil: Vec<i64>,
+    pub glhdjgkpjmm: Glhdjgkpjmm,
+    pub cokgghmonhm: Option<bool>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Glhdjgkpjmm {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "1403,1404")]
+    The14031404,
 }

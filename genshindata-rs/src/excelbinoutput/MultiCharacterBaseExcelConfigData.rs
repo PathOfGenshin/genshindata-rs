@@ -11,13 +11,13 @@ pub type MultiCharacterBaseExcelConfigData = Vec<MultiCharacterBaseExcelConfigDa
 pub struct MultiCharacterBaseExcelConfigDatum {
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub onemfoedagk: i64,
-    pub dgndjijkadl: Vec<Dgndjijkadl>,
-    pub fpfifclgkik: i64,
+    pub gpiihjaegfb: i64,
+    pub pimacbfajmj: Vec<Pimacbfajmj>,
+    pub hdfoknjppob: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Dgndjijkadl {
+pub struct Pimacbfajmj {
     pub avatar_count: i64,
 }

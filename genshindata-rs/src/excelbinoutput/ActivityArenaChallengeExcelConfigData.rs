@@ -18,18 +18,28 @@ pub struct ActivityArenaChallengeExcelConfigDatum {
     pub challenge_target_text_map_hash: i64,
     pub challenge_target1_text_map_hash: i64,
     pub challenge_target2_text_map_hash: i64,
-    #[serde(rename = "LNICJFJKDAK")]
-    pub lnicjfjkdak: Lnicjfjkdak,
-    #[serde(rename = "BMJIOALJOAK")]
-    pub bmjioaljoak: String,
-    #[serde(rename = "AJDDBKGPHML")]
-    pub ajddbkgphml: Ajddbkgphml,
-    #[serde(rename = "BCNBCPCOFLG")]
-    pub bcnbcpcoflg: Option<bool>,
+    pub challenge_desc: ChallengeDesc,
+    pub challenge_desc1: String,
+    pub challenge_desc2: ChallengeDesc2,
+    pub is_extra_level: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ajddbkgphml {
+pub enum ChallengeDesc {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "2010036;180")]
+    The2010036180,
+    #[serde(rename = "2010069;150")]
+    The2010069150,
+    #[serde(rename = "4002003;180")]
+    The4002003180,
+    #[serde(rename = "4002004;150")]
+    The4002004150,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum ChallengeDesc2 {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "2010035;1")]
@@ -44,18 +54,4 @@ pub enum Ajddbkgphml {
     The20100354,
     #[serde(rename = "2010035;6")]
     The20100356,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Lnicjfjkdak {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "2010036;180")]
-    The2010036180,
-    #[serde(rename = "2010069;150")]
-    The2010069150,
-    #[serde(rename = "4002003;180")]
-    The4002003180,
-    #[serde(rename = "4002004;150")]
-    The4002004150,
 }

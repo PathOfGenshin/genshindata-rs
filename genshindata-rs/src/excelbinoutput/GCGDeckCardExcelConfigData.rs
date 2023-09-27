@@ -11,25 +11,25 @@ pub type GcgDeckCardExcelConfigData = Vec<GcgDeckCardExcelConfigDatum>;
 pub struct GcgDeckCardExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mddhbabboon: Vec<Mddhbabboon>,
+    pub kjakdlepknm: Vec<Kjakdlepknm>,
     #[serde(rename = "sortOrder")]
     pub sort_order: i64,
-    pub mpkhnaepgeg: Vec<i64>,
+    pub oenefbkaako: Vec<i64>,
     #[serde(rename = "storyTitleTextMapHash")]
     pub story_title_text_map_hash: i64,
-    pub akpgaobnnbb: i64,
-    pub lakmgciappb: i64,
+    pub ookjmiojclf: i64,
+    pub fhkmpddaebg: i64,
     #[serde(rename = "itemID")]
     pub item_id: i64,
-    pub jmajbaooaln: Option<i64>,
-    pub kmlnmjbdjpp: Option<i64>,
-    pub hnnkjmojkpd: Option<i64>,
-    pub ppiiehkmbih: Option<i64>,
+    pub dbccaoodnbj: Option<i64>,
+    pub aalkenkijid: Option<i64>,
+    pub naehdfopkmj: Option<i64>,
+    pub cijeapngbpb: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Mddhbabboon {
+pub enum Kjakdlepknm {
     #[serde(rename = "GCG_TAG_CAMP_FATUI")]
     GcgTagCampFatui,
     #[serde(rename = "GCG_TAG_CAMP_MONSTER")]

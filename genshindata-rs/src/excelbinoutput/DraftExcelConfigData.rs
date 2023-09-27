@@ -20,8 +20,7 @@ pub struct DraftExcelConfigDatum {
     pub min_player_count: i64,
     pub is_need_twice_confirm: Option<bool>,
     pub twice_confirm_count_down: i64,
-    #[serde(rename = "IBLAAJAKNJB")]
-    pub iblaajaknjb: Option<String>,
+    pub exec_sub_type: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

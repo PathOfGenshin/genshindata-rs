@@ -7,16 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type RogueDiaryRoomExcelConfigData = Vec<RogueDiaryRoomExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RogueDiaryRoomExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub ledbiilafkm: i64,
-    #[serde(rename = "challengeId")]
+    pub normal_tide_id: i64,
     pub challenge_id: Option<i64>,
-    pub noljcenpnpa: Option<i64>,
-    pub lmbhaihkida: Option<i64>,
-    pub hkbeppheenc: i64,
-    pub lbneffialgc: Option<i64>,
-    pub bgojkmbjlij: Option<bool>,
+    pub coin_reward_normal: Option<i64>,
+    pub coin_reward_hard: Option<i64>,
+    pub desc_hard_text_map_hash: i64,
+    pub hard_tide_id: Option<i64>,
+    pub is_boss: Option<bool>,
 }

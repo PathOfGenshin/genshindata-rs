@@ -11,13 +11,11 @@ pub type HideAndSeekMatchExcelConfigData = Vec<HideAndSeekMatchExcelConfigDatum>
 pub struct HideAndSeekMatchExcelConfigDatum {
     pub title_text_map_hash: i64,
     pub unlock_tips_text_map_hash: i64,
-    pub map_small_icon_path_hash: i64,
-    pub map_icon_path_hash: i64,
+    pub unlock_tips2_text_map_hash: i64,
+    pub unlock_tips3_text_map_hash: i64,
     pub dsc_text_map_hash: i64,
-    #[serde(rename = "IILNGCEFJNI")]
-    pub iilngcefjni: Vec<f64>,
-    #[serde(rename = "OGABIGGJDHA")]
-    pub ogabiggjdha: f64,
+    pub map_icon_path_hash: Vec<f64>,
+    pub map_small_icon_path_hash: f64,
     pub scene_id: i64,
     pub group_id: i64,
     pub transport_point_list: Vec<i64>,

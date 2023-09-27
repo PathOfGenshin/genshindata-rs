@@ -11,15 +11,17 @@ pub type ActivityVintageMarketStageExcelConfigData = Vec<ActivityVintageMarketSt
 pub struct ActivityVintageMarketStageExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
-    pub apfoldjfmcg: i64,
+    pub mjfbgmkgcjm: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub kkkenochkmn: i64,
-    pub fniepmfbdpg: i64,
-    pub gnkdbgimcda: i64,
+    #[serde(rename = "openQuestID")]
+    pub open_quest_id: i64,
+    pub cdcgfmjghdg: i64,
+    pub kpkddnephle: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub lhkpnophcon: i64,
-    pub inpnfgpmnkh: i64,
-    pub hebflkehhme: Option<i64>,
+    #[serde(rename = "tutorialID")]
+    pub tutorial_id: i64,
+    pub nomeamllijk: i64,
+    pub eemcgndnelg: Option<i64>,
 }

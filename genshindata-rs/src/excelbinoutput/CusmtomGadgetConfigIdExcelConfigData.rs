@@ -12,8 +12,6 @@ pub struct CusmtomGadgetConfigIdExcelConfigDatum {
     pub config_id: i64,
     pub item_id: i64,
     pub gadget_id: i64,
-    #[serde(rename = "PBJLLONOJBD")]
-    pub pbjllonojbd: i64,
-    #[serde(rename = "HCKINPJMFPE")]
-    pub hckinpjmfpe: i64,
+    pub option_name_text_map_hash: i64,
+    pub option_title_text_map_hash: i64,
 }

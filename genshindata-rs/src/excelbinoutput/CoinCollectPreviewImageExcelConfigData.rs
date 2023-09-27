@@ -9,7 +9,8 @@ pub type CoinCollectPreviewImageExcelConfigData = Vec<CoinCollectPreviewImageExc
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CoinCollectPreviewImageExcelConfigDatum {
-    pub jbgcjjjjfhj: i64,
-    pub mendnbdpnie: String,
-    pub jdmdmjjjaba: i64,
+    pub fbclbpphgfa: i64,
+    #[serde(rename = "imagePath")]
+    pub image_path: String,
+    pub lbopmgfomdb: i64,
 }

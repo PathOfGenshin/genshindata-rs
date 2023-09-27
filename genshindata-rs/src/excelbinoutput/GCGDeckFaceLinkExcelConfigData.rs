@@ -9,6 +9,6 @@ pub type GcgDeckFaceLinkExcelConfigData = Vec<GcgDeckFaceLinkExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgDeckFaceLinkExcelConfigDatum {
-    pub dikkdjcenfg: i64,
-    pub fgpgoljdhea: i64,
+    pub nbpnlhokbmp: i64,
+    pub ljhokdkboda: i64,
 }

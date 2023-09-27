@@ -8,7 +8,7 @@ pub type ToyBattleQteTargetExcelConfigData = Vec<ToyBattleQteTargetExcelConfigDa
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ToyBattleQteTargetExcelConfigDatum {
-    #[serde(rename = "AEIKMOIAGDL")]
-    pub aeikmoiagdl: i64,
+    #[serde(rename = "AAADPHFHEKF")]
+    pub aaadphfhekf: i64,
     pub score: Option<i64>,
 }

@@ -7,11 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type LanV3CampLevelExcelConfigData = Vec<LanV3CampLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV3CampLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub kepjmjenlgo: i64,
-    pub dgjnhbgfbak: i64,
-    pub ejgajlknchl: String,
+    pub challenge_index: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
+    pub monster_info: String,
 }

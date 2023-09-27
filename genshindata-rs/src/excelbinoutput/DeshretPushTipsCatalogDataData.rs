@@ -11,11 +11,11 @@ pub type DeshretPushTipsCatalogDataData = Vec<DeshretPushTipsCatalogDataDatum>;
 pub struct DeshretPushTipsCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub gnlgmcdegfn: i64,
+    pub ancancpnkdm: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "icon")]
     pub icon: String,
-    pub hannahkdddm: i64,
-    pub odffkambacb: i64,
+    pub mgmdgladlhh: i64,
+    pub djegapehldg: i64,
 }

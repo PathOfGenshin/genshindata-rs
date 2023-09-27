@@ -7,15 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type LunaRiteBattleBuffExcelConfigData = Vec<LunaRiteBattleBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct LunaRiteBattleBuffExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "EOEIOLGBMGM")]
-    pub eoeiolgbmgm: String,
-    #[serde(rename = "MGMKCENCEEG")]
-    pub mgmkcenceeg: i64,
-    #[serde(rename = "JMAMOBDKECP")]
-    pub jmamobdkecp: i64,
-    #[serde(rename = "rewardId")]
+    pub region_type: String,
+    pub number: i64,
+    pub buff_text_map_hash: i64,
     pub reward_id: Option<i64>,
 }

@@ -13,7 +13,7 @@ pub struct ActivityFfv2PhotoStageExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub lpgcklblgnb: Vec<i64>,
-    pub mkidefomakg: i64,
-    pub njaboehejka: String,
+    pub dicgljgjpio: Vec<i64>,
+    pub bpahglibenc: i64,
+    pub abfnmneifle: String,
 }

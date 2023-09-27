@@ -7,18 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPotionBuffExcelConfigData = Vec<ActivityPotionBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPotionBuffExcelConfigDatum {
-    #[serde(rename = "buffId")]
     pub buff_id: i64,
-    pub behhcchceho: String,
-    pub bnonbmhoplj: i64,
-    #[serde(rename = "titleTextMapHash")]
+    pub ability_group_name: String,
+    pub quality: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "descParam")]
     pub desc_param: Vec<String>,
-    pub bolaiphnedl: f64,
-    pub iiecealjnnj: String,
+    pub icon_hash: f64,
+    pub buff_element: String,
 }

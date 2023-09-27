@@ -11,25 +11,26 @@ pub type FungusFighterV2EnemyExcelConfigData = Vec<FungusFighterV2EnemyExcelConf
 pub struct FungusFighterV2EnemyExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jomjcdeigbb: i64,
+    #[serde(rename = "sortID")]
+    pub sort_id: i64,
     #[serde(rename = "unlockLevel")]
     pub unlock_level: i64,
     #[serde(rename = "iconPath")]
     pub icon_path: String,
-    pub ekecbndobcf: String,
+    pub palokilpdci: String,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descriptionTextMapHash")]
     pub description_text_map_hash: i64,
-    pub fnmaobglnbn: i64,
-    pub mohdhdiikhp: Mohdhdiikhp,
-    pub jkoeemlgkin: Vec<i64>,
-    pub kiifampnakh: Option<i64>,
-    pub mcmfleaojef: Option<bool>,
+    pub ndfcdannbkn: i64,
+    pub fpidikhjala: Fpidikhjala,
+    pub bmombhkoldi: Vec<i64>,
+    pub hjgjfodeojm: Option<i64>,
+    pub mdabcenafgf: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Mohdhdiikhp {
+pub enum Fpidikhjala {
     #[serde(rename = "ART/UI/Atlas/BuffElement/UI_Tips_Item_Warning")]
     ArtUiAtlasBuffElementUiTipsItemWarning,
     #[serde(rename = "")]

@@ -7,12 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldShopSubTagExcelConfigData = Vec<HomeWorldShopSubTagExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldShopSubTagExcelConfigDatum {
     #[serde(rename = "subID")]
     pub sub_id: i64,
-    #[serde(rename = "subTagTextMapHash")]
     pub sub_tag_text_map_hash: i64,
-    pub ahgdkkhioel: Option<bool>,
-    pub faiidcfgdgi: Option<bool>,
+    pub show_new_mark: Option<bool>,
+    #[serde(rename = "HCJKLPOBAGB")]
+    pub hcjklpobagb: Option<bool>,
 }

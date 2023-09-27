@@ -7,26 +7,40 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldPlantExcelConfigData = Vec<HomeWorldPlantExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldPlantExcelConfigDatum {
-    pub bopkdigahpa: i64,
-    pub pbdohjpdomp: Vec<i64>,
-    pub mjhblgbpcfi: Option<i64>,
-    pub depnplmcijm: Option<i64>,
+    #[serde(rename = "seedID")]
+    pub seed_id: i64,
+    pub gather_id_vec: Vec<i64>,
+    #[serde(rename = "homeGatherID")]
+    pub home_gather_id: Option<i64>,
+    #[serde(rename = "bundleID")]
+    pub bundle_id: Option<i64>,
     #[serde(rename = "dropID")]
     pub drop_id: Option<i64>,
-    pub khgakmknpbj: Vec<Khgakmknpbj>,
-    pub janeicbikhj: i64,
-    #[serde(rename = "time")]
+    pub config_home_gather: Vec<ConfigHomeGather>,
+    #[serde(rename = "fieldID")]
+    pub field_id: i64,
     pub time: i64,
-    pub bpepdbkmehi: i64,
-    pub cjblockdflk: i64,
-    pub lfmjoepdbfk: i64,
-    #[serde(rename = "order")]
+    pub sprout_time: i64,
+    pub collect_num: i64,
+    #[serde(rename = "sproutGadgetID")]
+    pub sprout_gadget_id: i64,
     pub order: i64,
-    #[serde(rename = "inteeIconName")]
     pub intee_icon_name: InteeIconName,
-    pub mlbdhmaompd: i64,
+    pub intee_name_text_map_hash: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ConfigHomeGather {
+    #[serde(rename = "homeGatherID")]
+    pub home_gather_id: Option<i64>,
+    #[serde(rename = "bundleID")]
+    pub bundle_id: Option<i64>,
+    #[serde(rename = "dropID")]
+    pub drop_id: Option<i64>,
+    pub weight: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -35,15 +49,4 @@ pub enum InteeIconName {
     Empty,
     #[serde(rename = "UI_Icon_Item_GrowFlowers")]
     UiIconItemGrowFlowers,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Khgakmknpbj {
-    pub mjhblgbpcfi: Option<i64>,
-    pub depnplmcijm: Option<i64>,
-    #[serde(rename = "dropID")]
-    pub drop_id: Option<i64>,
-    #[serde(rename = "weight")]
-    pub weight: Option<i64>,
 }

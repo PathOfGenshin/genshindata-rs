@@ -12,8 +12,7 @@ pub struct QuestSpecialShowConfigDatum {
     pub id: i64,
     pub cond_type: CondType,
     pub param1: i64,
-    #[serde(rename = "KHKODBIFELH")]
-    pub khkodbifelh: i64,
+    pub show_tips_text_map_hash: i64,
     pub param2: Option<i64>,
 }
 

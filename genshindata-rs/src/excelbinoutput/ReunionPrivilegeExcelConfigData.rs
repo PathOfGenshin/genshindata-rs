@@ -11,8 +11,7 @@ pub type ReunionPrivilegeExcelConfigData = Vec<ReunionPrivilegeExcelConfigDatum>
 pub struct ReunionPrivilegeExcelConfigDatum {
     pub id: i64,
     pub daily_num: i64,
-    #[serde(rename = "LENEKOLLAJL")]
-    pub lenekollajl: i64,
+    pub total_num: i64,
     pub privilege_type: Vec<PrivilegeType>,
 }
 

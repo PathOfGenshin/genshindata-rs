@@ -12,8 +12,7 @@ pub struct HomeworldModuleExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
     pub is_free: Option<bool>,
-    #[serde(rename = "MOBHMCAJFLO")]
-    pub mobhmcajflo: i64,
+    pub unlock_tip_if_un_free_text_map_hash: i64,
     pub world_scene_id: i64,
     pub default_room_scene_id: i64,
     pub optional_room_scene_id_vec: Vec<i64>,

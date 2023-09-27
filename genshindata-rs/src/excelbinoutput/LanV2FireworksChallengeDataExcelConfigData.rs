@@ -7,20 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type LanV2FireworksChallengeDataExcelConfigData = Vec<LanV2FireworksChallengeDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2FireworksChallengeDataExcelConfigDatum {
-    #[serde(rename = "challengeId")]
     pub challenge_id: i64,
-    #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
-    #[serde(rename = "icon")]
     pub icon: String,
-    pub hkhimffdmng: Vec<i64>,
-    pub iddmfipfcio: i64,
-    pub mhpinkbblgg: i64,
-    pub fmecpihgchl: i64,
-    pub eojkagcjfap: i64,
-    #[serde(rename = "watcherIdList")]
+    pub factor_id_list: Vec<i64>,
+    pub init_fire_element_value: i64,
+    pub full_score: i64,
+    pub unlock_ability_score: i64,
+    pub unlock_fireworks_score: i64,
     pub watcher_id_list: Vec<i64>,
-    pub kpdplnogjjf: i64,
+    pub add_stamina_value: i64,
 }

@@ -11,6 +11,5 @@ pub type ChargeBarStyleExcelConfigData = Vec<ChargeBarStyleExcelConfigDatum>;
 pub struct ChargeBarStyleExcelConfigDatum {
     pub id: i64,
     pub icon_name: String,
-    #[serde(rename = "BGACFBKJEID")]
-    pub bgacfbkjeid: Option<String>,
+    pub fill_effect_type: Option<String>,
 }

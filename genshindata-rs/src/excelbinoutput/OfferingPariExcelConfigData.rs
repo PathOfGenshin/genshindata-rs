@@ -11,13 +11,13 @@ pub type OfferingPariExcelConfigData = Vec<OfferingPariExcelConfigDatum>;
 pub struct OfferingPariExcelConfigDatum {
     #[serde(rename = "offeringId")]
     pub offering_id: i64,
-    pub kpkbckbapff: i64,
-    pub hihnpmcdemi: i64,
+    pub ffdkepacjce: i64,
+    pub jenkagkkala: i64,
     #[serde(rename = "pointType")]
     pub point_type: i64,
-    pub fmipponefpa: Vec<i64>,
-    pub idpmecddbdo: Vec<i64>,
-    pub nkgefedkidm: i64,
-    pub jmemkkbcoik: i64,
-    pub hagcpooofdp: i64,
+    pub ianjgnmbmdc: Vec<i64>,
+    pub efpdlmbpkeh: Vec<i64>,
+    pub kekniahleem: i64,
+    pub fhbbndjloie: i64,
+    pub mhimcafcoeo: i64,
 }

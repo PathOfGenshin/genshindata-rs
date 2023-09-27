@@ -12,7 +12,8 @@ pub struct ChannellerSlabLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "stageID")]
     pub stage_id: i64,
-    pub buff_num: i64,
+    #[serde(rename = "waveID")]
+    pub wave_id: i64,
     pub point_name_text_map_hash: i64,
     pub camp_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,

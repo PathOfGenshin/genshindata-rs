@@ -7,19 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type BrickBreakerQuestExcelConfigData = Vec<BrickBreakerQuestExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BrickBreakerQuestExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "stageID")]
     pub stage_id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub amidlbbfihh: String,
+    pub level_type: String,
     #[serde(rename = "levelID")]
     pub level_id: i64,
-    pub ngmkdjfldfc: i64,
-    pub ehdecclfahb: i64,
-    pub acimfilfklk: i64,
-    pub mbmglhgmpol: i64,
+    #[serde(rename = "OIDDPHICILB")]
+    pub oiddphicilb: i64,
+    #[serde(rename = "MLJEPDJLBOF")]
+    pub mljepdjlbof: i64,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
 }

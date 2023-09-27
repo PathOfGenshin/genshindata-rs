@@ -3,6 +3,16 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type FishRodExcelConfigData = Vec<HashMap<String, f64>>;
+pub type FishRodExcelConfigData = Vec<FishRodExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct FishRodExcelConfigDatum {
+    pub id: i64,
+    pub base_attack: i64,
+    pub city_id: Option<i64>,
+    pub attack_mag: Option<f64>,
+    pub attack_acc: Option<i64>,
+    pub max_attack: Option<i64>,
+}

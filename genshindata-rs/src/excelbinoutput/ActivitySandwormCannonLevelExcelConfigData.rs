@@ -7,32 +7,36 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySandwormCannonLevelExcelConfigData = Vec<ActivitySandwormCannonLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySandwormCannonLevelExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub nogibfdglhc: i64,
-    pub ccmdclpbfpf: i64,
-    pub ngefehegdhh: i64,
-    pub ndeidnbljoc: Vec<i64>,
-    #[serde(rename = "watcherList")]
+    pub point_id: i64,
+    #[serde(rename = "FNGBPDCNBLH")]
+    pub fngbpdcnblh: i64,
+    #[serde(rename = "OAGKMFFCNMG")]
+    pub oagkmffcnmg: i64,
+    #[serde(rename = "LMMJBGHNOGC")]
+    pub lmmjbghnogc: Vec<i64>,
     pub watcher_list: Vec<i64>,
-    pub hjmmkfilclg: i64,
-    pub ahpffbgmgdj: Option<i64>,
-    pub nckommfglpn: i64,
+    #[serde(rename = "preQuestID")]
+    pub pre_quest_id: i64,
+    #[serde(rename = "HFAFNHFIKPM")]
+    pub hfafnhfikpm: Option<i64>,
+    pub open_time: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
-    #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub cobbhjlfmfd: String,
-    pub ljkehdinokm: i64,
-    pub admkkjehgnf: String,
-    pub jiolelclahm: String,
-    #[serde(rename = "buffIcon")]
+    #[serde(rename = "BLJLDHIENCP")]
+    pub bljldhiencp: String,
+    #[serde(rename = "BBMJNPKJJCA")]
+    pub bbmjnpkjjca: i64,
+    #[serde(rename = "CHKHENBCEKA")]
+    pub chkhenbceka: String,
+    #[serde(rename = "IEIOHGKFHFA")]
+    pub ieiohgkfhfa: String,
     pub buff_icon: String,
-    pub jnkafblakij: Option<bool>,
+    #[serde(rename = "CMNPNLGDLFI")]
+    pub cmnpnlgdlfi: Option<bool>,
 }

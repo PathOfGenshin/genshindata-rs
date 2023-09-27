@@ -7,30 +7,25 @@ use serde::{Serialize, Deserialize};
 pub type FishExcelConfigData = Vec<FishExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FishExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "monsterId")]
     pub monster_id: i64,
-    #[serde(rename = "itemId")]
     pub item_id: i64,
-    #[serde(rename = "hp")]
     pub hp: i64,
-    pub nelihhhgpec: Vec<i64>,
-    pub chfjonldbgn: i64,
-    pub kijkcpbapgj: i64,
-    pub jnnngagoodi: Vec<f64>,
-    pub dponlbnkhla: Vec<i64>,
-    pub oaiknngifca: Vec<i64>,
-    pub dbkaklkkfob: Vec<f64>,
-    pub ihijimdomoc: f64,
-    pub dljakjcidji: f64,
-    #[serde(rename = "rewardId")]
+    pub skill_id: Vec<i64>,
+    pub proficient_id: i64,
+    pub bonus_width: i64,
+    pub bonus_duration: Vec<f64>,
+    pub bonus_offset: Vec<i64>,
+    pub bonus_speed: Vec<i64>,
+    pub feeler_times: Vec<f64>,
+    pub attract_range: f64,
+    pub flee_range: f64,
     pub reward_id: i64,
-    pub bgohmpppcgj: Vec<Option<serde_json::Value>>,
-    pub bapekhkbfmj: i64,
-    pub andafpllkph: i64,
-    pub mbbicodmjom: Option<i64>,
-    pub mhoaieccngb: Option<i64>,
+    pub drop_id_list: Vec<Option<serde_json::Value>>,
+    pub bite_timeout: i64,
+    pub init_pose: i64,
+    pub compound_id: Option<i64>,
+    pub fish_cate_id: Option<i64>,
 }

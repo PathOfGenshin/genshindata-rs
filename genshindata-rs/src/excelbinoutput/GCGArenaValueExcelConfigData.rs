@@ -11,12 +11,12 @@ pub type GcgArenaValueExcelConfigData = Vec<GcgArenaValueExcelConfigDatum>;
 pub struct GcgArenaValueExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jgpdkenejng: i64,
-    pub jlcbbkghnch: i64,
-    pub fbdakamhlee: i64,
-    pub ciljflepcdi: i64,
-    pub pgiipppfnhb: i64,
+    pub dhphpmhohoe: i64,
+    pub ggbolbpnpem: i64,
+    pub ahcnkdpjaef: i64,
+    pub gakghclohco: i64,
+    pub pfggfdakpij: i64,
     #[serde(rename = "matchId")]
     pub match_id: i64,
-    pub odfpklhipei: Vec<String>,
+    pub fnnhahbimcn: Vec<String>,
 }

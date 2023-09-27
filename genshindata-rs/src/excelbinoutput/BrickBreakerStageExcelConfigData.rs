@@ -11,10 +11,11 @@ pub type BrickBreakerStageExcelConfigData = Vec<BrickBreakerStageExcelConfigDatu
 pub struct BrickBreakerStageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jbobmbdkkni: Vec<i64>,
-    pub dcljmhklldp: i64,
+    pub hjniimdknmm: Vec<i64>,
+    #[serde(rename = "dungeonLevel")]
+    pub dungeon_level: i64,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub ggdkjecjoko: Vec<Vec<i64>>,
-    pub jenhfjlfkjf: Vec<i64>,
+    pub naeidjgbglg: Vec<Vec<i64>>,
+    pub mmcfpmnbgkf: Vec<i64>,
 }

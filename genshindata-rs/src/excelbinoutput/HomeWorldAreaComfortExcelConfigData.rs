@@ -7,7 +7,7 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldAreaComfortExcelConfigData = Vec<HomeWorldAreaComfortExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldAreaComfortExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
@@ -15,22 +15,22 @@ pub struct HomeWorldAreaComfortExcelConfigDatum {
     pub scene_id: i64,
     #[serde(rename = "areaID")]
     pub area_id: i64,
-    #[serde(rename = "areaType")]
     pub area_type: Option<AreaType>,
-    #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    #[serde(rename = "maxComfort")]
     pub max_comfort: i64,
-    pub dohaimgmace: String,
-    pub ecgppihjkdm: Ecgppihjkdm,
-    pub pamgjaojbdi: i64,
-    pub fakeadneajd: i64,
-    pub aifhkfifbmn: i64,
-    pub lceobdddbhk: Vec<f64>,
-    pub kgkocfilabh: Vec<i64>,
-    pub kokpfbcipfj: String,
-    pub opkmpanemnc: i64,
-    pub lnjjiikcgei: String,
+    pub safe_point_str: String,
+    pub player_safe_point_str: PlayerSafePointStr,
+    pub low_load_limit: i64,
+    pub middle_load_limit: i64,
+    pub high_load_limit: i64,
+    pub area_center_pos: Vec<f64>,
+    pub area_center_rot: Vec<i64>,
+    #[serde(rename = "HOPOHBBKBMJ")]
+    pub hopohbbkbmj: String,
+    #[serde(rename = "MIEOKPINBMO")]
+    pub mieokpinbmo: i64,
+    #[serde(rename = "LHEHPMKFMFG")]
+    pub lhehpmkfmfg: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -40,7 +40,7 @@ pub enum AreaType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ecgppihjkdm {
+pub enum PlayerSafePointStr {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "11.325,3.819,13.572")]

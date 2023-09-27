@@ -7,26 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type RoguelikeCurseExcelConfigData = Vec<RoguelikeCurseExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RoguelikeCurseExcelConfigDatum {
-    #[serde(rename = "level")]
     pub level: i64,
-    #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub mkbmenfhjpd: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub curse_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    pub pfcemconjlj: Pfcemconjlj,
-    pub kkkedpcacml: Option<bool>,
-    #[serde(rename = "descParamList")]
+    pub effect_config: EffectConfig,
+    pub is_clear_at_next_level: Option<bool>,
     pub desc_param_list: Vec<i64>,
-    pub gpajopcblje: Vec<bool>,
+    pub desc_param_superposition_list: Vec<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Pfcemconjlj {
-    pub ddnblgemfki: String,
-    pub jfkglgfglgl: String,
-    pub pmllaiokhjo: String,
+#[serde(rename_all = "camelCase")]
+pub struct EffectConfig {
+    pub effect_type: String,
+    pub effect_key: String,
+    pub effect_param: String,
 }

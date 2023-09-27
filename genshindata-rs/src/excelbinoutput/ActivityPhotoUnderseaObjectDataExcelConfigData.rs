@@ -7,15 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPhotoUnderseaObjectDataExcelConfigData = Vec<ActivityPhotoUnderseaObjectDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPhotoUnderseaObjectDataExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub oaphojddjob: Option<i64>,
-    pub elaclonipnd: i64,
-    pub kpnakofalek: i64,
-    #[serde(rename = "descTextMapHash")]
+    #[serde(rename = "groupBundleID")]
+    pub group_bundle_id: Option<i64>,
+    pub watcher: i64,
+    pub object_index: i64,
     pub desc_text_map_hash: i64,
-    pub dlplmnmemne: f64,
-    pub dnalcjmmdcb: Option<bool>,
+    #[serde(rename = "EGHKMFHNCKK")]
+    pub eghkmfhnckk: f64,
+    #[serde(rename = "HPGEGBPGMBN")]
+    pub hpgegbpgmbn: Option<bool>,
 }

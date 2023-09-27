@@ -9,3 +9,4 @@ edition = "2021"
 serde = { version = "1", features = ["derive"] }
 strum = { version = "0.25", features = ["derive"] }
 genshindata-rs = { path = "../genshindata-rs" }
+serde_json = "1"

@@ -11,27 +11,19 @@ pub type OfferingLevelUpExcelConfigData = Vec<OfferingLevelUpExcelConfigDatum>;
 pub struct OfferingLevelUpExcelConfigDatum {
     pub offering_id: i64,
     pub level: Option<i64>,
-    pub action_vec: Vec<ActionVec>,
+    pub consume_item_config_vec: Vec<ConsumeItemConfigVec>,
     pub reward_id: Option<i64>,
-    #[serde(rename = "PNDFICHGHPD")]
-    pub pndfichghpd: Vec<Pndfichghpd>,
-    #[serde(rename = "JECNLGNONEK")]
-    pub jecnlgnonek: Option<i64>,
-    pub cut_scene_id: Option<bool>,
-    #[serde(rename = "NPDJPFIHCHL")]
-    pub npdjpfihchl: Option<bool>,
-    pub consume_item_config: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct ActionVec {
-    pub id: Option<i64>,
-    pub count: Option<i64>,
+    pub action_vec: Vec<ActionVec>,
+    pub cut_scene_id: Option<i64>,
+    pub is_max_level: Option<bool>,
+    pub is_auto_take_reward: Option<bool>,
+    #[serde(rename = "ICKLOHDIJCH")]
+    pub icklohdijch: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Pndfichghpd {
+pub struct ActionVec {
     pub param: String,
     pub action_type: Option<ActionType>,
 }
@@ -47,4 +39,10 @@ pub enum ActionType {
     OfferingActionOpenRoutine,
     #[serde(rename = "OFFERING_ACTION_SET_GADGET_CHAIN_LEVEL")]
     OfferingActionSetGadgetChainLevel,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ConsumeItemConfigVec {
+    pub id: Option<i64>,
+    pub count: Option<i64>,
 }

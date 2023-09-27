@@ -4,6 +4,8 @@ use crate::{artifact::artifact_set::ArtifactSetProcessor, models::traits::Proces
 
 mod artifact;
 mod models;
+mod processor;
+mod translation;
 
 fn main() {
     let all_textmaps = AllTextMaps::load_all();
@@ -11,5 +13,8 @@ fn main() {
     let result = artifact_sets.process(&all_textmaps);
     println!("{:?}", result.data);
     let en_translations = result.translations.get_pack(Language::EN);
-    println!("{:?}", en_translations);
+    println!(
+        "{}",
+        serde_json::to_string_pretty(&result.translations).unwrap()
+    );
 }

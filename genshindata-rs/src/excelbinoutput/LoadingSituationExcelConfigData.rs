@@ -7,21 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type LoadingSituationExcelConfigData = Vec<LoadingSituationExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LoadingSituationExcelConfigDatum {
     #[serde(rename = "stageID")]
     pub stage_id: i64,
-    pub eehglbncpek: String,
-    pub kdcnniggohp: Vec<i64>,
-    pub fehepgbpdph: Vec<i64>,
-    pub ioakcdpichn: Option<Ioakcdpichn>,
-    #[serde(rename = "picPath")]
+    pub loading_situation_type: String,
+    #[serde(rename = "sceneID")]
+    pub scene_id: Vec<i64>,
+    #[serde(rename = "area1ID")]
+    pub area1_id: Vec<i64>,
+    pub area_terrain_type: Option<AreaTerrainType>,
     pub pic_path: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ioakcdpichn {
+pub enum AreaTerrainType {
     #[serde(rename = "LOADING_AREA_CITY")]
     LoadingAreaCity,
     #[serde(rename = "LOADING_AREA_OUTDOOR")]

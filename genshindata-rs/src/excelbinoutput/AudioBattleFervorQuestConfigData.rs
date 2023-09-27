@@ -7,7 +7,7 @@ use serde::{Serialize, Deserialize};
 pub type AudioBattleFervorQuestConfigData = Vec<AudioBattleFervorQuestConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AudioBattleFervorQuestConfigDatum {
-    pub dllhfcgbcjk: i64,
+    pub sub_quest_id: i64,
 }

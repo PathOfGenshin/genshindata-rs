@@ -10,7 +10,15 @@ pub type DieTypeTipsExcelConfigData = Vec<DieTypeTipsExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct DieTypeTipsExcelConfigDatum {
     pub id: i64,
-    pub die_type: DieType,
+    pub die_type: Option<DieType>,
+    pub ability_name: String,
+    pub modifier_name: String,
+    #[serde(rename = "POEJGICMMMH")]
+    pub poejgicmmmh: Poejgicmmmh,
+    #[serde(rename = "LAHOENFLOLK")]
+    pub lahoenflolk: Lahoenflolk,
+    #[serde(rename = "GBHAJDHLHFO")]
+    pub gbhajdhlhfo: String,
     pub tips: Vec<i64>,
     #[serde(rename = "monsterID")]
     pub monster_id: Option<i64>,
@@ -21,10 +29,32 @@ pub struct DieTypeTipsExcelConfigDatum {
 pub enum DieType {
     #[serde(rename = "PLAYER_DIE_ABYSS")]
     PlayerDieAbyss,
+    #[serde(rename = "PLAYER_DIE_DIRTY_WATER_EROSION")]
+    PlayerDieDirtyWaterErosion,
     #[serde(rename = "PLAYER_DIE_DRAWN")]
     PlayerDieDrawn,
     #[serde(rename = "PLAYER_DIE_FALL")]
     PlayerDieFall,
+    #[serde(rename = "PLAYER_DIE_KILL_BY_GEAR")]
+    PlayerDieKillByGear,
     #[serde(rename = "PLAYER_DIE_KILL_BY_MONSTER")]
     PlayerDieKillByMonster,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Lahoenflolk {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "TileAttack_Grass")]
+    TileAttackGrass,
+    #[serde(rename = "TileAttack_Water")]
+    TileAttackWater,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Poejgicmmmh {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "TileAttackManagerMixin")]
+    TileAttackManagerMixin,
 }

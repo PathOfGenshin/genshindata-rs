@@ -7,22 +7,18 @@ use serde::{Serialize, Deserialize};
 pub type GravenInnocenceRaceLevelExcelConfigData = Vec<GravenInnocenceRaceLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GravenInnocenceRaceLevelExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub dgjnhbgfbak: i64,
-    pub ccldficfmeb: Vec<i64>,
-    pub bfcgomfgpmo: Vec<i64>,
-    #[serde(rename = "levelNameTextMapHash")]
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
+    pub score_watcher_list: Vec<i64>,
+    pub score_list: Vec<i64>,
     pub level_name_text_map_hash: i64,
-    #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub epccdifjiil: i64,
-    pub pabmlaffdal: i64,
-    pub beahefgkljl: i64,
+    pub fail_tips_text_map_hash: i64,
+    pub time_factor: i64,
+    pub gold_factor: i64,
 }

@@ -7,33 +7,39 @@ use serde::{Serialize, Deserialize};
 pub type NewActivityPreviewConfigData = Vec<NewActivityPreviewConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct NewActivityPreviewConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nllhilhhjpl: i64,
-    pub eciippbheoj: i64,
+    pub intro_title_text_map_hash: i64,
+    pub intro_content_text_map_hash: i64,
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: Option<i64>,
-    pub hjmmkfilclg: Option<i64>,
-    pub akifghekdmo: Vec<i64>,
-    pub cadjdgmdenf: Vec<i64>,
-    pub kkkenochkmn: Option<i64>,
+    #[serde(rename = "preQuestID")]
+    pub pre_quest_id: Option<i64>,
+    #[serde(rename = "middleQuestIDList")]
+    pub middle_quest_id_list: Vec<i64>,
+    #[serde(rename = "middleQuestFinishIDList")]
+    pub middle_quest_finish_id_list: Vec<i64>,
+    #[serde(rename = "openQuestID")]
+    pub open_quest_id: Option<i64>,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: Option<i64>,
-    pub cpjalgenffj: Vec<i64>,
-    pub ignpmijllpf: Vec<i64>,
-    pub hnhofolcmcb: Vec<i64>,
-    pub mekoipojncf: Vec<Mekoipojncf>,
+    #[serde(rename = "openMainQuestIDList")]
+    pub open_main_quest_id_list: Vec<i64>,
+    #[serde(rename = "preMainQuestIDList")]
+    pub pre_main_quest_id_list: Vec<i64>,
+    #[serde(rename = "LEKOECDMDKH")]
+    pub lekoecdmdkh: Vec<i64>,
+    pub pre_activity_condition: Vec<PreActivityCondition>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Mekoipojncf {
+#[serde(rename_all = "camelCase")]
+pub struct PreActivityCondition {
     pub desc: Desc,
-    #[serde(rename = "MHEFAJHODHL")]
-    pub mhefajhodhl: Option<i64>,
+    pub condtion_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

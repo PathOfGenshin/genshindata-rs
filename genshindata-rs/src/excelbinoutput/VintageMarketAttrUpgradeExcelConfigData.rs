@@ -8,13 +8,13 @@ pub type VintageMarketAttrUpgradeExcelConfigData = Vec<VintageMarketAttrUpgradeE
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct VintageMarketAttrUpgradeExcelConfigDatum {
-    #[serde(rename = "EJMHMKCNLAI")]
-    pub ejmhmkcnlai: Vec<Ejmhmkcnlai>,
+    #[serde(rename = "LNIOIIHHJJK")]
+    pub lnioiihhjjk: Vec<Lnioiihhjjk>,
     pub id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Ejmhmkcnlai {
-    pub doghminaalk: Vec<i64>,
+pub struct Lnioiihhjjk {
+    pub epojhieoimk: Vec<i64>,
 }

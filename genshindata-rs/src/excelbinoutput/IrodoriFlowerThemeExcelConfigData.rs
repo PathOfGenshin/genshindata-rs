@@ -7,22 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type IrodoriFlowerThemeExcelConfigData = Vec<IrodoriFlowerThemeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriFlowerThemeExcelConfigDatum {
-    pub paampcojlmp: i64,
-    #[serde(rename = "gadgetId")]
+    pub theme_id: i64,
     pub gadget_id: i64,
-    pub ldiadlienfh: i64,
-    pub ndcdkhcjohb: i64,
-    pub leplmfejaic: i64,
-    pub gocclikcmko: i64,
-    pub bhpidojmogd: f64,
-    pub pdnjjndlnhh: i64,
-    pub chefecgjfpi: Vec<i64>,
-    pub icmplboiibc: i64,
-    pub ljnmlbhaegn: i64,
-    #[serde(rename = "watcherId")]
+    pub unlock_day: i64,
+    pub theme_title_text_map_hash: i64,
+    pub theme_desc_text_map_hash: i64,
+    pub theme_target_text_map_hash: i64,
+    pub target_picture_hash: f64,
+    pub time_limit: i64,
+    pub flower_id: Vec<i64>,
+    pub stage_unlock_cond_id: i64,
+    pub theme_unlock_cond_id: i64,
     pub watcher_id: i64,
-    #[serde(rename = "questId")]
     pub quest_id: i64,
 }

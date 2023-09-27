@@ -10,7 +10,7 @@ pub type ActivityJourneyWeaponGiftExcelConfigData = Vec<ActivityJourneyWeaponGif
 #[serde(rename_all = "camelCase")]
 pub struct ActivityJourneyWeaponGiftExcelConfigDatum {
     pub weapon_id: i64,
-    #[serde(rename = "JOLIIGIGINE")]
-    pub joliigigine: i64,
+    #[serde(rename = "DKEDMCHIOIB")]
+    pub dkedmchioib: i64,
     pub icon_name: String,
 }

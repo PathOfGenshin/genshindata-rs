@@ -7,22 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type RoguelikeRuneExcelConfigData = Vec<RoguelikeRuneExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RoguelikeRuneExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub bgbdiojamol: bool,
-    #[serde(rename = "nameTextMapHash")]
+    pub is_default_unlock: bool,
     pub name_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub befmgmfnmag: String,
-    pub bmdfpedgeki: String,
-    pub ofjnplaoknp: String,
-    pub lgobkpgpadp: String,
-    pub agkekdpohgh: i64,
-    #[serde(rename = "elementType")]
+    pub rune_icon: String,
+    pub rune_icon1: String,
+    pub rune_icon2: String,
+    pub rune_icon3: String,
+    pub default_use_count: i64,
     pub element_type: i64,
-    #[serde(rename = "abilityName")]
     pub ability_name: String,
 }

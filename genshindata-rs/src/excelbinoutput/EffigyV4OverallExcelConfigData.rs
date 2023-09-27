@@ -3,18 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
+use std::collections::HashMap;
 
-pub type EffigyV4OverallExcelConfigData = Vec<EffigyV4OverallExcelConfigDatum>;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct EffigyV4OverallExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
-    pub schedule_id: i64,
-    pub famneefmonm: i64,
-    pub cgknicfihkj: i64,
-    pub kjnabaiejmb: i64,
-    #[serde(rename = "draftId")]
-    pub draft_id: i64,
-    pub oinkddldhec: i64,
-}
+pub type EffigyV4OverallExcelConfigData = Vec<HashMap<String, i64>>;

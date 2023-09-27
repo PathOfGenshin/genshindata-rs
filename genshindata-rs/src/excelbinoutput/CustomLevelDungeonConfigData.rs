@@ -7,19 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type CustomLevelDungeonConfigData = Vec<CustomLevelDungeonConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomLevelDungeonConfigDatum {
     #[serde(rename = "dungeonID")]
     pub dungeon_id: i64,
-    #[serde(rename = "order")]
     pub order: i64,
-    #[serde(rename = "jsonPath")]
     pub json_path: String,
-    pub cjbkmebagda: String,
-    pub oijaibeejdh: Option<f64>,
-    pub liaiahmlcll: Option<f64>,
-    pub hfgloeanole: i64,
-    pub jhoajpkclci: i64,
-    pub kpiiaienekl: String,
-    pub gmgdpcjjjgh: Vec<i64>,
+    pub map_prefab_path: String,
+    pub map_scene_pic_hash: Option<f64>,
+    pub data_pic_hash: Option<f64>,
+    pub room_num: i64,
+    pub room_name_format_text_map_hash: i64,
+    pub corridors: String,
+    pub count_brick_list: Vec<i64>,
 }

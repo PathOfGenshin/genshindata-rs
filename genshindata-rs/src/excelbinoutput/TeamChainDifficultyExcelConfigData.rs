@@ -3,6 +3,15 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type TeamChainDifficultyExcelConfigData = Vec<HashMap<String, i64>>;
+pub type TeamChainDifficultyExcelConfigData = Vec<TeamChainDifficultyExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TeamChainDifficultyExcelConfigDatum {
+    pub difficulty_level: i64,
+    #[serde(rename = "GGOEGPPNNDA")]
+    pub ggoegppnnda: i64,
+    pub dungeon_level: i64,
+    pub desc_text_map_hash: i64,
+}

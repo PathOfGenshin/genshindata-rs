@@ -7,12 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type LanV2FireworksFactorDataExcelConfigData = Vec<LanV2FireworksFactorDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2FireworksFactorDataExcelConfigDatum {
-    pub bogaikehpne: i64,
-    pub blidflmonhf: Vec<i64>,
-    pub ckhfiekgeco: i64,
+    pub factor_id: i64,
+    pub perfect_range: Vec<i64>,
+    pub factor_length: i64,
     #[serde(rename = "type")]
     pub lan_v2_fireworks_factor_data_excel_config_datum_type: String,
-    pub klmoghbmppd: Vec<i64>,
+    pub color_range: Vec<i64>,
 }

@@ -7,28 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type NightCrowArgumentExcelConfigData = Vec<NightCrowArgumentExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct NightCrowArgumentExcelConfigDatum {
-    pub mfjocdilbgg: i64,
-    pub ocnmoabegoo: Vec<i64>,
-    pub ajleocmeibb: Ajleocmeibb,
-    pub imgdameceen: String,
-    pub cblhmpeknko: String,
-    pub dlgpppihdnd: String,
-    pub admnohnafmi: String,
-    pub igbbabahpik: Igbbabahpik,
-    pub bcokjcndalg: Bcokjcndalg,
-    pub oongcickdfl: String,
+    pub argument_id: i64,
+    pub gadget_state_list: Vec<i64>,
+    pub pos_offset: PosOffset,
+    pub rotation: String,
+    pub position_list: String,
+    pub limit_position_list: String,
+    pub limit_center_position: String,
+    pub invalid_state_limit_position_list: InvalidStateLimitPositionList,
+    pub invalid_state_limit_center_position: InvalidStateLimitCenterPosition,
+    pub fov: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ajleocmeibb {
-    #[serde(rename = "0,1.5,0")]
-    The0150,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bcokjcndalg {
+pub enum InvalidStateLimitCenterPosition {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "-14.89,86.69,160.33")]
@@ -38,11 +32,17 @@ pub enum Bcokjcndalg {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Igbbabahpik {
+pub enum InvalidStateLimitPositionList {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "-1,1,-0.01,1,-2,2")]
     The11001122,
     #[serde(rename = "-1,1,-0.457,2,-2,2.6")]
     The1104572226,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum PosOffset {
+    #[serde(rename = "0,1.5,0")]
+    The0150,
 }

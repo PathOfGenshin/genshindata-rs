@@ -18,32 +18,20 @@ pub struct HuntingMonsterExcelConfigDatum {
     pub city_list: Vec<i64>,
     pub limit_time: i64,
     pub search_point_num: Option<i64>,
-    #[serde(rename = "DGOBHPMGJJK")]
-    pub dgobhpmgjjk: Vec<Dgobhpmgjjk>,
+    pub refresh_cond: Vec<RefreshCond>,
     pub clue_text_id_list: Vec<i64>,
     pub news_text_text_map_hash: i64,
     pub trait_text_text_map_hash: i64,
-    #[serde(rename = "PIFILONOKAH")]
-    pub pifilonokah: i64,
-    #[serde(rename = "BFBMKCJFDLD")]
-    pub bfbmkcjfdld: i64,
-    #[serde(rename = "OFOALGHDGGN")]
-    pub ofoalghdggn: i64,
-    #[serde(rename = "LKDHACGMBAF")]
-    pub lkdhacgmbaf: i64,
-    pub refresh_cond: Vec<i64>,
+    pub mechanism_title1_text_map_hash: i64,
+    pub mechanism_desc1_text_map_hash: i64,
+    pub mechanism_title2_text_map_hash: i64,
+    pub mechanism_desc2_text_map_hash: i64,
+    pub suite_id: Vec<i64>,
     pub create_pos_type: Option<String>,
-    #[serde(rename = "DBFIICOKGPI")]
-    pub dbfiicokgpi: Option<bool>,
-    #[serde(rename = "LBAPLIBGPNH")]
-    pub lbaplibgpnh: Option<i64>,
+    pub is_disable_wandering: Option<bool>,
+    pub route_id: Option<i64>,
     pub difficulty: Option<Difficulty>,
     pub initial_pose: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Dgobhpmgjjk {
-    pub param: Vec<Option<serde_json::Value>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -53,4 +41,9 @@ pub enum Difficulty {
     HuntingDifficultyHard,
     #[serde(rename = "HUNTING_DIFFICULTY_MEDIUM")]
     HuntingDifficultyMedium,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct RefreshCond {
+    pub param: Vec<Option<serde_json::Value>>,
 }

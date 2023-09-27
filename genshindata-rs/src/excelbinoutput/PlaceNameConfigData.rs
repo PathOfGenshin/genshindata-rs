@@ -7,21 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type PlaceNameConfigData = Vec<PlaceNameConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct PlaceNameConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    pub fngegjgnkbp: Option<Fngegjgnkbp>,
-    pub lkceiobbpmg: String,
-    #[serde(rename = "conditionType")]
+    pub map_tag_type: Option<MapTagType>,
+    #[serde(rename = "placeNameID")]
+    pub place_name_id: String,
     pub condition_type: ConditionType,
-    pub hhefnicdojj: String,
-    pub aocpdifcbde: String,
-    #[serde(rename = "actionType")]
+    pub condition_param1: String,
+    pub condition_param2: String,
     pub action_type: ActionType,
-    pub dhjgdenggen: i64,
+    pub switch_name_text_map_hash: i64,
     #[serde(rename = "type")]
     pub place_name_config_datum_type: Option<Type>,
-    pub mejikaoboeg: Option<i64>,
+    #[serde(rename = "subAreaID")]
+    pub sub_area_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -42,7 +43,7 @@ pub enum ConditionType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Fngegjgnkbp {
+pub enum MapTagType {
     Abyssalisle,
     #[serde(rename = "MichiaeMatsuri")]
     MichiaeMatsuri,

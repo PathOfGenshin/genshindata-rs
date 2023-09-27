@@ -3,6 +3,16 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type GravenInnocenceCampLevelExcelConfigData = Vec<HashMap<String, i64>>;
+pub type GravenInnocenceCampLevelExcelConfigData = Vec<GravenInnocenceCampLevelExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct GravenInnocenceCampLevelExcelConfigDatum {
+    pub id: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
+    pub challenge_index: i64,
+    #[serde(rename = "WatcherID")]
+    pub watcher_id: i64,
+}

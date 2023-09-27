@@ -7,58 +7,63 @@ use serde::{Serialize, Deserialize};
 pub type ActivityChessCardExcelConfigData = Vec<ActivityChessCardExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityChessCardExcelConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    pub mgmkcenceeg: i64,
-    pub ghpnaophiom: Option<Ghpnaophiom>,
-    pub eaohfldmbca: i64,
-    pub cmkddmdpajj: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub number: i64,
+    pub tag: Option<Tag>,
+    pub need_chess_level: i64,
+    pub card_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    pub eoobhiegahd: i64,
-    pub cifoeajhddn: i64,
-    #[serde(rename = "descParamList")]
+    pub extra_desc_text_map_hash: i64,
+    pub extra_desc2_text_map_hash: i64,
     pub desc_param_list: Vec<Vec<f64>>,
-    pub gpajopcblje: Vec<bool>,
-    pub jdgpjgeljef: Option<Jdgpjgeljef>,
-    pub legmeiblggb: Option<Legmeiblggb>,
-    pub ojoddliadlo: Option<f64>,
-    #[serde(rename = "costPoints")]
+    pub desc_param_superposition_list: Vec<bool>,
+    pub card_numerical_modification_type: Option<CardNumericalModificationType>,
+    pub card_numerical_modification_mode: Option<CardNumericalModificationMode>,
+    pub card_numerical_modification_value: Option<f64>,
     pub cost_points: Option<i64>,
-    #[serde(rename = "cardType")]
     pub card_type: Option<CardType>,
-    pub hcoebkhmcbp: i64,
-    pub fkomjdohdjg: Fkomjdohdjg,
-    pub dokkjnamfpm: i64,
-    pub ikollfkcina: Option<bool>,
-    pub omffdeckkck: Option<bool>,
-    pub bkdejoahfpe: Vec<Fkomjdohdjg>,
-    pub bjpmdechccb: Option<bool>,
-    pub pelhiebdnfb: Option<Pelhiebdnfb>,
+    pub card_count: i64,
+    pub effect: Effect,
+    pub curse_weight: i64,
+    pub is_can_attach_curse: Option<bool>,
+    pub is_show_on_pick: Option<bool>,
+    pub extra_effect_list: Vec<Effect>,
+    pub is_remove_on_pick: Option<bool>,
+    pub card_quality_type: Option<CardQualityType>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Fkomjdohdjg {
-    pub eamjghojekb: Vec<i64>,
-    pub llbkndabapd: String,
-    pub ddnblgemfki: Option<String>,
-    pub mgmhdbildpp: Option<i64>,
-    pub fanfhflfdkh: Option<i64>,
-    pub godnlelkdcn: Option<i64>,
-    pub bgacfbbhapc: Option<i64>,
-    pub bhgkldbcoko: Option<Bhgkldbcoko>,
-    pub empfhhmopdm: Option<i64>,
+pub enum CardNumericalModificationMode {
+    #[serde(rename = "CARD_NUMERICAL_BASE")]
+    CardNumericalBase,
+    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
+    CardNumericalPercentage,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bhgkldbcoko {
-    #[serde(rename = "CHESS_CARD_TARGET_ALL")]
-    ChessCardTargetAll,
-    #[serde(rename = "CHESS_CARD_TARGET_GADGETS")]
-    ChessCardTargetGadgets,
+pub enum CardNumericalModificationType {
+    #[serde(rename = "CARD_NUMERICAL_ATTACK")]
+    CardNumericalAttack,
+    #[serde(rename = "CARD_NUMERICAL_ATTACK_INTERVAL")]
+    CardNumericalAttackInterval,
+    #[serde(rename = "CARD_NUMERICAL_ATTACK_RANGE")]
+    CardNumericalAttackRange,
+    #[serde(rename = "CARD_NUMERICAL_MASTERY")]
+    CardNumericalMastery,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum CardQualityType {
+    #[serde(rename = "CARD_QUALITY_GOOD")]
+    CardQualityGood,
+    #[serde(rename = "CARD_QUALITY_PERCECT")]
+    CardQualityPercect,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -73,8 +78,31 @@ pub enum CardType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Effect {
+    pub target_type: Option<TargetType>,
+    pub target_param_list: Vec<i64>,
+    pub effect_type: Option<String>,
+    pub effect_str_param: String,
+    pub effect_param1: Option<i64>,
+    pub active_rounds: Option<i64>,
+    pub effect_param2: Option<i64>,
+    pub effect_param3: Option<i64>,
+    pub begin_round: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ghpnaophiom {
+pub enum TargetType {
+    #[serde(rename = "CHESS_CARD_TARGET_ALL")]
+    ChessCardTargetAll,
+    #[serde(rename = "CHESS_CARD_TARGET_GADGETS")]
+    ChessCardTargetGadgets,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Tag {
     #[serde(rename = "CARD_TAG_ELECTRIC")]
     CardTagElectric,
     #[serde(rename = "CARD_TAG_FIRE")]
@@ -91,35 +119,4 @@ pub enum Ghpnaophiom {
     CardTagWater,
     #[serde(rename = "CARD_TAG_WIND")]
     CardTagWind,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jdgpjgeljef {
-    #[serde(rename = "CARD_NUMERICAL_ATTACK")]
-    CardNumericalAttack,
-    #[serde(rename = "CARD_NUMERICAL_ATTACK_INTERVAL")]
-    CardNumericalAttackInterval,
-    #[serde(rename = "CARD_NUMERICAL_ATTACK_RANGE")]
-    CardNumericalAttackRange,
-    #[serde(rename = "CARD_NUMERICAL_MASTERY")]
-    CardNumericalMastery,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Legmeiblggb {
-    #[serde(rename = "CARD_NUMERICAL_BASE")]
-    CardNumericalBase,
-    #[serde(rename = "CARD_NUMERICAL_PERCENTAGE")]
-    CardNumericalPercentage,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pelhiebdnfb {
-    #[serde(rename = "CARD_QUALITY_GOOD")]
-    CardQualityGood,
-    #[serde(rename = "CARD_QUALITY_PERCECT")]
-    CardQualityPercect,
 }

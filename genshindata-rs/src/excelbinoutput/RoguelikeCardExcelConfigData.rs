@@ -7,47 +7,43 @@ use serde::{Serialize, Deserialize};
 pub type RoguelikeCardExcelConfigData = Vec<RoguelikeCardExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RoguelikeCardExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "sortOrder")]
     pub sort_order: i64,
     #[serde(rename = "type")]
     pub roguelike_card_excel_config_datum_type: Type,
-    pub mpmhbidbgok: Vec<i64>,
-    pub bcjhmknbjjn: Vec<String>,
-    pub pfcemconjlj: Pfcemconjlj,
-    pub cmkddmdpajj: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub related_rune_list: Vec<i64>,
+    pub related_element_list: Vec<String>,
+    pub effect_config: EffectConfig,
+    pub card_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    pub eoobhiegahd: i64,
-    #[serde(rename = "descParamList")]
+    pub extra_desc_text_map_hash: i64,
     pub desc_param_list: Vec<f64>,
-    pub gpajopcblje: Vec<bool>,
-    pub jcaecldkgko: Vec<i64>,
-    pub beojjljaahp: Option<Beojjljaahp>,
-    pub kkkedpcacml: Option<bool>,
+    pub desc_param_superposition_list: Vec<bool>,
+    pub desc_param_base_value_list: Vec<i64>,
+    pub label: Option<Label>,
+    pub is_clear_at_next_level: Option<bool>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EffectConfig {
+    pub effect_type: String,
+    pub effect_key: String,
+    pub effect_param: String,
+    pub display_offset: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Beojjljaahp {
+pub enum Label {
     #[serde(rename = "ROGUELIKE_CARD_LABEL_EQUIPMENT")]
     RoguelikeCardLabelEquipment,
     #[serde(rename = "ROGUELIKE_CARD_LABEL_LEVEL")]
     RoguelikeCardLabelLevel,
     #[serde(rename = "ROGUELIKE_CARD_LABEL_RUNE")]
     RoguelikeCardLabelRune,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Pfcemconjlj {
-    pub ddnblgemfki: String,
-    pub jfkglgfglgl: String,
-    pub pmllaiokhjo: String,
-    pub omhcdpojfae: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

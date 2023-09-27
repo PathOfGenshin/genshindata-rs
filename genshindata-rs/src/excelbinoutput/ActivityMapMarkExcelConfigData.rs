@@ -11,8 +11,9 @@ pub type ActivityMapMarkExcelConfigData = Vec<ActivityMapMarkExcelConfigDatum>;
 pub struct ActivityMapMarkExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub iabjjlninpn: f64,
-    pub amgmjbanmhe: Option<bool>,
-    pub bpbggpcdked: Option<String>,
-    pub fmakohollfl: Option<i64>,
+    pub khpdehakmjc: f64,
+    pub fpdkpdogfac: Option<bool>,
+    #[serde(rename = "rotateType")]
+    pub rotate_type: Option<String>,
+    pub mpgpmppplmg: Option<i64>,
 }

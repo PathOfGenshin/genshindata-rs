@@ -7,50 +7,35 @@ use serde::{Serialize, Deserialize};
 pub type SceneExcelConfigData = Vec<SceneExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct SceneExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "type")]
     pub scene_excel_config_datum_type: Type,
-    #[serde(rename = "scriptData")]
     pub script_data: String,
-    #[serde(rename = "overrideDefaultProfile")]
     pub override_default_profile: String,
-    #[serde(rename = "levelEntityConfig")]
     pub level_entity_config: String,
-    #[serde(rename = "specifiedAvatarList")]
     pub specified_avatar_list: Vec<i64>,
-    #[serde(rename = "comment")]
     pub comment: Comment,
-    pub pgpdapngiap: Vec<f64>,
-    pub cjfdbmebjnp: Vec<i64>,
-    #[serde(rename = "maxSpecifiedAvatarNum")]
+    #[serde(rename = "MBGGDNLAIHC")]
+    pub mbggdnlaihc: Vec<f64>,
+    pub dungeon_entry_point: Vec<i64>,
     pub max_specified_avatar_num: Option<i64>,
-    pub pecjaahodpe: Option<bool>,
-    #[serde(rename = "worldSceneId")]
+    pub ignore_nav_mesh: Option<bool>,
     pub world_scene_id: Option<i64>,
-    pub ifdbdjbenik: Option<String>,
-    pub bplmfaobaha: Option<bool>,
-    pub epomnhdhgob: Option<String>,
-    pub lnlpbolhnba: Option<i64>,
-    pub pchpdgcefkh: Option<bool>,
-    pub ljlllmdjegg: Option<bool>,
-    pub hfilninkmfj: Option<f64>,
-    #[serde(rename = "entityAppearSorted")]
+    pub mp_type: Option<String>,
+    pub use_to_the_moon: Option<bool>,
+    pub navmesh_mode: Option<String>,
+    pub safe_point: Option<i64>,
+    pub is_allow_map_mark_point: Option<bool>,
+    pub is_delete_map_mark_point: Option<bool>,
+    pub scene_fix_time: Option<f64>,
     pub entity_appear_sorted: Option<i64>,
-    pub bdbdlhcnfpc: Option<Bdbdlhcnfpc>,
-    pub aonfgkacnhg: Option<i64>,
-    pub hcnbpgknilm: Option<String>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bdbdlhcnfpc {
-    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
-    SceneSubTypePersistentDungeon,
-    #[serde(rename = "SCENE_SUB_TYPE_UGC_PLAY")]
-    SceneSubTypeUgcPlay,
+    pub subtype: Option<Subtype>,
+    #[serde(rename = "EKKFMJCDCPP")]
+    pub ekkfmjcdcpp: Option<i64>,
+    #[serde(rename = "CFCOOICCLEE")]
+    pub cfcooicclee: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -74,4 +59,13 @@ pub enum Type {
     SceneRoom,
     #[serde(rename = "SCENE_WORLD")]
     SceneWorld,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Subtype {
+    #[serde(rename = "SCENE_SUB_TYPE_PERSISTENT_DUNGEON")]
+    SceneSubTypePersistentDungeon,
+    #[serde(rename = "SCENE_SUB_TYPE_UGC_PLAY")]
+    SceneSubTypeUgcPlay,
 }

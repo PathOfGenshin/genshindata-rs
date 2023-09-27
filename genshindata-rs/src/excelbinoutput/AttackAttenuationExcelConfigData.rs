@@ -7,11 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type AttackAttenuationExcelConfigData = Vec<AttackAttenuationExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AttackAttenuationExcelConfigDatum {
-    pub kgjcbkcpocm: String,
-    pub fdjgmmpkmea: f64,
-    pub ijinbfmchpm: Vec<f64>,
-    pub neefinkmlog: Vec<f64>,
-    pub bbcbkieiihe: Vec<f64>,
+    pub group: String,
+    pub reset_cycle: f64,
+    pub durability_sequence: Vec<f64>,
+    pub enbreak_sequence: Vec<f64>,
+    pub damage_sequence: Vec<f64>,
 }

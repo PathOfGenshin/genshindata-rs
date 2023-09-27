@@ -17,8 +17,7 @@ pub struct ReunionWatcherExcelConfigDatum {
     pub id: i64,
     pub trigger_config: TriggerConfig,
     pub progress: i64,
-    #[serde(rename = "KJPEEICEOJO")]
-    pub kjpeeiceojo: Option<i64>,
+    pub reward_unlock_day: Option<i64>,
     pub is_disuse: Option<bool>,
 }
 

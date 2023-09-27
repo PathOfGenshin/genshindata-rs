@@ -3,6 +3,15 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type InferenceFreestyleExcelConfigData = Vec<HashMap<String, i64>>;
+pub type InferenceFreestyleExcelConfigData = Vec<InferenceFreestyleExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct InferenceFreestyleExcelConfigDatum {
+    pub freestyle_id: i64,
+    pub interpret_id: i64,
+    pub associating_id: i64,
+    pub associate_error_id: i64,
+    pub submit_error_id: i64,
+}

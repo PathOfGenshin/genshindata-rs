@@ -11,23 +11,18 @@ pub type MoonfinTrialLevelExcelConfigData = Vec<MoonfinTrialLevelExcelConfigDatu
 pub struct MoonfinTrialLevelExcelConfigDatum {
     pub level_id: i64,
     pub open_day: i64,
-    #[serde(rename = "IGDMJFDNPJG")]
-    pub igdmjfdnpjg: Vec<i64>,
+    #[serde(rename = "watcherID")]
+    pub watcher_id: Vec<i64>,
     pub main_quest: Option<i64>,
-    #[serde(rename = "PDJIGEJHDNA")]
-    pub pdjigejhdna: Vec<f64>,
+    pub mark_position: Vec<f64>,
     pub level_name_text_map_hash: i64,
     pub description_text_map_hash: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "AMIDLBBFIHH")]
-    pub amidlbbfihh: Option<String>,
-    #[serde(rename = "EMNJIBLMPPB")]
-    pub emnjiblmppb: Option<i64>,
+    pub level_type: Option<String>,
+    pub specific_fish_id: Option<i64>,
     pub gallery_id: Option<i64>,
     pub challenge_id: Option<i64>,
-    #[serde(rename = "CNHFONLNNEG")]
-    pub cnhfonlnneg: Option<i64>,
-    #[serde(rename = "FDDDHJJGEOD")]
-    pub fdddhjjgeod: Option<i64>,
+    pub leading_level: Option<i64>,
+    pub leading_main_quest: Option<i64>,
     pub reward_preview_id: Option<i64>,
 }
