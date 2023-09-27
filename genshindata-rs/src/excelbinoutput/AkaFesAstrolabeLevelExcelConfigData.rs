@@ -11,22 +11,23 @@ pub type AkaFesAstrolabeLevelExcelConfigData = Vec<AkaFesAstrolabeLevelExcelConf
 pub struct AkaFesAstrolabeLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub ldiadlienfh: i64,
+    #[serde(rename = "unlockDay")]
+    pub unlock_day: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub dopdfnibcfa: String,
-    pub apggjmjchjg: String,
-    pub njkejhbjjde: Vec<i64>,
-    pub ecemgmodlkc: Vec<i64>,
-    pub fnmanaeghnf: Vec<i64>,
-    pub hfdkideiddl: Vec<f64>,
-    pub bbjoefeamgg: Vec<i64>,
-    pub fdjdkdigodg: Vec<f64>,
-    pub fghfamkiphd: Vec<i64>,
-    pub pfljfkbeaco: Vec<f64>,
-    pub emoeellhiek: Vec<i64>,
-    pub memoldoodgk: Option<i64>,
-    pub jafhnjombfm: Option<bool>,
+    pub jmipcfjnjio: String,
+    pub njaclmjglod: String,
+    pub bbhmmfakpba: Vec<i64>,
+    pub pelooadbmco: Vec<i64>,
+    pub bokiofmgcln: Vec<i64>,
+    pub mppeoedogig: Vec<f64>,
+    pub dggekimidoa: Vec<i64>,
+    pub nkhioidaahe: Vec<f64>,
+    pub fagcfkpfgdk: Vec<i64>,
+    pub iodgbiefgna: Vec<f64>,
+    pub pbbfejeeopn: Vec<i64>,
+    pub nfcnfajigjf: Option<i64>,
+    pub kcijeocnjif: Option<bool>,
 }

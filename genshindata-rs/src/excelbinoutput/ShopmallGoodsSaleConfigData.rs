@@ -7,17 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type ShopmallGoodsSaleConfigData = Vec<ShopmallGoodsSaleConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ShopmallGoodsSaleConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "goodsId")]
     pub goods_id: i64,
-    #[serde(rename = "IPPMBKMPBKO")]
-    pub ippmbkmpbko: i64,
-    #[serde(rename = "discountRate")]
+    pub discount_mcoin: i64,
     pub discount_rate: f64,
-    #[serde(rename = "DJMPLOPABOD")]
-    pub djmplopabod: String,
-    #[serde(rename = "CONAMEHEINO")]
-    pub conameheino: String,
+    pub discount_begin_time: String,
+    pub discount_end_time: String,
 }

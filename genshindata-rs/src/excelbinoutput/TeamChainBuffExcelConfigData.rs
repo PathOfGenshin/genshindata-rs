@@ -7,15 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type TeamChainBuffExcelConfigData = Vec<TeamChainBuffExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct TeamChainBuffExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub behhcchceho: String,
-    #[serde(rename = "icon")]
+    pub ability_group_name: String,
     pub icon: String,
-    #[serde(rename = "buffNameTextMapHash")]
     pub buff_name_text_map_hash: i64,
-    pub lmhcbkddkhm: i64,
-    pub noekhckmdap: Vec<String>,
+    pub buff_desc_text_map_hash: i64,
+    pub desc_params: Vec<String>,
 }

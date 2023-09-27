@@ -14,8 +14,7 @@ pub struct MonsterExcelConfigDatum {
     pub monster_excel_config_datum_type: MonsterExcelConfigDatumType,
     pub script_data_path_hash: Option<f64>,
     pub server_script: ServerScript,
-    #[serde(rename = "CDNKLDCGHFM")]
-    pub cdnkldcghfm: f64,
+    pub combat_config_hash: f64,
     pub affix: Vec<i64>,
     pub ai: Ai,
     #[serde(rename = "isAIHashCheck")]
@@ -45,13 +44,11 @@ pub struct MonsterExcelConfigDatum {
     pub rock_sub_hurt: Option<f64>,
     pub prop_grow_curves: Vec<PropGrowCurve>,
     pub physical_sub_hurt: Option<f64>,
-    #[serde(rename = "FAOCLDIEFHD")]
-    pub faocldiefhd: Option<f64>,
-    pub prefab_path_hash: Option<f64>,
+    pub prefab_path_ragdoll_hash: Option<f64>,
+    pub deformation_mesh_path_hash: Option<f64>,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "KCANMNBNNED")]
-    pub kcanmnbnned: f64,
+    pub prefab_path_hash: f64,
     pub prefab_path_remote_hash: f64,
     pub controller_path_hash: f64,
     pub controller_path_remote_hash: f64,
@@ -64,9 +61,10 @@ pub struct MonsterExcelConfigDatum {
     pub safety_check: Option<bool>,
     pub is_scene_reward: Option<bool>,
     pub vision_level: Option<VisionLevel>,
-    #[serde(rename = "EDBAAACGADP")]
-    pub edbaaacgadp: Option<Edbaaacgadp>,
-    pub combat_config_hash: Option<bool>,
+    #[serde(rename = "NFCAAJNGGND")]
+    pub nfcaajnggnd: Option<Nfcaajnggnd>,
+    #[serde(rename = "AJGDFKCDNDC")]
+    pub ajgdfkcdndc: Option<bool>,
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
     pub can_swim: Option<bool>,
@@ -83,12 +81,6 @@ pub enum Ai {
     Ranged01,
     Scout01,
     Sentry02,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Edbaaacgadp {
-    Ousia,
-    Pneuma,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -143,6 +135,12 @@ pub enum MonsterExcelConfigDatumType {
     MonsterOrdinary,
     #[serde(rename = "MONSTER_PARTNER")]
     MonsterPartner,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Nfcaajnggnd {
+    Ousia,
+    Pneuma,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -3,6 +3,14 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type CustomLevelComponentLimitConfigData = Vec<HashMap<String, i64>>;
+pub type CustomLevelComponentLimitConfigData = Vec<CustomLevelComponentLimitConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CustomLevelComponentLimitConfigDatum {
+    pub limit_id: i64,
+    #[serde(rename = "componentID")]
+    pub component_id: i64,
+    pub max_count: i64,
+}

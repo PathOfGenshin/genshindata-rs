@@ -21,16 +21,12 @@ pub struct GivingExcelConfigDatum {
     pub highlight: Option<bool>,
     pub icon: Icon,
     pub is_remove_item: Option<bool>,
-    #[serde(rename = "IDHICMEHKOL")]
-    pub idhicmehkol: Idhicmehkol,
+    pub giving_type: GivingType,
     pub is_repeatable: Option<bool>,
     pub giving_group_count: Option<i64>,
-    #[serde(rename = "JHIBLALPMJA")]
-    pub jhiblalpmja: Option<bool>,
-    #[serde(rename = "HGFJGFBEKMA")]
-    pub hgfjgfbekma: Option<bool>,
-    #[serde(rename = "GABHCMMOHNI")]
-    pub gabhcmmohni: Option<bool>,
+    pub is_mp_enable: Option<bool>,
+    pub is_reset: Option<bool>,
+    pub is_take_back: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -51,20 +47,20 @@ pub enum GivingMethod {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum GivingType {
+    #[serde(rename = "GIVING_TYPE_GADGET")]
+    GivingTypeGadget,
+    #[serde(rename = "GIVING_TYPE_QUEST")]
+    GivingTypeQuest,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum Icon {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "UI_Icon_Item_Temp")]
     UiIconItemTemp,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Idhicmehkol {
-    #[serde(rename = "GIVING_TYPE_GADGET")]
-    GivingTypeGadget,
-    #[serde(rename = "GIVING_TYPE_QUEST")]
-    GivingTypeQuest,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

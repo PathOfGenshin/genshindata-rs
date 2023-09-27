@@ -7,28 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type LanV2ProjectionExcelConfigData = Vec<LanV2ProjectionExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2ProjectionExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub cbmdgjbonkn: i64,
-    pub aniocpkilpo: i64,
-    pub fohgbbjjddh: i64,
-    pub lbecmbbmbed: i64,
-    pub gdgifimcdle: i64,
-    pub pdpfhkiekbc: f64,
-    pub fkocbfnalgf: i64,
-    pub opalamljojl: i64,
-    pub oipkoomjpcc: i64,
-    pub cjnoabbmpcm: i64,
-    pub lnigmkncaib: i64,
-    pub olodickeond: i64,
-    pub blojmmnmlha: Vec<String>,
-    pub ocecfjmbkbn: Vec<String>,
-    #[serde(rename = "guideQuestId")]
+    pub sensitivity_free_rotation: i64,
+    pub sensitivity_single_axis_rotation: i64,
+    pub sensitivity_single_axis_translation: i64,
+    pub sensitivity_free_rotation_joypad: i64,
+    pub sensitivity_single_axis_rotation_joypad: i64,
+    pub sensitivity_single_axis_translation_joypad: f64,
+    pub push_tips_id_joypad: i64,
+    pub push_tips_id_touch: i64,
+    pub push_tips_id_mouse: i64,
+    pub time_threshold_unlock_answer: i64,
+    pub time_threshold_show_standby_prompt: i64,
+    pub time_threshold_show_continuous_progress: i64,
+    pub lead_guides: Vec<String>,
+    pub guides: Vec<String>,
     pub guide_quest_id: i64,
-    #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
 }

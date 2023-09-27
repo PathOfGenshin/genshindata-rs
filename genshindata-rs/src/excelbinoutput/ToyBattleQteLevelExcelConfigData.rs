@@ -11,32 +11,33 @@ pub type ToyBattleQteLevelExcelConfigData = Vec<ToyBattleQteLevelExcelConfigDatu
 pub struct ToyBattleQteLevelExcelConfigDatum {
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub pjgmfkpjhkp: i64,
-    pub ndlnfhbeijg: i64,
-    pub nnccgjogofl: Vec<i64>,
-    pub aiecdghkbab: f64,
-    pub afnfnomgiba: f64,
-    pub aidfkflcnff: i64,
-    pub jbdoebfhdaj: String,
+    pub ckjnoiicmhm: i64,
+    pub giaianflgfc: i64,
+    pub ohgjnielbcg: Vec<i64>,
+    pub cigknbdamjh: f64,
+    pub hbmabjjjnpf: f64,
+    pub bohnfkijdkm: i64,
+    pub gnbfblifhjg: String,
     #[serde(rename = "jsonName")]
     pub json_name: String,
-    pub blefinifdkd: f64,
-    pub melifpjgcbo: f64,
-    pub iobbhgonddp: f64,
+    pub fbidbhcmdmp: f64,
+    pub ljphainkjcl: f64,
+    pub dhkpfjhabjd: f64,
     #[serde(rename = "levelID")]
     pub level_id: i64,
     #[serde(rename = "activityID")]
     pub activity_id: i64,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub oojhnnjmcbg: Vec<i64>,
-    pub edfolnhpcmi: Vec<i64>,
+    #[serde(rename = "questList")]
+    pub quest_list: Vec<i64>,
+    pub fdjidnomabg: Vec<i64>,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
     #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub gibkoamhcmi: Vec<String>,
-    pub onmlkccgffh: Vec<String>,
-    pub cjpjholhbbl: Vec<String>,
-    pub mcdihjgaici: Option<i64>,
+    pub mfbnbanhgai: Vec<String>,
+    pub npkocciiegk: Vec<String>,
+    pub hhhjncligdh: Vec<String>,
+    pub jooinpeplol: Option<i64>,
 }

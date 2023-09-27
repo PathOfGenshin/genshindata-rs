@@ -7,26 +7,28 @@ use serde::{Serialize, Deserialize};
 pub type ActivityChessPreviewExcelConfigData = Vec<ActivityChessPreviewExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityChessPreviewExcelConfigDatum {
     #[serde(rename = "activityID")]
     pub activity_id: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "rewardPreviewID")]
     pub reward_preview_id: i64,
-    pub pcbbhnmmfjn: i64,
-    pub plcakbcahab: i64,
-    #[serde(rename = "watcherList")]
+    #[serde(rename = "preQuestMainID")]
+    pub pre_quest_main_id: i64,
+    #[serde(rename = "openQuestMainID")]
+    pub open_quest_main_id: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "matchPlayerLimit")]
     pub match_player_limit: i64,
-    pub cnpmajefbfe: bool,
-    pub afjcabppple: i64,
-    pub abibkejplmg: i64,
-    #[serde(rename = "punishTime")]
+    pub open_teach_dungeon: bool,
+    #[serde(rename = "teachDungeonID")]
+    pub teach_dungeon_id: i64,
+    #[serde(rename = "teachMapID")]
+    pub teach_map_id: i64,
     pub punish_time: i64,
-    pub nnjinbfcilb: i64,
-    pub nfhpnideipc: i64,
-    pub bmbehbkgfpk: Vec<i64>,
+    #[serde(rename = "coinID")]
+    pub coin_id: i64,
+    #[serde(rename = "seriesID")]
+    pub series_id: i64,
+    pub teach_score_id_list: Vec<i64>,
 }

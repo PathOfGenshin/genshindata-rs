@@ -7,8 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySpiceGivingExcelConfigData = Vec<ActivitySpiceGivingExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySpiceGivingExcelConfigDatum {
-    pub emonmjldgha: i64,
-    pub mkomcpomhdo: Option<i64>,
+    pub giving_data_id: i64,
+    pub character_id: Option<i64>,
 }

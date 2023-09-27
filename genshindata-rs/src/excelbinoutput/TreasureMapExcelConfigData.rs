@@ -29,6 +29,5 @@ pub struct TreasureMapExcelConfigDatum {
     pub spot_revise_level_id: i64,
     pub detector_material_id: i64,
     pub guide_child_quest_id: i64,
-    #[serde(rename = "NLDAOJMKPPJ")]
-    pub nldaojmkppj: Option<i64>,
+    pub front_child_quest_id: Option<i64>,
 }

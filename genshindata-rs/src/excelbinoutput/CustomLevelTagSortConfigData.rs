@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type CustomLevelTagSortConfigData = Vec<CustomLevelTagSortConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomLevelTagSortConfigDatum {
-    #[serde(rename = "configId")]
     pub config_id: i64,
-    pub ppbfdjdjdcd: String,
-    pub flgdghcegac: String,
+    pub color: String,
+    pub end_color: String,
 }

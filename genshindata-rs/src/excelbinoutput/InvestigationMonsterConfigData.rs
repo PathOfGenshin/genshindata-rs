@@ -13,12 +13,9 @@ pub struct InvestigationMonsterConfigDatum {
     pub city_id: i64,
     pub monster_id_list: Vec<i64>,
     pub group_id_list: Vec<i64>,
-    #[serde(rename = "HNPBLNJAGGD")]
-    pub hnpblnjaggd: Vec<i64>,
-    #[serde(rename = "EPGDNIKGNBN")]
-    pub epgdnikgnbn: Vec<i64>,
-    #[serde(rename = "JPBADOODAMI")]
-    pub jpbadoodami: i64,
+    pub unlock_chapter_id_list: Vec<i64>,
+    pub unlock_wq_parent_quest_id_list: Vec<i64>,
+    pub wq_accept_hint_text_map_hash: i64,
     pub reward_preview_id: i64,
     pub map_mark_create_type: Option<MapMarkCreateType>,
     pub map_mark_create_condition: MapMarkCreateCondition,

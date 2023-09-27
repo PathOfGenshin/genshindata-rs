@@ -14,15 +14,12 @@ pub struct SummerTimeV2BoatStageExcelConfigDatum {
     pub watcher_list: Vec<i64>,
     pub gallery_id: i64,
     pub push_tips_id: i64,
-    #[serde(rename = "DGJNHBGFBAK")]
-    pub dgjnhbgfbak: i64,
+    #[serde(rename = "groupLinkID")]
+    pub group_link_id: i64,
     pub condition_type: Vec<ConditionType>,
-    #[serde(rename = "CJPGFFDDBMB")]
-    pub cjpgffddbmb: Vec<i64>,
-    #[serde(rename = "GIJMHLOPLDN")]
-    pub gijmhlopldn: Vec<i64>,
-    #[serde(rename = "PANHJOBJEOB")]
-    pub panhjobjeob: Vec<i64>,
+    pub condition_param: Vec<i64>,
+    pub condition_desc: Vec<i64>,
+    pub condition_result: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

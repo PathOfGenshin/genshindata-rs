@@ -11,7 +11,7 @@ pub type AkaFesArchitectComponentExcelConfigData = Vec<AkaFesArchitectComponentE
 pub struct AkaFesArchitectComponentExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub moomaancllo: i64,
-    pub lcmkdpecape: i64,
-    pub nlnopnkpghm: String,
+    pub nalaohfnbga: i64,
+    pub baiddncbcnh: i64,
+    pub nhilceopiog: String,
 }

@@ -11,8 +11,8 @@ pub type ActivityGcgpveInfiniteScoreLevelExcelConfigData = Vec<ActivityGcgpveInf
 pub struct ActivityGcgpveInfiniteScoreLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub godinnkaglg: String,
+    pub bbjadomioge: String,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
-    pub kgliibmbegd: Option<i64>,
+    pub hhdniepccpb: Option<i64>,
 }

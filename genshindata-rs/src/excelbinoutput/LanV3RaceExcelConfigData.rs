@@ -7,20 +7,21 @@ use serde::{Serialize, Deserialize};
 pub type LanV3RaceExcelConfigData = Vec<LanV3RaceExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV3RaceExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub cfelapchmek: i64,
-    pub ccldficfmeb: Vec<i64>,
-    pub pabmlaffdal: i64,
-    pub beahefgkljl: i64,
-    pub bekfjcinhhl: Vec<i64>,
-    pub cfccgghjicl: i64,
-    pub llajffmpgid: i64,
-    pub gnpgimligbd: i64,
+    pub group_link_id: i64,
+    pub score_watcher_list: Vec<i64>,
+    pub time_factor: i64,
+    pub gold_factor: i64,
+    #[serde(rename = "BOBJHPHMGAH")]
+    pub bobjhphmgah: Vec<i64>,
+    #[serde(rename = "OGCEGDNAELA")]
+    pub ogcegdnaela: i64,
+    #[serde(rename = "ALLAGBHANMG")]
+    pub allagbhanmg: i64,
+    #[serde(rename = "NDMDKGKHNEG")]
+    pub ndmdkgkhneg: i64,
 }

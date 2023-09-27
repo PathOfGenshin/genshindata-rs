@@ -3,6 +3,16 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type ActivityArenaChallengeChapterExcelConfigData = Vec<HashMap<String, i64>>;
+pub type ActivityArenaChallengeChapterExcelConfigData = Vec<ActivityArenaChallengeChapterExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ActivityArenaChallengeChapterExcelConfigDatum {
+    pub chapter_id: i64,
+    pub chapter_start_day: i64,
+    pub chapter_start_quest_id: i64,
+    pub chapter_end_quest_id: i64,
+    pub chapter_quest_title_text_map_hash: i64,
+    pub chapter_quest_desc_text_map_hash: i64,
+}

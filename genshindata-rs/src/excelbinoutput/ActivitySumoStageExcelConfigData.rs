@@ -7,46 +7,30 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySumoStageExcelConfigData = Vec<ActivitySumoStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySumoStageExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "FBDAGDPMAJG")]
-    pub fbdagdpmajg: i64,
-    #[serde(rename = "openDay")]
+    pub scheduld_id: i64,
     pub open_day: i64,
-    #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "PIIAHBEGEMK")]
-    pub piiahbegemk: Vec<i64>,
-    #[serde(rename = "KONLBPNBKOM")]
-    pub konlbpnbkom: Vec<i64>,
-    #[serde(rename = "JIJEAJJPPEA")]
-    pub jijeajjppea: Vec<i64>,
-    #[serde(rename = "galleryId")]
+    pub trial_avatar_pool: Vec<i64>,
+    pub skill_pool: Vec<i64>,
+    pub special_skill_pool: Vec<i64>,
     pub gallery_id: i64,
-    #[serde(rename = "OCBNMNNFMHI")]
-    pub ocbnmnnfmhi: Vec<i64>,
-    #[serde(rename = "titleTextMapHash")]
+    pub hint_new_skill_vec: Vec<i64>,
     pub title_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "FOADLAKBMLM")]
-    pub foadlakbmlm: Vec<i64>,
-    #[serde(rename = "NDAIDMODEBN")]
-    pub ndaidmodebn: Vec<Ndaidmodebn>,
-    #[serde(rename = "AHMMPGACBDC")]
-    pub ahmmpgacbdc: Vec<i64>,
-    #[serde(rename = "KDCMNNFNABK")]
-    pub kdcmnnfnabk: Vec<i64>,
-    #[serde(rename = "NGJEGPMONJM")]
-    pub ngjegpmonjm: Option<String>,
+    pub score_ranks: Vec<i64>,
+    pub monster_preview_vec: Vec<MonsterPreviewVec>,
+    pub primary_boss_monster_vec: Vec<i64>,
+    pub primary_normal_monster_vec: Vec<i64>,
+    pub monster_wave_type: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Ndaidmodebn {
-    pub oopacmmkejm: String,
-    pub mjknoolomle: String,
+pub struct MonsterPreviewVec {
+    pub boss: String,
+    pub normal: String,
 }

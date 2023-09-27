@@ -12,6 +12,5 @@ pub struct CustomLevelUiConfigDatum {
     pub config_id: i64,
     pub open_day: Option<i64>,
     pub watcher_id_list: Vec<i64>,
-    #[serde(rename = "KFLMIPNCKCG")]
-    pub kflmipnckcg: Vec<i64>,
+    pub level_info: Vec<i64>,
 }

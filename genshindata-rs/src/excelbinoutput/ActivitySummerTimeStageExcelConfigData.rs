@@ -7,29 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySummerTimeStageExcelConfigData = Vec<ActivitySummerTimeStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySummerTimeStageExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    #[serde(rename = "mainQuest")]
     pub main_quest: i64,
-    #[serde(rename = "JJIHEHNPDMI")]
-    pub jjihehnpdmi: Option<i64>,
-    #[serde(rename = "FHHIJMMBKHP")]
-    pub fhhijmmbkhp: Option<i64>,
-    #[serde(rename = "ACIMFILFKLK")]
-    pub acimfilfklk: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "GLKGNELDFPA")]
-    pub glkgneldfpa: i64,
-    #[serde(rename = "HKGHMKOFJIG")]
-    pub hkghmkofjig: i64,
-    #[serde(rename = "preQuest")]
+    pub guide_button_quest: Option<i64>,
+    #[serde(rename = "guidePushtipsID")]
+    pub guide_pushtips_id: Option<i64>,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
+    pub gameplay_title_text_map_hash: i64,
+    pub gameplay_desc_text_map_hash: i64,
     pub pre_quest: Option<i64>,
 }

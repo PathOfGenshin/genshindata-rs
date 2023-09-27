@@ -7,34 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type FishSkillExcelConfigData = Vec<FishSkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FishSkillExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "skillCategory")]
     pub skill_category: SkillCategory,
-    pub ejponiiehpp: Ejponiiehpp,
-    #[serde(rename = "param")]
+    pub skill_type: SkillType,
     pub param: Vec<f64>,
-    pub hbjdenajmdn: Option<f64>,
-    pub hfmjappfemm: Vec<f64>,
-    pub jnnngagoodi: Vec<f64>,
-    pub dponlbnkhla: Vec<i64>,
-    pub oaiknngifca: Vec<i64>,
-    #[serde(rename = "duration")]
+    pub force_factor: Option<f64>,
+    pub bonus_width: Vec<f64>,
+    pub bonus_duration: Vec<f64>,
+    pub bonus_offset: Vec<i64>,
+    pub bonus_speed: Vec<i64>,
     pub duration: f64,
-    #[serde(rename = "priority")]
     pub priority: i64,
-    pub plnlnahkonc: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ejponiiehpp {
-    #[serde(rename = "FISH_SKILL_HP")]
-    FishSkillHp,
-    #[serde(rename = "FISH_SKILL_TIME")]
-    FishSkillTime,
+    pub strength: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -44,4 +30,13 @@ pub enum SkillCategory {
     FishSkillCategoryBonus,
     #[serde(rename = "FISH_SKILL_CATEGORY_FORCE")]
     FishSkillCategoryForce,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum SkillType {
+    #[serde(rename = "FISH_SKILL_HP")]
+    FishSkillHp,
+    #[serde(rename = "FISH_SKILL_TIME")]
+    FishSkillTime,
 }

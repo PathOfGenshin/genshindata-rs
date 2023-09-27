@@ -11,11 +11,11 @@ pub type QuestEventsGivingConfigData = Vec<QuestEventsGivingConfigDatum>;
 pub struct QuestEventsGivingConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub bkfbinmeald: i64,
-    pub ddphpiadpca: Vec<i64>,
-    pub pkjlidlbggi: Vec<i64>,
-    pub epbbomipodo: String,
-    pub fclifkoeddn: i64,
-    pub jfmaghnkhda: i64,
-    pub pkkoppdpdad: i64,
+    pub lfjdaaedadg: i64,
+    pub eogbfdkbpbj: Vec<i64>,
+    pub dbjndmdanbo: Vec<i64>,
+    pub jfedlbjjeki: String,
+    pub mhcfnjjglmf: i64,
+    pub eahaanhdodf: i64,
+    pub ainmjejkjph: i64,
 }

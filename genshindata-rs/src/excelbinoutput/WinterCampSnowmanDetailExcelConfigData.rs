@@ -7,14 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type WinterCampSnowmanDetailExcelConfigData = Vec<WinterCampSnowmanDetailExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct WinterCampSnowmanDetailExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub iphoglbffnd: i64,
-    pub cfpggpldpif: i64,
-    pub mmhomcfkmki: i64,
-    pub oijofolgjlp: i64,
-    #[serde(rename = "watcherId")]
+    pub snowman_name_text_map_hash: i64,
+    pub snowman_desc_text_map_hash: i64,
+    pub unlock_cond_id: i64,
+    pub unlock_text_text_map_hash: i64,
     pub watcher_id: i64,
 }

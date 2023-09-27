@@ -12,12 +12,11 @@ pub struct FontaineGatherStageExcelConfigDatum {
     pub id: i64,
     pub open_day: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "BAEOIBGNBBJ")]
-    pub baeoibgnbbj: i64,
-    #[serde(rename = "EJICFJCNJFA")]
-    pub ejicfjcnjfa: i64,
-    #[serde(rename = "DPNDLLOMALE")]
-    pub dpndllomale: i64,
+    #[serde(rename = "indexID")]
+    pub index_id: i64,
+    #[serde(rename = "NGDEJHGJMLN")]
+    pub ngdejhgjmln: i64,
+    pub stage_desc_text_map_hash: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }

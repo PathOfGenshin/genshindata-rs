@@ -7,24 +7,26 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldEventExcelConfigData = Vec<HomeWorldEventExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldEventExcelConfigDatum {
-    pub bbeiipefdpe: i64,
-    pub jockimechdp: Jockimechdp,
+    #[serde(rename = "eventID")]
+    pub event_id: i64,
+    pub event_type: EventType,
     #[serde(rename = "avatarID")]
     pub avatar_id: i64,
-    pub ignjaicdfpd: Option<i64>,
+    #[serde(rename = "talkID")]
+    pub talk_id: Option<i64>,
     #[serde(rename = "rewardID")]
     pub reward_id: Option<i64>,
-    pub fehokmjpoed: i64,
-    #[serde(rename = "order")]
+    #[serde(rename = "furnitureSuitID")]
+    pub furniture_suit_id: i64,
     pub order: Option<i64>,
-    pub gekpdlemgje: Option<i64>,
+    pub lasttime: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jockimechdp {
+pub enum EventType {
     #[serde(rename = "HOME_AVATAR_REWARD_EVENT")]
     HomeAvatarRewardEvent,
     #[serde(rename = "HOME_AVATAR_SUMMON_EVENT")]

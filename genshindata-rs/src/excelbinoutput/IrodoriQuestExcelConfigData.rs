@@ -12,16 +12,12 @@ pub struct IrodoriQuestExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
     pub quest_id: i64,
-    #[serde(rename = "HPCAKBOGGFH")]
-    pub hpcakboggfh: Vec<i64>,
+    pub main_quest_ids: Vec<i64>,
     pub open_day: i64,
-    #[serde(rename = "GEKPAFLOEBG")]
-    pub gekpafloebg: i64,
+    pub chapter_text_map_hash: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "DBDPFHDACDM")]
-    pub dbdpfhdacdm: Vec<Option<serde_json::Value>>,
+    pub pre_other_quest_ids: Vec<Option<serde_json::Value>>,
     pub pre_quest_id: Option<i64>,
-    #[serde(rename = "AJILIDLNLDL")]
-    pub ajilidlnldl: Option<String>,
+    pub quest_type: Option<String>,
 }

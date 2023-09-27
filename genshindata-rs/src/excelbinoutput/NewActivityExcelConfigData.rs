@@ -15,8 +15,8 @@ pub struct NewActivityExcelConfigDatum {
     pub activity_scene_tag: ActivitySceneTag,
     pub cond_group_id: Vec<i64>,
     pub watcher_id: Vec<i64>,
-    #[serde(rename = "LGPEEIGFJAC")]
-    pub lgpeeigfjac: Vec<i64>,
+    #[serde(rename = "CHCGBGIBBLJ")]
+    pub chcgbgibblj: Vec<i64>,
     pub dungeon_id_list: Vec<i64>,
     pub is_load_terrain: Option<bool>,
 }

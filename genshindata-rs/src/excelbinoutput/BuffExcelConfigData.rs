@@ -18,8 +18,7 @@ pub struct BuffExcelConfigDatum {
     pub server_buff_type: ServerBuffType,
     pub ability_name: String,
     pub modifier_name: String,
-    #[serde(rename = "CDKMINGFENN")]
-    pub cdkmingfenn: Option<bool>,
+    pub is_del_when_leave_scene: Option<bool>,
     pub stack_type: Option<StackType>,
 }
 

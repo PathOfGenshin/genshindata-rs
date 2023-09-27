@@ -7,27 +7,25 @@ use serde::{Serialize, Deserialize};
 pub type ActivityChessMapExcelConfigData = Vec<ActivityChessMapExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityChessMapExcelConfigDatum {
-    pub pahffkjfdki: i64,
-    #[serde(rename = "mapNameTextMapHash")]
+    #[serde(rename = "chessMapID")]
+    pub chess_map_id: i64,
     pub map_name_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    #[serde(rename = "unlockTipsTextMapHash")]
     pub unlock_tips_text_map_hash: i64,
-    #[serde(rename = "mapIconPath")]
     pub map_icon_path: String,
-    #[serde(rename = "buildGearLimit")]
     pub build_gear_limit: i64,
     #[serde(rename = "dungeonID")]
     pub dungeon_id: i64,
-    pub fjkpfcmadaf: i64,
-    pub ldiadlienfh: i64,
-    pub kkcijgemiim: Option<bool>,
-    #[serde(rename = "show")]
+    pub entry_point_id: i64,
+    pub unlock_day: i64,
+    pub is_teach_map: Option<bool>,
     pub show: Option<bool>,
-    pub hjnffpiogdg: Vec<i64>,
-    pub dmanidepeph: Vec<i64>,
-    pub migklbkhebo: Option<i64>,
+    #[serde(rename = "entrancePointIDList")]
+    pub entrance_point_id_list: Vec<i64>,
+    #[serde(rename = "exitPointIDList")]
+    pub exit_point_id_list: Vec<i64>,
+    #[serde(rename = "prevMapID")]
+    pub prev_map_id: Option<i64>,
 }

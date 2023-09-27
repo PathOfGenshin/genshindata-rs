@@ -11,22 +11,24 @@ pub type FlightGearLevelExcelConfigData = Vec<FlightGearLevelExcelConfigDatum>;
 pub struct FlightGearLevelExcelConfigDatum {
     #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub ecchphppcff: i64,
+    #[serde(rename = "stage")]
+    pub stage: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub cfelapchmek: i64,
-    pub amjkmcfcldo: i64,
-    pub pnaigmpifcb: String,
-    pub pcfkndklkal: f64,
+    #[serde(rename = "groupLinkId")]
+    pub group_link_id: i64,
+    pub ekbpajiilfk: i64,
+    pub cankapnfagn: String,
+    pub eipaokidmll: f64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub piecemggbci: i64,
-    pub bmonaeaefbd: i64,
-    pub njhpkdlhohb: i64,
-    pub bkoklppbaim: i64,
+    pub gfeedohajah: i64,
+    pub obpejflgbgk: i64,
+    pub hhepeapehin: i64,
+    pub fkjkkmkejfo: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
-    pub fokfhpkbaop: Option<i64>,
+    pub gmcjifdjgoc: Option<i64>,
 }

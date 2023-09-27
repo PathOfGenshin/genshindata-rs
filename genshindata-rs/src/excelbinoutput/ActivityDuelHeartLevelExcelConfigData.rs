@@ -11,21 +11,23 @@ pub type ActivityDuelHeartLevelExcelConfigData = Vec<ActivityDuelHeartLevelExcel
 pub struct ActivityDuelHeartLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ldiadlienfh: i64,
+    #[serde(rename = "unlockDay")]
+    pub unlock_day: i64,
     #[serde(rename = "preQuest")]
     pub pre_quest: i64,
-    pub mmhomcfkmki: i64,
-    pub lnnidjfmpjh: String,
+    #[serde(rename = "unlockCondId")]
+    pub unlock_cond_id: i64,
+    pub jedopnoijdj: String,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
     #[serde(rename = "challengeNameTextMapHash")]
     pub challenge_name_text_map_hash: i64,
-    pub bihojogcamn: i64,
-    pub nkbhpkoabki: String,
-    pub epbnijgcnmh: i64,
-    pub hpecgdlfgbo: i64,
-    pub hmniemjieag: String,
-    pub aekhnbfldgf: Vec<i64>,
-    pub kbhiaajckmo: String,
-    pub memoldoodgk: Option<i64>,
+    pub ebapobklkab: i64,
+    pub jkoaiadcnij: String,
+    pub dbpcpadildj: i64,
+    pub phohlddppfl: i64,
+    pub ckkkonkbikg: String,
+    pub eijfiggdlpd: Vec<i64>,
+    pub ejleiadnmme: String,
+    pub nfcnfajigjf: Option<i64>,
 }

@@ -7,10 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type AudioBattleFervorSceneTagConfigData = Vec<AudioBattleFervorSceneTagConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct AudioBattleFervorSceneTagConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub eachoabiffl: i64,
-    pub lmdgdhlimnf: i64,
+    pub area_id: i64,
+    #[serde(rename = "NIFMDGMOAGM")]
+    pub nifmdgmoagm: i64,
 }

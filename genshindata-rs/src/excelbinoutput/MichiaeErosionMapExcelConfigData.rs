@@ -7,11 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type MichiaeErosionMapExcelConfigData = Vec<MichiaeErosionMapExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MichiaeErosionMapExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub jdcjocajfin: Vec<i64>,
-    pub fpgbfcfpmpm: i64,
-    pub aekkcniggnc: i64,
+    pub erosion_range: Vec<i64>,
+    pub erosion_desc_text_map_hash: i64,
+    pub energy_desc_text_map_hash: i64,
 }

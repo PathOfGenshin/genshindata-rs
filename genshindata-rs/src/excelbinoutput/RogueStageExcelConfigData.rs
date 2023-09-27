@@ -7,29 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type RogueStageExcelConfigData = Vec<RogueStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RogueStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "firstPassRewardId")]
     pub first_pass_reward_id: Option<i64>,
-    pub ejpdmlbknam: Option<i64>,
-    pub nckommfglpn: i64,
-    pub hmkldcjiook: Option<i64>,
-    #[serde(rename = "maxLevel")]
+    pub preview_reward_id: Option<i64>,
+    pub open_time: i64,
+    pub max_coin: Option<i64>,
     pub max_level: i64,
-    #[serde(rename = "reviseLevelId")]
     pub revise_level_id: i64,
-    #[serde(rename = "stageNameTextMapHash")]
     pub stage_name_text_map_hash: i64,
-    pub dpndllomale: i64,
-    pub kannbnlppca: Vec<i64>,
-    #[serde(rename = "monsterIdList")]
+    pub stage_desc_text_map_hash: i64,
+    pub boss_id_list: Vec<i64>,
     pub monster_id_list: Vec<Vec<i64>>,
-    pub lljnjcejbnf: Vec<Vec<i64>>,
-    #[serde(rename = "preQuestId")]
+    pub level_boss_id_list: Vec<Vec<i64>>,
     pub pre_quest_id: i64,
-    pub mfnnlolgpkb: i64,
-    pub hdeaomjeoeh: Vec<Option<serde_json::Value>>,
-    pub nkklhjjdgoc: Option<bool>,
+    pub goto_quest_id: i64,
+    pub unlock_rune_list: Vec<Option<serde_json::Value>>,
+    pub is_story_stage: Option<bool>,
 }

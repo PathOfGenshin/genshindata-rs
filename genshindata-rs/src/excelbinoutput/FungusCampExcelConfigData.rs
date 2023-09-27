@@ -7,16 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type FungusCampExcelConfigData = Vec<FungusCampExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FungusCampExcelConfigDatum {
-    pub fdpclonceig: i64,
-    #[serde(rename = "campNameTextMapHash")]
+    #[serde(rename = "HFLEJGPEEAG")]
+    pub hflejgpeeag: i64,
     pub camp_name_text_map_hash: i64,
-    pub ldiadlienfh: i64,
-    pub cfelapchmek: i64,
-    #[serde(rename = "questId")]
+    pub unlock_day: i64,
+    pub group_link_id: i64,
     pub quest_id: Option<i64>,
-    pub hbhbfjinndc: Option<i64>,
-    pub hgibpaonamp: Vec<i64>,
-    pub effjflkaopl: Option<i64>,
+    #[serde(rename = "PLMEKPEELLD")]
+    pub plmekpeelld: Option<i64>,
+    pub watcher_ids: Vec<i64>,
+    #[serde(rename = "ILPIJLLGNIN")]
+    pub ilpijllgnin: Option<i64>,
 }

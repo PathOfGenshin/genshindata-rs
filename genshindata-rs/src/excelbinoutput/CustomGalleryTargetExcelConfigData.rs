@@ -9,25 +9,26 @@ pub type CustomGalleryTargetExcelConfigData = Vec<CustomGalleryTargetExcelConfig
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomGalleryTargetExcelConfigDatum {
-    pub oifjgacneag: i64,
-    pub bhgkldbcoko: Bhgkldbcoko,
-    pub oenbnookbci: Oenbnookbci,
-    pub cbdognknpbe: i64,
-    pub ofpbjooekjp: i64,
+    pub eamnmmhpphk: i64,
+    #[serde(rename = "targetType")]
+    pub target_type: TargetType,
+    pub mdgblghmami: Mdgblghmami,
+    pub nfmlclgbdoa: i64,
+    pub hfenklgcmdo: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bhgkldbcoko {
-    #[serde(rename = "BANNER")]
-    Banner,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Oenbnookbci {
+pub enum Mdgblghmami {
     #[serde(rename = "COMPLETE")]
     Complete,
     #[serde(rename = "FAIL")]
     Fail,
     #[serde(rename = "START")]
     Start,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum TargetType {
+    #[serde(rename = "BANNER")]
+    Banner,
 }

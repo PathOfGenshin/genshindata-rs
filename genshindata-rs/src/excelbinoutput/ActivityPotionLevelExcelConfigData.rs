@@ -7,19 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPotionLevelExcelConfigData = Vec<ActivityPotionLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPotionLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub melpakibkic: i64,
-    pub anbhpedhofb: Vec<i64>,
-    pub dmbolkjlklh: Vec<i64>,
-    pub jgiejmggcbg: Vec<i64>,
-    pub ooobfblnljb: Vec<i64>,
+    pub buff_count_limit: i64,
+    pub monster_preview: Vec<i64>,
+    pub medal_score_list: Vec<i64>,
+    pub medal_time_list_normal: Vec<i64>,
+    pub medal_time_list_hard: Vec<i64>,
 }

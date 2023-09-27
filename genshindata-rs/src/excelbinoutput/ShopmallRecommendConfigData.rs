@@ -13,19 +13,20 @@ pub struct ShopmallRecommendConfigDatum {
     pub id: i64,
     pub sub_tab_id: i64,
     pub shop_type: String,
-    pub cond_vec: Vec<Option<serde_json::Value>>,
+    pub goods_id_vec: Vec<i64>,
     pub config_id_vec: Vec<i64>,
-    pub goods_id_vec: Vec<GoodsIdVec>,
+    pub cond_vec: Vec<CondVec>,
     pub order: i64,
     pub one_card_icon_name: String,
     pub col_show_icon_name: Vec<Option<serde_json::Value>>,
+    pub tab_type: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct GoodsIdVec {
+#[serde(rename_all = "camelCase")]
+pub struct CondVec {
     #[serde(rename = "type")]
-    pub goods_id_vec_type: Option<String>,
-    pub aaiflklbpom: String,
-    pub iolneakfbnn: String,
+    pub cond_vec_type: Option<String>,
+    pub param1_str: String,
+    pub param2_str: String,
 }

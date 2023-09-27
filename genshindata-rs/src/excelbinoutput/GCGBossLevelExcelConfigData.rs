@@ -11,15 +11,15 @@ pub type GcgBossLevelExcelConfigData = Vec<GcgBossLevelExcelConfigDatum>;
 pub struct GcgBossLevelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub lkbkfhcdapl: i64,
-    pub gpgpihceebi: i64,
+    pub jkjggemjljh: i64,
+    pub bojlfnapdep: i64,
     #[serde(rename = "unlockCond")]
     pub unlock_cond: String,
-    pub fbpfedbpmpd: i64,
-    pub gejiegkphjd: i64,
-    pub hcbdbkgmpck: f64,
-    pub apghlbgobfe: i64,
+    pub cbkkabadbbk: i64,
+    pub ikaifcinlfn: i64,
+    pub ajnloghaagm: f64,
+    pub clcbcmofagp: i64,
     #[serde(rename = "monsterId")]
     pub monster_id: i64,
-    pub hgngihodnfn: i64,
+    pub egehicgkhep: i64,
 }

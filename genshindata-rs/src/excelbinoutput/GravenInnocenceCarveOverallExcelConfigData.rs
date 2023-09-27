@@ -7,13 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type GravenInnocenceCarveOverallExcelConfigData = Vec<GravenInnocenceCarveOverallExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GravenInnocenceCarveOverallExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "groupIdList")]
     pub group_id_list: Vec<i64>,
-    pub pbpnpklfgha: Vec<i64>,
-    pub ldpmhjghefa: Vec<i64>,
-    pub ophikjnaebo: i64,
+    pub item_id_list: Vec<i64>,
+    pub root_gadget_config_id_list: Vec<i64>,
+    pub instruction_id: i64,
 }

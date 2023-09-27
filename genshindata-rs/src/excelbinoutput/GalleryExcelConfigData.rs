@@ -13,13 +13,11 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "type")]
     pub gallery_excel_config_datum_type: String,
     pub param: Vec<String>,
-    #[serde(rename = "LDMLEKHGKPH")]
-    pub ldmlekhgkph: Vec<i64>,
+    #[serde(rename = "EMEKKDICLCP")]
+    pub emekkdiclcp: Vec<i64>,
     pub can_interrupt_by_client: Option<bool>,
-    #[serde(rename = "PANKCKDNDPO")]
-    pub pankckdndpo: Vec<i64>,
-    #[serde(rename = "PABOJJEICBL")]
-    pub pabojjeicbl: Option<i64>,
+    pub group_id: Vec<i64>,
+    pub group_furniture_id: Option<i64>,
     pub ability_group: AbilityGroup,
     pub ability_group_list: Vec<String>,
     pub limit_region: String,
@@ -32,42 +30,41 @@ pub struct GalleryExcelConfigDatum {
     pub gallery_msg_text_map_hash: i64,
     pub pic: Pic,
     pub target_text_map_hash: i64,
-    #[serde(rename = "HFLFPNJAHME")]
-    pub hflfpnjahme: String,
     pub start_audio_values: String,
+    #[serde(rename = "GEOHPBALIKJ")]
+    pub geohpbalikj: String,
     pub end_audio_values: String,
     pub selectable_ability_groups: Vec<String>,
-    #[serde(rename = "BIONHLEICLJ")]
-    pub bionhleiclj: Vec<String>,
-    #[serde(rename = "PPGPJFDJOHE")]
-    pub ppgpjfdjohe: Vec<String>,
-    #[serde(rename = "IBGAGMDGEOC")]
-    pub ibgagmdgeoc: Vec<f64>,
+    pub team_ability_group_list: Vec<String>,
+    pub selectable_team_ability_group_list: Vec<String>,
+    #[serde(rename = "MIAHHCIJBED")]
+    pub miahhcijbed: Vec<f64>,
     pub is_enable_single_prepare: Option<bool>,
     pub single_prepare_time: Option<i64>,
-    #[serde(rename = "PLNIDOAKJGG")]
-    pub plnidoakjgg: Option<bool>,
-    #[serde(rename = "CGDMEKIEEOP")]
-    pub cgdmekieeop: Option<i64>,
     pub is_enable_mp_prepare: Option<bool>,
+    pub mp_prepare_time: Option<i64>,
+    #[serde(rename = "BNFLMEKDDOF")]
+    pub bnflmekddof: Option<bool>,
     pub scene_id: Option<i64>,
     pub control_group_id: Option<i64>,
     pub revive_point_group_id: Option<i64>,
     pub revive_point_config_id: Option<i64>,
     pub center_radius: Option<i64>,
-    #[serde(rename = "FJHLECAMOBO")]
-    pub fjhlecamobo: Option<bool>,
-    #[serde(rename = "LKHDPDKEGLG")]
-    pub lkhdpdkeglg: Option<i64>,
-    #[serde(rename = "MBMKFBOPBJM")]
-    pub mbmkfbopbjm: Option<bool>,
-    #[serde(rename = "MPAEJGNDCLD")]
-    pub mpaejgndcld: Option<i64>,
-    pub mp_prepare_time: Option<bool>,
-    #[serde(rename = "KGKFDDIBIBN")]
-    pub kgkfddibibn: Option<String>,
-    #[serde(rename = "GJHHLGBMEKC")]
-    pub gjhhlgbmekc: Option<i64>,
+    pub is_disable_group_default_revise_level: Option<bool>,
+    pub center_scene_id: Option<i64>,
+    #[serde(rename = "PJNBAKECHDJ")]
+    pub pjnbakechdj: Option<bool>,
+    #[serde(rename = "KMNNKLJICBP")]
+    pub kmnnkljicbp: Option<i64>,
+    pub is_permit_input_in_prepare: Option<bool>,
+    #[serde(rename = "ADGALIFFFFN")]
+    pub adgaliffffn: Option<Adgaliffffn>,
+    #[serde(rename = "AEMJGMGNHLD")]
+    pub aemjgmgnhld: Option<i64>,
+    #[serde(rename = "ENPLFGBHPAI")]
+    pub enplfgbhpai: Option<i64>,
+    #[serde(rename = "JLMKJBIMHDO")]
+    pub jlmkjbimhdo: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -88,6 +85,12 @@ pub enum AbilityGroup {
     HideSeekAllPlayerInitData,
     #[serde(rename = "HideSeek_AllPlayer_InitData_V2")]
     HideSeekAllPlayerInitDataV2,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Adgaliffffn {
+    #[serde(rename = "SINGLE")]
+    Single,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

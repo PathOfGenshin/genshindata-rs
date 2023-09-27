@@ -7,20 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type ActivityChessLevelExcelConfigData = Vec<ActivityChessLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityChessLevelExcelConfigDatum {
-    #[serde(rename = "level")]
     pub level: i64,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub fdgbaolmnan: Option<i64>,
-    pub lnlmjkcalkh: i64,
-    pub paofnnnnflh: i64,
-    pub hcoebkhmcbp: i64,
-    pub ehnnnpapija: i64,
-    pub pdkoigpfhpa: Vec<i64>,
-    pub jmmeodholpj: i64,
-    pub jdaiecbcelp: Option<bool>,
-    pub fobakcldmin: bool,
-    pub mldpjlojlpj: Option<String>,
+    pub exp_to_next: Option<i64>,
+    #[serde(rename = "homeHP")]
+    pub home_hp: i64,
+    pub initial_build: i64,
+    pub card_count: i64,
+    pub card_cost: i64,
+    pub fortune_list: Vec<i64>,
+    pub free_card_count: i64,
+    pub is_new_gear_unlocked: Option<bool>,
+    pub is_new_card_unlocked: bool,
+    pub card_fortune: Option<String>,
 }

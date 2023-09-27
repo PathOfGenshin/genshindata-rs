@@ -7,26 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type VehicleSkillExcelConfigData = Vec<VehicleSkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct VehicleSkillExcelConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    pub dlehbdcbheh: i64,
-    pub kpkhpjmelnk: i64,
-    #[serde(rename = "abilityName")]
+    pub skill_name_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
     pub ability_name: String,
-    #[serde(rename = "skillIcon")]
     pub skill_icon: String,
-    pub fbmmklhjcob: i64,
-    pub enefocefmgj: i64,
-    #[serde(rename = "lockShape")]
+    #[serde(rename = "skillCD")]
+    pub skill_cd: i64,
+    pub max_charge_count: i64,
     pub lock_shape: LockShape,
-    #[serde(rename = "lockWeightParams")]
     pub lock_weight_params: Vec<f64>,
-    #[serde(rename = "globalValueKey")]
     pub global_value_key: String,
-    pub gmecaomjjhf: Option<i64>,
-    pub eehcdojfdlc: Option<i64>,
-    pub dppkgebmoah: Option<String>,
+    pub energy_once_cost: Option<i64>,
+    pub energy_max_cost: Option<i64>,
+    #[serde(rename = "IIOFPBDMNFI")]
+    pub iiofpbdmnfi: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

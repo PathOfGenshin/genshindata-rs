@@ -7,22 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type SubQuestCatalogExcelConfigData = Vec<SubQuestCatalogExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct SubQuestCatalogExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub biihnnpmgbk: Biihnnpmgbk,
-    pub belfkedfphg: Vec<Belfkedfphg>,
-    pub plolhifajik: Vec<Belfkedfphg>,
-    #[serde(rename = "descTextMapHash")]
+    pub show_logic: Logic,
+    pub show_cond: Vec<Cond>,
+    pub hide_cond: Vec<Cond>,
     pub desc_text_map_hash: i64,
-    pub mcemmbakgkn: Option<Biihnnpmgbk>,
+    pub hide_logic: Option<Logic>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Belfkedfphg {
+pub struct Cond {
     #[serde(rename = "type")]
-    pub belfkedfphg_type: Option<Type>,
+    pub cond_type: Option<Type>,
     pub param: Option<i64>,
 }
 
@@ -35,7 +33,7 @@ pub enum Type {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Biihnnpmgbk {
+pub enum Logic {
     #[serde(rename = "LOGIC_AND")]
     LogicAnd,
     #[serde(rename = "LOGIC_OR")]

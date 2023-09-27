@@ -7,19 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type CustomGadgetRootExcelConfigData = Vec<CustomGadgetRootExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomGadgetRootExcelConfigDatum {
-    pub jcojnologen: i64,
-    pub nhbgplfcokc: String,
-    pub dfdpjecjjmd: Dfdpjecjjmd,
-    pub libbkofocmo: String,
-    pub kcefchlpdki: Vec<i64>,
-    pub pnibelikljo: Vec<i64>,
+    #[serde(rename = "rootGadgetID")]
+    pub root_gadget_id: i64,
+    pub custom_gadget_type: String,
+    pub page_title: PageTitle,
+    pub recommend_config: String,
+    pub tab_list: Vec<i64>,
+    pub dither_gadget_config_id_list: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Dfdpjecjjmd {
+pub enum PageTitle {
     #[serde(rename = "UI_HOMEWORLD_CHANGE_MOUNTAIN_BUTTON")]
     UiHomeworldChangeMountainButton,
     #[serde(rename = "UI_HOMEWORLD_CUSTOM_BUTTON")]

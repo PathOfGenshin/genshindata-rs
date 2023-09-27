@@ -11,17 +11,17 @@ pub type GcgRuleTextDetailExcelConfigData = Vec<GcgRuleTextDetailExcelConfigDatu
 pub struct GcgRuleTextDetailExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub bjalmmgcajo: Bjalmmgcajo,
+    pub ofcflhmcanh: Ofcflhmcanh,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "contentTextMapHash")]
     pub content_text_map_hash: i64,
-    pub fjkhjndkjok: Option<bool>,
-    pub clenpengedc: Option<i64>,
+    pub mkajipmbdjm: Option<bool>,
+    pub fmonhbklbmg: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bjalmmgcajo {
+pub enum Ofcflhmcanh {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "UI_Gcg_InSide_01")]

@@ -42,9 +42,9 @@ pub struct TalkExcelConfigDatum {
     pub quest_idle_talk: Option<bool>,
     pub random_talk_pos: Option<i64>,
     pub remove_duplicated_random_talk: Option<bool>,
-    pub force_npc_not_destroy: Option<bool>,
     #[serde(rename = "decoratorID")]
     pub decorator_id: Option<i64>,
+    pub force_npc_not_destroy: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -158,6 +158,12 @@ pub enum Type {
     QuestCondItemGivingActived,
     #[serde(rename = "QUEST_COND_ITEM_GIVING_FINISHED")]
     QuestCondItemGivingFinished,
+    #[serde(rename = "QUEST_COND_ITEM_NUM_EQUAL")]
+    QuestCondItemNumEqual,
+    #[serde(rename = "QUEST_COND_ITEM_NUM_GREATER")]
+    QuestCondItemNumGreater,
+    #[serde(rename = "QUEST_COND_ITEM_NUM_LESS")]
+    QuestCondItemNumLess,
     #[serde(rename = "QUEST_COND_ITEM_NUM_LESS_THAN")]
     QuestCondItemNumLessThan,
     #[serde(rename = "QUEST_COND_LUA_NOTIFY")]
@@ -198,6 +204,8 @@ pub enum Type {
     QuestCondQuestGlobalVarGreater,
     #[serde(rename = "QUEST_COND_QUEST_GLOBAL_VAR_LESS")]
     QuestCondQuestGlobalVarLess,
+    #[serde(rename = "QUEST_COND_QUEST_GLOBAL_VAR_NOT_EQUAL")]
+    QuestCondQuestGlobalVarNotEqual,
     #[serde(rename = "QUEST_COND_QUEST_NOT_RECEIVE")]
     QuestCondQuestNotReceive,
     #[serde(rename = "QUEST_COND_QUEST_SERVER_COND_VALID")]
@@ -208,6 +216,8 @@ pub enum Type {
     QuestCondQuestVarGreater,
     #[serde(rename = "QUEST_COND_QUEST_VAR_LESS")]
     QuestCondQuestVarLess,
+    #[serde(rename = "QUEST_COND_QUEST_VAR_NOT_EQUAL")]
+    QuestCondQuestVarNotEqual,
     #[serde(rename = "QUEST_COND_SCENE_AREA_UNLOCKED")]
     QuestCondSceneAreaUnlocked,
     #[serde(rename = "QUEST_COND_SCENE_LEVEL_TAG_EQ")]
@@ -216,6 +226,8 @@ pub enum Type {
     QuestCondScenePointUnlock,
     #[serde(rename = "QUEST_COND_STATE_EQUAL")]
     QuestCondStateEqual,
+    #[serde(rename = "QUEST_COND_STATE_INTERVAL")]
+    QuestCondStateInterval,
     #[serde(rename = "QUEST_COND_STATE_NOT_EQUAL")]
     QuestCondStateNotEqual,
     #[serde(rename = "QUEST_COND_TMPVALUE_HIT_NICKNAME")]
@@ -292,6 +304,8 @@ pub enum LoadType {
     TalkActivity,
     #[serde(rename = "TALK_BLOSSOM")]
     TalkBlossom,
+    #[serde(rename = "TALK_FURNITURE")]
+    TalkFurniture,
     #[serde(rename = "TALK_GADGET")]
     TalkGadget,
 }

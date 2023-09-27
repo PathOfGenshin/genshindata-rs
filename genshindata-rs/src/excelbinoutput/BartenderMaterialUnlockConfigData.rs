@@ -7,11 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type BartenderMaterialUnlockConfigData = Vec<BartenderMaterialUnlockConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderMaterialUnlockConfigDatum {
     pub id: i64,
-    #[serde(rename = "LDIADLIENFH")]
-    pub ldiadlienfh: i64,
+    pub unlock_day: i64,
     pub weight: i64,
-    #[serde(rename = "OJJJIIEHGNO")]
-    pub ojjjiiehgno: i64,
+    pub recipe_page_order: i64,
 }

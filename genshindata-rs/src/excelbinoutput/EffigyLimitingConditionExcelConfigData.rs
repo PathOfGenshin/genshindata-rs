@@ -14,14 +14,11 @@ pub struct EffigyLimitingConditionExcelConfigDatum {
     pub condition_type: ConditionType,
     pub icon: String,
     pub condition_param1: i64,
-    #[serde(rename = "AOCPDIFCBDE")]
-    pub aocpdifcbde: Vec<i64>,
-    #[serde(rename = "EFFFIEJFLCM")]
-    pub efffiejflcm: i64,
+    pub condition_param2: Vec<i64>,
+    pub exclusive_desc_text_map_hash: i64,
     pub score: i64,
     pub exclusive_id: Option<i64>,
-    #[serde(rename = "LCLABHFKFGG")]
-    pub lclabhfkfgg: Option<bool>,
+    pub is_in_row: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

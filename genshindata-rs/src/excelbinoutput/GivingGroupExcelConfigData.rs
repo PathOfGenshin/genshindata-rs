@@ -7,14 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type GivingGroupExcelConfigData = Vec<GivingGroupExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct GivingGroupExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
+    #[serde(rename = "ItemIds")]
     pub item_ids: Vec<i64>,
-    #[serde(rename = "finishTalkId")]
     pub finish_talk_id: Option<i64>,
-    #[serde(rename = "mistakeTalkId")]
     pub mistake_talk_id: Option<i64>,
-    #[serde(rename = "AFNALCMIHGI")]
-    pub afnalcmihgi: Option<i64>,
+    pub finish_dialog_id: Option<i64>,
 }

@@ -7,12 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type FireworksLaunchExcelConfigData = Vec<FireworksLaunchExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FireworksLaunchExcelConfigDatum {
-    pub plfkflcbkgf: String,
-    #[serde(rename = "defaultValue")]
+    pub launch_param_type: String,
     pub default_value: i64,
-    pub iagnoimhfhi: Vec<i64>,
-    pub odhhepacmen: i64,
-    pub lfimjiecamh: i64,
+    pub adjust_range: Vec<i64>,
+    pub adjust_step: i64,
+    pub launch_param_name_text_map_hash: i64,
 }

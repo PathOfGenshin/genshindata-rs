@@ -12,6 +12,5 @@ pub struct ExploreAreaTotalExpExcelConfigDatum {
     #[serde(rename = "areaID")]
     pub area_id: i64,
     pub total_exp: i64,
-    #[serde(rename = "HKIEBPDOCLF")]
-    pub hkiebpdoclf: Option<f64>,
+    pub reputation_ratio: Option<f64>,
 }

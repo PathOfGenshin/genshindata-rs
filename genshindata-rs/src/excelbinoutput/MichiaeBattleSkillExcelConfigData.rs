@@ -7,16 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type MichiaeBattleSkillExcelConfigData = Vec<MichiaeBattleSkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MichiaeBattleSkillExcelConfigDatum {
-    pub fjaoijahepp: i64,
-    pub dlehbdcbheh: i64,
-    pub kpkhpjmelnk: i64,
-    pub goegceilhhj: Vec<String>,
-    #[serde(rename = "iconPath")]
+    pub skill_id: i64,
+    pub skill_name_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
+    pub desc_args: Vec<String>,
     pub icon_path: String,
-    #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub cmaighbogff: i64,
-    pub boijflbbljd: String,
+    pub material_num: i64,
+    #[serde(rename = "ServerGlobalValueName")]
+    pub server_global_value_name: String,
 }

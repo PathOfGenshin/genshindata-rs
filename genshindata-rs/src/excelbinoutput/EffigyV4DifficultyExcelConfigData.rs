@@ -12,12 +12,11 @@ pub struct EffigyV4DifficultyExcelConfigDatum {
     pub id: i64,
     pub challenge_id: i64,
     pub monster_difficulty: String,
-    #[serde(rename = "EAOHHNGLDCO")]
-    pub eaohhngldco: i64,
-    #[serde(rename = "BIJACPJINJA")]
-    pub bijacpjinja: i64,
-    #[serde(rename = "HINHPECFGDG")]
-    pub hinhpecfgdg: i64,
+    pub difficulty_desc_text_map_hash: i64,
+    #[serde(rename = "LGKKNKOJCEO")]
+    pub lgkknkojceo: i64,
+    #[serde(rename = "AFHHMMFMBCM")]
+    pub afhhmmfmbcm: i64,
     pub monster_level: i64,
     pub base_score: i64,
     pub score_ratio: f64,

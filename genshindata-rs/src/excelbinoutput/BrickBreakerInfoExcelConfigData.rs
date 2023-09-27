@@ -11,9 +11,9 @@ pub type BrickBreakerInfoExcelConfigData = Vec<BrickBreakerInfoExcelConfigDatum>
 pub struct BrickBreakerInfoExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ngdnjkidend: i64,
-    pub aomcdnpliob: i64,
+    pub nnoapdlnjgc: i64,
+    pub gihadclefbj: i64,
     #[serde(rename = "levelIconHash")]
     pub level_icon_hash: f64,
-    pub lnjbocjafeh: f64,
+    pub diadlidbmph: f64,
 }

@@ -7,15 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type WidgetCameraScanExcelConfigData = Vec<WidgetCameraScanExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct WidgetCameraScanExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "cameraID")]
     pub camera_id: i64,
     #[serde(rename = "configID")]
     pub config_id: i64,
-    pub nmnobkfnidk: Vec<i64>,
-    pub klnmkfplgpm: bool,
-    pub aonchneohih: String,
+    pub scannable_state: Vec<i64>,
+    pub is_hint: bool,
+    pub action: String,
 }

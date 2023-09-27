@@ -7,17 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type BartenderLevelExcelConfigData = Vec<BartenderLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderLevelExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
-    pub ldiadlienfh: i64,
-    pub fanehjpdglp: i64,
-    pub nckijpppphk: Vec<i64>,
-    pub dehjpbnmbjm: i64,
-    #[serde(rename = "watcherIdList")]
+    pub unlock_day: i64,
+    pub level_duration: i64,
+    pub order_list: Vec<i64>,
+    #[serde(rename = "orderCD")]
+    pub order_cd: i64,
     pub watcher_id_list: Vec<i64>,
-    pub ohjemdfcgdf: i64,
+    pub level_description_text_map_hash: i64,
 }

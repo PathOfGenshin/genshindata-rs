@@ -12,6 +12,6 @@ pub struct KeywordEasterEggGroupExcelConfigDatum {
     #[serde(rename = "groupID")]
     pub group_id: i64,
     pub logic_type: String,
-    #[serde(rename = "APFKJHIEIMO")]
-    pub apfkjhieimo: Vec<i64>,
+    #[serde(rename = "GDBIKABBKNH")]
+    pub gdbikabbknh: Vec<i64>,
 }

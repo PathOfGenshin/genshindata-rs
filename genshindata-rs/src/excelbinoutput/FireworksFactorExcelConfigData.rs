@@ -7,13 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type FireworksFactorExcelConfigData = Vec<FireworksFactorExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FireworksFactorExcelConfigDatum {
-    pub dlcdpfcajon: String,
-    pub dngdhjifopl: i64,
-    pub cmgbjkkddgm: String,
-    pub dndhcofofhp: i64,
-    pub diddmjblnbc: i64,
-    pub lcaldjdhmhc: i64,
-    pub dkbpagjebba: i64,
+    pub reform_param_type: String,
+    pub param_name_text_map_hash: i64,
+    pub param_icon: String,
+    pub adjust_left_desc_text_map_hash: i64,
+    pub adjust_right_desc_text_map_hash: i64,
+    pub description_format_text_map_hash: i64,
+    pub adjust_factor: i64,
 }

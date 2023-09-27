@@ -7,30 +7,29 @@ use serde::{Serialize, Deserialize};
 pub type ActivityVintageHuntingExcelConfigData = Vec<ActivityVintageHuntingExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityVintageHuntingExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub plhfnmodhkh: i64,
-    #[serde(rename = "openDay")]
+    #[serde(rename = "BGJALCCMPLP")]
+    pub bgjalccmplp: i64,
     pub open_day: i64,
-    pub fhgkhgohlhg: i64,
-    #[serde(rename = "guideQuestId")]
+    #[serde(rename = "FHOANPCDMNI")]
+    pub fhoanpcdmni: i64,
     pub guide_quest_id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub nogibfdglhc: i64,
-    #[serde(rename = "costItemNum")]
-    pub cost_item_num: Vec<i64>,
-    pub ndeidnbljoc: Vec<i64>,
-    pub hgibpaonamp: Vec<i64>,
-    #[serde(rename = "tutorialId")]
+    pub point_id: i64,
+    pub trial_avatar_id_list: Vec<i64>,
+    #[serde(rename = "LMMJBGHNOGC")]
+    pub lmmjbghnogc: Vec<i64>,
+    pub watcher_ids: Vec<i64>,
     pub tutorial_id: i64,
-    pub ncjpacabgpa: i64,
-    pub nilgpfpncid: i64,
-    pub jpfpojhckjm: Vec<i64>,
-    pub mndcgobeoge: i64,
-    pub gnngkofjoch: i64,
+    pub guide_quest_title_text_map_hash: i64,
+    pub guide_quest_desc_text_map_hash: i64,
+    #[serde(rename = "KLJCFOBHAMG")]
+    pub kljcfobhamg: Vec<i64>,
+    #[serde(rename = "KKCFEHAMKEK")]
+    pub kkcfehamkek: i64,
+    #[serde(rename = "OJGGNDBKPPP")]
+    pub ojggndbkppp: i64,
 }

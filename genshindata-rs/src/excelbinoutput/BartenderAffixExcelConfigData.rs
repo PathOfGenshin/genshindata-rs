@@ -7,12 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type BartenderAffixExcelConfigData = Vec<BartenderAffixExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderAffixExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub ofbccijipjh: String,
-    #[serde(rename = "materialId")]
+    pub order_type: String,
     pub material_id: i64,
-    pub ahcehipjjcc: i64,
+    pub material_count: i64,
 }

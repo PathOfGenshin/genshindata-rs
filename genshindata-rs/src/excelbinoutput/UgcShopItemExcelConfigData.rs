@@ -11,6 +11,6 @@ pub type UgcShopItemExcelConfigData = Vec<UgcShopItemExcelConfigDatum>;
 pub struct UgcShopItemExcelConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub hcddnkplaae: i64,
-    pub plmheinabpd: i64,
+    pub godpmhannng: i64,
+    pub nbeedbgkbhp: i64,
 }

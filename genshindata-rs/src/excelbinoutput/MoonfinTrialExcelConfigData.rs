@@ -7,19 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type MoonfinTrialExcelConfigData = Vec<MoonfinTrialExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MoonfinTrialExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub gikgnblpbcm: Vec<i64>,
-    pub anlflidgike: i64,
-    pub oofkhcmkkng: i64,
-    pub flekblkjjdk: i64,
-    pub fmakjgppjgc: i64,
-    #[serde(rename = "pushTipsId")]
+    pub level_id_list: Vec<i64>,
+    pub activity_fish_id: i64,
+    pub activity_fish_gain_limit: i64,
+    pub activity_fish_pool_id: i64,
+    pub activity_reward_preview_id: i64,
     pub push_tips_id: i64,
-    pub bkiefojdjkc: Vec<i64>,
-    pub obmklajgblf: Vec<i64>,
+    pub main_quest_list: Vec<i64>,
+    pub precondition_main_quest_ids: Vec<i64>,
 }

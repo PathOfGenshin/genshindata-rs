@@ -11,6 +11,6 @@ pub type DeshretCatalogDataData = Vec<DeshretCatalogDataDatum>;
 pub struct DeshretCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub aikphbfamfd: i64,
-    pub cpajkbbhncn: i64,
+    pub idacljdojfi: i64,
+    pub aeldgoinfce: i64,
 }

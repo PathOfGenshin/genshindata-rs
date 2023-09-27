@@ -13,10 +13,7 @@ pub struct LanV2FireworksStageDataExcelConfigDatum {
     pub open_day: i64,
     pub challenge_id_list: Vec<i64>,
     pub tab_name_text_map_hash: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "GLLBEAILOEF")]
-    pub gllbeailoef: Vec<i64>,
-    #[serde(rename = "KNANOOGIIKE")]
-    pub knanoogiike: i64,
+    pub quest_desc_text_map_hash: i64,
+    pub guide_quest_id: Vec<i64>,
+    pub guide_quest_reward_preview_id: i64,
 }

@@ -7,16 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type MusicRiddleConfigData = Vec<MusicRiddleConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MusicRiddleConfigDatum {
-    pub opkiddegmho: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub music_id: i64,
     pub desc_text_map_hash: i64,
-    pub dcmdmhecnmc: i64,
-    pub efmgomngdmd: Vec<i64>,
-    #[serde(rename = "pushTipsId")]
+    pub tutorial_catalog_id: i64,
+    pub play_list: Vec<i64>,
     pub push_tips_id: i64,
-    pub opikekmampe: Option<i64>,
-    pub agjcagimfpa: Option<i64>,
-    pub feklmedgejl: Option<bool>,
+    pub explain_type: Option<i64>,
+    #[serde(rename = "CGJJFEPMIAG")]
+    pub cgjjfepmiag: Option<i64>,
+    pub is_hide: Option<bool>,
 }

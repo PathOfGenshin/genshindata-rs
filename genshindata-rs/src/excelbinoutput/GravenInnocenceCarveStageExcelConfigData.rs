@@ -10,8 +10,7 @@ pub type GravenInnocenceCarveStageExcelConfigData = Vec<GravenInnocenceCarveStag
 #[serde(rename_all = "camelCase")]
 pub struct GravenInnocenceCarveStageExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "KNGPCHMEOAI")]
-    pub kngpchmeoai: i64,
+    pub carve_add_count: i64,
     pub watcher_id: i64,
     pub open_day: i64,
 }

@@ -3,6 +3,17 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type MichiaeAntiErosionExcelConfigData = Vec<HashMap<String, f64>>;
+pub type MichiaeAntiErosionExcelConfigData = Vec<MichiaeAntiErosionExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct MichiaeAntiErosionExcelConfigDatum {
+    #[serde(rename = "crystalEnergyMaxLimit")]
+    pub crystal_energy_max_limit: i64,
+    #[serde(rename = "foundationLevel")]
+    pub foundation_level: Option<i64>,
+    pub b1: Option<i64>,
+    pub b2: Option<f64>,
+    pub b3: Option<f64>,
+}

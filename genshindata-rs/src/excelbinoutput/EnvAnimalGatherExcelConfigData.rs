@@ -12,7 +12,7 @@ pub struct EnvAnimalGatherExcelConfigDatum {
     pub animal_id: i64,
     pub area_id: i64,
     pub entity_type: EntityType,
-    pub gather_item_id: Vec<GatherItemId>,
+    pub gather_item_list: Vec<GatherItemList>,
     pub escape_radius: Option<i64>,
     pub escape_time: Option<i64>,
     pub alive_time: Option<i64>,
@@ -34,7 +34,7 @@ pub enum ExcludeWeathers {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct GatherItemId {
+pub struct GatherItemList {
     pub id: Option<i64>,
     pub count: Option<i64>,
 }

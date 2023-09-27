@@ -7,13 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPhotoUnderseaOverallExcelConfigData = Vec<ActivityPhotoUnderseaOverallExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPhotoUnderseaOverallExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub eddpcncccdb: i64,
-    #[serde(rename = "pushTipsId")]
+    #[serde(rename = "AKMIPMHKOBF")]
+    pub akmipmhkobf: i64,
     pub push_tips_id: i64,
-    pub clfmikflhii: i64,
-    pub fhooadhjhng: i64,
+    pub photo_succ_reminder_id: i64,
+    pub photo_fail_reminder_id: i64,
 }

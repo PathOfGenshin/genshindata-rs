@@ -13,6 +13,6 @@ pub struct GcgLevelExcelConfigDatum {
     pub exp: Option<i64>,
     pub reward_id: i64,
     pub unlock_desc_text_map_hash: i64,
-    #[serde(rename = "HELDOPMDONO")]
-    pub heldopmdono: Option<String>,
+    #[serde(rename = "NLBCAEKFEHP")]
+    pub nlbcaekfehp: Option<String>,
 }

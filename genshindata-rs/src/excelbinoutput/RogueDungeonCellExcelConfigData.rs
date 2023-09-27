@@ -7,29 +7,26 @@ use serde::{Serialize, Deserialize};
 pub type RogueDungeonCellExcelConfigData = Vec<RogueDungeonCellExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct RogueDungeonCellExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
-    pub cnhmegafnhm: i64,
-    pub pibbgkoemkh: Vec<i64>,
-    pub hahodgekplh: Vec<i64>,
-    pub hfofjgppdfi: Vec<i64>,
-    #[serde(rename = "groupId")]
+    pub cell_id: i64,
+    pub cell_center_pos: Vec<i64>,
+    pub map_coordinate: Vec<i64>,
+    pub adjacency_cell_list: Vec<i64>,
     pub group_id: i64,
-    pub oniilfgbbfh: i64,
-    pub iplgmopddok: Option<f64>,
-    pub eleembkhkjk: i64,
-    pub dllcghclfli: f64,
-    pub dnldkceglne: Option<Dnldkceglne>,
-    pub femcobeknif: Option<bool>,
+    pub weight_id: i64,
+    pub operator_delta_y: Option<f64>,
+    pub door_offset: i64,
+    pub door_delta_y: f64,
+    pub special_type: Option<SpecialType>,
+    pub is_init_cell: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Dnldkceglne {
+pub enum SpecialType {
     #[serde(rename = "ROGUE_CELL_TYPE_BOSS")]
     RogueCellTypeBoss,
     #[serde(rename = "ROGUE_CELL_TYPE_CHEST")]

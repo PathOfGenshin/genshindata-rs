@@ -15,10 +15,10 @@ pub struct ActivityVintageDataExcelConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "rewardPreviewId")]
     pub reward_preview_id: i64,
-    pub mbboncddplj: i64,
-    pub dmbngceppmp: i64,
-    pub kilkgnmdabk: Vec<i64>,
-    pub mdfkgomilkp: i64,
-    pub ddpfaomneof: i64,
-    pub nbdccmgpkgp: i64,
+    pub affhjanonee: i64,
+    pub hgjppgieifp: i64,
+    pub ajechngnboh: Vec<i64>,
+    pub jplhlficopp: i64,
+    pub njpbmhlpbgi: i64,
+    pub knkkgdnkdga: i64,
 }

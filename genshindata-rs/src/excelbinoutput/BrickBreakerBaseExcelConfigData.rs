@@ -13,6 +13,6 @@ pub struct BrickBreakerBaseExcelConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "matchId")]
     pub match_id: i64,
-    pub jlhbpmloffh: i64,
-    pub pioiieoodfp: i64,
+    pub hgfdjidjbpm: i64,
+    pub joipbodjjlf: i64,
 }

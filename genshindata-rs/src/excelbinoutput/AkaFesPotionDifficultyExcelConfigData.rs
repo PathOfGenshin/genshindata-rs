@@ -3,6 +3,14 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type AkaFesPotionDifficultyExcelConfigData = Vec<HashMap<String, i64>>;
+pub type AkaFesPotionDifficultyExcelConfigData = Vec<AkaFesPotionDifficultyExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AkaFesPotionDifficultyExcelConfigDatum {
+    pub difficulty_level: i64,
+    pub dungeon_level: i64,
+    #[serde(rename = "MJEEGLFNFFH")]
+    pub mjeeglfnffh: i64,
+}

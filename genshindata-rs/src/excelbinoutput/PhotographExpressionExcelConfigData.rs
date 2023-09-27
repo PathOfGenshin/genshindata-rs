@@ -17,8 +17,7 @@ pub struct PhotographExpressionExcelConfigDatum {
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<OpenCond>,
-    #[serde(rename = "DLPFLPGMMNA")]
-    pub dlpflpgmmna: Vec<Option<serde_json::Value>>,
+    pub finish_conds: Vec<Option<serde_json::Value>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

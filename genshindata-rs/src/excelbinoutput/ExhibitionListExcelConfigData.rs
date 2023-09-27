@@ -7,15 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type ExhibitionListExcelConfigData = Vec<ExhibitionListExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ExhibitionListExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub bkpoeldegld: i64,
-    pub nfhpnideipc: i64,
-    pub impcjafcgjj: i64,
-    pub cpkbceibkfc: i64,
-    #[serde(rename = "displayType")]
+    pub display_id: i64,
+    #[serde(rename = "seriesID")]
+    pub series_id: i64,
+    pub display_title_text_map_hash: i64,
+    pub display_format_text_map_hash: i64,
     pub display_type: DisplayType,
 }
 

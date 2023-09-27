@@ -7,15 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type DigGroupLinkExcelConfigData = Vec<DigGroupLinkExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct DigGroupLinkExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub ecchphppcff: i64,
-    pub djllnmilmdp: i64,
-    pub offbmjkmfod: i64,
-    pub igdmjfdnpjg: Vec<i64>,
-    pub fkblmkgcghm: String,
-    pub mohllmhdmlc: Option<i64>,
-    pub bcgliokelcb: Option<i64>,
+    pub stage: i64,
+    pub group_link_bundle_id: i64,
+    pub area_name_text_map_hash: i64,
+    #[serde(rename = "watcherID")]
+    pub watcher_id: Vec<i64>,
+    pub background: String,
+    pub group_link_bundle_id2: Option<i64>,
+    pub group_link_change_cond: Option<i64>,
 }

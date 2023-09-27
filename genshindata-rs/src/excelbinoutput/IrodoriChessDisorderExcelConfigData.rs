@@ -7,9 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type IrodoriChessDisorderExcelConfigData = Vec<IrodoriChessDisorderExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriChessDisorderExcelConfigDatum {
-    pub cgbmdfedffn: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub disorder_id: i64,
     pub desc_text_map_hash: i64,
 }

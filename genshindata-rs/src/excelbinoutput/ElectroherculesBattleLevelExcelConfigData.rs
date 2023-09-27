@@ -7,25 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type ElectroherculesBattleLevelExcelConfigData = Vec<ElectroherculesBattleLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ElectroherculesBattleLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub pambeijgdlo: Pambeijgdlo,
-    #[serde(rename = "groupId")]
+    #[serde(rename = "OJEAJCEOGLB")]
+    pub ojeajceoglb: Ojeajceoglb,
     pub group_id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    #[serde(rename = "watcherIdList")]
     pub watcher_id_list: Vec<i64>,
-    pub amidlbbfihh: Amidlbbfihh,
-    pub ihlmjlffbbd: i64,
-    pub bfaijfbopeo: i64,
+    pub level_type: LevelType,
+    #[serde(rename = "BCECAMOEHEB")]
+    pub bcecamoeheb: i64,
+    #[serde(rename = "DBJMONPADFH")]
+    pub dbjmonpadfh: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Amidlbbfihh {
+pub enum LevelType {
     #[serde(rename = "ELECTROHERCULES_BATTLE_LEVEL_TYPE_CHALLENGE")]
     ElectroherculesBattleLevelTypeChallenge,
     #[serde(rename = "ELECTROHERCULES_BATTLE_LEVEL_TYPE_GUIDE")]
@@ -34,7 +33,7 @@ pub enum Amidlbbfihh {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pambeijgdlo {
+pub enum Ojeajceoglb {
     #[serde(rename = "ELECTROHERCULES_BATTLE_DIFFICULTY_HARD")]
     ElectroherculesBattleDifficultyHard,
     #[serde(rename = "ELECTROHERCULES_BATTLE_DIFFICULTY_MASTER")]

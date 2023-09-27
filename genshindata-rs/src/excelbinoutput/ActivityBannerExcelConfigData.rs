@@ -10,20 +10,17 @@ pub type ActivityBannerExcelConfigData = Vec<ActivityBannerExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct ActivityBannerExcelConfigDatum {
     pub activity_id: i64,
-    #[serde(rename = "NGBGLKCGFEF")]
-    pub ngbglkcgfef: Option<Ngbglkcgfef>,
+    pub banner_type: Option<BannerType>,
     pub reward_preview_id: Option<i64>,
-    #[serde(rename = "AJFAOCIGAEN")]
-    pub ajfaocigaen: String,
+    pub json_config_name: String,
     pub prefab_path: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "PHBNMACIILB")]
-    pub phbnmaciilb: Option<bool>,
+    pub show_desc: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ngbglkcgfef {
+pub enum BannerType {
     #[serde(rename = "ACTIVITY_BANNER_MONSTER")]
     ActivityBannerMonster,
 }

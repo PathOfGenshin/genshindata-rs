@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type BonusTreasureSolutionExcelConfigData = Vec<BonusTreasureSolutionExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BonusTreasureSolutionExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub bgihiiphfpf: f64,
-    pub jckclijnhhn: Vec<i64>,
+    pub show_image_hash: f64,
+    pub solution: Vec<i64>,
 }

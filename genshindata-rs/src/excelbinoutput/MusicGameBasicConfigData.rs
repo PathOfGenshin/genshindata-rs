@@ -8,40 +8,31 @@ use std::collections::HashMap;
 pub type MusicGameBasicConfigData = Vec<MusicGameBasicConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MusicGameBasicConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "musicID")]
     pub music_id: i64,
-    #[serde(rename = "musicLevel")]
     pub music_level: i64,
-    #[serde(rename = "jsonPath")]
     pub json_path: String,
-    pub gmonlppajmc: i64,
-    #[serde(rename = "successLatePoint")]
-    pub success_late_point: i64,
-    #[serde(rename = "scoreLevelList")]
+    pub scale_time: i64,
+    pub late_drop_time: i64,
     pub score_level_list: Vec<i64>,
-    #[serde(rename = "scoreOneKey")]
     pub score_one_key: i64,
-    pub enefjlnmmcd: i64,
-    pub mghkbemkdio: i64,
-    pub fejkajljikd: Option<i64>,
-    pub glbmnfbajfd: HashMap<String, f64>,
-    #[serde(rename = "comboConfig")]
-    pub combo_config: Vec<i64>,
-    #[serde(rename = "scaleRange")]
-    pub scale_range: i64,
-    pub lihldodcmai: String,
-    pub lkjnkcnlacg: String,
-    pub lnoccpjphhc: i64,
-    pub keloiaomelb: Vec<Keagepdfkck>,
-    #[serde(rename = "unlockTipsTextMapHash")]
+    pub score_great: i64,
+    pub score_long_press: i64,
+    pub bpm: Option<i64>,
+    pub bpm_dict: HashMap<String, f64>,
+    pub ugc_beat_division_options: Vec<i64>,
+    pub ugc_default_beat_division: i64,
+    pub simple_hint_json_path: String,
+    pub complex_hint_json_path: String,
+    pub note_count: i64,
+    pub combo_config: Vec<OConfig>,
     pub unlock_tips_text_map_hash: i64,
-    pub keagepdfkck: Vec<Keagepdfkck>,
+    pub solo_config: Vec<OConfig>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Keagepdfkck {
+pub struct OConfig {
 }

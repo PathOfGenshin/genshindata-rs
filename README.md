@@ -29,4 +29,4 @@ Currently generates code in:
 
 ---
 
-Currently updated for game version: **OSRELWin4.0.0_R17100363_S17041295_D17098349**
+Currently updated for game version: **OSRELWin4.1.0_R18121248_S17874799_D18114882**

@@ -11,19 +11,19 @@ pub type MapLayerFloorExcelConfigData = Vec<MapLayerFloorExcelConfigDatum>;
 pub struct MapLayerFloorExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub pjdgaaagopo: i64,
-    pub lcgnjblmdha: i64,
-    pub ndagfkeleap: i64,
-    pub ckndnklcahc: Ckndnklcahc,
-    pub bhemljcfhpi: i64,
+    pub knicloinnhc: i64,
+    pub ffhcbngiekp: i64,
+    pub ehaafbcmpad: i64,
+    pub lhcoeoekdmh: Lhcoeoekdmh,
+    pub foggaoeflpc: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Ckndnklcahc {
+pub struct Lhcoeoekdmh {
     pub param_list: Vec<i64>,
     #[serde(rename = "type")]
-    pub ckndnklcahc_type: Option<Type>,
+    pub lhcoeoekdmh_type: Option<Type>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

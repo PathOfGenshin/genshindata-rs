@@ -7,15 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type CoinCollectSkillExcelConfigData = Vec<CoinCollectSkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CoinCollectSkillExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "abilityName")]
     pub ability_name: Vec<String>,
-    pub lgnlpcmdhef: Option<bool>,
-    pub eekmahjahag: String,
-    pub dlehbdcbheh: i64,
-    pub kpkhpjmelnk: i64,
-    pub jbmlphdnhdc: Option<bool>,
+    #[serde(rename = "FHADOCOEJLK")]
+    pub fhadocoejlk: Option<bool>,
+    #[serde(rename = "AMMEPONAPBA")]
+    pub ammeponapba: String,
+    pub skill_name_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
+    #[serde(rename = "JBMLINKIHKB")]
+    pub jbmlinkihkb: Option<bool>,
 }

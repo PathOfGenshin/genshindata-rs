@@ -15,8 +15,7 @@ pub struct EffigyDifficultyExcelConfigDatum {
     pub monster_difficulty: MonsterDifficulty,
     pub monster_level: i64,
     pub score_ratio: i64,
-    #[serde(rename = "IJIPBCIAFDK")]
-    pub ijipbciafdk: i64,
+    pub finish_challenge_index: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -7,10 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySpiceFoodExcelConfigData = Vec<ActivitySpiceFoodExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySpiceFoodExcelConfigDatum {
-    pub lfiflmpaipo: i64,
-    pub ocfcpdlpfin: i64,
-    pub meedendeidd: i64,
-    pub knbneagkido: i64,
+    pub source_desc_text_map_hash: i64,
+    pub special_food_id: i64,
+    pub normal_food_id: i64,
+    pub recipe_mat_id: i64,
 }

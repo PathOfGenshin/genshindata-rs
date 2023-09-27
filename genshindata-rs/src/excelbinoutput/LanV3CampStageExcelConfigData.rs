@@ -7,12 +7,11 @@ use serde::{Serialize, Deserialize};
 pub type LanV3CampStageExcelConfigData = Vec<LanV3CampStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV3CampStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    pub gikgnblpbcm: Vec<i64>,
-    #[serde(rename = "stageNameTextMapHash")]
+    pub level_id_list: Vec<i64>,
     pub stage_name_text_map_hash: i64,
-    pub hakheohhjch: Vec<i64>,
+    #[serde(rename = "ECJIGMCGOEO")]
+    pub ecjigmcgoeo: Vec<i64>,
 }

@@ -16,41 +16,35 @@ pub struct NpcExcelConfigDatum {
     pub dye_part: String,
     pub billboard_icon: BillboardIcon,
     pub template_emotion_path: TemplateEmotionPath,
-    #[serde(rename = "LPNAHEMCGJJ")]
-    pub lpnahemcgjj: Vec<i64>,
-    #[serde(rename = "IOBIAPCOEFK")]
-    pub iobiapcoefk: i64,
+    pub action_id_list: Vec<i64>,
+    pub unique_body_id: i64,
     pub id: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "KCANMNBNNED")]
-    pub kcanmnbnned: f64,
+    pub prefab_path_hash: f64,
     #[serde(rename = "campID")]
     pub camp_id: i64,
     #[serde(rename = "LODPatternName")]
     pub lod_pattern_name: String,
     pub has_move: Option<bool>,
     pub has_audio: Option<bool>,
-    #[serde(rename = "AEOBMIKIBAF")]
-    pub aeobmikibaf: Option<f64>,
+    pub json_path_hash: Option<f64>,
     pub is_daily: Option<bool>,
-    pub gacha_image_name_hash: Option<f64>,
+    pub animator_config_path_hash: Option<f64>,
     pub invisiable: Option<bool>,
     pub disable_show_name: Option<bool>,
     pub body_type: Option<BodyType>,
     pub first_met_id: Option<i64>,
-    #[serde(rename = "MFBCDEHGMOI")]
-    pub mfbcdehgmoi: Option<bool>,
+    pub use_dyn_bone: Option<bool>,
     pub billboard_type: Option<BillboardType>,
-    pub json_path_hash: Option<bool>,
-    #[serde(rename = "CPDBDOJBJIL")]
-    pub cpdbdojbjil: Option<i64>,
-    pub prefab_path_hash: Option<f64>,
+    #[serde(rename = "AHGHBEGPNBI")]
+    pub ahghbegpnbi: Option<bool>,
+    #[serde(rename = "BMJPNOKAOPI")]
+    pub bmjpnokaopi: Option<i64>,
+    pub deformation_mesh_path_hash: Option<f64>,
     pub lua_data_index: Option<i64>,
-    pub animator_config_path_hash: Option<bool>,
-    #[serde(rename = "FLFIABCCNOM")]
-    pub flfiabccnom: Option<bool>,
-    #[serde(rename = "DNLDKCEGLNE")]
-    pub dnldkceglne: Option<Dnldkceglne>,
+    pub skip_init_closet_to_ground: Option<bool>,
+    pub is_activity_daily_npc: Option<bool>,
+    pub special_type: Option<SpecialType>,
     pub has_combat: Option<bool>,
 }
 
@@ -124,6 +118,8 @@ pub enum BillboardIcon {
     UiNpcTopIconGeneralCargo,
     #[serde(rename = "UI_NPCTopIcon_HideandSeek")]
     UiNpcTopIconHideandSeek,
+    #[serde(rename = "UI_NPCTopIcon_InspirationSpurt")]
+    UiNpcTopIconInspirationSpurt,
     #[serde(rename = "UI_NPCTopIcon_LanV3Shadow")]
     UiNpcTopIconLanV3Shadow,
     #[serde(rename = "UI_NPCTopIcon_LuminanceStone")]
@@ -132,6 +128,8 @@ pub enum BillboardIcon {
     UiNpcTopIconLunaRite,
     #[serde(rename = "UI_NPCTopIcon_MiscsMarvs")]
     UiNpcTopIconMiscsMarvs,
+    #[serde(rename = "UI_NPCTopIcon_PitchPot")]
+    UiNpcTopIconPitchPot,
     #[serde(rename = "UI_NPCTopIcon_R1")]
     UiNpcTopIconR1,
     #[serde(rename = "UI_NPCTopIcon_R2")]
@@ -199,13 +197,6 @@ pub enum BodyType {
     NpcMale,
     #[serde(rename = "NPC_MUSCLEMAN")]
     NpcMuscleman,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Dnldkceglne {
-    #[serde(rename = "NPC_SPECIAL_ARANARA")]
-    NpcSpecialAranara,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -438,6 +429,13 @@ pub enum ScriptDataPath {
     DataScriptDataPropObjectSp045,
     #[serde(rename = "Data/ScriptData/PropObject/SP_Invisible_Queen")]
     DataScriptDataPropObjectSpInvisibleQueen,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum SpecialType {
+    #[serde(rename = "NPC_SPECIAL_ARANARA")]
+    NpcSpecialAranara,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

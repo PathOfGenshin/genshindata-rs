@@ -17,8 +17,7 @@ pub struct HideAndSeekSkillExcelConfigDatum {
     pub skill_sub_category: SkillSubCategory,
     pub is_default: Option<bool>,
     pub category_desc_text_map_hash: i64,
-    #[serde(rename = "AGMFMHBNACF")]
-    pub agmfmhbnacf: f64,
+    pub skill_icon_path_hash: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

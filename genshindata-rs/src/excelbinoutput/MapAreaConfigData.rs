@@ -13,20 +13,13 @@ pub struct MapAreaConfigDatum {
     #[serde(rename = "sceneID")]
     pub scene_id: i64,
     pub name: String,
-    #[serde(rename = "DDANDGPHAID")]
-    pub ddandgphaid: Vec<i64>,
-    #[serde(rename = "DHAMPAMMFKK")]
-    pub dhampammfkk: Option<i64>,
-    #[serde(rename = "DBLFBDOCHHB")]
-    pub dblfbdochhb: Option<Dblfbdochhb>,
+    #[serde(rename = "areaID1")]
+    pub area_id1: Vec<i64>,
+    #[serde(rename = "scenePointID")]
+    pub scene_point_id: Option<i64>,
+    pub map_area_state: Option<MapAreaState>,
     #[serde(rename = "type")]
     pub map_area_config_datum_type: Option<Type>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dblfbdochhb {
-    #[serde(rename = "MistOpen")]
-    MistOpen,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -36,4 +29,10 @@ pub enum Type {
     MapAreaTypeErosion,
     #[serde(rename = "MAP_AREA_TYPE_LEVEL_TAG")]
     MapAreaTypeLevelTag,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum MapAreaState {
+    #[serde(rename = "MistOpen")]
+    MistOpen,
 }

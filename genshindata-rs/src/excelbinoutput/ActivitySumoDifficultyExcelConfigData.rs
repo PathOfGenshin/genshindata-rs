@@ -7,17 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySumoDifficultyExcelConfigData = Vec<ActivitySumoDifficultyExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySumoDifficultyExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "FBDAGDPMAJG")]
-    pub fbdagdpmajg: i64,
-    #[serde(rename = "DCLJMHKLLDP")]
-    pub dcljmhklldp: i64,
-    #[serde(rename = "JLEOEHNJHLI")]
-    pub jleoehnjhli: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub scheduld_id: i64,
+    pub dungeon_level: i64,
+    pub ratio: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "difficulty")]
     pub difficulty: Option<String>,
 }

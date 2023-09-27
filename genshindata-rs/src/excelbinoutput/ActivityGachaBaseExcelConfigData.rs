@@ -7,26 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type ActivityGachaBaseExcelConfigData = Vec<ActivityGachaBaseExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityGachaBaseExcelConfigDatum {
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub cbdcgnkmpoj: i64,
-    pub kilgnflmhla: i64,
-    pub iijfippigod: i64,
-    pub eijbnnkjmda: i64,
-    pub lkodljfgmhn: i64,
-    pub gnjabjicjmc: i64,
-    pub fkimcgklghh: i64,
-    pub ledljhfdknb: i64,
-    pub djlhkkcmmch: i64,
-    #[serde(rename = "watcherList")]
+    pub elem_time: i64,
+    pub task_content_id: i64,
+    pub unlock_stage_id: i64,
+    pub max_convert: i64,
+    pub robot_limit: i64,
+    pub robot_guar_num: i64,
+    pub robot_hidden_first_guar_num: i64,
+    pub robot_hidden_guar_num: i64,
+    pub robot_hidden_guar_rate: i64,
     pub watcher_list: Vec<i64>,
-    pub oojhnnjmcbg: Vec<i64>,
-    #[serde(rename = "reminderId")]
+    pub quest_list: Vec<i64>,
     pub reminder_id: i64,
-    pub amjpggpkkdi: i64,
-    pub iamhnoeemda: i64,
+    pub exchange_tips_cond: i64,
+    pub free_mode_unlock_quest: i64,
 }

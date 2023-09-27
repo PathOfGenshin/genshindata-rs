@@ -7,10 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type ActivityJourneyGcgPickAgentExcelConfigData = Vec<ActivityJourneyGcgPickAgentExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityJourneyGcgPickAgentExcelConfigDatum {
-    pub hdljmoghicl: i64,
-    pub famneefmonm: i64,
-    pub bnhibapfkgo: i64,
-    pub acahkjdnjbl: i64,
+    #[serde(rename = "npcID")]
+    pub npc_id: i64,
+    #[serde(rename = "markID")]
+    pub mark_id: i64,
+    #[serde(rename = "JPICKHNKCJH")]
+    pub jpickhnkcjh: i64,
+    pub mark_desc_text_map_hash: i64,
 }

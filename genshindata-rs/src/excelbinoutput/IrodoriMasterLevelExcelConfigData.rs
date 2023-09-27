@@ -13,12 +13,9 @@ pub struct IrodoriMasterLevelExcelConfigDatum {
     pub id: i64,
     pub scene_id: i64,
     pub group_id: i64,
-    #[serde(rename = "NOGIBFDGLHC")]
-    pub nogibfdglhc: i64,
+    pub point_id: i64,
     pub gallery_id: i64,
-    #[serde(rename = "BMNHLFBDCCF")]
-    pub bmnhlfbdccf: String,
-    #[serde(rename = "OKAOMEGBHBI")]
-    pub okaomegbhbi: Vec<i64>,
+    pub cutscene: String,
+    pub trial_avatar_list: Vec<i64>,
     pub watcher_list: Vec<i64>,
 }

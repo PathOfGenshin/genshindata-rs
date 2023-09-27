@@ -17,8 +17,7 @@ pub struct HuntingRegionExcelConfigDatum {
     pub safe_destination_group: Vec<i64>,
     pub destination_group: Vec<i64>,
     pub region_info_text_map_hash: i64,
-    #[serde(rename = "PFALBAFLKJN")]
-    pub pfalbaflkjn: Vec<i64>,
-    #[serde(rename = "PDEGIOIPIMO")]
-    pub pdegioipimo: Option<i64>,
+    pub certain_final_monster_id: Vec<i64>,
+    #[serde(rename = "NOBLAGNCKAG")]
+    pub noblagnckag: Option<i64>,
 }

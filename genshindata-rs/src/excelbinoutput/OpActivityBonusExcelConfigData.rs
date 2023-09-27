@@ -16,10 +16,8 @@ pub struct OpActivityBonusExcelConfigDatum {
     pub bonus_ratio: i64,
     pub text_map_id_list: Vec<String>,
     pub track_para: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "KMHKHDEELPB")]
-    pub kmhkhdeelpb: i64,
-    #[serde(rename = "FLHGFBDKKJI")]
-    pub flhgfbdkkji: Option<i64>,
+    pub icon_background: i64,
+    pub icon_foreground: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

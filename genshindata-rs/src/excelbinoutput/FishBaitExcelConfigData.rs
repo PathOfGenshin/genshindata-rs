@@ -7,20 +7,18 @@ use serde::{Serialize, Deserialize};
 pub type FishBaitExcelConfigData = Vec<FishBaitExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct FishBaitExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub pafmamkcfno: Vec<Pafmamkcfno>,
-    pub egceeeopdch: i64,
-    pub cdklnphaifa: Vec<i64>,
+    pub feature_list: Vec<FeatureList>,
+    pub sort: i64,
+    pub pool_id_list: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Pafmamkcfno {
-    pub hkdfmnfmhjh: Option<i64>,
-    #[serde(rename = "weight")]
+#[serde(rename_all = "camelCase")]
+pub struct FeatureList {
+    pub feature_tag: Option<i64>,
     pub weight: Option<i64>,
-    pub fghnhpdohbo: Option<i64>,
+    pub bonus_range: Option<i64>,
 }

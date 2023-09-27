@@ -10,21 +10,18 @@ pub type BartenderOrderExcelConfigData = Vec<BartenderOrderExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct BartenderOrderExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "PCFAFEKFBIF")]
-    pub pcfafekfbif: i64,
-    #[serde(rename = "NJKIDEKBPPM")]
-    pub njkidekbppm: Vec<i64>,
+    pub formula_id: i64,
+    pub affix_id: Vec<i64>,
     pub icon_name: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "KCLMDOLJIED")]
-    pub kclmdoljied: Option<Kclmdoljied>,
+    pub cup_type: Option<CupType>,
     pub time: Option<i64>,
     pub score: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Kclmdoljied {
+pub enum CupType {
     #[serde(rename = "BARTENDER_CUP_BIG")]
     BartenderCupBig,
     #[serde(rename = "BARTENDER_CUP_MEDIUM")]

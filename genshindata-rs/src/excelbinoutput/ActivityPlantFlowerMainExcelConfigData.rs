@@ -7,20 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPlantFlowerMainExcelConfigData = Vec<ActivityPlantFlowerMainExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPlantFlowerMainExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub bfohblencpn: Vec<i64>,
-    pub nalpelmhkpm: Vec<i64>,
-    pub edeieggniai: i64,
-    #[serde(rename = "rewardPreviewId")]
+    pub flower_id_list: Vec<i64>,
+    pub seed_id_list: Vec<i64>,
+    pub max_wish_flower_kinds: i64,
     pub reward_preview_id: i64,
-    pub okmdiamkofi: i64,
-    pub jjilhhpghhk: Vec<i64>,
-    #[serde(rename = "openQuestId")]
+    pub guarantee_start_times: i64,
+    pub pre_quest_id_list: Vec<i64>,
     pub open_quest_id: i64,
-    pub gcmockaoehe: i64,
-    #[serde(rename = "dailyConfigIdList")]
+    pub content_day: i64,
     pub daily_config_id_list: Vec<i64>,
 }

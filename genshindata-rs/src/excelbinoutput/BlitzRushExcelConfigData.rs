@@ -13,13 +13,11 @@ pub struct BlitzRushExcelConfigDatum {
     pub activity_id: i64,
     pub content_duration: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "BHBAFOLBNAE")]
-    pub bhbafolbnae: i64,
-    #[serde(rename = "NLCOBIIIHLM")]
-    pub nlcobiiihlm: i64,
-    #[serde(rename = "FLONPICBONP")]
-    pub flonpicbonp: i64,
-    #[serde(rename = "DPCOGHOPOKG")]
-    pub dpcoghopokg: Vec<i64>,
+    pub dungeon_entry_id: i64,
+    pub dungeon_reward_id: i64,
+    #[serde(rename = "prePreQuestID")]
+    pub pre_pre_quest_id: i64,
+    #[serde(rename = "preQuestID")]
+    pub pre_quest_id: Vec<i64>,
     pub reward_preview: i64,
 }

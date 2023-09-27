@@ -7,17 +7,16 @@ use serde::{Serialize, Deserialize};
 pub type BartenderEventExcelConfigData = Vec<BartenderEventExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct BartenderEventExcelConfigDatum {
-    #[serde(rename = "effectName")]
     pub effect_name: String,
-    pub ddnblgemfki: Option<Ddnblgemfki>,
-    pub pepcncnbpmf: Option<i64>,
+    pub effect_type: Option<EffectType>,
+    pub misc_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ddnblgemfki {
+pub enum EffectType {
     #[serde(rename = "BARTENDER_FINISH_CUP_EFF")]
     BartenderFinishCupEff,
     #[serde(rename = "BARTENDER_FINISH_CUP_ONHAND")]

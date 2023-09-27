@@ -3,6 +3,16 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type AudioBattleFervorChestStgConfigData = Vec<HashMap<String, f64>>;
+pub type AudioBattleFervorChestStgConfigData = Vec<AudioBattleFervorChestStgConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct AudioBattleFervorChestStgConfigDatum {
+    #[serde(rename = "id")]
+    pub id: i64,
+    pub clgnknpgpig: f64,
+    pub nhiflakhdkm: i64,
+    pub bapbpcfifoh: f64,
+    pub hdkafnbmdal: i64,
+}

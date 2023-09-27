@@ -23,11 +23,14 @@ pub struct FetterInfoExcelConfigDatum {
     pub cv_korean_text_map_hash: i64,
     pub avatar_vision_after_text_map_hash: i64,
     pub avatar_constellation_after_text_map_hash: i64,
+    #[serde(rename = "MNFCJJCOKAL")]
+    pub mnfcjjcokal: i64,
+    #[serde(rename = "LIAGKAGANIN")]
+    pub liagkaganin: i64,
     pub fetter_id: i64,
     pub avatar_id: i64,
     pub open_conds: Vec<Option<serde_json::Value>>,
-    #[serde(rename = "DLPFLPGMMNA")]
-    pub dlpflpgmmna: Vec<Dlpflpgmmna>,
+    pub finish_conds: Vec<FinishCond>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -53,7 +56,7 @@ pub enum AvatarAssocType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Dlpflpgmmna {
+pub struct FinishCond {
     pub cond_type: CondType,
     pub param_list: Vec<i64>,
 }

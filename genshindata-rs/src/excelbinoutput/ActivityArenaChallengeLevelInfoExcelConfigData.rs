@@ -17,16 +17,11 @@ pub struct ActivityArenaChallengeLevelInfoExcelConfigDatum {
     pub monster_preview_id: i64,
     pub monster_config: String,
     pub level_desc_text_map_hash: i64,
-    #[serde(rename = "CKPMPCGDCGE")]
-    pub ckpmpcgdcge: String,
-    #[serde(rename = "GAGECFJHMPL")]
-    pub gagecfjhmpl: i64,
-    #[serde(rename = "CAMCCJDJAFO")]
-    pub camccjdjafo: String,
-    #[serde(rename = "OMNBAIINACB")]
-    pub omnbaiinacb: i64,
-    #[serde(rename = "DBKLICMOIIF")]
-    pub dbklicmoiif: String,
+    pub level_desc_params: String,
+    pub monster_preview_id_hard_challenge: i64,
+    pub monster_config_hard_challenge: String,
+    pub level_hard_challenge_desc_text_map_hash: i64,
+    pub level_hard_challenge_desc_params: String,
     pub level_detail_desc_text_map_hash: i64,
     pub challenge_id_list: Vec<i64>,
     pub open_day: Option<i64>,

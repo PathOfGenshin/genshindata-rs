@@ -7,20 +7,20 @@ use serde::{Serialize, Deserialize};
 pub type GcgScenePointExcelConfigData = Vec<GcgScenePointExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct GcgScenePointExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "pos")]
     pub pos: Vec<f64>,
-    pub helfobnflhl: f64,
-    pub edidohgkbid: Option<Edidohgkbid>,
-    pub lnlhoanlcjh: Vec<Lnlhoanlcjh>,
+    #[serde(rename = "GNDCFAJKNFF")]
+    pub gndcfajknff: f64,
+    pub motion_type: Option<MotionType>,
+    #[serde(rename = "NOHMMHACHNC")]
+    pub nohmmhachnc: Vec<Nohmmhachnc>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Edidohgkbid {
+pub enum MotionType {
     #[serde(rename = "POINT_MOTION_SIT")]
     PointMotionSit,
     #[serde(rename = "POINT_MOTION_STAND")]
@@ -29,7 +29,7 @@ pub enum Edidohgkbid {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Lnlhoanlcjh {
+pub enum Nohmmhachnc {
     #[serde(rename = "SUPPORT_CALL")]
     SupportCall,
     #[serde(rename = "SUPPORT_NONE")]

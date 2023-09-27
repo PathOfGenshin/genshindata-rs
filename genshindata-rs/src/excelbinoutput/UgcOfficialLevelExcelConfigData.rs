@@ -7,19 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type UgcOfficialLevelExcelConfigData = Vec<UgcOfficialLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct UgcOfficialLevelExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub plpidbllbef: i64,
-    pub ldiadlienfh: i64,
-    #[serde(rename = "levelNameTextMapHash")]
+    #[serde(rename = "CNDPKBFCOJC")]
+    pub cndpkbfcojc: i64,
+    pub unlock_day: i64,
     pub level_name_text_map_hash: i64,
-    #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    #[serde(rename = "previewPath")]
     pub preview_path: String,
-    pub fonklmebajj: Vec<i64>,
-    pub kpolfopbgjp: i64,
-    pub okedgeoghep: f64,
+    #[serde(rename = "PJLJEEDDOII")]
+    pub pjljeeddoii: Vec<i64>,
+    #[serde(rename = "ODMPGPMJCBF")]
+    pub odmpgpmjcbf: i64,
+    #[serde(rename = "MOHMMMJJJJI")]
+    pub mohmmmjjjji: f64,
 }

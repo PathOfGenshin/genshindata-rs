@@ -18,6 +18,7 @@ pub struct RandomMainQuestExcelConfigDatum {
     pub active_mode: Option<String>,
     pub suggest_track_main_quest_list: Vec<Option<serde_json::Value>>,
     pub reward_id_list: String,
+    pub hide_progress_sub_id_set_list: Vec<Option<serde_json::Value>>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

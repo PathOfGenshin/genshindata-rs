@@ -7,9 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type FeatureTagExcelConfigData = Vec<FeatureTagExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FeatureTagExcelConfigDatum {
     #[serde(rename = "tagID")]
     pub tag_id: i64,
-    pub tag_name: Option<String>,
+    pub limjlbgmjhh: Option<String>,
 }

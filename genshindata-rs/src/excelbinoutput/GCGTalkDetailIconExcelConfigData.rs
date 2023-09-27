@@ -11,6 +11,8 @@ pub type GcgTalkDetailIconExcelConfigData = Vec<GcgTalkDetailIconExcelConfigDatu
 pub struct GcgTalkDetailIconExcelConfigDatum {
     pub id: i64,
     pub icon_name: String,
+    #[serde(rename = "CJMCGGPEBDP")]
+    pub cjmcggpebdp: String,
     #[serde(rename = "type")]
     pub gcg_talk_detail_icon_excel_config_datum_type: Option<Type>,
 }

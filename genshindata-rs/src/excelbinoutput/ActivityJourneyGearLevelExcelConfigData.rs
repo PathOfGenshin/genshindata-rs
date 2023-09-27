@@ -12,14 +12,13 @@ pub struct ActivityJourneyGearLevelExcelConfigDatum {
     pub level_id: i64,
     pub level_name_text_map_hash: i64,
     pub level_desc_text_map_hash: i64,
-    #[serde(rename = "JFKEEEAHDJO")]
-    pub jfkeeeahdjo: String,
-    #[serde(rename = "LDIADLIENFH")]
-    pub ldiadlienfh: i64,
+    #[serde(rename = "MFPEPBLMDPE")]
+    pub mfpepblmdpe: String,
+    pub unlock_day: i64,
     pub watcher_id: i64,
-    #[serde(rename = "AKOCMJNMEKC")]
-    pub akocmjnmekc: i64,
-    #[serde(rename = "GFLLLELDEKF")]
-    pub gfllleldekf: i64,
+    #[serde(rename = "HMJDJOCMMNN")]
+    pub hmjdjocmmnn: i64,
+    #[serde(rename = "LJJPHGIMJEE")]
+    pub ljjphgimjee: i64,
     pub group_id: i64,
 }

@@ -25,8 +25,7 @@ pub struct TowerLevelExcelConfigDatum {
 #[serde(rename_all = "camelCase")]
 pub struct Cond {
     pub tower_cond_type: TowerCondType,
-    #[serde(rename = "HOGNCPFGHNI")]
-    pub hogncpfghni: Vec<i64>,
+    pub argument_list_upper: Vec<i64>,
     pub argument_list: Vec<i64>,
 }
 

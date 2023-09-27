@@ -7,25 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type ActivitySummerTimeRaceExcelConfigData = Vec<ActivitySummerTimeRaceExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivitySummerTimeRaceExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "EHOPPOGGFII")]
-    pub ehoppoggfii: Vec<i64>,
-    #[serde(rename = "IKJHOCNGFNK")]
-    pub ikjhocngfnk: Vec<i64>,
-    #[serde(rename = "DBPDNALGCLJ")]
-    pub dbpdnalgclj: Vec<i64>,
-    #[serde(rename = "levelTitleTextMapHash")]
+    pub medal_watcher: Vec<i64>,
+    pub world_coord: Vec<i64>,
+    pub medal_point: Vec<i64>,
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "PABMLAFFDAL")]
-    pub pabmlaffdal: i64,
-    #[serde(rename = "BEAHEFGKLJL")]
-    pub beahefgkljl: i64,
-    #[serde(rename = "DDCJAFDLGKJ")]
-    pub ddcjafdlgkj: i64,
-    #[serde(rename = "HLGHMBFIDKI")]
-    pub hlghmbfidki: i64,
-    #[serde(rename = "IFKGOHBCMMF")]
-    pub ifkgohbcmmf: i64,
+    pub time_factor: i64,
+    pub gold_factor: i64,
+    pub activity_cond_id: i64,
+    pub boat_point_config_id: i64,
+    pub player_point_config_id: i64,
 }

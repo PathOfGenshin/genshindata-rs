@@ -7,25 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type UgcMaterialExcelConfigData = Vec<UgcMaterialExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcMaterialExcelConfigDatum {
+    #[serde(rename = "materialId")]
     pub material_id: i64,
-    #[serde(rename = "EOKHLEKGELI")]
-    pub eokhlekgeli: i64,
-    #[serde(rename = "KFMJAPCOFOI")]
-    pub kfmjapcofoi: i64,
-    #[serde(rename = "EEELNIEDCOH")]
-    pub eeelniedcoh: i64,
-    #[serde(rename = "JLGLJOAJCBP")]
-    pub jlgljoajcbp: f64,
-    #[serde(rename = "LFLBLIANEAL")]
-    pub lflblianeal: i64,
+    pub kmjmgjkkgnf: i64,
+    pub ffeppgfcgbd: i64,
+    pub jlmpoifdngj: i64,
+    pub hmcbihmbgkn: f64,
+    pub hepdkgcepmj: i64,
     #[serde(rename = "type")]
     pub ugc_material_excel_config_datum_type: Option<Type>,
+    #[serde(rename = "tag")]
     pub tag: Option<i64>,
+    #[serde(rename = "indexId")]
     pub index_id: Option<i64>,
+    #[serde(rename = "stackLimit")]
     pub stack_limit: Option<i64>,
-    pub chapter_image_hash: Option<i64>,
+    pub acjbbplendf: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

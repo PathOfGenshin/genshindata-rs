@@ -7,13 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type MusicGamePositionConfigData = Vec<MusicGamePositionConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MusicGamePositionConfigDatum {
-    pub gfpjhdfhppb: i64,
-    pub bkdmfldgcie: Vec<i64>,
-    pub nfcndolfjnb: Option<i64>,
-    pub hdljmoghicl: Option<i64>,
-    pub famneefmonm: Option<i64>,
-    pub jgfpidjdkke: Option<i64>,
-    pub hkkjkikeiec: String,
+    #[serde(rename = "interNPCID")]
+    pub inter_npcid: i64,
+    pub npc_position: Vec<i64>,
+    pub npc_rotation: Option<i64>,
+    #[serde(rename = "npcID")]
+    pub npc_id: Option<i64>,
+    #[serde(rename = "markID")]
+    pub mark_id: Option<i64>,
+    #[serde(rename = "freeStyleID")]
+    pub free_style_id: Option<i64>,
+    pub ban_config: String,
 }

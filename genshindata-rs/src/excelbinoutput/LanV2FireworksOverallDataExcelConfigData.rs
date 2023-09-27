@@ -7,21 +7,18 @@ use serde::{Serialize, Deserialize};
 pub type LanV2FireworksOverallDataExcelConfigData = Vec<LanV2FireworksOverallDataExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LanV2FireworksOverallDataExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub kchjogmehjj: i64,
-    pub nmomjeeolda: Vec<Nmomjeeolda>,
-    pub bnlhknkbplf: f64,
-    pub hgljnhjnifl: i64,
-    #[serde(rename = "pushTipsId")]
+    pub init_stamina_value: i64,
+    pub fire_element_addition_list: Vec<FireElementAdditionList>,
+    pub score_formula_exponent: f64,
+    pub score_formula_offset: i64,
     pub push_tips_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Nmomjeeolda {
-    pub momenefcenl: Vec<i64>,
-    pub jleoehnjhli: Option<i64>,
+pub struct FireElementAdditionList {
+    pub range: Vec<i64>,
+    pub ratio: Option<i64>,
 }

@@ -9,7 +9,7 @@ pub type GcgShopSubTabExcelConfigData = Vec<GcgShopSubTabExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgShopSubTabExcelConfigDatum {
-    pub cbgmklfmhca: Vec<i64>,
+    pub leebbcjobim: Vec<i64>,
     pub id: i64,
     #[serde(rename = "subTagNameTextMapHash")]
     pub sub_tag_name_text_map_hash: i64,

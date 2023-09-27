@@ -17,76 +17,35 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     pub comfort: Option<i64>,
     pub stack_limit: Option<i64>,
     pub cost: Option<i64>,
-    #[serde(rename = "FEIAJOKDHKC")]
-    pub feiajokdhkc: Option<i64>,
+    pub discount_cost: Option<i64>,
     pub item_icon: String,
     pub effect_icon: EffectIcon,
-    #[serde(rename = "EJBEJMDPAKF")]
-    pub ejbejmdpakf: Option<i64>,
+    pub editor_clamp_distance: Option<i64>,
     pub rank_level: i64,
     pub json_name: JsonName,
-    #[serde(rename = "EFFEOJCDHKL")]
-    pub effeojcdhkl: Vec<i64>,
+    #[serde(rename = "EGAHJDMKAIH")]
+    pub egahjdmkaih: Vec<i64>,
     pub id: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub icon: String,
     pub item_type: ItemType,
     pub rank: Option<i64>,
-    #[serde(rename = "EDGBJCNFGPG")]
-    pub edgbjcnfgpg: Option<Edgbjcnfgpg>,
+    pub special_furniture_type: Option<SpecialFurnitureType>,
     pub is_unique: Option<i64>,
     pub is_special_furniture: Option<i64>,
     pub height: Option<f64>,
-    #[serde(rename = "KECCMDKHDKB")]
-    pub keccmdkhdkb: Option<i64>,
-    #[serde(rename = "AMMKDFGGKJL")]
-    pub ammkdfggkjl: Option<i64>,
-    #[serde(rename = "HOGAGIPJCMN")]
-    pub hogagipjcmn: Option<i64>,
-    #[serde(rename = "BDHHCMIPPIP")]
-    pub bdhhcmippip: Option<i64>,
+    pub deploy_glitch_index: Option<i64>,
+    pub is_combinable_light: Option<i64>,
     #[serde(rename = "roomSceneID")]
     pub room_scene_id: Option<i64>,
+    pub arrange_limit: Option<i64>,
+    pub can_float: Option<i64>,
     pub push_tips_id: Option<i64>,
-    #[serde(rename = "ELGBJFAJDDM")]
-    pub elgbjfajddm: Option<String>,
-    #[serde(rename = "HIOGGBIHOOF")]
-    pub hioggbihoof: Option<i64>,
-    pub furniture_name_text_map_hash: Option<bool>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Edgbjcnfgpg {
-    Apartment,
-    #[serde(rename = "BlockDependent")]
-    BlockDependent,
-    #[serde(rename = "ChangeBgmFurniture")]
-    ChangeBgmFurniture,
-    #[serde(rename = "CoopPictureFrame")]
-    CoopPictureFrame,
-    #[serde(rename = "CustomBaseFurnitrue")]
-    CustomBaseFurnitrue,
-    #[serde(rename = "CustomNodeFurnitrue")]
-    CustomNodeFurnitrue,
-    #[serde(rename = "FarmField")]
-    FarmField,
-    Fish,
-    Fishpond,
-    Fishtank,
-    #[serde(rename = "FurnitureSuite")]
-    FurnitureSuite,
-    #[serde(rename = "GroupFurnitrue")]
-    GroupFurnitrue,
-    #[serde(rename = "NPC")]
-    Npc,
-    Paimon,
-    #[serde(rename = "ServerGadget")]
-    ServerGadget,
-    #[serde(rename = "TeleportPoint")]
-    TeleportPoint,
-    #[serde(rename = "VirtualFurnitrue")]
-    VirtualFurnitrue,
+    pub group_record_type: Option<String>,
+    #[serde(rename = "ILLNLLAGKHM")]
+    pub illnllagkhm: Option<i64>,
+    pub block_lego_text: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -126,6 +85,39 @@ pub enum JsonName {
     HomeworldGroup0008,
     #[serde(rename = "HomeworldGroup_0009")]
     HomeworldGroup0009,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum SpecialFurnitureType {
+    Apartment,
+    #[serde(rename = "BlockDependent")]
+    BlockDependent,
+    #[serde(rename = "ChangeBgmFurniture")]
+    ChangeBgmFurniture,
+    #[serde(rename = "CoopPictureFrame")]
+    CoopPictureFrame,
+    #[serde(rename = "CustomBaseFurnitrue")]
+    CustomBaseFurnitrue,
+    #[serde(rename = "CustomNodeFurnitrue")]
+    CustomNodeFurnitrue,
+    #[serde(rename = "FarmField")]
+    FarmField,
+    Fish,
+    Fishpond,
+    Fishtank,
+    #[serde(rename = "FurnitureSuite")]
+    FurnitureSuite,
+    #[serde(rename = "GroupFurnitrue")]
+    GroupFurnitrue,
+    #[serde(rename = "NPC")]
+    Npc,
+    Paimon,
+    #[serde(rename = "ServerGadget")]
+    ServerGadget,
+    #[serde(rename = "TeleportPoint")]
+    TeleportPoint,
+    #[serde(rename = "VirtualFurnitrue")]
+    VirtualFurnitrue,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

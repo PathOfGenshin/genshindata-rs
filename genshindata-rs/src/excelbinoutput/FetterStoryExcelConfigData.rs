@@ -17,14 +17,13 @@ pub struct FetterStoryExcelConfigDatum {
     pub story_title_locked_text_map_hash: i64,
     pub fetter_id: i64,
     pub avatar_id: i64,
-    pub open_conds: Vec<Dlpflpgmmna>,
-    #[serde(rename = "DLPFLPGMMNA")]
-    pub dlpflpgmmna: Vec<Dlpflpgmmna>,
+    pub open_conds: Vec<Cond>,
+    pub finish_conds: Vec<Cond>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Dlpflpgmmna {
+pub struct Cond {
     pub cond_type: Option<CondType>,
     pub param_list: Vec<i64>,
 }

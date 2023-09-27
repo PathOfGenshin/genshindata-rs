@@ -11,6 +11,6 @@ pub type ActivityGcgpveGeneralExcelConfigData = Vec<ActivityGcgpveGeneralExcelCo
 pub struct ActivityGcgpveGeneralExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub mdacdnmmmdm: i64,
-    pub lfkfafkceag: i64,
+    pub kgoelbkfkak: i64,
+    pub jcjcfegjbgj: i64,
 }

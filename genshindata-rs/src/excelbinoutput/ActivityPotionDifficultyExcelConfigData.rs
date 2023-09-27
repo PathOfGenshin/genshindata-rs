@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPotionDifficultyExcelConfigData = Vec<ActivityPotionDifficultyExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPotionDifficultyExcelConfigDatum {
-    pub iielfnjlddo: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub difficulty_level: i64,
     pub desc_text_map_hash: i64,
-    pub fbigbgjekmd: Option<i64>,
+    pub dungeon_up_level: Option<i64>,
 }

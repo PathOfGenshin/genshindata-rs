@@ -7,8 +7,8 @@ use serde::{Serialize, Deserialize};
 pub type CompoundBoostExcelConfigData = Vec<CompoundBoostExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct CompoundBoostExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NOKHMLKAIAK")]
-    pub nokhmlkaiak: i64,
+    pub boost_time: i64,
 }

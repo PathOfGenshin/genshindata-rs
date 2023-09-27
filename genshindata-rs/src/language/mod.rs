@@ -1,6 +1,20 @@
+use serde::{Deserialize, Serialize};
 use strum::{Display, EnumCount, EnumIter, EnumString};
 
-#[derive(Copy, Clone, Hash, PartialEq, Eq, Debug, Display, EnumCount, EnumIter, EnumString)]
+#[derive(
+    Serialize,
+    Deserialize,
+    Copy,
+    Clone,
+    Hash,
+    PartialEq,
+    Eq,
+    Debug,
+    Display,
+    EnumCount,
+    EnumIter,
+    EnumString,
+)]
 pub enum Language {
     CHS,
     CHT,

@@ -7,45 +7,30 @@ use serde::{Serialize, Deserialize};
 pub type GroupLinksBundleExcelConfigData = Vec<GroupLinksBundleExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct GroupLinksBundleExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "groupList")]
     pub group_list: Vec<i64>,
-    #[serde(rename = "GFNJCGLBCAB")]
-    pub gfnjcglbcab: i64,
-    #[serde(rename = "ILCBJKFLDKK")]
-    pub ilcbjkfldkk: Option<i64>,
-    #[serde(rename = "rewardType")]
+    pub hint_group: i64,
+    pub hint_radius: Option<i64>,
     pub reward_type: Option<RewardType>,
-    #[serde(rename = "rewardId")]
     pub reward_id: Option<i64>,
-    #[serde(rename = "reviseLevel")]
     pub revise_level: Option<i64>,
-    #[serde(rename = "icon")]
     pub icon: String,
-    #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    #[serde(rename = "PELPIOKDHJE")]
-    pub pelpiokdhje: i64,
-    #[serde(rename = "LDCPMBGLJII")]
-    pub ldcpmbgljii: Option<i64>,
-    #[serde(rename = "IIFJFKGPBGK")]
-    pub iifjfkgpbgk: Option<bool>,
-    #[serde(rename = "MMHNCFMHOPG")]
-    pub mmhncfmhopg: Option<bool>,
-    #[serde(rename = "DGHGFDNOMCA")]
-    pub dghgfdnomca: Option<i64>,
-    #[serde(rename = "playType")]
+    pub tips_text_map_hash: i64,
+    pub ui_radius: Option<i64>,
+    pub guest_show: Option<bool>,
+    pub is_default_show_mark: Option<bool>,
+    pub track_id: Option<i64>,
     pub play_type: Option<String>,
-    #[serde(rename = "ENJKDLBAHPH")]
-    pub enjkdlbahph: Option<bool>,
-    #[serde(rename = "LCOFEACNJLB")]
-    pub lcofeacnjlb: Option<i64>,
-    #[serde(rename = "AFFAHLCOIJK")]
-    pub affahlcoijk: Option<bool>,
-    #[serde(rename = "MGGBAKLCFIP")]
-    pub mggbaklcfip: Option<bool>,
+    pub track_show_mark_only: Option<bool>,
+    #[serde(rename = "KLIAHEBLCMO")]
+    pub kliaheblcmo: Option<i64>,
+    pub show_area_on_map: Option<bool>,
+    #[serde(rename = "LDJIPGHDDPI")]
+    pub ldjipghddpi: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

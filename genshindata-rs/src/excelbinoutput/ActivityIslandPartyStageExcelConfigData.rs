@@ -10,24 +10,19 @@ pub type ActivityIslandPartyStageExcelConfigData = Vec<ActivityIslandPartyStageE
 #[serde(rename_all = "camelCase")]
 pub struct ActivityIslandPartyStageExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "CNAMGFLGNPF")]
-    pub cnamgflgnpf: String,
+    pub stage_type: String,
     pub gallery_id: i64,
-    #[serde(rename = "OEFPNLMCDHC")]
-    pub oefpnlmcdhc: i64,
+    pub series_id: i64,
     pub match_id: i64,
     pub draft_id: i64,
-    #[serde(rename = "LDIADLIENFH")]
-    pub ldiadlienfh: i64,
+    pub unlock_day: i64,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "JMHFIAIEKKC")]
-    pub jmhfiaiekkc: i64,
-    #[serde(rename = "DJEKACJNNPJ")]
-    pub djekacjnnpj: i64,
+    pub banner_desc_text_map_hash: i64,
+    pub fail_hint_text_map_hash: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "KNAGFKABGFO")]
-    pub knagfkabgfo: Vec<i64>,
+    #[serde(rename = "scoreIDList")]
+    pub score_id_list: Vec<i64>,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }

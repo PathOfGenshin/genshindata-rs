@@ -7,29 +7,25 @@ use serde::{Serialize, Deserialize};
 pub type ActivityMuqadasPotionLevelExcelConfigData = Vec<ActivityMuqadasPotionLevelExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityMuqadasPotionLevelExcelConfigDatum {
-    #[serde(rename = "levelId")]
     pub level_id: i64,
-    pub ofmpckbpkpi: i64,
-    #[serde(rename = "dungeonId")]
+    pub open_day_index: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub okaomegbhbi: Vec<i64>,
-    pub hbpokhnlpko: Vec<Hbpokhnlpko>,
-    pub ndakobnhedj: i64,
-    pub ieillcodgge: i64,
-    pub kpkhpjmelnk: i64,
-    pub hijlmjbppfa: String,
-    pub dhnaeadphep: String,
-    #[serde(rename = "watcherList")]
+    pub trial_avatar_list: Vec<i64>,
+    pub normal_skill_name: Vec<NormalSkillName>,
+    pub dungeon_name_text_map_hash: i64,
+    pub dungeon_desc_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
+    pub in_level_skill_desc_com_text_map_hash: String,
+    pub in_level_skill_desc_ad_text_map_hash: String,
     pub watcher_list: Vec<i64>,
-    pub dnedjilnidl: i64,
+    pub skill_threshold: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hbpokhnlpko {
+pub enum NormalSkillName {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "6058,6021,6046,6041")]

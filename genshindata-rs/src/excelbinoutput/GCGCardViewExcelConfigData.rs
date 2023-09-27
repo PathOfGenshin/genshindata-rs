@@ -11,40 +11,44 @@ pub type GcgCardViewExcelConfigData = Vec<GcgCardViewExcelConfigDatum>;
 pub struct GcgCardViewExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub kaaffkfmldb: String,
-    pub blibpooebmm: Vec<String>,
-    pub lfjiobbbaki: String,
-    pub copehbbfpmk: String,
-    pub jaefajgmccl: Vec<Option<serde_json::Value>>,
-    pub jfjckmdenop: String,
-    pub indncaniglj: Indncaniglj,
-    pub ebmeibcjloj: Vec<String>,
-    pub ahjpbmiankc: Ahjpbmiankc,
-    pub oailjajbpan: Option<f64>,
-    pub okkdgkggbje: Option<f64>,
-    pub biablmeebfc: Option<f64>,
+    pub agjphaeomcd: String,
+    pub cajfoahomjp: Vec<String>,
+    pub goniemmddpa: String,
+    pub fokbohlpbgg: String,
+    pub fggmjigfind: Vec<Option<serde_json::Value>>,
+    pub bbfjkhilogg: String,
+    pub cfbdhgmiimk: Cfbdhgmiimk,
+    pub ljcknneoefp: Vec<String>,
+    pub bldjifmhopk: Bldjifmhopk,
+    pub knfogcpcicb: Option<f64>,
+    pub bpiibjpacme: Option<f64>,
+    pub npolkllcaoj: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ahjpbmiankc {
+pub enum Bldjifmhopk {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
     SkinEffectConfigCharacterCyno2,
     #[serde(rename = "SkinEffectConfig_Character_Tartaglia02")]
     SkinEffectConfigCharacterTartaglia02,
+    #[serde(rename = "SkinEffectConfig_Character_Wanderer2")]
+    SkinEffectConfigCharacterWanderer2,
     #[serde(rename = "SkinEffectConfig_Character_Xiao2")]
     SkinEffectConfigCharacterXiao2,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Indncaniglj {
+pub enum Cfbdhgmiimk {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Cyno")]
     GcgCardFaceCharAvatarCyno,
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Tartaglia_02")]
     GcgCardFaceCharAvatarTartaglia02,
+    #[serde(rename = "Gcg_CardFace_Char_Avatar_Wanderer")]
+    GcgCardFaceCharAvatarWanderer,
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Xiao")]
     GcgCardFaceCharAvatarXiao,
 }

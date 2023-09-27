@@ -7,15 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type EffigyChallengeV2SkillExcelConfigData = Vec<EffigyChallengeV2SkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct EffigyChallengeV2SkillExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "abilityName")]
     pub ability_name: String,
-    pub iabjjlninpn: f64,
-    pub dlehbdcbheh: i64,
-    pub kpkhpjmelnk: i64,
-    #[serde(rename = "descParam")]
+    #[serde(rename = "KHPDEHAKMJC")]
+    pub khpdehakmjc: f64,
+    pub skill_name_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
     pub desc_param: Vec<f64>,
 }

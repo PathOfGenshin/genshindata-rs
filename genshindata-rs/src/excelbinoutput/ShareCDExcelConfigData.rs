@@ -3,7 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
 pub type ShareCdExcelConfigData = Vec<ShareCdExcelConfigDatum>;
 
@@ -12,6 +11,12 @@ pub type ShareCdExcelConfigData = Vec<ShareCdExcelConfigDatum>;
 pub struct ShareCdExcelConfigDatum {
     pub id: i64,
     pub max_charge_num: i64,
-    #[serde(rename = "JGPANFENBNC")]
-    pub jgpanfenbnc: Vec<HashMap<String, i64>>,
+    pub cool_down_list: Vec<CoolDownList>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CoolDownList {
+    pub cool_down_time: f64,
+    pub token: Option<i64>,
 }

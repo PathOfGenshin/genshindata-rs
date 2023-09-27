@@ -16,8 +16,8 @@ pub struct FurnitureMakeExcelConfigDatum {
     pub count: i64,
     pub exp: i64,
     pub material_items: Vec<MaterialItem>,
-    pub max_accelerate_time: i64,
     pub make_time: i64,
+    pub max_accelerate_time: i64,
     pub quick_fetch_material_num: i64,
 }
 

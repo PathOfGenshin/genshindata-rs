@@ -18,6 +18,17 @@ async function getExcelBinOutputJsonFiles() {
 }
 
 /**
+ * Replaces any instance of quicktype generating a struct with the name "Vec" to "GVec"
+ * @param {string[]} lines
+ * @returns {string[]}
+ */
+function replaceVecStruct(lines) {
+  return lines.map((line) =>
+    line.replace("pub struct Vec {", "pub struct GVec {").replace("<Vec>", "<GVec>")
+  );
+}
+
+/**
  * @param {string[]} filesNoExt
  */
 async function generateExcelBinOutputStructs(filesNoExt) {
@@ -34,7 +45,7 @@ async function generateExcelBinOutputStructs(filesNoExt) {
       "",
       "#[allow(unused_imports)]"
     );
-    const rustSrc = lines.join("\n");
+    const rustSrc = replaceVecStruct(lines).join("\n");
     const outputFilePath = path.join(
       RUST_EXCEL_BIN_OUTPUT_FOLDER,
       `${fileNameNoExt}.rs`

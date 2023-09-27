@@ -7,18 +7,17 @@ use serde::{Serialize, Deserialize};
 pub type DeshretPoiCatalogDataData = Vec<DeshretPoiCatalogDataDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct DeshretPoiCatalogDataDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub hlgkjdhifej: i64,
-    #[serde(rename = "titleTextMapHash")]
+    #[serde(rename = "WatcherID")]
+    pub watcher_id: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "icon")]
     pub icon: String,
-    #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub akfopejiidm: i64,
-    pub bnhibapfkgo: i64,
-    pub acahkjdnjbl: i64,
+    #[serde(rename = "IIAKGBEMKPO")]
+    pub iiakgbemkpo: i64,
+    #[serde(rename = "JPICKHNKCJH")]
+    pub jpickhnkcjh: i64,
+    pub mark_desc_text_map_hash: i64,
 }

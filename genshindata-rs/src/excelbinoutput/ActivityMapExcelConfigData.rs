@@ -13,9 +13,9 @@ pub struct ActivityMapExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "type")]
     pub activity_map_excel_config_datum_type: String,
-    pub ngkepiihikf: f64,
-    pub fphondcjafb: Vec<f64>,
-    pub oijachbomch: Vec<f64>,
-    pub dmcdhajggmf: i64,
-    pub aahnafgpjhl: i64,
+    pub ingfeepdckm: f64,
+    pub gnbgdpkgepc: Vec<f64>,
+    pub mdeaidhmdfp: Vec<f64>,
+    pub bdlahebicbd: i64,
+    pub keipbfjcodm: i64,
 }

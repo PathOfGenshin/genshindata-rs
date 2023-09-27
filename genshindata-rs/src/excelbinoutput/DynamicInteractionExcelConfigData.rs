@@ -7,14 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type DynamicInteractionExcelConfigData = Vec<DynamicInteractionExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct DynamicInteractionExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub fglcacdoank: i64,
-    pub hfajhmliach: i64,
-    pub lmmgifkaoln: String,
-    pub ajmgdloajca: i64,
-    pub hfjhdnnpepd: String,
-    pub eglfghfefcf: bool,
+    pub self_content_text_map_hash: i64,
+    pub self_content1_text_map_hash: i64,
+    pub self_intee_icon_name: String,
+    pub other_content_text_map_hash: i64,
+    pub other_intee_icon_name: String,
+    pub other_can_intee: bool,
 }

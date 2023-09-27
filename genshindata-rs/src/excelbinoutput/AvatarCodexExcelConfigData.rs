@@ -13,6 +13,5 @@ pub struct AvatarCodexExcelConfigDatum {
     pub sort_factor: i64,
     pub avatar_id: i64,
     pub begin_time: String,
-    #[serde(rename = "GMKPEHDPAOD")]
-    pub gmkpehdpaod: Option<bool>,
+    pub hide_when_dont_have: Option<bool>,
 }

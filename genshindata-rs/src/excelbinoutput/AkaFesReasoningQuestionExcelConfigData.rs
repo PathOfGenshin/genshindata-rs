@@ -11,20 +11,21 @@ pub type AkaFesReasoningQuestionExcelConfigData = Vec<AkaFesReasoningQuestionExc
 pub struct AkaFesReasoningQuestionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub bbeigemamlb: i64,
-    pub obgjollkold: Option<Obgjollkold>,
-    pub nfcmkfhkkal: Vec<i64>,
+    #[serde(rename = "wordId")]
+    pub word_id: i64,
+    pub clbmegjkche: Option<Clbmegjkche>,
+    pub cbknjepojid: Vec<i64>,
     #[serde(rename = "sortId")]
     pub sort_id: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub nnnfdbnnpko: i64,
-    pub dpmkaeijebf: i64,
-    pub khabigohabl: Option<bool>,
+    pub lbmndifjocj: i64,
+    pub joalhogonmp: i64,
+    pub ihpdeoaphkd: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Obgjollkold {
+pub enum Clbmegjkche {
     #[serde(rename = "NO")]
     No,
     #[serde(rename = "YES")]

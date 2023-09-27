@@ -13,16 +13,13 @@ pub struct FurnitureSuiteExcelConfigDatum {
     pub suite_id: i64,
     pub json_name: String,
     pub suite_name_text_map_hash: i64,
-    #[serde(rename = "JAEAAHBMDKJ")]
-    pub jaeaahbmdkj: i64,
+    pub suite_desc_text_map_hash: i64,
     pub favorite_npc_excel_id_vec: Vec<i64>,
-    #[serde(rename = "BIKPOIMANCD")]
-    pub bikpoimancd: String,
+    pub trans_str: String,
     pub furn_type: Vec<i64>,
     pub item_icon: String,
     pub map_icon: MapIcon,
-    #[serde(rename = "IDCNPNMFLNB")]
-    pub idcnpnmflnb: Option<f64>,
+    pub inter_ratio: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

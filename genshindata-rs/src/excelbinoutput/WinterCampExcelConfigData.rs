@@ -7,24 +7,26 @@ use serde::{Serialize, Deserialize};
 pub type WinterCampExcelConfigData = Vec<WinterCampExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct WinterCampExcelConfigDatum {
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
     #[serde(rename = "rewardID")]
     pub reward_id: i64,
-    pub ofmfnhpgimi: Vec<i64>,
-    pub ggidmolocbk: i64,
-    pub dgcncfmmiec: i64,
-    pub knjlfddmpid: Vec<i64>,
-    pub flamfldmmna: Vec<i64>,
-    pub mbppafnnmaj: i64,
-    pub cgkjgcadddh: i64,
-    pub kefmbhpdnhp: Vec<i64>,
-    pub njpnofppcna: i64,
-    pub opphgfgoggn: Vec<i64>,
-    pub cihocdobipl: i64,
-    pub efajbjdpaao: i64,
-    pub njahkcodblk: i64,
-    pub ijpgajaompn: i64,
+    pub quest_id01_list: Vec<i64>,
+    pub quest_id02: i64,
+    pub quest_id02_guide: i64,
+    pub activity_qurest_id: Vec<i64>,
+    pub chapt3_quest_id: Vec<i64>,
+    #[serde(rename = "condID02")]
+    pub cond_id02: i64,
+    #[serde(rename = "condID03")]
+    pub cond_id03: i64,
+    pub boss_quest_id: Vec<i64>,
+    #[serde(rename = "bossCondID")]
+    pub boss_cond_id: i64,
+    pub boss_watcher: Vec<i64>,
+    pub battle_tutorial_id: i64,
+    pub explore_tutorial_id: i64,
+    pub race_tutorial_id: i64,
+    pub snowman_tutorial_id: i64,
 }

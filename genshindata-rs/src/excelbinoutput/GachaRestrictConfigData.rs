@@ -3,14 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
+use std::collections::HashMap;
 
-pub type GachaRestrictConfigData = Vec<GachaRestrictConfigDatum>;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct GachaRestrictConfigDatum {
-    pub cfaflgonpne: i64,
-    pub aajniiffaml: i64,
-    pub bkhjmnhkime: i64,
-    pub ilcccaneijo: i64,
-}
+pub type GachaRestrictConfigData = Vec<HashMap<String, i64>>;

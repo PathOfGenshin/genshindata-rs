@@ -7,31 +7,26 @@ use serde::{Serialize, Deserialize};
 pub type MultiCharacterStageExcelConfigData = Vec<MultiCharacterStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct MultiCharacterStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "openDay")]
     pub open_day: i64,
-    pub mccolajkecm: Vec<Mccolajkecm>,
-    #[serde(rename = "watcherList")]
+    #[serde(rename = "PMFHEPPEFKA")]
+    pub pmfheppefka: Vec<Pmfheppefka>,
     pub watcher_list: Vec<i64>,
-    pub adalnnodeib: Vec<Adalnnodeib>,
-    pub cbiepcicmcm: Vec<Cbiepcicmcm>,
-    pub klpbplkedkm: i64,
-    pub dpndllomale: i64,
-    pub cligdoeahac: Vec<i64>,
+    #[serde(rename = "PPAKBFBMEFL")]
+    pub ppakbfbmefl: Vec<Ppakbfbmefl>,
+    #[serde(rename = "BEBEGEPJKFB")]
+    pub bebegepjkfb: Vec<Bebegepjkfb>,
+    pub stage_title_text_map_hash: i64,
+    pub stage_desc_text_map_hash: i64,
+    #[serde(rename = "JDFFOEDIEGL")]
+    pub jdffoediegl: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Adalnnodeib {
-    pub buff_id: i64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct Cbiepcicmcm {
+pub struct Bebegepjkfb {
     pub group_id: i64,
     pub hell_group_id: i64,
     pub gallery_id: i64,
@@ -40,6 +35,12 @@ pub struct Cbiepcicmcm {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Mccolajkecm {
+pub struct Pmfheppefka {
     pub dungeon_id: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Ppakbfbmefl {
+    pub buff_id: i64,
 }

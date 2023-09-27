@@ -11,22 +11,19 @@ pub type SalvageOverAllExcelConfigData = Vec<SalvageOverAllExcelConfigDatum>;
 pub struct SalvageOverAllExcelConfigDatum {
     pub id: i64,
     pub activity_id: i64,
-    #[serde(rename = "HBEOJCKEEHH")]
-    pub hbeojckeehh: i64,
+    pub activity_duration: i64,
     pub pre_quest_id: i64,
     pub guide_quest_id: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub region_center: Vec<i64>,
     pub region_radius: i64,
-    #[serde(rename = "FPEGHOEJADF")]
-    pub fpeghoejadf: i64,
+    pub reminder_radius: i64,
     pub reminder_id: i64,
-    #[serde(rename = "BMHGJMAEFJG")]
-    pub bmhgjmaefjg: i64,
+    pub destory_radius: i64,
     pub reward_preview_id: i64,
-    #[serde(rename = "FIKEOBMNFEE")]
-    pub fikeobmnfee: i64,
-    #[serde(rename = "KILLIHIAFDL")]
-    pub killihiafdl: i64,
+    #[serde(rename = "landRewardPreviewID")]
+    pub land_reward_preview_id: i64,
+    #[serde(rename = "seaRewardPreviewID")]
+    pub sea_reward_preview_id: i64,
 }

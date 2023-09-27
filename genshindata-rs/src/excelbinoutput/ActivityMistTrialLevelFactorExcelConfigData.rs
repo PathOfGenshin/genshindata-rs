@@ -7,15 +7,12 @@ use serde::{Serialize, Deserialize};
 pub type ActivityMistTrialLevelFactorExcelConfigData = Vec<ActivityMistTrialLevelFactorExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityMistTrialLevelFactorExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "param")]
     pub param: Vec<String>,
-    #[serde(rename = "MMNJOAMCPLJ")]
-    pub mmnjoamcplj: i64,
-    #[serde(rename = "BKCIEOHACMA")]
-    pub bkcieohacma: i64,
-    #[serde(rename = "FJBLDEICHGE")]
-    pub fjbldeichge: i64,
+    pub factor_row_text_text_map_hash: i64,
+    pub entry_show_text_text_map_hash: i64,
+    pub in_game_show_text_text_map_hash: i64,
 }

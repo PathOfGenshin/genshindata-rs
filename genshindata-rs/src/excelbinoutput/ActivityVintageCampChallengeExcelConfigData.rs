@@ -7,21 +7,22 @@ use serde::{Serialize, Deserialize};
 pub type ActivityVintageCampChallengeExcelConfigData = Vec<ActivityVintageCampChallengeExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityVintageCampChallengeExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub plhfnmodhkh: i64,
-    #[serde(rename = "openDay")]
+    #[serde(rename = "BGJALCCMPLP")]
+    pub bgjalccmplp: i64,
     pub open_day: i64,
-    pub eilpnfhcpdh: i64,
-    pub fkcbddlmhck: i64,
-    #[serde(rename = "rewardId")]
+    #[serde(rename = "GDKBDKMPGCP")]
+    pub gdkbdkmpgcp: i64,
+    pub group_bundle_id: i64,
     pub reward_id: i64,
-    pub noaiaophdha: Vec<String>,
-    pub hgibpaonamp: Vec<i64>,
-    pub ejgajlknchl: String,
-    pub ccclieidamo: Vec<i64>,
-    pub aebipgiahkd: i64,
-    pub lmhcbkddkhm: i64,
+    #[serde(rename = "HFNGJBBBINC")]
+    pub hfngjbbbinc: Vec<String>,
+    pub watcher_ids: Vec<i64>,
+    pub monster_info: String,
+    pub elite_monster_info: Vec<i64>,
+    #[serde(rename = "FPPMECEFPNE")]
+    pub fppmecefpne: i64,
+    pub buff_desc_text_map_hash: i64,
 }

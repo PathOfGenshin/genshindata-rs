@@ -10,7 +10,7 @@ pub type BladeDanceBuffExcelConfigData = Vec<BladeDanceBuffExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct BladeDanceBuffExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "KBPMHJOGMHA")]
-    pub kbpmhjogmha: i64,
+    #[serde(rename = "INGLCBHEMHI")]
+    pub inglcbhemhi: i64,
     pub desc_param: Vec<String>,
 }

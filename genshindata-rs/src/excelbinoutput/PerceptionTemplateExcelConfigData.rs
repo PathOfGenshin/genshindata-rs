@@ -7,11 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type PerceptionTemplateExcelConfigData = Vec<PerceptionTemplateExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct PerceptionTemplateExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub eknjdmjeonn: i64,
-    pub nokblhgblii: Option<f64>,
-    pub beijlogggnk: Option<f64>,
+    pub hear_other_range_factor: i64,
+    pub feel_range_factor: Option<f64>,
+    pub hear_footstep_range_factor: Option<f64>,
 }

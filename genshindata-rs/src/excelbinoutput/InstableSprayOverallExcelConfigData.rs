@@ -7,14 +7,14 @@ use serde::{Serialize, Deserialize};
 pub type InstableSprayOverallExcelConfigData = Vec<InstableSprayOverallExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct InstableSprayOverallExcelConfigDatum {
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub foadlakbmlm: Vec<i64>,
-    pub bhbafolbnae: i64,
-    pub cbfpdedbdgh: i64,
-    pub gkbckhfmhma: i64,
+    pub score_ranks: Vec<i64>,
+    pub dungeon_entry_id: i64,
+    #[serde(rename = "KNLBEIJPLKL")]
+    pub knlbeijplkl: i64,
+    #[serde(rename = "HCPHOJPIILM")]
+    pub hcphojpiilm: i64,
 }

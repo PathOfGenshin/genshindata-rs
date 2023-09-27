@@ -11,12 +11,9 @@ pub type ActivityPhotoUnderseaLevelExcelConfigData = Vec<ActivityPhotoUnderseaLe
 pub struct ActivityPhotoUnderseaLevelExcelConfigDatum {
     pub id: i64,
     pub open_day: i64,
-    #[serde(rename = "KDOBMMDADPH")]
-    pub kdobmmdadph: i64,
+    pub theme_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "KGGKIMJKJBF")]
-    pub kggkimjkjbf: Vec<i64>,
-    #[serde(rename = "FEAAOMHAHNO")]
-    pub feaaomhahno: i64,
+    pub object_id_list: Vec<i64>,
+    pub object_limit_num: i64,
     pub watcher_list: Vec<i64>,
 }

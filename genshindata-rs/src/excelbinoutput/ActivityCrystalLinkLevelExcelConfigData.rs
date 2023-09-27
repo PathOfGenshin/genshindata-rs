@@ -13,36 +13,28 @@ pub struct ActivityCrystalLinkLevelExcelConfigDatum {
     pub schedule_id: i64,
     pub open_day: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "OKAOMEGBHBI")]
-    pub okaomegbhbi: Vec<i64>,
+    pub trial_avatar_list: Vec<i64>,
     pub watcher_id_list: Vec<i64>,
-    #[serde(rename = "JMIANMNMJBE")]
-    pub jmianmnmjbe: Vec<i64>,
-    #[serde(rename = "PFDACLLNCMN")]
-    pub pfdacllncmn: Vec<i64>,
+    pub cond_buff_id_list: Vec<i64>,
+    pub effect_buff_id_list: Vec<i64>,
     pub level_title_text_map_hash: i64,
     pub level_desc_text_map_hash: i64,
-    #[serde(rename = "KPGDHGGMKJL")]
-    pub kpgdhggmkjl: Vec<Kpgdhggmkjl>,
-    #[serde(rename = "NEHACBLEGHD")]
-    pub nehacbleghd: Vec<Nehacbleghd>,
+    pub monster_config_array: Vec<MonsterConfigArray>,
+    pub main_monster_config_array: Vec<MainMonsterConfigArray>,
     pub score_level_list: Vec<i64>,
-    #[serde(rename = "JLDDMAAAIFA")]
-    pub jlddmaaaifa: i64,
-    #[serde(rename = "BMMDJKMKFCE")]
-    pub bmmdjkmkfce: i64,
+    #[serde(rename = "condCD")]
+    pub cond_cd: i64,
+    pub eff_last_time: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Kpgdhggmkjl {
-    pub oopacmmkejm: Vec<String>,
-    pub kddndnpdafk: Vec<String>,
+pub struct MainMonsterConfigArray {
+    pub boss: Vec<i64>,
+    pub monster: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Nehacbleghd {
-    pub oopacmmkejm: Vec<i64>,
-    pub kddndnpdafk: Vec<i64>,
+pub struct MonsterConfigArray {
+    pub boss: Vec<String>,
+    pub monster: Vec<String>,
 }

@@ -9,9 +9,9 @@ pub type GcgArenaIconExcelConfigData = Vec<GcgArenaIconExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgArenaIconExcelConfigDatum {
-    pub lbgkenkmghj: String,
-    pub eocpbngkldf: String,
-    pub djbggaphmom: Option<i64>,
+    pub hocpkcicdec: String,
+    pub aelkjcmhoom: String,
+    pub hheddbcioph: Option<i64>,
     #[serde(rename = "rank")]
     pub rank: Option<i64>,
 }

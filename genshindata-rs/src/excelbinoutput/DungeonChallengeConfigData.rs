@@ -16,8 +16,7 @@ pub struct DungeonChallengeConfigDatum {
     pub sub_progress_text_template_text_map_hash: i64,
     pub icon_path: String,
     pub challenge_type: ChallengeType,
-    #[serde(rename = "BIONHLEICLJ")]
-    pub bionhleiclj: Vec<String>,
+    pub team_ability_group_list: Vec<String>,
     pub no_success_hint: Option<bool>,
     pub interrupt_button_type: Option<InterruptButtonType>,
     pub no_fail_hint: Option<bool>,
@@ -25,25 +24,22 @@ pub struct DungeonChallengeConfigDatum {
     pub sub_challenge_fade_out_rule: Option<SubChallengeFadeOutRule>,
     pub sub_challenge_fade_out_delay_time: Option<i64>,
     pub sub_challenge_banner_rule: Option<SubChallengeBannerRule>,
-    #[serde(rename = "EAGPFHLALDH")]
-    pub eagpfhlaldh: Option<bool>,
+    pub no_begin_hint: Option<bool>,
     pub record_type: Option<String>,
-    #[serde(rename = "ELCLLHGEBFN")]
-    pub elcllhgebfn: Option<bool>,
+    pub no_pause_hint: Option<bool>,
     pub is_success_when_not_settled: Option<bool>,
     #[serde(rename = "activitySkillID")]
     pub activity_skill_id: Option<i64>,
     pub is_forward_timing: Option<bool>,
-    #[serde(rename = "CHJLDBIPBEL")]
-    pub chjldbipbel: Option<bool>,
-    #[serde(rename = "FNOKAJLMOAM")]
-    pub fnokajlmoam: Option<String>,
-    #[serde(rename = "LPHLNFNLFFI")]
-    pub lphlnfnlffi: Option<String>,
-    #[serde(rename = "KPIIAJGNMFF")]
-    pub kpiiajgnmff: Option<String>,
-    #[serde(rename = "AFDPFJKJMBP")]
-    pub afdpfjkjmbp: Option<String>,
+    pub is_trans_back_when_interrupt: Option<bool>,
+    #[serde(rename = "EMGNAHLLMNE")]
+    pub emgnahllmne: Option<String>,
+    #[serde(rename = "CDKNKFDMJLF")]
+    pub cdknkfdmjlf: Option<String>,
+    #[serde(rename = "BFFEOCKAAAG")]
+    pub bffeockaaag: Option<String>,
+    #[serde(rename = "HEDENLDMNPA")]
+    pub hedenldmnpa: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

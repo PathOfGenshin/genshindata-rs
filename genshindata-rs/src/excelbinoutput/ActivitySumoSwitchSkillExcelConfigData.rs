@@ -11,11 +11,9 @@ pub type ActivitySumoSwitchSkillExcelConfigData = Vec<ActivitySumoSwitchSkillExc
 pub struct ActivitySumoSwitchSkillExcelConfigDatum {
     #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "BEHHCCHCEHO")]
-    pub behhcchceho: String,
+    pub ability_group_name: String,
     pub title_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub desc_param: Vec<String>,
-    #[serde(rename = "MMDDPGGCCEC")]
-    pub mmddpggccec: f64,
+    pub icon_name_hash: f64,
 }

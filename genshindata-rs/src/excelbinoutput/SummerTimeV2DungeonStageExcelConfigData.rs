@@ -7,34 +7,27 @@ use serde::{Serialize, Deserialize};
 pub type SummerTimeV2DungeonStageExcelConfigData = Vec<SummerTimeV2DungeonStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct SummerTimeV2DungeonStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "dayIndex")]
     pub day_index: i64,
-    #[serde(rename = "prevDungeonId")]
     pub prev_dungeon_id: i64,
-    pub phefpindfjf: i64,
-    #[serde(rename = "watcherList")]
+    pub cycle_dungeon_id: i64,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "questIdList")]
     pub quest_id_list: Vec<i64>,
-    #[serde(rename = "questId")]
     pub quest_id: i64,
-    pub plefijmemed: i64,
-    pub gmbbkoiaeck: i64,
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "pushTipsId")]
+    pub entrance_name_text_map_hash: i64,
+    pub quest_name_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
     pub push_tips_id: i64,
-    pub bhbafolbnae: i64,
-    pub cjhmfoojoag: i64,
-    pub dghcpmgafdo: Option<i64>,
-    pub gbnnabbcjcc: Option<i64>,
-    pub ldjomagdhmk: Vec<i64>,
-    pub lbkjgappdip: Vec<i64>,
-    pub hhkmkkcajgf: i64,
-    pub gbcaljpiegi: i64,
-    pub nmmdfpddmlk: i64,
-    pub ohojdjhpcfj: i64,
+    pub dungeon_entry_id: i64,
+    pub story_dungeon_id1: i64,
+    pub story_dungeon_id2: Option<i64>,
+    pub story_dungeon_id3: Option<i64>,
+    pub dungeon_exhibition_id_list: Vec<i64>,
+    pub dungeon_card_id_list: Vec<i64>,
+    pub story_start_cond_id: i64,
+    pub dungeon_start_cond_id: i64,
+    pub dungeon_reward_limit: i64,
+    pub dungeon_entry_name_text_map_hash: i64,
 }

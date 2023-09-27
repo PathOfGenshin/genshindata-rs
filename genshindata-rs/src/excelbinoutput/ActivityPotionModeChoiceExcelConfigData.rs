@@ -7,12 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type ActivityPotionModeChoiceExcelConfigData = Vec<ActivityPotionModeChoiceExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityPotionModeChoiceExcelConfigDatum {
-    pub gkdogphcdao: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub mode_id: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "scoreRatio")]
     pub score_ratio: f64,
-    pub dcljmhklldp: i64,
+    pub dungeon_level: i64,
 }

@@ -7,17 +7,15 @@ use serde::{Serialize, Deserialize};
 pub type VintageMarketSkillExcelConfigData = Vec<VintageMarketSkillExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct VintageMarketSkillExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "effectList")]
     pub effect_list: Vec<EffectList>,
-    pub dlehbdcbheh: i64,
-    pub kpkhpjmelnk: i64,
-    pub mmddpggccec: f64,
-    pub bajagmjdjcf: i64,
-    #[serde(rename = "sortOrder")]
+    pub skill_name_text_map_hash: i64,
+    pub skill_desc_text_map_hash: i64,
+    pub icon_name_hash: f64,
+    #[serde(rename = "FPIGENHNAPH")]
+    pub fpigenhnaph: i64,
     pub sort_order: i64,
 }
 

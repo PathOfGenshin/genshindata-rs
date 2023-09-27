@@ -7,10 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type EffigyChallengeV2TagExcelConfigData = Vec<EffigyChallengeV2TagExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct EffigyChallengeV2TagExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    pub ehjblihonci: i64,
-    pub fcaplodidgg: Vec<Vec<i64>>,
+    pub tag_desc_text_map_hash: i64,
+    #[serde(rename = "AFALJDBMAAL")]
+    pub afaljdbmaal: Vec<Vec<i64>>,
 }

@@ -10,8 +10,12 @@ pub type ImageWorldExcelConfigData = Vec<ImageWorldExcelConfigDatum>;
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ImageWorldExcelConfigDatum {
     pub id: i64,
-    pub haiijkaifbp: Option<bool>,
-    pub nfnljmgdnbd: Option<bool>,
-    pub ghlcmonmaco: bool,
-    pub hoidgagoobj: bool,
+    pub bdhkmikefce: Option<bool>,
+    pub colnliinmjh: Option<bool>,
+    pub jkiaagpeopp: Option<bool>,
+    pub jpcfghahbkj: bool,
+    pub jjgodlcnckk: Vec<i64>,
+    pub hmolmdgocjk: Vec<i64>,
+    pub mpdjjgaiifn: Option<String>,
+    pub bbabaoijpco: Option<bool>,
 }

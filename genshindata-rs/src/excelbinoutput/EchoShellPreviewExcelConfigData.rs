@@ -7,13 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type EchoShellPreviewExcelConfigData = Vec<EchoShellPreviewExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct EchoShellPreviewExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub nieehpldibe: i64,
-    pub epobhdkebao: Option<i64>,
-    pub ocecnfejdmi: Option<i64>,
+    pub special_voice_lock_tip_text_map_hash: i64,
+    #[serde(rename = "specialVoiceID")]
+    pub special_voice_id: Option<i64>,
+    #[serde(rename = "specialVoiceUnlockCondID")]
+    pub special_voice_unlock_cond_id: Option<i64>,
 }

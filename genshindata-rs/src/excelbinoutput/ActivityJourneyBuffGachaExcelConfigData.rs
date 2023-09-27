@@ -3,6 +3,14 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type ActivityJourneyBuffGachaExcelConfigData = Vec<HashMap<String, f64>>;
+pub type ActivityJourneyBuffGachaExcelConfigData = Vec<ActivityJourneyBuffGachaExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct ActivityJourneyBuffGachaExcelConfigDatum {
+    pub gndcdlnmhon: i64,
+    pub bbhpefineam: i64,
+    pub jmndagbbnbk: Option<f64>,
+    pub elielagaeik: Option<f64>,
+}

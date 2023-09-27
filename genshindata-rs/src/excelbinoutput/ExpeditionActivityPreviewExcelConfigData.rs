@@ -7,12 +7,10 @@ use serde::{Serialize, Deserialize};
 pub type ExpeditionActivityPreviewExcelConfigData = Vec<ExpeditionActivityPreviewExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ExpeditionActivityPreviewExcelConfigDatum {
-    #[serde(rename = "id")]
     pub id: i64,
-    #[serde(rename = "questId")]
     pub quest_id: i64,
-    pub hnehiamabnm: i64,
-    pub hnmdkoingpf: i64,
+    pub prequest_id: i64,
+    pub npc_city_id: i64,
 }

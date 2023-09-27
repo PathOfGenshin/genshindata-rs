@@ -13,20 +13,20 @@ pub struct GcgWeekLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "npcId")]
     pub npc_id: i64,
-    pub jgjgllhnjho: Jgjgllhnjho,
-    pub kmnlnlocbll: Vec<Kmnlnlocbll>,
-    pub mpmipjeboam: Vec<Option<serde_json::Value>>,
+    pub lemfmpfhmdp: Lemfmpfhmdp,
+    pub oibmoidokdi: Vec<Oibmoidokdi>,
+    pub gblopemdjfl: Vec<Option<serde_json::Value>>,
     #[serde(rename = "iconName")]
     pub icon_name: String,
-    pub pmaoimemppo: Option<bool>,
+    pub epeakkgemke: Option<bool>,
     #[serde(rename = "openQuestId")]
     pub open_quest_id: Option<i64>,
-    pub kikppmodflm: Option<i64>,
+    pub khgpemjcaop: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jgjgllhnjho {
+pub enum Lemfmpfhmdp {
     #[serde(rename = "WEEK_NPC_CHARACTER")]
     WeekNpcCharacter,
     #[serde(rename = "WEEK_NPC_NORMAL")]
@@ -35,8 +35,8 @@ pub enum Jgjgllhnjho {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Kmnlnlocbll {
+pub struct Oibmoidokdi {
     #[serde(rename = "levelId")]
     pub level_id: Option<i64>,
-    pub jcjjdockmgh: Option<i64>,
+    pub caiicjnnibm: Option<i64>,
 }

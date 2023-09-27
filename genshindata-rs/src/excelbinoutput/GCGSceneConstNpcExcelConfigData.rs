@@ -12,6 +12,6 @@ pub struct GcgSceneConstNpcExcelConfigDatum {
     pub id: i64,
     pub npc_id: i64,
     pub level_id: i64,
-    #[serde(rename = "MPMIPJEBOAM")]
-    pub mpmipjeboam: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "GBLOPEMDJFL")]
+    pub gblopemdjfl: Vec<Option<serde_json::Value>>,
 }

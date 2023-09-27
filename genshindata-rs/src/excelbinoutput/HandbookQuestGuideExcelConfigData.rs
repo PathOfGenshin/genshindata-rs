@@ -7,46 +7,24 @@ use serde::{Serialize, Deserialize};
 pub type HandbookQuestGuideExcelConfigData = Vec<HandbookQuestGuideExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HandbookQuestGuideExcelConfigDatum {
-    pub gejjgnpimmb: i64,
+    #[serde(rename = "guideID")]
+    pub guide_id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub ggnedpgegfa: i64,
-    pub bongoggmkfj: Option<i64>,
-    pub ajilidlnldl: Ajilidlnldl,
-    #[serde(rename = "order")]
+    pub label_text_map_hash: i64,
+    #[serde(rename = "chapterID")]
+    pub chapter_id: Option<i64>,
+    pub quest_type: QuestType,
     pub order: i64,
-    #[serde(rename = "icon")]
     pub icon: Icon,
-    pub cchcdpjelok: Option<bool>,
-    pub bkgkbdeomlo: Vec<Bkgkbdeomlo>,
-    pub oohibemhhok: Option<i64>,
-    pub jjbgahbiike: Option<i64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ajilidlnldl {
-    #[serde(rename = "LQ")]
-    Lq,
-    #[serde(rename = "WQ")]
-    Wq,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Bkgkbdeomlo {
-    pub param: Vec<i64>,
-    #[serde(rename = "type")]
-    pub bkgkbdeomlo_type: Option<Type>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Type {
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
-    QuestGuideShowCondLevelGtOrEq,
-    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
-    QuestGuideShowCondPrequestFinished,
+    pub show_label_tip: Option<bool>,
+    pub show_conds: Vec<ShowCond>,
+    #[serde(rename = "mainQuestID")]
+    pub main_quest_id: Option<i64>,
+    #[serde(rename = "specialGuideID")]
+    pub special_guide_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -65,4 +43,28 @@ pub enum Icon {
     ArtUiAtlasHandbookGuideIconUiGuideIconPlayMethod,
     #[serde(rename = "ART/UI/Atlas/HandbookGuideIcon/UI_GuideIcon_PlotUnlock")]
     ArtUiAtlasHandbookGuideIconUiGuideIconPlotUnlock,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum QuestType {
+    #[serde(rename = "LQ")]
+    Lq,
+    #[serde(rename = "WQ")]
+    Wq,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ShowCond {
+    pub param: Vec<i64>,
+    #[serde(rename = "type")]
+    pub show_cond_type: Option<Type>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Type {
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_LEVEL_GT_OR_EQ")]
+    QuestGuideShowCondLevelGtOrEq,
+    #[serde(rename = "QUEST_GUIDE_SHOW_COND_PREQUEST_FINISHED")]
+    QuestGuideShowCondPrequestFinished,
 }

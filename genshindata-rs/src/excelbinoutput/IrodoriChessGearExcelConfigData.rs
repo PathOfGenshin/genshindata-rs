@@ -9,22 +9,18 @@ pub type IrodoriChessGearExcelConfigData = Vec<IrodoriChessGearExcelConfigDatum>
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct IrodoriChessGearExcelConfigDatum {
-    #[serde(rename = "HNBDJNPJHHD")]
-    pub hnbdjnpjhhd: i64,
+    pub gear_id: i64,
     pub gadget_id: i64,
-    #[serde(rename = "KNAEPFOBLGP")]
-    pub knaepfoblgp: i64,
+    pub init_level: i64,
     pub gear_name_text_map_hash: i64,
     pub gear_short_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub gear_icon_path: String,
-    #[serde(rename = "KAIPPGJNHGP")]
-    pub kaippgjnhgp: String,
+    pub tag_icon_path: String,
     pub map_icon_path: String,
     pub attack: i64,
     pub attack_speed: i64,
     pub attack_range: i64,
     pub is_enable_rotate: Option<bool>,
-    #[serde(rename = "DJCHHHBPBGE")]
-    pub djchhhbpbge: Option<i64>,
+    pub mastery: Option<i64>,
 }

@@ -10,7 +10,6 @@ pub type SummerTimeV2OverallExcelConfigData = Vec<SummerTimeV2OverallExcelConfig
 #[serde(rename_all = "camelCase")]
 pub struct SummerTimeV2OverallExcelConfigDatum {
     pub activity_id: i64,
-    #[serde(rename = "NLCOBIIIHLM")]
-    pub nlcobiiihlm: i64,
+    pub dungeon_reward_id: i64,
     pub item_id: i64,
 }

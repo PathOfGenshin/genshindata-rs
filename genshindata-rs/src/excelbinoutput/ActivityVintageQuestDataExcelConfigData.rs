@@ -11,12 +11,9 @@ pub type ActivityVintageQuestDataExcelConfigData = Vec<ActivityVintageQuestDataE
 pub struct ActivityVintageQuestDataExcelConfigDatum {
     pub id: i64,
     pub quest_id: i64,
-    #[serde(rename = "LEPAPIJJMDL")]
-    pub lepapijjmdl: i64,
+    pub open_index: i64,
     pub chapter_title_text_map_hash: i64,
-    #[serde(rename = "ACIMFILFKLK")]
-    pub acimfilfklk: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
     pub pre_quest_id: Option<i64>,
 }

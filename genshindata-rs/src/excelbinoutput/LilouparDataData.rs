@@ -9,11 +9,11 @@ pub type LilouparDataData = Vec<LilouparDataDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct LilouparDataDatum {
-    pub lejnccnjmbc: Vec<String>,
+    pub gfjkgnfaacf: Vec<String>,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub lbnckedelci: String,
-    pub hejfnepdhjc: String,
+    pub aobefmneean: String,
+    pub aoaaebmjilo: String,
     #[serde(rename = "level")]
     pub level: Option<i64>,
 }

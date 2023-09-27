@@ -7,49 +7,29 @@ use serde::{Serialize, Deserialize};
 pub type ActivityHachiStageExcelConfigData = Vec<ActivityHachiStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "PascalCase")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityHachiStageExcelConfigDatum {
+    #[serde(rename = "Id")]
     pub id: i64,
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "questId")]
     pub quest_id: Vec<i64>,
-    #[serde(rename = "ACIMFILFKLK")]
-    pub acimfilfklk: i64,
-    #[serde(rename = "MBMGLHGMPOL")]
-    pub mbmglhgmpol: i64,
-    #[serde(rename = "LJNALOMLCBH")]
-    pub ljnalomlcbh: i64,
-    #[serde(rename = "KAFDHMMIEBJ")]
-    pub kafdhmmiebj: i64,
-    #[serde(rename = "PDJBPDKJODA")]
-    pub pdjbpdkjoda: i64,
-    #[serde(rename = "LMOBHOJNAIA")]
-    pub lmobhojnaia: i64,
-    #[serde(rename = "BKGDAODLEGK")]
-    pub bkgdaodlegk: String,
-    #[serde(rename = "EJAJIOHBEOP")]
-    pub ejajiohbeop: String,
-    #[serde(rename = "DDLILFEJMJK")]
-    pub ddlilfejmjk: i64,
-    #[serde(rename = "openDay")]
+    pub quest_title_text_map_hash: i64,
+    pub quest_desc_text_map_hash: i64,
+    pub stealth_title_text_map_hash: i64,
+    pub battle_desc_text_map_hash: i64,
+    pub stealth_watcher: i64,
+    pub battle_watcher: i64,
+    pub stealth_group: String,
+    pub battle_group: String,
+    pub push_tip: i64,
     pub open_day: i64,
-    #[serde(rename = "POPLCCFNOHE")]
-    pub poplccfnohe: Vec<i64>,
-    #[serde(rename = "MIGBIBNFKEM")]
-    pub migbibnfkem: Vec<i64>,
-    #[serde(rename = "NKFCMDMJFGK")]
-    pub nkfcmdmjfgk: Vec<i64>,
-    #[serde(rename = "OCAFCJCHHPH")]
-    pub ocafcjchhph: Vec<i64>,
-    #[serde(rename = "OHIHKPHEKEK")]
-    pub ohihkphekek: Vec<i64>,
-    #[serde(rename = "JEBCODECNDD")]
-    pub jebcodecndd: i64,
-    #[serde(rename = "OJMPHHIILII")]
-    pub ojmphhiilii: i64,
-    #[serde(rename = "KFBMAGIMIHK")]
-    pub kfbmagimihk: i64,
-    #[serde(rename = "KGDGEANLKNB")]
-    pub kgdgeanlknb: i64,
+    pub stealth_trigger_point_mark_pos: Vec<i64>,
+    pub stealth_mark_pos: Vec<i64>,
+    pub battle_mark_pos: Vec<i64>,
+    pub final_quest_id: Vec<i64>,
+    pub map_mark_load_quest: Vec<i64>,
+    pub stealth_challenge_index: i64,
+    pub battle_challenge_index: i64,
+    pub stealth_radius: i64,
+    pub battle_radius: i64,
 }

@@ -7,21 +7,19 @@ use serde::{Serialize, Deserialize};
 pub type LuminanceStoneChallengeStageExcelConfigData = Vec<LuminanceStoneChallengeStageExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct LuminanceStoneChallengeStageExcelConfigDatum {
-    #[serde(rename = "stageId")]
     pub stage_id: i64,
-    #[serde(rename = "dayIndex")]
     pub day_index: i64,
-    pub klpbplkedkm: i64,
-    pub dpndllomale: i64,
-    pub hjcfombkpkd: i64,
-    pub lagfamnbden: i64,
-    pub ppinjhgfjpf: Vec<i64>,
-    #[serde(rename = "watcherList")]
+    pub stage_title_text_map_hash: i64,
+    pub stage_desc_text_map_hash: i64,
+    pub stage_lock_title_text_map_hash: i64,
+    pub stage_lock_desc_text_map_hash: i64,
+    pub related_cond_id: Vec<i64>,
     pub watcher_list: Vec<i64>,
-    pub oojhnnjmcbg: Vec<i64>,
-    pub poibigjclle: i64,
+    pub quest_list: Vec<i64>,
+    #[serde(rename = "BundleID")]
+    pub bundle_id: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
 }

@@ -11,6 +11,5 @@ pub type OfferingVersionExcelConfigData = Vec<OfferingVersionExcelConfigDatum>;
 pub struct OfferingVersionExcelConfigDatum {
     pub id: i64,
     pub offering_id: i64,
-    #[serde(rename = "IMFLHGMKGDE")]
-    pub imflhgmkgde: i64,
+    pub level_limit: i64,
 }

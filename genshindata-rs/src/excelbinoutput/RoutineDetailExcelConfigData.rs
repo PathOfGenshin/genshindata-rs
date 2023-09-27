@@ -15,9 +15,8 @@ pub struct RoutineDetailExcelConfigDatum {
     pub is_backup: Option<bool>,
     pub reward_id: i64,
     pub finish_content: FinishContent,
-    pub goods_id_vec: Vec<Pndfichghpd>,
-    #[serde(rename = "PNDFICHGHPD")]
-    pub pndfichghpd: Vec<Pndfichghpd>,
+    pub cond_vec: Vec<GVec>,
+    pub action_vec: Vec<GVec>,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
     pub goal_text_map_hash: i64,
@@ -26,6 +25,10 @@ pub struct RoutineDetailExcelConfigDatum {
     pub enter_distance: i64,
     pub exit_distance: i64,
     pub tag: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct GVec {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -42,10 +45,6 @@ pub enum FinishType {
     RoutineChallengeFinish,
     #[serde(rename = "ROUTINE_FINISH_KILL_MONSTER")]
     RoutineFinishKillMonster,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Pndfichghpd {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

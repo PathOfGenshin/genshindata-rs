@@ -12,6 +12,6 @@ pub struct WidgetExcelConfigDatum {
     #[serde(rename = "materialID")]
     pub material_id: i64,
     pub customize_desc: Vec<i64>,
-    pub json_addr: Option<bool>,
+    pub show_redpoint: Option<bool>,
     pub push_tips_id: Option<i64>,
 }

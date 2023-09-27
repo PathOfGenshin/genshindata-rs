@@ -7,47 +7,81 @@ use serde::{Serialize, Deserialize};
 pub type IrodoriChessCardExcelConfigData = Vec<IrodoriChessCardExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct IrodoriChessCardExcelConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    #[serde(rename = "costPoints")]
     pub cost_points: i64,
-    pub fkomjdohdjg: Fkomjdohdjg,
-    pub bkdejoahfpe: Vec<Fkomjdohdjg>,
-    #[serde(rename = "cardType")]
+    pub effect: Effect,
+    pub extra_effect_list: Vec<Effect>,
     pub card_type: Option<CardType>,
-    pub ghpnaophiom: String,
-    pub cmkddmdpajj: i64,
-    #[serde(rename = "descTextMapHash")]
+    pub tag: String,
+    pub card_name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "descParam")]
     pub desc_param: Vec<f64>,
-    pub ehdgjfemikm: Vec<Ehdgjfemikm>,
-    pub pelhiebdnfb: Option<Pelhiebdnfb>,
+    pub card_numerical_list: Vec<CardNumericalList>,
+    pub card_quality_type: Option<CardQualityType>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CardNumericalList {
+    pub card_numerical_modification_type: Option<CardNumericalModificationType>,
+    pub card_numerical_modification_mode: Option<CardNumericalModificationMode>,
+    pub card_numerical_modification_value: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Fkomjdohdjg {
-    pub bhgkldbcoko: Option<Bhgkldbcoko>,
-    pub eamjghojekb: Vec<i64>,
-    pub ddnblgemfki: Option<Ddnblgemfki>,
-    pub llbkndabapd: String,
-    pub mgmhdbildpp: Option<i64>,
+pub enum CardNumericalModificationMode {
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
+    IrodoriCardNumericalBase,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
+    IrodoriCardNumericalPercentage,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Bhgkldbcoko {
-    #[serde(rename = "IRODORI_CHESS_CARD_TARGET_ALL")]
-    IrodoriChessCardTargetAll,
-    #[serde(rename = "IRODORI_CHESS_CARD_TARGET_GADGETS")]
-    IrodoriChessCardTargetGadgets,
+pub enum CardNumericalModificationType {
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK")]
+    IrodoriCardNumericalAttack,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_INTERVAL")]
+    IrodoriCardNumericalAttackInterval,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_RANGE")]
+    IrodoriCardNumericalAttackRange,
+    #[serde(rename = "IRODORI_CARD_NUMERICAL_MASTERY")]
+    IrodoriCardNumericalMastery,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ddnblgemfki {
+pub enum CardQualityType {
+    #[serde(rename = "IRODORI_CARD_QUALITY_GOOD")]
+    IrodoriCardQualityGood,
+    #[serde(rename = "IRODORI_CARD_QUALITY_PERCECT")]
+    IrodoriCardQualityPercect,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum CardType {
+    #[serde(rename = "IRODORI_CHESS_CARD_STRENGTHEN")]
+    IrodoriChessCardStrengthen,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Effect {
+    pub target_type: Option<TargetType>,
+    pub target_param_list: Vec<i64>,
+    pub effect_type: Option<EffectType>,
+    pub effect_str_param: String,
+    pub effect_param1: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum EffectType {
     #[serde(rename = "IRODORI_CHESS_CARD_EFFECT_ADD_ABILITY_GROUP")]
     IrodoriChessCardEffectAddAbilityGroup,
     #[serde(rename = "IRODORI_CHESS_CARD_EFFECT_ADD_SGV")]
@@ -62,46 +96,9 @@ pub enum Ddnblgemfki {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum CardType {
-    #[serde(rename = "IRODORI_CHESS_CARD_STRENGTHEN")]
-    IrodoriChessCardStrengthen,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Ehdgjfemikm {
-    pub jdgpjgeljef: Option<Jdgpjgeljef>,
-    pub legmeiblggb: Option<Legmeiblggb>,
-    pub ojoddliadlo: Option<f64>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jdgpjgeljef {
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK")]
-    IrodoriCardNumericalAttack,
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_INTERVAL")]
-    IrodoriCardNumericalAttackInterval,
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_ATTACK_RANGE")]
-    IrodoriCardNumericalAttackRange,
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_MASTERY")]
-    IrodoriCardNumericalMastery,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Legmeiblggb {
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_BASE")]
-    IrodoriCardNumericalBase,
-    #[serde(rename = "IRODORI_CARD_NUMERICAL_PERCENTAGE")]
-    IrodoriCardNumericalPercentage,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pelhiebdnfb {
-    #[serde(rename = "IRODORI_CARD_QUALITY_GOOD")]
-    IrodoriCardQualityGood,
-    #[serde(rename = "IRODORI_CARD_QUALITY_PERCECT")]
-    IrodoriCardQualityPercect,
+pub enum TargetType {
+    #[serde(rename = "IRODORI_CHESS_CARD_TARGET_ALL")]
+    IrodoriChessCardTargetAll,
+    #[serde(rename = "IRODORI_CHESS_CARD_TARGET_GADGETS")]
+    IrodoriChessCardTargetGadgets,
 }

@@ -7,10 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type ActivityChessScheduleExcelConfigData = Vec<ActivityChessScheduleExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct ActivityChessScheduleExcelConfigDatum {
-    pub biaaoplilln: i64,
-    pub cgbncemkeme: Option<i64>,
-    #[serde(rename = "openMapList")]
+    pub day: i64,
+    pub exp_up_limit: Option<i64>,
     pub open_map_list: Vec<i64>,
 }

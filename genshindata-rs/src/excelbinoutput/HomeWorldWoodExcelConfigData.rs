@@ -7,9 +7,9 @@ use serde::{Serialize, Deserialize};
 pub type HomeWorldWoodExcelConfigData = Vec<HomeWorldWoodExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct HomeWorldWoodExcelConfigDatum {
-    pub kcglcpnmhho: i64,
-    pub dgdoegmnhnk: i64,
-    pub ocekiafkkng: Vec<Vec<i64>>,
+    pub wood_id: i64,
+    pub priority_level: i64,
+    pub material_list: Vec<Vec<i64>>,
 }

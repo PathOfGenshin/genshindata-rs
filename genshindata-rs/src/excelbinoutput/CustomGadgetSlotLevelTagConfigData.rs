@@ -7,24 +7,27 @@ use serde::{Serialize, Deserialize};
 pub type CustomGadgetSlotLevelTagConfigData = Vec<CustomGadgetSlotLevelTagConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CustomGadgetSlotLevelTagConfigDatum {
+    #[serde(rename = "ID")]
     pub id: i64,
-    pub nhbgplfcokc: String,
-    pub goddknodbgh: Vec<Goddknodbgh>,
-    pub gafienjblkh: i64,
-    pub bpjciadohpc: i64,
+    pub custom_gadget_type: String,
+    pub slot_map: Vec<SlotMap>,
+    #[serde(rename = "levelTagID")]
+    pub level_tag_id: i64,
+    #[serde(rename = "GadgetId")]
+    pub gadget_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Goddknodbgh {
-    pub fpnmekipfke: Fpnmekipfke,
-    pub kcpniopmhka: Vec<i64>,
+#[serde(rename_all = "camelCase")]
+pub struct SlotMap {
+    pub slot_identifier: SlotIdentifier,
+    pub slot_list: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Fpnmekipfke {
+pub enum SlotIdentifier {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "LeftHill")]

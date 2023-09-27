@@ -10,6 +10,6 @@ pub type GcgCostExcelConfigData = Vec<GcgCostExcelConfigDatum>;
 pub struct GcgCostExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_cost_excel_config_datum_type: String,
-    #[serde(rename = "CAHGEHBPEEK")]
-    pub cahgehbpeek: i64,
+    #[serde(rename = "EJOPIHNDDIA")]
+    pub ejopihnddia: i64,
 }

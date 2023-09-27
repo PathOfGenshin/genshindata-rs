@@ -11,12 +11,12 @@ pub type GcgCardFilterExcelConfigData = Vec<GcgCardFilterExcelConfigDatum>;
 pub struct GcgCardFilterExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub opkikmnfnkm: Option<bool>,
-    pub bhhgimoeabp: String,
-    pub lpdhniohide: i64,
+    pub hjncgkjhmbl: Option<bool>,
+    pub hpoepbnbico: String,
+    pub hjncddpebcd: i64,
     #[serde(rename = "paramList")]
     pub param_list: Vec<i64>,
-    pub jjpbkfoeagp: i64,
-    pub ggdifagmkdc: Option<bool>,
-    pub bjiippinieh: Option<bool>,
+    pub jeanmcjimmg: i64,
+    pub lmlbhljlhdb: Option<bool>,
+    pub ebjooiejpmk: Option<bool>,
 }

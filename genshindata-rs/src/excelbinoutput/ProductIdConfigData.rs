@@ -13,15 +13,13 @@ pub struct ProductIdConfigDatum {
     pub config_id: i64,
     pub is_internal: Option<bool>,
     pub entitlement_id: String,
-    #[serde(rename = "OBFCKHALANI")]
-    pub obfckhalani: String,
-    #[serde(rename = "NJECJLNHBBH")]
-    pub njecjlnhbbh: Vec<Njecjlnhbbh>,
+    pub catalog_item_id: String,
+    pub platform_type_str_list: Vec<PlatformTypeStrList>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Njecjlnhbbh {
+pub enum PlatformTypeStrList {
     #[serde(rename = "CLOUD_ANDROID")]
     CloudAndroid,
     #[serde(rename = "CLOUD_IOS")]

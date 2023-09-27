@@ -14,13 +14,12 @@ pub struct LimitRegionExcelConfigDatum {
     pub scene_id: i64,
     #[serde(rename = "type")]
     pub limit_region_excel_config_datum_type: Type,
-    #[serde(rename = "EMNDOACEBJI")]
-    pub emndoacebji: Option<String>,
+    pub openstate: Option<String>,
     pub order: Option<i64>,
-    #[serde(rename = "BPADHNHPEDL")]
-    pub bpadhnhpedl: Option<i64>,
-    #[serde(rename = "MIANEMMIMGM")]
-    pub mianemmimgm: Option<bool>,
+    #[serde(rename = "reminderID")]
+    pub reminder_id: Option<i64>,
+    #[serde(rename = "HBMBIBAFJJF")]
+    pub hbmbibafjjf: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

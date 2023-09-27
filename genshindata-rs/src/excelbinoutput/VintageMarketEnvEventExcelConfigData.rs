@@ -12,8 +12,8 @@ pub struct VintageMarketEnvEventExcelConfigDatum {
     pub id: i64,
     pub duration: i64,
     pub effect_list: Vec<EffectList>,
-    #[serde(rename = "GIGMPAGMINL")]
-    pub gigmpagminl: i64,
+    #[serde(rename = "KGMHLIKLGLO")]
+    pub kgmhliklglo: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -7,12 +7,13 @@ use serde::{Serialize, Deserialize};
 pub type CusmtomGadgetSlotExcelConfigData = Vec<CusmtomGadgetSlotExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct CusmtomGadgetSlotExcelConfigDatum {
-    pub lcaionfplcb: i64,
-    pub pfmbpffckha: Vec<i64>,
-    pub likpinjhcma: Option<bool>,
-    pub icjcfjepffd: Vec<i64>,
-    pub eacfdibeafi: Vec<i64>,
-    pub dkkoggoohlm: Option<i64>,
+    #[serde(rename = "slotID")]
+    pub slot_id: i64,
+    pub optional_parts_id_list: Vec<i64>,
+    pub is_necessary: Option<bool>,
+    pub default_parts_id_list: Vec<i64>,
+    pub pass_part_id_list: Vec<i64>,
+    pub init_parts_id: Option<i64>,
 }
