@@ -10,7 +10,7 @@ Note that this is still a work-in-progress. Currently only generates serde struc
 
 ### Generating `serde` structs from JSON
 
-Ensure that `pnpm` and a `node` environment is installed (tested on `node v20.4.0`).
+Ensure that `pnpm` and a `node` environment is installed (check `.node-version` to see which version to use).
 
 1. `pnpm install` to install the node dependencies needed to generate Rust code.
 2. Ensure that the `GAME_DATA_FOLDER` environment variable is set to the path containing
