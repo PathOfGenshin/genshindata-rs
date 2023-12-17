@@ -9,6 +9,6 @@ pub type UgcPileTagExcelConfigData = Vec<UgcPileTagExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcPileTagExcelConfigDatum {
-    pub ielaknjlabj: String,
-    pub ekoeboflbpi: Vec<i64>,
+    pub jcljplamgce: String,
+    pub gfachfpagga: Vec<i64>,
 }

@@ -17,17 +17,17 @@ pub struct ActivityDuelHeartLevelExcelConfigDatum {
     pub pre_quest: i64,
     #[serde(rename = "unlockCondId")]
     pub unlock_cond_id: i64,
-    pub jedopnoijdj: String,
+    pub hnfniecngml: String,
     #[serde(rename = "dungeonId")]
     pub dungeon_id: i64,
     #[serde(rename = "challengeNameTextMapHash")]
     pub challenge_name_text_map_hash: i64,
-    pub ebapobklkab: i64,
-    pub jkoaiadcnij: String,
-    pub dbpcpadildj: i64,
-    pub phohlddppfl: i64,
-    pub ckkkonkbikg: String,
-    pub eijfiggdlpd: Vec<i64>,
-    pub ejleiadnmme: String,
-    pub nfcnfajigjf: Option<i64>,
+    pub ogcpmdfghaf: i64,
+    pub abkdjoddihj: String,
+    pub lmackcaoncp: i64,
+    pub pdgkmogkjmf: i64,
+    pub bljpmkklnmh: String,
+    pub clilaenhhgi: Vec<i64>,
+    pub kphnoploaic: String,
+    pub maoklamadhe: Option<i64>,
 }

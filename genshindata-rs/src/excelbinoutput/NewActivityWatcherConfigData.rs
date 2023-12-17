@@ -11,7 +11,11 @@ pub type NewActivityWatcherConfigData = Vec<NewActivityWatcherConfigDatum>;
 pub struct NewActivityWatcherConfigDatum {
     #[serde(rename = "rewardID")]
     pub reward_id: Option<i64>,
+    #[serde(rename = "DMOKCGMAHBM")]
+    pub dmokcgmahbm: Vec<i64>,
     pub reward_preview: Option<i64>,
+    #[serde(rename = "NALHIAEILJK")]
+    pub nalhiaeiljk: Vec<i64>,
     pub activitychallengetips_text_map_hash: i64,
     pub extra_activitychallengetips_text_map_hash: i64,
     pub id: i64,

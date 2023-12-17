@@ -11,12 +11,12 @@ pub type CoinCollectSkillExcelConfigData = Vec<CoinCollectSkillExcelConfigDatum>
 pub struct CoinCollectSkillExcelConfigDatum {
     pub id: i64,
     pub ability_name: Vec<String>,
-    #[serde(rename = "FHADOCOEJLK")]
-    pub fhadocoejlk: Option<bool>,
-    #[serde(rename = "AMMEPONAPBA")]
-    pub ammeponapba: String,
+    #[serde(rename = "LLDHHLHALIF")]
+    pub lldhhlhalif: Option<bool>,
+    #[serde(rename = "HNFIEBGPCHP")]
+    pub hnfiebgpchp: String,
     pub skill_name_text_map_hash: i64,
     pub skill_desc_text_map_hash: i64,
-    #[serde(rename = "JBMLINKIHKB")]
-    pub jbmlinkihkb: Option<bool>,
+    #[serde(rename = "PHMPAPCBLDA")]
+    pub phmpapcblda: Option<bool>,
 }

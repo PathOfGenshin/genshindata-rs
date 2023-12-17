@@ -13,22 +13,22 @@ pub struct AkaFesRhythmExcelConfigDatum {
     pub open_day: i64,
     pub level_name_text_map_hash: i64,
     pub score: i64,
-    #[serde(rename = "KAIKDECFGGD")]
-    pub kaikdecfggd: String,
+    #[serde(rename = "JPAHPFHKOLP")]
+    pub jpahpfhkolp: String,
     pub dungeon_id: i64,
     pub gallery_id: i64,
-    #[serde(rename = "CDBGPGGBHGM")]
-    pub cdbgpggbhgm: i64,
-    #[serde(rename = "IJEPCACFMOF")]
-    pub ijepcacfmof: i64,
+    #[serde(rename = "FOHFLKCBBAD")]
+    pub fohflkcbbad: i64,
+    #[serde(rename = "PLBDBLBIHNO")]
+    pub plbdblbihno: i64,
     pub watcher_id: Vec<i64>,
     pub tutorial_id: i64,
-    #[serde(rename = "DKDMCJLKOAC")]
-    pub dkdmcjlkoac: i64,
-    #[serde(rename = "PLHIGBEDGBD")]
-    pub plhigbedgbd: i64,
-    #[serde(rename = "KIEDPELJONH")]
-    pub kiedpeljonh: Vec<i64>,
+    #[serde(rename = "PHOCFFPPOEJ")]
+    pub phocffppoej: i64,
+    #[serde(rename = "GPCEJLPIKPA")]
+    pub gpcejlpikpa: i64,
+    #[serde(rename = "HOFKCFJOHBE")]
+    pub hofkcfjohbe: Vec<i64>,
     #[serde(rename = "type")]
     pub aka_fes_rhythm_excel_config_datum_type: Option<String>,
 }

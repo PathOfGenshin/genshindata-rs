@@ -13,10 +13,9 @@ pub struct ActivityGcgpveInfiniteLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub fmlpiilpobk: i64,
-    pub hbeeipkgnkg: i64,
+    pub pbgjlaomlng: i64,
+    pub mjhabfdclem: i64,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub kfkjijkdbli: Vec<i64>,
-    pub majfcehpmcl: Vec<i64>,
+    pub mgajdhbjlfc: Vec<i64>,
 }

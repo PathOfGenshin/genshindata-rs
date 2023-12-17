@@ -10,6 +10,6 @@ pub type AvatarInappropriateNameExcelConfigData = Vec<AvatarInappropriateNameExc
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AvatarInappropriateNameExcelConfigDatum {
     pub id: i64,
-    pub bmpdmclecan: Vec<i64>,
-    pub jobodggdfhp: Vec<String>,
+    pub bfkidcojcbp: Vec<i64>,
+    pub kmfpelplbeo: Vec<String>,
 }

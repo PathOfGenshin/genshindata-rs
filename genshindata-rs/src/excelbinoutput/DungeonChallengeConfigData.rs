@@ -26,20 +26,20 @@ pub struct DungeonChallengeConfigDatum {
     pub sub_challenge_banner_rule: Option<SubChallengeBannerRule>,
     pub no_begin_hint: Option<bool>,
     pub record_type: Option<String>,
+    #[serde(rename = "MPDPGDPDKID")]
+    pub mpdpgdpdkid: Option<String>,
     pub no_pause_hint: Option<bool>,
     pub is_success_when_not_settled: Option<bool>,
     #[serde(rename = "activitySkillID")]
     pub activity_skill_id: Option<i64>,
     pub is_forward_timing: Option<bool>,
     pub is_trans_back_when_interrupt: Option<bool>,
-    #[serde(rename = "EMGNAHLLMNE")]
-    pub emgnahllmne: Option<String>,
-    #[serde(rename = "CDKNKFDMJLF")]
-    pub cdknkfdmjlf: Option<String>,
-    #[serde(rename = "BFFEOCKAAAG")]
-    pub bffeockaaag: Option<String>,
-    #[serde(rename = "HEDENLDMNPA")]
-    pub hedenldmnpa: Option<String>,
+    #[serde(rename = "PAGIBCDDMHF")]
+    pub pagibcddmhf: Option<String>,
+    #[serde(rename = "KLHGHJJOGAP")]
+    pub klhghjjogap: Option<String>,
+    #[serde(rename = "LJJHEAKEEJE")]
+    pub ljjheakeeje: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

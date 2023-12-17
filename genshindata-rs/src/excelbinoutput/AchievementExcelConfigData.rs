@@ -60,6 +60,8 @@ pub enum Icon {
     UiAchievementIconA013,
     #[serde(rename = "UI_AchievementIcon_A016")]
     UiAchievementIconA016,
+    #[serde(rename = "UI_AchievementIcon_A016_Part3")]
+    UiAchievementIconA016Part3,
     #[serde(rename = "UI_AchievementIcon_B002")]
     UiAchievementIconB002,
     #[serde(rename = "UI_AchievementIcon_B005")]

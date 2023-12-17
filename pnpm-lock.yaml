@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   quicktype-core:
-    specifier: ^23.0.75
-    version: 23.0.75
+    specifier: ^23.0.80
+    version: 23.0.80
 
 packages:
 
@@ -15,8 +15,8 @@ packages:
     resolution: {integrity: sha512-q9U8v/n9qbkd2zDYjuX3qtlbl+OIyI9zF+zQhZjfYOE9VMDH7tfcUSJ9p0lXoY3lxmGFne09yi4iiNeQUwV7AA==}
     dev: false
 
-  /@types/urijs@1.19.20:
-    resolution: {integrity: sha512-77Mq/2BeHU894J364dUv9tSwxxyCLtcX228Pc8TwZpP5bvOoMns+gZoftp3LYl3FBH8vChpWbuagKGiMki2c1A==}
+  /@types/urijs@1.19.25:
+    resolution: {integrity: sha512-XOfUup9r3Y06nFAZh3WvO0rBU4OtlfPB/vgxpjg+NRdGU6CN6djdc6OEiH+PcqHCY6eFLo9Ista73uarf4gnBg==}
     dev: false
 
   /abort-controller@3.0.0:
@@ -109,11 +109,11 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
-  /quicktype-core@23.0.75:
-    resolution: {integrity: sha512-aVXb5MpCdWCyrWUqw906+dBU7C3wFWwSax1ySu/0wk4QNGnpg1DPJDDUdOXXMNKmLlAeA9+3Cs1kPHWNXxovBQ==}
+  /quicktype-core@23.0.80:
+    resolution: {integrity: sha512-dd+aJRzAl3MzkaXJMjUu0j60y82gwX/RRr3EvW/aScQKycvkgwliNDN2tIiLB06EKBzjgC9mtlMqKyRg2rYKhQ==}
     dependencies:
       '@glideapps/ts-necessities': 2.1.3
-      '@types/urijs': 1.19.20
+      '@types/urijs': 1.19.25
       browser-or-node: 2.1.1
       collection-utils: 1.0.1
       cross-fetch: 4.0.0
@@ -126,7 +126,7 @@ packages:
       unicode-properties: 1.4.1
       urijs: 1.19.11
       wordwrap: 1.0.0
-      yaml: 2.3.2
+      yaml: 2.3.4
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -193,7 +193,7 @@ packages:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: false
 
-  /yaml@2.3.2:
-    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
+  /yaml@2.3.4:
+    resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
     dev: false

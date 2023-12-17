@@ -9,8 +9,8 @@ pub type FungusNameExcelConfigData = Vec<FungusNameExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusNameExcelConfigDatum {
-    pub hejgljcaigk: i64,
+    pub cbpjpaboacj: i64,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
-    pub amdneocfakl: i64,
+    pub lheffalogen: i64,
 }

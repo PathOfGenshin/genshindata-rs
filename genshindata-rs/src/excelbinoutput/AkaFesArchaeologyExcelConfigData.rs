@@ -11,6 +11,6 @@ pub type AkaFesArchaeologyExcelConfigData = Vec<AkaFesArchaeologyExcelConfigDatu
 pub struct AkaFesArchaeologyExcelConfigDatum {
     pub id: i64,
     pub end_quest_id: i64,
-    #[serde(rename = "MJALDLOGHCK")]
-    pub mjaldloghck: i64,
+    #[serde(rename = "BHFBLCEEMDM")]
+    pub bhfblceemdm: i64,
 }

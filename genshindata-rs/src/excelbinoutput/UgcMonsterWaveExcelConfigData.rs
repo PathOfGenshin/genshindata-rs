@@ -9,17 +9,17 @@ pub type UgcMonsterWaveExcelConfigData = Vec<UgcMonsterWaveExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcMonsterWaveExcelConfigDatum {
-    pub lpdffbgikof: f64,
-    pub pdbcmjlobib: Vec<i64>,
-    pub akepfpcdabm: Vec<i64>,
-    pub eomlfafpmgf: Vec<i64>,
-    pub cgicdcmdfga: Vec<i64>,
-    pub hkcmecgaojb: String,
+    pub pnbpbmmkkag: f64,
+    pub lbmgbholoep: Vec<i64>,
+    pub jeealadcijn: Vec<i64>,
+    pub podjgfdfbec: Vec<i64>,
+    pub ekckfdkkglp: Vec<i64>,
+    pub ecllfbhbjhd: String,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub lngjfpoadfm: Vec<i64>,
+    pub fgdknngbjha: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "iconHash")]
@@ -28,10 +28,10 @@ pub struct UgcMonsterWaveExcelConfigDatum {
     pub cost: i64,
     #[serde(rename = "rotateType")]
     pub rotate_type: String,
-    pub dkgmnlbohfm: String,
+    pub eaakebfejel: String,
     #[serde(rename = "canCopy")]
     pub can_copy: bool,
-    pub eleobonndmm: i64,
+    pub mjdhlgoegkh: i64,
     #[serde(rename = "deployGadgetID")]
     pub deploy_gadget_id: i64,
 }

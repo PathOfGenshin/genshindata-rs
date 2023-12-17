@@ -11,8 +11,8 @@ pub struct UgcDungeonScoreExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "type")]
     pub ugc_dungeon_score_excel_config_datum_type: Type,
-    #[serde(rename = "BJPJOCIOLKC")]
-    pub bjpjociolkc: String,
+    #[serde(rename = "KPGNAELBFEH")]
+    pub kpgnaelbfeh: String,
     pub score: i64,
 }
 

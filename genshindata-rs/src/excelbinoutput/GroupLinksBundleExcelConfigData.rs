@@ -26,11 +26,11 @@ pub struct GroupLinksBundleExcelConfigDatum {
     pub track_id: Option<i64>,
     pub play_type: Option<String>,
     pub track_show_mark_only: Option<bool>,
-    #[serde(rename = "KLIAHEBLCMO")]
-    pub kliaheblcmo: Option<i64>,
+    #[serde(rename = "AGKOFDMDJEN")]
+    pub agkofdmdjen: Option<i64>,
     pub show_area_on_map: Option<bool>,
-    #[serde(rename = "LDJIPGHDDPI")]
-    pub ldjipghddpi: Option<bool>,
+    #[serde(rename = "ECCEDOAKGPL")]
+    pub eccedoakgpl: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

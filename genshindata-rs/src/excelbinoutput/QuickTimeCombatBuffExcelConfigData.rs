@@ -12,10 +12,10 @@ pub struct QuickTimeCombatBuffExcelConfigDatum {
     pub buff_id: i64,
     pub ability_group_name: String,
     pub cost: i64,
-    #[serde(rename = "KAKFHILMHOC")]
-    pub kakfhilmhoc: i64,
+    #[serde(rename = "IOMBFHJCCMP")]
+    pub iombfhjccmp: i64,
     pub icon_path: String,
-    #[serde(rename = "PCBENBCFINH")]
-    pub pcbenbcfinh: Vec<i64>,
+    #[serde(rename = "ODCLNODELPG")]
+    pub odclnodelpg: Vec<i64>,
     pub description_text_map_hash: i64,
 }

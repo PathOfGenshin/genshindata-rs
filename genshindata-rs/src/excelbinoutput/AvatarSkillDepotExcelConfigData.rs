@@ -19,8 +19,8 @@ pub struct AvatarSkillDepotExcelConfigDatum {
     pub inherent_proud_skill_opens: Vec<InherentProudSkillOpen>,
     pub skill_depot_ability_group: String,
     pub leader_talent: Option<i64>,
-    #[serde(rename = "NFCAAJNGGND")]
-    pub nfcaajnggnd: Option<String>,
+    #[serde(rename = "EJMJBMIEPCF")]
+    pub ejmjbmiepcf: Option<String>,
     pub attack_mode_skill: Option<i64>,
 }
 

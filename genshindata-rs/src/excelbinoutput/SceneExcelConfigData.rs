@@ -17,8 +17,8 @@ pub struct SceneExcelConfigDatum {
     pub level_entity_config: String,
     pub specified_avatar_list: Vec<i64>,
     pub comment: Comment,
-    #[serde(rename = "MBGGDNLAIHC")]
-    pub mbggdnlaihc: Vec<f64>,
+    #[serde(rename = "FOKGBGKNMPB")]
+    pub fokgbgknmpb: Vec<f64>,
     pub dungeon_entry_point: Vec<i64>,
     pub max_specified_avatar_num: Option<i64>,
     pub ignore_nav_mesh: Option<bool>,
@@ -32,10 +32,10 @@ pub struct SceneExcelConfigDatum {
     pub scene_fix_time: Option<f64>,
     pub entity_appear_sorted: Option<i64>,
     pub subtype: Option<Subtype>,
-    #[serde(rename = "EKKFMJCDCPP")]
-    pub ekkfmjcdcpp: Option<i64>,
-    #[serde(rename = "CFCOOICCLEE")]
-    pub cfcooicclee: Option<String>,
+    #[serde(rename = "FHMGABPEHAJ")]
+    pub fhmgabpehaj: Option<i64>,
+    #[serde(rename = "ECNGICKDCAM")]
+    pub ecngickdcam: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

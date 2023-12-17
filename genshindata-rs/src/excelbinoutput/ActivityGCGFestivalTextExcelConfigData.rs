@@ -9,10 +9,10 @@ pub type ActivityGcgFestivalTextExcelConfigData = Vec<ActivityGcgFestivalTextExc
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct ActivityGcgFestivalTextExcelConfigDatum {
-    pub pglkabhihib: String,
+    pub alenlohajob: String,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub ppnaplgogoo: i64,
+    pub ocgedajkjbk: i64,
 }

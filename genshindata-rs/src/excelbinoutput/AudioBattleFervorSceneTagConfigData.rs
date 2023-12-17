@@ -11,6 +11,6 @@ pub type AudioBattleFervorSceneTagConfigData = Vec<AudioBattleFervorSceneTagConf
 pub struct AudioBattleFervorSceneTagConfigDatum {
     pub id: i64,
     pub area_id: i64,
-    #[serde(rename = "NIFMDGMOAGM")]
-    pub nifmdgmoagm: i64,
+    #[serde(rename = "LHFPLBHKDAP")]
+    pub lhfplbhkdap: i64,
 }

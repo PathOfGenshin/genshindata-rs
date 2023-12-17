@@ -11,8 +11,8 @@ pub type SubSpriteTagExcelConfigData = Vec<SubSpriteTagExcelConfigDatum>;
 pub struct SubSpriteTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ipnephlbcnm: String,
-    pub hfckdhkpbic: f64,
-    pub dpnljoobbbf: Option<i64>,
-    pub kmbhajpihnn: Option<i64>,
+    pub ilnhdaafjoc: String,
+    pub omoiblagaci: f64,
+    pub pnakaemkdom: Option<i64>,
+    pub nekgcgkopkp: Option<i64>,
 }

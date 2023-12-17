@@ -12,6 +12,6 @@ pub struct GcgArenaScheduleExcelConfigDatum {
     pub schedule_id: i64,
     pub start_time: String,
     pub end_time: String,
-    #[serde(rename = "LDFAEBGLLMI")]
-    pub ldfaebgllmi: i64,
+    #[serde(rename = "PBJMGIKCOEL")]
+    pub pbjmgikcoel: i64,
 }

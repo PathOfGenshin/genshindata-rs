@@ -13,7 +13,7 @@ pub struct ActivityJourneyGcgPickAgentExcelConfigDatum {
     pub npc_id: i64,
     #[serde(rename = "markID")]
     pub mark_id: i64,
-    #[serde(rename = "JPICKHNKCJH")]
-    pub jpickhnkcjh: i64,
+    #[serde(rename = "DKNMCDJCFCG")]
+    pub dknmcdjcfcg: i64,
     pub mark_desc_text_map_hash: i64,
 }

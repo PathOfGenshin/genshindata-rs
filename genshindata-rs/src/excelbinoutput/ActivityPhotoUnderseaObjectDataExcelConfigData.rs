@@ -15,8 +15,8 @@ pub struct ActivityPhotoUnderseaObjectDataExcelConfigDatum {
     pub watcher: i64,
     pub object_index: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "EGHKMFHNCKK")]
-    pub eghkmfhnckk: f64,
-    #[serde(rename = "HPGEGBPGMBN")]
-    pub hpgegbpgmbn: Option<bool>,
+    #[serde(rename = "EHMJNPBKKBK")]
+    pub ehmjnpbkkbk: f64,
+    #[serde(rename = "IIGIDIGMICI")]
+    pub iigidigmici: Option<bool>,
 }

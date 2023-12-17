@@ -12,30 +12,22 @@ pub struct GcgChooseExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "cardType")]
     pub card_type: CardType,
-    #[serde(rename = "BCLPBCDCBBN")]
-    pub bclpbcdcbbn: Bclpbcdcbbn,
-    #[serde(rename = "PKOFOAGDGIB")]
-    pub pkofoagdgib: Vec<Pkofoagdgib>,
-    #[serde(rename = "NGKHMFFKNCC")]
-    pub ngkhmffkncc: Vec<Ngkhmffkncc>,
+    #[serde(rename = "PEKMNDMKJFJ")]
+    pub pekmndmkjfj: Pekmndmkjfj,
+    #[serde(rename = "CGMPEKCHEMD")]
+    pub cgmpekchemd: Vec<Cgmpekchemd>,
+    #[serde(rename = "JMEHJNDLAMJ")]
+    pub jmehjndlamj: Vec<Jmehjndlamj>,
     #[serde(rename = "condList")]
-    pub cond_list: Vec<Djdlddldinn>,
-    #[serde(rename = "DJDLDDLDINN")]
-    pub djdlddldinn: Vec<Djdlddldinn>,
-    #[serde(rename = "JHPMINOIOPM")]
-    pub jhpminoiopm: Vec<Jhpminoiopm>,
-    #[serde(rename = "GPAKIBFBMOH")]
-    pub gpakibfbmoh: i64,
-    #[serde(rename = "NAODNIBEBOD")]
-    pub naodnibebod: Option<Naodnibebod>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bclpbcdcbbn {
-    #[serde(rename = "ENEMY")]
-    Enemy,
-    #[serde(rename = "FRIENDLY")]
-    Friendly,
+    pub cond_list: Vec<Fmahhhphnji>,
+    #[serde(rename = "FMAHHHPHNJI")]
+    pub fmahhhphnji: Vec<Fmahhhphnji>,
+    #[serde(rename = "ENCLKLAEBCJ")]
+    pub enclklaebcj: Vec<Enclklaebcj>,
+    #[serde(rename = "NGLGCJEGAAI")]
+    pub nglgcjegaai: i64,
+    #[serde(rename = "OHCBBMKNOPB")]
+    pub ohcbbmknopb: Option<Ohcbbmknopb>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -48,15 +40,32 @@ pub enum CardType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Djdlddldinn {
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Cgmpekchemd {
+    #[serde(rename = "GCG_TAG_NONE")]
+    GcgTagNone,
+    #[serde(rename = "GCG_TAG_WEAPON_BOW")]
+    GcgTagWeaponBow,
+    #[serde(rename = "GCG_TAG_WEAPON_CATALYST")]
+    GcgTagWeaponCatalyst,
+    #[serde(rename = "GCG_TAG_WEAPON_CLAYMORE")]
+    GcgTagWeaponClaymore,
+    #[serde(rename = "GCG_TAG_WEAPON_POLE")]
+    GcgTagWeaponPole,
+    #[serde(rename = "GCG_TAG_WEAPON_SWORD")]
+    GcgTagWeaponSword,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct Fmahhhphnji {
     #[serde(rename = "type")]
-    pub djdlddldinn_type: Option<DjdlddldinnType>,
+    pub fmahhhphnji_type: Option<FmahhhphnjiType>,
     pub value: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum DjdlddldinnType {
+pub enum FmahhhphnjiType {
     #[serde(rename = "ALIVE_CHAR_COUNT")]
     AliveCharCount,
     Card,
@@ -82,17 +91,17 @@ pub enum DjdlddldinnType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Jhpminoiopm {
+pub struct Enclklaebcj {
     #[serde(rename = "type")]
-    pub jhpminoiopm_type: Option<JhpminoiopmType>,
-    #[serde(rename = "DFFIKOABPNK")]
-    pub dffikoabpnk: Option<bool>,
-    pub tag: Option<Ngkhmffkncc>,
+    pub enclklaebcj_type: Option<EnclklaebcjType>,
+    #[serde(rename = "OFBKFBEEBDH")]
+    pub ofbkfbeebdh: Option<bool>,
+    pub tag: Option<Jmehjndlamj>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum JhpminoiopmType {
+pub enum EnclklaebcjType {
     #[serde(rename = "CHARACTER_ORDER")]
     CharacterOrder,
     #[serde(rename = "CREATE_ORDER")]
@@ -106,7 +115,7 @@ pub enum JhpminoiopmType {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Ngkhmffkncc {
+pub enum Jmehjndlamj {
     #[serde(rename = "GCG_TAG_ELEMENT_ANEMO")]
     GcgTagElementAnemo,
     #[serde(rename = "GCG_TAG_ELEMENT_CRYO")]
@@ -126,7 +135,7 @@ pub enum Ngkhmffkncc {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Naodnibebod {
+pub enum Ohcbbmknopb {
     #[serde(rename = "HEALING")]
     Healing,
     #[serde(rename = "RELIC")]
@@ -138,18 +147,9 @@ pub enum Naodnibebod {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pkofoagdgib {
-    #[serde(rename = "GCG_TAG_NONE")]
-    GcgTagNone,
-    #[serde(rename = "GCG_TAG_WEAPON_BOW")]
-    GcgTagWeaponBow,
-    #[serde(rename = "GCG_TAG_WEAPON_CATALYST")]
-    GcgTagWeaponCatalyst,
-    #[serde(rename = "GCG_TAG_WEAPON_CLAYMORE")]
-    GcgTagWeaponClaymore,
-    #[serde(rename = "GCG_TAG_WEAPON_POLE")]
-    GcgTagWeaponPole,
-    #[serde(rename = "GCG_TAG_WEAPON_SWORD")]
-    GcgTagWeaponSword,
+pub enum Pekmndmkjfj {
+    #[serde(rename = "ENEMY")]
+    Enemy,
+    #[serde(rename = "FRIENDLY")]
+    Friendly,
 }

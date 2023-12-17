@@ -3,6 +3,22 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type CoinCollectOverallExcelConfigData = Vec<HashMap<String, i64>>;
+pub type CoinCollectOverallExcelConfigData = Vec<CoinCollectOverallExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CoinCollectOverallExcelConfigDatum {
+    #[serde(rename = "activityID")]
+    pub activity_id: i64,
+    #[serde(rename = "JDELFIDDMKG")]
+    pub jdelfiddmkg: i64,
+    pub push_tips_id: i64,
+    pub prepare_time: i64,
+    #[serde(rename = "widgetID")]
+    pub widget_id: i64,
+    #[serde(rename = "OELOLPOBECO")]
+    pub oelolpobeco: i64,
+    #[serde(rename = "LPOEPOFDIIN")]
+    pub lpoepofdiin: i64,
+}

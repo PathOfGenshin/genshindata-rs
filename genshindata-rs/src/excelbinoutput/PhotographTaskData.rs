@@ -24,12 +24,12 @@ pub struct PhotographTaskDatum {
     pub start_tips_text_map_hash: i64,
     pub start_time: Option<i64>,
     pub task_type: Option<TaskType>,
-    #[serde(rename = "CMLEGMEIBNF")]
-    pub cmlegmeibnf: Option<i64>,
-    #[serde(rename = "NGHGCMJOEBF")]
-    pub nghgcmjoebf: Option<i64>,
-    #[serde(rename = "MMLABJFIPAP")]
-    pub mmlabjfipap: Option<i64>,
+    #[serde(rename = "FMCNFHKAFIE")]
+    pub fmcnfhkafie: Option<i64>,
+    #[serde(rename = "GHHIADCECAA")]
+    pub ghhiadcecaa: Option<i64>,
+    #[serde(rename = "BLMFALPKKEJ")]
+    pub blmfalpkkej: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

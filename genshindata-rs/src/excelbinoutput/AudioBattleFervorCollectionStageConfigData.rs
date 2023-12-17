@@ -11,21 +11,21 @@ pub type AudioBattleFervorCollectionStageConfigData = Vec<AudioBattleFervorColle
 pub struct AudioBattleFervorCollectionStageConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub clgnknpgpig: f64,
-    pub nhiflakhdkm: i64,
-    pub hckjamaeogm: f64,
-    pub bjnojadebhg: Vec<Bjnojadebhg>,
-    pub odggnojlbal: Vec<Odggnojlbal>,
+    pub agcmpdabmia: f64,
+    pub gdpaonnebco: i64,
+    pub ffhkcpnmbkn: f64,
+    pub mbbpekfgbdp: Vec<Mbbpekfgbdp>,
+    pub fibmkbkfdgo: Vec<Fibmkbkfdgo>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Bjnojadebhg {
-    pub jeclgoopbna: i64,
+pub struct Fibmkbkfdgo {
+    pub bjppmeohdkl: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Odggnojlbal {
-    pub oeehnogdbib: i64,
+pub struct Mbbpekfgbdp {
+    pub kmchahhkcgj: i64,
 }

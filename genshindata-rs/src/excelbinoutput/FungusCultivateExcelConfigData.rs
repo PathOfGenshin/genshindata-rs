@@ -9,19 +9,19 @@ pub type FungusCultivateExcelConfigData = Vec<FungusCultivateExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusCultivateExcelConfigDatum {
-    pub kejhddeghed: i64,
-    pub nolcadcklep: i64,
-    pub plmekpeelld: Option<i64>,
-    pub lalhdgljeee: i64,
+    pub meecbemmnic: i64,
+    pub ooannpohepf: i64,
+    pub edaomdachpk: Option<i64>,
+    pub aeiolaacbnb: i64,
     #[serde(rename = "unlockDay")]
     pub unlock_day: i64,
-    pub gfghhbmniap: Vec<i64>,
-    pub oncggnebjbc: Vec<i64>,
-    pub kcgkjhodmna: Vec<i64>,
-    pub blajfhgdljf: Vec<Vec<i64>>,
+    pub aengmlcbgfk: Vec<i64>,
+    pub addgihdoeio: Vec<i64>,
+    pub pffjlbgjcie: Vec<i64>,
+    pub niooaefpdeo: Vec<Vec<i64>>,
     #[serde(rename = "watcherIds")]
     pub watcher_ids: Vec<i64>,
-    pub mbcolnboimn: Option<i64>,
+    pub fblijciongl: Option<i64>,
     #[serde(rename = "tutorialId")]
     pub tutorial_id: Option<i64>,
 }

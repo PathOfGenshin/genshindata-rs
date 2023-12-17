@@ -11,7 +11,7 @@ pub type GcgTableExcelConfigData = Vec<GcgTableExcelConfigDatum>;
 pub struct GcgTableExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub cmlgpjfcfjn: Option<bool>,
-    pub inphmhkcdnl: String,
-    pub ijjkcjjjnpg: String,
+    pub dpclkpbepof: Option<bool>,
+    pub dpgnmopeigj: String,
+    pub lofnpdmbabe: String,
 }

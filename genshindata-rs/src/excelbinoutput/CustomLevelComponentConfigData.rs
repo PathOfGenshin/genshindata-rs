@@ -31,8 +31,8 @@ pub struct CustomLevelComponentConfigDatum {
     pub component_deploy_text_map_hash: i64,
     pub component_cost: Option<i64>,
     pub can_copy: Option<bool>,
-    #[serde(rename = "HGLFMGMGKPD")]
-    pub hglfmgmgkpd: Option<i64>,
+    #[serde(rename = "MMDAGBFICAG")]
+    pub mmdagbficag: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

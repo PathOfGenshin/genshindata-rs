@@ -29,16 +29,16 @@ pub struct ActivityFfv2PhotographPosExcelConfigDatum {
     pub gallery_id: i64,
     #[serde(rename = "redPointID")]
     pub red_point_id: i64,
-    #[serde(rename = "KFJMCPIAPPE")]
-    pub kfjmcpiappe: i64,
-    #[serde(rename = "MOBPCKLKBAK")]
-    pub mobpcklkbak: i64,
-    #[serde(rename = "FOAPFCOJCAN")]
-    pub foapfcojcan: i64,
-    #[serde(rename = "KHNJIACMHIC")]
-    pub khnjiacmhic: Vec<String>,
-    #[serde(rename = "INCGNECKJKO")]
-    pub incgneckjko: Vec<String>,
+    #[serde(rename = "HHEDPBJJPGH")]
+    pub hhedpbjjpgh: i64,
+    #[serde(rename = "FGBDJOPGAIM")]
+    pub fgbdjopgaim: i64,
+    #[serde(rename = "AMKMFCKNFOI")]
+    pub amkmfcknfoi: i64,
+    #[serde(rename = "OEIPGJMJCOH")]
+    pub oeipgjmjcoh: Vec<String>,
+    #[serde(rename = "GOMNMLFKMIG")]
+    pub gomnmlfkmig: Vec<String>,
     #[serde(rename = "sceneID")]
     pub scene_id: i64,
 }

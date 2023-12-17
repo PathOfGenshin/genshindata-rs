@@ -11,6 +11,6 @@ pub type LanV3ShadowStageExcelConfigData = Vec<LanV3ShadowStageExcelConfigDatum>
 pub struct LanV3ShadowStageExcelConfigDatum {
     pub stage_id: i64,
     pub stage_name_text_map_hash: i64,
-    #[serde(rename = "FFPOFGNJLDE")]
-    pub ffpofgnjlde: Vec<i64>,
+    #[serde(rename = "INAJKAJJBHG")]
+    pub inajkajjbhg: Vec<i64>,
 }

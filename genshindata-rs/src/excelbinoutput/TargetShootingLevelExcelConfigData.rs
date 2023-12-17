@@ -13,19 +13,19 @@ pub struct TargetShootingLevelExcelConfigDatum {
     pub level_id: i64,
     #[serde(rename = "stage")]
     pub stage: i64,
-    pub ndifjdaabpm: Vec<i64>,
+    pub clebkjmcjdm: Vec<i64>,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub pbhlikpbfoc: i64,
-    pub gdlbmpnbofj: i64,
-    pub oknjhkillno: i64,
-    pub hnfidpdkdko: i64,
-    pub eebmcpgcjlk: Vec<i64>,
-    pub jaadplimlhj: Vec<i64>,
-    pub eiffjkbibjo: i64,
-    pub pmdpodakafe: i64,
+    pub okhjeencmei: i64,
+    pub mldefollkjj: i64,
+    pub bjhilfopnjf: i64,
+    pub cfgnagpdhmn: i64,
+    pub mginbfccnee: Vec<i64>,
+    pub kdhmbjcfodf: Vec<i64>,
+    pub ingieolafpa: i64,
+    pub mncgfdjfjff: i64,
     #[serde(rename = "draftId")]
     pub draft_id: i64,
     #[serde(rename = "titleTextMapHash")]
@@ -34,12 +34,12 @@ pub struct TargetShootingLevelExcelConfigDatum {
     pub desc_text_map_hash: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub cjliilicgkp: i64,
+    pub ghbphjaeinl: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
-    pub bfeaknphjai: Option<i64>,
-    pub miehombhocb: i64,
-    pub egpnlelngoa: i64,
-    pub moipoljihhj: i64,
-    pub nfcnfajigjf: Option<i64>,
+    pub mdmfmgbceep: Option<i64>,
+    pub bmogcdggdlo: i64,
+    pub enkjgnnbehc: i64,
+    pub jdbnbgmdlne: i64,
+    pub maoklamadhe: Option<i64>,
 }

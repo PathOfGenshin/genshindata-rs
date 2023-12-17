@@ -9,10 +9,10 @@ pub type FishblasterDataConfigData = Vec<FishblasterDataConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FishblasterDataConfigDatum {
-    pub blengapmlil: i64,
-    pub halpddfpajg: i64,
-    pub piffkgfnjkd: i64,
-    pub idncbidphco: i64,
-    pub mlehmaojelc: i64,
-    pub khecjnidpma: String,
+    pub gjbamakjogp: i64,
+    pub eognllaidke: i64,
+    pub nhkhjeihjoa: i64,
+    pub lpbnnfpniom: i64,
+    pub bcmbghippmm: i64,
+    pub pjmecfbkink: String,
 }

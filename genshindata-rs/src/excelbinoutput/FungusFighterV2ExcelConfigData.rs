@@ -17,21 +17,21 @@ pub struct FungusFighterV2ExcelConfigDatum {
     pub dungeon_id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub lhcpiheocba: Vec<i64>,
-    pub bmplbppeakg: Vec<i64>,
-    pub gemfnnocaim: Vec<i64>,
+    pub nonlkdommko: Vec<i64>,
+    pub ccbfkibkldk: Vec<i64>,
+    pub fibpffonekn: Vec<i64>,
     #[serde(rename = "levelNameTextMapHash")]
     pub level_name_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]
     pub level_desc_text_map_hash: i64,
-    pub hnbahfpiddl: i64,
-    pub mcpjlnbgahh: i64,
-    pub nplniffdpij: i64,
-    pub mfpepblmdpe: String,
+    pub cbdbkhlfldo: i64,
+    pub fnkkekjfmko: i64,
+    pub logcfijkfcg: i64,
+    pub nafkliakakh: String,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub icdkoacccpp: i64,
-    pub cmgdfjhaekf: Option<bool>,
-    pub dfianilnigg: Option<i64>,
-    pub hifdblcchgm: Option<bool>,
+    pub ngmnhbcnehd: i64,
+    pub hjkbodemgam: Option<bool>,
+    pub nibghhjeboh: Option<i64>,
+    pub obolcfkdjlg: Option<bool>,
 }

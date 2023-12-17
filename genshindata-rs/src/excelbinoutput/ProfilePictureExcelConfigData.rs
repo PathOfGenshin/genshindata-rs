@@ -13,15 +13,15 @@ pub struct ProfilePictureExcelConfigDatum {
     pub icon_path: String,
     pub priority: i64,
     pub name_text_map_hash: i64,
-    #[serde(rename = "FDDOKGDIKCM")]
-    pub fddokgdikcm: Fddokgdikcm,
-    #[serde(rename = "CBKKABADBBK")]
-    pub cbkkabadbbk: i64,
+    #[serde(rename = "KJEOGPCNAOJ")]
+    pub kjeogpcnaoj: Kjeogpcnaoj,
+    #[serde(rename = "CPBELMNGNEK")]
+    pub cpbelmngnek: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Fddokgdikcm {
+pub enum Kjeogpcnaoj {
     #[serde(rename = "PROFILE_PICTURE_UNLOCK_BY_AVATAR")]
     ProfilePictureUnlockByAvatar,
     #[serde(rename = "PROFILE_PICTURE_UNLOCK_BY_COSTUME")]

@@ -10,12 +10,12 @@ pub type ActivityJourneyDungeonBuffExcelConfigData = Vec<ActivityJourneyDungeonB
 #[serde(rename_all = "camelCase")]
 pub struct ActivityJourneyDungeonBuffExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "MHDLFGOOIJB")]
-    pub mhdlfgooijb: Option<bool>,
+    #[serde(rename = "CILKCLJGPHC")]
+    pub cilkcljgphc: Option<bool>,
     pub sgv: String,
     pub icon_hash: f64,
-    #[serde(rename = "EJGHLCKENCG")]
-    pub ejghlckencg: i64,
+    #[serde(rename = "GOGPFMJOFMF")]
+    pub gogpfmjofmf: i64,
     pub buff_desc_text_map_hash: i64,
     pub desc_param: Vec<String>,
 }

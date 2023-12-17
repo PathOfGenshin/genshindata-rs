@@ -16,8 +16,8 @@ pub struct SceneTagConfigDatum {
     pub cond: Vec<Cond>,
     pub is_default_valid: Option<bool>,
     pub is_skip_loading: Option<bool>,
-    #[serde(rename = "OBABLPKEPLK")]
-    pub obablpkeplk: Option<String>,
+    #[serde(rename = "AIKFONNMLAK")]
+    pub aikfonnmlak: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

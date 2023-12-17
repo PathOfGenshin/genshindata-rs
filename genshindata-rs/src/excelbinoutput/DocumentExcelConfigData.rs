@@ -11,24 +11,24 @@ pub type DocumentExcelConfigData = Vec<DocumentExcelConfigDatum>;
 pub struct DocumentExcelConfigDatum {
     pub id: i64,
     pub title_text_map_hash: i64,
-    pub content_localized_id: Option<i64>,
+    #[serde(rename = "HJGOCFKEBEJ")]
+    pub hjgocfkebej: Vec<i64>,
     pub preview_path: String,
     pub video_path: VideoPath,
-    #[serde(rename = "CDFELBCMBEL")]
-    pub cdfelbcmbel: Cdfelbcmbel,
-    #[serde(rename = "BFGHHBPMMBC")]
-    pub bfghhbpmmbc: Vec<i64>,
-    #[serde(rename = "LJFGLIKINNB")]
-    pub ljfglikinnb: Vec<i64>,
-    #[serde(rename = "HHIINAIEAHO")]
-    pub hhiinaieaho: Option<Hhiinaieaho>,
+    pub content_localized_id: ContentLocalizedId,
+    #[serde(rename = "BCCLCLBOCND")]
+    pub bcclclbocnd: Vec<i64>,
+    #[serde(rename = "EIHIKHNPNPI")]
+    pub eihikhnpnpi: Vec<i64>,
+    #[serde(rename = "GIBJLOHOLJM")]
+    pub gibjloholjm: Option<Gibjloholjm>,
     pub document_type: Option<DocumentType>,
     #[serde(rename = "subtitleID")]
     pub subtitle_id: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Cdfelbcmbel {
+pub enum ContentLocalizedId {
     #[serde(rename = "ART/UI/Menus/Widget/Letter/Common_ReadDialog_Special_Bg")]
     ArtUiMenusWidgetLetterCommonReadDialogSpecialBg,
     #[serde(rename = "ART/UI/Menus/Widget/Letter/FleurFairV2_ReadDialog_Special_Bg")]
@@ -40,12 +40,13 @@ pub enum Cdfelbcmbel {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum DocumentType {
     Letter,
+    Paged,
     Video,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Hhiinaieaho {
+pub enum Gibjloholjm {
     #[serde(rename = "DOCUMENT_SPLIT_TYPE_BY_LINE")]
     DocumentSplitTypeByLine,
 }

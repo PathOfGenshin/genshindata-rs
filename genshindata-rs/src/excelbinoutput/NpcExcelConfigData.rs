@@ -36,13 +36,15 @@ pub struct NpcExcelConfigDatum {
     pub first_met_id: Option<i64>,
     pub use_dyn_bone: Option<bool>,
     pub billboard_type: Option<BillboardType>,
-    #[serde(rename = "AHGHBEGPNBI")]
-    pub ahghbegpnbi: Option<bool>,
-    #[serde(rename = "BMJPNOKAOPI")]
-    pub bmjpnokaopi: Option<i64>,
+    #[serde(rename = "PLDEECEFFNL")]
+    pub pldeeceffnl: Option<bool>,
+    #[serde(rename = "IMJPIMFMFCO")]
+    pub imjpimfmfco: Option<i64>,
     pub deformation_mesh_path_hash: Option<f64>,
     pub lua_data_index: Option<i64>,
     pub skip_init_closet_to_ground: Option<bool>,
+    #[serde(rename = "FAFNDGCDLMH")]
+    pub fafndgcdlmh: Option<bool>,
     pub is_activity_daily_npc: Option<bool>,
     pub special_type: Option<SpecialType>,
     pub has_combat: Option<bool>,

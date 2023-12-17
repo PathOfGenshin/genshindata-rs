@@ -10,8 +10,8 @@ pub type QuickTimeCombatDifficultyExcelConfigData = Vec<QuickTimeCombatDifficult
 #[serde(rename_all = "camelCase")]
 pub struct QuickTimeCombatDifficultyExcelConfigDatum {
     pub difficulty: i64,
-    #[serde(rename = "DBOABDKEJNP")]
-    pub dboabdkejnp: i64,
+    #[serde(rename = "FFKICBAJCCG")]
+    pub ffkicbajccg: i64,
     pub revise_level: i64,
     pub description_text_map_hash: i64,
 }

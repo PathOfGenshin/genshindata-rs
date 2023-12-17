@@ -10,8 +10,8 @@ pub type ActivityGcgpveScoreConfigData = Vec<ActivityGcgpveScoreConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct ActivityGcgpveScoreConfigDatum {
     pub id: i64,
-    #[serde(rename = "BBJADOMIOGE")]
-    pub bbjadomioge: String,
+    #[serde(rename = "MDLGLODCFBK")]
+    pub mdlglodcfbk: String,
     pub level_name_text_map_hash: i64,
     pub score: Option<i64>,
 }

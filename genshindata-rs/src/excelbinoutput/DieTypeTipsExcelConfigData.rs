@@ -13,12 +13,12 @@ pub struct DieTypeTipsExcelConfigDatum {
     pub die_type: Option<DieType>,
     pub ability_name: String,
     pub modifier_name: String,
-    #[serde(rename = "POEJGICMMMH")]
-    pub poejgicmmmh: Poejgicmmmh,
-    #[serde(rename = "LAHOENFLOLK")]
-    pub lahoenflolk: Lahoenflolk,
-    #[serde(rename = "GBHAJDHLHFO")]
-    pub gbhajdhlhfo: String,
+    #[serde(rename = "GHCFNKBJJDJ")]
+    pub ghcfnkbjjdj: Ghcfnkbjjdj,
+    #[serde(rename = "INAFHHNDKFG")]
+    pub inafhhndkfg: Inafhhndkfg,
+    #[serde(rename = "JLBMFEBABMM")]
+    pub jlbmfebabmm: String,
     pub tips: Vec<i64>,
     #[serde(rename = "monsterID")]
     pub monster_id: Option<i64>,
@@ -42,19 +42,19 @@ pub enum DieType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Lahoenflolk {
+pub enum Ghcfnkbjjdj {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "TileAttackManagerMixin")]
+    TileAttackManagerMixin,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Inafhhndkfg {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "TileAttack_Grass")]
     TileAttackGrass,
     #[serde(rename = "TileAttack_Water")]
     TileAttackWater,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Poejgicmmmh {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "TileAttackManagerMixin")]
-    TileAttackManagerMixin,
 }

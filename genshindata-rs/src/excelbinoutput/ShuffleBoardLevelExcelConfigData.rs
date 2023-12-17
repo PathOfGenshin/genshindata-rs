@@ -13,22 +13,22 @@ pub struct ShuffleBoardLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "stage")]
     pub stage: i64,
-    pub dbmpokoegbm: i64,
-    pub nmfngmkclko: i64,
-    pub hakmeijdafd: i64,
-    pub okmnkjbdibf: i64,
+    pub eheoaaelbmj: i64,
+    pub icgeindaihl: i64,
+    pub jjcbjgbfmki: i64,
+    pub epneajhagkp: i64,
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
-    pub ekbpajiilfk: i64,
+    pub oglgfaondoh: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
     #[serde(rename = "previewItems")]
     pub preview_items: Vec<i64>,
-    pub hpgkbiojfeg: String,
+    pub ipcihihdpkl: String,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub elpijedpjgm: Option<i64>,
-    pub okbiikhjlkf: Option<i64>,
+    pub fkmnphmjacd: Option<i64>,
+    pub bbhjgcneohc: Option<i64>,
 }

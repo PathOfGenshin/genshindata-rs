@@ -25,6 +25,8 @@ pub struct DungeonEntryExcelConfigDatum {
     pub description_cycle_reward_list: Vec<Vec<i64>>,
     pub is_daily_refresh: Option<bool>,
     pub is_default_open: Option<bool>,
+    #[serde(rename = "KJOOFOEBHLE")]
+    pub kjoofoebhle: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

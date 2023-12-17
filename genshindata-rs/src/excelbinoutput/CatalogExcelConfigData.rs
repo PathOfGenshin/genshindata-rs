@@ -14,8 +14,8 @@ pub struct CatalogExcelConfigDatum {
     #[serde(rename = "type")]
     pub catalog_excel_config_datum_type: String,
     pub tab_list: Vec<Vec<i64>>,
-    #[serde(rename = "FKOLBFIBCFJ")]
-    pub fkolbfibcfj: Vec<HashMap<String, i64>>,
-    #[serde(rename = "KGKFFOLKLDD")]
-    pub kgkffolkldd: Vec<i64>,
+    #[serde(rename = "FCFKPNPBFFD")]
+    pub fcfkpnpbffd: Vec<HashMap<String, i64>>,
+    #[serde(rename = "NHGKDEIEDLB")]
+    pub nhgkdeiedlb: Vec<i64>,
 }

@@ -12,8 +12,8 @@ pub struct QuestCatalogExcelConfigDatum {
     pub id: i64,
     pub sub_id_list: Vec<i64>,
     pub quest_id: Vec<i64>,
-    #[serde(rename = "PCGLIMHJDOJ")]
-    pub pcglimhjdoj: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "AGFBDLDHPBD")]
+    pub agfbdldhpbd: Vec<Option<serde_json::Value>>,
     #[serde(rename = "questMarkID")]
     pub quest_mark_id: Vec<i64>,
     pub title_text_map_hash: i64,

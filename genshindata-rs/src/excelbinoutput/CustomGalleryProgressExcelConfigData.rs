@@ -9,16 +9,16 @@ pub type CustomGalleryProgressExcelConfigData = Vec<CustomGalleryProgressExcelCo
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct CustomGalleryProgressExcelConfigDatum {
-    pub hcokakkbdab: i64,
-    pub cpjemgpnpkd: Cpjemgpnpkd,
-    pub jkbhkfhkmpf: i64,
-    pub omdakbplcap: Option<Omdakbplcap>,
+    pub halhddnkfng: i64,
+    pub clmfhhmddpa: Clmfhhmddpa,
+    pub oaoahlljgla: i64,
+    pub mbljplfhgdc: Option<Mbljplfhgdc>,
     #[serde(rename = "sortLevel")]
     pub sort_level: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Cpjemgpnpkd {
+pub enum Clmfhhmddpa {
     #[serde(rename = "SIDE")]
     Side,
     #[serde(rename = "SPECIALTOPCOUNTDOWN")]
@@ -30,7 +30,7 @@ pub enum Cpjemgpnpkd {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Omdakbplcap {
+pub enum Mbljplfhgdc {
     #[serde(rename = "INTERRUPT")]
     Interrupt,
     #[serde(rename = "MAIN")]

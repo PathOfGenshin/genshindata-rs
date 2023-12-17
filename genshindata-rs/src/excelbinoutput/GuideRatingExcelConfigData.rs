@@ -15,6 +15,8 @@ pub struct GuideRatingExcelConfigDatum {
     pub url: String,
     pub platform: Option<Platform>,
     pub sub_channel_id: Option<i64>,
+    #[serde(rename = "LMLBCMJAHKE")]
+    pub lmlbcmjahke: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

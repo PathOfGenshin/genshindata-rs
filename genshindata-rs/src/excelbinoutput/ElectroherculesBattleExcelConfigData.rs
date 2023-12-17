@@ -13,10 +13,10 @@ pub struct ElectroherculesBattleExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "activityId")]
     pub activity_id: i64,
-    pub ljjphgimjee: i64,
+    pub klhgenekggk: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub fpdbdhdgifj: Vec<i64>,
-    pub bebdckgkggo: i64,
-    pub fmilapganpk: f64,
+    pub akglidnbamc: Vec<i64>,
+    pub hlclbpeabpf: i64,
+    pub gahogfhaach: f64,
 }

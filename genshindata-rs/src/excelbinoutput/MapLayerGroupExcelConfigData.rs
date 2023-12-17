@@ -11,9 +11,9 @@ pub type MapLayerGroupExcelConfigData = Vec<MapLayerGroupExcelConfigDatum>;
 pub struct MapLayerGroupExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub nfnbhemgncl: Vec<i64>,
-    pub hndlgmhcbad: i64,
-    pub akkcgkdoado: i64,
-    pub dpbopnpjobd: Vec<i64>,
-    pub nfngamhfmff: Option<bool>,
+    pub kkpnapddfph: Vec<i64>,
+    pub fnhggnoclhe: i64,
+    pub dfjgpmlodel: i64,
+    pub kbdhpjpilak: Vec<i64>,
+    pub ndlnbjiekgm: Option<bool>,
 }

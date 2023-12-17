@@ -61,10 +61,10 @@ pub struct MonsterExcelConfigDatum {
     pub safety_check: Option<bool>,
     pub is_scene_reward: Option<bool>,
     pub vision_level: Option<VisionLevel>,
-    #[serde(rename = "NFCAAJNGGND")]
-    pub nfcaajnggnd: Option<Nfcaajnggnd>,
-    #[serde(rename = "AJGDFKCDNDC")]
-    pub ajgdfkcdndc: Option<bool>,
+    #[serde(rename = "EJMJBMIEPCF")]
+    pub ejmjbmiepcf: Option<Ejmjbmiepcf>,
+    #[serde(rename = "POLFGDNANGD")]
+    pub polfgdnangd: Option<bool>,
     #[serde(rename = "radarHintID")]
     pub radar_hint_id: Option<i64>,
     pub can_swim: Option<bool>,
@@ -81,6 +81,12 @@ pub enum Ai {
     Ranged01,
     Scout01,
     Sentry02,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Ejmjbmiepcf {
+    Ousia,
+    Pneuma,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -114,6 +120,8 @@ pub enum LodPatternName {
     AnimalSpecial40_01,
     #[serde(rename = "")]
     Empty,
+    #[serde(rename = "Monster_Narcissusborn_Narzissenkreuz_01")]
+    MonsterNarcissusbornNarzissenkreuz01,
     #[serde(rename = "Monster_Regisvine_Electric_01")]
     MonsterRegisvineElectric01,
     #[serde(rename = "Monster_Special_200_01")]
@@ -135,12 +143,6 @@ pub enum MonsterExcelConfigDatumType {
     MonsterOrdinary,
     #[serde(rename = "MONSTER_PARTNER")]
     MonsterPartner,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Nfcaajnggnd {
-    Ousia,
-    Pneuma,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -210,6 +212,8 @@ pub enum VisionLevel {
     VisionLevelLittleRemote,
     #[serde(rename = "VISION_LEVEL_NEARBY")]
     VisionLevelNearby,
+    #[serde(rename = "VISION_LEVEL_REMOTE")]
+    VisionLevelRemote,
     #[serde(rename = "VISION_LEVEL_SUPER")]
     VisionLevelSuper,
     #[serde(rename = "VISION_LEVEL_SUPER_NEARBY")]

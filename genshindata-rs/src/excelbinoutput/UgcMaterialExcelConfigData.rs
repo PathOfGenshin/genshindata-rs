@@ -11,11 +11,11 @@ pub type UgcMaterialExcelConfigData = Vec<UgcMaterialExcelConfigDatum>;
 pub struct UgcMaterialExcelConfigDatum {
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub kmjmgjkkgnf: i64,
-    pub ffeppgfcgbd: i64,
-    pub jlmpoifdngj: i64,
-    pub hmcbihmbgkn: f64,
-    pub hepdkgcepmj: i64,
+    pub cpnahejfgpo: i64,
+    pub bploegoimog: i64,
+    pub fplboogikbb: i64,
+    pub ommjniblfgk: f64,
+    pub dniedpjlnmo: i64,
     #[serde(rename = "type")]
     pub ugc_material_excel_config_datum_type: Option<Type>,
     #[serde(rename = "tag")]
@@ -24,7 +24,7 @@ pub struct UgcMaterialExcelConfigDatum {
     pub index_id: Option<i64>,
     #[serde(rename = "stackLimit")]
     pub stack_limit: Option<i64>,
-    pub acjbbplendf: Option<i64>,
+    pub hkkdceblilc: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

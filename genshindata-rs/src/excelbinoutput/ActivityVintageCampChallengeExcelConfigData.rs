@@ -10,19 +10,19 @@ pub type ActivityVintageCampChallengeExcelConfigData = Vec<ActivityVintageCampCh
 #[serde(rename_all = "camelCase")]
 pub struct ActivityVintageCampChallengeExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "BGJALCCMPLP")]
-    pub bgjalccmplp: i64,
+    #[serde(rename = "EOJDFACEGPO")]
+    pub eojdfacegpo: i64,
     pub open_day: i64,
-    #[serde(rename = "GDKBDKMPGCP")]
-    pub gdkbdkmpgcp: i64,
+    #[serde(rename = "LBKAMKPHAJJ")]
+    pub lbkamkphajj: i64,
     pub group_bundle_id: i64,
     pub reward_id: i64,
-    #[serde(rename = "HFNGJBBBINC")]
-    pub hfngjbbbinc: Vec<String>,
+    #[serde(rename = "IPGMLHIOEGI")]
+    pub ipgmlhioegi: Vec<String>,
     pub watcher_ids: Vec<i64>,
     pub monster_info: String,
     pub elite_monster_info: Vec<i64>,
-    #[serde(rename = "FPPMECEFPNE")]
-    pub fppmecefpne: i64,
+    #[serde(rename = "CFINJJOCEFA")]
+    pub cfinjjocefa: i64,
     pub buff_desc_text_map_hash: i64,
 }

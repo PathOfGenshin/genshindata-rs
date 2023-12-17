@@ -11,18 +11,18 @@ pub type ActivityAnimalViewLevelExcelConfigData = Vec<ActivityAnimalViewLevelExc
 pub struct ActivityAnimalViewLevelExcelConfigDatum {
     pub id: i64,
     pub gallery_id: i64,
-    #[serde(rename = "ENLDHMLALCJ")]
-    pub enldhmlalcj: Vec<i64>,
-    #[serde(rename = "JCIOCCDKGGA")]
-    pub jcioccdkgga: i64,
+    #[serde(rename = "KMAIBHFMEHG")]
+    pub kmaibhfmehg: Vec<i64>,
+    #[serde(rename = "HKPAFMCANHB")]
+    pub hkpafmcanhb: i64,
     pub group_link_id: i64,
-    #[serde(rename = "GHDIHDLKBIC")]
-    pub ghdihdlkbic: i64,
-    #[serde(rename = "OHEBHPGMGLF")]
-    pub ohebhpgmglf: i64,
+    #[serde(rename = "IFBJLFKDPMP")]
+    pub ifbjlfkdpmp: i64,
+    #[serde(rename = "AOOAMLHLAOP")]
+    pub aooamlhlaop: i64,
     pub open_day: i64,
     pub watcher_id: i64,
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "GNPKAFKOGLG")]
-    pub gnpkafkoglg: i64,
+    #[serde(rename = "FBBCGANIBFH")]
+    pub fbbcganibfh: i64,
 }

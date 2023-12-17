@@ -11,8 +11,8 @@ pub type ActivityCharAmusementStageExcelConfigData = Vec<ActivityCharAmusementSt
 pub struct ActivityCharAmusementStageExcelConfigDatum {
     pub stage_id: i64,
     pub stage_type: StageType,
-    #[serde(rename = "IGFKEHGLILI")]
-    pub igfkehglili: Vec<i64>,
+    #[serde(rename = "LIHNIHPODKD")]
+    pub lihnihpodkd: Vec<i64>,
     pub day_index: i64,
     pub stage_name_text_map_hash: i64,
 }

@@ -13,13 +13,13 @@ pub struct ActivityCharAmusementLevelExcelConfigDatum {
     pub weight: i64,
     pub level_type: LevelType,
     pub gallery_id: i64,
-    #[serde(rename = "LFPBHAIOJLB")]
-    pub lfpbhaiojlb: i64,
-    #[serde(rename = "KIJJDHIGGGD")]
-    pub kijjdhigggd: i64,
+    #[serde(rename = "MNGNJBMAGFG")]
+    pub mngnjbmagfg: i64,
+    #[serde(rename = "PMKLKNBLEBG")]
+    pub pmklknblebg: i64,
     pub trial_avatar_list: Vec<i64>,
-    #[serde(rename = "NGGMFIHBAFI")]
-    pub nggmfihbafi: String,
+    #[serde(rename = "DCMGMLGNIAP")]
+    pub dcmgmlgniap: String,
     pub level_name_text_map_hash: i64,
     pub level_desc_text_map_hash: i64,
     pub level_rule_text_map_hash: i64,

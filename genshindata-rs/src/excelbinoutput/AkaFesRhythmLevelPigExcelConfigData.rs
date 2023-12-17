@@ -11,9 +11,9 @@ pub type AkaFesRhythmLevelPigExcelConfigData = Vec<AkaFesRhythmLevelPigExcelConf
 pub struct AkaFesRhythmLevelPigExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub bpkldkhnfni: f64,
-    pub akidcljllle: f64,
-    pub nanjkliniem: f64,
+    pub ipbaiplecmh: f64,
+    pub fbpbdpnjgph: f64,
+    pub ipecleaonkc: f64,
     #[serde(rename = "type")]
     pub aka_fes_rhythm_level_pig_excel_config_datum_type: Option<Type>,
 }

@@ -13,8 +13,8 @@ pub struct ActivityVintagePlayTypeExcelConfigDatum {
     pub open_day: i64,
     pub quest_title_text_map_hash: i64,
     pub quest_desc_text_map_hash: i64,
-    #[serde(rename = "MJFBGMKGCJM")]
-    pub mjfbgmkgcjm: Option<i64>,
+    #[serde(rename = "LOIHOPDMNEI")]
+    pub loihopdmnei: Option<i64>,
     pub guide_quest_id: Option<i64>,
     pub tutorial_id: Option<i64>,
 }

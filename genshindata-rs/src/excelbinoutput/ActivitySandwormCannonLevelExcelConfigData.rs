@@ -13,30 +13,30 @@ pub struct ActivitySandwormCannonLevelExcelConfigDatum {
     pub gallery_id: i64,
     pub group_id: i64,
     pub point_id: i64,
-    #[serde(rename = "FNGBPDCNBLH")]
-    pub fngbpdcnblh: i64,
-    #[serde(rename = "OAGKMFFCNMG")]
-    pub oagkmffcnmg: i64,
-    #[serde(rename = "LMMJBGHNOGC")]
-    pub lmmjbghnogc: Vec<i64>,
+    #[serde(rename = "DLCLNFHCKEC")]
+    pub dlclnfhckec: i64,
+    #[serde(rename = "JPJOFOIDJHM")]
+    pub jpjofoidjhm: i64,
+    #[serde(rename = "FNPDJLHCCAH")]
+    pub fnpdjlhccah: Vec<i64>,
     pub watcher_list: Vec<i64>,
     #[serde(rename = "preQuestID")]
     pub pre_quest_id: i64,
-    #[serde(rename = "HFAFNHFIKPM")]
-    pub hfafnhfikpm: Option<i64>,
+    #[serde(rename = "JNODMOGCACL")]
+    pub jnodmogcacl: Option<i64>,
     pub open_time: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
     pub level_title_text_map_hash: i64,
-    #[serde(rename = "BLJLDHIENCP")]
-    pub bljldhiencp: String,
-    #[serde(rename = "BBMJNPKJJCA")]
-    pub bbmjnpkjjca: i64,
-    #[serde(rename = "CHKHENBCEKA")]
-    pub chkhenbceka: String,
-    #[serde(rename = "IEIOHGKFHFA")]
-    pub ieiohgkfhfa: String,
+    #[serde(rename = "HIHDEMLPPFD")]
+    pub hihdemlppfd: String,
+    #[serde(rename = "KPKFMCIAMNK")]
+    pub kpkfmciamnk: i64,
+    #[serde(rename = "OBEGAEAGBMK")]
+    pub obegaeagbmk: String,
+    #[serde(rename = "IKANIOMGNCI")]
+    pub ikaniomgnci: String,
     pub buff_icon: String,
-    #[serde(rename = "CMNPNLGDLFI")]
-    pub cmnpnlgdlfi: Option<bool>,
+    #[serde(rename = "HDEPELAOIMO")]
+    pub hdepelaoimo: Option<bool>,
 }

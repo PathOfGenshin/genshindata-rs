@@ -10,13 +10,13 @@ pub type EnergyCasterExcelConfigData = Vec<EnergyCasterExcelConfigDatum>;
 #[serde(rename_all = "camelCase")]
 pub struct EnergyCasterExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "AFEEIDDFHEO")]
-    pub afeeiddfheo: String,
+    #[serde(rename = "ICCCDCECHNE")]
+    pub icccdcechne: String,
     pub trigger_type: String,
-    #[serde(rename = "PGJLAHNJMAH")]
-    pub pgjlahnjmah: Option<i64>,
+    #[serde(rename = "HKILBNJMCHK")]
+    pub hkilbnjmchk: Option<i64>,
     pub action_type: String,
-    #[serde(rename = "DLIEJBOIOOA")]
-    pub dliejboiooa: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "OLKCKCEDDIP")]
+    pub olkckceddip: Vec<Option<serde_json::Value>>,
     pub ability_name: String,
 }

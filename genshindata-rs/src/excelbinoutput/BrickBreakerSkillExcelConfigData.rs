@@ -14,12 +14,12 @@ pub struct BrickBreakerSkillExcelConfigDatum {
     pub skill_title_text_map_hash: i64,
     pub skill_desc_text_map_hash: i64,
     pub desc_param: Vec<String>,
-    #[serde(rename = "LJNCJGABMEP")]
-    pub ljncjgabmep: f64,
+    #[serde(rename = "ALOENAKEFAG")]
+    pub aloenakefag: f64,
     pub unlock_world_level: Option<i64>,
-    #[serde(rename = "ANGCCJDGFKJ")]
-    pub angccjdgfkj: Vec<i64>,
+    #[serde(rename = "CKAEOFJGFOL")]
+    pub ckaeofjgfol: Vec<i64>,
     pub skill_type: String,
-    #[serde(rename = "LKDKGPIADAA")]
-    pub lkdkgpiadaa: Option<i64>,
+    #[serde(rename = "HLCMOADOMAN")]
+    pub hlcmoadoman: Option<i64>,
 }

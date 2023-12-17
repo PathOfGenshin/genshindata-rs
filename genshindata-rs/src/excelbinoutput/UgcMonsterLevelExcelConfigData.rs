@@ -12,6 +12,6 @@ pub struct UgcMonsterLevelExcelConfigDatum {
     pub id: i64,
     pub level: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "BEFKCBAIHFM")]
-    pub befkcbaihfm: Vec<i64>,
+    #[serde(rename = "EDPPJABMDHE")]
+    pub edppjabmdhe: Vec<i64>,
 }

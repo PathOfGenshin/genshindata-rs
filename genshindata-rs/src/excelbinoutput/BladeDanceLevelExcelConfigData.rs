@@ -11,19 +11,19 @@ pub type BladeDanceLevelExcelConfigData = Vec<BladeDanceLevelExcelConfigDatum>;
 pub struct BladeDanceLevelExcelConfigDatum {
     pub id: i64,
     pub stage: i64,
-    #[serde(rename = "CAGEEKAMAHD")]
-    pub cageekamahd: i64,
-    #[serde(rename = "FOIEMMCJNJJ")]
-    pub foiemmcjnjj: i64,
+    #[serde(rename = "EBHBCBBHDEF")]
+    pub ebhbcbbhdef: i64,
+    #[serde(rename = "ELGABOLOGIO")]
+    pub elgabologio: i64,
     pub dungeon_id: i64,
-    #[serde(rename = "EKBPAJIILFK")]
-    pub ekbpajiilfk: i64,
+    #[serde(rename = "OGLGFAONDOH")]
+    pub oglgfaondoh: i64,
     pub gallery_id: i64,
     pub group_id: i64,
     pub watcher_list: Vec<i64>,
     pub buff_list: Vec<i64>,
-    #[serde(rename = "NHEPIPGNNPA")]
-    pub nhepipgnnpa: i64,
-    #[serde(rename = "INGLCBHEMHI")]
-    pub inglcbhemhi: i64,
+    #[serde(rename = "NMBPKICMPEH")]
+    pub nmbpkicmpeh: i64,
+    #[serde(rename = "KOGPEGEEBBD")]
+    pub kogpegeebbd: i64,
 }

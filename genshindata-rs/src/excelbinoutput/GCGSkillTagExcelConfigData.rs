@@ -12,6 +12,6 @@ pub struct GcgSkillTagExcelConfigDatum {
     #[serde(rename = "type")]
     pub gcg_skill_tag_excel_config_datum_type: String,
     pub name_text_map_hash: i64,
-    #[serde(rename = "EJOPIHNDDIA")]
-    pub ejopihnddia: Option<i64>,
+    #[serde(rename = "CLNHPPHELGO")]
+    pub clnhpphelgo: Option<i64>,
 }

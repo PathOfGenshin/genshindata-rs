@@ -11,33 +11,19 @@ pub type GcgGameExcelConfigData = Vec<GcgGameExcelConfigDatum>;
 pub struct GcgGameExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub mkfgglnnhfl: i64,
-    pub ikpmegbgngh: i64,
-    pub jgdbokgpnam: Option<i64>,
-    pub gpcmeebcmol: Option<i64>,
+    pub fdnmjmhhmon: i64,
+    pub penkfbdggfh: i64,
+    pub onpdgjcikkf: Option<i64>,
+    pub kmoohfllacd: Option<i64>,
     #[serde(rename = "guideName")]
     pub guide_name: GuideName,
-    pub gfedcijnccp: Option<Gfedcijnccp>,
-    pub ciphlcckgji: Option<Ciphlcckgji>,
-    pub dgenafehdfe: Option<bool>,
-    pub koclcdmffif: Option<i64>,
-    pub pglkabhihib: Option<String>,
-    pub acnlaihccke: Option<bool>,
-    pub egjkkmpdfpo: Option<bool>,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ciphlcckgji {
-    #[serde(rename = "SELF")]
-    CiphlcckgjiSelf,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Gfedcijnccp {
-    #[serde(rename = "AI")]
-    Ai,
-    #[serde(rename = "PVE")]
-    Pve,
+    pub japeimegoni: Option<Japeimegoni>,
+    pub nfckecmcppi: Option<Nfckecmcppi>,
+    pub ioaedphlobe: Option<bool>,
+    pub pbkhmombcck: Option<i64>,
+    pub alenlohajob: Option<String>,
+    pub ndeipglbgbk: Option<bool>,
+    pub eneaahjhlnk: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -60,4 +46,18 @@ pub enum GuideName {
     Tutorial2_1,
     #[serde(rename = "Tutorial_2_2")]
     Tutorial2_2,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Japeimegoni {
+    #[serde(rename = "AI")]
+    Ai,
+    #[serde(rename = "PVE")]
+    Pve,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Nfckecmcppi {
+    #[serde(rename = "SELF")]
+    NfckecmcppiSelf,
 }

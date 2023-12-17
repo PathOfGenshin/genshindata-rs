@@ -38,8 +38,8 @@ pub struct GadgetExcelConfigDatum {
     pub radar_hint_id: Option<i64>,
     pub has_dynamic_barrier: Option<bool>,
     pub chain_id: Option<i64>,
-    #[serde(rename = "DBFCAIOHNJL")]
-    pub dbfcaiohnjl: Option<String>,
+    #[serde(rename = "BPGAKOIEFPA")]
+    pub bpgakoiefpa: Option<String>,
     pub prefab_path_remote_hash: Option<f64>,
     pub controller_path_hash: Option<f64>,
 }

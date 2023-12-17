@@ -70,6 +70,8 @@ pub struct BeginCond {
 pub enum Type {
     #[serde(rename = "QUEST_COND_ACTIVITY_AKA_FES_REASONING_QUEST_NUM")]
     QuestCondActivityAkaFesReasoningQuestNum,
+    #[serde(rename = "QUEST_COND_ACTIVITY_BLESSING_V2_HAVE_REWARD")]
+    QuestCondActivityBlessingV2HaveReward,
     #[serde(rename = "QUEST_COND_ACTIVITY_CLIENT_COND")]
     QuestCondActivityClientCond,
     #[serde(rename = "QUEST_COND_ACTIVITY_GCG_PVE_HARD_REFRESH")]
@@ -232,6 +234,10 @@ pub enum Type {
     QuestCondStateNotEqual,
     #[serde(rename = "QUEST_COND_TMPVALUE_HIT_NICKNAME")]
     QuestCondTmpvalueHitNickname,
+    #[serde(rename = "QUEST_COND_WEAPON_IS_ARKHE_OUSIA_OR_PNEUMA")]
+    QuestCondWeaponIsArkheOusiaOrPneuma,
+    #[serde(rename = "TALK_EXEC_CHANGE_WEAPON_MODE")]
+    TalkExecChangeWeaponMode,
     #[serde(rename = "TALK_EXEC_DEC_QUEST_GLOBAL_VAR")]
     TalkExecDecQuestGlobalVar,
     #[serde(rename = "TALK_EXEC_DEC_QUEST_VAR")]

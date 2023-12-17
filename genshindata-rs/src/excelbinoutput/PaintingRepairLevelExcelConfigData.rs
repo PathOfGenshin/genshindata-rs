@@ -15,24 +15,24 @@ pub struct PaintingRepairLevelExcelConfigDatum {
     pub group_link_id: i64,
     #[serde(rename = "watcher")]
     pub watcher: i64,
-    pub ocnchhpbpac: f64,
-    pub ganaakbceij: f64,
-    pub ddkcbmbockn: Vec<i64>,
-    pub fkphkcmiibc: Vec<Fkphkcmiibc>,
+    pub pdglbjlkeea: f64,
+    pub nppambpcplg: f64,
+    pub febbepcemlg: Vec<i64>,
+    pub ngokfijeifg: Vec<Ngokfijeifg>,
     #[serde(rename = "groupId")]
     pub group_id: i64,
-    pub acjgfehggao: i64,
-    pub oelppnfmemi: i64,
-    pub cjnofpfeaip: Vec<i64>,
-    pub ehbaceehbfi: Vec<i64>,
-    pub alkcmepaagp: i64,
+    pub offibeecgga: i64,
+    pub pedniononok: i64,
+    pub mplbcdclcio: Vec<i64>,
+    pub cehkjoeigjn: Vec<i64>,
+    pub aaonmhpdlog: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Fkphkcmiibc {
-    pub blgnjagcdad: Vec<i64>,
+pub struct Ngokfijeifg {
+    pub bkcjfmjcdij: Vec<i64>,
     #[serde(rename = "pic")]
     pub pic: String,
-    pub ijhpnlanffl: Vec<f64>,
+    pub jjkgcaplinp: Vec<f64>,
 }

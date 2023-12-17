@@ -18,12 +18,12 @@ pub struct FungusFighterV2MonsterExcelConfigDatum {
     pub icon_path: String,
     pub name_text_map_hash: i64,
     pub description_text_map_hash: i64,
-    #[serde(rename = "NDFCDANNBKN")]
-    pub ndfcdannbkn: i64,
-    #[serde(rename = "FPIDIKHJALA")]
-    pub fpidikhjala: String,
-    #[serde(rename = "HJGJFODEOJM")]
-    pub hjgjfodeojm: i64,
-    #[serde(rename = "BMOMBHKOLDI")]
-    pub bmombhkoldi: Vec<i64>,
+    #[serde(rename = "ICNLPKPLNHJ")]
+    pub icnlpkplnhj: i64,
+    #[serde(rename = "BDFOPPLEEPC")]
+    pub bdfoppleepc: String,
+    #[serde(rename = "IIOLGIPEHPI")]
+    pub iiolgipehpi: i64,
+    #[serde(rename = "OOCLKMBICBN")]
+    pub ooclkmbicbn: Vec<i64>,
 }

@@ -16,6 +16,6 @@ pub struct ReunionMissionExcelConfigDatum {
     pub target_score_list: Vec<i64>,
     pub finish_reward_id_list: Vec<i64>,
     pub show_reward_id_list: Vec<i64>,
-    #[serde(rename = "BEBBGMENMCH")]
-    pub bebbgmenmch: f64,
+    #[serde(rename = "BIEHELIIEJK")]
+    pub bieheliiejk: f64,
 }

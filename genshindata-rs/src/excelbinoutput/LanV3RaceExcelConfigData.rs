@@ -16,12 +16,12 @@ pub struct LanV3RaceExcelConfigDatum {
     pub score_watcher_list: Vec<i64>,
     pub time_factor: i64,
     pub gold_factor: i64,
-    #[serde(rename = "BOBJHPHMGAH")]
-    pub bobjhphmgah: Vec<i64>,
-    #[serde(rename = "OGCEGDNAELA")]
-    pub ogcegdnaela: i64,
-    #[serde(rename = "ALLAGBHANMG")]
-    pub allagbhanmg: i64,
-    #[serde(rename = "NDMDKGKHNEG")]
-    pub ndmdkgkhneg: i64,
+    #[serde(rename = "BOAGFBCHGPM")]
+    pub boagfbchgpm: Vec<i64>,
+    #[serde(rename = "IHKOKNCNAMM")]
+    pub ihkokncnamm: i64,
+    #[serde(rename = "PKGGAKPIFPC")]
+    pub pkggakpifpc: i64,
+    #[serde(rename = "DMBDDGFDEIB")]
+    pub dmbddgfdeib: i64,
 }

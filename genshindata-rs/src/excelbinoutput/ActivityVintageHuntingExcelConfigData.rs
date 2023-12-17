@@ -10,26 +10,26 @@ pub type ActivityVintageHuntingExcelConfigData = Vec<ActivityVintageHuntingExcel
 #[serde(rename_all = "camelCase")]
 pub struct ActivityVintageHuntingExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "BGJALCCMPLP")]
-    pub bgjalccmplp: i64,
+    #[serde(rename = "EOJDFACEGPO")]
+    pub eojdfacegpo: i64,
     pub open_day: i64,
-    #[serde(rename = "FHOANPCDMNI")]
-    pub fhoanpcdmni: i64,
+    #[serde(rename = "MCNKMENFBDE")]
+    pub mcnkmenfbde: i64,
     pub guide_quest_id: i64,
     pub gallery_id: i64,
     pub group_id: i64,
     pub point_id: i64,
     pub trial_avatar_id_list: Vec<i64>,
-    #[serde(rename = "LMMJBGHNOGC")]
-    pub lmmjbghnogc: Vec<i64>,
+    #[serde(rename = "FNPDJLHCCAH")]
+    pub fnpdjlhccah: Vec<i64>,
     pub watcher_ids: Vec<i64>,
     pub tutorial_id: i64,
     pub guide_quest_title_text_map_hash: i64,
     pub guide_quest_desc_text_map_hash: i64,
-    #[serde(rename = "KLJCFOBHAMG")]
-    pub kljcfobhamg: Vec<i64>,
-    #[serde(rename = "KKCFEHAMKEK")]
-    pub kkcfehamkek: i64,
-    #[serde(rename = "OJGGNDBKPPP")]
-    pub ojggndbkppp: i64,
+    #[serde(rename = "CLODLDIBHDI")]
+    pub clodldibhdi: Vec<i64>,
+    #[serde(rename = "PGNNDDHMPEJ")]
+    pub pgnnddhmpej: i64,
+    #[serde(rename = "DFHOACOCKIJ")]
+    pub dfhoacockij: i64,
 }

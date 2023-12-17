@@ -9,30 +9,22 @@ pub type BoxMatchBoxerExcelConfigData = Vec<BoxMatchBoxerExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct BoxMatchBoxerExcelConfigDatum {
-    pub kpnmfgoggch: i64,
-    pub acopijkcjdk: String,
-    pub akdjkglekcn: Akdjkglekcn,
+    pub pepihffejmm: i64,
+    pub cidkjpfpnjh: String,
+    pub kipeepomkbh: Kipeepomkbh,
     #[serde(rename = "skillCD")]
     pub skill_cd: Option<i64>,
-    pub ammeponapba: Ammeponapba,
+    pub hnfiebgpchp: Hnfiebgpchp,
     #[serde(rename = "skillNameTextMapHash")]
     pub skill_name_text_map_hash: i64,
     #[serde(rename = "skillDescTextMapHash")]
     pub skill_desc_text_map_hash: i64,
-    pub jeojkeghnnp: Vec<Jeojkeghnnp>,
-    pub honaddhilin: Honaddhilin,
+    pub plnclakgaaj: Vec<Plnclakgaaj>,
+    pub jmkgobjnjei: Jmkgobjnjei,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Akdjkglekcn {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "GV_BoxMatch_StartBurst")]
-    GvBoxMatchStartBurst,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Ammeponapba {
+pub enum Hnfiebgpchp {
     #[serde(rename = "ART/UI/Atlas/SkillIcons/Btn_BoxMatch_FireCracker")]
     ArtUiAtlasSkillIconsBtnBoxMatchFireCracker,
     #[serde(rename = "ART/UI/Atlas/SkillIcons/Btn_BoxMatch_SugarGlass")]
@@ -42,7 +34,7 @@ pub enum Ammeponapba {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Honaddhilin {
+pub enum Jmkgobjnjei {
     #[serde(rename = "BurstUnavailable")]
     BurstUnavailable,
     #[serde(rename = "")]
@@ -50,7 +42,15 @@ pub enum Honaddhilin {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Jeojkeghnnp {
+pub enum Kipeepomkbh {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "GV_BoxMatch_StartBurst")]
+    GvBoxMatchStartBurst,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Plnclakgaaj {
     #[serde(rename = "ElementFrozen")]
     ElementFrozen,
     #[serde(rename = "ElementPetrifaction")]

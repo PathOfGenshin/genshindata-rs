@@ -10,8 +10,8 @@ pub type ActivityPhotoUnderseaOverallExcelConfigData = Vec<ActivityPhotoUndersea
 #[serde(rename_all = "camelCase")]
 pub struct ActivityPhotoUnderseaOverallExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "AKMIPMHKOBF")]
-    pub akmipmhkobf: i64,
+    #[serde(rename = "PJDGMELCDMC")]
+    pub pjdgmelcdmc: i64,
     pub push_tips_id: i64,
     pub photo_succ_reminder_id: i64,
     pub photo_fail_reminder_id: i64,

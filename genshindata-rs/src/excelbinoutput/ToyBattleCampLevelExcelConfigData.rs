@@ -9,22 +9,22 @@ pub type ToyBattleCampLevelExcelConfigData = Vec<ToyBattleCampLevelExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ToyBattleCampLevelExcelConfigDatum {
-    #[serde(rename = "JIAEGPMJPOP")]
-    pub jiaegpmjpop: Vec<i64>,
+    #[serde(rename = "OILPMJDPECH")]
+    pub oilpmjdpech: Vec<i64>,
     #[serde(rename = "levelID")]
     pub level_id: i64,
     #[serde(rename = "activityID")]
     pub activity_id: i64,
     pub name_text_map_hash: i64,
     pub quest_list: Vec<i64>,
-    #[serde(rename = "FDJIDNOMABG")]
-    pub fdjidnomabg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HBDOFODPCFO")]
+    pub hbdofodpcfo: Vec<Option<serde_json::Value>>,
     pub watcher_list: Vec<i64>,
     pub open_day: i64,
-    #[serde(rename = "MFBNBANHGAI")]
-    pub mfbnbanhgai: Vec<String>,
-    #[serde(rename = "NPKOCCIIEGK")]
-    pub npkocciiegk: Vec<String>,
-    #[serde(rename = "HHHJNCLIGDH")]
-    pub hhhjncligdh: Vec<String>,
+    #[serde(rename = "KJBALLPJMEJ")]
+    pub kjballpjmej: Vec<String>,
+    #[serde(rename = "PKBHGFBAICN")]
+    pub pkbhgfbaicn: Vec<String>,
+    #[serde(rename = "IKFKHDJONHH")]
+    pub ikfkhdjonhh: Vec<String>,
 }

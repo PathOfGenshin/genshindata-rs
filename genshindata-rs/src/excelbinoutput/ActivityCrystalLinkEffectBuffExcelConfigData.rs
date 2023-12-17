@@ -12,8 +12,8 @@ pub struct ActivityCrystalLinkEffectBuffExcelConfigDatum {
     pub buff_id: i64,
     pub ability_group_name: String,
     pub ability_name: String,
-    #[serde(rename = "AHICAHBDPJK")]
-    pub ahicahbdpjk: String,
+    #[serde(rename = "APOAMGFJMCM")]
+    pub apoamgfjmcm: String,
     #[serde(rename = "AbilityTitleTextMapHash")]
     pub ability_title_text_map_hash: i64,
     #[serde(rename = "AbilityDescTextMapHash")]

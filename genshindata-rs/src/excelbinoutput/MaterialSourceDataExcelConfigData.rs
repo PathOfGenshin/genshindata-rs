@@ -30,4 +30,6 @@ pub enum JumpTarget {
     JumpInvestigation,
     #[serde(rename = "JUMP_MALL")]
     JumpMall,
+    #[serde(rename = "JUMP_MAP_OR_INVESTIGATION_TO_DUNGEON_ENTRY")]
+    JumpMapOrInvestigationToDungeonEntry,
 }

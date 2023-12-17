@@ -16,15 +16,15 @@ pub struct RadarHintExcelConfigDatum {
     pub effect_name: EffectName,
     pub icon_name: String,
     pub audio_name: AudioName,
-    #[serde(rename = "ECNBELONFJP")]
-    pub ecnbelonfjp: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "GOHPKOFDGHP")]
+    pub gohpkofdghp: Vec<Option<serde_json::Value>>,
     pub offset_radius: Option<i64>,
     pub area_radius: Option<i64>,
-    #[serde(rename = "FCDBDNCJEDE")]
-    pub fcdbdncjede: Option<bool>,
+    #[serde(rename = "GGJLLLNFNMF")]
+    pub ggjlllnfnmf: Option<bool>,
     pub show_height: Option<bool>,
-    #[serde(rename = "ABIEKPKKCEP")]
-    pub abiekpkkcep: Option<bool>,
+    #[serde(rename = "LIPIHDOGFKG")]
+    pub lipihdogfkg: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

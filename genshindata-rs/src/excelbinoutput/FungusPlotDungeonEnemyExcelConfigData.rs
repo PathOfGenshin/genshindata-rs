@@ -9,10 +9,10 @@ pub type FungusPlotDungeonEnemyExcelConfigData = Vec<FungusPlotDungeonEnemyExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct FungusPlotDungeonEnemyExcelConfigDatum {
-    pub kefdcehiaod: i64,
-    pub leihiohjdgn: i64,
-    pub glopabpkiip: i64,
-    pub fnepmejmnim: String,
-    pub demnohanefe: String,
-    pub apckhakkmeb: String,
+    pub binfimcmfjd: i64,
+    pub dbccniaijom: i64,
+    pub eipfonndnca: i64,
+    pub hmpbippbblf: String,
+    pub jkopignlkhk: String,
+    pub cbdpogcalhp: String,
 }

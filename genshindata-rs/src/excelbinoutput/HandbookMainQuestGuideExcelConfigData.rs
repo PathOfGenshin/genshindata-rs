@@ -9,7 +9,7 @@ pub type HandbookMainQuestGuideExcelConfigData = Vec<HandbookMainQuestGuideExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct HandbookMainQuestGuideExcelConfigDatum {
-    pub ehohaokeddj: i64,
-    pub kmhmppdllcj: i64,
-    pub fabgglpjbgi: Vec<i64>,
+    pub mlplmoffocg: i64,
+    pub dibocieeaop: i64,
+    pub pdmhlkonfbo: Vec<i64>,
 }

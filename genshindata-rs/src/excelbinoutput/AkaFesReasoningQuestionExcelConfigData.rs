@@ -13,19 +13,19 @@ pub struct AkaFesReasoningQuestionExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "wordId")]
     pub word_id: i64,
-    pub clbmegjkche: Option<Clbmegjkche>,
-    pub cbknjepojid: Vec<i64>,
+    pub amlkmjnflao: Option<Amlkmjnflao>,
+    pub lemiabpnkce: Vec<i64>,
     #[serde(rename = "sortId")]
     pub sort_id: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lbmndifjocj: i64,
-    pub joalhogonmp: i64,
-    pub ihpdeoaphkd: Option<bool>,
+    pub cikgnpkaeme: i64,
+    pub gjheeiaihic: i64,
+    pub ebcpgbmldib: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Clbmegjkche {
+pub enum Amlkmjnflao {
     #[serde(rename = "NO")]
     No,
     #[serde(rename = "YES")]

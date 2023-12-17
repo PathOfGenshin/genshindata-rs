@@ -43,8 +43,6 @@ pub enum CondType {
     FetterCondFinishParentQuest,
     #[serde(rename = "FETTER_COND_FINISH_QUEST")]
     FetterCondFinishQuest,
-    #[serde(rename = "FETTER_COND_NOT_OPEN")]
-    FetterCondNotOpen,
     #[serde(rename = "FETTER_COND_PLAYER_BIRTHDAY")]
     FetterCondPlayerBirthday,
     #[serde(rename = "FETTER_COND_UNLOCK_TRANS_POINT")]

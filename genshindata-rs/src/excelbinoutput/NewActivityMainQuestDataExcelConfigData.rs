@@ -10,14 +10,16 @@ pub type NewActivityMainQuestDataExcelConfigData = Vec<NewActivityMainQuestDataE
 #[serde(rename_all = "camelCase")]
 pub struct NewActivityMainQuestDataExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "HPFONNFEAKN")]
-    pub hpfonnfeakn: i64,
+    #[serde(rename = "ODIJKHLIKCN")]
+    pub odijkhlikcn: i64,
     pub quest_id_list: Vec<i64>,
     pub open_index: i64,
     pub chapter_title_text_map_hash: i64,
     pub quest_title_text_map_hash: i64,
     pub quest_desc_text_map_hash: i64,
+    #[serde(rename = "ECMBAGGFJEM")]
+    pub ecmbaggfjem: i64,
     pub pre_quest_id: Option<i64>,
-    #[serde(rename = "HPOPGCMAJAH")]
-    pub hpopgcmajah: Option<i64>,
+    #[serde(rename = "NNHBCBEKJLF")]
+    pub nnhbcbekjlf: Option<i64>,
 }

@@ -22,6 +22,6 @@ pub struct ChatExcelConfigDatum {
     #[serde(rename = "LeaveTextMapHash")]
     pub leave_text_map_hash: i64,
     pub channel: Option<i64>,
-    #[serde(rename = "AMJOFPBDKGM")]
-    pub amjofpbdkgm: Option<bool>,
+    #[serde(rename = "FNKPKMDJOGP")]
+    pub fnkpkmdjogp: Option<bool>,
 }

@@ -13,6 +13,6 @@ pub struct InspirationSpurtLevelExcelConfigDatum {
     pub dungeon_id: i64,
     pub watcher_list: Vec<i64>,
     pub title_text_map_hash: i64,
-    #[serde(rename = "GIPHMMOHBFP")]
-    pub giphmmohbfp: i64,
+    #[serde(rename = "LBEBKBHBIPO")]
+    pub lbebkbhbipo: i64,
 }

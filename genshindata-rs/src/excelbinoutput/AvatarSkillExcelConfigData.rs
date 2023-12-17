@@ -40,8 +40,8 @@ pub struct AvatarSkillExcelConfigDatum {
     pub energy_min: Option<i64>,
     #[serde(rename = "shareCDID")]
     pub share_cdid: Option<i64>,
-    #[serde(rename = "GLKBJKCJDJC")]
-    pub glkbjkcjdjc: Option<bool>,
+    #[serde(rename = "JAIPDMIELDA")]
+    pub jaipdmielda: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

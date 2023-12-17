@@ -13,6 +13,6 @@ pub struct AkaFesPotionExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "dungeonEntryId")]
     pub dungeon_entry_id: i64,
-    pub cepligjnkgm: i64,
-    pub ojeghafjigl: i64,
+    pub mnbhfijhefn: i64,
+    pub pjmpkokddan: i64,
 }

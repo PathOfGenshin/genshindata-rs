@@ -11,26 +11,26 @@ pub type UgcCustomLabelExcelConfigData = Vec<UgcCustomLabelExcelConfigDatum>;
 pub struct UgcCustomLabelExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub cdiamodgjcd: i64,
-    pub dpikgecambd: Dpikgecambd,
-    pub kcoepfggjdk: String,
-    pub gojellojjlf: Vec<i64>,
-    pub ajdgmmfbkkl: String,
-    pub dhkajijihlm: String,
-    pub ljkfgnngafa: String,
-    pub ojfdlbonhkh: String,
-    pub lndibjbceel: String,
-    pub glekanimohm: String,
+    pub odbpmlegboo: i64,
+    pub aiemibhbdgp: Aiemibhbdgp,
+    pub abobagcbonj: String,
+    pub efjimebcgbd: Vec<i64>,
+    pub lfjofdammeh: String,
+    pub lcolobiadnp: String,
+    pub pnliaifdcih: String,
+    pub liiijohebpg: String,
+    pub pmlnoffppga: String,
+    pub iimocjpnpnk: String,
     #[serde(rename = "sortID")]
     pub sort_id: Option<i64>,
-    pub khibaeomoin: String,
-    pub hdmobeaefnn: i64,
-    pub micfobkahbe: Option<String>,
+    pub paokfchcaab: String,
+    pub cmmlkfghbla: i64,
+    pub kaldfgabodg: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Dpikgecambd {
+pub enum Aiemibhbdgp {
     #[serde(rename = "UGC_DUNGEON_LABEL_BELONG_ADVANCE")]
     UgcDungeonLabelBelongAdvance,
     #[serde(rename = "UGC_DUNGEON_LABEL_BELONG_BASIC")]

@@ -13,25 +13,25 @@ pub struct FontaineGatherEntryExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "indexID")]
     pub index_id: i64,
-    pub jfoalpkgeig: Jfoalpkgeig,
-    pub icbblakfmog: Vec<i64>,
-    pub ocdddffohmp: i64,
-    pub aplnnkmamln: i64,
-    pub dhjcphfkcni: Option<f64>,
-    pub dhpoepkmmao: Option<f64>,
+    pub kapmkliccif: Kapmkliccif,
+    pub maheelkmlnp: Vec<i64>,
+    pub plijbemfimi: i64,
+    pub mmcjkppafcb: i64,
+    pub hifldhkdeel: Option<f64>,
+    pub hlpfabjbmel: Option<f64>,
     #[serde(rename = "watcherID")]
     pub watcher_id: Option<i64>,
     #[serde(rename = "groupBundleID")]
     pub group_bundle_id: Option<i64>,
-    pub bjogcgehpln: Option<i64>,
-    pub mfijjhnimco: Option<i64>,
-    pub amlcbecbokm: Option<i64>,
-    pub amofpofaadk: Option<bool>,
+    pub knjebcneagb: Option<i64>,
+    pub kldgghcihco: Option<i64>,
+    pub mbknmimccpk: Option<i64>,
+    pub maklnjnploi: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jfoalpkgeig {
+pub enum Kapmkliccif {
     #[serde(rename = "FONTAINE_ADVENTURE_TYPE_BOSS")]
     FontaineAdventureTypeBoss,
     #[serde(rename = "FONTAINE_ADVENTURE_TYPE_GATHER")]

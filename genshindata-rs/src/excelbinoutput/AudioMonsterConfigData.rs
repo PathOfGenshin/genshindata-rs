@@ -15,7 +15,7 @@ pub struct AudioMonsterConfigDatum {
     pub mk_curve_min: f64,
     pub mk_rad: f64,
     pub factor_dyngain_range: f64,
-    #[serde(rename = "CJGGNFMJHHJ")]
-    pub cjggnfmjhhj: i64,
+    #[serde(rename = "BOAHNJGGJGA")]
+    pub boahnjggjga: i64,
     pub t_state_hold_extra_mstr: Option<i64>,
 }

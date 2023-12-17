@@ -11,7 +11,7 @@ pub type SpriteTagExcelConfigData = Vec<SpriteTagExcelConfigDatum>;
 pub struct SpriteTagExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub aafldihfcnb: String,
-    pub ggopbkebnjm: f64,
-    pub hedeolmnakp: i64,
+    pub gcindkjcimd: String,
+    pub cmofdgkokdp: f64,
+    pub plpffgcfjho: i64,
 }

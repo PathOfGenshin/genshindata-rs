@@ -16,10 +16,10 @@ pub struct TeamChainExcelConfigDatum {
     pub gallery_id: i64,
     pub watcher_list: Vec<i64>,
     pub trial_avatar_id_list: Vec<i64>,
-    #[serde(rename = "NIJLBHOHHOL")]
-    pub nijlbhohhol: Vec<Vec<i64>>,
-    #[serde(rename = "FIICEMCHDPC")]
-    pub fiicemchdpc: Vec<i64>,
-    #[serde(rename = "CIILEEGKCKA")]
-    pub ciileegkcka: Vec<Vec<i64>>,
+    #[serde(rename = "MMDJHOJAHAG")]
+    pub mmdjhojahag: Vec<Vec<i64>>,
+    #[serde(rename = "AHOLAAKHHBP")]
+    pub aholaakhhbp: Vec<i64>,
+    #[serde(rename = "NMIIFBHNKKB")]
+    pub nmiifbhnkkb: Vec<Vec<i64>>,
 }

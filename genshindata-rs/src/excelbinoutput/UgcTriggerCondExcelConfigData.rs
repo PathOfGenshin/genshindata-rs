@@ -11,6 +11,6 @@ pub type UgcTriggerCondExcelConfigData = Vec<UgcTriggerCondExcelConfigDatum>;
 pub struct UgcTriggerCondExcelConfigDatum {
     pub id: i64,
     pub cond_type: String,
-    #[serde(rename = "JIJKNDGOFMI")]
-    pub jijkndgofmi: i64,
+    #[serde(rename = "AINCBDPMAPJ")]
+    pub aincbdpmapj: i64,
 }

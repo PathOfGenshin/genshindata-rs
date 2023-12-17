@@ -11,30 +11,30 @@ pub type FungusFighterV2SkillExcelConfigData = Vec<FungusFighterV2SkillExcelConf
 pub struct FungusFighterV2SkillExcelConfigDatum {
     pub skill_id: i64,
     pub icon_path: String,
-    #[serde(rename = "DALBANHMDJN")]
-    pub dalbanhmdjn: String,
+    #[serde(rename = "HLPPDIFFOCB")]
+    pub hlppdiffocb: String,
     pub name_text_map_hash: i64,
     pub description_text_map_hash: i64,
     pub tags: Vec<i64>,
-    #[serde(rename = "KFIMJDDOEKF")]
-    pub kfimjddoekf: Option<i64>,
+    #[serde(rename = "PAHIDIJLGPF")]
+    pub pahidijlgpf: Option<i64>,
     pub cost: Option<i64>,
-    #[serde(rename = "JIPFDJAKEJJ")]
-    pub jipfdjakejj: Option<Jipfdjakejj>,
-    #[serde(rename = "COOHLIMBLCF")]
-    pub coohlimblcf: Option<Coohlimblcf>,
-    #[serde(rename = "BEAGMKBFNFN")]
-    pub beagmkbfnfn: Option<i64>,
+    #[serde(rename = "IHEOHAMNAON")]
+    pub iheohamnaon: Option<Iheohamnaon>,
+    #[serde(rename = "NIAJPAENGBJ")]
+    pub niajpaengbj: Option<Niajpaengbj>,
+    #[serde(rename = "GAFBAFNCPJC")]
+    pub gafbafncpjc: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Coohlimblcf {
-    Enemy,
-    Partner,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Jipfdjakejj {
+pub enum Iheohamnaon {
     Auto,
     Manual,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Niajpaengbj {
+    Enemy,
+    Partner,
 }

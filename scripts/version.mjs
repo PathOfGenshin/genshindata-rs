@@ -7,6 +7,7 @@ import { CWD, GAME_DATA_FOLDER } from "./env.mjs";
 const exec = promisify(execCB);
 
 const VERSION_LINE_REGEX = /Currently updated for game version: \*\*(.*)\*\*/g;
+const VERSION_GIT_COMMIT_REGEX = /(OSREL[a-zA-Z\d_.]+)/g
 
 /**
  * @param {number} headCount
@@ -17,10 +18,13 @@ async function getGameDataVersion(headCount) {
   const { stdout } = await exec(`git show -s --format=%B ${head}`, {
     cwd: GAME_DATA_FOLDER,
   });
-  if (!stdout.includes("OSRELWin")) {
-    return await getGameDataVersion(headCount + 1);
+
+  const match = stdout.trim().match(VERSION_GIT_COMMIT_REGEX)
+  if (match[0]) {
+    return match[0];
   }
-  return stdout.trim();
+
+  return await getGameDataVersion(headCount + 1);
 }
 
 export async function updateReadmeVersion() {

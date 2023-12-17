@@ -23,8 +23,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     pub editor_clamp_distance: Option<i64>,
     pub rank_level: i64,
     pub json_name: JsonName,
-    #[serde(rename = "EGAHJDMKAIH")]
-    pub egahjdmkaih: Vec<i64>,
+    #[serde(rename = "PFNCHAPPALC")]
+    pub pfnchappalc: Vec<i64>,
     pub id: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
@@ -43,8 +43,8 @@ pub struct HomeWorldFurnitureExcelConfigDatum {
     pub can_float: Option<i64>,
     pub push_tips_id: Option<i64>,
     pub group_record_type: Option<String>,
-    #[serde(rename = "ILLNLLAGKHM")]
-    pub illnllagkhm: Option<i64>,
+    #[serde(rename = "FHICCAGLOKN")]
+    pub fhiccaglokn: Option<i64>,
     pub block_lego_text: Option<bool>,
 }
 

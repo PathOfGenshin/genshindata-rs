@@ -13,15 +13,15 @@ pub struct LanV3ShadowLevelExcelConfigDatum {
     pub level_id: i64,
     #[serde(rename = "prefabPath")]
     pub prefab_path: String,
-    pub jdelidjfiim: String,
+    pub fppcekbbndo: String,
     #[serde(rename = "watcherId")]
     pub watcher_id: i64,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub mikhclbedeh: i64,
-    pub bdibhmmakhm: i64,
-    pub giifkhiepof: i64,
-    pub ddmkoadoamm: Option<i64>,
+    pub oongbhjnhaj: i64,
+    pub melbncijcho: i64,
+    pub ipldobhpegd: i64,
+    pub ijiadihkemb: Option<i64>,
 }

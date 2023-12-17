@@ -11,17 +11,17 @@ pub type PoetryFestivalBaseExcelConfigData = Vec<PoetryFestivalBaseExcelConfigDa
 pub struct PoetryFestivalBaseExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub clmaobojabh: Vec<i64>,
-    pub ckhmololnok: i64,
-    pub hpfalehbdgm: i64,
-    pub ijjcjmjiflm: i64,
-    pub bmmfcfimbbl: i64,
-    pub mjkallcgake: i64,
-    pub afniopbaafh: i64,
+    pub hgpgkmhnolg: Vec<i64>,
+    pub mijfbanogji: i64,
+    pub epcjhhacbgg: i64,
+    pub obgimnnbifa: i64,
+    pub bnoicgmolfi: i64,
+    pub ebnjfgkbcgj: i64,
+    pub chnidcpkgkf: i64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
     #[serde(rename = "weaponId")]
     pub weapon_id: i64,
-    pub gmmljpmidmj: i64,
-    pub ohhoipcgcgb: Vec<i64>,
+    pub gbekknolkmj: i64,
+    pub oedhjmplhep: Vec<i64>,
 }

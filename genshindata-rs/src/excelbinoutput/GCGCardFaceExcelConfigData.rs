@@ -13,28 +13,28 @@ pub struct GcgCardFaceExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "itemId")]
     pub item_id: i64,
-    pub nbpnlhokbmp: i64,
-    pub jcefbiediko: Jcefbiediko,
-    pub aalkenkijid: Option<i64>,
-    pub bmdiecjhlme: Vec<i64>,
+    pub ldgdmddfmij: i64,
+    pub fgcnilpibno: Fgcnilpibno,
+    pub ihfillnojil: Option<i64>,
+    pub lhkemjnpepd: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub dmbamkpgaej: i64,
-    pub elddnhdhcgl: Option<Elddnhdhcgl>,
+    pub jcafjablaaj: i64,
+    pub nicbhlfdphp: Option<Nicbhlfdphp>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Elddnhdhcgl {
-    #[serde(rename = "GCG_PROFICIENCY_REWARD")]
-    GcgProficiencyReward,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jcefbiediko {
+pub enum Fgcnilpibno {
     #[serde(rename = "GCG_CARD_FACE_GOLD")]
     GcgCardFaceGold,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Nicbhlfdphp {
+    #[serde(rename = "GCG_PROFICIENCY_REWARD")]
+    GcgProficiencyReward,
 }

@@ -11,9 +11,9 @@ pub type ActivityGcgpvePuzzleLevelExcelConfigData = Vec<ActivityGcgpvePuzzleLeve
 pub struct ActivityGcgpvePuzzleLevelExcelConfigDatum {
     pub id: i64,
     pub schedule_id: i64,
-    #[serde(rename = "FMLPIILPOBK")]
-    pub fmlpiilpobk: i64,
+    #[serde(rename = "PBGJLAOMLNG")]
+    pub pbgjlaomlng: i64,
     pub tab_name_text_map_hash: i64,
-    #[serde(rename = "FDAEFHENGNE")]
-    pub fdaefhengne: Vec<i64>,
+    #[serde(rename = "HFNNIEGKJHM")]
+    pub hfnniegkjhm: Vec<i64>,
 }

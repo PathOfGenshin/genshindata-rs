@@ -9,6 +9,6 @@ pub type GcgGameGroupExcelConfigData = Vec<GcgGameGroupExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GcgGameGroupExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "IGFKEHGLILI")]
-    pub igfkehglili: Vec<i64>,
+    #[serde(rename = "LIHNIHPODKD")]
+    pub lihnihpodkd: Vec<i64>,
 }

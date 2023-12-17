@@ -3,13 +3,23 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
 pub type GcgWeekRewardExcelConfigData = Vec<GcgWeekRewardExcelConfigDatum>;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct GcgWeekRewardExcelConfigDatum {
-    pub caiicjnnibm: i64,
-    pub bnnbhoelfeg: Vec<HashMap<String, i64>>,
+    pub dccaejammfe: i64,
+    pub dppklkklnoh: Vec<Dppklkklnoh>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct Dppklkklnoh {
+    #[serde(rename = "itemId")]
+    pub item_id: Option<i64>,
+    pub globkhlhaka: Option<i64>,
+    pub ilcoipgopil: Option<i64>,
+    pub neojdgpdibm: Option<i64>,
+    pub dooniclghnd: Option<i64>,
 }

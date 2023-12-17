@@ -11,17 +11,17 @@ pub type GcgDeckBackExcelConfigData = Vec<GcgDeckBackExcelConfigDatum>;
 pub struct GcgDeckBackExcelConfigDatum {
     #[serde(rename = "itemId")]
     pub item_id: i64,
-    pub lgglnnhalbk: String,
+    pub gjfmnfedncf: String,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub adoaffbkehm: i64,
+    pub akhagjacjlh: i64,
     #[serde(rename = "order")]
     pub order: i64,
-    pub pmfogkchkbm: f64,
-    pub lpfpcelgick: f64,
+    pub cmcfanfnijn: f64,
+    pub mmopidckngb: f64,
     #[serde(rename = "id")]
     pub id: Option<i64>,
-    pub gjfapohmgej: Option<bool>,
+    pub ocfhdpageli: Option<bool>,
 }

@@ -9,6 +9,6 @@ pub type AudioEmotionBaseConfigData = Vec<AudioEmotionBaseConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct AudioEmotionBaseConfigDatum {
     pub id: i64,
-    #[serde(rename = "OJKJIOGGICC")]
-    pub ojkjioggicc: Vec<i64>,
+    #[serde(rename = "FCBIDDGLAMO")]
+    pub fcbiddglamo: Vec<i64>,
 }

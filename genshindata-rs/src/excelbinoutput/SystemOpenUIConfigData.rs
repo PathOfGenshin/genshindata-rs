@@ -13,6 +13,6 @@ pub struct SystemOpenUiConfigDatum {
     pub name_text_map_hash: i64,
     pub icon_path: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "KDDOFDACGOJ")]
-    pub kddofdacgoj: Option<bool>,
+    #[serde(rename = "FBEPJCNCCAF")]
+    pub fbepjcnccaf: Option<bool>,
 }

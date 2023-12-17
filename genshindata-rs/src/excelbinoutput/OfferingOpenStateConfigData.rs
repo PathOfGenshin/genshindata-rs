@@ -16,8 +16,8 @@ pub struct OfferingOpenStateConfigDatum {
     pub is_continuous_level_up: Option<bool>,
     pub is_allow_host_in_mp_mode: Option<bool>,
     pub activity_id: Option<i64>,
-    #[serde(rename = "DCDBNIINDOI")]
-    pub dcdbniindoi: Option<i64>,
+    #[serde(rename = "AHBIEPIAFAP")]
+    pub ahbiepiafap: Option<i64>,
     #[serde(rename = "scenePointID")]
     pub scene_point_id: Option<i64>,
 }

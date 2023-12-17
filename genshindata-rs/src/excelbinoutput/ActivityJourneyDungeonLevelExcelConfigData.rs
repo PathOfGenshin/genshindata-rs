@@ -14,15 +14,15 @@ pub struct ActivityJourneyDungeonLevelExcelConfigDatum {
     pub dungeon_id: i64,
     #[serde(rename = "galleryID")]
     pub gallery_id: i64,
-    #[serde(rename = "PGDHHDOCMMG")]
-    pub pgdhhdocmmg: i64,
-    #[serde(rename = "BJMLHAEIGNJ")]
-    pub bjmlhaeignj: Vec<i64>,
+    #[serde(rename = "DEPEFPGCDKM")]
+    pub depefpgcdkm: i64,
+    #[serde(rename = "FMNAEPGOJKG")]
+    pub fmnaepgojkg: Vec<i64>,
     pub open_day: i64,
     pub level_title_text_map_hash: i64,
     pub skill_desc_text_map_hash: i64,
-    #[serde(rename = "GMFBDOFKKNL")]
-    pub gmfbdofkknl: i64,
+    #[serde(rename = "KEDHJFDNHIF")]
+    pub kedhjfdnhif: i64,
     pub monster_list: Vec<i64>,
     pub rate_list: Vec<i64>,
     pub watcher_list: Vec<i64>,

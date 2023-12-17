@@ -17,8 +17,8 @@ pub struct TemplateReminderExcelConfigDatum {
     pub show_time: Option<i64>,
     pub style: Option<Style>,
     pub activity_type: Option<String>,
-    #[serde(rename = "LNEKGPBJPLI")]
-    pub lnekgpbjpli: Option<bool>,
+    #[serde(rename = "HGAEMOODABP")]
+    pub hgaemoodabp: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -10,8 +10,8 @@ pub type TeamChainDifficultyExcelConfigData = Vec<TeamChainDifficultyExcelConfig
 #[serde(rename_all = "camelCase")]
 pub struct TeamChainDifficultyExcelConfigDatum {
     pub difficulty_level: i64,
-    #[serde(rename = "GGOEGPPNNDA")]
-    pub ggoegppnnda: i64,
+    #[serde(rename = "NENPIOLCJIL")]
+    pub nenpiolcjil: i64,
     pub dungeon_level: i64,
     pub desc_text_map_hash: i64,
 }

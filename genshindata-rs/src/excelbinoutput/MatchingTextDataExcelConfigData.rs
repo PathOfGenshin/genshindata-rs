@@ -21,8 +21,8 @@ pub struct MatchingTextDataExcelConfigDatum {
     pub match_start_desc: MatchStartDesc,
     pub match_title_text_map_hash: i64,
     pub match_success_desc_text_map_hash: i64,
-    #[serde(rename = "HNDHEGAADKJ")]
-    pub hndhegaadkj: i64,
+    #[serde(rename = "IPKBLJKBIHM")]
+    pub ipkbljkbihm: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

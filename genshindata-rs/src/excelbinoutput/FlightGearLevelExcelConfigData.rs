@@ -19,16 +19,16 @@ pub struct FlightGearLevelExcelConfigDatum {
     pub group_id: i64,
     #[serde(rename = "groupLinkId")]
     pub group_link_id: i64,
-    pub ekbpajiilfk: i64,
-    pub cankapnfagn: String,
-    pub eipaokidmll: f64,
+    pub oglgfaondoh: i64,
+    pub kncfpliilfm: String,
+    pub gdbpjojfkno: f64,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
-    pub gfeedohajah: i64,
-    pub obpejflgbgk: i64,
-    pub hhepeapehin: i64,
-    pub fkjkkmkejfo: i64,
+    pub ddchpnollge: i64,
+    pub ilaobmdlpla: i64,
+    pub moghbjnagob: i64,
+    pub bbiplplhnkb: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<i64>,
-    pub gmcjifdjgoc: Option<i64>,
+    pub meidmnhdjgf: Option<i64>,
 }

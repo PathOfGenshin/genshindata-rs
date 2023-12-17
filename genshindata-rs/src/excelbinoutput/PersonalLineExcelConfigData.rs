@@ -18,6 +18,8 @@ pub struct PersonalLineExcelConfigDatum {
     pub start_time: String,
     pub desc_text_map_hash: i64,
     pub sort_order: i64,
-    #[serde(rename = "HDHLBAOCDMN")]
-    pub hdhlbaocdmn: Vec<i64>,
+    #[serde(rename = "ELOOOBCMBDO")]
+    pub elooobcmbdo: f64,
+    #[serde(rename = "GOBDDAGCCML")]
+    pub gobddagccml: Vec<i64>,
 }

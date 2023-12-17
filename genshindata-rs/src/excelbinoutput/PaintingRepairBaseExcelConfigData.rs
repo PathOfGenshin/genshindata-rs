@@ -3,16 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
+use std::collections::HashMap;
 
-pub type PaintingRepairBaseExcelConfigData = Vec<PaintingRepairBaseExcelConfigDatum>;
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct PaintingRepairBaseExcelConfigDatum {
-    #[serde(rename = "scheduleId")]
-    pub schedule_id: i64,
-    pub ficmaojimma: i64,
-    pub lmbfmfpmkil: i64,
-    pub gannoejnoei: i64,
-    pub hgaggkoapjm: i64,
-}
+pub type PaintingRepairBaseExcelConfigData = Vec<HashMap<String, i64>>;

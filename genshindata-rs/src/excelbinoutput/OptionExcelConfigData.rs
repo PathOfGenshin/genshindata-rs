@@ -37,6 +37,8 @@ pub enum InteeIconName {
     UiIconInteeMechanismMp,
     #[serde(rename = "UI_Icon_Intee_PickUp")]
     UiIconInteePickUp,
+    #[serde(rename = "UI_Icon_Intee_RainbowPrinceBattle")]
+    UiIconInteeRainbowPrinceBattle,
     #[serde(rename = "UI_Icon_Intee_Talk")]
     UiIconInteeTalk,
     #[serde(rename = "UI_Icon_Intee_TalkSpecial")]

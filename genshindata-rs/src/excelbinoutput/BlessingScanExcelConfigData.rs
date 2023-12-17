@@ -15,19 +15,7 @@ pub struct BlessingScanExcelConfigDatum {
     pub ref_id: i64,
     pub pic_up_config: Vec<PicUpConfig>,
     pub scan_time: i64,
-    pub hit_boxes_node_name: HitBoxesNodeName,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum HitBoxesNodeName {
-    #[serde(rename = "BodyBox")]
-    BodyBox,
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "HitBox")]
-    HitBox,
-    #[serde(rename = "RootNode")]
-    RootNode,
+    pub hit_boxes_node_name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

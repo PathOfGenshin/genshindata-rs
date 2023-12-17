@@ -11,11 +11,11 @@ pub type ToyBattleQteOverAllExcelConfigData = Vec<ToyBattleQteOverAllExcelConfig
 pub struct ToyBattleQteOverAllExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub fgchihhkgdo: i64,
-    pub lpjbgaddhgf: i64,
-    pub ekbhgllfmpo: Vec<i64>,
-    pub ihmdkmkgejg: String,
-    pub gnckofbeogh: String,
-    pub lefnnmbaack: Vec<i64>,
-    pub mlilacbncid: Vec<i64>,
+    pub jnifnjehpfh: i64,
+    pub ddbekhhcgoj: i64,
+    pub oipnfkhgekd: Vec<i64>,
+    pub elfnlmgfjbd: String,
+    pub fakkaabccgd: String,
+    pub cbbdkhhdakn: Vec<i64>,
+    pub mecbfbfkfnj: Vec<i64>,
 }

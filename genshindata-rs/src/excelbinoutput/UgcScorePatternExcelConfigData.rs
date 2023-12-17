@@ -13,7 +13,7 @@ pub struct UgcScorePatternExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "scoreList")]
     pub score_list: Vec<String>,
-    pub oekggdajenf: i64,
-    pub bfnmanhaemd: String,
-    pub hoadjobdkgd: Vec<i64>,
+    pub adhiniaofad: i64,
+    pub chkhnlionhn: String,
+    pub jhlgmgndhnc: Vec<i64>,
 }

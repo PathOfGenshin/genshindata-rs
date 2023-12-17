@@ -18,12 +18,20 @@ pub struct AnimalCodexExcelConfigDatum {
     pub sort_order: i64,
     pub count_type: Option<CountType>,
     pub desc_text_map_hash: i64,
+    #[serde(rename = "LEDJAOLGBLE")]
+    pub ledjaolgble: i64,
+    #[serde(rename = "IGHPADAKNEI")]
+    pub ighpadaknei: Vec<i64>,
+    #[serde(rename = "EMMNHNLCGDK")]
+    pub emmnhnlcgdk: Vec<i64>,
+    #[serde(rename = "EMDHIKMMGAG")]
+    pub emdhikmmgag: Vec<i64>,
     pub model_path: String,
     pub push_tips_codex_id: Option<i64>,
     pub sub_type: Option<SubType>,
     pub is_disuse: Option<bool>,
-    #[serde(rename = "LGCPHNKLBOE")]
-    pub lgcphnklboe: Option<f64>,
+    #[serde(rename = "HFAJBLFEBIP")]
+    pub hfajblfebip: Option<f64>,
     pub is_seen_active: Option<bool>,
     pub show_only_unlocked: Option<bool>,
 }

@@ -9,8 +9,8 @@ pub type ActivityRockBoardExploreQuestExcelConfigData = Vec<ActivityRockBoardExp
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ActivityRockBoardExploreQuestExcelConfigDatum {
-    #[serde(rename = "OJELHOHDOAN")]
-    pub ojelhohdoan: i64,
+    #[serde(rename = "ADNADKFGGNN")]
+    pub adnadkfggnn: i64,
     #[serde(rename = "questID")]
     pub quest_id: i64,
     pub open_day: i64,

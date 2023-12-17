@@ -11,19 +11,19 @@ pub type KeywordEasterEggExcelConfigData = Vec<KeywordEasterEggExcelConfigDatum>
 pub struct KeywordEasterEggExcelConfigDatum {
     #[serde(rename = "configID")]
     pub config_id: i64,
-    pub cnlncbpkajo: Vec<Cnlncbpkajo>,
+    pub ecjofjhifld: Vec<Ecjofjhifld>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Cnlncbpkajo {
-    pub pbiamdjdmdi: Pbiamdjdmdi,
-    pub johpolhpaoa: String,
+pub struct Ecjofjhifld {
+    pub ipdjjpbhjbk: Ipdjjpbhjbk,
+    pub janfgpmieha: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Pbiamdjdmdi {
+pub enum Ipdjjpbhjbk {
     #[serde(rename = "LANGUAGE_DE")]
     LanguageDe,
     #[serde(rename = "LANGUAGE_EN")]

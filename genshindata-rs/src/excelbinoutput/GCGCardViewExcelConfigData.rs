@@ -11,36 +11,22 @@ pub type GcgCardViewExcelConfigData = Vec<GcgCardViewExcelConfigDatum>;
 pub struct GcgCardViewExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub agjphaeomcd: String,
-    pub cajfoahomjp: Vec<String>,
-    pub goniemmddpa: String,
-    pub fokbohlpbgg: String,
-    pub fggmjigfind: Vec<Option<serde_json::Value>>,
-    pub bbfjkhilogg: String,
-    pub cfbdhgmiimk: Cfbdhgmiimk,
-    pub ljcknneoefp: Vec<String>,
-    pub bldjifmhopk: Bldjifmhopk,
-    pub knfogcpcicb: Option<f64>,
-    pub bpiibjpacme: Option<f64>,
-    pub npolkllcaoj: Option<f64>,
+    pub jadcgcciccp: String,
+    pub megfndfpcmp: Vec<String>,
+    pub bonnfbkdcpa: String,
+    pub bofjibcpdko: String,
+    pub ncppleeddpk: Vec<Option<serde_json::Value>>,
+    pub nfioedommol: String,
+    pub cgcpifimiba: Cgcpifimiba,
+    pub mlokfjlaffh: Vec<String>,
+    pub joknaomdbmo: Joknaomdbmo,
+    pub pbjafkollbl: Option<f64>,
+    pub emlhdmdocfg: Option<f64>,
+    pub pedbmdaajko: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Bldjifmhopk {
-    #[serde(rename = "")]
-    Empty,
-    #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
-    SkinEffectConfigCharacterCyno2,
-    #[serde(rename = "SkinEffectConfig_Character_Tartaglia02")]
-    SkinEffectConfigCharacterTartaglia02,
-    #[serde(rename = "SkinEffectConfig_Character_Wanderer2")]
-    SkinEffectConfigCharacterWanderer2,
-    #[serde(rename = "SkinEffectConfig_Character_Xiao2")]
-    SkinEffectConfigCharacterXiao2,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Cfbdhgmiimk {
+pub enum Cgcpifimiba {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Cyno")]
@@ -51,4 +37,18 @@ pub enum Cfbdhgmiimk {
     GcgCardFaceCharAvatarWanderer,
     #[serde(rename = "Gcg_CardFace_Char_Avatar_Xiao")]
     GcgCardFaceCharAvatarXiao,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Joknaomdbmo {
+    #[serde(rename = "")]
+    Empty,
+    #[serde(rename = "SkinEffectConfig_Character_Cyno2")]
+    SkinEffectConfigCharacterCyno2,
+    #[serde(rename = "SkinEffectConfig_Character_Tartaglia02")]
+    SkinEffectConfigCharacterTartaglia02,
+    #[serde(rename = "SkinEffectConfig_Character_Wanderer2")]
+    SkinEffectConfigCharacterWanderer2,
+    #[serde(rename = "SkinEffectConfig_Character_Xiao2")]
+    SkinEffectConfigCharacterXiao2,
 }

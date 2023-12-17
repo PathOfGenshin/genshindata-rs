@@ -18,8 +18,8 @@ pub struct WeatherExcelConfigDatum {
     pub is_default_valid: Option<bool>,
     pub priority: i64,
     pub profile_name: String,
-    #[serde(rename = "BPIMIHNMIPP")]
-    pub bpimihnmipp: String,
+    #[serde(rename = "CEJELDMJGLE")]
+    pub cejeldmjgle: String,
     pub default_climate: DefaultClimate,
     pub is_use_default: Option<bool>,
     #[serde(rename = "sceneID")]

@@ -15,11 +15,11 @@ pub struct MusicInstrumentConfigDatum {
     pub widget_id: i64,
     #[serde(rename = "performID")]
     pub perform_id: i64,
-    #[serde(rename = "INPHHDDEDBP")]
-    pub inphhddedbp: String,
-    #[serde(rename = "IBGMCBEGKDD")]
-    pub ibgmcbegkdd: String,
-    #[serde(rename = "OJHJJABPPDP")]
-    pub ojhjjabppdp: String,
+    #[serde(rename = "JEICOKDPPMC")]
+    pub jeicokdppmc: String,
+    #[serde(rename = "EMKGLNOJPJM")]
+    pub emkglnojpjm: String,
+    #[serde(rename = "AAKAAKIGFEF")]
+    pub aakaakigfef: String,
     pub free_mode_perfab_path: String,
 }

@@ -11,15 +11,15 @@ pub type UgcMaterialEditLimitExcelConfigData = Vec<UgcMaterialEditLimitExcelConf
 pub struct UgcMaterialEditLimitExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub hnobhoaeflk: Vec<Hnobhoaeflk>,
-    pub dohmcfehhog: Option<i64>,
-    pub cffeckllghe: Option<i64>,
+    pub mccmgpjaaok: Vec<Mccmgpjaaok>,
+    pub kinfjijanja: Option<i64>,
+    pub glkllfampdo: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Hnobhoaeflk {
+pub struct Mccmgpjaaok {
     #[serde(rename = "materialId")]
     pub material_id: Option<i64>,
-    pub hihmklbmbkg: Option<i64>,
+    pub edmiaemidfj: Option<i64>,
 }

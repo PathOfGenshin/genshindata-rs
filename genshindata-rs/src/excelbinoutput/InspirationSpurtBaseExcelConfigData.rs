@@ -11,6 +11,6 @@ pub type InspirationSpurtBaseExcelConfigData = Vec<InspirationSpurtBaseExcelConf
 pub struct InspirationSpurtBaseExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub nhkndhcfjhm: i64,
-    pub jpiclbfebnl: i64,
+    pub libcimjekjk: i64,
+    pub kbneaoceebm: i64,
 }

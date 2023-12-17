@@ -12,6 +12,6 @@ pub struct LanV3CampStageExcelConfigDatum {
     pub stage_id: i64,
     pub level_id_list: Vec<i64>,
     pub stage_name_text_map_hash: i64,
-    #[serde(rename = "ECJIGMCGOEO")]
-    pub ecjigmcgoeo: Vec<i64>,
+    #[serde(rename = "GBPOCBMCOAF")]
+    pub gbpocbmcoaf: Vec<i64>,
 }

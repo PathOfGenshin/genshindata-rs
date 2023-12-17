@@ -11,9 +11,9 @@ pub type AkaFesReasoningWordExcelConfigData = Vec<AkaFesReasoningWordExcelConfig
 pub struct AkaFesReasoningWordExcelConfigDatum {
     pub word_id: i64,
     pub level_id: i64,
-    #[serde(rename = "CLLJANLEDPM")]
-    pub clljanledpm: Option<bool>,
+    #[serde(rename = "BMJECMAJDPL")]
+    pub bmjecmajdpl: Option<bool>,
     pub sort_id: i64,
-    #[serde(rename = "EOKCGAFLJDC")]
-    pub eokcgafljdc: i64,
+    #[serde(rename = "PAAMJOOGEAB")]
+    pub paamjoogeab: i64,
 }

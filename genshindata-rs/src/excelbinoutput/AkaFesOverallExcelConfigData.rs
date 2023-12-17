@@ -11,9 +11,9 @@ pub type AkaFesOverallExcelConfigData = Vec<AkaFesOverallExcelConfigDatum>;
 pub struct AkaFesOverallExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub dcppkomfffo: Vec<i64>,
-    pub dbfmndphhjl: i64,
-    pub cenfjbjgllg: i64,
-    pub cmamllodofm: f64,
-    pub iaajledhppd: i64,
+    pub kejadkcbica: Vec<i64>,
+    pub icjcdgolomd: i64,
+    pub jpfoilokgno: i64,
+    pub bcjcdekemok: f64,
+    pub mkkeinoghbj: i64,
 }

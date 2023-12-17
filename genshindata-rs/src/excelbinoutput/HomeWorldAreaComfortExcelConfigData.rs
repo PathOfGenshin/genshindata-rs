@@ -25,12 +25,12 @@ pub struct HomeWorldAreaComfortExcelConfigDatum {
     pub high_load_limit: i64,
     pub area_center_pos: Vec<f64>,
     pub area_center_rot: Vec<i64>,
-    #[serde(rename = "HOPOHBBKBMJ")]
-    pub hopohbbkbmj: String,
-    #[serde(rename = "MIEOKPINBMO")]
-    pub mieokpinbmo: i64,
-    #[serde(rename = "LHEHPMKFMFG")]
-    pub lhehpmkfmfg: String,
+    #[serde(rename = "OKOCOPALMMG")]
+    pub okocopalmmg: String,
+    #[serde(rename = "IENLJHHBEAJ")]
+    pub ienljhhbeaj: i64,
+    #[serde(rename = "OAKAGKHBOLH")]
+    pub oakagkhbolh: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

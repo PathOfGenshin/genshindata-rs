@@ -9,20 +9,20 @@ pub type SorushTrialHitmanGalleryExcelConfigData = Vec<SorushTrialHitmanGalleryE
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct SorushTrialHitmanGalleryExcelConfigDatum {
-    pub eehjheligdi: i64,
-    pub dacljnkicgb: i64,
-    pub inmfnmpoehd: i64,
-    pub olildkehlnd: i64,
-    pub nkjjimjmhmi: i64,
-    pub mbjobodcbao: i64,
-    pub gmbkofpmpdo: Vec<i64>,
-    pub cbgmoahnjba: i64,
+    pub neaeckillhe: i64,
+    pub elefhinhooi: i64,
+    pub jfcohlgfilk: i64,
+    pub elpfednbcni: i64,
+    pub mnfleigddlo: i64,
+    pub dnefnidkkcp: i64,
+    pub kcmenlpoeoh: Vec<i64>,
+    pub hfnbkhanggh: i64,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "galleryId")]
     pub gallery_id: i64,
-    pub gelfljlkcak: i64,
-    pub clamimgkebj: i64,
+    pub lbijmaakogf: i64,
+    pub oajnoejkafh: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
     #[serde(rename = "levelDescTextMapHash")]

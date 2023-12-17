@@ -9,8 +9,8 @@ pub type ActivitySpiceFoodExcelConfigData = Vec<ActivitySpiceFoodExcelConfigDatu
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct ActivitySpiceFoodExcelConfigDatum {
+    pub recipe_mat_id: i64,
     pub source_desc_text_map_hash: i64,
     pub special_food_id: i64,
     pub normal_food_id: i64,
-    pub recipe_mat_id: i64,
 }

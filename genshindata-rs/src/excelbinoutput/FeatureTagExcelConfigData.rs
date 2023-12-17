@@ -11,5 +11,5 @@ pub type FeatureTagExcelConfigData = Vec<FeatureTagExcelConfigDatum>;
 pub struct FeatureTagExcelConfigDatum {
     #[serde(rename = "tagID")]
     pub tag_id: i64,
-    pub limjlbgmjhh: Option<String>,
+    pub dlibgoniklg: Option<String>,
 }

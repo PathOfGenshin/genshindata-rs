@@ -11,8 +11,8 @@ pub type TeamBackgroundWorldExcelConfigData = Vec<TeamBackgroundWorldExcelConfig
 pub struct TeamBackgroundWorldExcelConfigDatum {
     pub id: i64,
     pub path: String,
-    #[serde(rename = "PIDFHFOGENG")]
-    pub pidfhfogeng: Vec<i64>,
+    #[serde(rename = "PHIIMBLFKLN")]
+    pub phiimblfkln: Vec<i64>,
     pub param_list: Vec<i64>,
     #[serde(rename = "type")]
     pub team_background_world_excel_config_datum_type: Option<String>,

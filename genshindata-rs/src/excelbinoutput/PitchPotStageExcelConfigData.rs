@@ -15,14 +15,14 @@ pub struct PitchPotStageExcelConfigDatum {
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
     pub image_name_hash: f64,
-    #[serde(rename = "HKDPBMHJABP")]
-    pub hkdpbmhjabp: Vec<i64>,
-    #[serde(rename = "GBJCOLBPCAF")]
-    pub gbjcolbpcaf: Vec<i64>,
+    #[serde(rename = "IOMJNJNFAAK")]
+    pub iomjnjnfaak: Vec<i64>,
+    #[serde(rename = "BFFNONNHGAB")]
+    pub bffnonnhgab: Vec<i64>,
     pub draft_id: i64,
     #[serde(rename = "matchID")]
     pub match_id: i64,
     pub open_day: i64,
-    #[serde(rename = "DLJGAJIGPMD")]
-    pub dljgajigpmd: i64,
+    #[serde(rename = "EDFELJFDEPL")]
+    pub edfeljfdepl: i64,
 }

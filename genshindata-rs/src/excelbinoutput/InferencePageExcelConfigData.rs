@@ -14,6 +14,6 @@ pub struct InferencePageExcelConfigDatum {
     pub conclusion_list: Vec<i64>,
     pub dialog_group_id: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "FHINJBHPKLF")]
-    pub fhinjbhpklf: Option<bool>,
+    #[serde(rename = "CIGENEPJLCI")]
+    pub cigenepjlci: Option<bool>,
 }

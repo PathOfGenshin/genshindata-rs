@@ -11,18 +11,18 @@ pub type AudioBattleFervorMaterialConfigData = Vec<AudioBattleFervorMaterialConf
 pub struct AudioBattleFervorMaterialConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub hkjebkcoick: f64,
-    pub jokengmlgie: f64,
-    pub igeeajljgda: i64,
-    pub nehdmgldjcp: Vec<i64>,
-    pub djaclgpkngk: Vec<Djaclgpkngk>,
+    pub fhjegpeoolp: f64,
+    pub bdfdenjaido: f64,
+    pub mjkedbikean: i64,
+    pub jeaibfhcpci: Vec<i64>,
+    pub ggldppaghcl: Vec<Ggldppaghcl>,
     #[serde(rename = "type")]
     pub audio_battle_fervor_material_config_datum_type: Option<String>,
-    pub ipcimlcfkno: Option<i64>,
+    pub bdlkccbakpd: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Djaclgpkngk {
-    pub beglplamion: Option<String>,
+pub struct Ggldppaghcl {
+    pub eblklhjdbgn: Option<String>,
 }

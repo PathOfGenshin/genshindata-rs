@@ -12,5 +12,7 @@ pub struct BlessingScanPicExcelConfigDatum {
     pub id: i64,
     pub grant_reward_cost: i64,
     pub icon_name: String,
+    #[serde(rename = "FMCJBGNHOLB")]
+    pub fmcjbgnholb: String,
     pub name_text_map_hash: i64,
 }

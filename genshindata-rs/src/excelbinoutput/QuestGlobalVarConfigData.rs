@@ -11,4 +11,6 @@ pub type QuestGlobalVarConfigData = Vec<QuestGlobalVarConfigDatum>;
 pub struct QuestGlobalVarConfigDatum {
     pub id: i64,
     pub default_value: Option<i64>,
+    #[serde(rename = "NDCPLGELDLC")]
+    pub ndcplgeldlc: Option<i64>,
 }

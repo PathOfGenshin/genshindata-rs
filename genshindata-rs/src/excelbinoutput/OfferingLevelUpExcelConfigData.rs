@@ -17,8 +17,8 @@ pub struct OfferingLevelUpExcelConfigDatum {
     pub cut_scene_id: Option<i64>,
     pub is_max_level: Option<bool>,
     pub is_auto_take_reward: Option<bool>,
-    #[serde(rename = "ICKLOHDIJCH")]
-    pub icklohdijch: Option<i64>,
+    #[serde(rename = "PBGALGDCAIK")]
+    pub pbgalgdcaik: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

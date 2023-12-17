@@ -14,8 +14,8 @@ pub struct InstableSprayBuffExcelConfigDatum {
     pub sgv: String,
     pub icon_name_hash: f64,
     pub element_type: Option<i64>,
-    #[serde(rename = "EGPNLELNGOA")]
-    pub egpnlelngoa: i64,
+    #[serde(rename = "ENKJGNNBEHC")]
+    pub enkjgnnbehc: i64,
     pub buff_name_text_map_hash: i64,
     pub buff_desc_text_map_hash: i64,
     pub desc_params: Vec<String>,

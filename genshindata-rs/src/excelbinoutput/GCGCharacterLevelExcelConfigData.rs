@@ -3,7 +3,6 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
 pub type GcgCharacterLevelExcelConfigData = Vec<GcgCharacterLevelExcelConfigDatum>;
 
@@ -14,21 +13,28 @@ pub struct GcgCharacterLevelExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "npcId")]
     pub npc_id: i64,
-    pub kenkdlhfbcd: i64,
+    pub jooglmmpbhm: i64,
     #[serde(rename = "avatarId")]
     pub avatar_id: i64,
-    pub gmcpboiajki: Vec<HashMap<String, i64>>,
-    pub jkjggemjljh: i64,
-    pub bojlfnapdep: i64,
-    pub cifpfbkjmmc: Option<bool>,
+    pub jmijpkibhec: Vec<Jmijpkibhec>,
+    pub paopgdeicef: i64,
+    pub achfnanhakg: i64,
+    pub dmffjilimib: Option<bool>,
     #[serde(rename = "costItemId")]
     pub cost_item_id: Option<i64>,
-    pub ggcffpoaaaj: Option<i64>,
-    pub gblopemdjfl: Vec<Option<serde_json::Value>>,
-    pub inpmaihaeic: i64,
-    pub nlpjmodpmej: i64,
-    pub edghkokkdda: i64,
-    pub jkcjcjepjld: i64,
+    pub fehcbdglblf: Option<i64>,
+    pub cglliibpnda: Vec<Option<serde_json::Value>>,
+    pub glpkldoedef: i64,
+    pub mdfgcbdhloe: i64,
+    pub cegfohjbfmf: i64,
+    pub fhbcdjcfoef: i64,
     #[serde(rename = "imageNameHash")]
     pub image_name_hash: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct Jmijpkibhec {
+    pub eimfmhloded: i64,
+    pub fbhkoonlbcn: i64,
 }

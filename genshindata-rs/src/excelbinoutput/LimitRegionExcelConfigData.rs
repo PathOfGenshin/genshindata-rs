@@ -18,8 +18,8 @@ pub struct LimitRegionExcelConfigDatum {
     pub order: Option<i64>,
     #[serde(rename = "reminderID")]
     pub reminder_id: Option<i64>,
-    #[serde(rename = "HBMBIBAFJJF")]
-    pub hbmbibafjjf: Option<bool>,
+    #[serde(rename = "CFLBGECBPBP")]
+    pub cflbgecbpbp: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

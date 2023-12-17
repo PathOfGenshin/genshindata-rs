@@ -13,24 +13,24 @@ pub struct ActivityGcgpveExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub igfkehglili: Vec<Igfkehglili>,
-    pub pjldiohligm: Vec<Vec<i64>>,
+    pub lihnihpodkd: Vec<Lihnihpodkd>,
+    pub mnhobdmbdkp: Vec<Vec<i64>>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "scoreLevelList")]
     pub score_level_list: Vec<Option<serde_json::Value>>,
     #[serde(rename = "tabNameTextMapHash")]
     pub tab_name_text_map_hash: i64,
-    pub falgfjpaibj: String,
-    pub dihgnljbjnp: String,
-    pub lpbeogakmej: String,
+    pub jadmdjpgmhj: String,
+    pub hehpnlkdlep: String,
+    pub eopkchifhea: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Igfkehglili {
+pub struct Lihnihpodkd {
     #[serde(rename = "type")]
-    pub igfkehglili_type: Type,
+    pub lihnihpodkd_type: Type,
     pub id: i64,
     pub base_score: i64,
 }

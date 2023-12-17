@@ -13,6 +13,6 @@ pub struct FireworksPushtipsExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: i64,
-    pub kmdedcpocce: i64,
-    pub depcbndlbic: Vec<i64>,
+    pub ldipmobbgel: i64,
+    pub kacicnlilmj: Vec<i64>,
 }

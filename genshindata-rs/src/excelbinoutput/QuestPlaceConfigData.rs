@@ -11,13 +11,13 @@ pub type QuestPlaceConfigData = Vec<QuestPlaceConfigDatum>;
 pub struct QuestPlaceConfigDatum {
     #[serde(rename = "placeId")]
     pub place_id: i64,
-    pub jhnbfbjodil: Vec<i64>,
-    pub glhdjgkpjmm: Glhdjgkpjmm,
-    pub cokgghmonhm: Option<bool>,
+    pub jibmonmkkle: Vec<i64>,
+    pub jiioeigdiao: Jiioeigdiao,
+    pub kocodlnjaih: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Glhdjgkpjmm {
+pub enum Jiioeigdiao {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "1403,1404")]

@@ -21,8 +21,8 @@ pub struct MainQuestExcelConfigDatum {
     pub show_type: Option<ShowType>,
     pub special_show_reward_id: Vec<i64>,
     pub special_show_cond_id_list: Vec<i64>,
-    #[serde(rename = "CKANFINKHOG")]
-    pub ckanfinkhog: Vec<i64>,
+    #[serde(rename = "OENJEOJBJBO")]
+    pub oenjeojbjbo: Vec<i64>,
     pub repeatable: Option<bool>,
     pub res_id: Option<i64>,
     pub series: Option<i64>,
@@ -32,6 +32,8 @@ pub struct MainQuestExcelConfigDatum {
     pub task_id: Option<i64>,
     pub main_quest_tag: Option<MainQuestTag>,
     pub special_show_quest_id: Option<i64>,
+    #[serde(rename = "NKMGAAOIGIL")]
+    pub nkmgaaoigil: Option<bool>,
     pub suggest_track_out_of_order: Option<bool>,
     pub activity_id: Option<i64>,
     pub recommend_level: Option<i64>,

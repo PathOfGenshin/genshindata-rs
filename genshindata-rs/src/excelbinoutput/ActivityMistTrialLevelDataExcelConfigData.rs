@@ -28,14 +28,16 @@ pub struct ActivityMistTrialLevelDataExcelConfigDatum {
     pub server_global_value_key: ServerGlobalValueKey,
     pub floor_level_list: Vec<i64>,
     pub battle_statistics_data: Vec<i64>,
-    #[serde(rename = "DGNDLNBKECD")]
-    pub dgndlnbkecd: Option<f64>,
+    #[serde(rename = "JIEEIFDAIEK")]
+    pub jieeifdaiek: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum ServerGlobalValueKey {
     #[serde(rename = "")]
     Empty,
+    #[serde(rename = "SGV_ABILITY_Mist4_Level")]
+    SgvAbilityMist4Level,
     #[serde(rename = "SGV_ABILITY_Mist_Level")]
     SgvAbilityMistLevel,
 }

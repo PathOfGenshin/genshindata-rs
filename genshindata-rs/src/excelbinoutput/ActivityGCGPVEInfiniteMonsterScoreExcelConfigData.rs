@@ -9,9 +9,9 @@ pub type ActivityGcgpveInfiniteMonsterScoreExcelConfigData = Vec<ActivityGcgpveI
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ActivityGcgpveInfiniteMonsterScoreExcelConfigDatum {
     pub id: i64,
-    #[serde(rename = "NBPNLHOKBMP")]
-    pub nbpnlhokbmp: i64,
+    #[serde(rename = "LDGDMDDFMIJ")]
+    pub ldgdmddfmij: i64,
     pub score: i64,
-    #[serde(rename = "FMLPIILPOBK")]
-    pub fmlpiilpobk: i64,
+    #[serde(rename = "PBGJLAOMLNG")]
+    pub pbgjlaomlng: i64,
 }

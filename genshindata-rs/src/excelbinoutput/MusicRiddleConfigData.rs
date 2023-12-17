@@ -15,7 +15,7 @@ pub struct MusicRiddleConfigDatum {
     pub play_list: Vec<i64>,
     pub push_tips_id: i64,
     pub explain_type: Option<i64>,
-    #[serde(rename = "CGJJFEPMIAG")]
-    pub cgjjfepmiag: Option<i64>,
+    #[serde(rename = "BJLKKMDFIHA")]
+    pub bjlkkmdfiha: Option<i64>,
     pub is_hide: Option<bool>,
 }

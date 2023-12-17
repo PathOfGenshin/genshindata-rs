@@ -14,9 +14,9 @@ pub struct ActivityDuelHeartTaskExcelConfigDatum {
     pub unlock_day: i64,
     pub quest_title_text_map_hash: i64,
     pub quest_desc_text_map_hash: i64,
-    #[serde(rename = "LJJDJMAJBIH")]
-    pub ljjdjmajbih: i64,
+    #[serde(rename = "PLJBBOKPCCD")]
+    pub pljbbokpccd: i64,
     pub unlock_cond_id: i64,
-    #[serde(rename = "NFCNFAJIGJF")]
-    pub nfcnfajigjf: Option<i64>,
+    #[serde(rename = "MAOKLAMADHE")]
+    pub maoklamadhe: Option<i64>,
 }

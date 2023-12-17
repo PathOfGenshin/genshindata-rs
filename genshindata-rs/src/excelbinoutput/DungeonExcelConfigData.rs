@@ -45,42 +45,46 @@ pub struct DungeonExcelConfigDatum {
     pub state_type: StateType,
     pub factor_pic: FactorPic,
     pub factor_icon: FactorIcon,
-    #[serde(rename = "BIDMAJHGFGJ")]
-    pub bidmajhgfgj: i64,
-    #[serde(rename = "EGLHMJJKJBG")]
-    pub eglhmjjkjbg: i64,
+    #[serde(rename = "JDBDFNDPIIB")]
+    pub jdbdfndpiib: i64,
+    #[serde(rename = "MMDLLFFDGOD")]
+    pub mmdllffdgod: i64,
     pub avatar_limit_type: Option<i64>,
     pub is_dynamic_level: Option<bool>,
+    #[serde(rename = "DKJCCPMNIIH")]
+    pub dkjccpmniih: Option<bool>,
+    #[serde(rename = "PNJNOFEKHFI")]
+    pub pnjnofekhfi: Option<Pnjnofekhfi>,
     pub sub_type: Option<SubType>,
     pub serial_id: Option<i64>,
-    #[serde(rename = "KGFBDNKEDIH")]
-    pub kgfbdnkedih: Option<bool>,
+    #[serde(rename = "OMCIDDLJAFJ")]
+    pub omciddljafj: Option<bool>,
+    #[serde(rename = "FKFBJPIJGBO")]
+    pub fkfbjpijgbo: Option<bool>,
     pub enable_quest_guide: Option<bool>,
     #[serde(rename = "firstPassRewardPreviewID")]
     pub first_pass_reward_preview_id: Option<i64>,
-    #[serde(rename = "MNOGKEDOGFI")]
-    pub mnogkedogfi: Option<bool>,
+    #[serde(rename = "MDPIGALKLNJ")]
+    pub mdpigalklnj: Option<bool>,
     pub pass_jump_dungeon: Option<i64>,
-    #[serde(rename = "DHKGBAGFECO")]
-    pub dhkgbagfeco: Option<String>,
-    #[serde(rename = "PLNCACFNLNE")]
-    pub plncacfnlne: Option<bool>,
+    #[serde(rename = "APELADOEGAF")]
+    pub apeladoegaf: Option<String>,
     pub dont_show_push_tips: Option<bool>,
     pub play_type: Option<PlayType>,
     pub event_interval: Option<i64>,
-    #[serde(rename = "ANIFFHCALNP")]
-    pub aniffhcalnp: Option<i64>,
+    #[serde(rename = "BNGIDBJGCNP")]
+    pub bngidbjgcnp: Option<i64>,
     pub revive_interval_time: Option<i64>,
-    #[serde(rename = "DGACNDAOAKK")]
-    pub dgacndaoakk: Option<bool>,
+    #[serde(rename = "PLAMEMGOOKN")]
+    pub plamemgookn: Option<bool>,
     #[serde(rename = "statueCostID")]
     pub statue_cost_id: Option<i64>,
     pub statue_cost_count: Option<i64>,
     pub statue_drop: Option<i64>,
-    #[serde(rename = "EAKIHHNIGEC")]
-    pub eakihhnigec: Option<bool>,
-    #[serde(rename = "LHLEHFLNDGP")]
-    pub lhlehflndgp: Option<bool>,
+    #[serde(rename = "PFHFJHBKHAJ")]
+    pub pfhfjhbkhaj: Option<bool>,
+    #[serde(rename = "PLIFPPIFOCM")]
+    pub plifppifocm: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -129,6 +133,13 @@ pub enum PlayType {
     DungeonPlayTypeMistTrial,
     #[serde(rename = "DUNGEON_PLAY_TYPE_TRIAL_AVATAR")]
     DungeonPlayTypeTrialAvatar,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum Pnjnofekhfi {
+    #[serde(rename = "DUNGEON_DIFFICULTY_TYPE_REDUCE_1")]
+    DungeonDifficultyTypeReduce1,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

@@ -13,6 +13,6 @@ pub struct HomeWorldShopSubTagExcelConfigDatum {
     pub sub_id: i64,
     pub sub_tag_text_map_hash: i64,
     pub show_new_mark: Option<bool>,
-    #[serde(rename = "HCJKLPOBAGB")]
-    pub hcjklpobagb: Option<bool>,
+    #[serde(rename = "LAFKGIJMLIO")]
+    pub lafkgijmlio: Option<bool>,
 }

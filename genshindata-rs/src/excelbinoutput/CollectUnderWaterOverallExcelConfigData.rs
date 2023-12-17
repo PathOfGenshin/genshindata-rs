@@ -9,8 +9,8 @@ pub type CollectUnderWaterOverallExcelConfigData = Vec<CollectUnderWaterOverallE
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CollectUnderWaterOverallExcelConfigDatum {
-    #[serde(rename = "OGILHFNPELP")]
-    pub ogilhfnpelp: i64,
+    #[serde(rename = "GALGAHCAKFK")]
+    pub galgahcakfk: i64,
     #[serde(rename = "endQuestID")]
     pub end_quest_id: i64,
     #[serde(rename = "pushTipsID")]

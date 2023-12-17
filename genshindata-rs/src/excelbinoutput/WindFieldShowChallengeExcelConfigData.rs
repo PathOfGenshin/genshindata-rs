@@ -9,15 +9,15 @@ pub type WindFieldShowChallengeExcelConfigData = Vec<WindFieldShowChallengeExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct WindFieldShowChallengeExcelConfigDatum {
-    pub jlplaclgajb: i64,
-    pub gkdbnoibdpe: Option<i64>,
+    pub ocnnbpkenci: i64,
+    pub hfmllbddmmk: Option<i64>,
     #[serde(rename = "showType")]
     pub show_type: String,
-    pub poleajbpopk: Vec<i64>,
+    pub pghojacflgb: Vec<i64>,
     #[serde(rename = "titleTextMapHash")]
     pub title_text_map_hash: i64,
-    pub jgljopjljlb: i64,
-    pub fblbfmnhphm: i64,
+    pub bpcgfppihah: i64,
+    pub koilccinjgn: i64,
     #[serde(rename = "timeLimit")]
     pub time_limit: Option<i64>,
 }

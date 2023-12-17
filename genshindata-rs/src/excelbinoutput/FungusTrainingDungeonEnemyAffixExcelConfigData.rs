@@ -11,5 +11,5 @@ pub type FungusTrainingDungeonEnemyAffixExcelConfigData = Vec<FungusTrainingDung
 pub struct FungusTrainingDungeonEnemyAffixExcelConfigDatum {
     #[serde(rename = "affixId")]
     pub affix_id: i64,
-    pub ijieadbfjne: i64,
+    pub keibjnfbcij: i64,
 }

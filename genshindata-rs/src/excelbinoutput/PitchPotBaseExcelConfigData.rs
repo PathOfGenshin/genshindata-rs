@@ -3,6 +3,17 @@
 
 #[allow(unused_imports)]
 use serde::{Serialize, Deserialize};
-use std::collections::HashMap;
 
-pub type PitchPotBaseExcelConfigData = Vec<HashMap<String, f64>>;
+pub type PitchPotBaseExcelConfigData = Vec<PitchPotBaseExcelConfigDatum>;
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub struct PitchPotBaseExcelConfigDatum {
+    #[serde(rename = "scheduleId")]
+    pub schedule_id: i64,
+    pub bokcgidapfl: i64,
+    pub ojlbdmmdegf: f64,
+    pub bmhpmkibnfm: f64,
+    pub miihfdlmoeg: f64,
+    pub adllifoinih: f64,
+}

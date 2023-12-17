@@ -11,29 +11,29 @@ pub type PassCatalogDataData = Vec<PassCatalogDataDatum>;
 pub struct PassCatalogDataDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub ghhikmfnnnh: i64,
-    pub jibcjilkmch: i64,
-    pub lcafbjlgplp: String,
+    pub ahhljkgbmih: i64,
+    pub cmchidcedpc: i64,
+    pub jjegghoeipd: String,
     #[serde(rename = "regionType")]
     pub region_type: RegionType,
-    pub mhfeeomgnpc: String,
-    pub bidobmogabp: Vec<Bidobmogabp>,
-    pub kgangafgkeg: Option<bool>,
-    pub bjfjkjbkfna: Option<i64>,
+    pub jpodnlanhnb: String,
+    pub fnodlaihkhj: Vec<Fnodlaihkhj>,
+    pub dbjibeinpgg: Option<bool>,
+    pub cphpcbphapf: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Bidobmogabp {
+pub struct Fnodlaihkhj {
     pub id: Option<i64>,
-    #[serde(rename = "FBEGKLFPDHK")]
-    pub fbegklfpdhk: Fbegklfpdhk,
-    #[serde(rename = "BJFJKJBKFNA")]
-    pub bjfjkjbkfna: Option<i64>,
+    #[serde(rename = "DFHIANHMKAO")]
+    pub dfhianhmkao: Dfhianhmkao,
+    #[serde(rename = "CPHPCBPHAPF")]
+    pub cphpcbphapf: Option<i64>,
     pub weight: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Fbegklfpdhk {
+pub enum Dfhianhmkao {
     #[serde(rename = "DeshretPoint_jinruzhiyin01")]
     DeshretPointJinruzhiyin01,
     #[serde(rename = "DeshretPoint_jinruzhiyin02")]

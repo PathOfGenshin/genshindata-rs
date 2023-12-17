@@ -9,8 +9,8 @@ pub type EnergyCasterCameraExcelConfigData = Vec<EnergyCasterCameraExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct EnergyCasterCameraExcelConfigDatum {
-    pub efnhpehnloe: i64,
-    pub dliejboiooa: Vec<Option<serde_json::Value>>,
-    pub kholkibcnag: Vec<f64>,
-    pub ngbbkmkhegb: Vec<f64>,
+    pub jfngogcibcp: i64,
+    pub olkckceddip: Vec<Option<serde_json::Value>>,
+    pub aiicpfopafg: Vec<f64>,
+    pub hllbipnijka: Vec<f64>,
 }

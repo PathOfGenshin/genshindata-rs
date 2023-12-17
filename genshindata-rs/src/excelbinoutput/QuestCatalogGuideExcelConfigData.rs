@@ -12,6 +12,6 @@ pub struct QuestCatalogGuideExcelConfigDatum {
     pub id: i64,
     pub quest_id: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "IEFDPLBCLLP")]
-    pub iefdplbcllp: Option<i64>,
+    #[serde(rename = "HKOOBBHCAHJ")]
+    pub hkoobbhcahj: Option<i64>,
 }

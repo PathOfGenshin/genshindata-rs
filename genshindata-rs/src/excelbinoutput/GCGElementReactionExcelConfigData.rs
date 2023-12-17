@@ -11,15 +11,15 @@ pub type GcgElementReactionExcelConfigData = Vec<GcgElementReactionExcelConfigDa
 pub struct GcgElementReactionExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub dcbmaddnfam: Dcbmaddnfam,
-    pub eoilbhjjpoa: String,
+    pub dlpejgogkpo: Dlpejgogkpo,
+    pub gdlheidmpmd: String,
     #[serde(rename = "skillId")]
     pub skill_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Dcbmaddnfam {
+pub enum Dlpejgogkpo {
     #[serde(rename = "GCG_ELEMENT_CRYO")]
     GcgElementCryo,
     #[serde(rename = "GCG_ELEMENT_ELECTRO")]

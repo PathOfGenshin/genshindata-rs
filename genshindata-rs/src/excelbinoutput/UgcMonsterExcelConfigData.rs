@@ -9,39 +9,39 @@ pub type UgcMonsterExcelConfigData = Vec<UgcMonsterExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct UgcMonsterExcelConfigDatum {
-    pub hphkmlbanbp: Hphkmlbanbp,
+    pub miibmidhoid: Miibmidhoid,
     #[serde(rename = "monsterId")]
     pub monster_id: i64,
-    pub doeplkdmcef: f64,
-    pub apadjpffobf: String,
-    pub lhmaadijjoi: i64,
-    pub foldoddmjkl: i64,
-    pub dnobgfepdjc: i64,
-    pub ijieadbfjne: i64,
-    pub cohcipebbhj: Vec<Cohcipebbhj>,
-    pub jckgpfjmghl: i64,
+    pub cjibbampkml: f64,
+    pub gkabbkpfnnk: String,
+    pub mjnjdoaogdp: i64,
+    pub dbnifekegli: i64,
+    pub oojhgbneijd: i64,
+    pub keibjnfbcij: i64,
+    pub bdojdfhcnck: Vec<Bdojdfhcnck>,
+    pub ogcefklakfl: i64,
     #[serde(rename = "id")]
     pub id: i64,
-    pub lngjfpoadfm: Vec<Option<serde_json::Value>>,
+    pub fgdknngbjha: Vec<Option<serde_json::Value>>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "cost")]
     pub cost: i64,
-    pub dkgmnlbohfm: Dkgmnlbohfm,
+    pub eaakebfejel: Eaakebfejel,
     #[serde(rename = "deployGadgetID")]
     pub deploy_gadget_id: i64,
-    pub goniilokpcc: Option<bool>,
-    pub ofodkjakfea: Option<f64>,
+    pub ijoihabekce: Option<bool>,
+    pub ghmfbmnahop: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Cohcipebbhj {
-    pub clilgpegagi: i64,
+pub struct Bdojdfhcnck {
+    pub eejogmflihb: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dkgmnlbohfm {
+pub enum Eaakebfejel {
     #[serde(rename = "MonsterModelL1W1H2")]
     MonsterModelL1W1H2,
     #[serde(rename = "MonsterModelL2W2H2")]
@@ -63,7 +63,7 @@ pub enum Dkgmnlbohfm {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hphkmlbanbp {
+pub enum Miibmidhoid {
     #[serde(rename = "MonsterSkill10W10H10")]
     MonsterSkill10W10H10,
     #[serde(rename = "MonsterSkillL1W1H2")]

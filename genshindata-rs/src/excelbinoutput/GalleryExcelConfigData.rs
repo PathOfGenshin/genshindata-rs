@@ -13,8 +13,8 @@ pub struct GalleryExcelConfigDatum {
     #[serde(rename = "type")]
     pub gallery_excel_config_datum_type: String,
     pub param: Vec<String>,
-    #[serde(rename = "EMEKKDICLCP")]
-    pub emekkdiclcp: Vec<i64>,
+    #[serde(rename = "EFCCHDDKLEM")]
+    pub efcchddklem: Vec<i64>,
     pub can_interrupt_by_client: Option<bool>,
     pub group_id: Vec<i64>,
     pub group_furniture_id: Option<i64>,
@@ -31,20 +31,20 @@ pub struct GalleryExcelConfigDatum {
     pub pic: Pic,
     pub target_text_map_hash: i64,
     pub start_audio_values: String,
-    #[serde(rename = "GEOHPBALIKJ")]
-    pub geohpbalikj: String,
+    #[serde(rename = "ELNMAFMPCOL")]
+    pub elnmafmpcol: String,
     pub end_audio_values: String,
     pub selectable_ability_groups: Vec<String>,
     pub team_ability_group_list: Vec<String>,
     pub selectable_team_ability_group_list: Vec<String>,
-    #[serde(rename = "MIAHHCIJBED")]
-    pub miahhcijbed: Vec<f64>,
+    #[serde(rename = "MDHNEGKLFOC")]
+    pub mdhnegklfoc: Vec<f64>,
     pub is_enable_single_prepare: Option<bool>,
     pub single_prepare_time: Option<i64>,
     pub is_enable_mp_prepare: Option<bool>,
     pub mp_prepare_time: Option<i64>,
-    #[serde(rename = "BNFLMEKDDOF")]
-    pub bnflmekddof: Option<bool>,
+    #[serde(rename = "EBHGGIOGHLG")]
+    pub ebhggioghlg: Option<bool>,
     pub scene_id: Option<i64>,
     pub control_group_id: Option<i64>,
     pub revive_point_group_id: Option<i64>,
@@ -52,19 +52,21 @@ pub struct GalleryExcelConfigDatum {
     pub center_radius: Option<i64>,
     pub is_disable_group_default_revise_level: Option<bool>,
     pub center_scene_id: Option<i64>,
-    #[serde(rename = "PJNBAKECHDJ")]
-    pub pjnbakechdj: Option<bool>,
-    #[serde(rename = "KMNNKLJICBP")]
-    pub kmnnkljicbp: Option<i64>,
+    #[serde(rename = "DEHBCPEOAGI")]
+    pub dehbcpeoagi: Option<bool>,
+    #[serde(rename = "ILKIPKHPELN")]
+    pub ilkipkhpeln: Option<i64>,
     pub is_permit_input_in_prepare: Option<bool>,
-    #[serde(rename = "ADGALIFFFFN")]
-    pub adgaliffffn: Option<Adgaliffffn>,
-    #[serde(rename = "AEMJGMGNHLD")]
-    pub aemjgmgnhld: Option<i64>,
-    #[serde(rename = "ENPLFGBHPAI")]
-    pub enplfgbhpai: Option<i64>,
-    #[serde(rename = "JLMKJBIMHDO")]
-    pub jlmkjbimhdo: Option<i64>,
+    #[serde(rename = "CGAMBKPDNHB")]
+    pub cgambkpdnhb: Option<Cgambkpdnhb>,
+    #[serde(rename = "BNCBMEHPBEJ")]
+    pub bncbmehpbej: Option<i64>,
+    #[serde(rename = "DILCNCIFOPH")]
+    pub dilcncifoph: Option<i64>,
+    #[serde(rename = "MLIEKFOMCKN")]
+    pub mliekfomckn: Option<i64>,
+    #[serde(rename = "IMJBKBIAEOK")]
+    pub imjbkbiaeok: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -88,7 +90,7 @@ pub enum AbilityGroup {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Adgaliffffn {
+pub enum Cgambkpdnhb {
     #[serde(rename = "SINGLE")]
     Single,
 }

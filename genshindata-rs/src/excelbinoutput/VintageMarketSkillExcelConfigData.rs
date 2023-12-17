@@ -14,8 +14,8 @@ pub struct VintageMarketSkillExcelConfigDatum {
     pub skill_name_text_map_hash: i64,
     pub skill_desc_text_map_hash: i64,
     pub icon_name_hash: f64,
-    #[serde(rename = "FPIGENHNAPH")]
-    pub fpigenhnaph: i64,
+    #[serde(rename = "JHHHKMFDLNG")]
+    pub jhhhkmfdlng: i64,
     pub sort_order: i64,
 }
 

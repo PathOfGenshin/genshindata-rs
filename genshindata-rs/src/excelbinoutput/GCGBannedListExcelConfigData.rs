@@ -11,6 +11,6 @@ pub type GcgBannedListExcelConfigData = Vec<GcgBannedListExcelConfigDatum>;
 pub struct GcgBannedListExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub agnljkcoomm: Vec<i64>,
-    pub mbcfohejfjb: Vec<Option<serde_json::Value>>,
+    pub bfnpgacedbg: Vec<i64>,
+    pub nknchpmahhn: Vec<Option<serde_json::Value>>,
 }

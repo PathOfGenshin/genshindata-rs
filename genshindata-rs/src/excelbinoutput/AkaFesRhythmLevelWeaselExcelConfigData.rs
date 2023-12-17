@@ -11,10 +11,10 @@ pub type AkaFesRhythmLevelWeaselExcelConfigData = Vec<AkaFesRhythmLevelWeaselExc
 pub struct AkaFesRhythmLevelWeaselExcelConfigDatum {
     pub id: i64,
     pub group_id: i64,
-    #[serde(rename = "BPKLDKHNFNI")]
-    pub bpkldkhnfni: f64,
-    #[serde(rename = "AMLIKIPFBOP")]
-    pub amlikipfbop: Option<String>,
+    #[serde(rename = "IPBAIPLECMH")]
+    pub ipbaiplecmh: f64,
+    #[serde(rename = "CLDNGLIHFAF")]
+    pub cldnglihfaf: Option<String>,
     #[serde(rename = "type")]
     pub aka_fes_rhythm_level_weasel_excel_config_datum_type: Option<Type>,
 }

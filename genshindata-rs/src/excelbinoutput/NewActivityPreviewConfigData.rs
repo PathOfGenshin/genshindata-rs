@@ -30,8 +30,8 @@ pub struct NewActivityPreviewConfigDatum {
     pub open_main_quest_id_list: Vec<i64>,
     #[serde(rename = "preMainQuestIDList")]
     pub pre_main_quest_id_list: Vec<i64>,
-    #[serde(rename = "LEKOECDMDKH")]
-    pub lekoecdmdkh: Vec<i64>,
+    #[serde(rename = "FIKHIOFPKBN")]
+    pub fikhiofpkbn: Vec<i64>,
     pub pre_activity_condition: Vec<PreActivityCondition>,
 }
 

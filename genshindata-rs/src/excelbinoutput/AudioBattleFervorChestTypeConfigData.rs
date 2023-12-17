@@ -9,11 +9,11 @@ pub type AudioBattleFervorChestTypeConfigData = Vec<AudioBattleFervorChestTypeCo
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AudioBattleFervorChestTypeConfigDatum {
-    pub ifcjnnpgcmh: i64,
-    pub fhleoojhinh: f64,
-    pub mdpbjcfbaoa: i64,
-    pub cnkelmlddmh: i64,
-    pub jamndnlgmei: i64,
+    pub gfjpencamid: i64,
+    pub bglepkbbcah: f64,
+    pub kkdieedmgmf: i64,
+    pub ceacbnellml: i64,
+    pub cpgjoaigdmm: i64,
     #[serde(rename = "type")]
     pub audio_battle_fervor_chest_type_config_datum_type: Option<String>,
 }

@@ -23,25 +23,25 @@ pub struct WorldAreaConfigDatum {
     pub element_type: Option<ElementType>,
     #[serde(rename = "showTips")]
     pub show_tips: Option<bool>,
-    #[serde(rename = "KMGBNPLBOGI")]
-    pub kmgbnplbogi: Vec<i64>,
-    #[serde(rename = "JACAEMBFMMH")]
-    pub jacaembfmmh: Vec<f64>,
-    #[serde(rename = "HANKKEPEKFE")]
-    pub hankkepekfe: Vec<f64>,
+    #[serde(rename = "LPDPIKFGNOB")]
+    pub lpdpikfgnob: Vec<f64>,
+    #[serde(rename = "DPNGDHGLLFD")]
+    pub dpngdhgllfd: Vec<f64>,
+    #[serde(rename = "PNFDJBCDCEN")]
+    pub pnfdjbcdcen: Vec<f64>,
     #[serde(rename = "minimapScale")]
     pub minimap_scale: i64,
-    #[serde(rename = "HOFCONFMPBE")]
-    pub hofconfmpbe: Hofconfmpbe,
-    #[serde(rename = "DGCEBDPJDJI")]
-    pub dgcebdpjdji: Dgcebdpjdji,
+    #[serde(rename = "EGJLLJPIBDE")]
+    pub egjlljpibde: Egjlljpibde,
+    #[serde(rename = "EKCOFKGCINF")]
+    pub ekcofkgcinf: Ekcofkgcinf,
     #[serde(rename = "areaID2")]
     pub area_id2: Option<i64>,
     #[serde(rename = "terrainType")]
     pub terrain_type: Option<TerrainType>,
     pub area_default_lock: Option<bool>,
-    #[serde(rename = "EMKALHLFOJB")]
-    pub emkalhlfojb: Option<bool>,
+    #[serde(rename = "POIJCDAMHHK")]
+    pub poijcdamhhk: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -54,7 +54,15 @@ pub enum AreaType {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dgcebdpjdji {
+pub enum Egjlljpibde {
+    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Avatar")]
+    DynamicAbilityFondanieAreaAbilityAvatar,
+    #[serde(rename = "")]
+    Empty,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum Ekcofkgcinf {
     #[serde(rename = "DynamicAbility_FondanieAreaAbility_Team")]
     DynamicAbilityFondanieAreaAbilityTeam,
     #[serde(rename = "")]
@@ -68,14 +76,6 @@ pub enum ElementType {
     Rock,
     Water,
     Wind,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Hofconfmpbe {
-    #[serde(rename = "DynamicAbility_FondanieAreaAbility_Avatar")]
-    DynamicAbilityFondanieAreaAbilityAvatar,
-    #[serde(rename = "")]
-    Empty,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

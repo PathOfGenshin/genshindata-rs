@@ -15,9 +15,9 @@ pub struct DeshretPoiCatalogDataDatum {
     pub title_text_map_hash: i64,
     pub icon: String,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "IIAKGBEMKPO")]
-    pub iiakgbemkpo: i64,
-    #[serde(rename = "JPICKHNKCJH")]
-    pub jpickhnkcjh: i64,
+    #[serde(rename = "ALAPAPBONDI")]
+    pub alapapbondi: i64,
+    #[serde(rename = "DKNMCDJCFCG")]
+    pub dknmcdjcfcg: i64,
     pub mark_desc_text_map_hash: i64,
 }

@@ -15,7 +15,7 @@ pub struct WindFieldStageExcelConfigDatum {
     pub gallery_id: i64,
     pub watcher_list: Vec<i64>,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "NNHEJPIHJAJ")]
-    pub nnhejpihjaj: f64,
+    #[serde(rename = "FIAKPIHAAKE")]
+    pub fiakpihaake: f64,
     pub title_text_map_hash: i64,
 }

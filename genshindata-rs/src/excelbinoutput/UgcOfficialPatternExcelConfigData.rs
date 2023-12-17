@@ -11,6 +11,6 @@ pub type UgcOfficialPatternExcelConfigData = Vec<UgcOfficialPatternExcelConfigDa
 pub struct UgcOfficialPatternExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub cndpkbfcojc: i64,
-    pub jaanficnopi: i64,
+    pub pmbmcfalbpp: i64,
+    pub jmoengilkce: i64,
 }

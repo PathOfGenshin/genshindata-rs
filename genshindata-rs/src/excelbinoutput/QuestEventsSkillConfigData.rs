@@ -9,9 +9,9 @@ pub type QuestEventsSkillConfigData = Vec<QuestEventsSkillConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct QuestEventsSkillConfigDatum {
-    pub lfjdaaedadg: i64,
+    pub mangipikiah: i64,
     #[serde(rename = "npcID")]
     pub npc_id: i64,
-    pub lipcpkgijef: i64,
-    pub nbcfnidkipm: Vec<i64>,
+    pub encajojhibm: i64,
+    pub pmgffkhjcmh: Vec<i64>,
 }

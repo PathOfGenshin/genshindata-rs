@@ -19,8 +19,8 @@ pub struct ShopExcelConfigDatum {
     pub scoin_discount_rate: Option<i64>,
     #[serde(rename = "vipFuncID")]
     pub vip_func_id: Option<i64>,
-    #[serde(rename = "OLDJNIGAEDL")]
-    pub oldjnigaedl: Option<bool>,
-    #[serde(rename = "GAEOPADPIAB")]
-    pub gaeopadpiab: Option<bool>,
+    #[serde(rename = "BODDGOLEHJP")]
+    pub boddgolehjp: Option<bool>,
+    #[serde(rename = "CNOHHKINAJO")]
+    pub cnohhkinajo: Option<bool>,
 }

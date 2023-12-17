@@ -11,7 +11,7 @@ pub type MultiCharacterDifficultyExcelConfigData = Vec<MultiCharacterDifficultyE
 pub struct MultiCharacterDifficultyExcelConfigDatum {
     #[serde(rename = "difficultyId")]
     pub difficulty_id: i64,
-    pub opdppopgkmg: i64,
-    pub ldoffehbihd: i64,
-    pub ccgfcpmlmcl: Option<i64>,
+    pub egopkdigfaa: i64,
+    pub cpfkibdpckm: i64,
+    pub dgcnjjjkbfd: Option<i64>,
 }

@@ -11,36 +11,36 @@ pub type MultiCharacterStageExcelConfigData = Vec<MultiCharacterStageExcelConfig
 pub struct MultiCharacterStageExcelConfigDatum {
     pub stage_id: i64,
     pub open_day: i64,
-    #[serde(rename = "PMFHEPPEFKA")]
-    pub pmfheppefka: Vec<Pmfheppefka>,
+    #[serde(rename = "CIFCCNPHCJK")]
+    pub cifccnphcjk: Vec<Cifccnphcjk>,
     pub watcher_list: Vec<i64>,
-    #[serde(rename = "PPAKBFBMEFL")]
-    pub ppakbfbmefl: Vec<Ppakbfbmefl>,
-    #[serde(rename = "BEBEGEPJKFB")]
-    pub bebegepjkfb: Vec<Bebegepjkfb>,
+    #[serde(rename = "FGNAHIPHBHM")]
+    pub fgnahiphbhm: Vec<Fgnahiphbhm>,
+    #[serde(rename = "LHKMPLBOHNB")]
+    pub lhkmplbohnb: Vec<Lhkmplbohnb>,
     pub stage_title_text_map_hash: i64,
     pub stage_desc_text_map_hash: i64,
-    #[serde(rename = "JDFFOEDIEGL")]
-    pub jdffoediegl: Vec<i64>,
+    #[serde(rename = "BLNKCDBHECJ")]
+    pub blnkcdbhecj: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Bebegepjkfb {
-    pub group_id: i64,
-    pub hell_group_id: i64,
-    pub gallery_id: i64,
-    pub hell_gallery_id: i64,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct Pmfheppefka {
+pub struct Cifccnphcjk {
     pub dungeon_id: i64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct Ppakbfbmefl {
+pub struct Fgnahiphbhm {
     pub buff_id: i64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Lhkmplbohnb {
+    pub group_id: i64,
+    pub hell_group_id: i64,
+    pub gallery_id: i64,
+    pub hell_gallery_id: i64,
 }

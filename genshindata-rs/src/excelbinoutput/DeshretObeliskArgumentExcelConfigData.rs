@@ -17,14 +17,14 @@ pub struct DeshretObeliskArgumentExcelConfigDatum {
     pub gadget_id_list: Vec<i64>,
     #[serde(rename = "effectName")]
     pub effect_name: EffectName,
-    pub flcdfkfjddn: Vec<i64>,
-    pub ciogjdmampo: i64,
-    pub hdoepjfonnp: i64,
-    pub kholkibcnag: Vec<i64>,
-    pub gbokolhahoo: Vec<i64>,
-    pub jnjajomnlmg: i64,
-    pub hlbojaopfdl: i64,
-    pub aobliibkndb: f64,
+    pub kokdnlmelob: Vec<i64>,
+    pub klnkkknpghg: i64,
+    pub kaipodapcfk: i64,
+    pub aiicpfopafg: Vec<i64>,
+    pub fjnbgkdceno: Vec<i64>,
+    pub gdpdjemgkip: i64,
+    pub kcooiggdoba: i64,
+    pub ookkhjhnbdc: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

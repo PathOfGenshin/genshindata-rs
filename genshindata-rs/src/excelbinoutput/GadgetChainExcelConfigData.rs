@@ -13,6 +13,6 @@ pub struct GadgetChainExcelConfigDatum {
     pub init_level: Option<i64>,
     pub max_level: i64,
     pub buff_list: Vec<i64>,
-    #[serde(rename = "NPAMCIFIHHB")]
-    pub npamcifihhb: Option<bool>,
+    #[serde(rename = "OMPKIBAALMN")]
+    pub ompkibaalmn: Option<bool>,
 }

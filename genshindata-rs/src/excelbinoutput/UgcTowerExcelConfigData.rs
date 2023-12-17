@@ -11,11 +11,11 @@ pub type UgcTowerExcelConfigData = Vec<UgcTowerExcelConfigDatum>;
 pub struct UgcTowerExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub eogjdgbdina: i64,
+    pub bghjonggipf: i64,
     #[serde(rename = "gadgetId")]
     pub gadget_id: i64,
     #[serde(rename = "materialId")]
     pub material_id: i64,
-    pub godpmhannng: i64,
-    pub nbeedbgkbhp: i64,
+    pub mfmgmkdjndl: i64,
+    pub pmfplbddimf: i64,
 }

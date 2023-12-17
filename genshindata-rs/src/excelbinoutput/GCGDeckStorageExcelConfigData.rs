@@ -11,8 +11,15 @@ pub type GcgDeckStorageExcelConfigData = Vec<GcgDeckStorageExcelConfigDatum>;
 pub struct GcgDeckStorageExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub adoaffbkehm: i64,
+    pub akhagjacjlh: i64,
     #[serde(rename = "unlockCond")]
-    pub unlock_cond: Option<String>,
-    pub cbkkabadbbk: Option<i64>,
+    pub unlock_cond: Option<UnlockCond>,
+    pub cpbelmngnek: Option<i64>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum UnlockCond {
+    #[serde(rename = "DUEL_LEVEL")]
+    DuelLevel,
 }

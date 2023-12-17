@@ -22,8 +22,8 @@ pub struct CombineExcelConfigDatum {
     pub effect_desc_text_map_hash: i64,
     pub recipe_type: RecipeType,
     pub drop_id: Option<i64>,
-    #[serde(rename = "AEPAFPBHKLH")]
-    pub aepafpbhklh: Option<i64>,
+    #[serde(rename = "MELDDLLHIOD")]
+    pub melddllhiod: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

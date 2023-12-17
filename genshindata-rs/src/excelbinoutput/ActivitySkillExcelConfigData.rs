@@ -26,10 +26,10 @@ pub struct ActivitySkillExcelConfigDatum {
     pub interrupt_text_text_map_hash: i64,
     pub vfx_index: Option<i64>,
     pub skill_effect_hight_light: Option<bool>,
-    #[serde(rename = "BIAEPMIGGBI")]
-    pub biaepmiggbi: Option<bool>,
-    #[serde(rename = "FHHJKILMEHH")]
-    pub fhhjkilmehh: Option<bool>,
+    #[serde(rename = "AMGPGHJABIA")]
+    pub amgpghjabia: Option<bool>,
+    #[serde(rename = "PFNPJHCDFIN")]
+    pub pfnpjhcdfin: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

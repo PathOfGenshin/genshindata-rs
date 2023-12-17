@@ -16,14 +16,14 @@ pub struct ReminderExcelConfigDatum {
     pub next_reminder_id: Option<i64>,
     pub sound_effect: String,
     pub has_audio: Option<bool>,
-    #[serde(rename = "IIPODMBIKJH")]
-    pub iipodmbikjh: String,
+    #[serde(rename = "CKGEIIFLBOC")]
+    pub ckgeiiflboc: String,
     pub delay: Option<f64>,
     pub style: Option<Style>,
-    #[serde(rename = "BPOBAPILOEE")]
-    pub bpobapiloee: Option<i64>,
-    #[serde(rename = "GPCJCBLIGHJ")]
-    pub gpcjcblighj: Option<bool>,
+    #[serde(rename = "EAANBIKGHBD")]
+    pub eaanbikghbd: Option<i64>,
+    #[serde(rename = "KKLOLOILFHA")]
+    pub kkloloilfha: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

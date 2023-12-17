@@ -9,14 +9,14 @@ pub type SorushTrialStageDetailExcelConfigData = Vec<SorushTrialStageDetailExcel
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SorushTrialStageDetailExcelConfigDatum {
-    #[serde(rename = "FGBALAADMMD")]
-    pub fgbalaadmmd: i64,
+    #[serde(rename = "BHDAKHJDGAA")]
+    pub bhdakhjdgaa: i64,
     #[serde(rename = "type")]
     pub sorush_trial_stage_detail_excel_config_datum_type: Type,
     pub ref_id: i64,
     pub tutorial_id: i64,
-    #[serde(rename = "ICHBBIAKCBC")]
-    pub ichbbiakcbc: Option<i64>,
+    #[serde(rename = "ANLLLNOOEHA")]
+    pub anlllnooeha: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

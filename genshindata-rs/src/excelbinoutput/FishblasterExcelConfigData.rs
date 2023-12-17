@@ -13,24 +13,24 @@ pub struct FishblasterExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "unlockDay")]
     pub unlock_day: i64,
-    pub hfdddippmbp: i64,
-    pub bfkncilnmnm: String,
-    pub nnjogohgjfd: i64,
-    pub hafbolfnapd: Option<i64>,
-    pub igecjhhmjnl: Vec<i64>,
-    pub lefdhdemdpi: i64,
+    pub nneijgmdlgm: i64,
+    pub pdgkccdfboe: String,
+    pub apcolgmofem: i64,
+    pub pahfkookaph: Option<i64>,
+    pub nhgiofinfob: Vec<i64>,
+    pub iepgjmngjfi: i64,
     #[serde(rename = "descTextMapHash")]
     pub desc_text_map_hash: i64,
-    pub lhagidlhjhk: String,
+    pub abkegjhnoee: String,
     #[serde(rename = "tipsTextMapHash")]
     pub tips_text_map_hash: i64,
-    pub cjmpagengol: String,
+    pub dkpjhbnnfmi: String,
     #[serde(rename = "watcherList")]
     pub watcher_list: Vec<i64>,
     #[serde(rename = "tutorialID")]
     pub tutorial_id: Option<i64>,
-    pub kjpaaggmcaa: Option<i64>,
-    pub onlocnnbigp: Option<i64>,
-    pub dkajognienm: Option<i64>,
-    pub jjdndejiflc: Option<i64>,
+    pub ommadmkjgcp: Option<i64>,
+    pub mjecaklaabi: Option<i64>,
+    pub abeopankaob: Option<i64>,
+    pub eabajgnkbpf: Option<i64>,
 }

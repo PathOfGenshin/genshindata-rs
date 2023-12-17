@@ -13,16 +13,16 @@ pub struct MusicGamePreviewConfigDatum {
     pub activity_id: i64,
     #[serde(rename = "musicIDList")]
     pub music_id_list: Vec<i64>,
-    #[serde(rename = "GBIHCAGJMKI")]
-    pub gbihcagjmki: Vec<i64>,
+    #[serde(rename = "GPDLHIIEDMJ")]
+    pub gpdlhiiedmj: Vec<i64>,
     #[serde(rename = "startQuestID")]
     pub start_quest_id: Option<i64>,
     #[serde(rename = "tutorialID")]
     pub tutorial_id: i64,
     #[serde(rename = "npcMarkID")]
     pub npc_mark_id: i64,
-    #[serde(rename = "JLACFJLIFGN")]
-    pub jlacfjlifgn: Vec<i64>,
-    #[serde(rename = "KOBKKKNMDAB")]
-    pub kobkkknmdab: Vec<f64>,
+    #[serde(rename = "LHIONBOKBCE")]
+    pub lhionbokbce: Vec<i64>,
+    #[serde(rename = "GAHHGKNKJJB")]
+    pub gahhgknkjjb: Vec<f64>,
 }

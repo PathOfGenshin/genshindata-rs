@@ -11,14 +11,14 @@ pub type UgcMonsterGroupExcelConfigData = Vec<UgcMonsterGroupExcelConfigDatum>;
 pub struct UgcMonsterGroupExcelConfigDatum {
     #[serde(rename = "monsterIdList")]
     pub monster_id_list: String,
-    pub bdbhcnagapp: String,
-    pub bhamffdfili: i64,
-    pub epboieppepe: String,
+    pub oahlcomfkbj: String,
+    pub bgllnnkmokp: i64,
+    pub lacagpjhpjo: String,
     #[serde(rename = "id")]
     pub id: i64,
     #[serde(rename = "typeID")]
     pub type_id: i64,
-    pub lngjfpoadfm: Vec<i64>,
+    pub fgdknngbjha: Vec<i64>,
     #[serde(rename = "nameTextMapHash")]
     pub name_text_map_hash: i64,
     #[serde(rename = "iconHash")]
@@ -27,16 +27,16 @@ pub struct UgcMonsterGroupExcelConfigDatum {
     pub cost: i64,
     #[serde(rename = "rotateType")]
     pub rotate_type: RotateType,
-    pub dkgmnlbohfm: Dkgmnlbohfm,
+    pub eaakebfejel: Eaakebfejel,
     #[serde(rename = "canCopy")]
     pub can_copy: bool,
-    pub eleobonndmm: i64,
-    pub mmfhccfjbed: Option<i64>,
-    pub jipapdkmecl: Option<i64>,
+    pub mjdhlgoegkh: i64,
+    pub pbpgkhcmlhn: Option<i64>,
+    pub ipfhfjpnigc: Option<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Dkgmnlbohfm {
+pub enum Eaakebfejel {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "MonsterSkillL50W50H15")]

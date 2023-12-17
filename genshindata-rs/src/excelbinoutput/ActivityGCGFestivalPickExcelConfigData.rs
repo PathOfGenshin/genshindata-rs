@@ -11,8 +11,8 @@ pub type ActivityGcgFestivalPickExcelConfigData = Vec<ActivityGcgFestivalPickExc
 pub struct ActivityGcgFestivalPickExcelConfigDatum {
     #[serde(rename = "scheduleId")]
     pub schedule_id: i64,
-    pub hakahaddkle: i64,
-    pub hdedbimhidf: i64,
-    pub fipmjiaicah: i64,
-    pub ojkndeiicgf: Vec<Vec<i64>>,
+    pub cenlaombkkm: i64,
+    pub lgoaopdenki: i64,
+    pub eljebofbjjl: i64,
+    pub mcmnddjepij: Vec<Vec<i64>>,
 }

@@ -20,13 +20,14 @@ pub struct ChapterExcelConfigDatum {
     pub chapter_image_title_text_map_hash: i64,
     pub chapter_serial_number_icon: ChapterSerialNumberIcon,
     pub need_player_level: Option<i64>,
+    pub quest_type: Option<QuestType>,
     pub activity_id: Option<i64>,
     pub in_activity_need_player_level: Option<i64>,
     pub city_id: Option<i64>,
-    #[serde(rename = "ACJBBPLENDF")]
-    pub acjbbplendf: Option<i64>,
-    #[serde(rename = "JAOCMIKGMBF")]
-    pub jaocmikgmbf: Option<Jaocmikgmbf>,
+    #[serde(rename = "HKKDCEBLILC")]
+    pub hkkdceblilc: Option<i64>,
+    #[serde(rename = "DNDPEHKKECL")]
+    pub dndpehkkecl: Option<Dndpehkkecl>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -49,7 +50,17 @@ pub enum ChapterSerialNumberIcon {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub enum Jaocmikgmbf {
+pub enum Dndpehkkecl {
     #[serde(rename = "CHAPTER_STYLE_TYPE_WORLD_QUEST_RANK_ZERO")]
     ChapterStyleTypeWorldQuestRankZero,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum QuestType {
+    #[serde(rename = "EQ")]
+    Eq,
+    #[serde(rename = "LQ")]
+    Lq,
+    #[serde(rename = "WQ")]
+    Wq,
 }

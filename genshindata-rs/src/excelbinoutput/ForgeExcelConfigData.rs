@@ -27,8 +27,8 @@ pub struct ForgeExcelConfigDatum {
     pub forge_point: Option<i64>,
     pub forge_point_notice_text_map_hash: i64,
     pub main_random_drop_id: Option<i64>,
-    #[serde(rename = "FPAGFOKPFGB")]
-    pub fpagfokpfgb: Option<bool>,
+    #[serde(rename = "GHLNIACIICJ")]
+    pub ghlniaciicj: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

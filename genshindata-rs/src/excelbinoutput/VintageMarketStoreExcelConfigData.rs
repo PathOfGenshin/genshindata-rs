@@ -9,22 +9,22 @@ pub type VintageMarketStoreExcelConfigData = Vec<VintageMarketStoreExcelConfigDa
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct VintageMarketStoreExcelConfigDatum {
-    pub kfmmkdijlhn: i64,
-    pub kjmgcpoehmi: i64,
-    pub clihpollfke: i64,
-    pub kkojclnhflm: Vec<i64>,
-    pub oonlhdlogdi: Vec<Oonlhdlogdi>,
-    pub ojploeelbdo: i64,
-    pub fgeadcefhie: Vec<i64>,
+    pub iiojpkjgmda: i64,
+    pub icdmhfklhci: i64,
+    pub eendjeaihkj: i64,
+    pub maibofmicfo: Vec<i64>,
+    pub icbbbamifnf: Vec<Icbbbamifnf>,
+    pub ccfoffbcnch: i64,
+    pub jfdcgbnmomj: Vec<i64>,
     #[serde(rename = "npcId")]
     pub npc_id: i64,
-    pub epmmjbikbhi: f64,
+    pub lpakjkhddfc: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Oonlhdlogdi {
+pub struct Icbbbamifnf {
     #[serde(rename = "defaultValue")]
     pub default_value: i64,
-    pub gkdbnoibdpe: i64,
+    pub hfmllbddmmk: i64,
 }

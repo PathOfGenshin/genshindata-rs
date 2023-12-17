@@ -21,8 +21,10 @@ pub struct InferenceWordExcelConfigDatum {
     pub interpret_dialog_id: Option<i64>,
     pub associate_error_dialog_id: Option<i64>,
     pub freestyle_id: Option<i64>,
-    #[serde(rename = "IBKHBIIMHFK")]
-    pub ibkhbiimhfk: Option<bool>,
+    #[serde(rename = "JPOGMJGGIAL")]
+    pub jpogmjggial: Vec<i64>,
+    #[serde(rename = "LJOIFKJIOIM")]
+    pub ljoifkjioim: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

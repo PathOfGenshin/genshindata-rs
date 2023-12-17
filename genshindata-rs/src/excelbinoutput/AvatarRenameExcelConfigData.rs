@@ -9,21 +9,21 @@ pub type AvatarRenameExcelConfigData = Vec<AvatarRenameExcelConfigDatum>;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub struct AvatarRenameExcelConfigDatum {
-    pub lpcajddkmma: i64,
+    pub imnelohfpop: i64,
     #[serde(rename = "type")]
     pub avatar_rename_excel_config_datum_type: String,
-    pub bdfnmollppf: i64,
-    pub fjegpffalkn: i64,
-    pub jmepmiajmmj: i64,
-    pub pngeaahhcfd: i64,
-    pub bfjdlcdjnfg: Vec<Bfjdlcdjnfg>,
-    pub dmemgdhpifd: String,
-    pub bcfhedpjoom: Vec<i64>,
+    pub jcnkcjdlofm: i64,
+    pub napcdlbmhap: i64,
+    pub nlabgckebeo: i64,
+    pub lbladkcmfmn: i64,
+    pub fojklabgaad: Vec<Fojklabgaad>,
+    pub onmobmeecpi: String,
+    pub jnpjjhfalkg: Vec<i64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
-pub struct Bfjdlcdjnfg {
-    pub pbiamdjdmdi: String,
-    pub johpolhpaoa: String,
+pub struct Fojklabgaad {
+    pub ipdjjpbhjbk: String,
+    pub janfgpmieha: String,
 }

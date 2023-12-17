@@ -11,15 +11,15 @@ pub type ReunionGuideExcelConfigData = Vec<ReunionGuideExcelConfigDatum>;
 pub struct ReunionGuideExcelConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub jgcdkgpchmf: i64,
+    pub laognkoahll: i64,
     #[serde(rename = "bannerDescTextMapHash")]
     pub banner_desc_text_map_hash: i64,
-    pub llhjefblnjo: f64,
-    pub chmjdbdgdco: String,
+    pub fcaebneedli: f64,
+    pub pgohloeceob: String,
     #[serde(rename = "showCond")]
     pub show_cond: Vec<ShowCond>,
-    pub ddgpolfofem: String,
-    pub eogejenkdfd: Option<String>,
+    pub ofnnhcnjjil: String,
+    pub lkdamaipdkj: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

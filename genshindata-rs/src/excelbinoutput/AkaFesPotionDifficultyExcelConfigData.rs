@@ -11,6 +11,6 @@ pub type AkaFesPotionDifficultyExcelConfigData = Vec<AkaFesPotionDifficultyExcel
 pub struct AkaFesPotionDifficultyExcelConfigDatum {
     pub difficulty_level: i64,
     pub dungeon_level: i64,
-    #[serde(rename = "MJEEGLFNFFH")]
-    pub mjeeglfnffh: i64,
+    #[serde(rename = "BPOLIDFFJPB")]
+    pub bpolidffjpb: i64,
 }

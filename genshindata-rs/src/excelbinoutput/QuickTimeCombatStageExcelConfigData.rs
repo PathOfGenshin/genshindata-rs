@@ -14,8 +14,8 @@ pub struct QuickTimeCombatStageExcelConfigDatum {
     pub buff_id_list: Vec<i64>,
     pub trial_avatar_id_list: Vec<i64>,
     pub unlock_time: i64,
-    #[serde(rename = "DPEECAALIDO")]
-    pub dpeecaalido: i64,
+    #[serde(rename = "LNLBLJCODON")]
+    pub lnlbljcodon: i64,
     #[serde(rename = "pushTipsID")]
     pub push_tips_id: i64,
     pub watcher_list: Vec<i64>,

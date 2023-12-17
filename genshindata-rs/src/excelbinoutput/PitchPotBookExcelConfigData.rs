@@ -11,15 +11,15 @@ pub type PitchPotBookExcelConfigData = Vec<PitchPotBookExcelConfigDatum>;
 pub struct PitchPotBookExcelConfigDatum {
     pub id: i64,
     pub title_text_map_hash: i64,
-    #[serde(rename = "FGBAPLBBPNO")]
-    pub fgbaplbbpno: i64,
-    #[serde(rename = "DDOBKEBOCLO")]
-    pub ddobkeboclo: i64,
+    #[serde(rename = "LODFKBFMPGF")]
+    pub lodfkbfmpgf: i64,
+    #[serde(rename = "EMFOLNOMPEF")]
+    pub emfolnompef: i64,
     pub icon_name_hash: f64,
-    #[serde(rename = "AFOFGDDKHFJ")]
-    pub afofgddkhfj: f64,
+    #[serde(rename = "IEGNIEAJLEM")]
+    pub iegnieajlem: f64,
     pub desc_text_map_hash: i64,
     pub desc_params: Vec<String>,
-    #[serde(rename = "EFBFMLDIFIP")]
-    pub efbfmldifip: Option<String>,
+    #[serde(rename = "ILGEAAIGCMN")]
+    pub ilgeaaigcmn: Option<String>,
 }

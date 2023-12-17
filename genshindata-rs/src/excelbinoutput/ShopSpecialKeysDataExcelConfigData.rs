@@ -13,12 +13,12 @@ pub struct ShopSpecialKeysDataExcelConfigDatum {
     pub goods_id: i64,
     #[serde(rename = "singleLimit")]
     pub single_limit: i64,
-    pub oobhfkhljlb: Oobhfkhljlb,
-    pub lmadbaihbdg: Option<bool>,
+    pub epjcdmbmdjh: Epjcdmbmdjh,
+    pub ilefjcndfeh: Option<bool>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Oobhfkhljlb {
+pub enum Epjcdmbmdjh {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "QUEST_SmugglerShopLimit")]

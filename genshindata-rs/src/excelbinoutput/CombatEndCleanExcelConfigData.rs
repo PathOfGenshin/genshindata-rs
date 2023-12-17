@@ -12,12 +12,12 @@ pub struct CombatEndCleanExcelConfigDatum {
     pub id: i64,
     pub combat_end_type: String,
     pub modifier_tags: Vec<ModifierTag>,
-    #[serde(rename = "GOONAEDEPOE")]
-    pub goonaedepoe: Vec<Goonaedepoe>,
+    #[serde(rename = "BJBCGMGFGMK")]
+    pub bjbcgmgfgmk: Vec<Bjbcgmgfgmk>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum Goonaedepoe {
+pub enum Bjbcgmgfgmk {
     #[serde(rename = "")]
     Empty,
     #[serde(rename = "LevelEntity_ClearLocalGadgets")]

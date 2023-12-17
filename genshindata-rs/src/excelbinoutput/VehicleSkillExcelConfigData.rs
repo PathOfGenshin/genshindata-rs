@@ -23,8 +23,8 @@ pub struct VehicleSkillExcelConfigDatum {
     pub global_value_key: String,
     pub energy_once_cost: Option<i64>,
     pub energy_max_cost: Option<i64>,
-    #[serde(rename = "IIOFPBDMNFI")]
-    pub iiofpbdmnfi: Option<String>,
+    #[serde(rename = "GHJJEHGJKPO")]
+    pub ghjjehgjkpo: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

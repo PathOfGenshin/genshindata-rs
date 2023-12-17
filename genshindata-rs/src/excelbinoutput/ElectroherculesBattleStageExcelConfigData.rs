@@ -13,21 +13,21 @@ pub struct ElectroherculesBattleStageExcelConfigDatum {
     pub id: i64,
     #[serde(rename = "levelTitleTextMapHash")]
     pub level_title_text_map_hash: i64,
-    pub cpeejohomcf: i64,
+    pub pfnngmobflo: i64,
     #[serde(rename = "levelIdList")]
     pub level_id_list: Vec<i64>,
     #[serde(rename = "openTime")]
     pub open_time: i64,
-    pub kgkhgdcpgkl: i64,
-    pub icmmcckbcff: i64,
-    pub fkiemfpofog: String,
-    pub imgjjfemkpf: String,
-    pub iobagkckppm: String,
+    pub jdjdfbbbalj: i64,
+    pub clclneompod: i64,
+    pub fledljamcpj: String,
+    pub aofgfchdonh: String,
+    pub hgfbdfjkphc: String,
     #[serde(rename = "stageType")]
     pub stage_type: String,
-    pub cnmmclnbklj: i64,
-    pub pmgffcnmknd: i64,
+    pub mgkcmagcbpm: i64,
+    pub gbkkiigdmac: i64,
     #[serde(rename = "pushTipsId")]
     pub push_tips_id: Option<i64>,
-    pub akhhfeeenga: Option<i64>,
+    pub iocpiajmpko: Option<i64>,
 }

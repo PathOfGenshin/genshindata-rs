@@ -11,4 +11,5 @@ pub type GadgetTitleExcelConfigData = Vec<GadgetTitleExcelConfigDatum>;
 pub struct GadgetTitleExcelConfigDatum {
     pub gadget_id: i64,
     pub title_text_map_hash: i64,
+    pub name_text_map_hash: i64,
 }

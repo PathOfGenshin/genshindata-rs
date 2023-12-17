@@ -11,8 +11,8 @@ pub type AudioBattleFervorChestStgConfigData = Vec<AudioBattleFervorChestStgConf
 pub struct AudioBattleFervorChestStgConfigDatum {
     #[serde(rename = "id")]
     pub id: i64,
-    pub clgnknpgpig: f64,
-    pub nhiflakhdkm: i64,
-    pub bapbpcfifoh: f64,
-    pub hdkafnbmdal: i64,
+    pub agcmpdabmia: f64,
+    pub gdpaonnebco: i64,
+    pub mcibgcfbmbl: f64,
+    pub anmomgiapai: i64,
 }

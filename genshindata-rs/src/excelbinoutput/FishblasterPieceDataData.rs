@@ -12,11 +12,11 @@ pub struct FishblasterPieceDataDatum {
     pub id: i64,
     pub name_text_map_hash: i64,
     pub desc_text_map_hash: i64,
-    #[serde(rename = "BDKLKBNNAGP")]
-    pub bdklkbnnagp: i64,
+    #[serde(rename = "CFCBFBNEENM")]
+    pub cfcbfbneenm: i64,
     pub icon: String,
-    #[serde(rename = "HOGMONKHCCD")]
-    pub hogmonkhccd: String,
+    #[serde(rename = "HDIEIAGNMAF")]
+    pub hdieiagnmaf: String,
     #[serde(rename = "type")]
     pub fishblaster_piece_data_datum_type: Option<i64>,
 }

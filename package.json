@@ -1,6 +1,6 @@
 {
   "name": "genshindata-rs",
-  "version": "3.8.0",
+  "version": "4.2.0",
   "description": "A strongly-typed Rust based library wrapper for game resource JSON files.",
   "scripts": {
     "generate": "node ./scripts/main.mjs"
@@ -8,6 +8,6 @@
   "author": "Kevin Xiao",
   "license": "MIT",
   "dependencies": {
-    "quicktype-core": "^23.0.75"
+    "quicktype-core": "^23.0.80"
   }
 }

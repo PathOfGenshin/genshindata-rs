@@ -21,16 +21,16 @@ pub struct ToyBattleCurrentLevelExcelConfigDatum {
     pub activity_id: i64,
     pub name_text_map_hash: i64,
     pub quest_list: Vec<i64>,
-    #[serde(rename = "FDJIDNOMABG")]
-    pub fdjidnomabg: Vec<Option<serde_json::Value>>,
+    #[serde(rename = "HBDOFODPCFO")]
+    pub hbdofodpcfo: Vec<Option<serde_json::Value>>,
     pub watcher_list: Vec<i64>,
     pub open_day: i64,
-    #[serde(rename = "MFBNBANHGAI")]
-    pub mfbnbanhgai: Vec<String>,
-    #[serde(rename = "NPKOCCIIEGK")]
-    pub npkocciiegk: Vec<String>,
-    #[serde(rename = "HHHJNCLIGDH")]
-    pub hhhjncligdh: Vec<String>,
-    #[serde(rename = "ECOLPFMGMKP")]
-    pub ecolpfmgmkp: Option<String>,
+    #[serde(rename = "KJBALLPJMEJ")]
+    pub kjballpjmej: Vec<String>,
+    #[serde(rename = "PKBHGFBAICN")]
+    pub pkbhgfbaicn: Vec<String>,
+    #[serde(rename = "IKFKHDJONHH")]
+    pub ikfkhdjonhh: Vec<String>,
+    #[serde(rename = "BMCANDJPNKG")]
+    pub bmcandjpnkg: Option<String>,
 }
